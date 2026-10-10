@@ -50,6 +50,10 @@ class Position(BaseModel):
     size_source: str = "assumption"            # "assumption: <why>" | "belem_reference" | "onchain"
     pipeline: str | None = None                # discovery module, e.g. "discovery.hero1"
     tags: list[str] = Field(default_factory=list)
+    requested_usd: float | None = None         # ticket before venue caps
+    capacity_constrained: bool = False         # size cut by a venue cap (excess parked elsewhere)
+    disclaimer: str | None = None              # e.g. "RockawayX vault used as a real example, not a Belem position"
+    verification: list[dict[str, Any]] = Field(default_factory=list)   # on-chain / API checks behind this pocket
 
 
 class Book(BaseModel):
@@ -62,6 +66,8 @@ class Book(BaseModel):
     lambda_source: str = "assumption"
     fork_block: int | None = None
     positions: list[Position]
+    mandate_usd: float | None = None           # capital of this mandate (pockets sum to it)
+    source: str | None = None                  # provenance of the whole book
     meta: dict[str, Any] = Field(default_factory=dict)
 
     @model_validator(mode="after")
