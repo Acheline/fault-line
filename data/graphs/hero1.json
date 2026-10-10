@@ -36,8 +36,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
@@ -67,8 +67,8 @@
    ],
    "paths": [
     "exit",
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -501,8 +501,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -603,8 +603,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -645,8 +645,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -726,14 +726,14 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
-    "no_update_timestamp",
     "chainlink_interface",
     "fixed_schedule",
+    "no_update_timestamp",
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
@@ -2982,8 +2982,8 @@
    "chain": "ethereum",
    "address": "0xd8063123bba3b480569244ae66bfe72b6c84b00d",
    "tags": [
-    "implementation",
-    "erc4626"
+    "erc4626",
+    "implementation"
    ],
    "paths": [
     "exit"
@@ -6392,9 +6392,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
+    "venue",
     "offchain_disclosed",
-    "venue"
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6418,9 +6418,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
+    "venue",
     "offchain_disclosed",
-    "venue"
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6444,9 +6444,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
+    "venue",
     "offchain_disclosed",
-    "venue"
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6470,9 +6470,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
+    "venue",
     "offchain_disclosed",
-    "venue"
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6496,9 +6496,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
+    "venue",
     "offchain_disclosed",
-    "venue"
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6522,8 +6522,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
-    "custodian"
+    "custodian",
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -6547,8 +6547,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
-    "custodian"
+    "custodian",
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -6572,8 +6572,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
-    "custodian"
+    "custodian",
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {

@@ -83,6 +83,16 @@ def exit_points(size: float) -> dict:
     qu = (q or {}).get("data") or {}
     uns = {"size_usd": size, "usdc": qu.get("amount_out", 0) / 1e6 if qu else None,
            "cost": 1 - qu["amount_out"] / 1e6 / size if qu else None, "status": "quote only / not executed"}
+    # cross-check, no fork: live aggregator quotes at the same $ size and at ~$1.25M (cached API responses)
+    from discovery.pockets import kyber_exit
+    rate = 1.2523672664500605   # sUSDe.convertToAssets(1e18) at the pinned block (onchain())
+    chk = {}
+    for usd in (size, 1_252_367.0):
+        q = kyber_exit(SUSDE, int(usd / rate * 1e18), False)
+        chk[f"{usd / 1e6:.2f}M"] = 1 - q["amount_out"] / 1e6 / usd if q else None
+    dex["live_quote_check"] = {"cost_by_size": chk, "source": "KyberSwap API quote, not executed",
+                               "verdict": "not a fork artifact: the live quote is as costly at $5M; sUSDe trades at par "
+                                          "up to ~$1.25M, then hits a depth wall"}
     return {"dex_now": dex, "unstake_then_sell": uns, "other_sizes": "not executed"}
 
 

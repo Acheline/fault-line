@@ -20,7 +20,7 @@
   "source": "https://ethena.fi/api"
  },
  "cex": {
-  "venue_years": 47.94168943742447,
+  "venue_years": 47.941714520778184,
   "incidents": [
    {
     "name": "Bybit",
@@ -41,7 +41,7 @@
     "share": 0.03893866126407792
    }
   ],
-  "annual_rate": 0.07300535381775289,
+  "annual_rate": 0.0730053156209731,
   "note": "loss share = amount / the venue's CURRENT TVL (DefiLlama): proxy for its assets at the time"
  },
  "onchain": {
@@ -57,7 +57,15 @@
    "size_usd": 5000000.0,
    "usdc": 4350401.121006,
    "cost": 0.12991977579879999,
-   "status": "executed on the fork (pocket P3, block 26162857)"
+   "status": "executed on the fork (pocket P3, block 26162857)",
+   "live_quote_check": {
+    "cost_by_size": {
+     "5.00M": 0.15779906482420003,
+     "1.25M": 0.0009675878971578955
+    },
+    "source": "KyberSwap API quote, not executed",
+    "verdict": "not a fork artifact: the live quote is as costly at $5M; sUSDe trades at par up to ~$1.25M, then hits a depth wall"
+   }
   },
   "unstake_then_sell": {
    "size_usd": 5000000,
@@ -68,5 +76,5 @@
   "other_sizes": "not executed"
  },
  "label": "modelled, not executed on fork",
- "generated_at": 1791660270
+ "generated_at": 1791660471
 }

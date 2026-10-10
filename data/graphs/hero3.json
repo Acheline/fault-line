@@ -153,9 +153,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "venue",
+    "cex",
     "perp",
-    "cex"
+    "venue"
    ],
    "paths": [],
    "props": {

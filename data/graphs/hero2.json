@@ -31,9 +31,9 @@
    "chain": "ethereum",
    "address": "0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
    "tags": [
-    "critical",
+    "morpho_vault_v2",
     "belem_rockawayx",
-    "morpho_vault_v2"
+    "critical"
    ],
    "paths": [
     "exit",
@@ -354,8 +354,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -405,8 +405,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -479,8 +479,8 @@
    ],
    "paths": [
     "exit",
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "AdaptiveCurveIrm",
@@ -594,8 +594,8 @@
    ],
    "paths": [
     "exit",
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
@@ -735,8 +735,8 @@
    ],
    "paths": [
     "exit",
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "Morpho",
@@ -856,8 +856,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0x1e9d614631a7df0ec07fb05b2c8cb2491575fd1a63a33bf187a6afb295a4fc64",
@@ -935,8 +935,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x6561272e3ebc9f2e07cdb12b7c474db9132b977a",
@@ -1010,8 +1010,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -1084,8 +1084,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0x975c6e8b71073a82216ae464bc44f67d71988450d2542d635d88bc78fca344b1",
@@ -1170,8 +1170,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "StakedToken",
@@ -1245,8 +1245,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -1319,8 +1319,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
@@ -1353,8 +1353,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "ReceiptToken",
@@ -1420,8 +1420,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x881fe0e5e91c54fabbf0198a1bb2fc6e5747d4c5",
@@ -1463,8 +1463,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -1537,8 +1537,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d",
@@ -1618,8 +1618,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -1669,8 +1669,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -1744,8 +1744,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0xf062a110320da27e0e7e7d9e1bdf458dd51e2d2089e55f63ff9fd54f415ce35d",
@@ -1779,8 +1779,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x31c200555aa3a261fd0f47c9cfcef18b1a0e6491",
@@ -1822,8 +1822,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -1896,8 +1896,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0xff836cc9796e2889ebf73b26c2de2de74b35f985bb83e9d79380deb4229e365b",
@@ -1931,8 +1931,8 @@
    ],
    "paths": [
     "exit",
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "FiatTokenV2_2",
@@ -2047,8 +2047,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "OjoPTFeed",
@@ -2113,8 +2113,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "OjoPTFeed",
@@ -2154,8 +2154,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleChainlinkOracle",
@@ -2230,8 +2230,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleMarketV7",
@@ -2317,8 +2317,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0xba923d186156e48baab7e3c749e10f06e0b25067",
@@ -2370,8 +2370,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleREUSDSY",
@@ -2421,8 +2421,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "ExchangeRateOracle",
@@ -2481,8 +2481,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "SharePriceCalculator",
@@ -2529,8 +2529,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleYieldToken",
@@ -2604,8 +2604,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "OracleLib",
@@ -2645,8 +2645,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "ChainlinkCurrentTimestampAdapter",
@@ -2705,13 +2705,13 @@
    "chain": "ethereum",
    "address": "0x8e42d93eac7dfef8d061dd18a2acfc839e724309",
    "tags": [
-    "critical",
     "chainlink_interface",
-    "no_update_timestamp"
+    "no_update_timestamp",
+    "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PTDiscountOracle",
@@ -2770,13 +2770,13 @@
    "chain": "ethereum",
    "address": "0x7fda577c085330e69df3179a2a5867751a9d0caa",
    "tags": [
-    "proxy",
     "chainlink_interface",
+    "proxy",
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x186365fdd6f6c323365ab306040f840632977a96",
@@ -2844,12 +2844,12 @@
    "chain": "ethereum",
    "address": "0x186365fdd6f6c323365ab306040f840632977a96",
    "tags": [
-    "implementation",
-    "chainlink_interface"
+    "chainlink_interface",
+    "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EthereumPriceFeedStrusdFundamentalWithoutRoundsV1",
@@ -2900,8 +2900,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x0c6c73865429e1d87b7b817b95bb1f38f2136529",
@@ -2981,8 +2981,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EthereumMultiFeedAdapterWithoutRoundsV3",
@@ -3062,8 +3062,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EACAggregatorProxy",
@@ -3188,8 +3188,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "AccessControlledOCR2Aggregator",
@@ -3313,8 +3313,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EpochLib",
@@ -3387,8 +3387,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "ChainlinkRTOracle",
@@ -3452,8 +3452,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "Accounting",
@@ -3500,8 +3500,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "FixedPriceOracle",
@@ -3555,8 +3555,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "DummyFeed",
@@ -3622,8 +3622,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EACAggregatorProxy",
@@ -3700,8 +3700,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "AccessControlledOCR2Aggregator",
@@ -3765,14 +3765,14 @@
    "chain": "ethereum",
    "address": "0xcb8c6585bd593a4b7d91bfcc85ff1dcfa04a640b",
    "tags": [
-    "no_update_timestamp",
     "chainlink_interface",
     "fixed_schedule",
+    "no_update_timestamp",
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
@@ -3834,13 +3834,13 @@
    "chain": "ethereum",
    "address": "0x33c6f75916db4267e52209a8e6b270b22d983b53",
    "tags": [
-    "proxy",
     "chainlink_interface",
+    "proxy",
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x7219bebd4929dc52961ffe8bd41a6be22b6060d6",
@@ -3908,12 +3908,12 @@
    "chain": "ethereum",
    "address": "0x7219bebd4929dc52961ffe8bd41a6be22b6060d6",
    "tags": [
-    "implementation",
-    "chainlink_interface"
+    "chainlink_interface",
+    "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EthereumPriceFeedTrusdFundamentalWithoutRoundsV1",
@@ -3960,13 +3960,13 @@
    "chain": "ethereum",
    "address": "0x835cfff06a60a16fd1880c3b0befac9968abd659",
    "tags": [
-    "proxy",
     "chainlink_interface",
+    "proxy",
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "implementation": "0xb5ba31358ea1282b4f0fc0f5c11f126e52747f82",
@@ -4034,12 +4034,12 @@
    "chain": "ethereum",
    "address": "0xb5ba31358ea1282b4f0fc0f5c11f126e52747f82",
    "tags": [
-    "implementation",
-    "chainlink_interface"
+    "chainlink_interface",
+    "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "EthereumPriceFeedEtrusdFundamentalusdWithoutRoundsV1",
@@ -4555,8 +4555,8 @@
    "chain": "ethereum",
    "address": "0x06e0b9155a3cf07f41ac826ccfee7ef8413a9723",
    "tags": [
-    "implementation",
-    "erc4626"
+    "erc4626",
+    "implementation"
    ],
    "paths": [],
    "props": {
@@ -5587,8 +5587,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "cex"
    ],
    "paths": [],
    "props": {},
@@ -14482,11 +14482,11 @@
       "Pendle Chainlink-compatible Oracle"
      ],
      "kinds": {
-      "ChainlinkCurrentTimestampAdapter": "unknown",
-      "PTDiscountOracle": "unknown",
+      "Pendle Chainlink-compatible Oracle": "market_derived",
       "ExchangeRateOracle": "exchange_rate",
       "Ojo PT Feed Pendle Chainlink-compatible Oracle": "market_derived",
-      "Pendle Chainlink-compatible Oracle": "market_derived"
+      "ChainlinkCurrentTimestampAdapter": "unknown",
+      "PTDiscountOracle": "unknown"
      },
      "n_market_derived": 2,
      "price_basis": "market",
@@ -14636,9 +14636,9 @@
    ],
    "governance_depth": 2,
    "governance_chain": [
-    "RedStone Price Feed for etrUSD_FUNDAMENTAL/USD (EthereumPriceFeedEtrusdFundamentalusdWithoutRoundsV1) [ORACLE]",
+    "SY-strUSD [ASSET]",
     "ProxyAdmin [GOVERNANCE]",
-    "Safe 2/3 0x6906f3 [GOVERNANCE]"
+    "Safe 3/5 0x8119ec [GOVERNANCE]"
    ],
    "economic_layers": {
     "0": {

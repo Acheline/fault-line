@@ -136,6 +136,8 @@ if choice.stem == "hero3" and (ROOT / "data" / "shocks" / "hero3.json").exists()
                f"unstake {h3['onchain']['cooldown_s'] / 3600:.0f} h then sell "
                + (f"{ex['unstake_then_sell']['cost']:.2%}" if ex['unstake_then_sell']['cost'] is not None else "n/a")
                + f" ({ex['unstake_then_sell']['status']}); other sizes: {ex['other_sizes']}. "
+               + (f"Live quote check (no fork): {', '.join(f'{k} {v:.1%}' for k, v in ex['dex_now']['live_quote_check']['cost_by_size'].items() if v is not None)}: "
+                  f"{ex['dex_now']['live_quote_check']['verdict']}. " if ex['dex_now'].get('live_quote_check') else "")
                f"On-chain reads at block {h3['onchain']['block']}: sUSDe.asset() = USDe, owner {h3['onchain']['owner']}.")
     st.divider()
 
