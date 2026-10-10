@@ -16,7 +16,7 @@ from pathlib import Path
 from pyvis.network import Network
 
 from core.fork import ROOT
-from core.schemas import DependencyGraph, NodeType
+from core.schemas import DependencyGraph, Edge, Node, NodeType
 from discovery.report import BEYOND, BRIEF_LAYERS
 
 LAYER_COLORS = {
@@ -97,25 +97,41 @@ def _edge_title(e, g: DependencyGraph) -> str:
             + f"<b>provenance</b>{_prov_html(e.provenance)}</div>")
 
 
-def _legend(g: DependencyGraph) -> str:
+def _legend(g: DependencyGraph, compact: bool = False) -> str:
     counts: dict[str, int] = {}
     for n in g.nodes.values():
         lay = n.props.get("brief_layer")
         if lay:
             counts[lay] = counts.get(lay, 0) + 1
-    def row(layer, color):
+    def row(layer, color, label=None):
         return (f"<div class='lg-row' data-layer='{html.escape(layer)}' title='click to show/hide'>"
-                f"<span class='sw' style='background:{color}'></span>{html.escape(layer)} "
+                f"<span class='sw' style='background:{color}'></span>{html.escape(label or layer)} "
                 f"<span class='ct'>{counts.get(layer, 0)}</span></div>")
     brief = "".join(row(l, LAYER_COLORS[l]) for l in BRIEF_LAYERS)
     beyond = "".join(row(l, LAYER_COLORS[l]) for l in BEYOND.values())
+    if compact:     # collapsed demo view: layers present only, small box so the graph stays visible
+        brief = "".join(row(l, LAYER_COLORS[l]) for l in BRIEF_LAYERS if counts.get(l))
+        beyond = "".join(row(l, LAYER_COLORS[l], l.split(":")[0]) for l in BEYOND.values() if counts.get(l))
+        return f"""
+<div id="fl-legend"><span class="lg-t">Brief's 5 layers:</span>{brief}<span class="lg-t">Beyond the brief:</span>{beyond}
+  <span class="lg-row-static"><span class="sw" style="background:#fff;border:3px solid #c92a2a"></span>hardcoded /
+  issuer-reported price</span> <span class="lg-foot">· click a layer to hide it · hover a node for provenance</span></div>
+<style>
+#fl-legend{{position:fixed;bottom:0;left:0;right:0;z-index:10;background:rgba(255,255,255,.94);border-top:1px solid #e9ecef;
+  padding:4px 8px;font:12px/1.6 system-ui,sans-serif;color:#212529}}
+#fl-legend .lg-t{{font-weight:600;color:#495057;margin-right:4px}}
+#fl-legend .lg-row, #fl-legend .lg-row-static{{display:inline-block;margin-right:10px}}
+#fl-legend .lg-row{{cursor:pointer;user-select:none}} #fl-legend .lg-row.off{{opacity:.35;text-decoration:line-through}}
+#fl-legend .ct{{color:#868e96}} #fl-legend .lg-foot{{color:#868e96;font-size:11px}}
+#fl-legend .sw{{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:4px;vertical-align:-1px}}
+</style>"""
     edges = "".join(f"<div><span class='ln' style='background:{c}'></span>{t}</div>"
                     for t, c in EDGE_COLORS.items() if any(e.type.value == t for e in g.edges.values()))
     d = g.meta.get("depth", {})
     return f"""
 <div id="fl-legend">
   <div class="lg-h">Fault Line · {html.escape(g.position_id)} · block {g.fork_block}</div>
-  <div class="lg-sub">{len(g.nodes)} nodes · {len(g.edges)} edges · asset stack {len(d.get('asset_stack', [])) - 1} layers</div>
+  <div class="lg-sub">{len(g.nodes)} nodes · {len(g.edges)} edges{f" · asset stack {len(d['asset_stack']) - 1} layers" if d.get('asset_stack') else ""}</div>
   <div class="lg-t">Brief's 5 layers</div>{brief}
   <div class="lg-t">Found beyond the brief</div>{beyond}
   <div class="lg-row-static"><span class="sw" style="background:{POSITION_COLOR}"></span>position</div>
@@ -163,7 +179,7 @@ _JS = """
 """
 
 
-def build_html(g: DependencyGraph, height: str = "900px") -> str:
+def build_html(g: DependencyGraph, height: str = "900px", compact: bool = False) -> str:
     net = Network(height=height, width="100%", directed=True, cdn_resources="in_line", bgcolor="#ffffff")
     for n in g.nodes.values():
         layer = n.props.get("brief_layer", "")
@@ -171,11 +187,12 @@ def build_html(g: DependencyGraph, height: str = "900px") -> str:
         color = POSITION_COLOR if is_pos else LAYER_COLORS.get(layer, "#dee2e6")
         flagged = bool(n.tags & FLAG_TAGS)
         net.add_node(n.id, label=n.label[:34], title=_node_title(n), layer=layer, shape="dot",
-                     size=40 if is_pos else 8 + 4 * len(n.paths),
+                     size=(22 if compact else 40) if is_pos else 8 + 4 * len(n.paths),
                      color={"background": color, "border": "#c92a2a" if flagged else color,
                             "highlight": {"background": color, "border": "#000"}},
                      borderWidth=5 if flagged else 1,
-                     font={"size": 16 if is_pos or n.paths else 11, "face": "system-ui"})
+                     font={"size": (15 if compact else 16) if is_pos or n.paths else (13 if compact else 11),
+                           "face": "system-ui"})
     for k, e in g.edges.items():
         disclosed = all(p.source == "disclosure" for p in e.provenance) and e.provenance
         net.add_edge(e.src, e.dst, id=k, title=_edge_title(e, g), label=e.type.value,
@@ -197,12 +214,94 @@ def build_html(g: DependencyGraph, height: str = "900px") -> str:
     marker = "network = new vis.Network(container, data, options);"
     assert marker in out, "pyvis template changed: cannot inject tooltip/legend script"
     out = out.replace(marker, marker + _JS, 1)
-    out = out.replace("<body>", "<body>" + _legend(g), 1)
+    out = out.replace("<body>", "<body>" + _legend(g, compact), 1)
     return out.replace("<head>", "<head><title>Fault Line · dependency graph</title>", 1)
 
 
 def load_graph(path: Path) -> DependencyGraph:
     return DependencyGraph.model_validate_json(path.read_text())
+
+
+# ------------------------------------------------------------------------------------------- collapsed view
+TYPE_LAYER = {NodeType.CHAIN: BRIEF_LAYERS[0], NodeType.ISSUER: BRIEF_LAYERS[1], NodeType.ASSET: BRIEF_LAYERS[1],
+              NodeType.VAULT: BRIEF_LAYERS[1], NodeType.ORACLE: BRIEF_LAYERS[2],
+              NodeType.LIQUIDITY_VENUE: BRIEF_LAYERS[3], NodeType.LENDING_MARKET: BRIEF_LAYERS[4],
+              NodeType.GOVERNANCE: BEYOND["gov"], NodeType.CONTRACT: BEYOND["code"], NodeType.OFFCHAIN: BEYOND["offchain"]}
+# yield-source entities: issuer + its off-chain backing + its helper contracts become one node
+ENTITIES = (("Ethena (issuer + backing)", ("ethena", "usde")), ("Circle (USDC issuer + reserves)", ("circle", "usdc")))
+EDGE_PRIORITY = ["prices", "liquidation_route", "exit_route", "allocates_to", "uses_collateral", "lends", "wraps",
+                 "issued_by", "backs", "holds", "governs", "delegates_to", "references"]
+
+
+def _group(n) -> tuple[str, str, str]:
+    """(group id, group label, layer) for one node of the full graph."""
+    layer = n.props.get("brief_layer") or TYPE_LAYER.get(n.type, "")
+    if n.type in (NodeType.POSITION, NodeType.CHAIN):
+        return n.id, n.label, layer
+    if layer in (BEYOND["gov"], BEYOND["code"]):
+        return "group:governance", "Proxy admins, multisigs, timelocks & code", BEYOND["gov"]
+    if layer == BEYOND["exit"]:
+        return "group:exit", "Exit route: DEX pools & routers", layer
+    if layer == BEYOND["offchain"] and n.props.get("brief_layer"):   # disclosed CEXs / custodians behind a hedge
+        return "group:venues", "CEXs & custodians (off-chain)", layer
+    if n.type == NodeType.ORACLE:          # proxy + aggregator of one feed, or two copies of one wrapper = one oracle
+        name = re.sub(r"\s*\([^)]*\)\s*$", "", n.label)
+        return f"oracle:{name}", name, layer
+    if layer == BRIEF_LAYERS[3] and not (n.type == NodeType.ASSET and not n.label.startswith("YT-")):
+        return "group:amm", "Pendle AMM (market, router, YT)", layer
+    if layer == BRIEF_LAYERS[4] and n.type != NodeType.ASSET:
+        return "group:lending", "Morpho market", layer
+    if layer == BRIEF_LAYERS[1] and n.type in (NodeType.ISSUER, NodeType.OFFCHAIN, NodeType.CONTRACT):
+        low = n.label.lower()
+        for name, keys in ENTITIES:
+            if any(k in low for k in keys):
+                return f"entity:{name}", name, layer
+        return "group:other_issuers", "Other issuers & backing", layer
+    return n.id, n.label, layer
+
+
+def collapse(g: DependencyGraph) -> DependencyGraph:
+    """One node per protocol / asset / oracle / venue (~10-20 nodes) for the demo view. Every node of the full graph
+    lands in exactly one group; flags (hardcoded / issuer-reported price) and critical paths are kept on the group."""
+    gid, members = {}, {}
+    for n in g.nodes.values():
+        k, label, layer = _group(n)
+        gid[n.id] = k
+        members.setdefault(k, (label, layer, []))[2].append(n)
+    out = DependencyGraph(position_id=g.position_id, fork_block=g.fork_block, meta={"depth": g.meta.get("depth", {})})
+    for k, (label, layer, ns) in members.items():
+        lending = next((x for x in ns if x.type == NodeType.LENDING_MARKET), None)
+        if k == "group:lending" and lending:
+            label = lending.label
+        if len(ns) == 1:
+            label = ns[0].label
+        rep = ns[0] if len(ns) == 1 else max(ns, key=lambda x: (len(x.paths), x.type != NodeType.CONTRACT))
+        out.add_node(Node(
+            id=k, type=rep.type, label=label + (f" · {len(ns)}" if len(ns) > 1 else ""), chain=rep.chain,
+            address=rep.address if len(ns) == 1 else None,
+            tags=set().union(*(x.tags for x in ns)) & FLAG_TAGS,
+            paths=set().union(*(x.paths for x in ns)),
+            props={"brief_layer": layer, "description": ", ".join(sorted(x.label for x in ns)[:12])
+                   + (f" … +{len(ns) - 12}" if len(ns) > 12 else "")} if len(ns) > 1
+            else {**rep.props, "brief_layer": layer},
+            provenance=[p for x in ns for p in x.provenance][:6]))
+    best: dict[tuple[str, str], Edge] = {}
+    for e in g.edges.values():
+        s, d = gid[e.src], gid[e.dst]
+        if s == d:
+            continue
+        cur = best.get((s, d))
+        rank = EDGE_PRIORITY.index(e.type.value) if e.type.value in EDGE_PRIORITY else len(EDGE_PRIORITY)
+        if cur is None or rank < EDGE_PRIORITY.index(cur.type.value):
+            prov = (cur.provenance if cur else []) + e.provenance
+            best[(s, d)] = Edge(src=s, dst=d, type=e.type, path=e.path or (cur.path if cur else None),
+                                props={"functions": e.props.get("functions", [])}, provenance=prov[:6])
+        else:
+            cur.provenance = (cur.provenance + e.provenance)[:6]
+            cur.path = cur.path or e.path
+    for e in best.values():
+        out.add_edge(e)
+    return out
 
 
 def export(src: Path = ROOT / "data" / "graphs" / "hero1.json",

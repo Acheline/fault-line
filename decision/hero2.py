@@ -50,12 +50,12 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
              rate_scale: float = 1.0, severity_scale: float = 1.0, refill_scale: float = 1.0,
              vault_claim_share: float | None = None, book_usd: float | None = None, with_tornado: bool = True,
              incident: float | None = None, incident_driver: str = "trusd", book_budget: bool = True,
-             driver_rate_scale: dict | None = None) -> dict:
+             driver_rate_scale: dict | None = None, overrides: dict | None = None) -> dict:
     """incident: an OBSERVED trUSD depeg of this depth (e.g. 0.05). Then the trUSD event is certain (final depth drawn
     from episodes at least that deep), the other depositors run (your rank matters) and, because the oracles stay at
     par, the silent loss concentrates on the holders who did not get out. incident=None: calm day, nobody running."""
     s = static()
-    c = cfg()
+    c = cfg(overrides)            # overrides: Assumptions-page slider values
     meta, D, sc = s["meta"], s["D"], s["sc"]
     lam = c["risk"]["lambda"] if lam is None else lam
     book_usd = book_usd or c["mandate"]["mandate_usd"]          # main bps figure: the $50M assumed mandate
@@ -172,7 +172,8 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
         def f(name, v):
             kw = dict(size_usd=size, rank=rank, lam=lam, horizon_days=horizon_days, rho=rho, governance=governance,
                       rate_scale=rate_scale, severity_scale=severity_scale, refill_scale=refill_scale,
-                      vault_claim_share=vault_claim_share, book_usd=book_usd, with_tornado=False, incident=incident)
+                      vault_claim_share=vault_claim_share, book_usd=book_usd, with_tornado=False, incident=incident,
+                      overrides=overrides)
             kw[name] = v
             return headline(**kw)["net_value_exit_now_usd"]
         out["tornado"] = tornado(base, f, {
@@ -256,7 +257,7 @@ def max_stay_size(lam: float, sizes=None, **kw) -> dict:
             "n_stay": len(stay), "grid": f"${sizes[0] / 1e6:.1f}M..${sizes[-1] / 1e6:.0f}M step $0.1M"}
 
 
-def early_warning(lam: float, rank: int = 6, driver: str = "trusd", depths=None) -> dict:
+def early_warning(lam: float, rank: int = 6, driver: str = "trusd", depths=None, overrides: dict | None = None) -> dict:
     """Watch-mode trigger: the shallowest observed move at which any depositor AHEAD of you (real top holders) has a
     positive net value of exiting with this decision rule: they run, and after that you cannot exit fully."""
     s = static()
@@ -264,7 +265,8 @@ def early_warning(lam: float, rank: int = 6, driver: str = "trusd", depths=None)
     depths = depths or [x / 400 for x in range(1, 201)]          # 0.25% steps to 50%
     out = []
     for d in deps:
-        kw = dict(size_usd=d["assets_usd"], rank=1, lam=lam, with_tornado=False, book_budget=False)  # their book: unknown
+        kw = dict(size_usd=d["assets_usd"], rank=1, lam=lam, with_tornado=False, book_budget=False,  # their book: unknown
+                  overrides=overrides)
         trig = next((x for x in depths if headline(incident=x, incident_driver=driver, **kw)["action"] != "STAY"), None)
         calm = headline(**kw)["action"]
         out.append({"address": d["address"], "size_usd": d["assets_usd"], "calm_action": calm, "trigger_depth": trig})
@@ -274,7 +276,7 @@ def early_warning(lam: float, rank: int = 6, driver: str = "trusd", depths=None)
             "act_before_depth": min(trig) if trig else None}
 
 
-def class_ranges(lams=(0.0, 0.5)) -> list[dict]:
+def class_ranges(lams=(0.0, 0.5), overrides: dict | None = None) -> list[dict]:
     """Low / high for each base-rate class (exact Poisson 90% interval on the event count / exposure) and whether the
     calm-day decision changes when that class's drivers move to either end."""
     from scipy.stats import chi2
@@ -300,7 +302,7 @@ def class_ranges(lams=(0.0, 0.5)) -> list[dict]:
     lo, hi = ci(nav["episodes"], T)
     rows.append({"class": "NAV-accruing (reUSD)", "event": "NAV markdown > 1%", "events": nav["episodes"],
                  "exposure_years": T, "rate": nav["episodes"] / T, "low": lo, "high": hi, "drivers": ("reusd",)})
-    base = {l: headline(lam=l, with_tornado=False)["action"] for l in lams}
+    base = {l: headline(lam=l, with_tornado=False, overrides=overrides)["action"] for l in lams}
     for row in rows:
         if not row["drivers"]:
             row["decision"] = "not used by this vault"
@@ -309,7 +311,8 @@ def class_ranges(lams=(0.0, 0.5)) -> list[dict]:
         for end in ("low", "high"):
             k = row[end] / row["rate"] if row["rate"] else (0.0 if end == "low" else 1.0)
             # the driver's frequency counts all episodes; scale it by how far this end is from the central estimate
-            out[end] = {l: headline(lam=l, with_tornado=False, driver_rate_scale={d: k for d in row["drivers"]})["action"]
+            out[end] = {l: headline(lam=l, with_tornado=False, driver_rate_scale={d: k for d in row["drivers"]},
+                                    overrides=overrides)["action"]
                         for l in lams}
         changed = [f"λ={l}: {base[l]} → {out[e][l]} at the {e} end" for e in ("low", "high") for l in lams
                    if out[e][l] != base[l]]

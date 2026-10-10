@@ -39,11 +39,12 @@ def exit_cost_fraction(curve: list[dict], usd: float) -> float:
 
 def headline(scale: float = 1.0, lam: float | None = None, horizon_days: float = 30, rho: float = 0.3,
              incident: float | None = None, rate_scale: float = 1.0, severity_scale: float = 1.0,
-             with_tornado: bool = True) -> dict:
-    """scale: position size as a multiple of the assumed book (P1 + P2). incident: an OBSERVED USDe depeg depth."""
+             with_tornado: bool = True, overrides: dict | None = None) -> dict:
+    """scale: position size as a multiple of the assumed book (P1 + P2). incident: an OBSERVED USDe depeg depth.
+    overrides: Assumptions-page slider values, e.g. {"mandate.mandate_usd": 8e7}."""
     s = static()
     d, D, sc = s["data"], s["D"], s["sc"]
-    c = cfg()
+    c = cfg(overrides)
     lam = c["risk"]["lambda"] if lam is None else lam
     book = c["mandate"]["mandate_usd"]
     sz = d["sizes"]
@@ -119,7 +120,7 @@ def headline(scale: float = 1.0, lam: float | None = None, horizon_days: float =
 
         def f(name, v):
             kw = dict(scale=scale, lam=lam, horizon_days=horizon_days, rho=rho, incident=incident, rate_scale=rate_scale,
-                      severity_scale=severity_scale, with_tornado=False)
+                      severity_scale=severity_scale, with_tornado=False, overrides=overrides)
             kw[name] = v
             return headline(**kw)["net_value_exit_now_usd"]
         out["tornado"] = tornado(base, f, {

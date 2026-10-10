@@ -1,62 +1,87 @@
-"""Portfolio X-ray: shared ancestors across pockets, found from their own graphs."""
+"""Book X-ray: shared issuers across the Belem / RockawayX vaults, and the assumed 10-pocket book in an expander."""
 import json
 
-import pandas as pd
+import plotly.graph_objects as go
 import streamlit as st
 
+from app import ui
 from core.book import load_book
 from core.fork import ROOT
 
-st.title("🩻 Portfolio X-ray")
-
-BX = ROOT / "data" / "book_xray.json"
-if BX.exists():
-    bx = json.loads(BX.read_text())
-    st.subheader(f"Belem / RockawayX vaults: {bx['headline']}")
-    cv = bx["coverage"]
-    st.caption(f"TVL coverage: {cv['n_resolved']} Morpho vaults resolved on-chain / Morpho API = "
-               f"${cv['resolved_usd'] / 1e6:.1f}M ({cv['resolved_share']:.1%} of ${bx['book_usd'] / 1e6:.2f}M); "
-               f"${cv['unresolved_usd'] / 1e6:.1f}M (Kamino, Upshift, Ember, Feather, Oku, Accountable, Midas, Lista) "
-               "from the CSV only, labelled not resolved. Unresolved vaults with no stated issuer count as separate bets.")
-    st.dataframe(pd.DataFrame([{"issuer / collateral": r["issuer"], "$": r["usd"], "% of book": r["share"],
-                                "vaults": r["n_vaults"], "via": ", ".join(r["how"]), "tokens": ", ".join(r["tokens"]),
-                                "vault names": ", ".join(r["vaults"])}
-                               for r in bx["groups"] if r["n_vaults"] >= 2 or r["issuer"] in ("Tori Finance", "Huma", "OnRe", "Re Protocol")]),
-                 hide_index=True, width="stretch",
-                 column_config={"$": st.column_config.NumberColumn(format="dollar"),
-                                "% of book": st.column_config.NumberColumn(format="percent")})
-    st.divider()
-path = ROOT / "data" / "xray.json"
-if not path.exists():
-    st.warning("Run `python -m discovery.xray` first.")
+BX, PX = ROOT / "data" / "book_xray.json", ROOT / "data" / "xray.json"
+ui.setup("🩻 Book X-ray", "Vaults that look different by name, grouped by the issuer their collateral really "
+         "depends on.")
+if not BX.exists():
+    st.warning("Run `python -m discovery.book_xray` first.")
     st.stop()
-x = json.loads(path.read_text())
-book = load_book(ROOT / "books" / "belem_assumed_book.yaml")
-st.caption(f"{book.name} · {book.owner} · source: {book.source}")
-st.subheader(x["headline"])
-c = st.columns(3)
-c[0].metric("Pockets", x["n_pockets"])
-c[1].metric("Bets", x["n_bets"])
-c[2].metric("Effective independent bets", f"{x['effective_independent_bets']:.1f}")
-st.caption(x["method"])
+bx = json.loads(BX.read_text())
+groups = sorted(bx["groups"], key=lambda g: -g["usd"])
+top, cv = groups[0], bx["coverage"]
+st.markdown(f"<div style='font-size:28px;font-weight:700;margin:4px 0'>{bx['n_vaults']} vaults, "
+            f"{bx['effective_bets']:.1f} independent bets; at least {ui.pct(top['share'])} depends on "
+            f"{top['issuer']}</div>", unsafe_allow_html=True)
+st.markdown(f"<div style='font-size:15px;color:#495057'>Coverage: {ui.pct(cv['resolved_share'])} of "
+            f"{ui.usd(bx['book_usd'])} resolved on-chain / Morpho API ({cv['n_resolved']} Morpho vaults); the rest "
+            "from the vault list (books/belem_vaults.csv). An unresolved vault with no stated issuer counts as its own "
+            "bet, so the true concentration can only be higher.</div>", unsafe_allow_html=True)
 
-st.markdown("**Bets** (pockets that fail together)")
-st.dataframe(pd.DataFrame([{"weight": f"{b['weight']:.1%}", "pockets": ", ".join(b["pockets"]),
-                            "shared via": ", ".join(b["shared_ancestors"][:4])} for b in x["bets"]]),
-             hide_index=True, width="stretch")
+multi = [g for g in groups if g["n_vaults"] >= 2]
+ui.findings([f"<b>{g['issuer']}</b>: {ui.pct(g['share'])} of the book ({ui.usd(g['usd'])}) across {g['n_vaults']} vaults: "
+             f"{', '.join(g['vaults'])}." for g in multi[:3]])
 
-st.markdown("**Shared ancestors** (non-numeraire first)")
-rows = [{"book share": round(s["book_share"], 4), "type": s["type"], "node": s["label"],
-         "pockets": ", ".join(s["pockets"]), "numeraire": s["numeraire"]} for s in x["shared_ancestors"]]
-df = pd.DataFrame(rows).sort_values(["numeraire", "book share"], ascending=[True, False])
-st.dataframe(df, hide_index=True, width="stretch")
+show = groups[:14]
+fig = go.Figure()
+buckets = [(1, "1 vault"), (2, "2 vaults"), (3, "3 vaults"), (4, "4+ vaults")]
+for (n, name), color in zip(buckets, ui.BLUES):
+    sel = [g for g in show if min(g["n_vaults"], 4) == n]
+    if not sel:
+        continue
+    fig.add_bar(y=[g["issuer"] for g in sel], x=[g["usd"] for g in sel], orientation="h", name=name, marker_color=color,
+                marker_line={"color": "#1864ab", "width": 1}, text=[f"{ui.usd(g['usd'])} · {ui.pct(g['share'])}"
+                                                                     for g in sel],
+                textposition="outside", cliponaxis=False,
+                customdata=[", ".join(g["vaults"]) for g in sel], hovertemplate="%{y}<br>%{customdata}<extra></extra>")
+fig.update_yaxes(categoryorder="array", categoryarray=[g["issuer"] for g in show][::-1])
+fig.update_xaxes(visible=False, range=[0, top["usd"] * 1.45])
+tori = next((g for g in show if g["issuer"].startswith("Tori")), None)
+if tori:
+    fig.add_annotation(y=tori["issuer"], x=tori["usd"] * 1.68, text=f"<b>{tori['n_vaults']} Belem vaults, one issuer</b>",
+                       showarrow=False, xanchor="left", font={"size": 14, "color": ui.INK})
+ui.chart(ui.clean(fig, f"{top['issuer']} sits behind {top['n_vaults']} vaults: the book is fewer bets than it looks",
+                  520, showlegend=True, legend_title_text="shared by", barmode="overlay"))
 
-sel = st.selectbox("How does each pocket reach…", [s for s in x["shared_ancestors"] if not s["numeraire"]],
-                   format_func=lambda s: f"{s['label']} ({', '.join(s['pockets'])})")
-if sel:
-    for p, hops in sel["how"].items():
-        st.markdown(f"**{p}**: " + " → ".join(f"`{h['edge']}` {h['to']} *({'/'.join(h['sources'])})*" for h in hops))
+with st.expander("Show details: every issuer group"):
+    ui.table([{"issuer / collateral": g["issuer"], "$": g["usd"], "% of book": g["share"], "vaults": g["n_vaults"],
+               "via": ", ".join(g["how"]), "tokens": ", ".join(g["tokens"]), "vault names": ", ".join(g["vaults"])}
+              for g in groups], money=("$",), pcts=("% of book",))
 
-st.markdown("**Shared exit liquidity** (pockets whose executed exits hit the same pools: they race each other)")
-st.dataframe(pd.DataFrame(x["shared_exit_liquidity"])[["label", "pockets", "book_share"]] if x["shared_exit_liquidity"]
-             else pd.DataFrame(), hide_index=True, width="stretch")
+if PX.exists():
+    with st.expander("Show details: the assumed 10-pocket book (Belem-style mandate)"):
+        x = json.loads(PX.read_text())
+        book = load_book(ROOT / "books" / "belem_assumed_book.yaml")
+        st.caption(f"{book.name} · {book.owner} · source: {book.source}")
+        st.markdown(f"**{x['headline']}**")
+        k = st.columns(3)
+        k[0].metric("Pockets", x["n_pockets"])
+        k[1].metric("Bets", x["n_bets"])
+        k[2].metric("Effective independent bets", f"{x['effective_independent_bets']:.1f}")
+        st.caption(x["method"])
+        st.markdown("**Bets** (pockets that fail together)")
+        ui.table([{"weight": b["weight"], "pockets": ", ".join(b["pockets"]),
+                   "shared via": ", ".join(b["shared_ancestors"][:4])} for b in x["bets"]], pcts=("weight",))
+        st.markdown("**Shared ancestors** (non-numeraire first)")
+        sa = sorted(x["shared_ancestors"], key=lambda s: (s["numeraire"], -s["book_share"]))
+        ui.table([{"book share": s["book_share"], "type": s["type"], "node": s["label"],
+                   "pockets": ", ".join(s["pockets"]), "numeraire": s["numeraire"]} for s in sa], pcts=("book share",))
+        sel = st.selectbox("How does each pocket reach…", [s for s in x["shared_ancestors"] if not s["numeraire"]],
+                           format_func=lambda s: f"{s['label']} ({', '.join(s['pockets'])})")
+        if sel:
+            for p, hops in sel["how"].items():
+                st.markdown(f"**{p}**: " + " → ".join(f"`{h['edge']}` {h['to']} *({'/'.join(h['sources'])})*"
+                                                      for h in hops))
+        st.markdown("**Shared exit liquidity** (pockets whose executed exits hit the same pools: they race each other)")
+        if x["shared_exit_liquidity"]:
+            ui.table([{k: s[k] for k in ("label", "pockets", "book_share")} for s in x["shared_exit_liquidity"]],
+                     pcts=("book_share",))
+        else:
+            st.write("None found.")

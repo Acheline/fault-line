@@ -8,14 +8,15 @@ if str(ROOT) not in sys.path:
 
 import streamlit as st  # noqa: E402
 
+from app.state import PAGES  # noqa: E402
+
 st.set_page_config(page_title="Fault Line", page_icon="⚡", layout="wide")
 
 nav = st.navigation([
-    st.Page(ROOT / "app" / "views" / "graph.py", title="Dependency graph", icon="🕸️", default=True),
-    st.Page(ROOT / "app" / "views" / "vault.py", title="Vault view (Belem / RockawayX)", icon="🏦"),
-    st.Page(ROOT / "app" / "views" / "xray.py", title="Portfolio X-ray", icon="🩻"),
-    st.Page(ROOT / "app" / "views" / "assumptions.py", title="Assumptions", icon="🎚️"),
-    st.Page(ROOT / "app" / "views" / "base_rates.py", title="Base rates", icon="📊"),
-    st.Page(ROOT / "app" / "views" / "about.py", title="About", icon="⚡"),
+    st.Page(PAGES["overview"], title="Overview", icon="⚡", default=True),
+    st.Page(PAGES["vault"], title="Belem vault", icon="🏦"),
+    st.Page(PAGES["deps"], title="Dependencies", icon="🕸️"),
+    st.Page(PAGES["xray"], title="Book X-ray", icon="🩻"),
+    st.Page(PAGES["assumptions"], title="Assumptions & data", icon="🎚️"),
 ])
 nav.run()

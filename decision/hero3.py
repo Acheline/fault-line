@@ -157,9 +157,10 @@ def build(d: dict):
     return D, sc
 
 
-def headline(lam: float | None = None, horizon_days: float = 30, halted: bool = False) -> dict:
+def headline(lam: float | None = None, horizon_days: float = 30, halted: bool = False,
+             overrides: dict | None = None) -> dict:
     d = json.loads(OUT.read_text())
-    c = cfg()
+    c = cfg(overrides)            # overrides: Assumptions-page slider values
     lam = c["risk"]["lambda"] if lam is None else lam
     D, sc = build(d)
     size, book = d["size_usd"], c["mandate"]["mandate_usd"]
