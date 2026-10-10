@@ -70,8 +70,8 @@ def layers_chart() -> None:
 
 def before_after(before: dict, after: dict, title: str) -> None:
     def box(lab, d, color):
-        return (f"<div style='flex:1;border:1px solid #e9ecef;border-top:6px solid {color};border-radius:8px;"
-                f"padding:10px 16px'><div class='lab' style='font-size:14px;color:#868e96'>{lab}</div>"
+        return (f"<div style='flex:1;border:1px solid var(--border);border-top:6px solid {color};border-radius:14px;background:linear-gradient(180deg,rgba(17,29,41,.98),rgba(10,20,30,.98));"
+                f"padding:10px 16px'><div class='lab' style='font-size:14px;color:var(--muted)'>{lab}</div>"
                 + "".join(f"<div style='font-size:17px;margin-top:4px'>{k}: <b>{v}</b></div>" for k, v in d.items())
                 + "</div>")
     st.markdown(f"<div style='font-size:17px;font-weight:600;margin-top:6px'>{title}</div>"

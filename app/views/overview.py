@@ -51,7 +51,7 @@ cols = st.columns(3)
 for col, (key, title, sub, page, qp, why) in zip(cols, cards):
     with col:
         st.markdown(f"<div style='font-size:20px;font-weight:700'>{title}</div>"
-                    f"<div style='font-size:15px;color:#495057'>{sub}</div>", unsafe_allow_html=True)
+                    f"<div style='font-size:15px;color:var(--muted)'>{sub}</div>", unsafe_allow_html=True)
         if key in hl:
             ui.headline_card(hl[key], why(hl[key]), small=True)
         else:

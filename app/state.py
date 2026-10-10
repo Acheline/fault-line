@@ -6,7 +6,7 @@ import streamlit as st
 VIEWS = Path(__file__).resolve().parent / "views"
 PAGES = {k: VIEWS / f"{k}.py" for k in ("overview", "vault", "deps", "xray", "assumptions")}
 
-RED_BADGE = ("<span style='background:#c92a2a;color:#fff;border-radius:4px;padding:1px 6px;"
+RED_BADGE = ("<span style='background:#ff5864;color:#fff;border-radius:999px;padding:1px 6px;"
              "font-size:12px;font-weight:600'>{}</span>")
 
 VAULT_DEFAULT_LAMBDA = 0.0      # the Belem vault page opens risk-neutral; the calm day then reads STAY (see implied λ)

@@ -20,7 +20,7 @@ top, cv = groups[0], bx["coverage"]
 st.markdown(f"<div style='font-size:28px;font-weight:700;margin:4px 0'>{bx['n_vaults']} vaults, "
             f"{bx['effective_bets']:.1f} independent bets; at least {ui.pct(top['share'])} depends on "
             f"{top['issuer']}</div>", unsafe_allow_html=True)
-st.markdown(f"<div style='font-size:15px;color:#495057'>Coverage: {ui.pct(cv['resolved_share'])} of "
+st.markdown(f"<div style='font-size:15px;color:var(--muted)'>Coverage: {ui.pct(cv['resolved_share'])} of "
             f"{ui.usd(bx['book_usd'])} resolved on-chain / Morpho API ({cv['n_resolved']} Morpho vaults); the rest "
             "from the vault list (books/belem_vaults.csv). An unresolved vault with no stated issuer counts as its own "
             "bet, so the true concentration can only be higher.</div>", unsafe_allow_html=True)
@@ -37,7 +37,7 @@ for (n, name), color in zip(buckets, ui.BLUES):
     if not sel:
         continue
     fig.add_bar(y=[g["issuer"] for g in sel], x=[g["usd"] for g in sel], orientation="h", name=name, marker_color=color,
-                marker_line={"color": "#1864ab", "width": 1}, text=[f"{ui.usd(g['usd'])} · {ui.pct(g['share'])}"
+                marker_line={"color": ui.CYAN, "width": 1}, text=[f"{ui.usd(g['usd'])} · {ui.pct(g['share'])}"
                                                                      for g in sel],
                 textposition="outside", cliponaxis=False,
                 customdata=[", ".join(g["vaults"]) for g in sel], hovertemplate="%{y}<br>%{customdata}<extra></extra>")

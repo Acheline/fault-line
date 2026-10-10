@@ -110,7 +110,7 @@ with st.expander("Every probability the Monte Carlo uses", expanded=False):
         st.success("All base rates computed from data (no placeholder priors in use).")
     df = pd.DataFrame([{"base rate": k, "value": f"{v['value']:.4f}" if isinstance(v["value"], float) else "see detail",
                         "status": v["status"], "source": v["source"]} for k, v in br["values"].items()])
-    st.dataframe(df.style.map(lambda s: "background-color:#c92a2a;color:white" if s == PLACEHOLDER else "",
+    st.dataframe(df.style.map(lambda s: "background-color:#ff5864;color:white" if s == PLACEHOLDER else "",
                               subset=["status"]), hide_index=True, width="stretch")
     for k, v in br["values"].items():
         if v["status"] == PLACEHOLDER:

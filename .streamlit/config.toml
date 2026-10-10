@@ -1,8 +1,10 @@
 [theme]
-# light theme: the headline colors and charts are tuned for a white background (laptop and projector)
-base = "light"
-# widgets in neutral blue: red is reserved for EXIT and for flagged dependencies
-primaryColor = "#1971c2"
+# dark navy theme (visual design of PR #1); colors are tokens in app/ui.py
+base = "dark"
+primaryColor = "#27d3ff"
+backgroundColor = "#071018"
+secondaryBackgroundColor = "#0c1721"
+textColor = "#f4f7fb"
 
 [client]
 toolbarMode = "minimal"
