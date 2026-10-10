@@ -182,8 +182,8 @@ _JS = """
 
 
 _DARK_CSS = """<style>
-body {background: #071018; margin: 0}
-#mynetwork {border: none !important; background: #071018 !important}
+html, body {background: transparent !important; margin: 0}
+#mynetwork {border: none !important; background: transparent !important}
 div.vis-tooltip {background: #0d1722 !important; color: #c2ccd7 !important; border: 1px solid #27d3ff !important;
                  border-radius: 10px !important; box-shadow: 0 10px 30px rgba(0,0,0,.4) !important; padding: 8px 10px !important}
 div.vis-tooltip b {color: #fff} div.vis-tooltip a {color: #5cdfff}
@@ -191,25 +191,40 @@ div.vis-network div.vis-navigation div.vis-button {filter: invert(0.85) hue-rota
 </style>"""
 
 
+def _short(label: str, n: int = 28) -> str:
+    """Graph label: drop the parenthetical, keep a group's ' · N' count, cap the length (full name in the tooltip)."""
+    name, sep, count = label.partition(" · ")
+    name = re.sub(r"\s*\([^)]*\)", "", name).strip() or name
+    name = name if len(name) <= n else name[: n - 1].rstrip() + "…"
+    return name + (sep + count if sep else "")
+
+
 def build_html(g: DependencyGraph, height: str = "900px", compact: bool = False) -> str:
-    net = Network(height=height, width="100%", directed=True, cdn_resources="in_line", bgcolor=CANVAS,
+    net = Network(height=height, width="100%", directed=True, cdn_resources="in_line", bgcolor="rgba(0,0,0,0)",
                   font_color="#f4f7fb")
+    # bigger graphs: names only on critical-path / flagged nodes, the rest on hover (graphs without path data: all
+    # named); the collapsed view auto-zooms out as it grows, so its font grows with it
+    big = len(g.nodes) > 12
+    named_only_major = big and any(n.paths for n in g.nodes.values())
+    major_font = 24 if compact else 17
     for n in g.nodes.values():
         layer = n.props.get("brief_layer", "")
         is_pos = n.type == NodeType.POSITION
         color = POSITION_COLOR if is_pos else LAYER_COLORS.get(layer, "#657789")
         flagged = bool(n.tags & FLAG_TAGS)
-        net.add_node(n.id, label=n.label[:34], title=_node_title(n), layer=layer, shape="dot",
+        major = is_pos or bool(n.paths) or flagged
+        net.add_node(n.id, label=_short(n.label) if major or not named_only_major else " ", title=_node_title(n),
+                     layer=layer, shape="dot",
                      size=(22 if compact else 40) if is_pos else 8 + 4 * len(n.paths),
                      color={"background": color, "border": FLAG_COLOR if flagged else color,
                             "highlight": {"background": color, "border": SELECT_COLOR},
                             "hover": {"background": color, "border": SELECT_COLOR}},
                      borderWidth=5 if flagged else 1,
-                     font={"size": (15 if compact else 16) if is_pos or n.paths else (13 if compact else 11),
-                           "face": "system-ui", "color": "#f4f7fb", "strokeWidth": 3, "strokeColor": CANVAS})
+                     font={"size": major_font if major else (20 if compact else 12),
+                           "face": "system-ui", "color": "#f4f7fb", "strokeWidth": 4, "strokeColor": CANVAS})
     for k, e in g.edges.items():
         disclosed = all(p.source == "disclosure" for p in e.provenance) and e.provenance
-        net.add_edge(e.src, e.dst, id=k, title=_edge_title(e, g), label=e.type.value,
+        net.add_edge(e.src, e.dst, id=k, title=_edge_title(e, g),      # type on hover; colors in the legend
                      color={"color": EDGE_COLORS.get(e.type.value, "#40566b"), "highlight": SELECT_COLOR,
                             "hover": SELECT_COLOR}, dashes=bool(disclosed),
                      width=2.5 if e.path else 1, arrows="to",
@@ -229,7 +244,11 @@ def build_html(g: DependencyGraph, height: str = "900px", compact: bool = False)
     out = re.sub(r"<center>\s*<h1></h1>\s*</center>", "", out)
     marker = "network = new vis.Network(container, data, options);"
     assert marker in out, "pyvis template changed: cannot inject tooltip/legend script"
-    out = out.replace(marker, marker + _JS, 1)
+    js = _JS
+    if compact:     # vis fits labels into the frame by zooming out; keep labels legible, drag / zoom to see the edges
+        js = js.replace("network.setOptions({physics:false});", "network.setOptions({physics:false}); "
+                        "if (network.getScale() < 0.75) { network.moveTo({scale: 0.75}); }")
+    out = out.replace(marker, marker + js, 1)
     out = out.replace("<body>", "<body>" + _legend(g, compact), 1)
     out = out.replace("</head>", _DARK_CSS + "</head>", 1)
     return out.replace("<head>", "<head><title>Fault Line · dependency graph</title>", 1)
@@ -256,7 +275,7 @@ def _group(n) -> tuple[str, str, str]:
     if n.type in (NodeType.POSITION, NodeType.CHAIN):
         return n.id, n.label, layer
     if layer in (BEYOND["gov"], BEYOND["code"]):
-        return "group:governance", "Proxy admins, multisigs, timelocks & code", BEYOND["gov"]
+        return "group:governance", "Admins, multisigs, timelocks", BEYOND["gov"]
     if layer == BEYOND["exit"]:
         return "group:exit", "Exit route: DEX pools & routers", layer
     if layer == BEYOND["offchain"] and n.props.get("brief_layer"):   # disclosed CEXs / custodians behind a hedge

@@ -2,6 +2,7 @@
 token routing capital into an external venue). Collapsed graph by default, full graph and provenance in expanders."""
 import plotly.graph_objects as go
 import streamlit as st
+import yaml
 
 from app import ui
 from app.state import overrides
@@ -104,7 +105,19 @@ if pid == "hero1":
            + f"#1 risk: {h['driver']['label'].split('(')[0].strip()} "
            f"({(h['driver']['share_of_risk_adjusted_loss'] or 0):.0%} of risk-adjusted loss) on a "
            f"{ui.usd(h['size_usd'])} position, {h['leverage']:.1f}x loop.")
-    ui.headline_card(h, why, label="Net value of exiting now" + (f" · USDe observed −{inc:.0%}" if inc else ""))
+    size_note = ""
+    book = yaml.safe_load((ROOT / "books" / "belem_assumed_book.yaml").read_text())
+    p1 = next((p for p in book["positions"] if p["id"] == "P1"), {})
+    cap = next((v["value"] for v in p1.get("verification", []) if str(v.get("check", "")).startswith("venue cap pendle")
+                and isinstance(v.get("value"), dict)), None)
+    if cap:     # why the position is this size: the 10% Pendle-pool rule, shared by P1 and the P2 loop
+        size_note = (f"<div class='sub'>Size: capped at {float(cap['cap_rule'].split('=')[-1]):.0%} of the "
+                     f"Pendle pool ({ui.usd(cap['venue_tvl_usd'])} of liquidity → {ui.usd(cap['cap_usd'])} of PT, shared "
+                     f"by the outright PT and the {h['leverage']:.1f}x loop = {ui.usd(h['size_usd'] / scale)} of equity, "
+                     f"cut from the {ui.usd(cap['from_usd'])} ticket)"
+                     + (f"; shown at {scale:g}× that size." if scale != 1 else ".") + "</div>")
+    ui.headline_card(h, why, label="Net value of exiting now" + (f" · USDe observed −{inc:.0%}" if inc else ""),
+                     extra=size_note)
 
     fd = {f["kind"]: f for f in g.meta.get("findings", [])}
     tvl = [t for t in g.meta.get("tvl_concentration", []) if t.get("flag")]
@@ -120,11 +133,11 @@ if pid == "hero1":
             f"{t['name']} {ui.pct(t['share_of_chain'])}" for t in tvl[:2]) + " of Ethereum DeFi TVL (DefiLlama).")
     ui.findings(lines)
 
+    graph_block()                       # full width: the 21-node view auto-zooms to fit, width is what makes labels legible
     a, b = st.columns([3, 2])
     with a:
-        graph_block()
-    with b:
         layers_chart()
+    with b:
         if g.meta.get("depth", {}).get("asset_stack"):
             st.markdown("**Deepest asset stack**")
             st.code("\n → ".join(g.meta["depth"]["asset_stack"]), language=None)

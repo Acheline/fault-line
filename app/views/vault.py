@@ -157,10 +157,8 @@ with t1:
     fig.update_yaxes(categoryorder="array", categoryarray=[k for k, _ in rows])
     ui.chart(ui.clean(fig, f"{ui.pct(stuck_share)} of the vault is priced by oracles that stay at par", 290,
                       showlegend=True, barmode="overlay"))
-    feeds = sorted({f for x in stuck for f in basis.get(x["collateral_symbol"], {}).get("executed_leaf_feeds", [])})
-    ui.takeaway(f"Grouped by the root asset read on-chain through each wrapper. The red markets are priced by "
-                f"{', '.join(feeds) or 'issuer-reported feeds'}: if trUSD falls, these markets see nothing and no "
-                "liquidation fires.")
+    ui.takeaway("The red markets are priced by feeds reporting the issuer's own value: if trUSD falls, they see "
+                "nothing and no liquidation fires.")
 with t2:
     xs = sorted(fz)
     fig = go.Figure()
@@ -262,6 +260,9 @@ with st.expander("Per-market tables (Q1 · Q2 · Q3)"):
                "liquidity market": "✔" if x["is_liquidity_market"] else ""} for x in mk],
              money=("allocation", "cap", "free liquidity"),
              pcts=("share", "LLTV", "utilization", "vault share of market"))
+    feeds = sorted({f for x in stuck for f in basis.get(x["collateral_symbol"], {}).get("executed_leaf_feeds", [])})
+    st.markdown(f"**Feeds behind the red (stuck-at-par) markets**, executed on the fork: {', '.join(feeds) or 'n/a'}. "
+                "Q1 groups the vault by the root asset read on-chain through each wrapper.")
     ex = m["q1"]["exposure"]
     st.markdown("**Exposure groupings** (correlated assets grouped by the wrapper chain read on-chain, not by label). "
                 "Curator's published caps: single protocol 25%, single oracle 40%, correlated assets 40%, "
