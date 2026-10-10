@@ -45,3 +45,12 @@ def test_xray_finds_shared_ethena(res):
 def test_effective_bets_below_pockets(res):
     assert res["n_pockets"] == 10 and res["effective_independent_bets"] < res["n_pockets"]
     assert res["worst_single_point_of_failure"] is not None
+
+
+def test_book_xray_adds_up_and_labels_coverage():
+    import json
+    from core.fork import ROOT
+    bx = json.loads((ROOT / "data" / "book_xray.json").read_text())
+    assert abs(sum(g["usd"] for g in bx["groups"]) - bx["book_usd"]) < 1e3          # every $ of the book attributed once
+    assert bx["coverage"]["n_resolved"] == sum(1 for v in bx["vaults"] if v["protocol"] == "morpho")
+    assert all(not v["resolved"] for v in bx["vaults"] if v["protocol"] != "morpho")

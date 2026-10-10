@@ -8,6 +8,24 @@ from core.book import load_book
 from core.fork import ROOT
 
 st.title("🩻 Portfolio X-ray")
+
+BX = ROOT / "data" / "book_xray.json"
+if BX.exists():
+    bx = json.loads(BX.read_text())
+    st.subheader(f"Belem / RockawayX vaults: {bx['headline']}")
+    cv = bx["coverage"]
+    st.caption(f"TVL coverage: {cv['n_resolved']} Morpho vaults resolved on-chain / Morpho API = "
+               f"${cv['resolved_usd'] / 1e6:.1f}M ({cv['resolved_share']:.1%} of ${bx['book_usd'] / 1e6:.2f}M); "
+               f"${cv['unresolved_usd'] / 1e6:.1f}M (Kamino, Upshift, Ember, Feather, Oku, Accountable, Midas, Lista) "
+               "from the CSV only, labelled not resolved. Unresolved vaults with no stated issuer count as separate bets.")
+    st.dataframe(pd.DataFrame([{"issuer / collateral": r["issuer"], "$": r["usd"], "% of book": r["share"],
+                                "vaults": r["n_vaults"], "via": ", ".join(r["how"]), "tokens": ", ".join(r["tokens"]),
+                                "vault names": ", ".join(r["vaults"])}
+                               for r in bx["groups"] if r["n_vaults"] >= 2 or r["issuer"] in ("Tori Finance", "Huma", "OnRe", "Re Protocol")]),
+                 hide_index=True, width="stretch",
+                 column_config={"$": st.column_config.NumberColumn(format="dollar"),
+                                "% of book": st.column_config.NumberColumn(format="percent")})
+    st.divider()
 path = ROOT / "data" / "xray.json"
 if not path.exists():
     st.warning("Run `python -m discovery.xray` first.")

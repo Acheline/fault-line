@@ -1,0 +1,1365 @@
+{
+ "book_usd": 293631200.0,
+ "n_vaults": 25,
+ "effective_bets": 6.682906590516127,
+ "groups": [
+  {
+   "issuer": "Huma",
+   "usd": 75423748.52118042,
+   "share": 0.2568655800922396,
+   "n_vaults": 4,
+   "vaults": [
+    "Huma PST",
+    "Huma USDC",
+    "Huma USDC Main",
+    "RockawayX Confidential RWA USDC"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "PST",
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "RockawayX RWA USDC (kamino, not resolved)",
+   "usd": 62700000.0,
+   "share": 0.21353316677519282,
+   "n_vaults": 1,
+   "vaults": [
+    "RockawayX RWA USDC"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Tori Finance",
+   "usd": 43794323.199405365,
+   "share": 0.1491473767072619,
+   "n_vaults": 3,
+   "vaults": [
+    "RockawayX Tori Ecosystem",
+    "RockawayX YIELD USDC",
+    "Tori Ecosystem Vault"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "PT-strUSD-26NOV2026",
+    "PT-trUSD-26NOV2026",
+    "etrUSD",
+    "strUSD",
+    "trUSD"
+   ]
+  },
+  {
+   "issuer": "f(x) Protocol",
+   "usd": 20700000.0,
+   "share": 0.07049659572960912,
+   "n_vaults": 1,
+   "vaults": [
+    "RockawayX f(x) Protocol Ecosystem USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "PT-fxSAVE-29OCT2026",
+    "fxSAVE"
+   ]
+  },
+  {
+   "issuer": "Y10K (ember, not resolved)",
+   "usd": 17800000.0,
+   "share": 0.060620261062175954,
+   "n_vaults": 1,
+   "vaults": [
+    "Y10K"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "eY10K"
+   ]
+  },
+  {
+   "issuer": "Re Protocol",
+   "usd": 12920283.32684094,
+   "share": 0.044001738666875116,
+   "n_vaults": 2,
+   "vaults": [
+    "RockawayX Confidential RWA USDC",
+    "RockawayX YIELD USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "PT-reUSD-10DEC2026"
+   ]
+  },
+  {
+   "issuer": "Feather PYUSD0 (feather, not resolved)",
+   "usd": 12400000.0,
+   "share": 0.042229844784886617,
+   "n_vaults": 1,
+   "vaults": [
+    "Feather PYUSD0"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "PYUSD0"
+   ]
+  },
+  {
+   "issuer": "RockawayX USDC (oku, not resolved)",
+   "usd": 11200000.0,
+   "share": 0.03814308561215566,
+   "n_vaults": 1,
+   "vaults": [
+    "RockawayX USDC"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Midas",
+   "usd": 7946212.728474015,
+   "share": 0.027061881463802263,
+   "n_vaults": 2,
+   "vaults": [
+    "Belem RWA EURCV",
+    "mROX"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "mGLOeuro",
+    "mROX"
+   ]
+  },
+  {
+   "issuer": "Obligate oTFY (kamino, not resolved)",
+   "usd": 7200000.0,
+   "share": 0.02452055503638578,
+   "n_vaults": 1,
+   "vaults": [
+    "Obligate oTFY"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "oTFY"
+   ]
+  },
+  {
+   "issuer": "RockawayX SOL (kamino, not resolved)",
+   "usd": 3700000.0,
+   "share": 0.012600840782587136,
+   "n_vaults": 1,
+   "vaults": [
+    "RockawayX SOL"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "SOL"
+   ]
+  },
+  {
+   "issuer": "OnRe",
+   "usd": 3500000.0,
+   "share": 0.011919714253798643,
+   "n_vaults": 1,
+   "vaults": [
+    "OnRe Core Vault"
+   ],
+   "how": [
+    "not resolved (name/token)"
+   ],
+   "tokens": [
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Hastra / Figure",
+   "usd": 3413770.3562820684,
+   "share": 0.011626047764277326,
+   "n_vaults": 3,
+   "vaults": [
+    "RockawayX Confidential RWA USDC",
+    "RockawayX NUVA Ecosystem",
+    "RockawayX YIELD USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "AUTO",
+    "PRIME",
+    "nvPRIME"
+   ]
+  },
+  {
+   "issuer": "Raiku rkuSOL (kamino, not resolved)",
+   "usd": 2600000.0,
+   "share": 0.00885464487425042,
+   "n_vaults": 1,
+   "vaults": [
+    "Raiku rkuSOL"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "rkuSOL"
+   ]
+  },
+  {
+   "issuer": "infiniFi",
+   "usd": 2363805.133119573,
+   "share": 0.008050251925270792,
+   "n_vaults": 1,
+   "vaults": [
+    "RockawayX YIELD USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "siUSD"
+   ]
+  },
+  {
+   "issuer": "Marinade USDC Cluster (kamino, not resolved)",
+   "usd": 1600000.0,
+   "share": 0.005449012230307951,
+   "n_vaults": 1,
+   "vaults": [
+    "Marinade USDC Cluster"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Raiku PT-rkuSOL (kamino, not resolved)",
+   "usd": 1400000.0,
+   "share": 0.0047678857015194575,
+   "n_vaults": 1,
+   "vaults": [
+    "Raiku PT-rkuSOL"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "PT-rkuSOL-31OCT26"
+   ]
+  },
+  {
+   "issuer": "RockawayX YIELD PT (lista, not resolved)",
+   "usd": 1300000.0,
+   "share": 0.00442732243712521,
+   "n_vaults": 1,
+   "vaults": [
+    "RockawayX YIELD PT"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "USDT"
+   ]
+  },
+  {
+   "issuer": "Coinbase",
+   "usd": 759861.641570199,
+   "share": 0.002587809611411182,
+   "n_vaults": 3,
+   "vaults": [
+    "Belem RWA EURCV",
+    "Midas USDC Prime (Base)",
+    "RockawayX NUVA Ecosystem"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "cbBTC",
+    "cbETH"
+   ]
+  },
+  {
+   "issuer": "WBTC",
+   "usd": 512551.15538708173,
+   "share": 0.0017455609464766745,
+   "n_vaults": 1,
+   "vaults": [
+    "Belem RWA EURCV"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "WBTC"
+   ]
+  },
+  {
+   "issuer": "WETH",
+   "usd": 187917.54080495704,
+   "share": 0.0006399781113347528,
+   "n_vaults": 1,
+   "vaults": [
+    "Midas USDC Prime (Base)"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "WETH"
+   ]
+  },
+  {
+   "issuer": "wstETH",
+   "usd": 110223.0170925257,
+   "share": 0.0003753791051241343,
+   "n_vaults": 1,
+   "vaults": [
+    "Belem RWA EURCV"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "wstETH"
+   ]
+  },
+  {
+   "issuer": "Obligate USDC (kamino, not resolved)",
+   "usd": 50700.0,
+   "share": 0.0001726655750478832,
+   "n_vaults": 1,
+   "vaults": [
+    "Obligate USDC"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Earn ctUSD (upshift, not resolved)",
+   "usd": 47800.0,
+   "share": 0.00016278924038045004,
+   "n_vaults": 1,
+   "vaults": [
+    "Earn ctUSD"
+   ],
+   "how": [
+    "not resolved"
+   ],
+   "tokens": [
+    "ctUSD"
+   ]
+  },
+  {
+   "issuer": "Societe Generale Forge",
+   "usd": 2.2507646330970394,
+   "share": 7.665277508306472e-09,
+   "n_vaults": 1,
+   "vaults": [
+    "Belem RWA EURCV"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "steakEURCV"
+   ]
+  },
+  {
+   "issuer": "oTFYe",
+   "usd": 1.125194339916797,
+   "share": 3.831998574799943e-09,
+   "n_vaults": 1,
+   "vaults": [
+    "Belem RWA EURCV"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "oTFYe"
+   ]
+  },
+  {
+   "issuer": "idle",
+   "usd": 0.0038838664728639183,
+   "share": 1.322702244469906e-11,
+   "n_vaults": 1,
+   "vaults": [
+    "Belem RWA EURCV"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "idle"
+   ]
+  }
+ ],
+ "shared": [
+  {
+   "issuer": "Huma",
+   "usd": 75423748.52118042,
+   "share": 0.2568655800922396,
+   "n_vaults": 4,
+   "vaults": [
+    "Huma PST",
+    "Huma USDC",
+    "Huma USDC Main",
+    "RockawayX Confidential RWA USDC"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "PST",
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Tori Finance",
+   "usd": 43794323.199405365,
+   "share": 0.1491473767072619,
+   "n_vaults": 3,
+   "vaults": [
+    "RockawayX Tori Ecosystem",
+    "RockawayX YIELD USDC",
+    "Tori Ecosystem Vault"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "PT-strUSD-26NOV2026",
+    "PT-trUSD-26NOV2026",
+    "etrUSD",
+    "strUSD",
+    "trUSD"
+   ]
+  },
+  {
+   "issuer": "Re Protocol",
+   "usd": 12920283.32684094,
+   "share": 0.044001738666875116,
+   "n_vaults": 2,
+   "vaults": [
+    "RockawayX Confidential RWA USDC",
+    "RockawayX YIELD USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "PT-reUSD-10DEC2026"
+   ]
+  },
+  {
+   "issuer": "Midas",
+   "usd": 7946212.728474015,
+   "share": 0.027061881463802263,
+   "n_vaults": 2,
+   "vaults": [
+    "Belem RWA EURCV",
+    "mROX"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "mGLOeuro",
+    "mROX"
+   ]
+  },
+  {
+   "issuer": "Hastra / Figure",
+   "usd": 3413770.3562820684,
+   "share": 0.011626047764277326,
+   "n_vaults": 3,
+   "vaults": [
+    "RockawayX Confidential RWA USDC",
+    "RockawayX NUVA Ecosystem",
+    "RockawayX YIELD USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "AUTO",
+    "PRIME",
+    "nvPRIME"
+   ]
+  },
+  {
+   "issuer": "Coinbase",
+   "usd": 759861.641570199,
+   "share": 0.002587809611411182,
+   "n_vaults": 3,
+   "vaults": [
+    "Belem RWA EURCV",
+    "Midas USDC Prime (Base)",
+    "RockawayX NUVA Ecosystem"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "cbBTC",
+    "cbETH"
+   ]
+  }
+ ],
+ "checked": [
+  {
+   "issuer": "Huma",
+   "usd": 75423748.52118042,
+   "share": 0.2568655800922396,
+   "n_vaults": 4,
+   "vaults": [
+    "Huma PST",
+    "Huma USDC",
+    "Huma USDC Main",
+    "RockawayX Confidential RWA USDC"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "PST",
+    "USDC"
+   ]
+  },
+  {
+   "issuer": "Tori Finance",
+   "usd": 43794323.199405365,
+   "share": 0.1491473767072619,
+   "n_vaults": 3,
+   "vaults": [
+    "RockawayX Tori Ecosystem",
+    "RockawayX YIELD USDC",
+    "Tori Ecosystem Vault"
+   ],
+   "how": [
+    "not resolved (name/token)",
+    "resolved"
+   ],
+   "tokens": [
+    "PT-strUSD-26NOV2026",
+    "PT-trUSD-26NOV2026",
+    "etrUSD",
+    "strUSD",
+    "trUSD"
+   ]
+  },
+  {
+   "issuer": "Re Protocol",
+   "usd": 12920283.32684094,
+   "share": 0.044001738666875116,
+   "n_vaults": 2,
+   "vaults": [
+    "RockawayX Confidential RWA USDC",
+    "RockawayX YIELD USDC"
+   ],
+   "how": [
+    "resolved"
+   ],
+   "tokens": [
+    "PT-reUSD-10DEC2026"
+   ]
+  },
+  {
+   "issuer": "OnRe",
+   "usd": 3500000.0,
+   "share": 0.011919714253798643,
+   "n_vaults": 1,
+   "vaults": [
+    "OnRe Core Vault"
+   ],
+   "how": [
+    "not resolved (name/token)"
+   ],
+   "tokens": [
+    "USDC"
+   ]
+  }
+ ],
+ "coverage": {
+  "resolved_usd": 96772700.0,
+  "resolved_share": 0.3295722661624514,
+  "n_resolved": 8,
+  "unresolved_usd": 196858500.0
+ },
+ "headline": "25 vaults, 6.7 independent bets; 25.7% depends on Huma",
+ "vaults": [
+  {
+   "vault": "RockawayX RWA USDC",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 62700000.0,
+   "address": "DWSXb18xZApz29vnQpgR2m6MynCT7PznaXt7Ut7M7KaP",
+   "resolved": false,
+   "issuer": "RockawayX RWA USDC (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "Huma PST",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 42500000.0,
+   "address": "DzgYbR8HFQKf8YLCJ6M3E6ricB1xWAiNGZ2TB7X2KDHz",
+   "resolved": false,
+   "issuer": "Huma",
+   "evidence": "vault name/token contains 'huma'"
+  },
+  {
+   "vault": "Tori Ecosystem Vault",
+   "chain": "ethereum",
+   "protocol": "upshift",
+   "tvl_usd": 24900000.0,
+   "address": "0xcd69123b3FBBfC666E1f6a501da27B564C00De54",
+   "resolved": false,
+   "issuer": "Tori Finance",
+   "evidence": "vault name/token contains 'trusd'"
+  },
+  {
+   "vault": "RockawayX Confidential RWA USDC",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 23900000.0,
+   "address": "0xc207d3f66537D7F66456808379A0E560cF20Da36",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+     "symbol": "PST",
+     "name": "PayFi Strategy Token",
+     "share": 0.8269350845682186,
+     "oracle": "0xa5657b406fc4282039861c6fca64452aefec8ac0",
+     "market_id": "0x002278ea242ec722813b4fe3c8eeaa07dbc331c731cc0b4248a1bf0771f933ea",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "Huma",
+     "usd": 19763748.521180425,
+     "evidence": "on-chain name/symbol contains 'payfi strategy'"
+    },
+    {
+     "collateral": "0x997e2efbce91d170b00ea402e35a66c887ee1da9",
+     "symbol": "AUTO",
+     "name": "Hastra AUTO",
+     "share": 0.022689849097859333,
+     "oracle": "0x9abd4961996b7957baa4be82716d23bdfe541854",
+     "market_id": "0x2bbdd81580c750491207e798bdcd31596a6254c5e5d1541ad901ab08c75671e4",
+     "lltv": 0.77,
+     "roots": [
+      {
+       "address": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+       "symbol": "wYLDS",
+       "name": "Hastra wYLDS"
+      }
+     ],
+     "issuer": "Hastra / Figure",
+     "usd": 542287.3934388381,
+     "evidence": "on-chain name/symbol contains 'hastra'"
+    },
+    {
+     "collateral": "0xecfafdc7741323a945a163ed068b5a3c43483957",
+     "symbol": "PT-reUSD-10DEC2026",
+     "name": "PT reUSD 10DEC2026",
+     "share": 0.15037502653248502,
+     "oracle": "0x217d6ddcdb95112c51657f6270e8c079cfdb51f0",
+     "market_id": "0x1e9d614631a7df0ec07fb05b2c8cb2491575fd1a63a33bf187a6afb295a4fc64",
+     "lltv": 0.915,
+     "roots": [
+      {
+       "address": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+       "symbol": "reUSD",
+       "name": "Re Protocol Deposit Token"
+      }
+     ],
+     "issuer": "Re Protocol",
+     "usd": 3593963.134126392,
+     "evidence": "on-chain name/symbol contains 're protocol'"
+    },
+    {
+     "collateral": "0x997e2efbce91d170b00ea402e35a66c887ee1da9",
+     "symbol": "AUTO",
+     "name": "Hastra AUTO",
+     "share": 3.980143701957389e-08,
+     "oracle": "0xd21756fc315da9218a36bc7a7f69784cc60ccefe",
+     "market_id": "0xf8697bec3140fb8e046af586a1cda4f95e980bb7bc7551cad6e81cf701bc176d",
+     "lltv": 0.915,
+     "roots": [
+      {
+       "address": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+       "symbol": "wYLDS",
+       "name": "Hastra wYLDS"
+      }
+     ],
+     "issuer": "Hastra / Figure",
+     "usd": 0.951254344767816,
+     "evidence": "on-chain name/symbol contains 'hastra'"
+    }
+   ]
+  },
+  {
+   "vault": "RockawayX f(x) Protocol Ecosystem USDC",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 20700000.0,
+   "address": "0x2cA22cb25558fa2018ecb1CE4eD8AF92Ee7ea423",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0x079c3469143804af5d0d645a878c371dbe8d038e",
+     "symbol": "PT-fxSAVE-29OCT2026",
+     "name": "PT f(x) USD Saving 29OCT2026",
+     "share": 0.04871762505886338,
+     "oracle": "0x5911530e5f62fff0a73e91ccd797d717e6d49fa9",
+     "market_id": "0xae992849c5f544a32dfdfcc74c0695b73b8732f449727827af6ce3768e968382",
+     "lltv": 0.915,
+     "roots": [
+      {
+       "address": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+       "symbol": "fxSAVE",
+       "name": "f(x) USD Saving"
+      },
+      {
+       "address": "0x65c9a641afceb9c0e6034e558a319488fa0fa3be",
+       "symbol": "fxSP",
+       "name": " f(x) Stability Pool"
+      }
+     ],
+     "issuer": "f(x) Protocol",
+     "usd": 1008454.8387184719,
+     "evidence": "on-chain name/symbol contains 'f(x)'"
+    },
+    {
+     "collateral": "0x7743e50f534a7f9f1791dde7dcd89f7783eefc39",
+     "symbol": "fxSAVE",
+     "name": "f(x) USD Saving",
+     "share": 0.9512823749411367,
+     "oracle": "0x16931dcc888754ae780b153598376a6474de4440",
+     "market_id": "0x17f7ae1b52670010976b3fe41324cbb2b1eb7dd8f492e51764b2828371b86b84",
+     "lltv": 0.915,
+     "roots": [
+      {
+       "address": "0x65c9a641afceb9c0e6034e558a319488fa0fa3be",
+       "symbol": "fxSP",
+       "name": " f(x) Stability Pool"
+      }
+     ],
+     "issuer": "f(x) Protocol",
+     "usd": 19691545.16128153,
+     "evidence": "on-chain name/symbol contains 'f(x)'"
+    }
+   ]
+  },
+  {
+   "vault": "RockawayX YIELD USDC",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 18600000.0,
+   "address": "0xE0181090c22579B6A217f1522cbf8c9f1F0C1965",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0xecfafdc7741323a945a163ed068b5a3c43483957",
+     "symbol": "PT-reUSD-10DEC2026",
+     "name": "PT reUSD 10DEC2026",
+     "share": 0.5014150641244381,
+     "oracle": "0x217d6ddcdb95112c51657f6270e8c079cfdb51f0",
+     "market_id": "0x1e9d614631a7df0ec07fb05b2c8cb2491575fd1a63a33bf187a6afb295a4fc64",
+     "lltv": 0.915,
+     "roots": [
+      {
+       "address": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+       "symbol": "reUSD",
+       "name": "Re Protocol Deposit Token"
+      }
+     ],
+     "issuer": "Re Protocol",
+     "usd": 9326320.19271455,
+     "evidence": "on-chain name/symbol contains 're protocol'"
+    },
+    {
+     "collateral": "0x74299580811e1c3c1a2831db079ba0a8f513998f",
+     "symbol": "PT-strUSD-26NOV2026",
+     "name": "PT Staked trUSD 26NOV2026",
+     "share": 0.013855337190762698,
+     "oracle": "0xdb6e2e77ac10f05b9a52efe02d4c61c2770a776d",
+     "market_id": "0xf062a110320da27e0e7e7d9e1bdf458dd51e2d2089e55f63ff9fd54f415ce35d",
+     "lltv": 0.86,
+     "roots": [
+      {
+       "address": "0x280839980a7ed0d7717f64125fe241012e5f5815",
+       "symbol": "strUSD",
+       "name": "Staked trUSD"
+      },
+      {
+       "address": "0xd0580192e98ea6ceb9c7b6191ed2e27560911697",
+       "symbol": "trUSD",
+       "name": "trUSD"
+      }
+     ],
+     "issuer": "Tori Finance",
+     "usd": 257709.27174818618,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    },
+    {
+     "collateral": "0x280839980a7ed0d7717f64125fe241012e5f5815",
+     "symbol": "strUSD",
+     "name": "Staked trUSD",
+     "share": 0.26467744141988053,
+     "oracle": "0x1506c98ce61ac63c8438b710c054a51c5dd9a6a4",
+     "market_id": "0x975c6e8b71073a82216ae464bc44f67d71988450d2542d635d88bc78fca344b1",
+     "lltv": 0.86,
+     "roots": [
+      {
+       "address": "0xd0580192e98ea6ceb9c7b6191ed2e27560911697",
+       "symbol": "trUSD",
+       "name": "trUSD"
+      }
+     ],
+     "issuer": "Tori Finance",
+     "usd": 4923000.410409778,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    },
+    {
+     "collateral": "0x6f20ae2c98c2d34e6a57f3411f2c5af92e32592d",
+     "symbol": "etrUSD",
+     "name": "Tori Ecosystem Vault",
+     "share": 0.006108253615452066,
+     "oracle": "0xf73166adf598f4c03776d058564f6543f8184dcf",
+     "market_id": "0xff836cc9796e2889ebf73b26c2de2de74b35f985bb83e9d79380deb4229e365b",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "Tori Finance",
+     "usd": 113613.51724740842,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    },
+    {
+     "collateral": "0xdbdc1ef57537e34680b898e1febd3d68c7389bcb",
+     "symbol": "siUSD",
+     "name": "Staked infiniFi USD",
+     "share": 0.12708629747954692,
+     "oracle": "0xd2cc46b9b2d761502ef933320ecf0268ec0dfa6d",
+     "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+     "lltv": 0.915,
+     "roots": [
+      {
+       "address": "0x48f9e38f3070ad8945dfeae3fa70987722e3d89c",
+       "symbol": "iUSD",
+       "name": "infiniFi USD"
+      }
+     ],
+     "issuer": "infiniFi",
+     "usd": 2363805.133119573,
+     "evidence": "on-chain name/symbol contains 'infinifi'"
+    },
+    {
+     "collateral": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+     "symbol": "PRIME",
+     "name": "Hastra PRIME",
+     "share": 0.08685760616991957,
+     "oracle": "0x999eff9ca63d23a60a0cd19b9f65a0918674119a",
+     "market_id": "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d",
+     "lltv": 0.86,
+     "roots": [
+      {
+       "address": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+       "symbol": "wYLDS",
+       "name": "Hastra wYLDS"
+      }
+     ],
+     "issuer": "Hastra / Figure",
+     "usd": 1615551.474760504,
+     "evidence": "on-chain name/symbol contains 'hastra'"
+    }
+   ]
+  },
+  {
+   "vault": "Y10K",
+   "chain": "ethereum",
+   "protocol": "ember",
+   "tvl_usd": 17800000.0,
+   "address": "0x953972ea0C1703c58F09FB6fD2477Fdcf0FEe074",
+   "resolved": false,
+   "issuer": "Y10K (ember, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "RockawayX Tori Ecosystem",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 13600000.0,
+   "address": "0x3BD9AdAE6643dDcddD02746b8B60075E56DF9478",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0x280839980a7ed0d7717f64125fe241012e5f5815",
+     "symbol": "strUSD",
+     "name": "Staked trUSD",
+     "share": 0.6906791915518162,
+     "oracle": "0x1506c98ce61ac63c8438b710c054a51c5dd9a6a4",
+     "market_id": "0x975c6e8b71073a82216ae464bc44f67d71988450d2542d635d88bc78fca344b1",
+     "lltv": 0.86,
+     "roots": [
+      {
+       "address": "0xd0580192e98ea6ceb9c7b6191ed2e27560911697",
+       "symbol": "trUSD",
+       "name": "trUSD"
+      }
+     ],
+     "issuer": "Tori Finance",
+     "usd": 9393237.0051047,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    },
+    {
+     "collateral": "0x7191878f1fe834b28f4d0cead0e4375b814c4abb",
+     "symbol": "PT-trUSD-26NOV2026",
+     "name": "PT trUSD 26NOV2026",
+     "share": 0.14468216676479267,
+     "oracle": "0x345866dcd877994afb36277d1ad287eb94a1e7af",
+     "market_id": "0xd21bbc238918855461d943753ac4c90d103888e5661fd78f3378294c45f7d8df",
+     "lltv": 0.945,
+     "roots": [
+      {
+       "address": "0xd0580192e98ea6ceb9c7b6191ed2e27560911697",
+       "symbol": "trUSD",
+       "name": "trUSD"
+      }
+     ],
+     "issuer": "Tori Finance",
+     "usd": 1967677.4680011803,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    },
+    {
+     "collateral": "0x6f20ae2c98c2d34e6a57f3411f2c5af92e32592d",
+     "symbol": "etrUSD",
+     "name": "Tori Ecosystem Vault",
+     "share": 0.1286969016967145,
+     "oracle": "0xf73166adf598f4c03776d058564f6543f8184dcf",
+     "market_id": "0xff836cc9796e2889ebf73b26c2de2de74b35f985bb83e9d79380deb4229e365b",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "Tori Finance",
+     "usd": 1750277.8630753171,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    },
+    {
+     "collateral": "0x74299580811e1c3c1a2831db079ba0a8f513998f",
+     "symbol": "PT-strUSD-26NOV2026",
+     "name": "PT Staked trUSD 26NOV2026",
+     "share": 0.035941739986676574,
+     "oracle": "0xdb6e2e77ac10f05b9a52efe02d4c61c2770a776d",
+     "market_id": "0xf062a110320da27e0e7e7d9e1bdf458dd51e2d2089e55f63ff9fd54f415ce35d",
+     "lltv": 0.86,
+     "roots": [
+      {
+       "address": "0x280839980a7ed0d7717f64125fe241012e5f5815",
+       "symbol": "strUSD",
+       "name": "Staked trUSD"
+      },
+      {
+       "address": "0xd0580192e98ea6ceb9c7b6191ed2e27560911697",
+       "symbol": "trUSD",
+       "name": "trUSD"
+      }
+     ],
+     "issuer": "Tori Finance",
+     "usd": 488807.6638188014,
+     "evidence": "on-chain name/symbol contains 'trusd'"
+    }
+   ]
+  },
+  {
+   "vault": "Huma USDC Main",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 12600000.0,
+   "address": "0x8aC91877b93330f52b2979a31a4879506021475c",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0x22ae3d9a738471f405169af055d31c687087d4c7",
+     "symbol": "PST",
+     "name": "PayFi Strategy Token",
+     "share": 1.0,
+     "oracle": "0xa5657b406fc4282039861c6fca64452aefec8ac0",
+     "market_id": "0x002278ea242ec722813b4fe3c8eeaa07dbc331c731cc0b4248a1bf0771f933ea",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "Huma",
+     "usd": 12600000.0,
+     "evidence": "on-chain name/symbol contains 'payfi strategy'"
+    }
+   ]
+  },
+  {
+   "vault": "Feather PYUSD0",
+   "chain": "sei",
+   "protocol": "feather",
+   "tvl_usd": 12400000.0,
+   "address": "0x6137dcfdd3c83fe2922b1cba4105d2e92b327a06",
+   "resolved": false,
+   "issuer": "Feather PYUSD0 (feather, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "RockawayX USDC",
+   "chain": "pharos",
+   "protocol": "oku",
+   "tvl_usd": 11200000.0,
+   "address": "0x047cD0a91E9B92ED979189a6C8A120bf280f02E5",
+   "resolved": false,
+   "issuer": "RockawayX USDC (oku, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "Obligate oTFY",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 7200000.0,
+   "address": "6nk5K3PiV3EHtW4LLFhfMc1uR4kNwEfibvTdWqxCm6WF",
+   "resolved": false,
+   "issuer": "Obligate oTFY (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "Belem RWA EURCV",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 5300000.0,
+   "address": "0xD6d4b804014EF27836dBe9f8f6Bf6c71251548Ec",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0x2f8bae126b8d416c009b82ccd60e4f9cabbd7702",
+     "symbol": "mGLOeuro",
+     "name": "Midas Fasanara Global Euro",
+     "share": 0.8577759865045312,
+     "oracle": "0x2b43e079d9637570e29ebe945de9053b0bf647b9",
+     "market_id": "0x987b2c1979c6cfd6b7833d9b30c09b96ec6de1666579582d8f17730e20dd19b0",
+     "lltv": 0.77,
+     "roots": [],
+     "issuer": "Midas",
+     "usd": 4546212.728474015,
+     "evidence": "on-chain name/symbol contains 'midas'"
+    },
+    {
+     "collateral": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599",
+     "symbol": "WBTC",
+     "name": "Wrapped BTC",
+     "share": 0.09670776516737391,
+     "oracle": "0x40721232bbd09e15e5fc6c4f1e20a8465be6a8e4",
+     "market_id": "0xb7a75cabc2e8eadd0bc661340a9e359d9828bed6d5cbbcd64188bca8c01e399e",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "WBTC",
+     "usd": 512551.15538708173,
+     "evidence": "collateral itself"
+    },
+    {
+     "collateral": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+     "symbol": "wstETH",
+     "name": "Wrapped liquid staked Ether 2.0",
+     "share": 0.020796795677835038,
+     "oracle": "0x44d6d497fb53294f283983e2931972840eb3dd90",
+     "market_id": "0x0b352b7550acdb1f39fea4b8f9ef8ac2d7953613b92599610b8fbec8a98a51d1",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "wstETH",
+     "usd": 110223.0170925257,
+     "evidence": "collateral itself"
+    },
+    {
+     "collateral": "0xbeef0c075da5d01112ae5cf34d257074fb5ddb2f",
+     "symbol": "steakEURCV",
+     "name": "Steakhouse Prime EURCV",
+     "share": 4.2467257228246025e-07,
+     "oracle": "0x078f2bf7628e82d738b6b956dfad5114c8fc55f1",
+     "market_id": "0xcde1b09204b4a790e47ef833d4235762121a0e44c4dbb91cd9a2093e88ac6e82",
+     "lltv": 0.915,
+     "roots": [],
+     "issuer": "Societe Generale Forge",
+     "usd": 2.2507646330970394,
+     "evidence": "on-chain name/symbol contains 'eurcv'"
+    },
+    {
+     "collateral": "0xc6dec62c975f20e60635ddd1341f3ea35bc284c5",
+     "symbol": "oTFYe",
+     "name": "Obligate Trade Finance Yield EUR",
+     "share": 2.1230081885222583e-07,
+     "oracle": "0x396d968154355ce6001f3d3d59ceff1eb20750eb",
+     "market_id": "0x237dd7d99a2a8b7583d7f746f1a1b95ea62f727ed7601902e6fe1c1bcf1cf8ba",
+     "lltv": 0.77,
+     "roots": [],
+     "issuer": "oTFYe",
+     "usd": 1.125194339916797,
+     "evidence": "collateral itself"
+    },
+    {
+     "collateral": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+     "symbol": "cbBTC",
+     "name": "Coinbase Wrapped BTC",
+     "share": 0.024718814944063708,
+     "oracle": "0xba75fd248bf33d669d4c5adf25d3e32779656e47",
+     "market_id": "0x82053fe2fc3a3d6cb856458948e9c3589e76f20f3a2079606739b517587267ce",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "Coinbase",
+     "usd": 131009.71920353765,
+     "evidence": "on-chain name/symbol contains 'cbbtc'"
+    },
+    {
+     "collateral": null,
+     "symbol": "idle",
+     "name": "idle cash",
+     "share": 7.328049948799846e-10,
+     "oracle": null,
+     "roots": [],
+     "issuer": "idle",
+     "usd": 0.0038838664728639183,
+     "evidence": "collateral itself"
+    }
+   ]
+  },
+  {
+   "vault": "RockawayX SOL",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 3700000.0,
+   "address": "HoffqVZUNGGpEAhE42E1DqNYSwJjCkorfgiBN6NpT2or",
+   "resolved": false,
+   "issuer": "RockawayX SOL (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "OnRe Core Vault",
+   "chain": "ethereum",
+   "protocol": "accountable",
+   "tvl_usd": 3500000.0,
+   "address": "0x0F0a9d3F0bc6006143c96E6995572b51413CB3c4",
+   "resolved": false,
+   "issuer": "OnRe",
+   "evidence": "vault name/token contains 'onre'"
+  },
+  {
+   "vault": "mROX",
+   "chain": "ethereum",
+   "protocol": "midas",
+   "tvl_usd": 3400000.0,
+   "address": "0x67E1F506B148d0Fc95a4E3fFb49068ceB6855c05",
+   "resolved": false,
+   "issuer": "Midas",
+   "evidence": "vault name/token contains 'mrox'"
+  },
+  {
+   "vault": "Raiku rkuSOL",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 2600000.0,
+   "address": "J7idSfhvLqdkSmbMvhHMXBAhZMJVxEtzqXo45JB9HZrP",
+   "resolved": false,
+   "issuer": "Raiku rkuSOL (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "Marinade USDC Cluster",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 1600000.0,
+   "address": "2TNCzzYJt3uHmpFpqeeJkza4pQUK9xoLa79DJH9AdgGA",
+   "resolved": false,
+   "issuer": "Marinade USDC Cluster (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "RockawayX NUVA Ecosystem",
+   "chain": "ethereum",
+   "protocol": "morpho",
+   "tvl_usd": 1500000.0,
+   "address": "0x93e0F9d502eEfce8D34924ab3478C7EA0CBC5a2E",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+     "symbol": "cbBTC",
+     "name": "Coinbase Wrapped BTC",
+     "share": 0.16271297544774563,
+     "oracle": "0xa6d6950c9f177f1de7f7757fb33539e3ec60182a",
+     "market_id": "0x64d65c9a2d91c36d56fbc42d69e979335320169b3df63bf92789e2c8883fcc64",
+     "lltv": 0.86,
+     "roots": [],
+     "issuer": "Coinbase",
+     "usd": 244069.46317161844,
+     "evidence": "on-chain name/symbol contains 'cbbtc'"
+    },
+    {
+     "collateral": "0xc360e625f19a7ea47e47810b13e386221d5187d1",
+     "symbol": "nvPRIME",
+     "name": "Nuva Prime Vault",
+     "share": 0.8372870245522543,
+     "oracle": "0x9cc1a40a90760c7cc238ce06abdef4adc972e28d",
+     "market_id": "0x9e553e8a22eb2b2040042965d0dc424f7c5e64744b093d2df9162dce1833eeda",
+     "lltv": 0.86,
+     "roots": [
+      {
+       "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+       "symbol": "PRIME",
+       "name": "Hastra PRIME"
+      },
+      {
+       "address": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
+       "symbol": "wYLDS",
+       "name": "Hastra wYLDS"
+      }
+     ],
+     "issuer": "Hastra / Figure",
+     "usd": 1255930.5368283815,
+     "evidence": "on-chain name/symbol contains 'hastra'"
+    }
+   ]
+  },
+  {
+   "vault": "Raiku PT-rkuSOL",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 1400000.0,
+   "address": "7272BNf9uoivyX5h8B7799yoxSfF4WDuzcP7HDwSPLqN",
+   "resolved": false,
+   "issuer": "Raiku PT-rkuSOL (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "RockawayX YIELD PT",
+   "chain": "bsc",
+   "protocol": "lista",
+   "tvl_usd": 1300000.0,
+   "address": "0xb5a30e1fa2cf3c8dea882124b3ab5a47a27c5dd2",
+   "resolved": false,
+   "issuer": "RockawayX YIELD PT (lista, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "Midas USDC Prime (Base)",
+   "chain": "base",
+   "protocol": "morpho",
+   "tvl_usd": 572700.0,
+   "address": "0xAE4181CFB5aaA08bbE77d269c6B595672b9F9Edc",
+   "resolved": true,
+   "markets": [
+    {
+     "collateral": "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
+     "symbol": "cbETH",
+     "name": "Coinbase Wrapped Staked ETH",
+     "share": 0.32810226014510113,
+     "oracle": "0xb40d93F44411D8C09aD17d7F88195eF9b05cCD96",
+     "market_id": "0x1c21c59df9db44bf6f645d854ee710a8ca17b479451447e9f56758aee10a2fad",
+     "roots": [],
+     "source": "Morpho API",
+     "issuer": "Coinbase",
+     "usd": 187904.16438509943,
+     "evidence": "on-chain name/symbol contains 'cbeth'"
+    },
+    {
+     "collateral": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+     "symbol": "cbBTC",
+     "name": "Coinbase Wrapped BTC",
+     "share": 0.3437721229438511,
+     "oracle": "0x663BECd10daE6C4A3Dcd89F1d76c1174199639B9",
+     "market_id": "0x9103c3b4e834476c9a62ea009ba2c884ee42e94e6e314a26f04d312434191836",
+     "roots": [],
+     "source": "Morpho API",
+     "issuer": "Coinbase",
+     "usd": 196878.29480994353,
+     "evidence": "on-chain name/symbol contains 'cbbtc'"
+    },
+    {
+     "collateral": "0x4200000000000000000000000000000000000006",
+     "symbol": "WETH",
+     "name": "Wrapped Ether",
+     "share": 0.32812561691104775,
+     "oracle": "0xFEa2D58cEfCb9fcb597723c6bAE66fFE4193aFE4",
+     "market_id": "0x8793cf302b8ffd655ab97bd1c695dbd967807e8367a65cb2f4edaf1380ba1bda",
+     "roots": [],
+     "source": "Morpho API",
+     "issuer": "WETH",
+     "usd": 187917.54080495704,
+     "evidence": "collateral itself"
+    }
+   ]
+  },
+  {
+   "vault": "Huma USDC",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 560000.0,
+   "address": "4QKFoFDzNFnvfkzVazABbCEfMwd3y1pZqUVzmpnkCphj",
+   "resolved": false,
+   "issuer": "Huma",
+   "evidence": "vault name/token contains 'huma'"
+  },
+  {
+   "vault": "Obligate USDC",
+   "chain": "solana",
+   "protocol": "kamino",
+   "tvl_usd": 50700.0,
+   "address": "Au2Cg9CNNTX1KfzVhNnpi1ouHX74CwMMBvmSchmqS5ZW",
+   "resolved": false,
+   "issuer": "Obligate USDC (kamino, not resolved)",
+   "evidence": null
+  },
+  {
+   "vault": "Earn ctUSD",
+   "chain": "citrea",
+   "protocol": "upshift",
+   "tvl_usd": 47800.0,
+   "address": "0x68499eAEf8c4994593C56a1257BD151D17950BA2",
+   "resolved": false,
+   "issuer": "Earn ctUSD (upshift, not resolved)",
+   "evidence": null
+  }
+ ],
+ "fork_block": 26162857
+}
