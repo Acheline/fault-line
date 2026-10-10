@@ -280,14 +280,104 @@ def episodes(px: list[tuple[int, float]], thr: float) -> list[dict]:
     return out
 
 
-def class_rate(cls: dict, exclude: tuple = (), thr: float = 0.99) -> dict:
+DESIGN_RULES = [   # first match wins; CoinGecko categories (public), DefiLlama pegMechanism as fallback
+    ("nav_rwa", ("Real World Assets (RWA)", "Tokenized Treasury Bills (T-Bills)", "Tokenized Private Credit")),
+    ("algorithmic", ("Algorithmic Stablecoin",)),
+    ("yield_delta_neutral", ("Synthetic Dollar", "Yield-Bearing Stablecoin", "Delta Neutral")),
+    ("cdp", ("Collateralized Debt Position (CDP) Stablecoin", "CDP Stablecoin", "Crypto-backed Stablecoin")),
+]
+
+
+def coingecko_categories(gid: str, offline: bool) -> list[str]:
+    def fetch():
+        for attempt in range(4):
+            r = requests.get(f"https://api.coingecko.com/api/v3/coins/{gid}", timeout=60, params={
+                "localization": "false", "tickers": "false", "market_data": "false", "community_data": "false",
+                "developer_data": "false"})
+            if r.status_code == 200:
+                time.sleep(6)                       # free tier: ~10 calls / min
+                return r.json().get("categories") or []
+            if r.status_code == 404:                # id unknown to CoinGecko: fall back to DefiLlama's mechanism
+                return []
+            time.sleep(30)
+        raise RuntimeError(f"coingecko {gid}: {r.status_code}")
+    hit = API.get(f"cg_cats_{gid}")
+    if hit is not None or offline:
+        return (hit or {}).get("data") or []
+    return API.put(f"cg_cats_{gid}", {"fetched_at": int(time.time()), "data": fetch()})["data"]
+
+
+DESIGNS = ROOT / "books" / "stablecoin_designs.yaml"
+
+
+def design_class(gid: str, peg_mechanism: str | None, offline: bool) -> tuple[str, list[str]]:
+    """Design label: books/stablecoin_designs.yaml (sourced, auditable) first, then CoinGecko categories."""
+    import yaml
+    table = yaml.safe_load(DESIGNS.read_text()) if DESIGNS.exists() else {}
+    if gid in table:
+        return table[gid]["design"], [table[gid]["source"]]
+    cats = coingecko_categories(gid, offline)
+    for name, keys in DESIGN_RULES:
+        if any(k in cats for k in keys):
+            return name, cats
+    return ("algorithmic" if peg_mechanism == "algorithmic" else "cdp"), cats
+
+
+NAV_TOKENS = ["re-protocol-reusd", "hastra-prime", "figure-heloc", "ondo-us-dollar-yield", "openeden-tbill",
+              "superstate-short-duration-us-government-securities-fund-ustb", "syrupusdc", "coinshift-usdl-morpho-vault",
+              "web-3-dollar"]   # NAV-accruing RWA / credit / reinsurance tokens with DefiLlama daily prices
+
+
+def nav_markdowns(px: list[tuple[int, float]], thr: float = 0.01, min_days: int = 7, window: int = 7) -> dict:
+    """NAV markdown episodes from a daily MARKET price series of a NAV token. One-day prints are common on thin
+    tokens (figure-heloc printed 0.234 for one day), so the series is first smoothed by a 7-day rolling median; an
+    episode = smoothed price below its running max by > thr for >= min_days consecutive points."""
+    ps = [p for _, p in px]
+    sm = [statistics.median(ps[max(0, i - window + 1): i + 1]) for i in range(len(ps))]
+    peak, run, depth, eps = 0.0, 0, 0.0, []
+    for p in sm:
+        peak = max(peak, p)
+        dd = 1 - p / peak if peak else 0.0
+        if dd > thr:
+            run, depth = run + 1, max(depth, dd)
+        else:
+            if run >= min_days:
+                eps.append(depth)
+            run, depth = 0, 0.0
+    if run >= min_days:
+        eps.append(depth)
+    yrs = (px[-1][0] - px[0][0]) / YEAR if len(px) > 1 else 0.0
+    return {"years": round(yrs, 2), "episodes": len(eps), "depths": eps}
+
+
+def nav_class(offline: bool) -> dict:
+    coins, yrs, depths = {}, 0.0, []
+    for cid in NAV_TOKENS:
+        px = price_history(cid, offline)
+        if len(px) < 30:
+            coins[cid] = {"excluded": "no price history"}
+            continue
+        if statistics.median(p for _, p in px) < 0.5:     # governance tokens etc. in the candidate list
+            coins[cid] = {"excluded": "not a NAV token (price level)"}
+            continue
+        nv = nav_markdowns(px)
+        coins[cid] = nv
+        yrs += nv["years"]
+        depths += nv["depths"]
+    return {"coins": coins, "coin_years": round(yrs, 2), "episodes": len(depths), "depths": sorted(depths),
+            "annual_rate": _rate(len(depths), yrs) if yrs else None,
+            "method": "7-day rolling median of DefiLlama daily prices; markdown = > 1% below running max for >= 7 days"}
+
+
+def class_rate(cls: dict, exclude: tuple = (), thr: float = 0.99, design: str | None = None) -> dict:
     """Episode rate and severities of a class from its per-coin records, optionally without some coins."""
-    coins = {k: v for k, v in cls["coins"].items() if "years" in v and k not in exclude}
+    coins = {k: v for k, v in cls["coins"].items() if "years" in v and k not in exclude
+             and (design is None or v.get("design") == design)}
     yrs = sum(v["years"] for v in coins.values())
     tr = sorted(t for v in coins.values() for t in v.get("troughs", []))
     n = sum(v.get(f"episodes<{thr}", 0) for v in coins.values())
     return {"n_coins": len(coins), "coin_years": yrs, "episodes": n, "annual_rate": _rate(n, yrs) if yrs else None,
-            "troughs": tr, "excluded": list(exclude)}
+            "troughs": tr, "excluded": list(exclude), "design": design, "coins": sorted(coins)}
 
 
 def depeg_rates(offline: bool = False) -> dict:
@@ -302,7 +392,8 @@ def depeg_rates(offline: bool = False) -> dict:
             if len(px) < 30:
                 continue
             if cls == "yield_synthetic" and statistics.median(p for _, p in px) > YS_RULE["max_median_price"]:
-                coins[cid] = {"excluded": "NAV-accruing (median price > 1.02)"}
+                coins[cid] = {"excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+                              "nav": nav_markdowns(px)}
                 continue
             yrs = (px[-1][0] - px[0][0]) / YEAR
             coin_years += yrs
@@ -316,6 +407,9 @@ def depeg_rates(offline: bool = False) -> dict:
                 per_thr[t]["min"] += [e["min"] for e in eps]
                 coins[cid][f"episodes<{t}"] = len(eps)
             coins[cid]["troughs"] = [e["min"] for e in episodes(px, THRESHOLDS[0])]
+            if cls == "yield_synthetic":
+                mech = next((u.get("pegMechanism") for u in uni["included"] if u["gecko_id"] == cid), None)
+                coins[cid]["design"], coins[cid]["cg_categories"] = design_class(cid, mech, offline)
         res[cls] = {"coin_years": round(coin_years, 1), "coins": coins,
                     "universe": uni if cls == "yield_synthetic" else None, "thresholds": {
             str(t): {"episodes": v["episodes"], "episodes_over_24h": v["episodes_over_24h"],
@@ -327,6 +421,7 @@ def depeg_rates(offline: bool = False) -> dict:
             # every episode below the first threshold, for severity sampling: trough price and length in days
             "episode_troughs": sorted(per_thr[THRESHOLDS[0]]["min"]),
             "episode_days": per_thr[THRESHOLDS[0]]["durations_days"]}
+    res["nav_rwa_tokens"] = nav_class(offline)
     return {"classes": res, "method": "daily prices (DefiLlama coins, CoinGecko ids), runs below threshold; "
                                       ">24h = >=2 consecutive daily points; daily data misses intraday CEX wicks"}
 

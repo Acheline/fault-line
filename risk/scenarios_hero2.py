@@ -67,6 +67,21 @@ def nav_drawdowns(ids: list[str], offline: bool, thr: float = 0.01) -> dict:
             "annual_rate": (len(troughs) + 0.5) / years if years else None}
 
 
+REUSD = "0x5086bf358635b81d8c47c66d1c8b9e567db70c72"     # Re Protocol Deposit Token (CoinGecko re-protocol-reusd)
+REUSDE = "0xddc0f880ff6e4e22e4b74632fbb43ce4df6ccc5a"    # Re Protocol reUSDe (CoinGecko re-protocol-reusde)
+
+
+def reusd_junior_buffer(offline: bool) -> dict:
+    """reUSDe (risk-bearing) supply / (reUSD + reUSDe): the first-loss capital below reUSD, per Re's published
+    senior/junior design (CoinGecko description: reUSD principal-protected, reUSDe risk-bearing). Read on the fork."""
+    f = Fork(offline=offline)
+    if f.offline:
+        f.fork_block = A.FORK_BLOCK
+    sr = (f.call1(REUSD, "totalSupply()", "uint256") or 0) / 1e18
+    jr = (f.call1(REUSDE, "totalSupply()", "uint256") or 0) / 10 ** (f.call1(REUSDE, "decimals()", "uint8") or 18)
+    return {"senior": sr, "junior": jr, "buffer": jr / (sr + jr) if sr + jr else 0.0}
+
+
 PRIME_NAV_AGG = "0x48f9a46ba852b5c22d4153d0534397b59abfdef5"   # PRIME / WYLDS Exchange Rate (OCR2 aggregator)
 
 
@@ -89,14 +104,22 @@ def nav_feed_history(agg: str = PRIME_NAV_AGG, thr: float = 0.01) -> dict:
 def drivers(offline: bool) -> tuple[dict[str, Driver], dict]:
     br = json.loads(BR.OUT.read_text())
     ys = _class(br, "yield_synthetic")
-    rate = ys["thresholds"]["0.99"]["p_annual"]
-    sev = [1 - t for t in ys["episode_troughs"]]
-    n_coins = sum(1 for v in ys["coins"].values() if "years" in v)
-    src = (f"base_rates yield_synthetic class (rule-based: every non-fiat USD stablecoin launched since 2024 with peak "
-           f"supply >= $25M, failures included): {n_coins} coins, {ys['coin_years']} coin-years, "
-           f"{ys['thresholds']['0.99']['episodes']} episodes < $0.99; severity = 1 - episode trough")
-    D = {k: Driver(k, lab, rate, sev, "market_disruption", "counterparty_defaults", src)
-         for k, lab in (("trusd", "trUSD depeg"), ("reusd", "reUSD depeg"), ("iusd", "iUSD depeg"))}
+    dn = BR.class_rate(ys, design="yield_delta_neutral")
+    src = (f"base_rates yield_delta_neutral class (basis-trading / yield-backed synthetic dollars launched since 2024, "
+           f"peak supply >= $25M, failures included; labels in books/stablecoin_designs.yaml): {dn['n_coins']} coins, "
+           f"{dn['coin_years']:.1f} coin-years, {dn['episodes']} episodes < $0.99; severity = 1 - episode trough")
+    D = {k: Driver(k, lab, dn["annual_rate"], [1 - t for t in dn["troughs"]], "market_disruption", "counterparty_defaults", src)
+         for k, lab in (("trusd", "trUSD depeg (Tori, delta-neutral)"), ("iusd", "iUSD depeg (infiniFi, yield-backed)"))}
+    # reUSD (Re Protocol) is a NAV-accruing senior reinsurance deposit token: risk = NAV markdown, not a depeg.
+    nav = br["values"]["depeg"]["value"]["classes"]["nav_rwa_tokens"]
+    buf = reusd_junior_buffer(offline)
+    sev = [max(0.0, (d - buf["buffer"]) / (1 - buf["buffer"])) for d in nav["depths"]] or [0.0]
+    D["reusd"] = Driver("reusd", "reUSD NAV markdown (Re Protocol, senior)", nav["annual_rate"], sev, "market_disruption",
+                        "counterparty_defaults",
+                        f"NAV-token markdowns (7-day median, > 1% for >= 7 days): {nav['episodes']} in "
+                        f"{nav['coin_years']} coin-years, max {max(nav['depths'] or [0]):.1%}; passed through the reUSDe "
+                        f"junior buffer {buf['buffer']:.1%} (on-chain supplies). No public reinsurance-loss dataset: "
+                        "a tail beyond the observed markdowns is NOT covered by data", badge="tail_not_in_data")
     nav = nav_feed_history()
     D["prime"] = Driver("prime", "PRIME NAV markdown", nav["annual_rate"], nav["severities"] or [0.0],
                         "market_disruption", "counterparty_defaults",
@@ -192,7 +215,7 @@ SCENARIO_META = {
     # id: (label, driver, family, kpi, group, confidence)
     "trusd_frozen": ("trUSD depeg, oracles frozen at par (strUSD, PT-strUSD, etrUSD)", "trusd", "market_disruption",
                      "counterparty_defaults", "trUSD stack", "high"),
-    "reusd_market": ("PT-reUSD market price shock (Pendle TWAP oracle)", "reusd", "market_disruption",
+    "reusd_market": ("reUSD NAV markdown hitting PT-reUSD (Pendle TWAP oracle)", "reusd", "market_disruption",
                      "liquidations", "PT-reUSD", "medium"),
     "iusd_nav": ("siUSD exchange-rate markdown", "iusd", "market_disruption", "counterparty_defaults", "siUSD", "high"),
     "prime_nav": ("PRIME NAV markdown", "prime", "market_disruption", "counterparty_defaults", "PRIME",

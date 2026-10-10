@@ -1,6 +1,6 @@
 {
  "source": "computed from data",
- "generated_at": 1791649436,
+ "generated_at": 1791651116,
  "values": {
   "exploit": {
    "value": {
@@ -8,212 +8,212 @@
      "staking|<2y|>=1B": {
       "hacks": 0,
       "protocol_years": 13.9,
-      "p_annual": 0.03601719506475088
+      "p_annual": 0.03601774740946233
      },
      "staking|>=2y|>=1B": {
       "hacks": 1,
       "protocol_years": 13.6,
-      "p_annual": 0.11066262722160414
+      "p_annual": 0.11065871672751723
      },
      "lending|<2y|>=1B": {
       "hacks": 0,
       "protocol_years": 9.7,
-      "p_annual": 0.05152488030010622
+      "p_annual": 0.05152629329199839
      },
      "lending|>=2y|>=1B": {
       "hacks": 0,
       "protocol_years": 19.7,
-      "p_annual": 0.02541968708082944
+      "p_annual": 0.025419068073050957
      },
      "other|<2y|>=1B": {
       "hacks": 0,
       "protocol_years": 10.1,
-      "p_annual": 0.04942155335051422
+      "p_annual": 0.04942025343497088
      },
      "other|>=2y|>=1B": {
       "hacks": 0,
       "protocol_years": 9.0,
-      "p_annual": 0.05565314952767057
+      "p_annual": 0.055652160480959084
      },
      "bridge|<2y|>=1B": {
       "hacks": 0,
       "protocol_years": 8.0,
-      "p_annual": 0.06223057268020842
+      "p_annual": 0.06223098490513073
      },
      "bridge|>=2y|>=1B": {
       "hacks": 0,
       "protocol_years": 12.2,
-      "p_annual": 0.04113209467235385
+      "p_annual": 0.04113101417111798
      },
      "yield_vault|<2y|>=1B": {
       "hacks": 0,
       "protocol_years": 4.1,
-      "p_annual": 0.1216688107201461
+      "p_annual": 0.12166723500875663
      },
      "yield_vault|>=2y|>=1B": {
       "hacks": 0,
       "protocol_years": 3.6,
-      "p_annual": 0.1371774735237919
+      "p_annual": 0.1371734675630813
      },
      "dex_derivatives|<2y|>=1B": {
       "hacks": 0,
       "protocol_years": 3.8,
-      "p_annual": 0.1330033665781064
+      "p_annual": 0.13301089898247864
      },
      "dex_derivatives|>=2y|>=1B": {
       "hacks": 0,
       "protocol_years": 12.9,
-      "p_annual": 0.038653996002485445
+      "p_annual": 0.038653200807491316
      },
      "bridge|<2y|100M-1B": {
       "hacks": 2,
       "protocol_years": 25.7,
-      "p_annual": 0.09744367974085966
+      "p_annual": 0.09744165834156092
      },
      "bridge|>=2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 3.5,
-      "p_annual": 0.14454269472009262
+      "p_annual": 0.14453157605464992
      },
      "lending|<2y|100M-1B": {
       "hacks": 3,
       "protocol_years": 22.8,
-      "p_annual": 0.15348726102316682
+      "p_annual": 0.15348618631977645
      },
      "lending|>=2y|100M-1B": {
       "hacks": 2,
       "protocol_years": 20.5,
-      "p_annual": 0.12199575363815826
+      "p_annual": 0.12199226847210651
      },
      "staking|<2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 30.1,
-      "p_annual": 0.01662854361655025
+      "p_annual": 0.0166286907820632
      },
      "staking|>=2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 29.4,
-      "p_annual": 0.01700834987053379
+      "p_annual": 0.017007764828868312
      },
      "other|<2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 48.7,
-      "p_annual": 0.01027413675773012
+      "p_annual": 0.010274080577684584
      },
      "other|>=2y|100M-1B": {
       "hacks": 2,
       "protocol_years": 58.6,
-      "p_annual": 0.04266413632721324
+      "p_annual": 0.042663051334873775
      },
      "dex_derivatives|<2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 25.8,
-      "p_annual": 0.019406925761506415
+      "p_annual": 0.019406765402386325
      },
      "dex_derivatives|>=2y|100M-1B": {
       "hacks": 3,
       "protocol_years": 14.3,
-      "p_annual": 0.24553130322797742
+      "p_annual": 0.2455212196579261
      },
      "rwa|<2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 16.0,
-      "p_annual": 0.031200813924193604
+      "p_annual": 0.03119977772989996
      },
      "rwa|>=2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 5.7,
-      "p_annual": 0.08756256999169686
+      "p_annual": 0.08756012166209451
      },
      "yield_vault|<2y|100M-1B": {
       "hacks": 2,
       "protocol_years": 12.1,
-      "p_annual": 0.20598887725546353
+      "p_annual": 0.20598978057876663
      },
      "yield_vault|>=2y|100M-1B": {
       "hacks": 0,
       "protocol_years": 19.1,
-      "p_annual": 0.026199250921605244
+      "p_annual": 0.0261986664252339
      },
      "other|<2y|<100M": {
       "hacks": 18,
       "protocol_years": 1842.6,
-      "p_annual": 0.010040209789563277
+      "p_annual": 0.010040303462513774
      },
      "other|>=2y|<100M": {
       "hacks": 30,
-      "protocol_years": 3828.7,
-      "p_annual": 0.007966236873175858
+      "protocol_years": 3828.8,
+      "p_annual": 0.007966046296016579
      },
      "staking|<2y|<100M": {
       "hacks": 0,
       "protocol_years": 418.9,
-      "p_annual": 0.0011937100274214821
+      "p_annual": 0.0011937086623246167
      },
      "staking|>=2y|<100M": {
       "hacks": 2,
       "protocol_years": 252.0,
-      "p_annual": 0.009921987562930897
+      "p_annual": 0.00992159356700738
      },
      "lending|<2y|<100M": {
       "hacks": 45,
       "protocol_years": 1053.9,
-      "p_annual": 0.0431724382104198
+      "p_annual": 0.0431727456202413
      },
      "lending|>=2y|<100M": {
       "hacks": 16,
       "protocol_years": 1026.7,
-      "p_annual": 0.016071263675183845
+      "p_annual": 0.016070745488477523
      },
      "dex_derivatives|<2y|<100M": {
       "hacks": 23,
-      "protocol_years": 2958.6,
-      "p_annual": 0.007943037433611485
+      "protocol_years": 2958.5,
+      "p_annual": 0.007943133456254465
      },
      "dex_derivatives|>=2y|<100M": {
       "hacks": 30,
-      "protocol_years": 3660.7,
-      "p_annual": 0.008331666300393089
+      "protocol_years": 3660.8,
+      "p_annual": 0.00833142041037863
      },
      "yield_vault|<2y|<100M": {
       "hacks": 15,
-      "protocol_years": 849.7,
-      "p_annual": 0.0182427095889854
+      "protocol_years": 849.6,
+      "p_annual": 0.018243062697063942
      },
      "yield_vault|>=2y|<100M": {
       "hacks": 6,
       "protocol_years": 1466.6,
-      "p_annual": 0.004432049637955507
+      "p_annual": 0.004431936893129162
      },
      "bridge|<2y|<100M": {
       "hacks": 2,
       "protocol_years": 154.1,
-      "p_annual": 0.016227610448610423
+      "p_annual": 0.016227616054739172
      },
      "bridge|>=2y|<100M": {
       "hacks": 3,
       "protocol_years": 161.7,
-      "p_annual": 0.021640150120446754
+      "p_annual": 0.021639480759005354
      },
      "rwa|<2y|<100M": {
       "hacks": 2,
       "protocol_years": 197.3,
-      "p_annual": 0.012672569133486572
+      "p_annual": 0.012672391354528028
      },
      "rwa|>=2y|<100M": {
       "hacks": 0,
       "protocol_years": 100.5,
-      "p_annual": 0.004976059437733146
+      "p_annual": 0.0049758538621401905
      },
      "stable_synthetic|<2y|<100M": {
       "hacks": 1,
       "protocol_years": 118.4,
-      "p_annual": 0.012670583227830972
+      "p_annual": 0.012671312401020275
      },
      "stable_synthetic|>=2y|<100M": {
       "hacks": 1,
       "protocol_years": 352.1,
-      "p_annual": 0.004260558905751911
+      "p_annual": 0.004260459720688164
      }
     },
     "window_years": 3.0,
@@ -2950,6 +2950,10 @@
          0.958186,
          0.960978,
          0.983432
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Sky Lending (CDP)"
         ]
        },
        "falcon-finance": {
@@ -2965,7 +2969,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.3079915539872861,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Falcon Finance (Basis Trading)"
+        ]
        },
        "united-stables": {
         "years": 0.81,
@@ -2980,7 +2988,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.6190651734526549,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "unclassified",
+        "cg_categories": [
+         "llama:United Founders Group (Reserve Currency): unclear"
+        ]
        },
        "polymarket-usd": {
         "years": 0.45,
@@ -2995,7 +3007,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 1.113595287143468,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "unclassified",
+        "cg_categories": [
+         "fiat wrapper (prediction-market collateral)"
+        ]
        },
        "usdai": {
         "years": 1.28,
@@ -3018,6 +3034,10 @@
          0.989376,
          0.974416,
          0.9843606905536773
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "coingecko:Yield-Bearing Stablecoin, Synthetic Dollar"
         ]
        },
        "apxusd": {
@@ -3036,10 +3056,19 @@
         "troughs": [
          0.9843754280268037,
          0.9371058437090586
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
         ]
        },
        "re-protocol-reusd": {
-        "excluded": "NAV-accruing (median price > 1.02)"
+        "excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+        "nav": {
+         "years": 1.29,
+         "episodes": 0,
+         "depths": []
+        }
        },
        "binance-peg-busd": {
         "years": 3.15,
@@ -3059,6 +3088,10 @@
          0.9891351888991293,
          0.9487469682046753,
          0.9691419152252555
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "fiat-backed peg mislabelled crypto-backed"
         ]
        },
        "usx": {
@@ -3074,7 +3107,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.4844217549171857,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Solstice (Basis Trading)"
+        ]
        },
        "satoshi-stablecoin": {
         "years": 2.4,
@@ -3141,6 +3178,10 @@
          0.9807818208809217,
          0.9874471319152679,
          0.9839179586884297
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "coingecko:Crypto-backed Stablecoin; llama:River Omni-CDP"
         ]
        },
        "astherus-usdf": {
@@ -3158,6 +3199,10 @@
         "episodes<0.5": 0,
         "troughs": [
          0.982208061164344
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
         ]
        },
        "saturn-dollar": {
@@ -3173,7 +3218,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.9925488384691369,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "unclassified",
+        "cg_categories": [
+         "llama:Saturn (Stablecoin Wrapper)"
+        ]
        },
        "f-x-protocol-fxusd": {
         "years": 2.55,
@@ -3193,6 +3242,10 @@
          0.988756,
          0.9863432054738938,
          0.9888392998727037
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "coingecko:Crypto-backed Stablecoin"
         ]
        },
        "cap-usd": {
@@ -3223,6 +3276,10 @@
          0.9730326042625943,
          0.978842953201745,
          0.9788692545909137
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "manual: Cap cUSD, stablecoin reserves lent to operators for yield"
         ]
        },
        "tori-trusd": {
@@ -3238,7 +3295,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 2.4680601995964775,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Tori Finance (Basis Trading)"
+        ]
        },
        "axis-usd": {
         "years": 0.1,
@@ -3253,7 +3314,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 5.21771738257011,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Axis (Basis Trading)"
+        ]
        },
        "yuzu-usd": {
         "years": 0.92,
@@ -3268,7 +3333,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.5436002447007262,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Yuzu Money (Yield)"
+        ]
        },
        "infinifi-usd": {
         "years": 1.23,
@@ -3283,7 +3352,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.4049867568498915,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:infiniFi (Yield); coingecko:Yield-Bearing Stablecoin"
+        ]
        },
        "precious-metals-usd": {
         "years": 0.81,
@@ -3315,6 +3388,10 @@
          0.985682970760602,
          0.9878512295082721,
          0.35933896444077273
+        ],
+        "design": "nav_rwa",
+        "cg_categories": [
+         "coingecko:Real World Assets (RWA)"
         ]
        },
        "usdu": {
@@ -3332,6 +3409,10 @@
         "episodes<0.5": 0,
         "troughs": [
          0.9844195018276353
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Unitas USDu (Basis Trading)"
         ]
        },
        "standx-dusd": {
@@ -3347,7 +3428,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.3616664795927922,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
+        ]
        },
        "resupply-usd": {
         "years": 1.51,
@@ -3428,6 +3513,10 @@
          0.9892017477408893,
          0.9895382633061145,
          0.9895658353426554
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Resupply (Lending): CDP against lending-market collateral"
         ]
        },
        "jupusd": {
@@ -3443,7 +3532,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.659307488965579,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:JupUSD (Basis Trading)"
+        ]
        },
        "metronome-synth-usd": {
         "years": 1.22,
@@ -3460,6 +3553,10 @@
         "episodes<0.5": 1,
         "troughs": [
          0.46108283356232266
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "coingecko:Synthetic Dollar"
         ]
        },
        "soulpeg-usd": {
@@ -3484,6 +3581,10 @@
          0.9897979677295881,
          0.9871131521258188,
          0.9881110992034796
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
         ]
        },
        "main-street-usd": {
@@ -3506,6 +3607,10 @@
          0.9812568919892013,
          0.9855062957733488,
          0.2088324552543618
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Mainstreet (Yield)"
         ]
        },
        "unity-usd": {
@@ -3521,7 +3626,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.8698324138759075,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
+        ]
        },
        "liquity-bold-2": {
         "years": 1.37,
@@ -3536,7 +3645,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.36455422463377185,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Liquity V2 (CDP)"
+        ]
        },
        "metamask-usd": {
         "years": 1.1,
@@ -3554,6 +3667,10 @@
         "troughs": [
          0.979806,
          0.983393
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "llama:MetaMask USD (Stablecoin Issuer): fiat-backed"
         ]
        },
        "noon-usn": {
@@ -3569,7 +3686,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.29362979767424163,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Noon (Yield)"
+        ]
        },
        "nusd-2": {
         "years": 0.76,
@@ -3584,7 +3705,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.6594071754473256,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "coingecko:Synthetic Asset"
+        ]
        },
        "mezo-usd": {
         "years": 1.15,
@@ -3622,6 +3747,10 @@
          0.9899493755230584,
          0.9895960372139091,
          0.98850012282196
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Mezo Borrow (CDP)"
         ]
        },
        "gyroscope-gyd": {
@@ -3641,6 +3770,10 @@
          0.9839946685605373,
          0.9627160195474573,
          0.7447395750177689
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "reserve-backed, no matching source"
         ]
        },
        "bucket-protocol-buck-stablecoin": {
@@ -3675,6 +3808,10 @@
          0.948335,
          0.98145,
          0.9809988363367264
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Bucket CDP (CDP)"
         ]
        },
        "hylo-usd": {
@@ -3690,7 +3827,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.4719543855195058,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "algorithmic",
+        "cg_categories": [
+         "llama:Hylo Protocol (Dual-Token Stablecoin)"
+        ]
        },
        "yu": {
         "years": 1.37,
@@ -3709,6 +3850,10 @@
          0.109999,
          0.98822,
          0.008186820572734142
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "manual: Yala YU, BTC-collateralised CDP"
         ]
        },
        "unity-2": {
@@ -3724,7 +3869,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.37197954041803777,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:XSY (Basis Trading)"
+        ]
        },
        "megausd": {
         "years": 0.67,
@@ -3745,6 +3894,10 @@
          0.9861617848777402,
          0.865602845287,
          0.8210296101605182
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
         ]
        },
        "usdb": {
@@ -3822,6 +3975,10 @@
          0.9881641302913724,
          0.9875369582508297,
          0.9890146568876028
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "no source"
         ]
        },
        "felix-feusd": {
@@ -3848,6 +4005,10 @@
          0.9881825142105533,
          0.9878219700218059,
          0.9674183411374903
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Felix CDP (CDP)"
         ]
        },
        "honey-3": {
@@ -3863,7 +4024,11 @@
         "episodes<0.75": 0,
         "p_annual_over_24h<0.5": 0.2993876090096643,
         "episodes<0.5": 0,
-        "troughs": []
+        "troughs": [],
+        "design": "unclassified",
+        "cg_categories": [
+         "basket-backed, no matching source"
+        ]
        },
        "usdx-money-usdx": {
         "years": 2.03,
@@ -3882,6 +4047,10 @@
          0.989177,
          0.980311,
          0.007371181791719058
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "manual: Stables Labs USDX, delta-neutral synthetic (CoinGecko tags it fiat-backed)"
         ]
        },
        "plume-usd": {
@@ -3905,10 +4074,22 @@
          0.9766401861441228,
          0.989210171307394,
          0.9898610225519895
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "wrapper"
         ]
        },
        "web-3-dollar": {
-        "excluded": "NAV-accruing (median price > 1.02)"
+        "excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+        "nav": {
+         "years": 2.38,
+         "episodes": 2,
+         "depths": [
+          0.02758522167487676,
+          0.011822660098522175
+         ]
+        }
        },
        "liquid-loans-usdl": {
         "years": 2.75,
@@ -4006,6 +4187,10 @@
          0.9859289505504698,
          0.9896245087546306,
          0.9811943131622521
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:LiquidLoans (CDP)"
         ]
        },
        "angle-usd": {
@@ -4077,6 +4262,10 @@
          0.9881468432910044,
          0.9610302961277599,
          0.9416357242210206
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "llama:Angle (CDP)"
         ]
        },
        "rings-scusd": {
@@ -4099,6 +4288,10 @@
          0.9862835779813826,
          0.9804415504320624,
          0.9864903562830476
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "wrapper"
         ]
        },
        "pleasing-usd": {
@@ -4120,6 +4313,10 @@
          0.9893463367838891,
          0.9888844001907864,
          0.003718257572243216
+        ],
+        "design": "unclassified",
+        "cg_categories": [
+         "llama:Pleasing Gold (RWA): gold-linked, unclear"
         ]
        },
        "resolv-usr": {
@@ -4137,6 +4334,10 @@
         "episodes<0.5": 1,
         "troughs": [
          0.07970577922594592
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Resolv USR (Basis Trading)"
         ]
        },
        "level-usd": {
@@ -4161,6 +4362,10 @@
          0.9334804107831002,
          0.8987696937025587,
          0.9392785452457738
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "manual: Level lvlUSD, backed by stablecoins deployed to lending (DefiLlama 'Level' match is an unrelated protocol)"
         ]
        },
        "nectar": {
@@ -4212,10 +4417,21 @@
          0.9438374917759084,
          0.9894754543968715,
          0.9836262718081105
+        ],
+        "design": "cdp",
+        "cg_categories": [
+         "manual: Beraborrow NECT, CDP"
         ]
        },
        "coinshift-usdl-morpho-vault": {
-        "excluded": "NAV-accruing (median price > 1.02)"
+        "excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+        "nav": {
+         "years": 0.74,
+         "episodes": 1,
+         "depths": [
+          0.0590983120350036
+         ]
+        }
        },
        "elixir-deusd": {
         "years": 1.54,
@@ -4232,6 +4448,10 @@
         "episodes<0.5": 1,
         "troughs": [
          0.0007587714688576358
+        ],
+        "design": "yield_delta_neutral",
+        "cg_categories": [
+         "llama:Elixir (Yield)"
         ]
        }
       },
@@ -6363,6 +6583,95 @@
        1,
        61
       ]
+     },
+     "nav_rwa_tokens": {
+      "coins": {
+       "re-protocol-reusd": {
+        "years": 1.29,
+        "episodes": 0,
+        "depths": []
+       },
+       "hastra-prime": {
+        "years": 0.84,
+        "episodes": 0,
+        "depths": []
+       },
+       "figure-heloc": {
+        "years": 1.12,
+        "episodes": 10,
+        "depths": [
+         0.01636390532544374,
+         0.01632149901380675,
+         0.024390243902438935,
+         0.025264975609756046,
+         0.02413378833510582,
+         0.02101962052960127,
+         0.02827813973924309,
+         0.031244146957950636,
+         0.033425710431072786,
+         0.011084557181758825
+        ]
+       },
+       "ondo-us-dollar-yield": {
+        "years": 2.92,
+        "episodes": 2,
+        "depths": [
+         0.03333333333333344,
+         0.013452448982962828
+        ]
+       },
+       "openeden-tbill": {
+        "years": 2.96,
+        "episodes": 0,
+        "depths": []
+       },
+       "superstate-short-duration-us-government-securities-fund-ustb": {
+        "years": 1.94,
+        "episodes": 0,
+        "depths": []
+       },
+       "syrupusdc": {
+        "years": 1.6,
+        "episodes": 0,
+        "depths": []
+       },
+       "coinshift-usdl-morpho-vault": {
+        "years": 0.74,
+        "episodes": 1,
+        "depths": [
+         0.0590983120350036
+        ]
+       },
+       "web-3-dollar": {
+        "years": 2.38,
+        "episodes": 2,
+        "depths": [
+         0.02758522167487676,
+         0.011822660098522175
+        ]
+       }
+      },
+      "coin_years": 15.79,
+      "episodes": 15,
+      "depths": [
+       0.011084557181758825,
+       0.011822660098522175,
+       0.013452448982962828,
+       0.01632149901380675,
+       0.01636390532544374,
+       0.02101962052960127,
+       0.02413378833510582,
+       0.024390243902438935,
+       0.025264975609756046,
+       0.02758522167487676,
+       0.02827813973924309,
+       0.031244146957950636,
+       0.03333333333333344,
+       0.033425710431072786,
+       0.0590983120350036
+      ],
+      "annual_rate": 0.9816339455351489,
+      "method": "7-day rolling median of DefiLlama daily prices; markdown = > 1% below running max for >= 7 days"
      }
     },
     "method": "daily prices (DefiLlama coins, CoinGecko ids), runs below threshold; >24h = >=2 consecutive daily points; daily data misses intraday CEX wicks"
@@ -6402,212 +6711,212 @@
     "staking|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 13.9,
-     "p_annual": 0.03601719506475088
+     "p_annual": 0.03601774740946233
     },
     "staking|>=2y|>=1B": {
      "hacks": 1,
      "protocol_years": 13.6,
-     "p_annual": 0.11066262722160414
+     "p_annual": 0.11065871672751723
     },
     "lending|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 9.7,
-     "p_annual": 0.05152488030010622
+     "p_annual": 0.05152629329199839
     },
     "lending|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 19.7,
-     "p_annual": 0.02541968708082944
+     "p_annual": 0.025419068073050957
     },
     "other|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 10.1,
-     "p_annual": 0.04942155335051422
+     "p_annual": 0.04942025343497088
     },
     "other|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 9.0,
-     "p_annual": 0.05565314952767057
+     "p_annual": 0.055652160480959084
     },
     "bridge|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 8.0,
-     "p_annual": 0.06223057268020842
+     "p_annual": 0.06223098490513073
     },
     "bridge|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 12.2,
-     "p_annual": 0.04113209467235385
+     "p_annual": 0.04113101417111798
     },
     "yield_vault|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 4.1,
-     "p_annual": 0.1216688107201461
+     "p_annual": 0.12166723500875663
     },
     "yield_vault|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 3.6,
-     "p_annual": 0.1371774735237919
+     "p_annual": 0.1371734675630813
     },
     "dex_derivatives|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 3.8,
-     "p_annual": 0.1330033665781064
+     "p_annual": 0.13301089898247864
     },
     "dex_derivatives|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 12.9,
-     "p_annual": 0.038653996002485445
+     "p_annual": 0.038653200807491316
     },
     "bridge|<2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 25.7,
-     "p_annual": 0.09744367974085966
+     "p_annual": 0.09744165834156092
     },
     "bridge|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 3.5,
-     "p_annual": 0.14454269472009262
+     "p_annual": 0.14453157605464992
     },
     "lending|<2y|100M-1B": {
      "hacks": 3,
      "protocol_years": 22.8,
-     "p_annual": 0.15348726102316682
+     "p_annual": 0.15348618631977645
     },
     "lending|>=2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 20.5,
-     "p_annual": 0.12199575363815826
+     "p_annual": 0.12199226847210651
     },
     "staking|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 30.1,
-     "p_annual": 0.01662854361655025
+     "p_annual": 0.0166286907820632
     },
     "staking|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 29.4,
-     "p_annual": 0.01700834987053379
+     "p_annual": 0.017007764828868312
     },
     "other|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 48.7,
-     "p_annual": 0.01027413675773012
+     "p_annual": 0.010274080577684584
     },
     "other|>=2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 58.6,
-     "p_annual": 0.04266413632721324
+     "p_annual": 0.042663051334873775
     },
     "dex_derivatives|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 25.8,
-     "p_annual": 0.019406925761506415
+     "p_annual": 0.019406765402386325
     },
     "dex_derivatives|>=2y|100M-1B": {
      "hacks": 3,
      "protocol_years": 14.3,
-     "p_annual": 0.24553130322797742
+     "p_annual": 0.2455212196579261
     },
     "rwa|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 16.0,
-     "p_annual": 0.031200813924193604
+     "p_annual": 0.03119977772989996
     },
     "rwa|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 5.7,
-     "p_annual": 0.08756256999169686
+     "p_annual": 0.08756012166209451
     },
     "yield_vault|<2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 12.1,
-     "p_annual": 0.20598887725546353
+     "p_annual": 0.20598978057876663
     },
     "yield_vault|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 19.1,
-     "p_annual": 0.026199250921605244
+     "p_annual": 0.0261986664252339
     },
     "other|<2y|<100M": {
      "hacks": 18,
      "protocol_years": 1842.6,
-     "p_annual": 0.010040209789563277
+     "p_annual": 0.010040303462513774
     },
     "other|>=2y|<100M": {
      "hacks": 30,
-     "protocol_years": 3828.7,
-     "p_annual": 0.007966236873175858
+     "protocol_years": 3828.8,
+     "p_annual": 0.007966046296016579
     },
     "staking|<2y|<100M": {
      "hacks": 0,
      "protocol_years": 418.9,
-     "p_annual": 0.0011937100274214821
+     "p_annual": 0.0011937086623246167
     },
     "staking|>=2y|<100M": {
      "hacks": 2,
      "protocol_years": 252.0,
-     "p_annual": 0.009921987562930897
+     "p_annual": 0.00992159356700738
     },
     "lending|<2y|<100M": {
      "hacks": 45,
      "protocol_years": 1053.9,
-     "p_annual": 0.0431724382104198
+     "p_annual": 0.0431727456202413
     },
     "lending|>=2y|<100M": {
      "hacks": 16,
      "protocol_years": 1026.7,
-     "p_annual": 0.016071263675183845
+     "p_annual": 0.016070745488477523
     },
     "dex_derivatives|<2y|<100M": {
      "hacks": 23,
-     "protocol_years": 2958.6,
-     "p_annual": 0.007943037433611485
+     "protocol_years": 2958.5,
+     "p_annual": 0.007943133456254465
     },
     "dex_derivatives|>=2y|<100M": {
      "hacks": 30,
-     "protocol_years": 3660.7,
-     "p_annual": 0.008331666300393089
+     "protocol_years": 3660.8,
+     "p_annual": 0.00833142041037863
     },
     "yield_vault|<2y|<100M": {
      "hacks": 15,
-     "protocol_years": 849.7,
-     "p_annual": 0.0182427095889854
+     "protocol_years": 849.6,
+     "p_annual": 0.018243062697063942
     },
     "yield_vault|>=2y|<100M": {
      "hacks": 6,
      "protocol_years": 1466.6,
-     "p_annual": 0.004432049637955507
+     "p_annual": 0.004431936893129162
     },
     "bridge|<2y|<100M": {
      "hacks": 2,
      "protocol_years": 154.1,
-     "p_annual": 0.016227610448610423
+     "p_annual": 0.016227616054739172
     },
     "bridge|>=2y|<100M": {
      "hacks": 3,
      "protocol_years": 161.7,
-     "p_annual": 0.021640150120446754
+     "p_annual": 0.021639480759005354
     },
     "rwa|<2y|<100M": {
      "hacks": 2,
      "protocol_years": 197.3,
-     "p_annual": 0.012672569133486572
+     "p_annual": 0.012672391354528028
     },
     "rwa|>=2y|<100M": {
      "hacks": 0,
      "protocol_years": 100.5,
-     "p_annual": 0.004976059437733146
+     "p_annual": 0.0049758538621401905
     },
     "stable_synthetic|<2y|<100M": {
      "hacks": 1,
      "protocol_years": 118.4,
-     "p_annual": 0.012670583227830972
+     "p_annual": 0.012671312401020275
     },
     "stable_synthetic|>=2y|<100M": {
      "hacks": 1,
      "protocol_years": 352.1,
-     "p_annual": 0.004260558905751911
+     "p_annual": 0.004260459720688164
     }
    },
    "window_years": 3.0,
@@ -8103,212 +8412,212 @@
     "staking|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 13.9,
-     "p_annual": 0.03601719506475088
+     "p_annual": 0.03601774740946233
     },
     "staking|>=2y|>=1B": {
      "hacks": 1,
      "protocol_years": 13.6,
-     "p_annual": 0.11066262722160414
+     "p_annual": 0.11065871672751723
     },
     "lending|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 9.7,
-     "p_annual": 0.05152488030010622
+     "p_annual": 0.05152629329199839
     },
     "lending|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 19.7,
-     "p_annual": 0.02541968708082944
+     "p_annual": 0.025419068073050957
     },
     "other|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 10.1,
-     "p_annual": 0.04942155335051422
+     "p_annual": 0.04942025343497088
     },
     "other|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 9.0,
-     "p_annual": 0.05565314952767057
+     "p_annual": 0.055652160480959084
     },
     "bridge|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 8.0,
-     "p_annual": 0.06223057268020842
+     "p_annual": 0.06223098490513073
     },
     "bridge|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 12.2,
-     "p_annual": 0.04113209467235385
+     "p_annual": 0.04113101417111798
     },
     "yield_vault|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 4.1,
-     "p_annual": 0.1216688107201461
+     "p_annual": 0.12166723500875663
     },
     "yield_vault|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 3.6,
-     "p_annual": 0.1371774735237919
+     "p_annual": 0.1371734675630813
     },
     "dex_derivatives|<2y|>=1B": {
      "hacks": 0,
      "protocol_years": 3.8,
-     "p_annual": 0.1330033665781064
+     "p_annual": 0.13301089898247864
     },
     "dex_derivatives|>=2y|>=1B": {
      "hacks": 0,
      "protocol_years": 12.9,
-     "p_annual": 0.038653996002485445
+     "p_annual": 0.038653200807491316
     },
     "bridge|<2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 25.7,
-     "p_annual": 0.09744367974085966
+     "p_annual": 0.09744165834156092
     },
     "bridge|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 3.5,
-     "p_annual": 0.14454269472009262
+     "p_annual": 0.14453157605464992
     },
     "lending|<2y|100M-1B": {
      "hacks": 3,
      "protocol_years": 22.8,
-     "p_annual": 0.15348726102316682
+     "p_annual": 0.15348618631977645
     },
     "lending|>=2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 20.5,
-     "p_annual": 0.12199575363815826
+     "p_annual": 0.12199226847210651
     },
     "staking|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 30.1,
-     "p_annual": 0.01662854361655025
+     "p_annual": 0.0166286907820632
     },
     "staking|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 29.4,
-     "p_annual": 0.01700834987053379
+     "p_annual": 0.017007764828868312
     },
     "other|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 48.7,
-     "p_annual": 0.01027413675773012
+     "p_annual": 0.010274080577684584
     },
     "other|>=2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 58.6,
-     "p_annual": 0.04266413632721324
+     "p_annual": 0.042663051334873775
     },
     "dex_derivatives|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 25.8,
-     "p_annual": 0.019406925761506415
+     "p_annual": 0.019406765402386325
     },
     "dex_derivatives|>=2y|100M-1B": {
      "hacks": 3,
      "protocol_years": 14.3,
-     "p_annual": 0.24553130322797742
+     "p_annual": 0.2455212196579261
     },
     "rwa|<2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 16.0,
-     "p_annual": 0.031200813924193604
+     "p_annual": 0.03119977772989996
     },
     "rwa|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 5.7,
-     "p_annual": 0.08756256999169686
+     "p_annual": 0.08756012166209451
     },
     "yield_vault|<2y|100M-1B": {
      "hacks": 2,
      "protocol_years": 12.1,
-     "p_annual": 0.20598887725546353
+     "p_annual": 0.20598978057876663
     },
     "yield_vault|>=2y|100M-1B": {
      "hacks": 0,
      "protocol_years": 19.1,
-     "p_annual": 0.026199250921605244
+     "p_annual": 0.0261986664252339
     },
     "other|<2y|<100M": {
      "hacks": 18,
      "protocol_years": 1842.6,
-     "p_annual": 0.010040209789563277
+     "p_annual": 0.010040303462513774
     },
     "other|>=2y|<100M": {
      "hacks": 30,
-     "protocol_years": 3828.7,
-     "p_annual": 0.007966236873175858
+     "protocol_years": 3828.8,
+     "p_annual": 0.007966046296016579
     },
     "staking|<2y|<100M": {
      "hacks": 0,
      "protocol_years": 418.9,
-     "p_annual": 0.0011937100274214821
+     "p_annual": 0.0011937086623246167
     },
     "staking|>=2y|<100M": {
      "hacks": 2,
      "protocol_years": 252.0,
-     "p_annual": 0.009921987562930897
+     "p_annual": 0.00992159356700738
     },
     "lending|<2y|<100M": {
      "hacks": 45,
      "protocol_years": 1053.9,
-     "p_annual": 0.0431724382104198
+     "p_annual": 0.0431727456202413
     },
     "lending|>=2y|<100M": {
      "hacks": 16,
      "protocol_years": 1026.7,
-     "p_annual": 0.016071263675183845
+     "p_annual": 0.016070745488477523
     },
     "dex_derivatives|<2y|<100M": {
      "hacks": 23,
-     "protocol_years": 2958.6,
-     "p_annual": 0.007943037433611485
+     "protocol_years": 2958.5,
+     "p_annual": 0.007943133456254465
     },
     "dex_derivatives|>=2y|<100M": {
      "hacks": 30,
-     "protocol_years": 3660.7,
-     "p_annual": 0.008331666300393089
+     "protocol_years": 3660.8,
+     "p_annual": 0.00833142041037863
     },
     "yield_vault|<2y|<100M": {
      "hacks": 15,
-     "protocol_years": 849.7,
-     "p_annual": 0.0182427095889854
+     "protocol_years": 849.6,
+     "p_annual": 0.018243062697063942
     },
     "yield_vault|>=2y|<100M": {
      "hacks": 6,
      "protocol_years": 1466.6,
-     "p_annual": 0.004432049637955507
+     "p_annual": 0.004431936893129162
     },
     "bridge|<2y|<100M": {
      "hacks": 2,
      "protocol_years": 154.1,
-     "p_annual": 0.016227610448610423
+     "p_annual": 0.016227616054739172
     },
     "bridge|>=2y|<100M": {
      "hacks": 3,
      "protocol_years": 161.7,
-     "p_annual": 0.021640150120446754
+     "p_annual": 0.021639480759005354
     },
     "rwa|<2y|<100M": {
      "hacks": 2,
      "protocol_years": 197.3,
-     "p_annual": 0.012672569133486572
+     "p_annual": 0.012672391354528028
     },
     "rwa|>=2y|<100M": {
      "hacks": 0,
      "protocol_years": 100.5,
-     "p_annual": 0.004976059437733146
+     "p_annual": 0.0049758538621401905
     },
     "stable_synthetic|<2y|<100M": {
      "hacks": 1,
      "protocol_years": 118.4,
-     "p_annual": 0.012670583227830972
+     "p_annual": 0.012671312401020275
     },
     "stable_synthetic|>=2y|<100M": {
      "hacks": 1,
      "protocol_years": 352.1,
-     "p_annual": 0.004260558905751911
+     "p_annual": 0.004260459720688164
     }
    },
    "window_years": 3.0,
@@ -12550,6 +12859,10 @@
         0.958186,
         0.960978,
         0.983432
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Sky Lending (CDP)"
        ]
       },
       "falcon-finance": {
@@ -12565,7 +12878,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.3079915539872861,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Falcon Finance (Basis Trading)"
+       ]
       },
       "united-stables": {
        "years": 0.81,
@@ -12580,7 +12897,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.6190651734526549,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "unclassified",
+       "cg_categories": [
+        "llama:United Founders Group (Reserve Currency): unclear"
+       ]
       },
       "polymarket-usd": {
        "years": 0.45,
@@ -12595,7 +12916,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 1.113595287143468,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "unclassified",
+       "cg_categories": [
+        "fiat wrapper (prediction-market collateral)"
+       ]
       },
       "usdai": {
        "years": 1.28,
@@ -12618,6 +12943,10 @@
         0.989376,
         0.974416,
         0.9843606905536773
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "coingecko:Yield-Bearing Stablecoin, Synthetic Dollar"
        ]
       },
       "apxusd": {
@@ -12636,10 +12965,19 @@
        "troughs": [
         0.9843754280268037,
         0.9371058437090586
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
        ]
       },
       "re-protocol-reusd": {
-       "excluded": "NAV-accruing (median price > 1.02)"
+       "excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+       "nav": {
+        "years": 1.29,
+        "episodes": 0,
+        "depths": []
+       }
       },
       "binance-peg-busd": {
        "years": 3.15,
@@ -12659,6 +12997,10 @@
         0.9891351888991293,
         0.9487469682046753,
         0.9691419152252555
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "fiat-backed peg mislabelled crypto-backed"
        ]
       },
       "usx": {
@@ -12674,7 +13016,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.4844217549171857,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Solstice (Basis Trading)"
+       ]
       },
       "satoshi-stablecoin": {
        "years": 2.4,
@@ -12741,6 +13087,10 @@
         0.9807818208809217,
         0.9874471319152679,
         0.9839179586884297
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "coingecko:Crypto-backed Stablecoin; llama:River Omni-CDP"
        ]
       },
       "astherus-usdf": {
@@ -12758,6 +13108,10 @@
        "episodes<0.5": 0,
        "troughs": [
         0.982208061164344
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
        ]
       },
       "saturn-dollar": {
@@ -12773,7 +13127,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.9925488384691369,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "unclassified",
+       "cg_categories": [
+        "llama:Saturn (Stablecoin Wrapper)"
+       ]
       },
       "f-x-protocol-fxusd": {
        "years": 2.55,
@@ -12793,6 +13151,10 @@
         0.988756,
         0.9863432054738938,
         0.9888392998727037
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "coingecko:Crypto-backed Stablecoin"
        ]
       },
       "cap-usd": {
@@ -12823,6 +13185,10 @@
         0.9730326042625943,
         0.978842953201745,
         0.9788692545909137
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "manual: Cap cUSD, stablecoin reserves lent to operators for yield"
        ]
       },
       "tori-trusd": {
@@ -12838,7 +13204,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 2.4680601995964775,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Tori Finance (Basis Trading)"
+       ]
       },
       "axis-usd": {
        "years": 0.1,
@@ -12853,7 +13223,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 5.21771738257011,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Axis (Basis Trading)"
+       ]
       },
       "yuzu-usd": {
        "years": 0.92,
@@ -12868,7 +13242,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.5436002447007262,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Yuzu Money (Yield)"
+       ]
       },
       "infinifi-usd": {
        "years": 1.23,
@@ -12883,7 +13261,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.4049867568498915,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:infiniFi (Yield); coingecko:Yield-Bearing Stablecoin"
+       ]
       },
       "precious-metals-usd": {
        "years": 0.81,
@@ -12915,6 +13297,10 @@
         0.985682970760602,
         0.9878512295082721,
         0.35933896444077273
+       ],
+       "design": "nav_rwa",
+       "cg_categories": [
+        "coingecko:Real World Assets (RWA)"
        ]
       },
       "usdu": {
@@ -12932,6 +13318,10 @@
        "episodes<0.5": 0,
        "troughs": [
         0.9844195018276353
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Unitas USDu (Basis Trading)"
        ]
       },
       "standx-dusd": {
@@ -12947,7 +13337,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.3616664795927922,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
+       ]
       },
       "resupply-usd": {
        "years": 1.51,
@@ -13028,6 +13422,10 @@
         0.9892017477408893,
         0.9895382633061145,
         0.9895658353426554
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Resupply (Lending): CDP against lending-market collateral"
        ]
       },
       "jupusd": {
@@ -13043,7 +13441,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.659307488965579,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:JupUSD (Basis Trading)"
+       ]
       },
       "metronome-synth-usd": {
        "years": 1.22,
@@ -13060,6 +13462,10 @@
        "episodes<0.5": 1,
        "troughs": [
         0.46108283356232266
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "coingecko:Synthetic Dollar"
        ]
       },
       "soulpeg-usd": {
@@ -13084,6 +13490,10 @@
         0.9897979677295881,
         0.9871131521258188,
         0.9881110992034796
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
        ]
       },
       "main-street-usd": {
@@ -13106,6 +13516,10 @@
         0.9812568919892013,
         0.9855062957733488,
         0.2088324552543618
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Mainstreet (Yield)"
        ]
       },
       "unity-usd": {
@@ -13121,7 +13535,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.8698324138759075,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
+       ]
       },
       "liquity-bold-2": {
        "years": 1.37,
@@ -13136,7 +13554,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.36455422463377185,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Liquity V2 (CDP)"
+       ]
       },
       "metamask-usd": {
        "years": 1.1,
@@ -13154,6 +13576,10 @@
        "troughs": [
         0.979806,
         0.983393
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "llama:MetaMask USD (Stablecoin Issuer): fiat-backed"
        ]
       },
       "noon-usn": {
@@ -13169,7 +13595,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.29362979767424163,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Noon (Yield)"
+       ]
       },
       "nusd-2": {
        "years": 0.76,
@@ -13184,7 +13614,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.6594071754473256,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "coingecko:Synthetic Asset"
+       ]
       },
       "mezo-usd": {
        "years": 1.15,
@@ -13222,6 +13656,10 @@
         0.9899493755230584,
         0.9895960372139091,
         0.98850012282196
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Mezo Borrow (CDP)"
        ]
       },
       "gyroscope-gyd": {
@@ -13241,6 +13679,10 @@
         0.9839946685605373,
         0.9627160195474573,
         0.7447395750177689
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "reserve-backed, no matching source"
        ]
       },
       "bucket-protocol-buck-stablecoin": {
@@ -13275,6 +13717,10 @@
         0.948335,
         0.98145,
         0.9809988363367264
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Bucket CDP (CDP)"
        ]
       },
       "hylo-usd": {
@@ -13290,7 +13736,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.4719543855195058,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "algorithmic",
+       "cg_categories": [
+        "llama:Hylo Protocol (Dual-Token Stablecoin)"
+       ]
       },
       "yu": {
        "years": 1.37,
@@ -13309,6 +13759,10 @@
         0.109999,
         0.98822,
         0.008186820572734142
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "manual: Yala YU, BTC-collateralised CDP"
        ]
       },
       "unity-2": {
@@ -13324,7 +13778,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.37197954041803777,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:XSY (Basis Trading)"
+       ]
       },
       "megausd": {
        "years": 0.67,
@@ -13345,6 +13803,10 @@
         0.9861617848777402,
         0.865602845287,
         0.8210296101605182
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
        ]
       },
       "usdb": {
@@ -13422,6 +13884,10 @@
         0.9881641302913724,
         0.9875369582508297,
         0.9890146568876028
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "no source"
        ]
       },
       "felix-feusd": {
@@ -13448,6 +13914,10 @@
         0.9881825142105533,
         0.9878219700218059,
         0.9674183411374903
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Felix CDP (CDP)"
        ]
       },
       "honey-3": {
@@ -13463,7 +13933,11 @@
        "episodes<0.75": 0,
        "p_annual_over_24h<0.5": 0.2993876090096643,
        "episodes<0.5": 0,
-       "troughs": []
+       "troughs": [],
+       "design": "unclassified",
+       "cg_categories": [
+        "basket-backed, no matching source"
+       ]
       },
       "usdx-money-usdx": {
        "years": 2.03,
@@ -13482,6 +13956,10 @@
         0.989177,
         0.980311,
         0.007371181791719058
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "manual: Stables Labs USDX, delta-neutral synthetic (CoinGecko tags it fiat-backed)"
        ]
       },
       "plume-usd": {
@@ -13505,10 +13983,22 @@
         0.9766401861441228,
         0.989210171307394,
         0.9898610225519895
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "wrapper"
        ]
       },
       "web-3-dollar": {
-       "excluded": "NAV-accruing (median price > 1.02)"
+       "excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+       "nav": {
+        "years": 2.38,
+        "episodes": 2,
+        "depths": [
+         0.02758522167487676,
+         0.011822660098522175
+        ]
+       }
       },
       "liquid-loans-usdl": {
        "years": 2.75,
@@ -13606,6 +14096,10 @@
         0.9859289505504698,
         0.9896245087546306,
         0.9811943131622521
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:LiquidLoans (CDP)"
        ]
       },
       "angle-usd": {
@@ -13677,6 +14171,10 @@
         0.9881468432910044,
         0.9610302961277599,
         0.9416357242210206
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "llama:Angle (CDP)"
        ]
       },
       "rings-scusd": {
@@ -13699,6 +14197,10 @@
         0.9862835779813826,
         0.9804415504320624,
         0.9864903562830476
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "wrapper"
        ]
       },
       "pleasing-usd": {
@@ -13720,6 +14222,10 @@
         0.9893463367838891,
         0.9888844001907864,
         0.003718257572243216
+       ],
+       "design": "unclassified",
+       "cg_categories": [
+        "llama:Pleasing Gold (RWA): gold-linked, unclear"
        ]
       },
       "resolv-usr": {
@@ -13737,6 +14243,10 @@
        "episodes<0.5": 1,
        "troughs": [
         0.07970577922594592
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Resolv USR (Basis Trading)"
        ]
       },
       "level-usd": {
@@ -13761,6 +14271,10 @@
         0.9334804107831002,
         0.8987696937025587,
         0.9392785452457738
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "manual: Level lvlUSD, backed by stablecoins deployed to lending (DefiLlama 'Level' match is an unrelated protocol)"
        ]
       },
       "nectar": {
@@ -13812,10 +14326,21 @@
         0.9438374917759084,
         0.9894754543968715,
         0.9836262718081105
+       ],
+       "design": "cdp",
+       "cg_categories": [
+        "manual: Beraborrow NECT, CDP"
        ]
       },
       "coinshift-usdl-morpho-vault": {
-       "excluded": "NAV-accruing (median price > 1.02)"
+       "excluded": "NAV-accruing (median price > 1.02): modelled as NAV markdown",
+       "nav": {
+        "years": 0.74,
+        "episodes": 1,
+        "depths": [
+         0.0590983120350036
+        ]
+       }
       },
       "elixir-deusd": {
        "years": 1.54,
@@ -13832,6 +14357,10 @@
        "episodes<0.5": 1,
        "troughs": [
         0.0007587714688576358
+       ],
+       "design": "yield_delta_neutral",
+       "cg_categories": [
+        "llama:Elixir (Yield)"
        ]
       }
      },
@@ -15963,6 +16492,95 @@
       1,
       61
      ]
+    },
+    "nav_rwa_tokens": {
+     "coins": {
+      "re-protocol-reusd": {
+       "years": 1.29,
+       "episodes": 0,
+       "depths": []
+      },
+      "hastra-prime": {
+       "years": 0.84,
+       "episodes": 0,
+       "depths": []
+      },
+      "figure-heloc": {
+       "years": 1.12,
+       "episodes": 10,
+       "depths": [
+        0.01636390532544374,
+        0.01632149901380675,
+        0.024390243902438935,
+        0.025264975609756046,
+        0.02413378833510582,
+        0.02101962052960127,
+        0.02827813973924309,
+        0.031244146957950636,
+        0.033425710431072786,
+        0.011084557181758825
+       ]
+      },
+      "ondo-us-dollar-yield": {
+       "years": 2.92,
+       "episodes": 2,
+       "depths": [
+        0.03333333333333344,
+        0.013452448982962828
+       ]
+      },
+      "openeden-tbill": {
+       "years": 2.96,
+       "episodes": 0,
+       "depths": []
+      },
+      "superstate-short-duration-us-government-securities-fund-ustb": {
+       "years": 1.94,
+       "episodes": 0,
+       "depths": []
+      },
+      "syrupusdc": {
+       "years": 1.6,
+       "episodes": 0,
+       "depths": []
+      },
+      "coinshift-usdl-morpho-vault": {
+       "years": 0.74,
+       "episodes": 1,
+       "depths": [
+        0.0590983120350036
+       ]
+      },
+      "web-3-dollar": {
+       "years": 2.38,
+       "episodes": 2,
+       "depths": [
+        0.02758522167487676,
+        0.011822660098522175
+       ]
+      }
+     },
+     "coin_years": 15.79,
+     "episodes": 15,
+     "depths": [
+      0.011084557181758825,
+      0.011822660098522175,
+      0.013452448982962828,
+      0.01632149901380675,
+      0.01636390532544374,
+      0.02101962052960127,
+      0.02413378833510582,
+      0.024390243902438935,
+      0.025264975609756046,
+      0.02758522167487676,
+      0.02827813973924309,
+      0.031244146957950636,
+      0.03333333333333344,
+      0.033425710431072786,
+      0.0590983120350036
+     ],
+     "annual_rate": 0.9816339455351489,
+     "method": "7-day rolling median of DefiLlama daily prices; markdown = > 1% below running max for >= 7 days"
     }
    },
    "method": "daily prices (DefiLlama coins, CoinGecko ids), runs below threshold; >24h = >=2 consecutive daily points; daily data misses intraday CEX wicks"

@@ -35,3 +35,20 @@ def test_queue_rank_and_governance_penalty():
     assert first["recovered_pct"] >= late["recovered_pct"]
     gov = D2.headline(rank=1, governance=True, with_tornado=False)["exit_race"]["by_time"]["0m"]
     assert gov["penalty_usd"] >= first["penalty_usd"]
+
+
+def test_locked_rank_queues_with_expected_loss():
+    h = D2.headline(rank=6, incident=0.05, with_tornado=False)
+    assert h["action"] == "QUEUE EXIT NOW" and h["queue"]["locked_hours"] > 0
+    assert h["queue"]["expected_loss_while_locked_usd"] > 0
+
+
+def test_roots_modelled_by_design():
+    D = D2.static()["D"]
+    assert "NAV markdown" in D["reusd"].label and D["reusd"].badge == "tail_not_in_data"   # Re Protocol: NAV, not depeg
+    assert "delta-neutral" in D["trusd"].source or "yield_delta_neutral" in D["trusd"].source
+
+
+def test_implied_lambda_in_range():
+    il = D2.implied_lambda()
+    assert il["lambda"] is None or 0.0 <= il["lambda"] <= 1.0

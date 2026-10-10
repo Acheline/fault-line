@@ -49,7 +49,7 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
              horizon_days: float = DEFAULT_HORIZON_DAYS, rho: float = 0.3, governance: bool = False,
              rate_scale: float = 1.0, severity_scale: float = 1.0, refill_scale: float = 1.0,
              vault_claim_share: float | None = None, book_usd: float | None = None, with_tornado: bool = True,
-             incident: float | None = None) -> dict:
+             incident: float | None = None, incident_driver: str = "trusd", book_budget: bool = True) -> dict:
     """incident: an OBSERVED trUSD depeg of this depth (e.g. 0.05). Then the trUSD event is certain (final depth drawn
     from episodes at least that deep), the other depositors run (your rank matters) and, because the oracles stay at
     par, the silent loss concentrates on the holders who did not get out. incident=None: calm day, nobody running."""
@@ -70,12 +70,14 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
     carry = (s["vault_apy"] or 0.0) * horizon_days / 365.25      # yield earned by staying (forgone if you exit)
     run = incident is not None
     ahead = sum(d["assets_usd"] for d in deps[:max(0, rank - 1)]) if run else 0.0
-    cond = {"trusd": incident} if run else None
+    cond = {incident_driver: incident} if run else None
     conc = 1.0
     if run:   # others exit at par before the frozen-oracle loss is recognized: it lands on those who stay
         inst, forced = ER.reachable(mk, 0, idle, refill_scale)
         others = min(inst + forced, tot - size)
         conc = tot / max(1.0, tot - others)
+    if incident_driver != "trusd":
+        conc = 1.0              # only the frozen-oracle trUSD loss is silent; other losses are priced in when they hit
     lscale = {"trusd_frozen": conc}
 
     def run_mc(scale_driver=None, k=1.0, rs=rate_scale, sv=severity_scale, rh=rho):
@@ -99,6 +101,16 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
 
     mc = run_mc()
     dec = decision(mc)
+    # ASSUMED_ANSWERS §3 book budget: single-incident CVaR95 above N bps of the book -> exit enough to get under it
+    lim = c["risk"]["book_cvar95_single_incident_bps"] / 1e4 * book_usd
+    book_hit = book_budget and mc.cvar95 * size > lim
+    if book_hit and not dec["locked"]:
+        need = 1 - lim / (mc.cvar95 * size)
+        x = next(f for f in (0.25, 0.5, 0.75, 1.0) if f >= need)
+        g = next(g for g in dec["grid"] if g["t_s"] == 0 and g["x"] == x)
+        if g["exited_usd"] > 0 and (dec["action"] == "STAY" or dec["exit_fraction"] < x):
+            dec.update(action="EXIT" if x == 1.0 else "REDUCE", exit_fraction=x, now=g,
+                       net_value_exit_now_usd=g["net_usd"], bps_of_book=g["net_usd"] / book_usd * 1e4)
     # #1 driver: largest risk-adjusted contribution
     contrib = {k: v["E[L]"] + lam * (v["CVaR_contrib"] - v["E[L]"]) for k, v in mc.attribution.items()}
     top = max(contrib, key=contrib.get) if contrib else None
@@ -141,6 +153,17 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
                       "p_breakeven": p_be, "p_estimate": p_est, "rate_multiplier": kstar},
         "exit_race": race,
     }
+    out["book_budget"] = {"limit_usd": lim, "cvar95_usd": mc.cvar95 * size, "hit": book_hit,
+                          "rule": f"single-incident CVaR95 <= {c['risk']['book_cvar95_single_incident_bps']} bps of the "
+                                  f"{out['bps_basis']} (ASSUMED_ANSWERS §3)"}
+    if dec["locked"]:     # nothing can leave now: queue the full exit and say what staying locked costs
+        steps = [i * 3600 for i in range(0, int(horizon_days * 24) + 1, 1)]
+        locked_avg = sum(ER.recovered(size, ahead, mk, t, pen, idle, refill_scale)["locked_usd"] for t in steps) / len(steps)
+        out["action"] = "QUEUE EXIT NOW"
+        out["queue"] = {"locked_hours": (race["time_to_full_exit_s"] or 0) / 3600 if race["time_to_full_exit_s"] is not None else None,
+                        "expected_loss_while_locked_usd": mc.el * locked_avg,
+                        "assumption": "the loss is recognized at a uniformly random time within the horizon; you bear "
+                                      "it on whatever is still locked at that time"}
     out["reason"] = reasons(out, meta)
     if with_tornado:
         base = out["net_value_exit_now_usd"]
@@ -202,3 +225,49 @@ if __name__ == "__main__":
     HEADLINE.write_text(json.dumps(h, indent=1, default=str))
     print(json.dumps({k: h[k] for k in ("action", "exit_fraction", "net_value_exit_now_usd", "net_value_exit_now_bps_book",
                                         "loss_usd", "driver", "breakeven", "reason")}, indent=1, default=str))
+
+
+# ----------------------------------------------------------------------------------- calm-day diagnostics
+def _net_full_now(**kw) -> float:
+    h = headline(with_tornado=False, **kw)
+    return h["components_full_exit_now"]["net_usd"]
+
+
+def implied_lambda(**kw) -> dict:
+    """The lambda at which a full exit now is worth exactly 0: running the vault at this size implies lambda below it."""
+    lo, hi = 0.0, 1.0
+    f0, f1 = _net_full_now(lam=lo, **kw), _net_full_now(lam=hi, **kw)
+    if f0 >= 0:
+        return {"lambda": 0.0, "note": "even a risk-neutral holder exits: E[L] alone exceeds yield + exit cost"}
+    if f1 <= 0:
+        return {"lambda": None, "note": "staying holds for every lambda in [0, 1]"}
+    for _ in range(40):
+        mid = (lo + hi) / 2
+        lo, hi = (lo, mid) if _net_full_now(lam=mid, **kw) > 0 else (mid, hi)
+    return {"lambda": hi, "note": "staying implies a risk aversion below this"}
+
+
+def max_stay_size(lam: float, sizes=None, **kw) -> dict:
+    """Largest deposit for which the recommendation is STAY (decision rule + the book CVaR budget)."""
+    sizes = sizes or [s * 1e5 for s in range(1, 121)]           # $0.1M .. $12M
+    stay = [s for s in sizes if headline(size_usd=s, lam=lam, with_tornado=False, **kw)["action"] == "STAY"]
+    return {"lambda": lam, "max_size_usd": max(stay) if stay else None, "min_size_usd": min(stay) if stay else None,
+            "n_stay": len(stay), "grid": f"${sizes[0] / 1e6:.1f}M..${sizes[-1] / 1e6:.0f}M step $0.1M"}
+
+
+def early_warning(lam: float, rank: int = 6, driver: str = "trusd", depths=None) -> dict:
+    """Watch-mode trigger: the shallowest observed move at which any depositor AHEAD of you (real top holders) has a
+    positive net value of exiting with this decision rule: they run, and after that you cannot exit fully."""
+    s = static()
+    deps = s["meta"]["q3"]["top_depositors"][: max(0, rank - 1)]
+    depths = depths or [x / 400 for x in range(1, 201)]          # 0.25% steps to 50%
+    out = []
+    for d in deps:
+        kw = dict(size_usd=d["assets_usd"], rank=1, lam=lam, with_tornado=False, book_budget=False)  # their book: unknown
+        trig = next((x for x in depths if headline(incident=x, incident_driver=driver, **kw)["action"] != "STAY"), None)
+        calm = headline(**kw)["action"]
+        out.append({"address": d["address"], "size_usd": d["assets_usd"], "calm_action": calm, "trigger_depth": trig})
+    trig = [0.0 if o["calm_action"] != "STAY" else o["trigger_depth"] for o in out]
+    trig = [t for t in trig if t is not None]
+    return {"lambda": lam, "rank": rank, "driver": driver, "ahead": out,
+            "act_before_depth": min(trig) if trig else None}

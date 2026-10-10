@@ -1,0 +1,65 @@
+# Design labels for the post-2024 non-fiat USD stablecoin universe (risk/base_rates.py yield_synthetic_universe).
+# Used to split base rates by design. Each label carries its source:
+#   llama:<protocol> (<category>)  DefiLlama protocol category of the exact issuer
+#   coingecko:<category>           CoinGecko category on the coin itself
+#   manual                         Fault Line label from the issuer's published design (both sources missing/wrong);
+#                                  to verify, listed in the Assumptions page
+# Coins whose design could not be supported by a source are "unclassified" and left out of the class rates.
+# Designs: yield_delta_neutral (basis-trading / strategy- or deployment-backed synthetic dollars), cdp
+# (over-collateralised debt positions), algorithmic, nav_rwa (NAV-accruing RWA / credit / reinsurance).
+
+falcon-finance: {design: yield_delta_neutral, source: "llama:Falcon Finance (Basis Trading)"}
+usx: {design: yield_delta_neutral, source: "llama:Solstice (Basis Trading)"}
+tori-trusd: {design: yield_delta_neutral, source: "llama:Tori Finance (Basis Trading)"}
+axis-usd: {design: yield_delta_neutral, source: "llama:Axis (Basis Trading)"}
+usdu: {design: yield_delta_neutral, source: "llama:Unitas USDu (Basis Trading)"}
+jupusd: {design: yield_delta_neutral, source: "llama:JupUSD (Basis Trading)"}
+unity-2: {design: yield_delta_neutral, source: "llama:XSY (Basis Trading)"}
+resolv-usr: {design: yield_delta_neutral, source: "llama:Resolv USR (Basis Trading)"}
+infinifi-usd: {design: yield_delta_neutral, source: "llama:infiniFi (Yield); coingecko:Yield-Bearing Stablecoin"}
+yuzu-usd: {design: yield_delta_neutral, source: "llama:Yuzu Money (Yield)"}
+noon-usn: {design: yield_delta_neutral, source: "llama:Noon (Yield)"}
+main-street-usd: {design: yield_delta_neutral, source: "llama:Mainstreet (Yield)"}
+elixir-deusd: {design: yield_delta_neutral, source: "llama:Elixir (Yield)"}
+usdai: {design: yield_delta_neutral, source: "coingecko:Yield-Bearing Stablecoin, Synthetic Dollar"}
+metronome-synth-usd: {design: yield_delta_neutral, source: "coingecko:Synthetic Dollar"}
+nusd-2: {design: yield_delta_neutral, source: "coingecko:Synthetic Asset"}
+usdx-money-usdx: {design: yield_delta_neutral, source: "manual: Stables Labs USDX, delta-neutral synthetic (CoinGecko tags it fiat-backed)"}
+level-usd: {design: yield_delta_neutral, source: "manual: Level lvlUSD, backed by stablecoins deployed to lending (DefiLlama 'Level' match is an unrelated protocol)"}
+cap-usd: {design: yield_delta_neutral, source: "manual: Cap cUSD, stablecoin reserves lent to operators for yield"}
+
+usds: {design: cdp, source: "llama:Sky Lending (CDP)"}
+liquity-bold-2: {design: cdp, source: "llama:Liquity V2 (CDP)"}
+bucket-protocol-buck-stablecoin: {design: cdp, source: "llama:Bucket CDP (CDP)"}
+felix-feusd: {design: cdp, source: "llama:Felix CDP (CDP)"}
+angle-usd: {design: cdp, source: "llama:Angle (CDP)"}
+liquid-loans-usdl: {design: cdp, source: "llama:LiquidLoans (CDP)"}
+mezo-usd: {design: cdp, source: "llama:Mezo Borrow (CDP)"}
+satoshi-stablecoin: {design: cdp, source: "coingecko:Crypto-backed Stablecoin; llama:River Omni-CDP"}
+f-x-protocol-fxusd: {design: cdp, source: "coingecko:Crypto-backed Stablecoin"}
+resupply-usd: {design: cdp, source: "llama:Resupply (Lending): CDP against lending-market collateral"}
+nectar: {design: cdp, source: "manual: Beraborrow NECT, CDP"}
+yu: {design: cdp, source: "manual: Yala YU, BTC-collateralised CDP"}
+
+hylo-usd: {design: algorithmic, source: "llama:Hylo Protocol (Dual-Token Stablecoin)"}
+
+precious-metals-usd: {design: nav_rwa, source: "coingecko:Real World Assets (RWA)"}
+
+# unclassified (no supporting source, or not a synthetic design: fiat wrappers / baskets)
+united-stables: {design: unclassified, source: "llama:United Founders Group (Reserve Currency): unclear"}
+polymarket-usd: {design: unclassified, source: "fiat wrapper (prediction-market collateral)"}
+binance-peg-busd: {design: unclassified, source: "fiat-backed peg mislabelled crypto-backed"}
+apxusd: {design: unclassified, source: "no source"}
+astherus-usdf: {design: unclassified, source: "no source"}
+saturn-dollar: {design: unclassified, source: "llama:Saturn (Stablecoin Wrapper)"}
+standx-dusd: {design: unclassified, source: "no source"}
+soulpeg-usd: {design: unclassified, source: "no source"}
+unity-usd: {design: unclassified, source: "no source"}
+metamask-usd: {design: unclassified, source: "llama:MetaMask USD (Stablecoin Issuer): fiat-backed"}
+gyroscope-gyd: {design: unclassified, source: "reserve-backed, no matching source"}
+usdb: {design: unclassified, source: "no source"}
+honey-3: {design: unclassified, source: "basket-backed, no matching source"}
+plume-usd: {design: unclassified, source: "wrapper"}
+rings-scusd: {design: unclassified, source: "wrapper"}
+pleasing-usd: {design: unclassified, source: "llama:Pleasing Gold (RWA): gold-linked, unclear"}
+megausd: {design: unclassified, source: "no source"}

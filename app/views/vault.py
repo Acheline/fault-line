@@ -47,7 +47,7 @@ if HL.exists():
                             "at least this deep, other depositors run, the frozen-oracle loss lands on those who stay")
         incident = st.slider("Observed trUSD depth", 0.01, 0.5, 0.05, 0.01) if sit != "calm (no incident)" else None
     h = _headline(float(size), int(rank), lam, float(horizon), rho, gov, incident, HL.stat().st_mtime)
-    color = {"STAY": "#2b8a3e", "REDUCE": "#e67700", "EXIT": "#c92a2a"}[h["action"]]
+    color = {"STAY": "#2b8a3e", "REDUCE": "#e67700", "EXIT": "#c92a2a", "QUEUE EXIT NOW": "#c92a2a"}[h["action"]]
     act = h["action"] + (f" {h['exit_fraction']:.0%}" if h["action"] == "REDUCE" else "")
     st.markdown(
         f"<div style='display:flex;gap:28px;align-items:baseline;flex-wrap:wrap'>"
@@ -62,10 +62,30 @@ if HL.exists():
                f"${cf['yield_forgone_usd']:,.0f} (vault APY {h['carry']['vault_apy']:.2%}, {h['carry']['source']}) − "
                f"exit cost ${cf['exit_cost_usd']:,.0f} = ${cf['net_usd']:+,.0f}. Sanity: E[L] annualized "
                f"{h['sanity']['E[L]_annualized']:.2%} vs vault APY {h['sanity']['vault_apy']:.2%}.")
-    if h["locked_now"]:
-        q = h["queue_plan"]
-        st.warning(f"Locked: the depositors ahead of you (${h['ahead_usd']:,.0f}) exhaust the reachable liquidity. "
-                   f"Queue a full exit: {q['recoverable_24h_pct']:.0%} recoverable by 24 h.")
+    if h.get("queue"):
+        q = h["queue"]
+        st.warning(f"QUEUE EXIT NOW: the depositors ahead of you (${h['ahead_usd']:,.0f}) exhaust the reachable "
+                   f"liquidity; locked ~{q['locked_hours']:.0f} h; expected loss while locked "
+                   f"${q['expected_loss_while_locked_usd']:,.0f} ({q['assumption']}).")
+    if h["book_budget"]["hit"]:
+        st.error(f"Book budget hit: CVaR95 ${h['book_budget']['cvar95_usd']:,.0f} > ${h['book_budget']['limit_usd']:,.0f} "
+                 f"({h['book_budget']['rule']}).")
+    if not incident:
+        @st.cache_data(show_spinner="Solving implied λ and maximum STAY size…")
+        def _calm_diag(size, horizon, rho, mtime):
+            il = D2.implied_lambda(size_usd=size, horizon_days=horizon, rho=rho)
+            ms = {l: D2.max_stay_size(l, horizon_days=horizon, rho=rho)["max_size_usd"] for l in (0.0, 0.25, 0.5)}
+            ew = {drv: D2.early_warning(0.0, 6, drv)["act_before_depth"] for drv in ("trusd", "reusd")}
+            return il, ms, ew
+        il, ms, ew = _calm_diag(float(size), float(horizon), rho, HL.stat().st_mtime)
+        d1, d2, d3 = st.columns(3)
+        d1.metric("Implied λ of staying", "n/a" if il["lambda"] is None else f"{il['lambda']:.3f}", il["note"][:40],
+                  delta_color="off", help="running this vault at this size implies a risk aversion below this")
+        d2.markdown("**Max deposit for STAY**  \n" + "  \n".join(
+            f"λ={l}: {'never' if v is None else f'${v / 1e6:.1f}M'}" for l, v in ms.items()))
+        d3.markdown("**Early warning (watch trigger for rank #6, λ=0)**  \n"
+                    f"trUSD below ${1 - (ew['trusd'] or 0):.4f} · reUSD NAV −{(ew['reusd'] or 0):.1%}: the holders ahead "
+                    "would run; act before.")
     if h["hard_budget_hit"]:
         st.error("Hard budget hit: pocket VaR95 above the 20% limit (ASSUMED_ANSWERS §3).")
     be, dr = h["breakeven"], h["driver"]
