@@ -188,5 +188,5 @@ and the collapsed graph. The discovery tests rewrite `data/graphs/` and `output/
 
 ## Team
 
-- **[Name]**: back-end (fork pipeline, tracing, shock simulations, risk engine)
-- **[Name]**: front-end (Streamlit app, dependency graph, charts, Break it)
+- **Chahd Achkrou**: back-end (fork pipeline, tracing, shock simulations, risk engine)
+- **Hala Dina Benkhaddah**: front-end (Streamlit app, dependency graph, charts, Break it)
