@@ -175,5 +175,10 @@
   },
   "how": "curator Safe submit(setForceDeallocatePenalty) + execute in the same block, on the fork"
  },
- "aave_usdc_apy": 0.04366380381915236
+ "aave_usdc_apy": 0.04366380381915236,
+ "vault_apy_realized": {
+  "7d": 0.06650281108862632,
+  "30d": 0.07206822927344136,
+  "90d": 0.06733793735366111
+ }
 }

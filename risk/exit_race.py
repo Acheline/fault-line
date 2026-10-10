@@ -153,3 +153,22 @@ def load_inputs() -> tuple[dict, dict]:
     meta = json.loads((ROOT / "data" / "graphs" / "hero2.json").read_text())["meta"]
     lr = json.loads((ROOT / "data" / "liquidity_recovery.json").read_text())
     return meta, lr
+
+
+def realized_apy(fork: Fork, vault: str, windows_days=(7, 30, 90)) -> dict:
+    """Vault APY net of fees, from its own share price: convertToAssets(1e18) now vs N days of blocks ago (archive
+    reads through the fork's upstream). Cached in the headline measurements."""
+    from core.fork import selector as _sel
+    from eth_utils import to_checksum_address
+    vault = to_checksum_address(vault)
+    data = "0x" + (_sel("convertToAssets(uint256)") + encode(["uint256"], [10**18])).hex()
+    b0 = fork.fork_block
+    p0 = int(fork.w3.eth.call({"to": vault, "data": data}, block_identifier=b0).hex(), 16)
+    t0 = fork.w3.eth.get_block(b0)["timestamp"]
+    out = {}
+    for d in windows_days:
+        b = b0 - d * 7200
+        p = int(fork.w3.eth.call({"to": vault, "data": data}, block_identifier=b).hex(), 16)
+        dt = (t0 - fork.w3.eth.get_block(b)["timestamp"]) / 86400
+        out[f"{d}d"] = (p0 / p) ** (365.25 / dt) - 1 if p else None
+    return out

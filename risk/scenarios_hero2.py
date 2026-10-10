@@ -91,8 +91,10 @@ def drivers(offline: bool) -> tuple[dict[str, Driver], dict]:
     ys = _class(br, "yield_synthetic")
     rate = ys["thresholds"]["0.99"]["p_annual"]
     sev = [1 - t for t in ys["episode_troughs"]]
-    src = (f"base_rates yield_synthetic class: {ys['thresholds']['0.99']['episodes']} episodes < $0.99 in "
-           f"{ys['coin_years']} coin-years ({', '.join(ys['coins'])}); severity = 1 - episode trough")
+    n_coins = sum(1 for v in ys["coins"].values() if "years" in v)
+    src = (f"base_rates yield_synthetic class (rule-based: every non-fiat USD stablecoin launched since 2024 with peak "
+           f"supply >= $25M, failures included): {n_coins} coins, {ys['coin_years']} coin-years, "
+           f"{ys['thresholds']['0.99']['episodes']} episodes < $0.99; severity = 1 - episode trough")
     D = {k: Driver(k, lab, rate, sev, "market_disruption", "counterparty_defaults", src)
          for k, lab in (("trusd", "trUSD depeg"), ("reusd", "reUSD depeg"), ("iusd", "iUSD depeg"))}
     nav = nav_feed_history()

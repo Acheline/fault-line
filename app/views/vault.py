@@ -26,8 +26,9 @@ if HL.exists():
     from decision import hero2 as D2
 
     @st.cache_data(show_spinner="Running Monte Carlo on the fork-measured scenarios…")
-    def _headline(size, rank, lam, horizon, rho, gov, mtime):
-        return D2.headline(size_usd=size, rank=rank, lam=lam, horizon_days=horizon, rho=rho, governance=gov)
+    def _headline(size, rank, lam, horizon, rho, gov, incident, mtime):
+        return D2.headline(size_usd=size, rank=rank, lam=lam, horizon_days=horizon, rho=rho, governance=gov,
+                           incident=incident)
 
     with st.sidebar:
         st.markdown("**Your position**")
@@ -40,15 +41,31 @@ if HL.exists():
         horizon = st.select_slider("Horizon (days)", [7, 14, 30, 60, 90], 30, help="assumption")
         rho = st.slider("Correlation between drivers ρ", 0.0, 0.8, 0.3, 0.1, help="assumption (Gaussian copula)")
         gov = st.toggle("Governance shock: curator sets penalty to 2% (no timelock)", False)
-    h = _headline(float(size), int(rank), lam, float(horizon), rho, gov, HL.stat().st_mtime)
+        st.markdown("**Situation**")
+        sit = st.radio("trUSD now", ["calm (no incident)", "observed depeg"], index=0,
+                       help="observed: the trUSD event is certain, its final depth is drawn from episodes that went "
+                            "at least this deep, other depositors run, the frozen-oracle loss lands on those who stay")
+        incident = st.slider("Observed trUSD depth", 0.01, 0.5, 0.05, 0.01) if sit != "calm (no incident)" else None
+    h = _headline(float(size), int(rank), lam, float(horizon), rho, gov, incident, HL.stat().st_mtime)
     color = {"STAY": "#2b8a3e", "REDUCE": "#e67700", "EXIT": "#c92a2a"}[h["action"]]
     act = h["action"] + (f" {h['exit_fraction']:.0%}" if h["action"] == "REDUCE" else "")
     st.markdown(
         f"<div style='display:flex;gap:28px;align-items:baseline;flex-wrap:wrap'>"
         f"<div><div style='font-size:13px;opacity:.7'>Net value of exiting now</div>"
-        f"<div style='font-size:44px;font-weight:700'>{h['net_value_exit_now_bps_book']:+.2f} bps of book</div>"
+        f"<div style='font-size:44px;font-weight:700'>{h['net_value_exit_now_bps_book']:+.1f} bps</div>"
+        f"<div style='font-size:13px;opacity:.7'>of the {h['bps_basis']} (main) · "
+        f"{h['net_value_exit_now_bps_aum']:+.2f} bps of Belem's ~${h['aum_usd'] / 1e6:,.0f}M AUM (secondary)</div>"
         f"<div style='font-size:20px'>${h['net_value_exit_now_usd']:+,.0f}</div></div>"
         f"<div style='font-size:40px;font-weight:800;color:{color}'>{act}</div></div>", unsafe_allow_html=True)
+    cf = h["components_full_exit_now"]
+    st.caption(f"Full exit now = risk-adjusted loss avoided ${cf['loss_avoided_usd']:,.0f} − yield forgone "
+               f"${cf['yield_forgone_usd']:,.0f} (vault APY {h['carry']['vault_apy']:.2%}, {h['carry']['source']}) − "
+               f"exit cost ${cf['exit_cost_usd']:,.0f} = ${cf['net_usd']:+,.0f}. Sanity: E[L] annualized "
+               f"{h['sanity']['E[L]_annualized']:.2%} vs vault APY {h['sanity']['vault_apy']:.2%}.")
+    if h["locked_now"]:
+        q = h["queue_plan"]
+        st.warning(f"Locked: the depositors ahead of you (${h['ahead_usd']:,.0f}) exhaust the reachable liquidity. "
+                   f"Queue a full exit: {q['recoverable_24h_pct']:.0%} recoverable by 24 h.")
     if h["hard_budget_hit"]:
         st.error("Hard budget hit: pocket VaR95 above the 20% limit (ASSUMED_ANSWERS §3).")
     be, dr = h["breakeven"], h["driver"]

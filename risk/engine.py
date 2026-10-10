@@ -85,7 +85,11 @@ class MCResult:
 
 def monte_carlo(drivers: dict[str, Driver], scenarios: list[Scenario], horizon_days: float, rho: float = 0.3,
                 n: int = N_PATHS, seed: int = SEED, rate_scale: dict[str, float] | None = None,
-                severity_scale: float = 1.0) -> MCResult:
+                severity_scale: float = 1.0, condition: dict[str, float] | None = None,
+                loss_scale: dict[str, float] | None = None) -> MCResult:
+    """condition {driver: s}: the event is OBSERVED at depth s; it occurs with probability 1 and its final depth is
+    drawn from the empirical episodes that went at least that deep. loss_scale {scenario: k}: multiplies a scenario's
+    loss (e.g. silent bad debt concentrated on the holders who did not exit at par)."""
     rng = np.random.default_rng(seed)
     ids = sorted({s.driver for s in scenarios})
     z = rng.standard_normal(n)
@@ -96,10 +100,13 @@ def monte_carlo(drivers: dict[str, Driver], scenarios: list[Scenario], horizon_d
         e = math.sqrt(rho) * z + math.sqrt(1 - rho) * rng.standard_normal(n)
         occurs[d] = norm.cdf(e) < p
         s = np.array(dr.severities or [0.0])
+        if condition and d in condition:
+            occurs[d] = np.ones(n, dtype=bool)
+            s = s[s >= condition[d]] if (s >= condition[d]).any() else np.array([condition[d]])
         sev[d] = np.clip(rng.choice(s, size=n) * severity_scale, 0, 1)
     by = {}
     for sc in scenarios:
-        by[sc.id] = np.where(occurs[sc.driver], sc.surface(sev[sc.driver]), 0.0)
+        by[sc.id] = np.where(occurs[sc.driver], sc.surface(sev[sc.driver]), 0.0) * (loss_scale or {}).get(sc.id, 1.0)
     tot = np.clip(sum(by.values()) if by else np.zeros(n), 0, 1)
     r = MCResult(losses=tot, by_scenario=by, horizon_days=horizon_days, rho=rho)
     r.el = float(tot.mean())
@@ -131,6 +138,7 @@ class DecisionInputs:
     exit_cost: Callable[[float, float], tuple[float, float]]   # (fraction x, t seconds) -> ($ cost, $ exitable)
     pocket_var_limit: float = 0.20          # ASSUMED_ANSWERS §3 hard budget
     fractions: tuple = (0.0, 0.25, 0.5, 0.75, 1.0)
+    carry_per_usd: float = 0.0              # yield earned by staying over the horizon, per $ (forgone if you exit)
 
 
 def risk_adjusted(el: float, cvar: float, lam: float) -> float:
@@ -138,7 +146,8 @@ def risk_adjusted(el: float, cvar: float, lam: float) -> float:
 
 
 def decide(d: DecisionInputs) -> dict:
-    """EXIT x% at t* maximizing  [E[L] + lam (CVaR - E[L])] * exited$ * (remaining exposure) - C_exit(x, t)."""
+    """EXIT x% at t* maximizing  ([E[L] + lam (CVaR - E[L])] - carry) * exited$ * (remaining horizon) - C_exit(x, t).
+    Net value of exiting = risk-adjusted expected loss avoided - yield forgone - exit cost."""
     ra = risk_adjusted(d.el, d.cvar95, d.lam)
     grid = []
     for t_label, t in TIME_GRID_S.items():
@@ -146,19 +155,23 @@ def decide(d: DecisionInputs) -> dict:
         for x in d.fractions:
             cost, exitable = d.exit_cost(x, t)
             avoided = ra * exitable * remaining
+            forgone = d.carry_per_usd * exitable * remaining
             grid.append({"t": t_label, "t_s": t, "x": x, "exited_usd": exitable, "loss_avoided_usd": avoided,
-                         "exit_cost_usd": cost, "net_usd": avoided - cost})
+                         "yield_forgone_usd": forgone, "exit_cost_usd": cost, "net_usd": avoided - forgone - cost})
     best = max(grid, key=lambda g: (round(g["net_usd"], 6), -g["t_s"]))
     now = max((g for g in grid if g["t_s"] == 0), key=lambda g: g["net_usd"])
     hard = d.var95 > d.pocket_var_limit
+    full_now = next(g for g in grid if g["t_s"] == 0 and g["x"] == 1.0)
+    locked = full_now["exited_usd"] <= 0          # nothing can leave now (liquidity ahead of you exhausted)
     x = now["x"]
-    if hard and x < 0.5:
+    if hard and x < 0.5 and not locked:
         alt = next(g for g in grid if g["t_s"] == 0 and g["x"] == 0.5)
         now, x = alt, 0.5
-    action = "STAY" if x == 0 or now["net_usd"] <= 0 else ("EXIT" if x == 1.0 else "REDUCE")
-    if hard and action == "STAY":
+    action = "STAY" if x == 0 or now["net_usd"] <= 0 or locked else ("EXIT" if x == 1.0 else "REDUCE")
+    if hard and action == "STAY" and not locked:
         action = "REDUCE"
     return {"action": action, "exit_fraction": x if action != "STAY" else 0.0, "now": now, "best": best,
+            "locked": locked,
             "grid": grid, "risk_adjusted_loss_per_usd": ra, "hard_budget_hit": hard,
             "net_value_exit_now_usd": now["net_usd"] if action != "STAY" else
             max((g for g in grid if g["t_s"] == 0 and g["x"] == 1.0), key=lambda g: g["net_usd"])["net_usd"],

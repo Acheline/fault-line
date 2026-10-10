@@ -47,12 +47,41 @@ STABLES = {
     "fiat_backed": ["usd-coin", "tether", "true-usd", "first-digital-usd", "binance-usd", "paypal-usd"],
     "crypto_backed": ["dai", "liquity-usd", "crvusd", "gho"],
     "synthetic": ["ethena-usde", "terrausd", "frax", "usdd", "nusd"],
-    # post-2024 yield-bearing synthetic / delta-neutral / RWA-backed dollars: comparables for the hero #2 collateral
-    # roots (trUSD, iUSD are in the set themselves). Which coins count as comparable is a Fault Line choice (assumption
-    # shown in the UI): every coin of this kind with DefiLlama history, failures (USR, USDX) included.
-    "yield_synthetic": ["tori-trusd", "infinifi-usd", "resolv-usr", "usdx-money-usdx", "usual-usd", "falcon-finance",
-                        "f-x-protocol-fxusd"],
+    # "yield_synthetic" is NOT hand-picked: it is built by yield_synthetic_universe() from DefiLlama's stablecoin list
 }
+YS_RULE = {"peg": "peggedUSD", "mechanisms": ("crypto-backed", "crytpo-backed", "algorithmic"),
+           "launched_after": 1704067200, "min_peak_circulating_usd": 25e6, "max_median_price": 1.02}
+
+
+def yield_synthetic_universe(offline: bool) -> dict:
+    """Every DefiLlama-listed USD stablecoin that is not fiat-backed, launched since 2024-01-01 (first circulating
+    data point), with a peak circulating supply >= $25M, and pegged at $1 (NAV-accruing tokens excluded: median
+    price > 1.02). Failures stay in: the list includes coins that collapsed. Survivorship caveat: a coin delisted
+    from DefiLlama before the fetch cannot appear."""
+    lst = _get("llama_stablecoins", "https://stablecoins.llama.fi/stablecoins?includePrices=true", offline,
+               trim=lambda d: [{k: a.get(k) for k in ("id", "name", "symbol", "gecko_id", "pegType", "pegMechanism")}
+                               for a in d["peggedAssets"]])
+    cands = [a for a in (lst or {}).get("data", []) if a.get("pegType") == YS_RULE["peg"]
+             and a.get("pegMechanism") in YS_RULE["mechanisms"] and a.get("gecko_id")]
+    inc, exc = [], []
+    for a in cands:
+        h = _get(f"llama_stable_hist_{a['id']}", f"https://stablecoins.llama.fi/stablecoin/{a['id']}", offline,
+                 trim=lambda d: [[int(t["date"]), (t.get("circulating") or {}).get("peggedUSD") or 0]
+                                 for t in (d.get("tokens") or [])])
+        pts = (h or {}).get("data") or []
+        if not pts:
+            exc.append({**a, "why": "no circulating history"})
+            continue
+        first, peak = min(t for t, _ in pts), max(v for _, v in pts)
+        rec = {**a, "first_date": first, "peak_circulating_usd": peak}
+        if first < YS_RULE["launched_after"]:
+            exc.append({**rec, "why": "launched before 2024"})
+        elif peak < YS_RULE["min_peak_circulating_usd"]:
+            exc.append({**rec, "why": "peak supply < $25M"})
+        else:
+            inc.append(rec)
+    return {"rule": YS_RULE, "included": inc, "excluded_count": len(exc),
+            "excluded_sample": [{"symbol": e["symbol"], "why": e["why"]} for e in exc[:400]]}
 THRESHOLDS = (0.99, 0.97, 0.90, 0.75, 0.50)
 
 
@@ -251,14 +280,29 @@ def episodes(px: list[tuple[int, float]], thr: float) -> list[dict]:
     return out
 
 
+def class_rate(cls: dict, exclude: tuple = (), thr: float = 0.99) -> dict:
+    """Episode rate and severities of a class from its per-coin records, optionally without some coins."""
+    coins = {k: v for k, v in cls["coins"].items() if "years" in v and k not in exclude}
+    yrs = sum(v["years"] for v in coins.values())
+    tr = sorted(t for v in coins.values() for t in v.get("troughs", []))
+    n = sum(v.get(f"episodes<{thr}", 0) for v in coins.values())
+    return {"n_coins": len(coins), "coin_years": yrs, "episodes": n, "annual_rate": _rate(n, yrs) if yrs else None,
+            "troughs": tr, "excluded": list(exclude)}
+
+
 def depeg_rates(offline: bool = False) -> dict:
     res = {}
-    for cls, ids in STABLES.items():
+    uni = yield_synthetic_universe(offline)
+    classes = dict(STABLES, yield_synthetic=[a["gecko_id"] for a in uni["included"]])
+    for cls, ids in classes.items():
         coin_years, per_thr = 0.0, {t: {"episodes": 0, "episodes_over_24h": 0, "durations_days": [], "min": []} for t in THRESHOLDS}
         coins = {}
         for cid in ids:
             px = price_history(cid, offline)
             if len(px) < 30:
+                continue
+            if cls == "yield_synthetic" and statistics.median(p for _, p in px) > YS_RULE["max_median_price"]:
+                coins[cid] = {"excluded": "NAV-accruing (median price > 1.02)"}
                 continue
             yrs = (px[-1][0] - px[0][0]) / YEAR
             coin_years += yrs
@@ -271,7 +315,9 @@ def depeg_rates(offline: bool = False) -> dict:
                 per_thr[t]["durations_days"] += [e["days"] for e in eps]
                 per_thr[t]["min"] += [e["min"] for e in eps]
                 coins[cid][f"episodes<{t}"] = len(eps)
-        res[cls] = {"coin_years": round(coin_years, 1), "coins": coins, "thresholds": {
+            coins[cid]["troughs"] = [e["min"] for e in episodes(px, THRESHOLDS[0])]
+        res[cls] = {"coin_years": round(coin_years, 1), "coins": coins,
+                    "universe": uni if cls == "yield_synthetic" else None, "thresholds": {
             str(t): {"episodes": v["episodes"], "episodes_over_24h": v["episodes_over_24h"],
                      "p_annual": _rate(v["episodes"], coin_years) if coin_years else None,
                      "p_annual_over_24h": _rate(v["episodes_over_24h"], coin_years) if coin_years else None,
