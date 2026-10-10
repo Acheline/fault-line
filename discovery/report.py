@@ -151,6 +151,8 @@ def brief_layers(g: DependencyGraph, market_node: str, market_oracle: str) -> di
             layer = BRIEF_LAYERS[4]
         elif "implementation" in tags:
             layer = BEYOND["code"]
+        elif "router" in n.label.lower() and not tags & {"pendle_market", "pendle_pt", "pendle_sy"}:
+            layer = BEYOND["exit"]          # routers (Pendle, aggregators) execute the exit; they are not the PT AMM
         elif proto == "pendle-v2" or tags & {"pendle_market", "pendle_pt", "pendle_sy"}:
             layer = BRIEF_LAYERS[3]
         else:

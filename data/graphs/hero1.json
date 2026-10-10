@@ -36,8 +36,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
@@ -66,9 +66,9 @@
     "critical"
    ],
    "paths": [
-    "value",
     "liquidation",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -152,8 +152,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendleSUSDESY",
@@ -277,8 +277,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "StakedUSDeV2",
@@ -417,8 +417,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "USDe",
@@ -501,8 +501,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -603,8 +603,8 @@
     "implementation"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -645,8 +645,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -726,14 +726,14 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
-    "no_update_timestamp",
-    "critical",
+    "chainlink_interface",
     "fixed_schedule",
-    "chainlink_interface"
+    "critical",
+    "no_update_timestamp"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
@@ -904,12 +904,12 @@
    "chain": "ethereum",
    "address": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
    "tags": [
-    "critical",
-    "pendle_market"
+    "pendle_market",
+    "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendleMarketV7",
@@ -979,8 +979,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendleYieldToken",
@@ -1079,8 +1079,8 @@
     "implementation"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "OracleLib",
@@ -1289,7 +1289,7 @@
      "exit": 2
     },
     "protocol": "pendle-v2",
-    "brief_layer": "4. PT AMM"
+    "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
    },
    "provenance": [
     {
@@ -1369,7 +1369,7 @@
      "exit": 18
     },
     "protocol": "pendle-v2",
-    "brief_layer": "4. PT AMM"
+    "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
    },
    "provenance": [
     {
@@ -1704,8 +1704,8 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "liquidation",
@@ -4637,8 +4637,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -6392,9 +6392,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
+    "venue",
     "cex",
-    "venue"
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -6418,9 +6418,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
+    "venue",
     "cex",
-    "venue"
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -6444,9 +6444,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
+    "venue",
     "cex",
-    "venue"
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -6470,9 +6470,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
+    "venue",
     "cex",
-    "venue"
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -6496,9 +6496,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
+    "venue",
     "cex",
-    "venue"
+    "offchain_disclosed"
    ],
    "paths": [],
    "props": {
@@ -15014,10 +15014,8 @@
    "4. PT AMM": [
     "PT-sUSDE-26NOV2026",
     "PendleGaugeControllerUpg",
-    "PendleLimitRouter",
     "PendleMarketFactoryV7Upg",
     "PendleMarketV7 0x47ad2c",
-    "PendleRouterV4",
     "PendleSwap",
     "PendleYieldContractFactoryUpg",
     "SY-sUSDE",
@@ -15127,6 +15125,8 @@
     "LINK",
     "MetaAggregationRouterV2",
     "NAVConsumer",
+    "PendleLimitRouter",
+    "PendleRouterV4",
     "PoolManager 0x000000",
     "Pot",
     "SUSDEContractRate",
