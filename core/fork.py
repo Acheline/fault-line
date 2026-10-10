@@ -194,6 +194,8 @@ class Fork:
                 rcpt = self.w3.eth.wait_for_transaction_receipt(h)
                 break
             except Exception as e:
+                if type(e).__name__ == "TimeExhausted":   # tx dropped by the fork (upstream 429 mid-execution):
+                    raise RuntimeError(f"setup tx dropped: {sender}->{to} {data_hex[:10]}")   # not cached: retried next run
                 if "429" not in str(e) or attempt == 5:
                     raise
                 time.sleep(3 * (attempt + 1))

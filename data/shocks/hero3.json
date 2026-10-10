@@ -1,0 +1,72 @@
+{
+ "size_usd": 5000000,
+ "ethena": {
+  "backing_usd": 4786031456.36,
+  "by_venue": {
+   "Unallocated": 3810719196,
+   "Binance": 638014276,
+   "OKX": 201712282,
+   "Bybit": 108623347,
+   "Deribit": 18948649,
+   "CDE": 8013706.36,
+   "Bitget": 0
+  },
+  "venue_usd": 638014276,
+  "venue_share": 0.13330758099221512,
+  "unallocated_share": 0.7962169138976428,
+  "reserve_fund_usd": 62074693.89890708,
+  "reserve_buffer": 0.01296997198303368,
+  "susde_apy_30d": 0.048522222222222224,
+  "source": "https://ethena.fi/api"
+ },
+ "cex": {
+  "venue_years": 47.94168943742447,
+  "incidents": [
+   {
+    "name": "Bybit",
+    "date": "2025-02-21",
+    "usd": 1400000000,
+    "share": 0.08638713272466331
+   },
+   {
+    "name": "Bitget",
+    "date": "2026-09-24",
+    "usd": 387000000,
+    "share": 0.06233821024992427
+   },
+   {
+    "name": "SwissBorg",
+    "date": "2025-09-09",
+    "usd": 41500000,
+    "share": 0.03893866126407792
+   }
+  ],
+  "annual_rate": 0.07300535381775289,
+  "note": "loss share = amount / the venue's CURRENT TVL (DefiLlama): proxy for its assets at the time"
+ },
+ "onchain": {
+  "block": 26162857,
+  "asset": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+  "owner": "0xe8dc0fab349ea169283c48ccfd09d797e6db7c94",
+  "cooldown_s": 86400,
+  "rate": 1.2523672664500605,
+  "total_assets_usde": 1213740801.3608832
+ },
+ "exit": {
+  "dex_now": {
+   "size_usd": 5000000.0,
+   "usdc": 4350401.121006,
+   "cost": 0.12991977579879999,
+   "status": "executed on the fork (pocket P3, block 26162857)"
+  },
+  "unstake_then_sell": {
+   "size_usd": 5000000,
+   "usdc": 4828936.927134,
+   "cost": 0.03421261457320002,
+   "status": "quote only / not executed"
+  },
+  "other_sizes": "not executed"
+ },
+ "label": "modelled, not executed on fork",
+ "generated_at": 1791660270
+}

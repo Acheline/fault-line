@@ -1,0 +1,252 @@
+{
+ "position_id": "hero3_susde_perp_venue",
+ "fork_block": 26162857,
+ "nodes": {
+  "position:hero3_susde_perp_venue": {
+   "id": "position:hero3_susde_perp_venue",
+   "type": "POSITION",
+   "label": "sUSDe deposit (Ethena)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "chain:ethereum": {
+   "id": "chain:ethereum",
+   "type": "CHAIN",
+   "label": "Ethereum",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "0x9d39a5de30e57443bff2a8307a4256c8797a3497": {
+   "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "type": "VAULT",
+   "label": "sUSDe (ERC-4626, cooldown 24 h)",
+   "chain": "ethereum",
+   "address": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26162857,
+     "call": null,
+     "detail": "asset(), cooldownDuration()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3": {
+   "id": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "type": "ASSET",
+   "label": "USDe",
+   "chain": "ethereum",
+   "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26162857,
+     "call": null,
+     "detail": "sUSDe.asset()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe8dc0fab349ea169283c48ccfd09d797e6db7c94": {
+   "id": "0xe8dc0fab349ea169283c48ccfd09d797e6db7c94",
+   "type": "GOVERNANCE",
+   "label": "sUSDe owner",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26162857,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "issuer:ethena": {
+   "id": "issuer:ethena",
+   "type": "ISSUER",
+   "label": "Ethena Labs (USDe issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://docs.ethena.fi",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "offchain:ethena_hedge": {
+   "id": "offchain:ethena_hedge",
+   "type": "OFFCHAIN",
+   "label": "Delta hedge: short perps",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://docs.ethena.fi",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "offchain:ethena_reserve_fund": {
+   "id": "offchain:ethena_reserve_fund",
+   "type": "OFFCHAIN",
+   "label": "Reserve fund $62M",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://ethena.fi/api/positions/current/collateral",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:venue_binance": {
+   "id": "offchain:venue_binance",
+   "type": "OFFCHAIN",
+   "label": "Binance perps (13.3% of backing, $638M)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "venue",
+    "perp",
+    "cex"
+   ],
+   "paths": [],
+   "props": {
+    "by_venue": {
+     "Unallocated": 3810719196,
+     "Binance": 638014276,
+     "OKX": 201712282,
+     "Bybit": 108623347,
+     "Deribit": 18948649,
+     "CDE": 8013706.36,
+     "Bitget": 0
+    },
+    "shocks": "modelled, not executed on fork"
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://ethena.fi/api/positions/current/collateral",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "edges": {
+  "position:hero3_susde_perp_venue|0x9d39a5de30e57443bff2a8307a4256c8797a3497|holds": {
+   "src": "position:hero3_susde_perp_venue",
+   "dst": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "type": "holds",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "position:hero3_susde_perp_venue|chain:ethereum|references": {
+   "src": "position:hero3_susde_perp_venue",
+   "dst": "chain:ethereum",
+   "type": "references",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x9d39a5de30e57443bff2a8307a4256c8797a3497|0x4c9edd5852cd905f086c759e8383e09bff1e68b3|wraps": {
+   "src": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "dst": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "type": "wraps",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x9d39a5de30e57443bff2a8307a4256c8797a3497|0xe8dc0fab349ea169283c48ccfd09d797e6db7c94|governs": {
+   "src": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "dst": "0xe8dc0fab349ea169283c48ccfd09d797e6db7c94",
+   "type": "governs",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3|issuer:ethena|issued_by": {
+   "src": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "dst": "issuer:ethena",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3|offchain:ethena_hedge|backs": {
+   "src": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "dst": "offchain:ethena_hedge",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "offchain:ethena_hedge|offchain:venue_binance|backs": {
+   "src": "offchain:ethena_hedge",
+   "dst": "offchain:venue_binance",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3|offchain:ethena_reserve_fund|backs": {
+   "src": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "dst": "offchain:ethena_reserve_fund",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": []
+  }
+ },
+ "meta": {}
+}

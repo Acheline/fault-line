@@ -106,6 +106,39 @@ if choice.stem == "hero1" and (ROOT / "data" / "shocks" / "hero1.json").exists()
                 st.rerun()
     st.divider()
 
+if choice.stem == "hero3" and (ROOT / "data" / "shocks" / "hero3.json").exists():
+    from decision import hero3 as D3
+    st.markdown("**Hero #3 · a vault routing capital into a perp exchange: Ethena sUSDe → Binance perps**")
+    c3 = st.columns(2)
+    lam3 = c3[0].slider("Risk aversion λ  ", 0.0, 1.0, 0.5, 0.05)
+    halted = c3[1].toggle(f"Shock: {D3.VENUE} halts withdrawals (exit only via DEX)", False)
+    h3 = D3.headline(lam=lam3, halted=halted)
+    col = {"STAY": "#2b8a3e", "REDUCE": "#e67700", "EXIT": "#c92a2a"}[h3["action"]]
+    st.markdown(f"<div style='display:flex;gap:28px;align-items:baseline'><div><div style='font-size:13px;opacity:.7'>"
+                f"Net value of exiting now · ${h3['size_usd'] / 1e6:.0f}M sUSDe</div><div style='font-size:36px;font-weight:700'>"
+                f"{h3['net_value_exit_now_bps_book']:+.2f} bps</div><div style='font-size:13px;opacity:.7'>of the "
+                f"{h3['bps_basis']} · ${h3['net_value_exit_now_usd']:+,.0f}</div></div><div style='font-size:32px;"
+                f"font-weight:800;color:{col}'>{h3['action']}</div></div>", unsafe_allow_html=True)
+    for line in h3["reason"]:
+        st.markdown(f"- {line}")
+    et, cx = h3["ethena"], h3["cex"]
+    st.dataframe(pd.DataFrame([
+        {"shock": f"{D3.VENUE} freezes withdrawals", "family": "technical failure", "status": h3["label"],
+         "effect": f"{et['venue_share']:.1%} of backing stuck; redemptions served from {et['unallocated_share']:.0%} "
+                   "unallocated backing; exit only via DEX (toggle above)", "source": "Ethena API (collateral by exchange)"},
+        {"shock": f"{D3.VENUE} loses assets (haircut)", "family": "security incident", "status": h3["label"],
+         "effect": f"reaches sUSDe holders above a {h3['haircut_breakeven']:.1%} haircut; past incidents "
+                   + ", ".join(f"{x['name']} {x['share']:.1%}" for x in cx["incidents"]),
+         "source": f"DefiLlama hacks (CEX > $1B, {cx['venue_years']:.0f} venue-years) + Ethena reserve fund"}]),
+        hide_index=True, width="stretch")
+    ex = h3["exit"]
+    st.caption(f"Exit: DEX ${ex['dex_now']['size_usd'] / 1e6:.0f}M {ex['dex_now']['cost']:.1%} ({ex['dex_now']['status']}); "
+               f"unstake {h3['onchain']['cooldown_s'] / 3600:.0f} h then sell "
+               + (f"{ex['unstake_then_sell']['cost']:.2%}" if ex['unstake_then_sell']['cost'] is not None else "n/a")
+               + f" ({ex['unstake_then_sell']['status']}); other sizes: {ex['other_sizes']}. "
+               f"On-chain reads at block {h3['onchain']['block']}: sUSDe.asset() = USDe, owner {h3['onchain']['owner']}.")
+    st.divider()
+
 st.caption(f"`{g.position_id}` · fork block **{g.fork_block}** · every node and edge carries the trace / "
            "storage read / disclosure it came from (hover in the graph).")
 c = st.columns(5)
