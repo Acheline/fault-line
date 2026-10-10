@@ -1,0 +1,197 @@
+import numpy as np
+
+
+BASE_POSITION_SIZE = 500_000
+RANDOM_SEED = 42
+N_SIMULATIONS = 10_000
+
+
+TEST_SCENARIOS = {
+
+    "USDe depeg": {
+        "shock_size": -0.10,
+        "position_after": 430_000,
+        "exit_proceeds": 420_000,
+        "liquidated": False,
+        "exit_race": {
+            "Now": 1.00,
+            "15 min": 1.15,
+            "1 hour": 1.40,
+            "6 hours": 1.80
+        },
+        "risk_contribution": {
+            "USDe / Ethena": 55,
+            "Pendle Liquidity": 20,
+            "Oracle": 15,
+            "Morpho": 10
+        }
+    },
+
+    "Oracle failure": {
+        "shock_size": -0.08,
+        "position_after": 450_000,
+        "exit_proceeds": 440_000,
+        "liquidated": True,
+        "exit_race": {
+            "Now": 1.00,
+            "15 min": 1.10,
+            "1 hour": 1.30,
+            "6 hours": 1.60
+        },
+        "risk_contribution": {
+            "Oracle": 60,
+            "Morpho": 25,
+            "USDe / Ethena": 10,
+            "Pendle Liquidity": 5
+        }
+    },
+
+    "Pendle liquidity shock": {
+        "shock_size": -0.50,
+        "position_after": 470_000,
+        "exit_proceeds": 390_000,
+        "liquidated": False,
+        "exit_race": {
+            "Now": 1.00,
+            "15 min": 1.30,
+            "1 hour": 1.70,
+            "6 hours": 2.20
+        },
+        "risk_contribution": {
+            "Pendle Liquidity": 65,
+            "USDe / Ethena": 15,
+            "Oracle": 10,
+            "Morpho": 10
+        }
+    }
+}
+
+
+TEST_GRAPH = {
+    "nodes": [
+        {"id": "PT-sUSDe", "label": "PT-sUSDe"},
+        {"id": "Pendle", "label": "Pendle Market"},
+        {"id": "SY", "label": "SY"},
+        {"id": "sUSDe", "label": "sUSDe"},
+        {"id": "USDe", "label": "USDe"},
+        {"id": "Ethena", "label": "Ethena"},
+        {"id": "Morpho", "label": "Morpho"},
+        {"id": "Oracle", "label": "Oracle"}
+    ],
+
+    "edges": [
+        {"source": "PT-sUSDe", "target": "Pendle"},
+        {"source": "Pendle", "target": "SY"},
+        {"source": "SY", "target": "sUSDe"},
+        {"source": "sUSDe", "target": "USDe"},
+        {"source": "USDe", "target": "Ethena"},
+        {"source": "PT-sUSDe", "target": "Morpho"},
+        {"source": "Morpho", "target": "Oracle"}
+    ]
+}
+
+
+def calculate_metrics(
+    position_size,
+    scenario,
+    probability,
+    risk_aversion
+):
+
+    scale = position_size / BASE_POSITION_SIZE
+
+    position_after = scenario["position_after"] * scale
+    exit_proceeds = scenario["exit_proceeds"] * scale
+
+    scenario_loss = position_size - position_after
+    exit_cost = position_size - exit_proceeds
+
+    expected_loss = probability * scenario_loss
+
+    np.random.seed(RANDOM_SEED)
+
+    incident = (
+        np.random.random(N_SIMULATIONS)
+        < probability
+    )
+
+    severity = np.random.normal(
+        1.0,
+        0.20,
+        N_SIMULATIONS
+    )
+
+    severity = np.clip(
+        severity,
+        0.25,
+        1.75
+    )
+
+    losses = np.where(
+        incident,
+        scenario_loss * severity,
+        0
+    )
+
+    losses = np.clip(
+        losses,
+        0,
+        position_size
+    )
+
+    mc_expected_loss = float(
+        np.mean(losses)
+    )
+
+    var95 = float(
+        np.quantile(losses, 0.95)
+    )
+
+    tail = losses[
+        losses >= var95
+    ]
+
+    cvar95 = (
+        float(np.mean(tail))
+        if len(tail) > 0
+        else 0
+    )
+
+    risk_adjusted = (
+        mc_expected_loss
+        + risk_aversion
+        * max(
+            0,
+            cvar95 - mc_expected_loss
+        )
+    )
+
+    if mc_expected_loss >= exit_cost:
+        recommendation = "EXIT"
+
+    elif risk_adjusted >= exit_cost:
+        recommendation = "REDUCE"
+
+    else:
+        recommendation = "STAY"
+
+    breakeven = (
+        exit_cost / scenario_loss
+        if scenario_loss > 0
+        else 0
+    )
+
+    return {
+        "position_after": position_after,
+        "exit_proceeds": exit_proceeds,
+        "scenario_loss": scenario_loss,
+        "exit_cost": exit_cost,
+        "expected_loss": expected_loss,
+        "mc_expected_loss": mc_expected_loss,
+        "var95": var95,
+        "cvar95": cvar95,
+        "risk_adjusted": risk_adjusted,
+        "recommendation": recommendation,
+        "breakeven": breakeven,
+        "losses": losses
+    }
