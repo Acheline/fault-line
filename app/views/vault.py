@@ -62,6 +62,14 @@ if HL.exists():
                f"${cf['yield_forgone_usd']:,.0f} (vault APY {h['carry']['vault_apy']:.2%}, {h['carry']['source']}) − "
                f"exit cost ${cf['exit_cost_usd']:,.0f} = ${cf['net_usd']:+,.0f}. Sanity: E[L] annualized "
                f"{h['sanity']['E[L]_annualized']:.2%} vs vault APY {h['sanity']['vault_apy']:.2%}.")
+    if not incident:
+        @st.cache_data(show_spinner=False)
+        def _ranges(mtime):
+            return D2.class_ranges()
+        st.dataframe(pd.DataFrame([{"base-rate class": r["class"], "event": r["event"],
+                                    "rate": f"{r['rate']:.1%}/yr ({r['events']} in {r['exposure_years']:.1f} yrs)",
+                                    "range (90%)": f"{r['low']:.1%} – {r['high']:.1%}", "decision": r["decision"]}
+                                   for r in _ranges(HL.stat().st_mtime)]), hide_index=True, width="stretch")
     if h.get("queue"):
         q = h["queue"]
         st.warning(f"QUEUE EXIT NOW: the depositors ahead of you (${h['ahead_usd']:,.0f}) exhaust the reachable "

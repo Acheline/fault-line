@@ -49,7 +49,8 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
              horizon_days: float = DEFAULT_HORIZON_DAYS, rho: float = 0.3, governance: bool = False,
              rate_scale: float = 1.0, severity_scale: float = 1.0, refill_scale: float = 1.0,
              vault_claim_share: float | None = None, book_usd: float | None = None, with_tornado: bool = True,
-             incident: float | None = None, incident_driver: str = "trusd", book_budget: bool = True) -> dict:
+             incident: float | None = None, incident_driver: str = "trusd", book_budget: bool = True,
+             driver_rate_scale: dict | None = None) -> dict:
     """incident: an OBSERVED trUSD depeg of this depth (e.g. 0.05). Then the trUSD event is certain (final depth drawn
     from episodes at least that deep), the other depositors run (your rank matters) and, because the oracles stay at
     par, the silent loss concentrates on the holders who did not get out. incident=None: calm day, nobody running."""
@@ -81,7 +82,7 @@ def headline(size_usd: float | None = None, rank: int = 1, lam: float | None = N
     lscale = {"trusd_frozen": conc}
 
     def run_mc(scale_driver=None, k=1.0, rs=rate_scale, sv=severity_scale, rh=rho):
-        sc_rate = {d: rs for d in D}
+        sc_rate = {d: rs * (driver_rate_scale or {}).get(d, 1.0) for d in D}
         if scale_driver:
             sc_rate[scale_driver] = rs * k
         return monte_carlo(D, sc, horizon_days, rh, rate_scale=sc_rate, severity_scale=sv, condition=cond,
@@ -271,3 +272,47 @@ def early_warning(lam: float, rank: int = 6, driver: str = "trusd", depths=None)
     trig = [t for t in trig if t is not None]
     return {"lambda": lam, "rank": rank, "driver": driver, "ahead": out,
             "act_before_depth": min(trig) if trig else None}
+
+
+def class_ranges(lams=(0.0, 0.5)) -> list[dict]:
+    """Low / high for each base-rate class (exact Poisson 90% interval on the event count / exposure) and whether the
+    calm-day decision changes when that class's drivers move to either end."""
+    from scipy.stats import chi2
+
+    from risk import base_rates as BR
+    br = json.loads(BR.OUT.read_text())
+    ys = br["values"]["depeg"]["value"]["classes"]["yield_synthetic"]
+    nav = br["values"]["depeg"]["value"]["classes"]["nav_rwa_tokens"]
+    D = static()["D"]
+
+    def ci(k, T):
+        lo = chi2.ppf(0.05, 2 * k) / 2 if k else 0.0
+        return lo / T, chi2.ppf(0.95, 2 * k + 2) / 2 / T
+
+    rows = []
+    for name, cls, drivers in (("yield / delta-neutral", "yield_delta_neutral", ("trusd", "iusd")), ("CDP", "cdp", ())):
+        r = BR.class_rate(ys, design=cls)
+        k = sum(1 for t in r["troughs"] if t < 0.5)
+        lo, hi = ci(k, r["coin_years"])
+        rows.append({"class": name, "event": "collapse < $0.50", "events": k, "exposure_years": r["coin_years"],
+                     "rate": k / r["coin_years"], "low": lo, "high": hi, "drivers": drivers})
+    T = nav["coin_years"]
+    lo, hi = ci(nav["episodes"], T)
+    rows.append({"class": "NAV-accruing (reUSD)", "event": "NAV markdown > 1%", "events": nav["episodes"],
+                 "exposure_years": T, "rate": nav["episodes"] / T, "low": lo, "high": hi, "drivers": ("reusd",)})
+    base = {l: headline(lam=l, with_tornado=False)["action"] for l in lams}
+    for row in rows:
+        if not row["drivers"]:
+            row["decision"] = "not used by this vault"
+            continue
+        out = {}
+        for end in ("low", "high"):
+            k = row[end] / row["rate"] if row["rate"] else (0.0 if end == "low" else 1.0)
+            # the driver's frequency counts all episodes; scale it by how far this end is from the central estimate
+            out[end] = {l: headline(lam=l, with_tornado=False, driver_rate_scale={d: k for d in row["drivers"]})["action"]
+                        for l in lams}
+        changed = [f"λ={l}: {base[l]} → {out[e][l]} at the {e} end" for e in ("low", "high") for l in lams
+                   if out[e][l] != base[l]]
+        row["decision"] = ("unchanged across the range (" + ", ".join(f"λ={l}: {base[l]}" for l in lams) + ")"
+                           if not changed else "changes: " + "; ".join(changed))
+    return rows
