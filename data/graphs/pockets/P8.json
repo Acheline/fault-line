@@ -1,0 +1,5905 @@
+{
+ "position_id": "P8",
+ "fork_block": 26161499,
+ "nodes": {
+  "position:P8": {
+   "id": "position:P8",
+   "type": "POSITION",
+   "label": "syrupUSDC (Maple)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "size_usd": 5000000.0,
+    "pocket": "P8"
+   },
+   "provenance": []
+  },
+  "chain:ethereum": {
+   "id": "chain:ethereum",
+   "type": "CHAIN",
+   "label": "Ethereum",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b": {
+   "id": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "LIQUIDITY_VENUE",
+   "label": "MaplePool syrupUSDC",
+   "chain": "ethereum",
+   "address": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "tags": [],
+   "paths": [
+    "exit",
+    "value"
+   ],
+   "props": {
+    "contract_name": "MaplePool",
+    "symbol": "syrupUSDC",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 9
+    }
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "book.yaml leg asset",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5": {
+   "id": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "type": "CONTRACT",
+   "label": "MetaAggregationRouterV2",
+   "chain": "ethereum",
+   "address": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MetaAggregationRouterV2",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xe21fd0e9",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f": {
+   "id": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "type": "CONTRACT",
+   "label": "Proxy",
+   "chain": "ethereum",
+   "address": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8",
+    "contract_name": "Proxy",
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x7bd243de",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "manager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8": {
+   "id": "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8",
+   "type": "CONTRACT",
+   "label": "MaplePoolManager 0xfe02be",
+   "chain": "ethereum",
+   "address": "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MaplePoolManager",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x7bd243de",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339": {
+   "id": "0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339",
+   "type": "LIQUIDITY_VENUE",
+   "label": "PoolManagerFactory 0xe463cd",
+   "chain": "ethereum",
+   "address": "0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "PoolManagerFactory",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x3a60339a",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x804a6f5f667170f545bf14e5ddb48c70b788390c": {
+   "id": "0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+   "type": "CONTRACT",
+   "label": "NonTransparentProxy",
+   "chain": "ethereum",
+   "address": "0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
+    "proxy_admin": "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
+    "contract_name": "NonTransparentProxy",
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x4c532de1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956": {
+   "id": "0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
+   "type": "CONTRACT",
+   "label": "MapleGlobals",
+   "chain": "ethereum",
+   "address": "0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MapleGlobals",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x4c532de1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3": {
+   "id": "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+   "type": "CONTRACT",
+   "label": "NonTransparentProxy",
+   "chain": "ethereum",
+   "address": "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0xc3530358e54bc81efce4a2e12a898e996b091753",
+    "proxy_admin": "0xd6d4bcde6c816f17889f1dd3000af0261b03a196",
+    "contract_name": "NonTransparentProxy",
+    "storage_slots_read": {
+     "exit": 15
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x34dd0fbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc3530358e54bc81efce4a2e12a898e996b091753": {
+   "id": "0xc3530358e54bc81efce4a2e12a898e996b091753",
+   "type": "CONTRACT",
+   "label": "MaplePoolPermissionManager 0xc35303",
+   "chain": "ethereum",
+   "address": "0xc3530358e54bc81efce4a2e12a898e996b091753",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MaplePoolPermissionManager",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x34dd0fbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+   "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "ASSET",
+   "label": "USDC",
+   "chain": "ethereum",
+   "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+    "contract_name": "FiatTokenProxy",
+    "symbol": "USDC",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 12
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "asset()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getMinterManager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x43506849d7c04f9138d1a2050bbf3a0c054402dd": {
+   "id": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "CONTRACT",
+   "label": "FiatTokenV2_2",
+   "chain": "ethereum",
+   "address": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FiatTokenV2_2",
+    "symbol": "",
+    "decimals": 0,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996": {
+   "id": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "CONTRACT",
+   "label": "0x8f10b468",
+   "chain": "ethereum",
+   "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x3ed37eda",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x3a1c453c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23a69e75",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef": {
+   "id": "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef",
+   "type": "CONTRACT",
+   "label": "0xd7a5c6b5",
+   "chain": "ethereum",
+   "address": "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x3ed37eda",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x3a1c453c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x23a69e75",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040": {
+   "id": "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040",
+   "type": "CONTRACT",
+   "label": "0xcf68698d",
+   "chain": "ethereum",
+   "address": "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xe972feb9",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xcee1856d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29": {
+   "id": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "type": "CONTRACT",
+   "label": "FluidDexT1",
+   "chain": "ethereum",
+   "address": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FluidDexT1",
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xbe17c79c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xad207501",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb7791bf2",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x05cad896ed76f080bab4da37c407928b994ff9b3": {
+   "id": "0x05cad896ed76f080bab4da37c407928b994ff9b3",
+   "type": "CONTRACT",
+   "label": "FluidERC4626CappedRate",
+   "chain": "ethereum",
+   "address": "0x05cad896ed76f080bab4da37c407928b994ff9b3",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FluidERC4626CappedRate",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xf763f7a6",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497": {
+   "id": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "type": "CONTRACT",
+   "label": "FluidLiquidityProxy",
+   "chain": "ethereum",
+   "address": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0xcc331daf69752bece3dc98dbc63eacd5092266a2",
+    "proxy_admin": "0x2386dc45added673317ef068992f19421b481f4c",
+    "contract_name": "FluidLiquidityProxy",
+    "storage_slots_read": {
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb5c736e4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xad967e15",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4bdc8816f2f56914b66ebf3786d78872d3a73ab7": {
+   "id": "0x4bdc8816f2f56914b66ebf3786d78872d3a73ab7",
+   "type": "CONTRACT",
+   "label": "FluidLiquidityUserModuleMainnet",
+   "chain": "ethereum",
+   "address": "0x4bdc8816f2f56914b66ebf3786d78872d3a73ab7",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FluidLiquidityUserModuleMainnet",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xad967e15",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7b0e2e8300899b647d5ebc66f9d4fa3f16c54061": {
+   "id": "0x7b0e2e8300899b647d5ebc66f9d4fa3f16c54061",
+   "type": "CONTRACT",
+   "label": "0x7b0e2e83",
+   "chain": "ethereum",
+   "address": "0x7b0e2e8300899b647d5ebc66f9d4fa3f16c54061",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x61f598cd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x069c11bfc769be175bfae2d20bddce34e46514cc": {
+   "id": "0x069c11bfc769be175bfae2d20bddce34e46514cc",
+   "type": "CONTRACT",
+   "label": "0x069c11bf",
+   "chain": "ethereum",
+   "address": "0x069c11bfc769be175bfae2d20bddce34e46514cc",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x736e774d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90": {
+   "id": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "type": "LIQUIDITY_VENUE",
+   "label": "PoolManager 0x000000",
+   "chain": "ethereum",
+   "address": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "PoolManager",
+    "storage_slots_read": {
+     "exit": 98
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x48c89491",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa5841194",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x11da60b4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xf3cd914c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x0b0d9c09",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x1e2eaeaf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5455c918e405a2831fbff8595c0aae35ee3db9d1": {
+   "id": "0x5455c918e405a2831fbff8595c0aae35ee3db9d1",
+   "type": "CONTRACT",
+   "label": "0x5455c918",
+   "chain": "ethereum",
+   "address": "0x5455c918e405a2831fbff8595c0aae35ee3db9d1",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x3b9d6e09",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xe2b7e77a",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38": {
+   "id": "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38",
+   "type": "LIQUIDITY_VENUE",
+   "label": "UniswapV3Pool 0x51fd57",
+   "chain": "ethereum",
+   "address": "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UniswapV3Pool",
+    "storage_slots_read": {
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26": {
+   "id": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "type": "ASSET",
+   "label": "MDT",
+   "chain": "ethereum",
+   "address": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MDToken",
+    "symbol": "MDT",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 10
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0": {
+   "id": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "type": "ASSET",
+   "label": "wstETH",
+   "chain": "ethereum",
+   "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "WstETH",
+    "symbol": "wstETH",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa808924fd3dac42695031ab55cb837dcd352d600": {
+   "id": "0xa808924fd3dac42695031ab55cb837dcd352d600",
+   "type": "ASSET",
+   "label": "EXM",
+   "chain": "ethereum",
+   "address": "0xa808924fd3dac42695031ab55cb837dcd352d600",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FixedSupplyOwnableToken",
+    "symbol": "EXM",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2": {
+   "id": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "ASSET",
+   "label": "WETH",
+   "chain": "ethereum",
+   "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "WETH9",
+    "symbol": "WETH",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 9
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xdd62ed3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xd0e30db0",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x681ded7245a39d84936119533196b0240f7c9b4d": {
+   "id": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "type": "CONTRACT",
+   "label": "DPPAdvanced",
+   "chain": "ethereum",
+   "address": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DPPAdvanced",
+    "storage_slots_read": {
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xdd93f59a",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x54fd4d50",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd0cf7dfbf09cafab8aef00e0ce19a4638004a364": {
+   "id": "0xd0cf7dfbf09cafab8aef00e0ce19a4638004a364",
+   "type": "CONTRACT",
+   "label": "DPPAdvanced",
+   "chain": "ethereum",
+   "address": "0xd0cf7dfbf09cafab8aef00e0ce19a4638004a364",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DPPAdvanced",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xdd93f59a",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x54fd4d50",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5e84190a270333ace5b9202a3f4cebf11b81bb01": {
+   "id": "0x5e84190a270333ace5b9202a3f4cebf11b81bb01",
+   "type": "CONTRACT",
+   "label": "FeeRateModel",
+   "chain": "ethereum",
+   "address": "0x5e84190a270333ace5b9202a3f4cebf11b81bb01",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FeeRateModel",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x8198edbf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a": {
+   "id": "0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a",
+   "type": "CONTRACT",
+   "label": "FeeRateDIP3Impl",
+   "chain": "ethereum",
+   "address": "0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FeeRateDIP3Impl",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x848cc303",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdac17f958d2ee523a2206206994597c13d831ec7": {
+   "id": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "ASSET",
+   "label": "USDT",
+   "chain": "ethereum",
+   "address": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "TetherToken",
+    "symbol": "USDT",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 26
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xdd62ed3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c": {
+   "id": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "type": "CONTRACT",
+   "label": "DSLOProtocol",
+   "chain": "ethereum",
+   "address": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DSLOProtocol",
+    "storage_slots_read": {
+     "exit": 14
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x7e54f092",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xd2f1d956",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x961d5b1e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xcf6fc6e3",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x63592c2b",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xf4a215c3",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1b70046376a3db8b129409f5643ac9474a3be813": {
+   "id": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "type": "CONTRACT",
+   "label": "0x1b700463",
+   "chain": "ethereum",
+   "address": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x39072a45",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4622df6fb2d9bee0dcdacf545acdb6a2b2f4f863": {
+   "id": "0x4622df6fb2d9bee0dcdacf545acdb6a2b2f4f863",
+   "type": "LIQUIDITY_VENUE",
+   "label": "UniswapV3Pool 0x4622df",
+   "chain": "ethereum",
+   "address": "0x4622df6fb2d9bee0dcdacf545acdb6a2b2f4f863",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UniswapV3Pool",
+    "storage_slots_read": {
+     "exit": 15
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x3850c7bd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x1a686502",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xd0c93a7c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xddca3f43",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x5339c296",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xf30dba93",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29": {
+   "id": "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29",
+   "type": "LIQUIDITY_VENUE",
+   "label": "UniswapV3Pool 0x173821",
+   "chain": "ethereum",
+   "address": "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UniswapV3Pool",
+    "storage_slots_read": {
+     "exit": 12
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xae78736cd615f374d3085123a210448e74fc6393": {
+   "id": "0xae78736cd615f374d3085123a210448e74fc6393",
+   "type": "ASSET",
+   "label": "rETH",
+   "chain": "ethereum",
+   "address": "0xae78736cd615f374d3085123a210448e74fc6393",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "RocketTokenRETH",
+    "symbol": "rETH",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 4
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46": {
+   "id": "0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46",
+   "type": "CONTRACT",
+   "label": "RocketStorage",
+   "chain": "ethereum",
+   "address": "0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "RocketStorage",
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xbd02d0f5",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd6f277b4bed66243469fa1ec5024029233485cb7": {
+   "id": "0xd6f277b4bed66243469fa1ec5024029233485cb7",
+   "type": "CONTRACT",
+   "label": "0xd6f277b4",
+   "chain": "ethereum",
+   "address": "0xd6f277b4bed66243469fa1ec5024029233485cb7",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x8bc041a8",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45": {
+   "id": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "type": "CONTRACT",
+   "label": "0x2fca69d3",
+   "chain": "ethereum",
+   "address": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa963b1028e48e31c7d4b6056e3836d84602856a0": {
+   "id": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "type": "CONTRACT",
+   "label": "0xa963b102",
+   "chain": "ethereum",
+   "address": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x67e828bf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a": {
+   "id": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "type": "CONTRACT",
+   "label": "0xaff0c7a2",
+   "chain": "ethereum",
+   "address": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe844701934d9c6085b292e428f41b911cc0b3872": {
+   "id": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "type": "CONTRACT",
+   "label": "0xe8447019",
+   "chain": "ethereum",
+   "address": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb5e4b813",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc41e7f975cba456700a1f80781895e486570097c": {
+   "id": "0xc41e7f975cba456700a1f80781895e486570097c",
+   "type": "CONTRACT",
+   "label": "0xc41e7f97",
+   "chain": "ethereum",
+   "address": "0xc41e7f975cba456700a1f80781895e486570097c",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x5e3bc7bc",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87112dbd472bfc9837f06b0a09e26e76d8667101": {
+   "id": "0x87112dbd472bfc9837f06b0a09e26e76d8667101",
+   "type": "CONTRACT",
+   "label": "0x87112dbd",
+   "chain": "ethereum",
+   "address": "0x87112dbd472bfc9837f06b0a09e26e76d8667101",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb": {
+   "id": "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb",
+   "type": "CONTRACT",
+   "label": "0x2a09066e",
+   "chain": "ethereum",
+   "address": "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x67e828bf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x37d291b04523481aa08345e8d97f7e25b4c1871b": {
+   "id": "0x37d291b04523481aa08345e8d97f7e25b4c1871b",
+   "type": "CONTRACT",
+   "label": "0x37d291b0",
+   "chain": "ethereum",
+   "address": "0x37d291b04523481aa08345e8d97f7e25b4c1871b",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6146be494fee4c73540cb1c5f87536abf1452500": {
+   "id": "0x6146be494fee4c73540cb1c5f87536abf1452500",
+   "type": "LIQUIDITY_VENUE",
+   "label": "SolidlyV3Pool 0x6146be",
+   "chain": "ethereum",
+   "address": "0x6146be494fee4c73540cb1c5f87536abf1452500",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "SolidlyV3Pool",
+    "storage_slots_read": {
+     "exit": 4
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x553e9c493678d8606d6a5ba284643db2110df823": {
+   "id": "0x553e9c493678d8606d6a5ba284643db2110df823",
+   "type": "LIQUIDITY_VENUE",
+   "label": "UniswapV3Pool 0x553e9c",
+   "chain": "ethereum",
+   "address": "0x553e9c493678d8606d6a5ba284643db2110df823",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UniswapV3Pool",
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1445f32d1a74872ba41f3d8cf4022e9996120b31": {
+   "id": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "type": "LIQUIDITY_VENUE",
+   "label": "PancakeV3Pool 0x1445f3",
+   "chain": "ethereum",
+   "address": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "PancakeV3Pool",
+    "storage_slots_read": {
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e": {
+   "id": "0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e",
+   "type": "CONTRACT",
+   "label": "0x26abc401",
+   "chain": "ethereum",
+   "address": "0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x214a6fe2",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x556b9306565093c855aea9ae92a594704c2cd59e": {
+   "id": "0x556b9306565093c855aea9ae92a594704c2cd59e",
+   "type": "CONTRACT",
+   "label": "MasterChefV3",
+   "chain": "ethereum",
+   "address": "0x556b9306565093c855aea9ae92a594704c2cd59e",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MasterChefV3",
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xa15ea89f",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f": {
+   "id": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "type": "LIQUIDITY_VENUE",
+   "label": "UniswapV3Pool 0xe0554a",
+   "chain": "ethereum",
+   "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UniswapV3Pool",
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xbe2f0354d970265bfc36d383af77f72736b81b54": {
+   "id": "0xbe2f0354d970265bfc36d383af77f72736b81b54",
+   "type": "GOVERNANCE",
+   "label": "0xbe2f0354",
+   "chain": "ethereum",
+   "address": "0xbe2f0354d970265bfc36d383af77f72736b81b54",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": null
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b": {
+   "id": "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
+   "type": "GOVERNANCE",
+   "label": "GovernorTimelock",
+   "chain": "ethereum",
+   "address": "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "GovernorTimelock"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd6d4bcde6c816f17889f1dd3000af0261b03a196": {
+   "id": "0xd6d4bcde6c816f17889f1dd3000af0261b03a196",
+   "type": "GOVERNANCE",
+   "label": "Safe 4/7 0xd6d4bc",
+   "chain": "ethereum",
+   "address": "0xd6d4bcde6c816f17889f1dd3000af0261b03a196",
+   "tags": [
+    "safe"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "Proxy",
+    "threshold": 4,
+    "owners": [
+     "0xa16abf89ab821f5abfa0b6f83cf3544693e3e72c",
+     "0x0f4430f1cec6b976a9358effa95399ee8fc8bd40",
+     "0xf4b33586ee31dc6db89da7fb64b853e99f984b7f",
+     "0xf3869ff0c3c3c6b246c75da983b192a4a6218eac",
+     "0x96481cb0fcd7673254ebccc42dce9b92da10ea04",
+     "0x04ebb8201bc767bd96932d33b12bd2eaa661e918",
+     "0x588c6eb6e68f3cb03243835c1c67864c84df85bd"
+    ],
+    "n_owners": 7
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "tokenWithdrawer()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0a06be16275b95a7d2567fbdae118b36c7da78f9": {
+   "id": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x0a06be",
+   "chain": "ethereum",
+   "address": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17": {
+   "id": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "type": "GOVERNANCE",
+   "label": "MasterMinter",
+   "chain": "ethereum",
+   "address": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "MasterMinter"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xfcb19e6a322b27c06842a71e8c725399f049ae3a": {
+   "id": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "type": "GOVERNANCE",
+   "label": "EOA 0xfcb19e",
+   "chain": "ethereum",
+   "address": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4914f61d25e5c567143774b76edbf4d5109a8566": {
+   "id": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x4914f6",
+   "chain": "ethereum",
+   "address": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000000000000000000000000000000000000001": {
+   "id": "0x0000000000000000000000000000000000000001",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x000000",
+   "chain": "ethereum",
+   "address": "0x0000000000000000000000000000000000000001",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x56792d335d510b313fa521747559821525a459be": {
+   "id": "0x56792d335d510b313fa521747559821525a459be",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x56792d",
+   "chain": "ethereum",
+   "address": "0x56792d335d510b313fa521747559821525a459be",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcc331daf69752bece3dc98dbc63eacd5092266a2": {
+   "id": "0xcc331daf69752bece3dc98dbc63eacd5092266a2",
+   "type": "CONTRACT",
+   "label": "FluidLiquidityDummyImpl",
+   "chain": "ethereum",
+   "address": "0xcc331daf69752bece3dc98dbc63eacd5092266a2",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "FluidLiquidityDummyImpl",
+    "probed_type": "CONTRACT"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2386dc45added673317ef068992f19421b481f4c": {
+   "id": "0x2386dc45added673317ef068992f19421b481f4c",
+   "type": "GOVERNANCE",
+   "label": "InstaTimelock (24.0h)",
+   "chain": "ethereum",
+   "address": "0x2386dc45added673317ef068992f19421b481f4c",
+   "tags": [
+    "timelock"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "InstaTimelock",
+    "min_delay_s": 86400
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1a9c8182c09f50c8318d769245bea52c32be35bc": {
+   "id": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+   "type": "GOVERNANCE",
+   "label": "Timelock (48.0h)",
+   "chain": "ethereum",
+   "address": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+   "tags": [
+    "timelock"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "Timelock",
+    "min_delay_s": 172800
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x14f5cd0d27013c6f2d035e11fc16cecf782c9c06": {
+   "id": "0x14f5cd0d27013c6f2d035e11fc16cecf782c9c06",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x14f5cd",
+   "chain": "ethereum",
+   "address": "0x14f5cd0d27013c6f2d035e11fc16cecf782c9c06",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc6cde7c39eb2f0f0095f41570af89efc2c1ea828": {
+   "id": "0xc6cde7c39eb2f0f0095f41570af89efc2c1ea828",
+   "type": "GOVERNANCE",
+   "label": "MultiSigWallet",
+   "chain": "ethereum",
+   "address": "0xc6cde7c39eb2f0f0095f41570af89efc2c1ea828",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "MultiSigWallet"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2475039bf2ecdce2ee4c82954e64be9674f43546": {
+   "id": "0x2475039bf2ecdce2ee4c82954e64be9674f43546",
+   "type": "GOVERNANCE",
+   "label": "MultiSigWalletWithDailyLimit",
+   "chain": "ethereum",
+   "address": "0x2475039bf2ecdce2ee4c82954e64be9674f43546",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "MultiSigWalletWithDailyLimit"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xecc90d54b10add1ab746abe7e83abe178b72aa9e": {
+   "id": "0xecc90d54b10add1ab746abe7e83abe178b72aa9e",
+   "type": "GOVERNANCE",
+   "label": "Safe 3/7 0xecc90d",
+   "chain": "ethereum",
+   "address": "0xecc90d54b10add1ab746abe7e83abe178b72aa9e",
+   "tags": [
+    "safe"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "GnosisSafeProxy",
+    "threshold": 3,
+    "owners": [
+     "0xc1273815a5a9f8be595170f697734e3f0b8fc07d",
+     "0x7766f6a776c046703263a5c84a5e684abecd9a75",
+     "0xd09971d8ed6c6a5e57581e90d593ee5b94e348d4",
+     "0x897fa2c8a2628b657cb2b4c093cfcff86212059b",
+     "0xb30df86de0e1b321451809cccebf5651dff7b900",
+     "0x08fc23075b0d07132bdea75864233062e9cc56b2",
+     "0x27cb14cdfa31f6be86701b429f81f0663fc99006"
+    ],
+    "n_owners": 7
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704": {
+   "id": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "type": "GOVERNANCE",
+   "label": "EOA 0xc1d9fe",
+   "chain": "ethereum",
+   "address": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b": {
+   "id": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b",
+   "type": "GOVERNANCE",
+   "label": "InstaGovernorBravoDelegator",
+   "chain": "ethereum",
+   "address": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "InstaGovernorBravoDelegator"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4f6f977acdd1177dcd81ab83074855ecb9c2d49e": {
+   "id": "0x4f6f977acdd1177dcd81ab83074855ecb9c2d49e",
+   "type": "GOVERNANCE",
+   "label": "Avocado",
+   "chain": "ethereum",
+   "address": "0x4f6f977acdd1177dcd81ab83074855ecb9c2d49e",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "Avocado"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x408ed6354d4973f66138c91495f2f2fcbd8724c3": {
+   "id": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3",
+   "type": "GOVERNANCE",
+   "label": "GovernorBravoDelegator",
+   "chain": "ethereum",
+   "address": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "GovernorBravoDelegator"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x00613f7e762124711c7647f9eab5c8a88632ee47": {
+   "id": "0x00613f7e762124711c7647f9eab5c8a88632ee47",
+   "type": "CONTRACT",
+   "label": "InstaGovernorBravoDelegate",
+   "chain": "ethereum",
+   "address": "0x00613f7e762124711c7647f9eab5c8a88632ee47",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "InstaGovernorBravoDelegate"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "implementation()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x53a328f4086d7c0f1fa19e594c9b842125263026": {
+   "id": "0x53a328f4086d7c0f1fa19e594c9b842125263026",
+   "type": "CONTRACT",
+   "label": "GovernorBravoDelegate",
+   "chain": "ethereum",
+   "address": "0x53a328f4086d7c0f1fa19e594c9b842125263026",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "GovernorBravoDelegate"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "implementation()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "issuer:maple": {
+   "id": "issuer:maple",
+   "type": "ISSUER",
+   "label": "Maple Finance (syrup pool manager)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://docs.maple.finance",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:maple_borrowers": {
+   "id": "offchain:maple_borrowers",
+   "type": "OFFCHAIN",
+   "label": "Maple institutional borrowers (overcollateralized loans)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://docs.maple.finance",
+     "confidence": 0.6
+    }
+   ]
+  },
+  "issuer:circle": {
+   "id": "issuer:circle",
+   "type": "ISSUER",
+   "label": "Circle (USDC issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:usdc_reserves": {
+   "id": "offchain:usdc_reserves",
+   "type": "OFFCHAIN",
+   "label": "USDC reserves (cash + T-bills)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "edges": {
+  "position:P8|chain:ethereum|references": {
+   "src": "position:P8",
+   "dst": "chain:ethereum",
+   "type": "references",
+   "path": null,
+   "props": {
+    "role": "settlement"
+   },
+   "provenance": []
+  },
+  "position:P8|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|holds": {
+   "src": "position:P8",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "holds",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|0x6131b5fae19ea4f9d964eac0408e4408b66337b5|exit_route|exit": {
+   "src": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "dst": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xe21fd0e9",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|exit_route|exit": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|exit_route|exit": {
+   "src": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "dst": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "canCall"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x7bd243de",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8|delegates_to|exit": {
+   "src": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "dst": "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "canCall"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x7bd243de",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339|exit_route|exit": {
+   "src": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "dst": "0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "mapleGlobals"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x3a60339a",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|0x804a6f5f667170f545bf14e5ddb48c70b788390c|exit_route|exit": {
+   "src": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "dst": "0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "isFunctionPaused"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x4c532de1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x804a6f5f667170f545bf14e5ddb48c70b788390c|0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956|delegates_to|exit": {
+   "src": "0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+   "dst": "0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "isFunctionPaused"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x4c532de1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|0xbe10adce8b6e3e02db384e7fada5395dd113d8b3|exit_route|exit": {
+   "src": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "dst": "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "hasPermission"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x34dd0fbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3|0xc3530358e54bc81efce4a2e12a898e996b091753|delegates_to|exit": {
+   "src": "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+   "dst": "0xc3530358e54bc81efce4a2e12a898e996b091753",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "hasPermission"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x34dd0fbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x43506849d7c04f9138d1a2050bbf3a0c054402dd|delegates_to|exit": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xd9c45357"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x23a69e75",
+     "0x3a1c453c",
+     "0x3ed37eda",
+     "0x91dd7346",
+     "0x9410ae88",
+     "0xd9c45357",
+     "0xfa461e33"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x3ed37eda",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x3a1c453c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x23a69e75",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xcee1856d",
+     "0xe972feb9"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xe972feb9",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xcee1856d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "constantsView",
+     "swapInWithCallback"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xbe17c79c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb7791bf2",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29|0x05cad896ed76f080bab4da37c407928b994ff9b3|exit_route|exit": {
+   "src": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "dst": "0x05cad896ed76f080bab4da37c407928b994ff9b3",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "centerPrice"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xf763f7a6",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29|0x52aa899454998be5b000ad077a46bbe360f4e497|exit_route|exit": {
+   "src": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "dst": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "operate",
+     "readFromStorage"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb5c736e4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xad967e15",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0x4bdc8816f2f56914b66ebf3786d78872d3a73ab7|delegates_to|exit": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0x4bdc8816f2f56914b66ebf3786d78872d3a73ab7",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "operate"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xad967e15",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|exit_route|exit": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29|exit_route|exit": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "liquidityCallback"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xad207501",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x79eea4a1be86c43a9a9c4384b0b28a07af24ae29",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x9410ae88"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x7b0e2e8300899b647d5ebc66f9d4fa3f16c54061|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x7b0e2e8300899b647d5ebc66f9d4fa3f16c54061",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x61f598cd",
+     "0x91dd7346",
+     "0x9410ae88"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x61f598cd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x069c11bfc769be175bfae2d20bddce34e46514cc|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x069c11bfc769be175bfae2d20bddce34e46514cc",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x736e774d"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x736e774d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x000000000004444c5dc75cb358380d2e3de08a90|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "settle",
+     "swap",
+     "sync",
+     "take",
+     "unlock"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x48c89491",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa5841194",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x11da60b4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xf3cd914c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x0b0d9c09",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x",
+     "0x91dd7346"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x5455c918e405a2831fbff8595c0aae35ee3db9d1|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x5455c918e405a2831fbff8595c0aae35ee3db9d1",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x3b9d6e09",
+     "0xe2b7e77a"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x3b9d6e09",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xe2b7e77a",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38|0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26|exit_route|exit": {
+   "src": "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38",
+   "dst": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|exit_route|exit": {
+   "src": "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x51fd57a792ca0975d52de5dfe84b7d0fb4bc0c38",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xfa461e33"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0xa808924fd3dac42695031ab55cb837dcd352d600|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0xa808924fd3dac42695031ab55cb837dcd352d600",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "allowance",
+     "balanceOf",
+     "deposit",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xdd62ed3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xd0e30db0",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x681ded7245a39d84936119533196b0240f7c9b4d|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "sellQuote"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xdd93f59a",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x681ded7245a39d84936119533196b0240f7c9b4d|0xd0cf7dfbf09cafab8aef00e0ce19a4638004a364|delegates_to|exit": {
+   "src": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "dst": "0xd0cf7dfbf09cafab8aef00e0ce19a4638004a364",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "sellQuote",
+     "version"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0xdd93f59a",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x54fd4d50",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x681ded7245a39d84936119533196b0240f7c9b4d|0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|exit_route|exit": {
+   "src": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "dst": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x681ded7245a39d84936119533196b0240f7c9b4d|0x5e84190a270333ace5b9202a3f4cebf11b81bb01|exit_route|exit": {
+   "src": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "dst": "0x5e84190a270333ace5b9202a3f4cebf11b81bb01",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getFeeRate"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x8198edbf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5e84190a270333ace5b9202a3f4cebf11b81bb01|0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a|exit_route|exit": {
+   "src": "0x5e84190a270333ace5b9202a3f4cebf11b81bb01",
+   "dst": "0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getFeeRate"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x848cc303",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a|0x681ded7245a39d84936119533196b0240f7c9b4d|exit_route|exit": {
+   "src": "0x2c32dfc4df92df02ae9d9ad0750a3f209ddca61a",
+   "dst": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "version"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x54fd4d50",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x681ded7245a39d84936119533196b0240f7c9b4d|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0x681ded7245a39d84936119533196b0240f7c9b4d",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xdac17f958d2ee523a2206206994597c13d831ec7|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "allowance",
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xdd62ed3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "fillOrderTo",
+     "remainingRaw"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x7e54f092",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xd2f1d956",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c|0xdac17f958d2ee523a2206206994597c13d831ec7|exit_route|exit": {
+   "src": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "dst": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c|0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26|exit_route|exit": {
+   "src": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "dst": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0xdac17f958d2ee523a2206206994597c13d831ec7|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x1b70046376a3db8b129409f5643ac9474a3be813|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x39072a45"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x39072a45",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1b70046376a3db8b129409f5643ac9474a3be813|0x4622df6fb2d9bee0dcdacf545acdb6a2b2f4f863|exit_route|exit": {
+   "src": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "dst": "0x4622df6fb2d9bee0dcdacf545acdb6a2b2f4f863",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "fee",
+     "liquidity",
+     "slot0",
+     "tickBitmap",
+     "tickSpacing",
+     "ticks"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x3850c7bd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x1a686502",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xd0c93a7c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xddca3f43",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x5339c296",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xf30dba93",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x173821f6ad4c5324cd35753a9fd12d92f2eaab29|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29|0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0|exit_route|exit": {
+   "src": "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29",
+   "dst": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x173821f6ad4c5324cd35753a9fd12d92f2eaab29",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xfa461e33"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xa808924fd3dac42695031ab55cb837dcd352d600|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xa808924fd3dac42695031ab55cb837dcd352d600",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0xae78736cd615f374d3085123a210448e74fc6393|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0xae78736cd615f374d3085123a210448e74fc6393",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xae78736cd615f374d3085123a210448e74fc6393|0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46|exit_route|exit": {
+   "src": "0xae78736cd615f374d3085123a210448e74fc6393",
+   "dst": "0x1d8f8f00cfa6758d7be78336684788fb0ee0fa46",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getUint"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xbd02d0f5",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xd6f277b4bed66243469fa1ec5024029233485cb7|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xd6f277b4bed66243469fa1ec5024029233485cb7",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x8bc041a8"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "DELEGATECALL 0x8bc041a8",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xe24f0884"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xa963b1028e48e31c7d4b6056e3836d84602856a0|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x171755b1"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa963b1028e48e31c7d4b6056e3836d84602856a0|0xaff0c7a21c958bf4354d750afdb7a01da44a939a|exit_route|exit": {
+   "src": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "dst": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x171755b1"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a|0xa963b1028e48e31c7d4b6056e3836d84602856a0|exit_route|exit": {
+   "src": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "dst": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x67e828bf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x67e828bf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a|0xe844701934d9c6085b292e428f41b911cc0b3872|exit_route|exit": {
+   "src": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "dst": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xb5e4b813"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb5e4b813",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xc41e7f975cba456700a1f80781895e486570097c|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xc41e7f975cba456700a1f80781895e486570097c",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x5e3bc7bc"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x5e3bc7bc",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc41e7f975cba456700a1f80781895e486570097c|0x000000000004444c5dc75cb358380d2e3de08a90|exit_route|exit": {
+   "src": "0xc41e7f975cba456700a1f80781895e486570097c",
+   "dst": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "extsload"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x1e2eaeaf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x87112dbd472bfc9837f06b0a09e26e76d8667101|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x87112dbd472bfc9837f06b0a09e26e76d8667101",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xe24f0884"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87112dbd472bfc9837f06b0a09e26e76d8667101|0x2a09066eb2f027dd542c4db07c34e407a69fc2fb|exit_route|exit": {
+   "src": "0x87112dbd472bfc9837f06b0a09e26e76d8667101",
+   "dst": "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x171755b1"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb|0x37d291b04523481aa08345e8d97f7e25b4c1871b|exit_route|exit": {
+   "src": "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb",
+   "dst": "0x37d291b04523481aa08345e8d97f7e25b4c1871b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x171755b1"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x37d291b04523481aa08345e8d97f7e25b4c1871b|0x2a09066eb2f027dd542c4db07c34e407a69fc2fb|exit_route|exit": {
+   "src": "0x37d291b04523481aa08345e8d97f7e25b4c1871b",
+   "dst": "0x2a09066eb2f027dd542c4db07c34e407a69fc2fb",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x67e828bf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x67e828bf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x37d291b04523481aa08345e8d97f7e25b4c1871b|0xe844701934d9c6085b292e428f41b911cc0b3872|exit_route|exit": {
+   "src": "0x37d291b04523481aa08345e8d97f7e25b4c1871b",
+   "dst": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xb5e4b813"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xb5e4b813",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x6146be494fee4c73540cb1c5f87536abf1452500|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x6146be494fee4c73540cb1c5f87536abf1452500",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6146be494fee4c73540cb1c5f87536abf1452500|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x6146be494fee4c73540cb1c5f87536abf1452500",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6146be494fee4c73540cb1c5f87536abf1452500|0xdac17f958d2ee523a2206206994597c13d831ec7|exit_route|exit": {
+   "src": "0x6146be494fee4c73540cb1c5f87536abf1452500",
+   "dst": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6146be494fee4c73540cb1c5f87536abf1452500|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x6146be494fee4c73540cb1c5f87536abf1452500",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x3a1c453c"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x3a1c453c",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xae78736cd615f374d3085123a210448e74fc6393|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xae78736cd615f374d3085123a210448e74fc6393",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x553e9c493678d8606d6a5ba284643db2110df823|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x553e9c493678d8606d6a5ba284643db2110df823",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x553e9c493678d8606d6a5ba284643db2110df823|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0x553e9c493678d8606d6a5ba284643db2110df823",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x553e9c493678d8606d6a5ba284643db2110df823|0xae78736cd615f374d3085123a210448e74fc6393|exit_route|exit": {
+   "src": "0x553e9c493678d8606d6a5ba284643db2110df823",
+   "dst": "0xae78736cd615f374d3085123a210448e74fc6393",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x553e9c493678d8606d6a5ba284643db2110df823|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x553e9c493678d8606d6a5ba284643db2110df823",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xfa461e33"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x1445f32d1a74872ba41f3d8cf4022e9996120b31|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1445f32d1a74872ba41f3d8cf4022e9996120b31|0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e|exit_route|exit": {
+   "src": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "dst": "0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x214a6fe2"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x214a6fe2",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e|0x556b9306565093c855aea9ae92a594704c2cd59e|exit_route|exit": {
+   "src": "0x26abc40164bb5a304eb2d1b30dfd946d424d7c2e",
+   "dst": "0x556b9306565093c855aea9ae92a594704c2cd59e",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getLatestPeriodInfo"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0xa15ea89f",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1445f32d1a74872ba41f3d8cf4022e9996120b31|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1445f32d1a74872ba41f3d8cf4022e9996120b31|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1445f32d1a74872ba41f3d8cf4022e9996120b31|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x1445f32d1a74872ba41f3d8cf4022e9996120b31",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x23a69e75"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x23a69e75",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xe0554a476a092703abdb3ef35c80e0d76d32939f|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xfa461e33"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "CALL 0xfa461e33",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P8.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|wraps": {
+   "src": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "wraps",
+   "path": null,
+   "props": {
+    "getter": "asset"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "asset()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|references": {
+   "src": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "dst": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "manager"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "manager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0xbe2f0354d970265bfc36d383af77f72736b81b54|governs": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0xbe2f0354d970265bfc36d383af77f72736b81b54",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f|0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8|delegates_to": {
+   "src": "0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+   "dst": "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x804a6f5f667170f545bf14e5ddb48c70b788390c|0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956|delegates_to": {
+   "src": "0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+   "dst": "0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x804a6f5f667170f545bf14e5ddb48c70b788390c|0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b|governs": {
+   "src": "0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+   "dst": "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "EIP-1967 admin slot",
+     "admin()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3|0xc3530358e54bc81efce4a2e12a898e996b091753|delegates_to": {
+   "src": "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+   "dst": "0xc3530358e54bc81efce4a2e12a898e996b091753",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3|0xd6d4bcde6c816f17889f1dd3000af0261b03a196|governs": {
+   "src": "0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+   "dst": "0xd6d4bcde6c816f17889f1dd3000af0261b03a196",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "EIP-1967 admin slot",
+     "admin()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x43506849d7c04f9138d1a2050bbf3a0c054402dd|delegates_to": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x0a06be16275b95a7d2567fbdae118b36c7da78f9|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "blacklister()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0xe982615d461dd5cd06575bbea87624fda4e3de17|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "masterMinter()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0xfcb19e6a322b27c06842a71e8c725399f049ae3a|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x4914f61d25e5c567143774b76edbf4d5109a8566|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "pauser()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x43506849d7c04f9138d1a2050bbf3a0c054402dd|0x0000000000000000000000000000000000000001|governs": {
+   "src": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "dst": "0x0000000000000000000000000000000000000001",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "blacklister()",
+     "masterMinter()",
+     "owner()",
+     "pauser()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x56792d335d510b313fa521747559821525a459be|governs": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x56792d335d510b313fa521747559821525a459be",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0xcc331daf69752bece3dc98dbc63eacd5092266a2|delegates_to": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0xcc331daf69752bece3dc98dbc63eacd5092266a2",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0x2386dc45added673317ef068992f19421b481f4c|governs": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0x2386dc45added673317ef068992f19421b481f4c",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "EIP-1967 admin slot"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0x1a9c8182c09f50c8318d769245bea52c32be35bc|governs": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26|0x14f5cd0d27013c6f2d035e11fc16cecf782c9c06|governs": {
+   "src": "0x814e0908b12a99fecf5bc101bb5d0b8b5cdf7d26",
+   "dst": "0x14f5cd0d27013c6f2d035e11fc16cecf782c9c06",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdac17f958d2ee523a2206206994597c13d831ec7|0xc6cde7c39eb2f0f0095f41570af89efc2c1ea828|governs": {
+   "src": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "dst": "0xc6cde7c39eb2f0f0095f41570af89efc2c1ea828",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c|0x2475039bf2ecdce2ee4c82954e64be9674f43546|governs": {
+   "src": "0xcab2fa2eeab7065b45cbcf6e3936dde2506b4f6c",
+   "dst": "0x2475039bf2ecdce2ee4c82954e64be9674f43546",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x556b9306565093c855aea9ae92a594704c2cd59e|0xecc90d54b10add1ab746abe7e83abe178b72aa9e|governs": {
+   "src": "0x556b9306565093c855aea9ae92a594704c2cd59e",
+   "dst": "0xecc90d54b10add1ab746abe7e83abe178b72aa9e",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b|0xd6d4bcde6c816f17889f1dd3000af0261b03a196|references": {
+   "src": "0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
+   "dst": "0xd6d4bcde6c816f17889f1dd3000af0261b03a196",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "tokenWithdrawer"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "tokenWithdrawer()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|references": {
+   "src": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getMinterManager"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getMinterManager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17|0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704|governs": {
+   "src": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "dst": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2386dc45added673317ef068992f19421b481f4c|0x0204cd037b2ec03605cfdfe482d8e257c765fa1b|governs": {
+   "src": "0x2386dc45added673317ef068992f19421b481f4c",
+   "dst": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "admin()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2386dc45added673317ef068992f19421b481f4c|0x4f6f977acdd1177dcd81ab83074855ecb9c2d49e|governs": {
+   "src": "0x2386dc45added673317ef068992f19421b481f4c",
+   "dst": "0x4f6f977acdd1177dcd81ab83074855ecb9c2d49e",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "guardian()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1a9c8182c09f50c8318d769245bea52c32be35bc|0x408ed6354d4973f66138c91495f2f2fcbd8724c3|governs": {
+   "src": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+   "dst": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "admin()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b|0x2386dc45added673317ef068992f19421b481f4c|governs": {
+   "src": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b",
+   "dst": "0x2386dc45added673317ef068992f19421b481f4c",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "admin()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b|0x00613f7e762124711c7647f9eab5c8a88632ee47|references": {
+   "src": "0x0204cd037b2ec03605cfdfe482d8e257c765fa1b",
+   "dst": "0x00613f7e762124711c7647f9eab5c8a88632ee47",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "implementation"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "implementation()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x408ed6354d4973f66138c91495f2f2fcbd8724c3|0x1a9c8182c09f50c8318d769245bea52c32be35bc|governs": {
+   "src": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3",
+   "dst": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "admin()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "admin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x408ed6354d4973f66138c91495f2f2fcbd8724c3|0x53a328f4086d7c0f1fa19e594c9b842125263026|references": {
+   "src": "0x408ed6354d4973f66138c91495f2f2fcbd8724c3",
+   "dst": "0x53a328f4086d7c0f1fa19e594c9b842125263026",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "implementation"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "implementation()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b|issuer:maple|issued_by": {
+   "src": "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+   "dst": "issuer:maple",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://docs.maple.finance",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:maple|offchain:maple_borrowers|backs": {
+   "src": "issuer:maple",
+   "dst": "offchain:maple_borrowers",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://docs.maple.finance",
+     "confidence": 0.6
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|issuer:circle|issued_by": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "issuer:circle",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:circle|offchain:usdc_reserves|backs": {
+   "src": "issuer:circle",
+   "dst": "offchain:usdc_reserves",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "meta": {
+  "exit": {
+   "route": "KyberSwap aggregator",
+   "size_usd": 5000000.0,
+   "token_price_usd": 1.185017,
+   "usdc_out": 3660953.278749,
+   "quote_usdc": 3661517.86553,
+   "error": null
+  },
+  "pocket": "P8",
+  "size_usd": 5000000.0,
+  "pipeline": "discovery.token_hold"
+ }
+}

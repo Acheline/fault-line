@@ -1,0 +1,624 @@
+{
+ "position_id": "P9",
+ "fork_block": 0,
+ "nodes": {
+  "position:P9": {
+   "id": "position:P9",
+   "type": "POSITION",
+   "label": "Kamino USDC lending (main market)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "size_usd": 5000000.0,
+    "pocket": "P9"
+   },
+   "provenance": []
+  },
+  "chain:solana": {
+   "id": "chain:solana",
+   "type": "CHAIN",
+   "label": "Solana",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff": {
+   "id": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "type": "LENDING_MARKET",
+   "label": "Kamino Lend main market",
+   "chain": "solana",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "protocol": "kamino-lend"
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v": {
+   "id": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v",
+   "type": "ASSET",
+   "label": "USDC (Solana)",
+   "chain": "solana",
+   "address": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v",
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "so11111111111111111111111111111111111111112": {
+   "id": "so11111111111111111111111111111111111111112",
+   "type": "ASSET",
+   "label": "SOL (Solana)",
+   "chain": "solana",
+   "address": "so11111111111111111111111111111111111111112",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 253862904.69132918
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "dso1bdedjcqxtrwhquui63obvv7mdm6waoblbq7gnpq": {
+   "id": "dso1bdedjcqxtrwhquui63obvv7mdm6waoblbq7gnpq",
+   "type": "ASSET",
+   "label": "dSOL (Solana)",
+   "chain": "solana",
+   "address": "dso1bdedjcqxtrwhquui63obvv7mdm6waoblbq7gnpq",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 220739538.146106
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "j1toso1uck3rlmjorhttrvwy9hj7x8v9yyac6y7kgcpn": {
+   "id": "j1toso1uck3rlmjorhttrvwy9hj7x8v9yyac6y7kgcpn",
+   "type": "ASSET",
+   "label": "JITOSOL (Solana)",
+   "chain": "solana",
+   "address": "j1toso1uck3rlmjorhttrvwy9hj7x8v9yyac6y7kgcpn",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 102601807.13225153
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "cbbtcf3aa214zxhbiazqwf4122fbybrandfqgw4imij": {
+   "id": "cbbtcf3aa214zxhbiazqwf4122fbybrandfqgw4imij",
+   "type": "ASSET",
+   "label": "cbBTC (Solana)",
+   "chain": "solana",
+   "address": "cbbtcf3aa214zxhbiazqwf4122fbybrandfqgw4imij",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 60297320.14066589
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "jupsolahxqizztsfewmtrrgpnyfm8f6szdoswbjx93v": {
+   "id": "jupsolahxqizztsfewmtrrgpnyfm8f6szdoswbjx93v",
+   "type": "ASSET",
+   "label": "JupSOL (Solana)",
+   "chain": "solana",
+   "address": "jupsolahxqizztsfewmtrrgpnyfm8f6szdoswbjx93v",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 51394866.22033775
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "sctmb7gpi5l2q5g9tuszxvhz4yidmegcrov9kfarqpx": {
+   "id": "sctmb7gpi5l2q5g9tuszxvhz4yidmegcrov9kfarqpx",
+   "type": "ASSET",
+   "label": "dfdvSOL (Solana)",
+   "chain": "solana",
+   "address": "sctmb7gpi5l2q5g9tuszxvhz4yidmegcrov9kfarqpx",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 44211050.721697934
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "2u1tszseqz3qbwf3ungpfc8tzmk2tdiwknnrmwgwjgwh": {
+   "id": "2u1tszseqz3qbwf3ungpfc8tzmk2tdiwknnrmwgwjgwh",
+   "type": "ASSET",
+   "label": "USDG (Solana)",
+   "chain": "solana",
+   "address": "2u1tszseqz3qbwf3ungpfc8tzmk2tdiwknnrmwgwjgwh",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 42588522.94992134
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "2b1kv6dkpanxd5ixfnxcpjxmkwqjjaymczfhsfu24gxo": {
+   "id": "2b1kv6dkpanxd5ixfnxcpjxmkwqjjaymczfhsfu24gxo",
+   "type": "ASSET",
+   "label": "PYUSD (Solana)",
+   "chain": "solana",
+   "address": "2b1kv6dkpanxd5ixfnxcpjxmkwqjjaymczfhsfu24gxo",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 33139554.1832104
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "msolzycxhdygdzu16g5qsh3i5k3z3kzk7ytfqcjm7so": {
+   "id": "msolzycxhdygdzu16g5qsh3i5k3z3kzk7ytfqcjm7so",
+   "type": "ASSET",
+   "label": "MSOL (Solana)",
+   "chain": "solana",
+   "address": "msolzycxhdygdzu16g5qsh3i5k3z3kzk7ytfqcjm7so",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 20360770.893195968
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "he1iusmfkpadwvxlngv8y1isbj4ruy6ymhea3fotn9a": {
+   "id": "he1iusmfkpadwvxlngv8y1isbj4ruy6ymhea3fotn9a",
+   "type": "ASSET",
+   "label": "hSOL (Solana)",
+   "chain": "solana",
+   "address": "he1iusmfkpadwvxlngv8y1isbj4ruy6ymhea3fotn9a",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "supply_usd": 18370098.658524446
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "oracle:kamino_scope": {
+   "id": "oracle:kamino_scope",
+   "type": "ORACLE",
+   "label": "Scope oracle (Kamino price aggregator)",
+   "chain": "solana",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://docs.kamino.finance",
+     "confidence": 0.6
+    }
+   ]
+  },
+  "issuer:circle": {
+   "id": "issuer:circle",
+   "type": "ISSUER",
+   "label": "Circle (USDC issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:usdc_reserves": {
+   "id": "offchain:usdc_reserves",
+   "type": "OFFCHAIN",
+   "label": "USDC reserves (cash + T-bills)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "edges": {
+  "position:P9|kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|holds": {
+   "src": "position:P9",
+   "dst": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "type": "holds",
+   "path": null,
+   "props": {
+    "role": "USDC supplier"
+   },
+   "provenance": []
+  },
+  "position:P9|chain:solana|references": {
+   "src": "position:P9",
+   "dst": "chain:solana",
+   "type": "references",
+   "path": null,
+   "props": {
+    "role": "settlement"
+   },
+   "provenance": []
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v|lends": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v",
+   "type": "lends",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|so11111111111111111111111111111111111111112|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "so11111111111111111111111111111111111111112",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|dso1bdedjcqxtrwhquui63obvv7mdm6waoblbq7gnpq|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "dso1bdedjcqxtrwhquui63obvv7mdm6waoblbq7gnpq",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|j1toso1uck3rlmjorhttrvwy9hj7x8v9yyac6y7kgcpn|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "j1toso1uck3rlmjorhttrvwy9hj7x8v9yyac6y7kgcpn",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|cbbtcf3aa214zxhbiazqwf4122fbybrandfqgw4imij|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "cbbtcf3aa214zxhbiazqwf4122fbybrandfqgw4imij",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|jupsolahxqizztsfewmtrrgpnyfm8f6szdoswbjx93v|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "jupsolahxqizztsfewmtrrgpnyfm8f6szdoswbjx93v",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|sctmb7gpi5l2q5g9tuszxvhz4yidmegcrov9kfarqpx|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "sctmb7gpi5l2q5g9tuszxvhz4yidmegcrov9kfarqpx",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|2u1tszseqz3qbwf3ungpfc8tzmk2tdiwknnrmwgwjgwh|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "2u1tszseqz3qbwf3ungpfc8tzmk2tdiwknnrmwgwjgwh",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|2b1kv6dkpanxd5ixfnxcpjxmkwqjjaymczfhsfu24gxo|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "2b1kv6dkpanxd5ixfnxcpjxmkwqjjaymczfhsfu24gxo",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|msolzycxhdygdzu16g5qsh3i5k3z3kzk7ytfqcjm7so|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "msolzycxhdygdzu16g5qsh3i5k3z3kzk7ytfqcjm7so",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|he1iusmfkpadwvxlngv8y1isbj4ruy6ymhea3fotn9a|uses_collateral": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "he1iusmfkpadwvxlngv8y1isbj4ruy6ymhea3fotn9a",
+   "type": "uses_collateral",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "Kamino reserves/metrics",
+     "url": "https://api.kamino.finance/kamino-market/7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF/reserves/metrics?env=mainnet-beta",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff|oracle:kamino_scope|prices": {
+   "src": "kamino_market:7u3hehxydlhncoerrtycnokbqybwgzls6jsdqgav5pff",
+   "dst": "oracle:kamino_scope",
+   "type": "prices",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://docs.kamino.finance",
+     "confidence": 0.6
+    }
+   ]
+  },
+  "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v|issuer:circle|issued_by": {
+   "src": "epjfwdd5aufqssqem2qn1xzybapc8g4weggkzwytdt1v",
+   "dst": "issuer:circle",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:circle|offchain:usdc_reserves|backs": {
+   "src": "issuer:circle",
+   "dst": "offchain:usdc_reserves",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "meta": {
+  "pocket": "P9",
+  "size_usd": 5000000.0,
+  "pipeline": "discovery.kamino"
+ }
+}

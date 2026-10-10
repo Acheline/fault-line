@@ -177,8 +177,7 @@ def build(offline: bool = False):
 
     print("▶ resolving proxies / admins / owners / stored addresses ...")
     b.resolve({CriticalPath.VALUE: 2, CriticalPath.LIQUIDATION: 2, CriticalPath.EXIT: 1})
-    disclosures.add_ethena(g, H["usde"], H["susde"])
-    disclosures.add_circle(g, A.USDC)
+    disclosures.apply(g)        # registry keyed by asset address: attaches to whatever discovery found
 
     findings = analyse(b)
     oq = oracle_quality.analyse(b, fork.block_timestamp(), H["morpho_oracle"].lower(), "value:morpho_oracle.price",

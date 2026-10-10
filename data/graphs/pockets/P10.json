@@ -1,0 +1,339 @@
+{
+ "position_id": "P10",
+ "fork_block": 0,
+ "nodes": {
+  "position:P10": {
+   "id": "position:P10",
+   "type": "POSITION",
+   "label": "Hyperliquid HLP vault (USDC)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "size_usd": 5000000.0,
+    "pocket": "P10"
+   },
+   "provenance": []
+  },
+  "chain:hyperliquid": {
+   "id": "chain:hyperliquid",
+   "type": "CHAIN",
+   "label": "Hyperliquid L1",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "chain:arbitrum": {
+   "id": "chain:arbitrum",
+   "type": "CHAIN",
+   "label": "Arbitrum",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303": {
+   "id": "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+   "type": "OFFCHAIN",
+   "label": "Hyperliquidity Provider (HLP)",
+   "chain": "hyperliquid",
+   "address": null,
+   "tags": [
+    "venue",
+    "perp"
+   ],
+   "paths": [],
+   "props": {
+    "protocol": "hyperliquid-hlp",
+    "allow_deposits": true
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "vaultDetails",
+     "url": "https://api.hyperliquid.xyz/info",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "venue:hyperliquid_perps": {
+   "id": "venue:hyperliquid_perps",
+   "type": "OFFCHAIN",
+   "label": "Hyperliquid perp order book (HLP is the market maker / liquidator)",
+   "chain": "hyperliquid",
+   "address": null,
+   "tags": [
+    "venue",
+    "perp",
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "governance:hyperliquid_validators": {
+   "id": "governance:hyperliquid_validators",
+   "type": "GOVERNANCE",
+   "label": "Hyperliquid validator set (bridge signers)",
+   "chain": "hyperliquid",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "bridge:hyperliquid_arbitrum": {
+   "id": "bridge:hyperliquid_arbitrum",
+   "type": "CONTRACT",
+   "label": "Hyperliquid bridge (Arbitrum)",
+   "chain": "arbitrum",
+   "address": null,
+   "tags": [
+    "bridge",
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "0xaf88d065e77c8cc2239327c5edb3a432268e5831": {
+   "id": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+   "type": "ASSET",
+   "label": "USDC (Arbitrum)",
+   "chain": "arbitrum",
+   "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "leader:0x677d831aef5328190852e24f13c46cac05f984e7": {
+   "id": "leader:0x677d831aef5328190852e24f13c46cac05f984e7",
+   "type": "GOVERNANCE",
+   "label": "HLP vault leader",
+   "chain": "hyperliquid",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "address": "0x677d831aef5328190852e24f13c46cac05f984e7"
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "vaultDetails",
+     "url": "https://api.hyperliquid.xyz/info",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "edges": {
+  "position:P10|venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303|holds": {
+   "src": "position:P10",
+   "dst": "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+   "type": "holds",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "vaultDetails",
+     "url": "https://api.hyperliquid.xyz/info",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "position:P10|chain:hyperliquid|references": {
+   "src": "position:P10",
+   "dst": "chain:hyperliquid",
+   "type": "references",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303|venue:hyperliquid_perps|allocates_to": {
+   "src": "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+   "dst": "venue:hyperliquid_perps",
+   "type": "allocates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303|0xaf88d065e77c8cc2239327c5edb3a432268e5831|backs": {
+   "src": "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+   "dst": "0xaf88d065e77c8cc2239327c5edb3a432268e5831",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303|bridge:hyperliquid_arbitrum|exit_route": {
+   "src": "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+   "dst": "bridge:hyperliquid_arbitrum",
+   "type": "exit_route",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "bridge:hyperliquid_arbitrum|governance:hyperliquid_validators|governs": {
+   "src": "bridge:hyperliquid_arbitrum",
+   "dst": "governance:hyperliquid_validators",
+   "type": "governs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "bridge:hyperliquid_arbitrum|chain:arbitrum|references": {
+   "src": "bridge:hyperliquid_arbitrum",
+   "dst": "chain:arbitrum",
+   "type": "references",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "venue:hyperliquid_perps|chain:hyperliquid|references": {
+   "src": "venue:hyperliquid_perps",
+   "dst": "chain:hyperliquid",
+   "type": "references",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303|leader:0x677d831aef5328190852e24f13c46cac05f984e7|governs": {
+   "src": "venue:0xdfc24b077bc1425ad1dea75bcb6f8158e10df303",
+   "dst": "leader:0x677d831aef5328190852e24f13c46cac05f984e7",
+   "type": "governs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": null,
+     "url": "https://hyperliquid.gitbook.io/hyperliquid-docs",
+     "confidence": 0.7
+    }
+   ]
+  }
+ },
+ "meta": {
+  "pocket": "P10",
+  "size_usd": 5000000.0,
+  "pipeline": "discovery.offchain_venue"
+ }
+}

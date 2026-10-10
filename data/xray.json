@@ -1,0 +1,4927 @@
+{
+ "book": "Belem assumed market-neutral stablecoin mandate (10 pockets)",
+ "n_pockets": 10,
+ "weights": {
+  "P1": 0.001615426,
+  "P2": 0.001615426,
+  "P3": 0.1,
+  "P4": 0.1,
+  "P5": 0.0556456632,
+  "P6": 0.3411234848,
+  "P7": 0.1,
+  "P8": 0.1,
+  "P9": 0.1,
+  "P10": 0.1
+ },
+ "bets": [
+  {
+   "pockets": [
+    "P6"
+   ],
+   "weight": 0.3411234848,
+   "shared_ancestors": []
+  },
+  {
+   "pockets": [
+    "P4",
+    "P5"
+   ],
+   "weight": 0.1556456632,
+   "shared_ancestors": [
+    "USDC / USD (AccessControlledOCR2Aggregator)",
+    "USDC / USD (EACAggregatorProxy)"
+   ]
+  },
+  {
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "weight": 0.10323085200000001,
+   "shared_ancestors": [
+    "Ethena Labs (USDe issuer)",
+    "CEX: Binance",
+    "CEX: Bitget",
+    "CEX: Bybit",
+    "CEX: Deribit"
+   ]
+  },
+  {
+   "pockets": [
+    "P7"
+   ],
+   "weight": 0.1,
+   "shared_ancestors": []
+  },
+  {
+   "pockets": [
+    "P8"
+   ],
+   "weight": 0.1,
+   "shared_ancestors": []
+  },
+  {
+   "pockets": [
+    "P9"
+   ],
+   "weight": 0.1,
+   "shared_ancestors": []
+  },
+  {
+   "pockets": [
+    "P10"
+   ],
+   "weight": 0.1,
+   "shared_ancestors": []
+  }
+ ],
+ "n_bets": 7,
+ "effective_independent_bets": 5.228828894877161,
+ "worst_single_point_of_failure": {
+  "id": "0x54bcc589d9743e521c64233706fc8cb36d275b07",
+  "label": "USDC / USD (AccessControlledOCR2Aggregator)",
+  "type": "ORACLE",
+  "pockets": [
+   "P4",
+   "P5"
+  ],
+  "book_share": 0.1556456632,
+  "numeraire": false,
+  "how": {
+   "P4": [
+    {
+     "to": "gtusdcp",
+     "edge": "holds",
+     "sources": [
+      "structural"
+     ]
+    },
+    {
+     "to": "MorphoMarketV1AdapterV2",
+     "edge": "allocates_to",
+     "sources": [
+      "onchain_read",
+      "storage",
+      "trace"
+     ]
+    },
+    {
+     "to": "Morpho WBTC/USDC 86.0%",
+     "edge": "allocates_to",
+     "sources": [
+      "storage"
+     ]
+    },
+    {
+     "to": "ChainlinkOracle",
+     "edge": "prices",
+     "sources": [
+      "storage",
+      "trace"
+     ]
+    },
+    {
+     "to": "USDC / USD (EACAggregatorProxy)",
+     "edge": "prices",
+     "sources": [
+      "onchain_read",
+      "trace"
+     ]
+    },
+    {
+     "to": "USDC / USD (AccessControlledOCR2Aggregator)",
+     "edge": "prices",
+     "sources": [
+      "onchain_read",
+      "trace"
+     ]
+    }
+   ],
+   "P5": [
+    {
+     "to": "roxUSDCy",
+     "edge": "holds",
+     "sources": [
+      "structural"
+     ]
+    },
+    {
+     "to": "MorphoMarketV1AdapterV2",
+     "edge": "allocates_to",
+     "sources": [
+      "onchain_read",
+      "storage",
+      "trace"
+     ]
+    },
+    {
+     "to": "Morpho PT-strUSD-26NOV2026/USDC 86.0%",
+     "edge": "allocates_to",
+     "sources": [
+      "storage"
+     ]
+    },
+    {
+     "to": "MorphoChainlinkOracleV2",
+     "edge": "prices",
+     "sources": [
+      "storage",
+      "trace"
+     ]
+    },
+    {
+     "to": "USDC / USD (EACAggregatorProxy)",
+     "edge": "prices",
+     "sources": [
+      "onchain_read",
+      "trace"
+     ]
+    },
+    {
+     "to": "USDC / USD (AccessControlledOCR2Aggregator)",
+     "edge": "prices",
+     "sources": [
+      "onchain_read",
+      "trace"
+     ]
+    }
+   ]
+  }
+ },
+ "numeraire": [
+  {
+   "id": "issuer:circle",
+   "label": "Circle (USDC issuer)",
+   "type": "ISSUER",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8",
+    "P9"
+   ],
+   "book_share": 0.3572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P9": [
+     {
+      "to": "Kamino Lend main market",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC (Solana)",
+      "edge": "lends",
+      "sources": [
+       "api"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:usdc_reserves",
+   "label": "USDC reserves (cash + T-bills)",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8",
+    "P9"
+   ],
+   "book_share": 0.3572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P9": [
+     {
+      "to": "Kamino Lend main market",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC (Solana)",
+      "edge": "lends",
+      "sources": [
+       "api"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "label": "USDC",
+   "type": "ASSET",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "shared_ancestors": [
+  {
+   "id": "chain:ethereum",
+   "label": "Ethereum",
+   "type": "CHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8"
+   ],
+   "book_share": 0.8,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P6": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P7": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "Ethereum",
+      "edge": "references",
+      "sources": [
+       "structural"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "issuer:circle",
+   "label": "Circle (USDC issuer)",
+   "type": "ISSUER",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8",
+    "P9"
+   ],
+   "book_share": 0.3572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P9": [
+     {
+      "to": "Kamino Lend main market",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC (Solana)",
+      "edge": "lends",
+      "sources": [
+       "api"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:usdc_reserves",
+   "label": "USDC reserves (cash + T-bills)",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8",
+    "P9"
+   ],
+   "book_share": 0.3572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P9": [
+     {
+      "to": "Kamino Lend main market",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC (Solana)",
+      "edge": "lends",
+      "sources": [
+       "api"
+      ]
+     },
+     {
+      "to": "Circle (USDC issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "USDC reserves (cash + T-bills)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "label": "USDC",
+   "type": "ASSET",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x0000000000000000000000000000000000000001",
+   "label": "EOA 0x000000",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "FiatTokenV2_2",
+      "edge": "delegates_to",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x000000",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "FiatTokenV2_2",
+      "edge": "delegates_to",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x000000",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "FiatTokenV2_2",
+      "edge": "delegates_to",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x000000",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "FiatTokenV2_2",
+      "edge": "delegates_to",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x000000",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "label": "EOA 0x0a06be",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "EOA 0x0a06be",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x0a06be",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x0a06be",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0x0a06be",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "label": "EOA 0x4914f6",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "EOA 0x4914f6",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x4914f6",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0x4914f6",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0x4914f6",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "label": "EOA 0xc1d9fe",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0xc1d9fe",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0xc1d9fe",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0xc1d9fe",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0xc1d9fe",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "label": "EOA 0xfcb19e",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "EOA 0xfcb19e",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0xfcb19e",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EOA 0xfcb19e",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "EOA 0xfcb19e",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "label": "MasterMinter",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5",
+    "P8"
+   ],
+   "book_share": 0.2572610892,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "lends",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P8": [
+     {
+      "to": "MaplePool syrupUSDC",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDC",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "MasterMinter",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x21f73d42eb58ba49ddb685dc29d3bf5c0f0373ca",
+   "label": "Safe 4/9 0x21f73d",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P1",
+    "P2",
+    "P4",
+    "P5"
+   ],
+   "book_share": 0.1588765152,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 4/9 0x21f73d",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MetaOracleDeviationTimelock",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Safe 4/9 0x21f73d",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho cbBTC/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "BTC / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 4/9 0x21f73d",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho PT-strUSD-26NOV2026/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 4/9 0x21f73d",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xcba28b38103307ec8da98377fff9816c164f9afa",
+   "label": "Safe 6/10 0xcba28b",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P2",
+    "P4",
+    "P5"
+   ],
+   "book_share": 0.1572610892,
+   "numeraire": false,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "Morpho Blue",
+      "edge": "liquidation_route",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 6/10 0xcba28b",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho Blue",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 6/10 0xcba28b",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho Blue",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 6/10 0xcba28b",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x54bcc589d9743e521c64233706fc8cb36d275b07",
+   "label": "USDC / USD (AccessControlledOCR2Aggregator)",
+   "type": "ORACLE",
+   "pockets": [
+    "P4",
+    "P5"
+   ],
+   "book_share": 0.1556456632,
+   "numeraire": false,
+   "how": {
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho WBTC/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "ChainlinkOracle",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (AccessControlledOCR2Aggregator)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho PT-strUSD-26NOV2026/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (AccessControlledOCR2Aggregator)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x8fffffd4afb6115b954bd326cbe7b4ba576818f6",
+   "label": "USDC / USD (EACAggregatorProxy)",
+   "type": "ORACLE",
+   "pockets": [
+    "P4",
+    "P5"
+   ],
+   "book_share": 0.1556456632,
+   "numeraire": false,
+   "how": {
+    "P4": [
+     {
+      "to": "gtusdcp",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho WBTC/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "ChainlinkOracle",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho PT-strUSD-26NOV2026/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "USDC / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "label": "USDe",
+   "type": "ASSET",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
+   "label": "sUSDe",
+   "type": "ASSET",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "sUSDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "sUSDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xe8dc0fab349ea169283c48ccfd09d797e6db7c94",
+   "label": "EthenaTimelockController (24.0h)",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "sUSDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EthenaTimelockController (24.0h)",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "sUSDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "EthenaTimelockController (24.0h)",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "EthenaTimelockController (24.0h)",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "issuer:ethena",
+   "label": "Ethena Labs (USDe issuer)",
+   "type": "ISSUER",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "sUSDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena Labs (USDe issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "sUSDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena Labs (USDe issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "Ethena Labs (USDe issuer)",
+      "edge": "issued_by",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:cex_binance",
+   "label": "CEX: Binance",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Binance",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Binance",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Binance",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:cex_bitget",
+   "label": "CEX: Bitget",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Bitget",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Bitget",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Bitget",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:cex_bybit",
+   "label": "CEX: Bybit",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Bybit",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Bybit",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Bybit",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:cex_deribit",
+   "label": "CEX: Deribit",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Deribit",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Deribit",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: Deribit",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:cex_okx",
+   "label": "CEX: OKX",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: OKX",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: OKX",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "CEX: OKX",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:custodian_ceffu",
+   "label": "Custodian: Ceffu",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Ceffu",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Ceffu",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Ceffu",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:custodian_cobo",
+   "label": "Custodian: Cobo",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Cobo",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Cobo",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Cobo",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:custodian_copper",
+   "label": "Custodian: Copper",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Copper",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Copper",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     },
+     {
+      "to": "Custodian: Copper",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:ethena_hedge",
+   "label": "Ethena delta hedge (short perps on CEXs)",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena delta hedge (short perps on CEXs)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:ethena_custody",
+   "label": "Ethena off-exchange custodians (OES)",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena off-exchange custodians (OES)",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "offchain:ethena_reserve_fund",
+   "label": "Ethena reserve fund",
+   "type": "OFFCHAIN",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena reserve fund",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Ethena reserve fund",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ],
+    "P3": [
+     {
+      "to": "sUSDe",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     },
+     {
+      "to": "Ethena reserve fund",
+      "edge": "backs",
+      "sources": [
+       "disclosure"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
+   "label": "PendleGovernanceProxy",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P1",
+    "P2",
+    "P5"
+   ],
+   "book_share": 0.0588765152,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "PendleGovernanceProxy",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "PendleGovernanceProxy",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho PT-reUSD-10DEC2026/USDC 91.5%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PT-reUSD-10DEC2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-reUSD",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "PendleGovernanceProxy",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xa28c08f165116587d4f3e708743b4dee155c5e64",
+   "label": "ProxyAdmin",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P1",
+    "P2",
+    "P5"
+   ],
+   "book_share": 0.0588765152,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "ProxyAdmin",
+      "edge": "governs",
+      "sources": [
+       "storage"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "ProxyAdmin",
+      "edge": "governs",
+      "sources": [
+       "storage"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho PT-strUSD-26NOV2026/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PT-strUSD-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-strUSD",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "ProxyAdmin",
+      "edge": "governs",
+      "sources": [
+       "storage"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x8119ec16f0573b7dac7c0cb94eb504fb32456ee1",
+   "label": "Safe 3/5 0x8119ec",
+   "type": "GOVERNANCE",
+   "pockets": [
+    "P1",
+    "P2",
+    "P5"
+   ],
+   "book_share": 0.0588765152,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 3/5 0x8119ec",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "Safe 3/5 0x8119ec",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho PT-strUSD-26NOV2026/USDC 86.0%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PT-strUSD-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-strUSD",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "ProxyAdmin",
+      "edge": "governs",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "Safe 3/5 0x8119ec",
+      "edge": "governs",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xc3866d726c204c0836e0677a31973c649888973d",
+   "label": "Dummy feed with 12 decimals (DummyFeed)",
+   "type": "ORACLE",
+   "pockets": [
+    "P2",
+    "P5"
+   ],
+   "book_share": 0.057261089200000004,
+   "numeraire": true,
+   "how": {
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MetaOracleDeviationTimelock",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "Dummy feed with 12 decimals (DummyFeed)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P5": [
+     {
+      "to": "roxUSDCy",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MorphoMarketV1AdapterV2",
+      "edge": "allocates_to",
+      "sources": [
+       "onchain_read",
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Morpho siUSD/USDC 91.5%",
+      "edge": "allocates_to",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "Dummy feed with 12 decimals (DummyFeed)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xb195b618ea52b77cb2a58846f452f59f8dfa9390",
+   "label": "PT-sUSDE-26NOV2026",
+   "type": "ASSET",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xbf98480425a29197e5d99d003017f63a1e595d02",
+   "label": "SY-sUSDE",
+   "type": "ASSET",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x89e6e5f7c3a60e7d6347f054051a29a272f4ce44",
+   "label": "YT-sUSDE-26NOV2026",
+   "type": "ASSET",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "YT-sUSDE-26NOV2026",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "YT-sUSDE-26NOV2026",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
+   "label": "PendleMarketV7 0x47ad2c",
+   "type": "LIQUIDITY_VENUE",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "PendleMarketV7 0x47ad2c",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "PendleMarketV7 0x47ad2c",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0x9a9fa8338dd5e5b2188006f1cd2ef26d921650c2",
+   "label": "PendlePYLpOracle",
+   "type": "ORACLE",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "uses_collateral",
+      "sources": [
+       "storage"
+      ]
+     },
+     {
+      "to": "PendlePYLpOracle",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xcc16f670129f965b396f2e81312f6e339ffdb18e",
+   "label": "USDe / USD (AccessControlledOCR2Aggregator)",
+   "type": "ORACLE",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     },
+     {
+      "to": "USDe / USD (AccessControlledOCR2Aggregator)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MetaOracleDeviationTimelock",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (AccessControlledOCR2Aggregator)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read",
+       "trace"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "0xa569d910839ae8865da8f8e70fffb0cba869f961",
+   "label": "USDe / USD (EACAggregatorProxy)",
+   "type": "ORACLE",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852,
+   "numeraire": false,
+   "how": {
+    "P1": [
+     {
+      "to": "PT-sUSDE-26NOV2026",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "SY-sUSDE",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe",
+      "edge": "wraps",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "trace"
+      ]
+     }
+    ],
+    "P2": [
+     {
+      "to": "Morpho PT-sUSDe-26NOV/USDC 91.5%",
+      "edge": "holds",
+      "sources": [
+       "structural"
+      ]
+     },
+     {
+      "to": "MetaOracleDeviationTimelock",
+      "edge": "prices",
+      "sources": [
+       "storage",
+       "trace"
+      ]
+     },
+     {
+      "to": "MorphoChainlinkOracleV2",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     },
+     {
+      "to": "USDe / USD (EACAggregatorProxy)",
+      "edge": "prices",
+      "sources": [
+       "onchain_read"
+      ]
+     }
+    ]
+   }
+  }
+ ],
+ "shared_exit_liquidity": [
+  {
+   "id": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "label": "PoolManager 0x000000",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3",
+    "P8"
+   ],
+   "book_share": 0.20323085200000002
+  },
+  {
+   "id": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
+   "label": "CurveStableSwapNG DOLA-sUSDe",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x167478921b907422f8e88b43c4af2b8bea278d3a",
+   "label": "CurveStableSwapNG MtEthena",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x5c2ab69eb2bf12a2f4572d178687bd4660512972",
+   "label": "CurveStableSwapNG reUSDsUSDe",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1",
+   "label": "CurveStableSwapNG llamathena",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x47ab5f9d8c9c7d002a92320f23a696d348c56a7f",
+   "label": "CurveStableSwapNG frxsUSDe",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "label": "Vyper_contract crvUSDUSDC-f",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x13e12bb0e6a2f1a3d6901a59a9d585e89a6243e1",
+   "label": "CurveStableSwapNG crvfrxUSD",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "label": "StablePairHook 0x000011",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+   "label": "UniswapV3Pool 0x3416cf",
+   "pockets": [
+    "P1",
+    "P2",
+    "P3"
+   ],
+   "book_share": 0.10323085200000001
+  },
+  {
+   "id": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
+   "label": "PendleMarketV7 0x47ad2c",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.003230852
+  }
+ ],
+ "headline": "These 10 pockets are 7 bets (effective 5.2): 16% of the book depends on USDC / USD (AccessControlledOCR2Aggregator) (P4, P5).",
+ "method": "pocket graphs merged by node identity; shared = reachable from >=2 pocket roots in their own graphs; bets = union of pockets sharing a non-numeraire issuer / off-chain backing / oracle / lending market / vault; N_eff = 1/sum(w_bet^2). Numeraire (USDC, Circle, USDC governance, constant USDC=$1 feeds) reported separately. Exit routes reported as shared exit liquidity, not as dependencies."
+}

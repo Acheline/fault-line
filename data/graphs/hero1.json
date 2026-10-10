@@ -36,8 +36,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
@@ -273,8 +273,8 @@
    "chain": "ethereum",
    "address": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
    "tags": [
-    "critical",
-    "erc4626"
+    "erc4626",
+    "critical"
    ],
    "paths": [
     "value",
@@ -501,8 +501,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -603,8 +603,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -645,8 +645,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -726,14 +726,14 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
-    "chainlink_interface",
+    "no_update_timestamp",
     "fixed_schedule",
-    "critical",
-    "no_update_timestamp"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
@@ -904,8 +904,8 @@
    "chain": "ethereum",
    "address": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
    "tags": [
-    "critical",
-    "pendle_market"
+    "pendle_market",
+    "critical"
    ],
    "paths": [
     "value",
@@ -4501,8 +4501,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -5605,8 +5605,8 @@
    "chain": "ethereum",
    "address": "0xc3866d726c204c0836e0677a31973c649888973d",
    "tags": [
-    "chainlink_interface",
-    "fixed_price"
+    "fixed_price",
+    "chainlink_interface"
    ],
    "paths": [],
    "props": {
@@ -6171,7 +6171,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://docs.ethena.fi",
      "confidence": 0.9
     }
@@ -6195,7 +6195,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://docs.ethena.fi",
      "confidence": 0.6
     }
@@ -6219,7 +6219,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.6
     }
@@ -6243,7 +6243,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.6
     }
@@ -6256,8 +6256,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6268,7 +6269,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6281,8 +6282,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6293,7 +6295,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6306,8 +6308,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6318,7 +6321,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6331,8 +6334,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6343,7 +6347,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6356,8 +6360,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6368,7 +6373,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6381,8 +6386,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {
@@ -6393,7 +6398,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6406,8 +6411,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {
@@ -6418,7 +6423,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6431,8 +6436,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {
@@ -6443,7 +6448,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -6467,7 +6472,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://www.circle.com/transparency",
      "confidence": 0.9
     }
@@ -6491,9 +6496,57 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://www.circle.com/transparency",
      "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:sky": {
+   "id": "issuer:sky",
+   "type": "ISSUER",
+   "label": "Sky (USDS issuer, ex-Maker)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {
+    "brief_layer": "2. yield source & issuer"
+   },
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:sky_rwa": {
+   "id": "offchain:sky_rwa",
+   "type": "OFFCHAIN",
+   "label": "Sky RWA / T-bill vaults (off-chain arrangers)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {
+    "brief_layer": "2. yield source & issuer"
+   },
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.5
     }
    ]
   }
@@ -14029,23 +14082,6 @@
     }
    ]
   },
-  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3|issuer:ethena|issued_by": {
-   "src": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
-   "dst": "issuer:ethena",
-   "type": "issued_by",
-   "path": null,
-   "props": {},
-   "provenance": [
-    {
-     "source": "disclosure",
-     "block": null,
-     "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
-     "url": "https://docs.ethena.fi",
-     "confidence": 0.9
-    }
-   ]
-  },
   "0x9d39a5de30e57443bff2a8307a4256c8797a3497|issuer:ethena|issued_by": {
    "src": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
    "dst": "issuer:ethena",
@@ -14057,7 +14093,24 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://docs.ethena.fi",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "0x4c9edd5852cd905f086c759e8383e09bff1e68b3|issuer:ethena|issued_by": {
+   "src": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
+   "dst": "issuer:ethena",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://docs.ethena.fi",
      "confidence": 0.9
     }
@@ -14074,7 +14127,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://docs.ethena.fi",
      "confidence": 0.6
     }
@@ -14091,7 +14144,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.6
     }
@@ -14108,7 +14161,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.6
     }
@@ -14125,7 +14178,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14142,7 +14195,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14159,7 +14212,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14176,7 +14229,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14193,7 +14246,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14210,7 +14263,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14227,7 +14280,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14244,7 +14297,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://app.ethena.fi/dashboards/transparency",
      "confidence": 0.5
     }
@@ -14261,7 +14314,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://docs.ethena.fi",
      "confidence": 0.7
     }
@@ -14278,7 +14331,7 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://www.circle.com/transparency",
      "confidence": 0.9
     }
@@ -14295,9 +14348,43 @@
      "source": "disclosure",
      "block": null,
      "call": null,
-     "detail": "public disclosure; venue/custodian list must be re-verified live",
+     "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://www.circle.com/transparency",
      "confidence": 0.9
+    }
+   ]
+  },
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f|issuer:sky|issued_by": {
+   "src": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "dst": "issuer:sky",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:sky|offchain:sky_rwa|backs": {
+   "src": "issuer:sky",
+   "dst": "offchain:sky_rwa",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.5
     }
    ]
   }
@@ -14434,6 +14521,8 @@
     "Ethena off-exchange custodians (OES)",
     "Ethena reserve fund",
     "EthenaMinting",
+    "Sky (USDS issuer, ex-Maker)",
+    "Sky RWA / T-bill vaults (off-chain arrangers)",
     "USDC reserves (cash + T-bills)",
     "USDe",
     "USDeSilo",
@@ -15186,7 +15275,7 @@
     }
    }
   ],
-  "n_nodes": 167,
-  "n_edges": 342
+  "n_nodes": 169,
+  "n_edges": 344
  }
 }

@@ -1,0 +1,2592 @@
+{
+ "position_id": "P6",
+ "fork_block": 26161499,
+ "nodes": {
+  "position:P6": {
+   "id": "position:P6",
+   "type": "POSITION",
+   "label": "Aave v3 USDC supply",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "size_usd": 17056174.24,
+    "pocket": "P6"
+   },
+   "provenance": []
+  },
+  "chain:ethereum": {
+   "id": "chain:ethereum",
+   "type": "CHAIN",
+   "label": "Ethereum",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c": {
+   "id": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "type": "ASSET",
+   "label": "aEthUSDC",
+   "chain": "ethereum",
+   "address": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit",
+    "value"
+   ],
+   "props": {
+    "implementation": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+    "contract_name": "ATokenInstance",
+    "symbol": "aEthUSDC",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 4
+    }
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "book.yaml leg asset",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0x1da24f3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0xb18d6afd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2": {
+   "id": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "type": "LIQUIDITY_VENUE",
+   "label": "PoolInstance 0x87870b",
+   "chain": "ethereum",
+   "address": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit",
+    "value"
+   ],
+   "props": {
+    "implementation": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+    "contract_name": "PoolInstance",
+    "storage_slots_read": {
+     "value": 3,
+     "exit": 10
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P6.aave_income",
+     "detail": "CALL 0xd15e0053",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0x69328dec",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "POOL()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf": {
+   "id": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "type": "CONTRACT",
+   "label": "PoolInstance 0x728a13",
+   "chain": "ethereum",
+   "address": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit",
+    "value"
+   ],
+   "props": {
+    "contract_name": "PoolInstance",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "value": 0,
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P6.aave_income",
+     "detail": "DELEGATECALL 0xd15e0053",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x69328dec",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2f39d218133afab8f2b819b1066c7e434ad94e9e": {
+   "id": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+   "type": "LIQUIDITY_VENUE",
+   "label": "PoolAddressesProvider 0x2f39d2",
+   "chain": "ethereum",
+   "address": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "PoolAddressesProvider",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0xfca513a8",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "ADDRESSES_PROVIDER()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564": {
+   "id": "0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564",
+   "type": "CONTRACT",
+   "label": "SupplyLogic",
+   "chain": "ethereum",
+   "address": "0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "SupplyLogic",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x186dea44",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getSupplyLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x72e95b8931767c79ba4eee721354d6e99a61d004": {
+   "id": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+   "type": "ASSET",
+   "label": "variableDebtEthUSDC",
+   "chain": "ethereum",
+   "address": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0xb27c52c7f84819e3157993489741cb60786ae330",
+    "contract_name": "VariableDebtTokenInstance",
+    "symbol": "variableDebtEthUSDC",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0xb1bf962d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xb27c52c7f84819e3157993489741cb60786ae330": {
+   "id": "0xb27c52c7f84819e3157993489741cb60786ae330",
+   "type": "CONTRACT",
+   "label": "VARIABLE_DEBT_TOKEN_IMPL",
+   "chain": "ethereum",
+   "address": "0xb27c52c7f84819e3157993489741cb60786ae330",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "VariableDebtTokenInstance",
+    "symbol": "VARIABLE_DEBT_TOKEN_IMPL",
+    "decimals": 0,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0xb1bf962d",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xadc45df3cf1584624c97338bef33363bf5b97ada": {
+   "id": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+   "type": "CONTRACT",
+   "label": "ATOKEN_IMPL",
+   "chain": "ethereum",
+   "address": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "ATokenInstance",
+    "symbol": "ATOKEN_IMPL",
+    "decimals": 0,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x1da24f3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0xb18d6afd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb": {
+   "id": "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb",
+   "type": "CONTRACT",
+   "label": "DefaultReserveInterestRateStrategyV2",
+   "chain": "ethereum",
+   "address": "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DefaultReserveInterestRateStrategyV2",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0xb90db31b",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "RESERVE_INTEREST_RATE_STRATEGY()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb": {
+   "id": "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+   "type": "CONTRACT",
+   "label": "RewardsController",
+   "chain": "ethereum",
+   "address": "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+    "contract_name": "RewardsController",
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0x31873e2e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "REWARDS_CONTROLLER()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getIncentivesController()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2": {
+   "id": "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+   "type": "CONTRACT",
+   "label": "RewardsController",
+   "chain": "ethereum",
+   "address": "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "RewardsController",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x31873e2e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+   "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "ASSET",
+   "label": "USDC",
+   "chain": "ethereum",
+   "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+    "contract_name": "FiatTokenProxy",
+    "symbol": "USDC",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "UNDERLYING_ASSET_ADDRESS()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getMinterManager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x43506849d7c04f9138d1a2050bbf3a0c054402dd": {
+   "id": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "CONTRACT",
+   "label": "FiatTokenV2_2",
+   "chain": "ethereum",
+   "address": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FiatTokenV2_2",
+    "symbol": "",
+    "decimals": 0,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52da0ce88202d1542543598d1e1e27f0d344726a": {
+   "id": "0x52da0ce88202d1542543598d1e1e27f0d344726a",
+   "type": "CONTRACT",
+   "label": "BorrowLogic",
+   "chain": "ethereum",
+   "address": "0x52da0ce88202d1542543598d1e1e27f0d344726a",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "BorrowLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getBorrowLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6": {
+   "id": "0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6",
+   "type": "CONTRACT",
+   "label": "FlashLoanLogic",
+   "chain": "ethereum",
+   "address": "0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "FlashLoanLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getFlashLoanLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x96d5686812e33ab509eccdb38c89d15607b2a413": {
+   "id": "0x96d5686812e33ab509eccdb38c89d15607b2a413",
+   "type": "CONTRACT",
+   "label": "LiquidationLogic",
+   "chain": "ethereum",
+   "address": "0x96d5686812e33ab509eccdb38c89d15607b2a413",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "LiquidationLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getLiquidationLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd70593841c57cbaa04957cc3eace95708e48853b": {
+   "id": "0xd70593841c57cbaa04957cc3eace95708e48853b",
+   "type": "LIQUIDITY_VENUE",
+   "label": "PoolLogic 0xd70593",
+   "chain": "ethereum",
+   "address": "0xd70593841c57cbaa04957cc3eace95708e48853b",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "PoolLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getPoolLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a": {
+   "id": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "GOVERNANCE",
+   "label": "Executor",
+   "chain": "ethereum",
+   "address": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "Executor"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "whoCanRescue()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0a06be16275b95a7d2567fbdae118b36c7da78f9": {
+   "id": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x0a06be",
+   "chain": "ethereum",
+   "address": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17": {
+   "id": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "type": "GOVERNANCE",
+   "label": "MasterMinter",
+   "chain": "ethereum",
+   "address": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "MasterMinter"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xfcb19e6a322b27c06842a71e8c725399f049ae3a": {
+   "id": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "type": "GOVERNANCE",
+   "label": "EOA 0xfcb19e",
+   "chain": "ethereum",
+   "address": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4914f61d25e5c567143774b76edbf4d5109a8566": {
+   "id": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x4914f6",
+   "chain": "ethereum",
+   "address": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000000000000000000000000000000000000001": {
+   "id": "0x0000000000000000000000000000000000000001",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x000000",
+   "chain": "ethereum",
+   "address": "0x0000000000000000000000000000000000000001",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5": {
+   "id": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "type": "GOVERNANCE",
+   "label": "PayloadsController",
+   "chain": "ethereum",
+   "address": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "tags": [
+    "proxy",
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "implementation": "0x7222182cb9c5320587b5148bf03eee107ad64578",
+    "proxy_admin": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+    "contract_name": "PayloadsController"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704": {
+   "id": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "type": "GOVERNANCE",
+   "label": "EOA 0xc1d9fe",
+   "chain": "ethereum",
+   "address": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x7222182cb9c5320587b5148bf03eee107ad64578": {
+   "id": "0x7222182cb9c5320587b5148bf03eee107ad64578",
+   "type": "CONTRACT",
+   "label": "PayloadsController",
+   "chain": "ethereum",
+   "address": "0x7222182cb9c5320587b5148bf03eee107ad64578",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "PayloadsController",
+    "probed_type": "CONTRACT"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd3cf979e676265e4f6379749dece4708b9a22476": {
+   "id": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+   "type": "GOVERNANCE",
+   "label": "ProxyAdmin",
+   "chain": "ethereum",
+   "address": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "ProxyAdmin"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1": {
+   "id": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "type": "CONTRACT",
+   "label": "CrossChainControllerUpgradeRev3",
+   "chain": "ethereum",
+   "address": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [],
+   "props": {
+    "implementation": "0x92f4736b72d131d836b3e4d4c3c23fe53150ce4d",
+    "proxy_admin": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+    "contract_name": "CrossChainControllerUpgradeRev3"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "CROSS_CHAIN_CONTROLLER()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7": {
+   "id": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "type": "CONTRACT",
+   "label": "Governance",
+   "chain": "ethereum",
+   "address": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [],
+   "props": {
+    "implementation": "0x58bcb647c4beff253b4b6996c62f737b783f2cdd",
+    "proxy_admin": "0x86c3ffee349a7cff7ca88c449717b1b133bfb517",
+    "contract_name": "Governance"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "MESSAGE_ORIGINATOR()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xce52ab41c40575b072a18c9700091ccbe4a06710": {
+   "id": "0xce52ab41c40575b072a18c9700091ccbe4a06710",
+   "type": "GOVERNANCE",
+   "label": "Safe 5/9 0xce52ab",
+   "chain": "ethereum",
+   "address": "0xce52ab41c40575b072a18c9700091ccbe4a06710",
+   "tags": [
+    "safe"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "GnosisSafeProxy",
+    "threshold": 5,
+    "owners": [
+     "0xda5ae43e179987a66b9831f92223567e1f38be7d",
+     "0x1e3804357ed445251ffecbb6e40107bf03888885",
+     "0x4f96743057482a2e10253afdacda3fd9cf2c1dc9",
+     "0xebed04e9137afebff6a1b97ac0adf61a544efe29",
+     "0xbd4dcfa978c6d0d342ce36809afffa49d4b7f1f7",
+     "0xa3103d0ed00d24795faa2d641acf6a320eed7396",
+     "0x936cd9654271083ccf93a975919da0ab3bc99ef3",
+     "0x0d2394c027602dc4c3832ffd849b5df45dbac0e9",
+     "0x4c30e33758216ad0d676419c21cb8d014c68099f"
+    ],
+    "n_owners": 9
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x92f4736b72d131d836b3e4d4c3c23fe53150ce4d": {
+   "id": "0x92f4736b72d131d836b3e4d4c3c23fe53150ce4d",
+   "type": "CONTRACT",
+   "label": "CrossChainControllerUpgradeRev3",
+   "chain": "ethereum",
+   "address": "0x92f4736b72d131d836b3e4d4c3c23fe53150ce4d",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "CrossChainControllerUpgradeRev3",
+    "probed_type": "CONTRACT"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4": {
+   "id": "0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4",
+   "type": "GOVERNANCE",
+   "label": "GranularGuardianAccessControl",
+   "chain": "ethereum",
+   "address": "0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "GranularGuardianAccessControl"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x58bcb647c4beff253b4b6996c62f737b783f2cdd": {
+   "id": "0x58bcb647c4beff253b4b6996c62f737b783f2cdd",
+   "type": "CONTRACT",
+   "label": "Governance",
+   "chain": "ethereum",
+   "address": "0x58bcb647c4beff253b4b6996c62f737b783f2cdd",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "Governance",
+    "probed_type": "CONTRACT"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x86c3ffee349a7cff7ca88c449717b1b133bfb517": {
+   "id": "0x86c3ffee349a7cff7ca88c449717b1b133bfb517",
+   "type": "GOVERNANCE",
+   "label": "ProxyAdmin",
+   "chain": "ethereum",
+   "address": "0x86c3ffee349a7cff7ca88c449717b1b133bfb517",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "ProxyAdmin"
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x17dd33ed0e3dd2a80e37489b8a63063161be6957": {
+   "id": "0x17dd33ed0e3dd2a80e37489b8a63063161be6957",
+   "type": "GOVERNANCE",
+   "label": "Executor",
+   "chain": "ethereum",
+   "address": "0x17dd33ed0e3dd2a80e37489b8a63063161be6957",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "Executor"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "issuer:circle": {
+   "id": "issuer:circle",
+   "type": "ISSUER",
+   "label": "Circle (USDC issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:usdc_reserves": {
+   "id": "offchain:usdc_reserves",
+   "type": "OFFCHAIN",
+   "label": "USDC reserves (cash + T-bills)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "edges": {
+  "position:P6|chain:ethereum|references": {
+   "src": "position:P6",
+   "dst": "chain:ethereum",
+   "type": "references",
+   "path": null,
+   "props": {
+    "role": "settlement"
+   },
+   "provenance": []
+  },
+  "position:P6|0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|holds": {
+   "src": "position:P6",
+   "dst": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "type": "holds",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|prices|value": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "type": "prices",
+   "path": "value",
+   "props": {
+    "functions": [
+     "getReserveNormalizedIncome"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P6.aave_income",
+     "detail": "CALL 0xd15e0053",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x728a138a4823392c2efa55e028d434f526fe03cf|delegates_to|value": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "type": "delegates_to",
+   "path": "value",
+   "props": {
+    "functions": [
+     "getReserveNormalizedIncome"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P6.aave_income",
+     "detail": "DELEGATECALL 0xd15e0053",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|exit_route|exit": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "withdraw"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0x69328dec",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x728a138a4823392c2efa55e028d434f526fe03cf|delegates_to|exit": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "withdraw"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x69328dec",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x2f39d218133afab8f2b819b1066c7e434ad94e9e|exit_route|exit": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getPriceOracle"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0xfca513a8",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564|delegates_to|exit": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x186dea44"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x186dea44",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x72e95b8931767c79ba4eee721354d6e99a61d004|exit_route|exit": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "scaledTotalSupply"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0xb1bf962d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x72e95b8931767c79ba4eee721354d6e99a61d004|0xb27c52c7f84819e3157993489741cb60786ae330|delegates_to|exit": {
+   "src": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+   "dst": "0xb27c52c7f84819e3157993489741cb60786ae330",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "scaledTotalSupply"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0xb1bf962d",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|exit_route|exit": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "burn",
+     "scaledBalanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0x1da24f3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0xb18d6afd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0xadc45df3cf1584624c97338bef33363bf5b97ada|delegates_to|exit": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "burn",
+     "scaledBalanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x1da24f3e",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0xb18d6afd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb|exit_route|exit": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "calculateInterestRates"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "STATICCALL 0xb90db31b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb|exit_route|exit": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "handleAction"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0x31873e2e",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb|0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2|delegates_to|exit": {
+   "src": "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+   "dst": "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "handleAction"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0x31873e2e",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x43506849d7c04f9138d1a2050bbf3a0c054402dd|delegates_to|exit": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P6.aave_withdraw",
+     "detail": "DELEGATECALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0xadc45df3cf1584624c97338bef33363bf5b97ada|delegates_to": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|references": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "POOL"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "POOL()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb|references": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getIncentivesController"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "REWARDS_CONTROLLER()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getIncentivesController()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|references": {
+   "src": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "UNDERLYING_ASSET_ADDRESS"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "UNDERLYING_ASSET_ADDRESS()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x728a138a4823392c2efa55e028d434f526fe03cf|delegates_to": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x2f39d218133afab8f2b819b1066c7e434ad94e9e|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "ADDRESSES_PROVIDER"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "ADDRESSES_PROVIDER()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "RESERVE_INTEREST_RATE_STRATEGY"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "RESERVE_INTEREST_RATE_STRATEGY()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x52da0ce88202d1542543598d1e1e27f0d344726a|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x52da0ce88202d1542543598d1e1e27f0d344726a",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getBorrowLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getBorrowLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getFlashLoanLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getFlashLoanLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x96d5686812e33ab509eccdb38c89d15607b2a413|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x96d5686812e33ab509eccdb38c89d15607b2a413",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getLiquidationLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getLiquidationLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0xd70593841c57cbaa04957cc3eace95708e48853b|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0xd70593841c57cbaa04957cc3eace95708e48853b",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getPoolLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getPoolLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2|0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564|references": {
+   "src": "0x87870bca3f3fd6335c3f4ce8392d69350b4fa4e2",
+   "dst": "0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getSupplyLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getSupplyLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0x2f39d218133afab8f2b819b1066c7e434ad94e9e|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "ADDRESSES_PROVIDER"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "ADDRESSES_PROVIDER()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0x9ec6f08190dea04a54f8afc53db96134e5e3fdfb",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "RESERVE_INTEREST_RATE_STRATEGY"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "RESERVE_INTEREST_RATE_STRATEGY()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0x52da0ce88202d1542543598d1e1e27f0d344726a|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0x52da0ce88202d1542543598d1e1e27f0d344726a",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getBorrowLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getBorrowLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0x6d414cd0d5eaf8c43200ac0c325a7e2ad83b8be6",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getFlashLoanLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getFlashLoanLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0x96d5686812e33ab509eccdb38c89d15607b2a413|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0x96d5686812e33ab509eccdb38c89d15607b2a413",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getLiquidationLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getLiquidationLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0xd70593841c57cbaa04957cc3eace95708e48853b|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0xd70593841c57cbaa04957cc3eace95708e48853b",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getPoolLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getPoolLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x728a138a4823392c2efa55e028d434f526fe03cf|0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564|references": {
+   "src": "0x728a138a4823392c2efa55e028d434f526fe03cf",
+   "dst": "0x584c7d8c4cb05304fe5ac7fbc97f20a10fb07564",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getSupplyLogic"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getSupplyLogic()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2f39d218133afab8f2b819b1066c7e434ad94e9e|0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|governs": {
+   "src": "0x2f39d218133afab8f2b819b1066c7e434ad94e9e",
+   "dst": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x72e95b8931767c79ba4eee721354d6e99a61d004|0xb27c52c7f84819e3157993489741cb60786ae330|delegates_to": {
+   "src": "0x72e95b8931767c79ba4eee721354d6e99a61d004",
+   "dst": "0xb27c52c7f84819e3157993489741cb60786ae330",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb|0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2|delegates_to": {
+   "src": "0x8164cc65827dcfe994ab23944cbc90e0aa80bfcb",
+   "dst": "0xe7b67f44ea304dd7f6d215b13686637ff64cd2b2",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x43506849d7c04f9138d1a2050bbf3a0c054402dd|delegates_to": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x0a06be16275b95a7d2567fbdae118b36c7da78f9|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "blacklister()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0xe982615d461dd5cd06575bbea87624fda4e3de17|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "masterMinter()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0xfcb19e6a322b27c06842a71e8c725399f049ae3a|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x4914f61d25e5c567143774b76edbf4d5109a8566|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "pauser()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x43506849d7c04f9138d1a2050bbf3a0c054402dd|0x0000000000000000000000000000000000000001|governs": {
+   "src": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "dst": "0x0000000000000000000000000000000000000001",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "blacklister()",
+     "masterMinter()",
+     "owner()",
+     "pauser()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|0xdabad81af85554e9ae636395611c58f7ec1aaec5|governs": {
+   "src": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "dst": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|references": {
+   "src": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getMinterManager"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getMinterManager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17|0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704|governs": {
+   "src": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "dst": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0x7222182cb9c5320587b5148bf03eee107ad64578|delegates_to": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0x7222182cb9c5320587b5148bf03eee107ad64578",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0xd3cf979e676265e4f6379749dece4708b9a22476|governs": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "EIP-1967 admin slot"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0xed42a7d8559a463722ca4bed50e0cc05a386b0e1|references": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "CROSS_CHAIN_CONTROLLER"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "CROSS_CHAIN_CONTROLLER()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7|references": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "MESSAGE_ORIGINATOR"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "MESSAGE_ORIGINATOR()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0xce52ab41c40575b072a18c9700091ccbe4a06710|governs": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0xce52ab41c40575b072a18c9700091ccbe4a06710",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "guardian()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|governs": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdabad81af85554e9ae636395611c58f7ec1aaec5|0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|references": {
+   "src": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "dst": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "whoCanRescue"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "whoCanRescue()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd3cf979e676265e4f6379749dece4708b9a22476|0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|governs": {
+   "src": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+   "dst": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1|0x92f4736b72d131d836b3e4d4c3c23fe53150ce4d|delegates_to": {
+   "src": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "dst": "0x92f4736b72d131d836b3e4d4c3c23fe53150ce4d",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1|0xd3cf979e676265e4f6379749dece4708b9a22476|governs": {
+   "src": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "dst": "0xd3cf979e676265e4f6379749dece4708b9a22476",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "EIP-1967 admin slot"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1|0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4|governs": {
+   "src": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "dst": "0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "guardian()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1|0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|governs": {
+   "src": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "dst": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7|0x58bcb647c4beff253b4b6996c62f737b783f2cdd|delegates_to": {
+   "src": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "dst": "0x58bcb647c4beff253b4b6996c62f737b783f2cdd",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7|0x86c3ffee349a7cff7ca88c449717b1b133bfb517|governs": {
+   "src": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "dst": "0x86c3ffee349a7cff7ca88c449717b1b133bfb517",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "EIP-1967 admin slot"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 admin slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7|0xce52ab41c40575b072a18c9700091ccbe4a06710|governs": {
+   "src": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "dst": "0xce52ab41c40575b072a18c9700091ccbe4a06710",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "guardian()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "guardian()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7|0x5300a1a15135ea4dc7ad5a167152c01efc9b192a|governs": {
+   "src": "0x9aee0b04504cef83a65ac3f0e838d0593bcb2bc7",
+   "dst": "0x5300a1a15135ea4dc7ad5a167152c01efc9b192a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4|0xed42a7d8559a463722ca4bed50e0cc05a386b0e1|references": {
+   "src": "0x4457ca11e90f416cc1d3a8e1ca41c0cdecc251d4",
+   "dst": "0xed42a7d8559a463722ca4bed50e0cc05a386b0e1",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "CROSS_CHAIN_CONTROLLER"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "CROSS_CHAIN_CONTROLLER()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x86c3ffee349a7cff7ca88c449717b1b133bfb517|0x17dd33ed0e3dd2a80e37489b8a63063161be6957|governs": {
+   "src": "0x86c3ffee349a7cff7ca88c449717b1b133bfb517",
+   "dst": "0x17dd33ed0e3dd2a80e37489b8a63063161be6957",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x17dd33ed0e3dd2a80e37489b8a63063161be6957|0xdabad81af85554e9ae636395611c58f7ec1aaec5|governs": {
+   "src": "0x17dd33ed0e3dd2a80e37489b8a63063161be6957",
+   "dst": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|issuer:circle|issued_by": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "issuer:circle",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:circle|offchain:usdc_reserves|backs": {
+   "src": "issuer:circle",
+   "dst": "offchain:usdc_reserves",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "meta": {
+  "exit": {
+   "route": "Aave Pool.withdraw",
+   "size_usd": 17056174.24,
+   "error": null,
+   "usdc_out": 17056174.239998
+  },
+  "pocket": "P6",
+  "size_usd": 17056174.24,
+  "pipeline": "discovery.token_hold"
+ }
+}

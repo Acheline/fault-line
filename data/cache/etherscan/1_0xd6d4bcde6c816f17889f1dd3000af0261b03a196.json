@@ -1,0 +1,1 @@
+{"name": "Proxy", "abi": [{"inputs": [{"internalType": "address", "name": "_masterCopy", "type": "address"}], "payable": false, "stateMutability": "nonpayable", "type": "constructor"}, {"payable": true, "stateMutability": "payable", "type": "fallback"}], "proxy": true, "implementation": "0xd9db270c1b5e3bd161e8c8503c55ceabee709552"}

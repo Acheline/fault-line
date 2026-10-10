@@ -1,0 +1,2418 @@
+{
+ "position_id": "P7",
+ "fork_block": 26161499,
+ "nodes": {
+  "position:P7": {
+   "id": "position:P7",
+   "type": "POSITION",
+   "label": "sUSDS (Sky savings)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {
+    "size_usd": 5000000.0,
+    "pocket": "P7"
+   },
+   "provenance": []
+  },
+  "chain:ethereum": {
+   "id": "chain:ethereum",
+   "type": "CHAIN",
+   "label": "Ethereum",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [],
+   "paths": [],
+   "props": {},
+   "provenance": []
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd": {
+   "id": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "type": "ASSET",
+   "label": "sUSDS",
+   "chain": "ethereum",
+   "address": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "tags": [
+    "proxy",
+    "erc4626"
+   ],
+   "paths": [
+    "exit",
+    "value"
+   ],
+   "props": {
+    "implementation": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+    "contract_name": "SUsds",
+    "symbol": "sUSDS",
+    "decimals": 18,
+    "underlying": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "storage_slots_read": {
+     "value": 3,
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "api",
+     "block": null,
+     "call": null,
+     "detail": "book.yaml leg asset",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P7.convertToAssets",
+     "detail": "CALL 0x07a2d13a",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xba087652",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0": {
+   "id": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "type": "CONTRACT",
+   "label": "sUSDS",
+   "chain": "ethereum",
+   "address": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "tags": [
+    "implementation",
+    "erc4626"
+   ],
+   "paths": [
+    "exit",
+    "value"
+   ],
+   "props": {
+    "contract_name": "SUsds",
+    "symbol": "sUSDS",
+    "decimals": 18,
+    "underlying": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "value": 0,
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P7.convertToAssets",
+     "detail": "DELEGATECALL 0x07a2d13a",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xba087652",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getImplementation()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5": {
+   "id": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "type": "CONTRACT",
+   "label": "MetaAggregationRouterV2",
+   "chain": "ethereum",
+   "address": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "MetaAggregationRouterV2",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xe21fd0e9",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48": {
+   "id": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "ASSET",
+   "label": "USDC",
+   "chain": "ethereum",
+   "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+    "contract_name": "FiatTokenProxy",
+    "symbol": "USDC",
+    "decimals": 6,
+    "storage_slots_read": {
+     "exit": 9
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getMinterManager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x43506849d7c04f9138d1a2050bbf3a0c054402dd": {
+   "id": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "CONTRACT",
+   "label": "FiatTokenV2_2",
+   "chain": "ethereum",
+   "address": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FiatTokenV2_2",
+    "symbol": "",
+    "decimals": 0,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996": {
+   "id": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "CONTRACT",
+   "label": "0x8f10b468",
+   "chain": "ethereum",
+   "address": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef": {
+   "id": "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef",
+   "type": "CONTRACT",
+   "label": "0xd7a5c6b5",
+   "chain": "ethereum",
+   "address": "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5455c918e405a2831fbff8595c0aae35ee3db9d1": {
+   "id": "0x5455c918e405a2831fbff8595c0aae35ee3db9d1",
+   "type": "CONTRACT",
+   "label": "0x5455c918",
+   "chain": "ethereum",
+   "address": "0x5455c918e405a2831fbff8595c0aae35ee3db9d1",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xbd1eba5b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b": {
+   "id": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "type": "CONTRACT",
+   "label": "Vat",
+   "chain": "ethereum",
+   "address": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "Vat",
+    "storage_slots_read": {
+     "exit": 11
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xf24e23eb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xbb35783b",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "vat()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3c0f895007ca717aa01c8693e59df1e8c3777feb": {
+   "id": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "type": "CONTRACT",
+   "label": "UsdsJoin",
+   "chain": "ethereum",
+   "address": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UsdsJoin",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xef693bed",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x3b4da69f",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "usdsJoin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f": {
+   "id": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "ASSET",
+   "label": "USDS",
+   "chain": "ethereum",
+   "address": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+    "contract_name": "Usds",
+    "symbol": "USDS",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x40c10f19",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x9dc29fac",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "asset()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "usds()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1923dfee706a8e78157416c29cbccfde7cdf4102": {
+   "id": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+   "type": "CONTRACT",
+   "label": "USDS",
+   "chain": "ethereum",
+   "address": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "Usds",
+    "symbol": "USDS",
+    "decimals": 18,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x40c10f19",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x9dc29fac",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040": {
+   "id": "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040",
+   "type": "CONTRACT",
+   "label": "0xcf68698d",
+   "chain": "ethereum",
+   "address": "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x93e495c3",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xa14b7909",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3225737a9bbb6473cb4a45b7244aca2befdb276a": {
+   "id": "0x3225737a9bbb6473cb4a45b7244aca2befdb276a",
+   "type": "CONTRACT",
+   "label": "DaiUsds",
+   "chain": "ethereum",
+   "address": "0x3225737a9bbb6473cb4a45b7244aca2befdb276a",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DaiUsds",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x68f30150",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9759a6ac90977b93b58547b4a71c78317f391a28": {
+   "id": "0x9759a6ac90977b93b58547b4a71c78317f391a28",
+   "type": "CONTRACT",
+   "label": "DaiJoin",
+   "chain": "ethereum",
+   "address": "0x9759a6ac90977b93b58547b4a71c78317f391a28",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DaiJoin",
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xef693bed",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6b175474e89094c44da98b954eedeac495271d0f": {
+   "id": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "type": "ASSET",
+   "label": "DAI",
+   "chain": "ethereum",
+   "address": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "Dai",
+    "symbol": "DAI",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x40c10f19",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xf6e72db5454dd049d0788e411b06cfaf16853042": {
+   "id": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+   "type": "CONTRACT",
+   "label": "DssLitePsm",
+   "chain": "ethereum",
+   "address": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "DssLitePsm",
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0xfae036d5",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x8d7ef9bb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa950524441892a31ebddf91d3ceefa04bf454466": {
+   "id": "0xa950524441892a31ebddf91d3ceefa04bf454466",
+   "type": "CONTRACT",
+   "label": "Vow",
+   "chain": "ethereum",
+   "address": "0xa950524441892a31ebddf91d3ceefa04bf454466",
+   "tags": [],
+   "paths": [],
+   "props": {
+    "contract_name": "Vow"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "vow()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xbe2f0354d970265bfc36d383af77f72736b81b54": {
+   "id": "0xbe2f0354d970265bfc36d383af77f72736b81b54",
+   "type": "GOVERNANCE",
+   "label": "0xbe2f0354",
+   "chain": "ethereum",
+   "address": "0xbe2f0354d970265bfc36d383af77f72736b81b54",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": null
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0a06be16275b95a7d2567fbdae118b36c7da78f9": {
+   "id": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x0a06be",
+   "chain": "ethereum",
+   "address": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17": {
+   "id": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "type": "GOVERNANCE",
+   "label": "MasterMinter",
+   "chain": "ethereum",
+   "address": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "tags": [
+    "governance_role"
+   ],
+   "paths": [],
+   "props": {
+    "contract_name": "MasterMinter"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xfcb19e6a322b27c06842a71e8c725399f049ae3a": {
+   "id": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "type": "GOVERNANCE",
+   "label": "EOA 0xfcb19e",
+   "chain": "ethereum",
+   "address": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4914f61d25e5c567143774b76edbf4d5109a8566": {
+   "id": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x4914f6",
+   "chain": "ethereum",
+   "address": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000000000000000000000000000000000000001": {
+   "id": "0x0000000000000000000000000000000000000001",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x000000",
+   "chain": "ethereum",
+   "address": "0x0000000000000000000000000000000000000001",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x56792d335d510b313fa521747559821525a459be": {
+   "id": "0x56792d335d510b313fa521747559821525a459be",
+   "type": "GOVERNANCE",
+   "label": "EOA 0x56792d",
+   "chain": "ethereum",
+   "address": "0x56792d335d510b313fa521747559821525a459be",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704": {
+   "id": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "type": "GOVERNANCE",
+   "label": "EOA 0xc1d9fe",
+   "chain": "ethereum",
+   "address": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "tags": [
+    "eoa"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "issuer:sky": {
+   "id": "issuer:sky",
+   "type": "ISSUER",
+   "label": "Sky (USDS issuer, ex-Maker)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:sky_rwa": {
+   "id": "offchain:sky_rwa",
+   "type": "OFFCHAIN",
+   "label": "Sky RWA / T-bill vaults (off-chain arrangers)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.5
+    }
+   ]
+  },
+  "issuer:circle": {
+   "id": "issuer:circle",
+   "type": "ISSUER",
+   "label": "Circle (USDC issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "offchain:usdc_reserves": {
+   "id": "offchain:usdc_reserves",
+   "type": "OFFCHAIN",
+   "label": "USDC reserves (cash + T-bills)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "edges": {
+  "position:P7|chain:ethereum|references": {
+   "src": "position:P7",
+   "dst": "chain:ethereum",
+   "type": "references",
+   "path": null,
+   "props": {
+    "role": "settlement"
+   },
+   "provenance": []
+  },
+  "position:P7|0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|holds": {
+   "src": "position:P7",
+   "dst": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "type": "holds",
+   "path": null,
+   "props": {},
+   "provenance": []
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|delegates_to|value": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "type": "delegates_to",
+   "path": "value",
+   "props": {
+    "functions": [
+     "convertToAssets"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "value:P7.convertToAssets",
+     "detail": "DELEGATECALL 0x07a2d13a",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x6131b5fae19ea4f9d964eac0408e4408b66337b5|exit_route|exit": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xe21fd0e9",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|exit_route|exit": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|delegates_to|exit": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "redeem",
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xba087652",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x43506849d7c04f9138d1a2050bbf3a0c054402dd|delegates_to|exit": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xd9c45357"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xd7a5c6b52756e795f680b0f7e0c2f21281dde6ef",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xd9c45357"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xd9c45357",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "redeem"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xba087652",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x5455c918e405a2831fbff8595c0aae35ee3db9d1|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x5455c918e405a2831fbff8595c0aae35ee3db9d1",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xbd1eba5b"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xbd1eba5b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b|exit_route|exit": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "suck"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xf24e23eb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x3c0f895007ca717aa01c8693e59df1e8c3777feb|exit_route|exit": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "exit"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xef693bed",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3c0f895007ca717aa01c8693e59df1e8c3777feb|0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b|exit_route|exit": {
+   "src": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "dst": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "move"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xbb35783b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3c0f895007ca717aa01c8693e59df1e8c3777feb|0xdc035d45d973e3ec169d2276ddab16f1e407384f|exit_route|exit": {
+   "src": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "burn",
+     "mint"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x40c10f19",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x9dc29fac",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f|0x1923dfee706a8e78157416c29cbccfde7cdf4102|delegates_to|exit": {
+   "src": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "dst": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "burn",
+     "mint",
+     "transfer",
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x40c10f19",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x9dc29fac",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0xdc035d45d973e3ec169d2276ddab16f1e407384f|exit_route|exit": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xdc035d45d973e3ec169d2276ddab16f1e407384f|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xcf68698d3a2dd52c63bd3bbf76c4b87655d1e040",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x93e495c3",
+     "0xa14b7909"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0x93e495c3",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "DELEGATECALL 0xa14b7909",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x3225737a9bbb6473cb4a45b7244aca2befdb276a|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x3225737a9bbb6473cb4a45b7244aca2befdb276a",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "usdsToDai"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x68f30150",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3225737a9bbb6473cb4a45b7244aca2befdb276a|0xdc035d45d973e3ec169d2276ddab16f1e407384f|exit_route|exit": {
+   "src": "0x3225737a9bbb6473cb4a45b7244aca2befdb276a",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3225737a9bbb6473cb4a45b7244aca2befdb276a|0x3c0f895007ca717aa01c8693e59df1e8c3777feb|exit_route|exit": {
+   "src": "0x3225737a9bbb6473cb4a45b7244aca2befdb276a",
+   "dst": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "join"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x3b4da69f",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3225737a9bbb6473cb4a45b7244aca2befdb276a|0x9759a6ac90977b93b58547b4a71c78317f391a28|exit_route|exit": {
+   "src": "0x3225737a9bbb6473cb4a45b7244aca2befdb276a",
+   "dst": "0x9759a6ac90977b93b58547b4a71c78317f391a28",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "exit"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xef693bed",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9759a6ac90977b93b58547b4a71c78317f391a28|0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b|exit_route|exit": {
+   "src": "0x9759a6ac90977b93b58547b4a71c78317f391a28",
+   "dst": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "move"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0xbb35783b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9759a6ac90977b93b58547b4a71c78317f391a28|0x6b175474e89094c44da98b954eedeac495271d0f|exit_route|exit": {
+   "src": "0x9759a6ac90977b93b58547b4a71c78317f391a28",
+   "dst": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "mint"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x40c10f19",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x6b175474e89094c44da98b954eedeac495271d0f|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xf6e72db5454dd049d0788e411b06cfaf16853042|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "buyGem",
+     "tout"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0xfae036d5",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x8d7ef9bb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xf6e72db5454dd049d0788e411b06cfaf16853042|0x6b175474e89094c44da98b954eedeac495271d0f|exit_route|exit": {
+   "src": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+   "dst": "0x6b175474e89094c44da98b954eedeac495271d0f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xf6e72db5454dd049d0788e411b06cfaf16853042|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0xf6e72db5454dd049d0788e411b06cfaf16853042",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26161499,
+     "call": "exit:P7.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|delegates_to": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0xdc035d45d973e3ec169d2276ddab16f1e407384f|wraps": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "wraps",
+   "path": null,
+   "props": {
+    "getter": "asset"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "asset()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|references": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getImplementation"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getImplementation()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0xdc035d45d973e3ec169d2276ddab16f1e407384f|references": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "usds"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "usds()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x3c0f895007ca717aa01c8693e59df1e8c3777feb|references": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "usdsJoin"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "usdsJoin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b|references": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "vat"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "vat()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|0xa950524441892a31ebddf91d3ceefa04bf454466|references": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "0xa950524441892a31ebddf91d3ceefa04bf454466",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "vow"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "vow()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|0xdc035d45d973e3ec169d2276ddab16f1e407384f|wraps": {
+   "src": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "wraps",
+   "path": null,
+   "props": {
+    "getter": "asset"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "asset()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|0xdc035d45d973e3ec169d2276ddab16f1e407384f|references": {
+   "src": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "dst": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "usds"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "usds()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|0x3c0f895007ca717aa01c8693e59df1e8c3777feb|references": {
+   "src": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "dst": "0x3c0f895007ca717aa01c8693e59df1e8c3777feb",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "usdsJoin"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "usdsJoin()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b|references": {
+   "src": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "dst": "0x35d1b3f3d7966a1dfe207aa4514c12a259a0492b",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "vat"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "vat()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0|0xa950524441892a31ebddf91d3ceefa04bf454466|references": {
+   "src": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
+   "dst": "0xa950524441892a31ebddf91d3ceefa04bf454466",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "vow"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "vow()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x6131b5fae19ea4f9d964eac0408e4408b66337b5|0xbe2f0354d970265bfc36d383af77f72736b81b54|governs": {
+   "src": "0x6131b5fae19ea4f9d964eac0408e4408b66337b5",
+   "dst": "0xbe2f0354d970265bfc36d383af77f72736b81b54",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x43506849d7c04f9138d1a2050bbf3a0c054402dd|delegates_to": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x0a06be16275b95a7d2567fbdae118b36c7da78f9|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x0a06be16275b95a7d2567fbdae118b36c7da78f9",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "blacklister()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0xe982615d461dd5cd06575bbea87624fda4e3de17|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "masterMinter()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0xfcb19e6a322b27c06842a71e8c725399f049ae3a|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0xfcb19e6a322b27c06842a71e8c725399f049ae3a",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|0x4914f61d25e5c567143774b76edbf4d5109a8566|governs": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "0x4914f61d25e5c567143774b76edbf4d5109a8566",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "pauser()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x43506849d7c04f9138d1a2050bbf3a0c054402dd|0x0000000000000000000000000000000000000001|governs": {
+   "src": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
+   "dst": "0x0000000000000000000000000000000000000001",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "blacklister()",
+     "masterMinter()",
+     "owner()",
+     "pauser()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "blacklister()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "masterMinter()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "pauser()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x56792d335d510b313fa521747559821525a459be|governs": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x56792d335d510b313fa521747559821525a459be",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f|0x1923dfee706a8e78157416c29cbccfde7cdf4102|delegates_to": {
+   "src": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "dst": "0x1923dfee706a8e78157416c29cbccfde7cdf4102",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26161499,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|references": {
+   "src": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "references",
+   "path": null,
+   "props": {
+    "getter": "getMinterManager"
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "getMinterManager()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe982615d461dd5cd06575bbea87624fda4e3de17|0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704|governs": {
+   "src": "0xe982615d461dd5cd06575bbea87624fda4e3de17",
+   "dst": "0xc1d9fe41d19dd52cb3ae5d1d3b0030b5d498c704",
+   "type": "governs",
+   "path": null,
+   "props": {
+    "roles": [
+     "owner()"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "onchain_read",
+     "block": 26161499,
+     "call": null,
+     "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd|issuer:sky|issued_by": {
+   "src": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
+   "dst": "issuer:sky",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:sky|offchain:sky_rwa|backs": {
+   "src": "issuer:sky",
+   "dst": "offchain:sky_rwa",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.5
+    }
+   ]
+  },
+  "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|issuer:circle|issued_by": {
+   "src": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "dst": "issuer:circle",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:circle|offchain:usdc_reserves|backs": {
+   "src": "issuer:circle",
+   "dst": "offchain:usdc_reserves",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://www.circle.com/transparency",
+     "confidence": 0.9
+    }
+   ]
+  },
+  "0xdc035d45d973e3ec169d2276ddab16f1e407384f|issuer:sky|issued_by": {
+   "src": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
+   "dst": "issuer:sky",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://developers.sky.money",
+     "confidence": 0.9
+    }
+   ]
+  }
+ },
+ "meta": {
+  "exit": {
+   "route": "KyberSwap aggregator",
+   "size_usd": 5000000.0,
+   "token_price_usd": 1.112381,
+   "usdc_out": 4999787.271269,
+   "quote_usdc": 4999787.259442,
+   "error": null
+  },
+  "pocket": "P7",
+  "size_usd": 5000000.0,
+  "pipeline": "discovery.token_hold"
+ }
+}

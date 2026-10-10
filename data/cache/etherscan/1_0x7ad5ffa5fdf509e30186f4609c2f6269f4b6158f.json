@@ -1,0 +1,1 @@
+{"name": "Proxy", "abi": [{"inputs": [{"internalType": "address", "name": "factory_", "type": "address"}, {"internalType": "address", "name": "implementation_", "type": "address"}], "stateMutability": "nonpayable", "type": "constructor"}, {"stateMutability": "payable", "type": "fallback"}], "proxy": true, "implementation": "0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8"}
