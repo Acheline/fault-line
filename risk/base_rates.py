@@ -47,8 +47,13 @@ STABLES = {
     "fiat_backed": ["usd-coin", "tether", "true-usd", "first-digital-usd", "binance-usd", "paypal-usd"],
     "crypto_backed": ["dai", "liquity-usd", "crvusd", "gho"],
     "synthetic": ["ethena-usde", "terrausd", "frax", "usdd", "nusd"],
+    # post-2024 yield-bearing synthetic / delta-neutral / RWA-backed dollars: comparables for the hero #2 collateral
+    # roots (trUSD, iUSD are in the set themselves). Which coins count as comparable is a Fault Line choice (assumption
+    # shown in the UI): every coin of this kind with DefiLlama history, failures (USR, USDX) included.
+    "yield_synthetic": ["tori-trusd", "infinifi-usd", "resolv-usr", "usdx-money-usdx", "usual-usd", "falcon-finance",
+                        "f-x-protocol-fxusd"],
 }
-THRESHOLDS = (0.99, 0.97, 0.90)
+THRESHOLDS = (0.99, 0.97, 0.90, 0.75, 0.50)
 
 
 def _get(key: str, url: str, offline: bool, trim=None, method="GET", body=None):
@@ -272,7 +277,10 @@ def depeg_rates(offline: bool = False) -> dict:
                      "p_annual_over_24h": _rate(v["episodes_over_24h"], coin_years) if coin_years else None,
                      "median_duration_days": statistics.median(v["durations_days"]) if v["durations_days"] else None,
                      "median_trough": statistics.median(v["min"]) if v["min"] else None}
-            for t, v in per_thr.items()}}
+            for t, v in per_thr.items()},
+            # every episode below the first threshold, for severity sampling: trough price and length in days
+            "episode_troughs": sorted(per_thr[THRESHOLDS[0]]["min"]),
+            "episode_days": per_thr[THRESHOLDS[0]]["durations_days"]}
     return {"classes": res, "method": "daily prices (DefiLlama coins, CoinGecko ids), runs below threshold; "
                                       ">24h = >=2 consecutive daily points; daily data misses intraday CEX wicks"}
 

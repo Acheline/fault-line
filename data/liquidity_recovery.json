@@ -1,0 +1,313 @@
+{
+ "source": "Morpho GraphQL historicalState, hourly, last 180 days",
+ "generated_at": 1791646834,
+ "markets": {
+  "PT-reUSD-10DEC2026": {
+   "available": true,
+   "market_id": "0x1e9d614631a7df0ec07fb05b2c8cb2491575fd1a63a33bf187a6afb295a4fc64",
+   "n_episodes": 4,
+   "episodes": [
+    {
+     "start": 1782338400,
+     "supply_usd": 1399666.8554921104,
+     "hours_to_below_0.97": 9.0,
+     "hours_to_below_0.95": 9.0,
+     "hours_to_below_0.9": 9.0,
+     "free_regained_24h_share_of_supply": 0.3481549992380916
+    },
+    {
+     "start": 1782410400,
+     "supply_usd": 7308366.406247555,
+     "hours_to_below_0.97": 4.0,
+     "hours_to_below_0.95": 4.0,
+     "hours_to_below_0.9": 21.0,
+     "free_regained_24h_share_of_supply": -0.003060791995751914
+    },
+    {
+     "start": 1782496800,
+     "supply_usd": 8910680.76073325,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 87.0,
+     "free_regained_24h_share_of_supply": 0.06672525162494455
+    },
+    {
+     "start": 1784203200,
+     "supply_usd": 35142836.13992773,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 5.0,
+     "free_regained_24h_share_of_supply": 0.1136433503116854
+    }
+   ],
+   "hours_at_or_above_0.99": 14
+  },
+  "strUSD": {
+   "available": true,
+   "market_id": "0x975c6e8b71073a82216ae464bc44f67d71988450d2542d635d88bc78fca344b1",
+   "n_episodes": 2,
+   "episodes": [
+    {
+     "start": 1786006800,
+     "supply_usd": 5011239.578697909,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 1.0,
+     "free_regained_24h_share_of_supply": 0.17103931406607206
+    },
+    {
+     "start": 1789992000,
+     "supply_usd": 11548042.271590728,
+     "hours_to_below_0.97": 2.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 20.0,
+     "free_regained_24h_share_of_supply": 0.09907168873228055
+    }
+   ],
+   "hours_at_or_above_0.99": 2
+  },
+  "siUSD": {
+   "available": true,
+   "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
+   "n_episodes": 11,
+   "episodes": [
+    {
+     "start": 1781956800,
+     "supply_usd": 9272666.521857891,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 15.0,
+     "free_regained_24h_share_of_supply": 0.14096518152404278
+    },
+    {
+     "start": 1782230400,
+     "supply_usd": 9503756.66140093,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 5.0,
+     "free_regained_24h_share_of_supply": 0.10402179351543868
+    },
+    {
+     "start": 1782673200,
+     "supply_usd": 6936849.361431872,
+     "hours_to_below_0.97": 4.0,
+     "hours_to_below_0.95": 4.0,
+     "hours_to_below_0.9": 15.0,
+     "free_regained_24h_share_of_supply": 0.20446454487644963
+    },
+    {
+     "start": 1785542400,
+     "supply_usd": 5954917.246606729,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 43.0,
+     "free_regained_24h_share_of_supply": 0.09294847752498855
+    },
+    {
+     "start": 1786856400,
+     "supply_usd": 6204171.472775565,
+     "hours_to_below_0.97": 2.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 17.0,
+     "free_regained_24h_share_of_supply": 0.0811639606933773
+    },
+    {
+     "start": 1786989600,
+     "supply_usd": 5121198.26333954,
+     "hours_to_below_0.97": 3.0,
+     "hours_to_below_0.95": 3.0,
+     "hours_to_below_0.9": 19.0,
+     "free_regained_24h_share_of_supply": 0.1349956506586545
+    },
+    {
+     "start": 1787907600,
+     "supply_usd": 6201867.409615766,
+     "hours_to_below_0.97": 3.0,
+     "hours_to_below_0.95": 3.0,
+     "hours_to_below_0.9": 4.0,
+     "free_regained_24h_share_of_supply": 0.007576447779214952
+    },
+    {
+     "start": 1787994000,
+     "supply_usd": 6731888.832399411,
+     "hours_to_below_0.97": 2.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 2.0,
+     "free_regained_24h_share_of_supply": 0.006501015732662996
+    },
+    {
+     "start": 1788242400,
+     "supply_usd": 6196828.877140951,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 1.0,
+     "free_regained_24h_share_of_supply": 0.1442394587031848
+    },
+    {
+     "start": 1790708400,
+     "supply_usd": 7192657.421156132,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 19.0,
+     "free_regained_24h_share_of_supply": 0.10961932543422082
+    },
+    {
+     "start": 1791219600,
+     "supply_usd": 7210474.6299217185,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 1.0,
+     "free_regained_24h_share_of_supply": 0.22527434635113316
+    }
+   ],
+   "hours_at_or_above_0.99": 23
+  },
+  "PRIME": {
+   "available": true,
+   "market_id": "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d",
+   "n_episodes": 6,
+   "episodes": [
+    {
+     "start": 1779721200,
+     "supply_usd": 1974307.7718764457,
+     "hours_to_below_0.97": 92.0,
+     "hours_to_below_0.95": 92.0,
+     "hours_to_below_0.9": 429.0,
+     "free_regained_24h_share_of_supply": 0.0
+    },
+    {
+     "start": 1782633600,
+     "supply_usd": 1509316.097225065,
+     "hours_to_below_0.97": 11.0,
+     "hours_to_below_0.95": 25.0,
+     "hours_to_below_0.9": 25.0,
+     "free_regained_24h_share_of_supply": -0.007757580336741121
+    },
+    {
+     "start": 1782734400,
+     "supply_usd": 621161.319946944,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 3.0,
+     "hours_to_below_0.9": 93.0,
+     "free_regained_24h_share_of_supply": 0.03430922791927715
+    },
+    {
+     "start": 1783249200,
+     "supply_usd": 543807.7200076864,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 31.0,
+     "free_regained_24h_share_of_supply": 0.05638470728021692
+    },
+    {
+     "start": 1783623600,
+     "supply_usd": 401475.6398578966,
+     "hours_to_below_0.97": 4.0,
+     "hours_to_below_0.95": 8.0,
+     "hours_to_below_0.9": 189.0,
+     "free_regained_24h_share_of_supply": 0.0657944358288723
+    },
+    {
+     "start": 1787670000,
+     "supply_usd": 104547.88154715036,
+     "hours_to_below_0.97": 2.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": 9.0,
+     "free_regained_24h_share_of_supply": 0.08602973768829877
+    }
+   ],
+   "hours_at_or_above_0.99": 104
+  },
+  "PT-strUSD-26NOV2026": {
+   "available": true,
+   "market_id": "0xf062a110320da27e0e7e7d9e1bdf458dd51e2d2089e55f63ff9fd54f415ce35d",
+   "n_episodes": 4,
+   "episodes": [
+    {
+     "start": 1786410000,
+     "supply_usd": 1094445.5106800082,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 252.0,
+     "free_regained_24h_share_of_supply": 0.10628163866459196
+    },
+    {
+     "start": 1790697600,
+     "supply_usd": 618960.6289735971,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 2.0,
+     "free_regained_24h_share_of_supply": 0.10013637393156505
+    },
+    {
+     "start": 1790719200,
+     "supply_usd": 616539.1930471584,
+     "hours_to_below_0.97": 6.0,
+     "hours_to_below_0.95": 6.0,
+     "hours_to_below_0.9": 11.0,
+     "free_regained_24h_share_of_supply": 0.10773107293115547
+    },
+    {
+     "start": 1790841600,
+     "supply_usd": 619858.8372935893,
+     "hours_to_below_0.97": 1.0,
+     "hours_to_below_0.95": 1.0,
+     "hours_to_below_0.9": 77.0,
+     "free_regained_24h_share_of_supply": 0.09592884728505459
+    }
+   ],
+   "hours_at_or_above_0.99": 11
+  },
+  "etrUSD": {
+   "available": true,
+   "market_id": "0xff836cc9796e2889ebf73b26c2de2de74b35f985bb83e9d79380deb4229e365b",
+   "n_episodes": 2,
+   "episodes": [
+    {
+     "start": 1787328000,
+     "supply_usd": 0.39990065049945234,
+     "hours_to_below_0.97": 241.0,
+     "hours_to_below_0.95": 241.0,
+     "hours_to_below_0.9": 241.0,
+     "free_regained_24h_share_of_supply": 0.0
+    },
+    {
+     "start": 1790694000,
+     "supply_usd": 3194077.3518148013,
+     "hours_to_below_0.97": 2.0,
+     "hours_to_below_0.95": 2.0,
+     "hours_to_below_0.9": null,
+     "free_regained_24h_share_of_supply": 0.05281504540215276
+    }
+   ],
+   "hours_at_or_above_0.99": 245
+  }
+ },
+ "pooled": {
+  "hours_to_below_0.97": {
+   "median": 2.0,
+   "p90": 9.0,
+   "n": 29,
+   "n_never_recovered_in_window": 0
+  },
+  "hours_to_below_0.95": {
+   "median": 2.0,
+   "p90": 9.0,
+   "n": 29,
+   "n_never_recovered_in_window": 0
+  },
+  "hours_to_below_0.9": {
+   "median": 18.0,
+   "p90": 189.0,
+   "n": 28,
+   "n_never_recovered_in_window": 1
+  },
+  "free_regained_24h_share_of_supply": {
+   "median": 0.09592884728505459,
+   "p90": 0.17103931406607206,
+   "n": 29,
+   "n_never_recovered_in_window": 0
+  }
+ },
+ "n_episodes": 29
+}

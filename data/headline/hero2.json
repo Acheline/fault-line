@@ -1,0 +1,473 @@
+{
+ "scope": "hero2",
+ "vault": "0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
+ "label": "Belem / RockawayX vaults",
+ "fork_block": 26162857,
+ "size_usd": 2782356.19416765,
+ "rank": 1,
+ "ahead_usd": 0,
+ "lambda": 0.5,
+ "horizon_days": 30,
+ "rho": 0.3,
+ "governance_penalty": false,
+ "penalty": 0.005,
+ "book_usd": 400000000,
+ "action": "EXIT",
+ "exit_fraction": 1.0,
+ "net_value_exit_now_usd": 236797.21031568447,
+ "net_value_exit_now_bps_book": 5.919930257892111,
+ "hard_budget_hit": false,
+ "decision": {
+  "action": "EXIT",
+  "exit_fraction": 1.0,
+  "now": {
+   "t": "0m",
+   "t_s": 0,
+   "x": 1.0,
+   "exited_usd": 2782356.1941676494,
+   "loss_avoided_usd": 252898.22905497375,
+   "exit_cost_usd": 16101.018739289273,
+   "net_usd": 236797.21031568447
+  },
+  "best": {
+   "t": "0m",
+   "t_s": 0,
+   "x": 1.0,
+   "exited_usd": 2782356.1941676494,
+   "loss_avoided_usd": 252898.22905497375,
+   "exit_cost_usd": 16101.018739289273,
+   "net_usd": 236797.21031568447
+  },
+  "risk_adjusted_loss_per_usd": 0.0908935489945884,
+  "hard_budget_hit": false,
+  "net_value_exit_now_usd": 236797.21031568447,
+  "bps_of_book": 5.919930257892111
+ },
+ "grid": [
+  {
+   "t": "0m",
+   "t_s": 0,
+   "x": 0.0,
+   "exited_usd": 0.0,
+   "loss_avoided_usd": 0.0,
+   "exit_cost_usd": 0.0,
+   "net_usd": 0.0
+  },
+  {
+   "t": "0m",
+   "t_s": 0,
+   "x": 0.25,
+   "exited_usd": 695589.0485419125,
+   "loss_avoided_usd": 63224.55726374345,
+   "exit_cost_usd": 2712.9384193123183,
+   "net_usd": 60511.618844431134
+  },
+  {
+   "t": "0m",
+   "t_s": 0,
+   "x": 0.5,
+   "exited_usd": 1391178.097083825,
+   "loss_avoided_usd": 126449.1145274869,
+   "exit_cost_usd": 7175.631859304637,
+   "net_usd": 119273.48266818227
+  },
+  {
+   "t": "0m",
+   "t_s": 0,
+   "x": 0.75,
+   "exited_usd": 2086767.1456257375,
+   "loss_avoided_usd": 189673.67179123036,
+   "exit_cost_usd": 11638.325299296957,
+   "net_usd": 178035.3464919334
+  },
+  {
+   "t": "0m",
+   "t_s": 0,
+   "x": 1.0,
+   "exited_usd": 2782356.1941676494,
+   "loss_avoided_usd": 252898.22905497375,
+   "exit_cost_usd": 16101.018739289273,
+   "net_usd": 236797.21031568447
+  },
+  {
+   "t": "15m",
+   "t_s": 900,
+   "x": 0.0,
+   "exited_usd": 0.0,
+   "loss_avoided_usd": 0.0,
+   "exit_cost_usd": 0.0,
+   "net_usd": 0.0
+  },
+  {
+   "t": "15m",
+   "t_s": 900,
+   "x": 0.25,
+   "exited_usd": 695589.0485419125,
+   "loss_avoided_usd": 63202.60429247132,
+   "exit_cost_usd": 2708.207021928882,
+   "net_usd": 60494.39727054244
+  },
+  {
+   "t": "15m",
+   "t_s": 900,
+   "x": 0.5,
+   "exited_usd": 1391178.097083825,
+   "loss_avoided_usd": 126405.20858494264,
+   "exit_cost_usd": 7170.900461921201,
+   "net_usd": 119234.30812302143
+  },
+  {
+   "t": "15m",
+   "t_s": 900,
+   "x": 0.75,
+   "exited_usd": 2086767.1456257375,
+   "loss_avoided_usd": 189607.81287741396,
+   "exit_cost_usd": 11633.593901913522,
+   "net_usd": 177974.21897550044
+  },
+  {
+   "t": "15m",
+   "t_s": 900,
+   "x": 1.0,
+   "exited_usd": 2782356.19416765,
+   "loss_avoided_usd": 252810.41716988527,
+   "exit_cost_usd": 16096.28734190584,
+   "net_usd": 236714.12982797943
+  },
+  {
+   "t": "1h",
+   "t_s": 3600,
+   "x": 0.0,
+   "exited_usd": 0.0,
+   "loss_avoided_usd": 0.0,
+   "exit_cost_usd": 0.0,
+   "net_usd": 0.0
+  },
+  {
+   "t": "1h",
+   "t_s": 3600,
+   "x": 0.25,
+   "exited_usd": 695589.0485419125,
+   "loss_avoided_usd": 63136.74537865492,
+   "exit_cost_usd": 2694.012829778574,
+   "net_usd": 60442.732548876345
+  },
+  {
+   "t": "1h",
+   "t_s": 3600,
+   "x": 0.5,
+   "exited_usd": 1391178.097083825,
+   "loss_avoided_usd": 126273.49075730985,
+   "exit_cost_usd": 7156.706269770893,
+   "net_usd": 119116.78448753896
+  },
+  {
+   "t": "1h",
+   "t_s": 3600,
+   "x": 0.75,
+   "exited_usd": 2086767.1456257375,
+   "loss_avoided_usd": 189410.23613596475,
+   "exit_cost_usd": 11619.399709763213,
+   "net_usd": 177790.83642620154
+  },
+  {
+   "t": "1h",
+   "t_s": 3600,
+   "x": 1.0,
+   "exited_usd": 2782356.19416765,
+   "loss_avoided_usd": 252546.9815146197,
+   "exit_cost_usd": 16082.09314975553,
+   "net_usd": 236464.88836486416
+  },
+  {
+   "t": "6h",
+   "t_s": 21600,
+   "x": 0.0,
+   "exited_usd": 0.0,
+   "loss_avoided_usd": 0.0,
+   "exit_cost_usd": 0.0,
+   "net_usd": 0.0
+  },
+  {
+   "t": "6h",
+   "t_s": 21600,
+   "x": 0.25,
+   "exited_usd": 695589.0485419125,
+   "loss_avoided_usd": 62697.68595321226,
+   "exit_cost_usd": 2599.384882109853,
+   "net_usd": 60098.30107110241
+  },
+  {
+   "t": "6h",
+   "t_s": 21600,
+   "x": 0.5,
+   "exited_usd": 1391178.097083825,
+   "loss_avoided_usd": 125395.37190642452,
+   "exit_cost_usd": 7062.078322102172,
+   "net_usd": 118333.29358432235
+  },
+  {
+   "t": "6h",
+   "t_s": 21600,
+   "x": 0.75,
+   "exited_usd": 2086767.1456257375,
+   "loss_avoided_usd": 188093.05785963678,
+   "exit_cost_usd": 11524.771762094493,
+   "net_usd": 176568.2860975423
+  },
+  {
+   "t": "6h",
+   "t_s": 21600,
+   "x": 1.0,
+   "exited_usd": 2782356.19416765,
+   "loss_avoided_usd": 250790.74381284905,
+   "exit_cost_usd": 15987.46520208681,
+   "net_usd": 234803.27861076224
+  },
+  {
+   "t": "24h",
+   "t_s": 86400,
+   "x": 0.0,
+   "exited_usd": 0.0,
+   "loss_avoided_usd": 0.0,
+   "exit_cost_usd": 0.0,
+   "net_usd": 0.0
+  },
+  {
+   "t": "24h",
+   "t_s": 86400,
+   "x": 0.25,
+   "exited_usd": 695589.0485419125,
+   "loss_avoided_usd": 61117.072021618675,
+   "exit_cost_usd": 2258.7242705024573,
+   "net_usd": 58858.34775111622
+  },
+  {
+   "t": "24h",
+   "t_s": 86400,
+   "x": 0.5,
+   "exited_usd": 1391178.097083825,
+   "loss_avoided_usd": 122234.14404323735,
+   "exit_cost_usd": 6721.417710494776,
+   "net_usd": 115512.72633274258
+  },
+  {
+   "t": "24h",
+   "t_s": 86400,
+   "x": 0.75,
+   "exited_usd": 2086767.1456257375,
+   "loss_avoided_usd": 183351.216064856,
+   "exit_cost_usd": 11184.111150487097,
+   "net_usd": 172167.10491436892
+  },
+  {
+   "t": "24h",
+   "t_s": 86400,
+   "x": 1.0,
+   "exited_usd": 2782356.1941676503,
+   "loss_avoided_usd": 244468.2880864747,
+   "exit_cost_usd": 15646.804590479414,
+   "net_usd": 228821.4834959953
+  }
+ ],
+ "mc": {
+  "E[L]": 0.012949819277208004,
+  "VaR95": 0.04976830574891815,
+  "CVaR95": 0.1688372787119688,
+  "horizon_days": 30,
+  "rho": 0.3,
+  "p_any_loss": 0.0767,
+  "attribution": {
+   "trusd_frozen": {
+    "label": "trUSD depeg, oracles frozen at par (strUSD, PT-strUSD, etrUSD)",
+    "group": "trUSD stack",
+    "driver": "trusd",
+    "E[L]": 0.003405540409477017,
+    "share_of_EL": 0.26297976339104984,
+    "CVaR_contrib": 0.04440078760726228,
+    "time_to_impact_s": 0,
+    "confidence": "high (etrUSD leg: medium, linked to trUSD via shared owner)"
+   },
+   "reusd_market": {
+    "label": "PT-reUSD market price shock (Pendle TWAP oracle)",
+    "group": "PT-reUSD",
+    "driver": "reusd",
+    "E[L]": 0.005998302935387318,
+    "share_of_EL": 0.46319587995675554,
+    "CVaR_contrib": 0.07820473188249437,
+    "time_to_impact_s": 900,
+    "confidence": "medium"
+   },
+   "iusd_nav": {
+    "label": "siUSD exchange-rate markdown",
+    "group": "siUSD",
+    "driver": "iusd",
+    "E[L]": 0.0015028692499456807,
+    "share_of_EL": 0.11605329910593941,
+    "CVaR_contrib": 0.019594123206592966,
+    "time_to_impact_s": 0,
+    "confidence": "high"
+   },
+   "prime_nav": {
+    "label": "PRIME NAV markdown",
+    "group": "PRIME",
+    "driver": "prime",
+    "E[L]": 0.0017319370400623512,
+    "share_of_EL": 0.13374217840326177,
+    "CVaR_contrib": 0.022580665450617363,
+    "time_to_impact_s": 0,
+    "confidence": "medium"
+   },
+   "pendle_exploit": {
+    "label": "Pendle exploit: PT collateral, no exit",
+    "group": "Pendle",
+    "driver": "pendle_exploit",
+    "E[L]": 0.0001905126222765859,
+    "share_of_EL": 0.014711604710336982,
+    "CVaR_contrib": 0.0024838673047794775,
+    "time_to_impact_s": 0,
+    "confidence": "high"
+   },
+   "morpho_exploit": {
+    "label": "Morpho Blue exploit (parametric)",
+    "group": "Morpho Blue",
+    "driver": "morpho_exploit",
+    "E[L]": 0.00012065702005905212,
+    "share_of_EL": 0.009317274432656477,
+    "CVaR_contrib": 0.0015731032602223226,
+    "time_to_impact_s": 0,
+    "confidence": "medium"
+   }
+  }
+ },
+ "loss_usd": {
+  "E[L]": 36031.00987929133,
+  "VaR95": 138473.15377373187,
+  "CVaR95": 469765.4482306563
+ },
+ "driver": {
+  "scenario": "reusd_market",
+  "label": "PT-reUSD market price shock (Pendle TWAP oracle)",
+  "driver": "reUSD depeg",
+  "share_of_risk_adjusted_loss": 0.4631958799567556,
+  "time_to_impact_s": 900,
+  "confidence": "medium",
+  "source": "base_rates yield_synthetic class: 10 episodes < $0.99 in 12.0 coin-years (tori-trusd, infinifi-usd, resolv-usr, usdx-money-usdx, usual-usd, falcon-finance, f-x-protocol-fxusd); severity = 1 - episode trough"
+ },
+ "breakeven": {
+  "event": "reUSD depeg within 30 days",
+  "p_breakeven": 0.0,
+  "p_estimate": 0.06936460977564873,
+  "rate_multiplier": 0.0
+ },
+ "exit_race": {
+  "rank": 1,
+  "ahead_usd": 0,
+  "by_time": {
+   "0m": {
+    "t_s": 0,
+    "recovered_usd": 2770194.1682174914,
+    "recovered_pct": 0.9956288752764105,
+    "penalty_usd": 12162.025950158248,
+    "from_instant": 349951.00413600006,
+    "from_forced": 2432405.1900316495,
+    "locked_usd": 0.0
+   },
+   "15m": {
+    "t_s": 900,
+    "recovered_usd": 2770198.899614875,
+    "recovered_pct": 0.9956305757766534,
+    "penalty_usd": 12157.294552774814,
+    "from_instant": 350897.28361268726,
+    "from_forced": 2431458.9105549627,
+    "locked_usd": 0.0
+   },
+   "1h": {
+    "t_s": 3600,
+    "recovered_usd": 2770213.0938070253,
+    "recovered_pct": 0.9956356772773814,
+    "penalty_usd": 12143.100360624505,
+    "from_instant": 353736.1220427489,
+    "from_forced": 2428620.0721249008,
+    "locked_usd": 0.0
+   },
+   "6h": {
+    "t_s": 21600,
+    "recovered_usd": 2770307.721754694,
+    "recovered_pct": 0.9956696872822351,
+    "penalty_usd": 12048.472412955785,
+    "from_instant": 372661.7115764931,
+    "from_forced": 2409694.482591157,
+    "locked_usd": 0.0
+   },
+   "24h": {
+    "t_s": 86400,
+    "recovered_usd": 2770648.3823663015,
+    "recovered_pct": 0.995792123299709,
+    "penalty_usd": 11707.811801348389,
+    "from_instant": 440793.83389797225,
+    "from_forced": 2341562.360269678,
+    "locked_usd": 0.0
+   }
+  },
+  "time_to_full_exit_s": 0.0
+ },
+ "carry_cost_per_usd": 0.0014157039984269112,
+ "reason": [
+  "#1 driver: PT-reUSD market price shock (Pendle TWAP oracle) (46% of risk-adjusted loss): vault \u2192 PT-reUSD market price shock \u2192 bad debt socialized to depositors; time-to-impact 15 min.",
+  "Expected loss $36,031, CVaR95 $469,765 on $2,782,356 over 30 days (\u03bb=0.5).",
+  "Exit now at rank 1: 100% reachable (penalty $12,162); full exit not reachable within a year at measured refill."
+ ],
+ "tornado": [
+  {
+   "assumption": "horizon_days",
+   "low": 7,
+   "high": 90,
+   "metric_low": 378.6578941755406,
+   "metric_high": 537730.8559625479,
+   "swing": 537352.1980683724,
+   "source": "decision horizon (assumption)",
+   "base": 236797.21031568447
+  },
+  {
+   "assumption": "rate_scale",
+   "low": 0.5,
+   "high": 2.0,
+   "metric_low": 4391.182712156602,
+   "metric_high": 490058.1366351038,
+   "swing": 485666.95392294717,
+   "source": "base-rate frequency x0.5 / x2 (yield_synthetic: 10 episodes in 12 coin-years)",
+   "base": 236797.21031568447
+  },
+  {
+   "assumption": "lam",
+   "low": 0.0,
+   "high": 1.0,
+   "metric_low": 19929.991140002046,
+   "metric_high": 453664.42949136696,
+   "swing": 433734.4383513649,
+   "source": "risk aversion lambda (ASSUMED_ANSWERS \u00a73)",
+   "base": 236797.21031568447
+  },
+  {
+   "assumption": "rank",
+   "low": 1,
+   "high": 5,
+   "metric_low": 236797.21031568447,
+   "metric_high": 0.0,
+   "swing": 236797.21031568447,
+   "source": "your place in the exit queue",
+   "base": 236797.21031568447
+  },
+  {
+   "assumption": "severity_scale",
+   "low": 0.5,
+   "high": 1.5,
+   "metric_low": 78672.70498688097,
+   "metric_high": 254176.05667832322,
+   "swing": 175503.35169144225,
+   "source": "episode depth x0.5 / x1.5",
+   "base": 236797.21031568447
+  }
+ ]
+}

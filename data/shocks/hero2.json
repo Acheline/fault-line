@@ -1,0 +1,1547 @@
+{
+ "fork_block": 26162857,
+ "vault": "0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
+ "grid": [
+  -0.02,
+  -0.05,
+  -0.1,
+  -0.25,
+  -0.5,
+  -0.75,
+  -0.95
+ ],
+ "measured": {
+  "trusd_frozen": [
+   {
+    "severity": 0.02,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.02,
+      "oracle_move": 0.0,
+      "capacity_usd": 1029091.0087850319,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.02,
+      "oracle_move": 0.0,
+      "capacity_usd": 140318.24627198,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.02,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.05,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.05,
+      "oracle_move": 0.0,
+      "capacity_usd": 997588.2228018165,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.05,
+      "oracle_move": 0.0,
+      "capacity_usd": 136022.78975345,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.05,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.1,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.1,
+      "oracle_move": 0.0,
+      "capacity_usd": 945083.5794964578,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.1,
+      "oracle_move": 0.0,
+      "capacity_usd": 128863.6955559,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.1,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.25,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 206955.89017456348,
+    "loss_per_share": 0.01115722839198568,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.25,
+      "oracle_move": 0.0,
+      "capacity_usd": 787569.6495803816,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 567172.8586537245,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 192702.1387473141,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.25,
+      "oracle_move": 0.0,
+      "capacity_usd": 107386.41296325,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 23599.5239305621,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 7871.462495203424,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.25,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 105278.70361134669,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 6382.288932045955,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.5,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 1530293.6389493984,
+    "loss_per_share": 0.0824998777380042,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.5,
+      "oracle_move": 0.0,
+      "capacity_usd": 525046.4330535877,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 4174109.5048987097,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 1418191.6794621493,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.5,
+      "oracle_move": 0.0,
+      "capacity_usd": 71590.9419755,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 223662.0274856571,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 74600.9650929672,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.5,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 618595.6348893739,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 37500.99439428203,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.75,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 3046531.2620681566,
+    "loss_per_share": 0.16424197960999395,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.75,
+      "oracle_move": 0.0,
+      "capacity_usd": 262523.21652679384,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 8323322.108642508,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 2827924.4102501324,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.75,
+      "oracle_move": 0.0,
+      "capacity_usd": 35795.47098775,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 446357.8483404019,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 148879.65846213943,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.75,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 1150181.165585687,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 69727.19335588468,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.95,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 4281833.231262836,
+    "loss_per_share": 0.23083851953813694,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.95,
+      "oracle_move": 0.0,
+      "capacity_usd": 52504.64330535881,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 11706833.399464501,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 3977503.153782983,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.95,
+      "oracle_move": 0.0,
+      "capacity_usd": 7159.094197550006,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 626071.4598077742,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 208821.92495468588,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.95,
+      "oracle_move": 0.0,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 1575449.5901427378,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 95508.15252516684,
+      "errors": []
+     }
+    ]
+   }
+  ],
+  "trusd_tracking": [
+   {
+    "severity": 0.02,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 1029091.0087850319,
+      "n_liquidated": 1,
+      "seized_usd": 1029091.0087850319,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 140318.24627198,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.05,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 997588.2228018165,
+      "n_liquidated": 1,
+      "seized_usd": 997588.2228018165,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 136022.78975345,
+      "n_liquidated": 2,
+      "seized_usd": 136022.78975345,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.1,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 945083.5794964578,
+      "n_liquidated": 1,
+      "seized_usd": 945083.5794964577,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 128863.6955559,
+      "n_liquidated": 2,
+      "seized_usd": 128863.6955559,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.25,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 219972.02888758254,
+    "loss_per_share": 0.01185894329500403,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 787569.6495803816,
+      "n_liquidated": 1,
+      "seized_usd": 787569.6495803816,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 601017.2697221065,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 204201.08531715037,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 107386.41296325,
+      "n_liquidated": 1,
+      "seized_usd": 107386.41296325,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 28148.23547077732,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 9388.654638386217,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 105278.70361134669,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 6382.288932045955,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.5,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 1539184.739130614,
+    "loss_per_share": 0.08297920710279867,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 525046.4330535877,
+      "n_liquidated": 1,
+      "seized_usd": 525046.4330535877,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 4197266.418791297,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 1426059.4516339013,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 71590.9419755,
+      "n_liquidated": 1,
+      "seized_usd": 71590.9419755,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 226730.0791803533,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 75624.29310243062,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 618595.6348893739,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 37500.99439428203,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.75,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 3051189.830264942,
+    "loss_per_share": 0.16449312834177118,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 262523.21652679384,
+      "n_liquidated": 1,
+      "seized_usd": 262523.21652679384,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 8335497.451218298,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 2832061.09365897,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 35795.47098775,
+      "n_liquidated": 1,
+      "seized_usd": 35795.47098775,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 447922.51723765855,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 149401.54325008707,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 1150181.165585687,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 69727.19335588468,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.95,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 4283093.786469835,
+    "loss_per_share": 0.23090647750895543,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "strUSD",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 52504.64330535881,
+      "n_liquidated": 1,
+      "seized_usd": 52504.64330535881,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 11710188.017909871,
+      "vault_share": 0.33975909779026353,
+      "vault_loss_usd": 3978642.9159194124,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 7159.094197550006,
+      "n_liquidated": 1,
+      "seized_usd": 7159.094197550006,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 626433.6109278853,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 208942.71802525537,
+      "errors": []
+     },
+     {
+      "market": "etrUSD",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 1575449.5901427378,
+      "vault_share": 0.06062279181939022,
+      "vault_loss_usd": 95508.15252516684,
+      "errors": []
+     }
+    ]
+   }
+  ],
+  "reusd_market": [
+   {
+    "severity": 0.02,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 11922476.846441979,
+      "n_liquidated": 4,
+      "seized_usd": 3260788.1837059,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.05,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 11557503.065428449,
+      "n_liquidated": 19,
+      "seized_usd": 11557503.065428447,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.1,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 15156.46319615474,
+    "loss_per_share": 0.0008171022402483325,
+    "recognized_loss_per_share": 0.0007297664262863046,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 10949213.4304059,
+      "n_liquidated": 19,
+      "seized_usd": 10949213.430405898,
+      "realized_bad_debt_usd": 176047.821684,
+      "hidden_shortfall_usd": 20688.78286146573,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 15156.46319615474,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.25,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 887236.7329211313,
+    "loss_per_share": 0.04783194553491834,
+    "recognized_loss_per_share": 0.007246299560880298,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 9124344.52533825,
+      "n_liquidated": 19,
+      "seized_usd": 9124344.52533825,
+      "realized_bad_debt_usd": 1745160.718865,
+      "hidden_shortfall_usd": 9771506.46158909,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 887236.7329211313,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.5,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 3264899.390858692,
+    "loss_per_share": 0.17601445481904213,
+    "recognized_loss_per_share": 0.01711316806821228,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 6082896.3502255,
+      "n_liquidated": 19,
+      "seized_usd": 6082896.350225501,
+      "realized_bad_debt_usd": 4120739.307852,
+      "hidden_shortfall_usd": 38258885.28049254,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 3264899.390858692,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.75,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 5690555.793074819,
+    "loss_per_share": 0.30678436166817774,
+    "recognized_loss_per_share": 0.027344435216027363,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 3041448.17511275,
+      "n_liquidated": 19,
+      "seized_usd": 3041448.1751127504,
+      "realized_bad_debt_usd": 6584352.358638,
+      "hidden_shortfall_usd": 67281206.52650495,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 5690555.793074819,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.95,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 7683783.787958814,
+    "loss_per_share": 0.4142415592258906,
+    "recognized_loss_per_share": 0.020785259687334356,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 608289.6350225505,
+      "n_liquidated": 19,
+      "seized_usd": 608289.6350225505,
+      "realized_bad_debt_usd": 5005034.212476,
+      "hidden_shortfall_usd": 94733375.26606475,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 7683783.787958814,
+      "errors": []
+     }
+    ]
+   }
+  ],
+  "iusd_nav": [
+   {
+    "severity": 0.02,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 7915852.2787090605,
+      "n_liquidated": 1,
+      "seized_usd": 169.9830538768599,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.05,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 7673530.27017715,
+      "n_liquidated": 3,
+      "seized_usd": 362894.997897962,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.1,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 190.53503378051835,
+    "loss_per_share": 1.0271961270446764e-05,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 7269660.255957301,
+      "n_liquidated": 6,
+      "seized_usd": 7269660.255957301,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 643.0134489999409,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 190.53503378051835,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.25,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 273306.73044200713,
+    "loss_per_share": 0.014734277966364099,
+    "recognized_loss_per_share": 0.001134869170227426,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 6058050.213297751,
+      "n_liquidated": 6,
+      "seized_usd": 6058050.213297752,
+      "realized_bad_debt_usd": 71258.323658,
+      "hidden_shortfall_usd": 851091.2300668596,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 273306.73044200713,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.5,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 892796.2619408367,
+    "loss_per_share": 0.048131666093595864,
+    "recognized_loss_per_share": 0.0030460237421220393,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 4038700.1421985,
+      "n_liquidated": 6,
+      "seized_usd": 4038700.1421984998,
+      "realized_bad_debt_usd": 190866.191151,
+      "hidden_shortfall_usd": 2822123.033214572,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 892796.2619408367,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.75,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 1512285.9531446907,
+    "loss_per_share": 0.08152906283070789,
+    "recognized_loss_per_share": 0.004956209168696213,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 2019350.07109925,
+      "n_liquidated": 6,
+      "seized_usd": 2019350.0710992499,
+      "realized_bad_debt_usd": 310474.046309,
+      "hidden_shortfall_usd": 4793155.387666295,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 1512285.9531446907,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.95,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 2007878.1089967864,
+    "loss_per_share": 0.1082470019406043,
+    "recognized_loss_per_share": 0.006484551339019595,
+    "legs": [
+     {
+      "market": "siUSD",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 403870.01421985036,
+      "n_liquidated": 6,
+      "seized_usd": 403870.0142198503,
+      "realized_bad_debt_usd": 406160.321923,
+      "hidden_shortfall_usd": 6369982.639401068,
+      "vault_share": 0.2963157832497153,
+      "vault_loss_usd": 2007878.1089967864,
+      "errors": []
+     }
+    ]
+   }
+  ],
+  "prime_nav": [
+   {
+    "severity": 0.02,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 1833843.67863928,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.05,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 1777705.6068441998,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.1,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 1684142.1538524,
+      "n_liquidated": 2,
+      "seized_usd": 18.65158493528184,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.25,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 52250.128856923904,
+    "loss_per_share": 0.0028168641186083663,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 1403451.794877,
+      "n_liquidated": 4,
+      "seized_usd": 1403451.7948769997,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 58653.5554766503,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 52250.128856923904,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.5,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 451605.7807928729,
+    "loss_per_share": 0.02434658339609024,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 935634.529918,
+      "n_liquidated": 4,
+      "seized_usd": 935634.529918,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 506951.5673318892,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 451605.7807928729,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.75,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 874982.7212336928,
+    "loss_per_share": 0.047171317770231425,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 467817.264959,
+      "n_liquidated": 4,
+      "seized_usd": 467817.264959,
+      "realized_bad_debt_usd": 1.227008,
+      "hidden_shortfall_usd": 982213.5292756122,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 874982.7212336928,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.95,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 1214500.3610893446,
+    "loss_per_share": 0.06547510147883848,
+    "recognized_loss_per_share": -2.907435961319038e-06,
+    "legs": [
+     {
+      "market": "PRIME",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 93563.45299180008,
+      "n_liquidated": 4,
+      "seized_usd": 93563.45299180008,
+      "realized_bad_debt_usd": 5.435084,
+      "hidden_shortfall_usd": 1363335.9740946693,
+      "vault_share": 0.8908262838000406,
+      "vault_loss_usd": 1214500.3610893446,
+      "errors": []
+     }
+    ]
+   }
+  ],
+  "pendle_exploit": [
+   {
+    "severity": 0.02,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.02,
+      "oracle_move": -0.02,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.05,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 0.0,
+    "loss_per_share": 0.0,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.05,
+      "oracle_move": -0.05,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.1,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 8.657813751952364,
+    "loss_per_share": 4.6675262696958767e-07,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 112.3816855094719,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 8.657813751952364,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.1,
+      "oracle_move": -0.1,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 0.0,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 0.0,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.25,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 877185.4825343688,
+    "loss_per_share": 0.047290071147600574,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 11284024.602454197,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 869314.0963103165,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.25,
+      "oracle_move": -0.25,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 23599.295261130337,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 7871.38622405231,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.5,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 3327550.8571145562,
+    "loss_per_share": 0.17939206691560944,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 42224516.730324894,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 3252949.979883848,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.5,
+      "oracle_move": -0.5,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 223661.76406478864,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 74600.87723070808,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.75,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 5833460.5984218195,
+    "loss_per_share": 0.31448852292797025,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 73788003.62492462,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 5684580.985031938,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.75,
+      "oracle_move": -0.75,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 446357.71320873615,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 148879.6133898811,
+      "errors": []
+     }
+    ]
+   },
+   {
+    "severity": 0.95,
+    "vault_total_assets_usd": 18549041.294451,
+    "vault_loss_usd": 7891410.716610106,
+    "loss_per_share": 0.425434964068512,
+    "recognized_loss_per_share": -3.8765812817587175e-06,
+    "legs": [
+     {
+      "market": "PT-reUSD-10DEC2026",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 99722898.09584847,
+      "vault_share": 0.07703936555767937,
+      "vault_loss_usd": 7682588.800877279,
+      "errors": []
+     },
+     {
+      "market": "PT-strUSD-26NOV2026",
+      "true_move": -0.95,
+      "oracle_move": -0.95,
+      "capacity_usd": 0.0,
+      "n_liquidated": 0,
+      "seized_usd": 0.0,
+      "realized_bad_debt_usd": 0.0,
+      "hidden_shortfall_usd": 626071.4321596109,
+      "vault_share": 0.33354327478655793,
+      "vault_loss_usd": 208821.91573282695,
+      "errors": []
+     }
+    ]
+   }
+  ]
+ },
+ "coverage_debt_read": {
+  "PT-reUSD-10DEC2026": 0.9999940549440118,
+  "strUSD": 1.0000000000024696,
+  "siUSD": 1.000000000000695,
+  "PRIME": 1.000000000003428,
+  "PT-strUSD-26NOV2026": 1.000000000026823,
+  "etrUSD": 1.0000000000035656
+ },
+ "capacities_usd": {
+  "PT-reUSD-10DEC2026": 12165792.700451,
+  "strUSD": 1050092.8661071754,
+  "siUSD": 8077400.284397,
+  "PRIME": 1871269.059836,
+  "PT-strUSD-26NOV2026": 143181.883951,
+  "etrUSD": 0.0
+ },
+ "exit_confidence": {
+  "PT-reUSD-10DEC2026": "high",
+  "strUSD": "high",
+  "siUSD": "high",
+  "PRIME": "high",
+  "PT-strUSD-26NOV2026": "medium",
+  "etrUSD": "low"
+ },
+ "pendle_twap_s": 900,
+ "drivers": {
+  "trusd": {
+   "id": "trusd",
+   "label": "trUSD depeg",
+   "annual_rate": 0.8752328792962466,
+   "severities": [
+    0.992628818208281,
+    0.9202942207740541,
+    0.019688999999999957,
+    0.013656794526106242,
+    0.013110346369786918,
+    0.012828214125172432,
+    0.01195400000000002,
+    0.011244000000000032,
+    0.011160700127296308,
+    0.010823000000000027
+   ],
+   "family": "market_disruption",
+   "kpi": "counterparty_defaults",
+   "source": "base_rates yield_synthetic class: 10 episodes < $0.99 in 12.0 coin-years (tori-trusd, infinifi-usd, resolv-usr, usdx-money-usdx, usual-usd, falcon-finance, f-x-protocol-fxusd); severity = 1 - episode trough",
+   "badge": null
+  },
+  "reusd": {
+   "id": "reusd",
+   "label": "reUSD depeg",
+   "annual_rate": 0.8752328792962466,
+   "severities": [
+    0.992628818208281,
+    0.9202942207740541,
+    0.019688999999999957,
+    0.013656794526106242,
+    0.013110346369786918,
+    0.012828214125172432,
+    0.01195400000000002,
+    0.011244000000000032,
+    0.011160700127296308,
+    0.010823000000000027
+   ],
+   "family": "market_disruption",
+   "kpi": "counterparty_defaults",
+   "source": "base_rates yield_synthetic class: 10 episodes < $0.99 in 12.0 coin-years (tori-trusd, infinifi-usd, resolv-usr, usdx-money-usdx, usual-usd, falcon-finance, f-x-protocol-fxusd); severity = 1 - episode trough",
+   "badge": null
+  },
+  "iusd": {
+   "id": "iusd",
+   "label": "iUSD depeg",
+   "annual_rate": 0.8752328792962466,
+   "severities": [
+    0.992628818208281,
+    0.9202942207740541,
+    0.019688999999999957,
+    0.013656794526106242,
+    0.013110346369786918,
+    0.012828214125172432,
+    0.01195400000000002,
+    0.011244000000000032,
+    0.011160700127296308,
+    0.010823000000000027
+   ],
+   "family": "market_disruption",
+   "kpi": "counterparty_defaults",
+   "source": "base_rates yield_synthetic class: 10 episodes < $0.99 in 12.0 coin-years (tori-trusd, infinifi-usd, resolv-usr, usdx-money-usdx, usual-usd, falcon-finance, f-x-protocol-fxusd); severity = 1 - episode trough",
+   "badge": null
+  },
+  "prime": {
+   "id": "prime",
+   "label": "PRIME NAV markdown",
+   "annual_rate": 1.104122932236124,
+   "severities": [
+    0.0026192522912651395,
+    0.0007383764186391639
+   ],
+   "family": "market_disruption",
+   "kpi": "counterparty_defaults",
+   "source": "on-chain PRIME / wYLDS NAV feed: 170 updates over 165 days, 2 decreases (max 0.26%), none > 1%: rate = Jeffreys bound (0+0.5)/years, severities = observed decreases",
+   "badge": "short_history"
+  },
+  "morpho_exploit": {
+   "id": "morpho_exploit",
+   "label": "Morpho Blue exploit",
+   "annual_rate": 0.02112676056338028,
+   "severities": [
+    0.07097471768179538
+   ],
+   "family": "security_incident",
+   "kpi": "security_incidents",
+   "source": "DefiLlama hacks: bucket *|>=2y|>=1B -> 2.113%/yr; loss-given-exploit 7.1% (>=100M)",
+   "badge": null
+  },
+  "pendle_exploit": {
+   "id": "pendle_exploit",
+   "label": "Pendle exploit",
+   "annual_rate": 0.007966691324354224,
+   "severities": [
+    0.6716714575444782
+   ],
+   "family": "security_incident",
+   "kpi": "security_incidents",
+   "source": "DefiLlama hacks: bucket other|>=2y|<100M -> 0.797%/yr; loss-given-exploit 67.2% (<100M)",
+   "badge": null
+  }
+ },
+ "extra": {
+  "prime_nav_feed": {
+   "n_updates": 170,
+   "years": 0.45284812533272495,
+   "n_decreases": 2,
+   "severities": [
+    0.0026192522912651395,
+    0.0007383764186391639
+   ],
+   "annual_rate": 1.104122932236124,
+   "n_over_threshold": 0
+  }
+ },
+ "generated_at": 1791646949
+}

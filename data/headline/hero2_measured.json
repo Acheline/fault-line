@@ -1,0 +1,179 @@
+{
+ "fork_block": 26162857,
+ "governance_run": {
+  "penalty_set": {
+   "0xce0b17e6e94c9068b760557ba11a7bb1943f5674": 0.02
+  },
+  "time_to_impact_s": 0,
+  "run": {
+   "ranks": [
+    {
+     "rank": 1,
+     "address": "0x16f2fbc7e6d722e8c5a0acf9cd347d063efc8bbf",
+     "owned_usd": 7152180.707865,
+     "recovered_usd": 7009137.107607,
+     "recovered_pct": 0.9800000019433653,
+     "steps": [
+      {
+       "force_deallocate": "PT-reUSD-10DEC2026",
+       "usd": 7152180.707865
+      },
+      {
+       "withdraw_usd": 7009137.107607
+      }
+     ]
+    },
+    {
+     "rank": 2,
+     "address": "0x4ae681bd6589af34f98cf7f1e2ca8508c704af1b",
+     "owned_usd": 3059080.191291,
+     "recovered_usd": 2997898.587462,
+     "recovered_pct": 0.9799999999989605,
+     "steps": [
+      {
+       "force_deallocate": "PT-reUSD-10DEC2026",
+       "usd": 2148621.875235
+      },
+      {
+       "force_deallocate": "strUSD",
+       "usd": 910458.316056
+      },
+      {
+       "withdraw_usd": 2997898.587462
+      }
+     ]
+    },
+    {
+     "rank": 3,
+     "address": "0x4f87de7d21aef48090958f7342e1f69dff790545",
+     "owned_usd": 1822780.976795,
+     "recovered_usd": 1786325.43873,
+     "recovered_pct": 0.9800000446959349,
+     "steps": [
+      {
+       "force_deallocate": "strUSD",
+       "usd": 986811.289142
+      },
+      {
+       "force_deallocate": "siUSD",
+       "usd": 761190.288417
+      },
+      {
+       "force_deallocate": "etrUSD",
+       "usd": 74779.399236
+      },
+      {
+       "withdraw_usd": 1786325.43873
+      }
+     ]
+    },
+    {
+     "rank": 4,
+     "address": "0x64c8ce646e0ec31ef0e4d0801ef2e9731a606684",
+     "owned_usd": 1304520.026066,
+     "recovered_usd": 728613.488385,
+     "recovered_pct": 0.5585299373151493,
+     "steps": [
+      {
+       "force_deallocate": "etrUSD",
+       "usd": 38523.222065
+      },
+      {
+       "force_deallocate": "PT-strUSD-26NOV2026",
+       "usd": 99458.520034
+      },
+      {
+       "withdraw_usd": 728613.488385
+      }
+     ]
+    },
+    {
+     "rank": 5,
+     "address": "0xb459c8a41a4cef0fe752fb8bef1f7eea09acff10",
+     "owned_usd": 707756.166804,
+     "recovered_usd": 0.0,
+     "recovered_pct": 0.0,
+     "steps": []
+    },
+    {
+     "rank": 6,
+     "address": "0x84d1b180d67ba40a4cb7aeb78af6a8bf80fc5c63",
+     "owned_usd": 510402.506918,
+     "recovered_usd": 0.0,
+     "recovered_pct": 0.0,
+     "steps": []
+    },
+    {
+     "rank": 7,
+     "address": "0x5e2237255f7d80479b6d9e08b6fd7b39ddb6c5ac",
+     "owned_usd": 408036.423654,
+     "recovered_usd": 0.0,
+     "recovered_pct": 0.0,
+     "steps": []
+    },
+    {
+     "rank": 8,
+     "address": "0x08d49c032f268d3ac4265d1909c28dfaab440040",
+     "owned_usd": 357935.834776,
+     "recovered_usd": 0.0,
+     "recovered_pct": 0.0,
+     "steps": []
+    },
+    {
+     "rank": 9,
+     "address": "0x9acc2e91f6603c80f21c3e3c4b3462b8494230a8",
+     "owned_usd": 300340.862849,
+     "recovered_usd": 0.0,
+     "recovered_pct": 0.0,
+     "steps": []
+    },
+    {
+     "rank": 10,
+     "address": "0x108cce613d753195b3754dea4bc65d05962be922",
+     "owned_usd": 204124.376978,
+     "recovered_usd": 0.0,
+     "recovered_pct": 0.0,
+     "steps": []
+    }
+   ],
+   "after_run": [
+    {
+     "market": "PT-reUSD-10DEC2026",
+     "utilization": 0.9542797591434392,
+     "borrow_apr": 0.212784203549952
+    },
+    {
+     "market": "strUSD",
+     "utilization": 1.0,
+     "borrow_apr": 0.288583814005632
+    },
+    {
+     "market": "siUSD",
+     "utilization": 1.0,
+     "borrow_apr": 0.27866044484064
+    },
+    {
+     "market": "PRIME",
+     "utilization": 0.9999999999986289,
+     "borrow_apr": 0.180402014302992
+    },
+    {
+     "market": "PT-strUSD-26NOV2026",
+     "utilization": 1.0,
+     "borrow_apr": 0.28818967480704
+    },
+    {
+     "market": "etrUSD",
+     "utilization": 0.9584906826847444,
+     "borrow_apr": 0.191714906458944
+    }
+   ],
+   "total_owned_usd": 15827158.073996,
+   "total_recovered_usd": 12521974.622183999,
+   "locked_usd": 3305183.451812001,
+   "note": "remaining deposits wait for borrower repayments or for the IRM rate (after_run.borrow_apr) to pull new supply in; time to full exit is modelled in Module 3"
+  },
+  "how": "curator Safe submit(setForceDeallocatePenalty) + execute in the same block, on the fork"
+ },
+ "aave_usdc_apy": 0.04366380381915236
+}

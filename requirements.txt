@@ -9,4 +9,5 @@ pandas
 streamlit
 pyvis
 plotly
-pytestpyyaml
+pytest
+pyyaml

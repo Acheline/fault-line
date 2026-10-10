@@ -19,6 +19,78 @@ instant = wn["idle_usd"] + wn["instant_from_liquidity_market_usd"]
 
 st.caption(f"**{r['name']}** ({r['symbol']}) · [{m['vault']}](https://etherscan.io/address/{m['vault']}) · "
            f"fork block **{m['fork_block']}** · one of the challenge setter's own curated vaults")
+
+# ---------------------------------------------------------------- HEADLINE
+HL = ROOT / "data" / "shocks" / "hero2.json"
+if HL.exists():
+    from decision import hero2 as D2
+
+    @st.cache_data(show_spinner="Running Monte Carlo on the fork-measured scenarios…")
+    def _headline(size, rank, lam, horizon, rho, gov, mtime):
+        return D2.headline(size_usd=size, rank=rank, lam=lam, horizon_days=horizon, rho=rho, governance=gov)
+
+    with st.sidebar:
+        st.markdown("**Your position**")
+        size = st.slider("Deposit size ($)", 100_000, 10_000_000,
+                         int(min(5e6, 0.15 * r["total_assets_usd"])), 50_000,
+                         help="default: ASSUMED_ANSWERS §4 ticket, capped at 15% of vault TVL (P5)")
+        rank = st.number_input("Your rank in the exit queue", 1, 11, 1,
+                               help="1 = you exit first; n = the n-1 largest real depositors exit before you")
+        lam = st.slider("Risk aversion λ", 0.0, 1.0, 0.5, 0.05, help="ASSUMED_ANSWERS §3")
+        horizon = st.select_slider("Horizon (days)", [7, 14, 30, 60, 90], 30, help="assumption")
+        rho = st.slider("Correlation between drivers ρ", 0.0, 0.8, 0.3, 0.1, help="assumption (Gaussian copula)")
+        gov = st.toggle("Governance shock: curator sets penalty to 2% (no timelock)", False)
+    h = _headline(float(size), int(rank), lam, float(horizon), rho, gov, HL.stat().st_mtime)
+    color = {"STAY": "#2b8a3e", "REDUCE": "#e67700", "EXIT": "#c92a2a"}[h["action"]]
+    act = h["action"] + (f" {h['exit_fraction']:.0%}" if h["action"] == "REDUCE" else "")
+    st.markdown(
+        f"<div style='display:flex;gap:28px;align-items:baseline;flex-wrap:wrap'>"
+        f"<div><div style='font-size:13px;opacity:.7'>Net value of exiting now</div>"
+        f"<div style='font-size:44px;font-weight:700'>{h['net_value_exit_now_bps_book']:+.2f} bps of book</div>"
+        f"<div style='font-size:20px'>${h['net_value_exit_now_usd']:+,.0f}</div></div>"
+        f"<div style='font-size:40px;font-weight:800;color:{color}'>{act}</div></div>", unsafe_allow_html=True)
+    if h["hard_budget_hit"]:
+        st.error("Hard budget hit: pocket VaR95 above the 20% limit (ASSUMED_ANSWERS §3).")
+    be, dr = h["breakeven"], h["driver"]
+    k = st.columns(4)
+    k[0].metric("Expected loss (stay)", f"${h['loss_usd']['E[L]']:,.0f}", f"CVaR95 ${h['loss_usd']['CVaR95']:,.0f}",
+                delta_color="off")
+    k[1].metric("Breakeven belief", f"{be['p_breakeven']:.1%}" if be["p_breakeven"] is not None else "n/a",
+                f"our estimate {be['p_estimate']:.1%}" if be["p_estimate"] is not None else None, delta_color="off",
+                help=f"P({be['event']}) above which exiting now pays")
+    k[2].metric("#1 driver", dr["driver"] or "-", f"{(dr['share_of_risk_adjusted_loss'] or 0):.0%} of risk-adj. loss",
+                delta_color="off")
+    k[3].metric("Time-to-impact", "0 (silent)" if not dr["time_to_impact_s"] else f"{dr['time_to_impact_s'] / 60:.0f} min",
+                f"confidence: {dr['confidence']}", delta_color="off")
+    for line in h["reason"]:
+        st.markdown(f"- {line}")
+
+    a1, a2 = st.columns(2)
+    with a1:
+        st.markdown("**Attribution of risk-adjusted loss** (scenario, confidence, family)")
+        att = pd.DataFrame([{"scenario": v["label"], "E[L] $": v["E[L]"] * h["size_usd"],
+                             "tail $": v["CVaR_contrib"] * h["size_usd"], "confidence": v["confidence"],
+                             "time-to-impact": "0" if not v["time_to_impact_s"] else f"{v['time_to_impact_s'] / 60:.0f} min"}
+                            for v in h["mc"]["attribution"].values()]).sort_values("tail $", ascending=False)
+        st.dataframe(att, hide_index=True, width="stretch",
+                     column_config={c: st.column_config.NumberColumn(format="dollar") for c in ("E[L] $", "tail $")})
+    with a2:
+        st.markdown(f"**Exit race at rank {h['rank']}** (${h['ahead_usd']:,.0f} of claims ahead of you)")
+        race = pd.DataFrame([{"t": t, "recovered %": v["recovered_pct"], "penalty $": v["penalty_usd"]}
+                             for t, v in h["exit_race"]["by_time"].items()])
+        st.bar_chart(race.set_index("t")["recovered %"])
+        tte = h["exit_race"]["time_to_full_exit_s"]
+        st.caption(f"Time to full exit: {'now' if tte == 0 else '%.1f h' % (tte / 3600) if tte is not None else 'not within a year'} · refill speed "
+                   "from 29 measured 100%-utilization episodes (Morpho history) · penalty "
+                   f"{h['penalty']:.2%}{' (governance shock)' if gov else ''}")
+    if h.get("tornado"):
+        st.markdown("**What moves the decision** (net value of exiting now, $)")
+        tor = pd.DataFrame([{"assumption": t["assumption"], "low": t["metric_low"] - t["base"],
+                             "high": t["metric_high"] - t["base"], "range": f"{t['low']} → {t['high']}",
+                             "source": t["source"]} for t in h["tornado"]])
+        st.bar_chart(tor.set_index("assumption")[["low", "high"]], horizontal=True, stack=False)
+        st.dataframe(tor[["assumption", "range", "source"]], hide_index=True, width="stretch")
+    st.divider()
 c = st.columns(4)
 c[0].metric("Total assets", f"${tot / 1e6:,.2f}M")
 c[1].metric("Instantly withdrawable", f"${instant / 1e6:,.2f}M", f"{instant / tot:.1%} of vault", delta_color="off")
@@ -36,6 +108,7 @@ st.dataframe(pd.DataFrame([{
     "free liquidity $": x["free_liquidity_usd"], "vault share of market": x["vault_share_of_market"],
     "root asset": x["root_symbol"], "price basis": basis.get(x["collateral_symbol"], {}).get("price_basis"),
     "oracle feeds": ", ".join(basis.get(x["collateral_symbol"], {}).get("executed_leaf_feeds", [])),
+    "oracle confidence": basis.get(x["collateral_symbol"], {}).get("confidence", ""),
     "liquidity market": "✔" if x["is_liquidity_market"] else ""} for x in m["q1"]["markets"]]),
     hide_index=True, width="stretch",
     column_config={k: st.column_config.NumberColumn(format="percent" if k in ("share", "LLTV", "utilization",
@@ -68,7 +141,9 @@ for q in m["q2"]:
                  "debt covered": q["debt_covered_usd"] / q["market_borrow_usd"] if q["market_borrow_usd"] else None,
                  "debt HF<1.05": hb["<1.00 (liquidatable)"]["debt_share"] + hb["1.00-1.05"]["debt_share"],
                  "debt HF<1.10": sum(hb[k]["debt_share"] for k in ("<1.00 (liquidatable)", "1.00-1.05", "1.05-1.10")),
-                 "collateral exit at liq. size": "no route" if not ce.get("route") else f"{ce['discount_vs_oracle']:+.1%} vs oracle"})
+                 "collateral exit at liq. size": "no route" if ce.get("usdc_out") is None else f"{ce['discount_vs_oracle']:+.1%} vs oracle",
+                 "liquidation capacity $": ce.get("liquidation_capacity_usd"),
+                 "exit confidence": ce.get("confidence", "")})
     for s in q["shocks"]:
         shocks.append({"market": q["market"], "oracle move": f"{s['move']:+.0%}", "vault bad debt $": s["bad_debt_vault_usd"],
                        "loss per share": s["loss_per_share"], "liquidated": s["n_liquidated"],
