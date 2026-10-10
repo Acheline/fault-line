@@ -1,0 +1,7197 @@
+{
+ "source": "computed from data",
+ "generated_at": 1791640589,
+ "values": {
+  "exploit": {
+   "value": {
+    "buckets": {
+     "staking|<2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 13.9,
+      "p_annual": 0.03601428585677622
+     },
+     "staking|>=2y|>=1B": {
+      "hacks": 1,
+      "protocol_years": 13.6,
+      "p_annual": 0.11068323039605957
+     },
+     "lending|<2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 9.7,
+      "p_annual": 0.05151743861411092
+     },
+     "lending|>=2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 19.7,
+      "p_annual": 0.02542294821528518
+     },
+     "other|<2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 10.1,
+      "p_annual": 0.04942840181246092
+     },
+     "other|>=2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 9.0,
+      "p_annual": 0.05565835993276025
+     },
+     "bridge|<2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 8.0,
+      "p_annual": 0.062228401366748586
+     },
+     "bridge|>=2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 12.2,
+      "p_annual": 0.04113778717297727
+     },
+     "yield_vault|<2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 4.1,
+      "p_annual": 0.12167711148740487
+     },
+     "yield_vault|>=2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 3.6,
+      "p_annual": 0.13719857887051407
+     },
+     "dex_derivatives|<2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 3.8,
+      "p_annual": 0.13296370355514245
+     },
+     "dex_derivatives|>=2y|>=1B": {
+      "hacks": 0,
+      "protocol_years": 12.9,
+      "p_annual": 0.03865818524929247
+     },
+     "bridge|<2y|100M-1B": {
+      "hacks": 2,
+      "protocol_years": 25.7,
+      "p_annual": 0.09745432888950709
+     },
+     "bridge|>=2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 3.5,
+      "p_annual": 0.14460129077857484
+     },
+     "lending|<2y|100M-1B": {
+      "hacks": 3,
+      "protocol_years": 22.8,
+      "p_annual": 0.1534929222947335
+     },
+     "lending|>=2y|100M-1B": {
+      "hacks": 2,
+      "protocol_years": 20.5,
+      "p_annual": 0.12201411511259706
+     },
+     "staking|<2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 30.1,
+      "p_annual": 0.016627768462055947
+     },
+     "staking|>=2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 29.4,
+      "p_annual": 0.017011432254554433
+     },
+     "other|<2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 48.7,
+      "p_annual": 0.010274432697465388
+     },
+     "other|>=2y|100M-1B": {
+      "hacks": 2,
+      "protocol_years": 58.6,
+      "p_annual": 0.04266985245868823
+     },
+     "dex_derivatives|<2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 25.8,
+      "p_annual": 0.0194077705003534
+     },
+     "dex_derivatives|>=2y|100M-1B": {
+      "hacks": 3,
+      "protocol_years": 14.3,
+      "p_annual": 0.24558443232443322
+     },
+     "rwa|<2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 16.0,
+      "p_annual": 0.03120627323616804
+     },
+     "rwa|>=2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 5.7,
+      "p_annual": 0.08757546888078387
+     },
+     "yield_vault|<2y|100M-1B": {
+      "hacks": 2,
+      "protocol_years": 12.1,
+      "p_annual": 0.20598411911139675
+     },
+     "yield_vault|>=2y|100M-1B": {
+      "hacks": 0,
+      "protocol_years": 19.1,
+      "p_annual": 0.026202330199322613
+     },
+     "other|<2y|<100M": {
+      "hacks": 18,
+      "protocol_years": 1842.7,
+      "p_annual": 0.010039716394144175
+     },
+     "other|>=2y|<100M": {
+      "hacks": 30,
+      "protocol_years": 3828.2,
+      "p_annual": 0.00796724089298718
+     },
+     "staking|<2y|<100M": {
+      "hacks": 0,
+      "protocol_years": 418.9,
+      "p_annual": 0.0011937172181499995
+     },
+     "staking|>=2y|<100M": {
+      "hacks": 2,
+      "protocol_years": 251.9,
+      "p_annual": 0.009924063461544041
+     },
+     "lending|<2y|<100M": {
+      "hacks": 45,
+      "protocol_years": 1054.0,
+      "p_annual": 0.04317081899486421
+     },
+     "lending|>=2y|<100M": {
+      "hacks": 16,
+      "protocol_years": 1026.5,
+      "p_annual": 0.016073993786468524
+     },
+     "dex_derivatives|<2y|<100M": {
+      "hacks": 23,
+      "protocol_years": 2958.8,
+      "p_annual": 0.00794253167060235
+     },
+     "dex_derivatives|>=2y|<100M": {
+      "hacks": 30,
+      "protocol_years": 3660.2,
+      "p_annual": 0.008332961770936361
+     },
+     "yield_vault|<2y|<100M": {
+      "hacks": 15,
+      "protocol_years": 849.7,
+      "p_annual": 0.01824084981023875
+     },
+     "yield_vault|>=2y|<100M": {
+      "hacks": 6,
+      "protocol_years": 1466.4,
+      "p_annual": 0.0044326436184448795
+     },
+     "bridge|<2y|<100M": {
+      "hacks": 2,
+      "protocol_years": 154.1,
+      "p_annual": 0.016227580918271246
+     },
+     "bridge|>=2y|<100M": {
+      "hacks": 3,
+      "protocol_years": 161.7,
+      "p_annual": 0.021643676679845517
+     },
+     "rwa|<2y|<100M": {
+      "hacks": 2,
+      "protocol_years": 197.3,
+      "p_annual": 0.012673505670302846
+     },
+     "rwa|>=2y|<100M": {
+      "hacks": 0,
+      "protocol_years": 100.5,
+      "p_annual": 0.004977142592032367
+     },
+     "stable_synthetic|<2y|<100M": {
+      "hacks": 1,
+      "protocol_years": 118.4,
+      "p_annual": 0.012666743677314667
+     },
+     "stable_synthetic|>=2y|<100M": {
+      "hacks": 1,
+      "protocol_years": 352.0,
+      "p_annual": 0.004261081441440828
+     }
+    },
+    "window_years": 3.0,
+    "n_hacks_matched": 251,
+    "n_material": 209,
+    "material": [
+     {
+      "name": "Typus Perp",
+      "date": 1760486400,
+      "loss_share": 0.9363576232848188,
+      "tvl": 3673810,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Solrise Finance",
+      "date": 1721952000,
+      "loss_share": 1.0,
+      "tvl": 6700000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Atomic Green",
+      "date": 1786147200,
+      "loss_share": 0.33314815226328304,
+      "tvl": 90002,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "MOBOX",
+      "date": 1710460800,
+      "loss_share": 1.0,
+      "tvl": 750000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "TermFinance Vaults",
+      "date": 1787443200,
+      "loss_share": 0.6826924297119954,
+      "tvl": 12450702,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "BasketDAO",
+      "date": 1705449600,
+      "loss_share": 1.0,
+      "tvl": 257923,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "SmartCredit",
+      "date": 1777852800,
+      "loss_share": 0.11074844413817714,
+      "tvl": 650122,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Polter Finance",
+      "date": 1731715200,
+      "loss_share": 0.8905254540323555,
+      "tvl": 9769513,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Aperture LM",
+      "date": 1769299200,
+      "loss_share": 1.0,
+      "tvl": 13344,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "SuperRare",
+      "date": 1753660800,
+      "loss_share": 1.0,
+      "tvl": 730000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Weft V2",
+      "date": 1788048000,
+      "loss_share": 0.14717621233286768,
+      "tvl": 320704,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Lava",
+      "date": 1711670400,
+      "loss_share": 1.0,
+      "tvl": 1529,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Wasabi Perps",
+      "date": 1777507200,
+      "loss_share": 0.6437510036663375,
+      "tvl": 8543676,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "HOPE Lend",
+      "date": 1697587200,
+      "loss_share": 0.8765964681131394,
+      "tvl": 941140,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Yield Protocol",
+      "date": 1714435200,
+      "loss_share": 0.26117195503802143,
+      "tvl": 693030,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Resupply",
+      "date": 1750809600,
+      "loss_share": 0.07097471768179538,
+      "tvl": 135259432,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "Clipper",
+      "date": 1733011200,
+      "loss_share": 0.05696938085676885,
+      "tvl": 7898980,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Nemo Yield Trading",
+      "date": 1757289600,
+      "loss_share": 1.0,
+      "tvl": 1533555,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "ThalaSwap",
+      "date": 1731628800,
+      "loss_share": 0.31580403000123425,
+      "tvl": 80746278,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Yearn Ether",
+      "date": 1764460800,
+      "loss_share": 1.0,
+      "tvl": 8693711,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Velar Perps",
+      "date": 1771459200,
+      "loss_share": 1.0,
+      "tvl": 13471,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "DefiPlaza",
+      "date": 1720137600,
+      "loss_share": 0.0895256349941383,
+      "tvl": 2233997,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Orange Finance",
+      "date": 1736294400,
+      "loss_share": 1.0,
+      "tvl": 741387,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "1inch Swap",
+      "date": 1730332800,
+      "loss_share": 0.15867469974708615,
+      "tvl": 4556492,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Moonwell Lending",
+      "date": 1787788800,
+      "loss_share": 0.15852955420013395,
+      "tvl": 54879357,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Rhea Lend",
+      "date": 1776297600,
+      "loss_share": 0.22247047831866196,
+      "tvl": 82707603,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Rho Markets",
+      "date": 1721347200,
+      "loss_share": 0.14927740699801484,
+      "tvl": 50911924,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Aftermath Perps",
+      "date": 1777420800,
+      "loss_share": 1.0,
+      "tvl": 1140000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "pump.fun",
+      "date": 1715817600,
+      "loss_share": 1.0,
+      "tvl": 1900000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Moby",
+      "date": 1736294400,
+      "loss_share": 1.0,
+      "tvl": 1470000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Rari Capital",
+      "date": 1766016000,
+      "loss_share": 0.7423315297151599,
+      "tvl": 2694214,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "GoodDollar",
+      "date": 1702684800,
+      "loss_share": 1.0,
+      "tvl": 1648608,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Allbridge Core",
+      "date": 1784419200,
+      "loss_share": 0.07635099617227006,
+      "tvl": 21610720,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Panther Protocol",
+      "date": 1785974400,
+      "loss_share": 1.0,
+      "tvl": 3299,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "UwU Lend",
+      "date": 1717977600,
+      "loss_share": 0.8447770350404221,
+      "tvl": 23674886,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Lumi Finance",
+      "date": 1783900800,
+      "loss_share": 1.0,
+      "tvl": 142913,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Blastoff",
+      "date": 1710115200,
+      "loss_share": 0.28276051551012116,
+      "tvl": 2121937,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Channels Finance",
+      "date": 1703894400,
+      "loss_share": 0.18552219570156667,
+      "tvl": 1724861,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Penpie",
+      "date": 1725321600,
+      "loss_share": 0.21212251580572003,
+      "tvl": 127284932,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "GMX V1 Perps",
+      "date": 1752019200,
+      "loss_share": 0.03549207049470534,
+      "tvl": 56350615,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Secured Finance Lending",
+      "date": 1788566400,
+      "loss_share": 0.4017243244078429,
+      "tvl": 258884,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Aquifer",
+      "date": 1788134400,
+      "loss_share": 0.8869044070698706,
+      "tvl": 2784662,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Thetanuts Finance",
+      "date": 1776643200,
+      "loss_share": 0.05524654322379049,
+      "tvl": 905034,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Balancer V2",
+      "date": 1762128000,
+      "loss_share": 0.2889635114080153,
+      "tvl": 442962502,
+      "bucket": ">=2y|100M-1B"
+     },
+     {
+      "name": "Seedify",
+      "date": 1758585600,
+      "loss_share": 1.0,
+      "tvl": 1200000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Garden",
+      "date": 1761782400,
+      "loss_share": 1.0,
+      "tvl": 11400000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Dough Finance",
+      "date": 1720742400,
+      "loss_share": 0.7228708594897638,
+      "tvl": 2711411,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Arcadia V2",
+      "date": 1752537600,
+      "loss_share": 0.12137081833837329,
+      "tvl": 20598032,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Resolv USR",
+      "date": 1774051200,
+      "loss_share": 0.17308880411525202,
+      "tvl": 141545839,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "four.meme",
+      "date": 1742256000,
+      "loss_share": 0.05596969241155914,
+      "tvl": 1429345,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "KiloEx",
+      "date": 1744588800,
+      "loss_share": 0.01758330795475885,
+      "tvl": 42654090,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Sharwa.Finance",
+      "date": 1777593600,
+      "loss_share": 0.665586060176274,
+      "tvl": 49355,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Maya Protocol",
+      "date": 1787011200,
+      "loss_share": 0.30490024919318015,
+      "tvl": 5575594,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Chainge Finance",
+      "date": 1713139200,
+      "loss_share": 0.05035619074770757,
+      "tvl": 14218708.551392866,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Gamma",
+      "date": 1704326400,
+      "loss_share": 0.03725193316837625,
+      "tvl": 120799100,
+      "bucket": ">=2y|100M-1B"
+     },
+     {
+      "name": "Denaria vAMM",
+      "date": 1775347200,
+      "loss_share": 1.0,
+      "tvl": 165446,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Orbit Bridge",
+      "date": 1703980800,
+      "loss_share": 0.547398590709263,
+      "tvl": 149251389,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "Unilend V2",
+      "date": 1736640000,
+      "loss_share": 0.9343628978489793,
+      "tvl": 211481,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Gravity Bridge",
+      "date": 1780099200,
+      "loss_share": 0.4569057883109792,
+      "tvl": 11818629,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Kalax",
+      "date": 1728864000,
+      "loss_share": 1.0,
+      "tvl": 151389,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Abracadabra Spell",
+      "date": 1742860800,
+      "loss_share": 0.2656267990468902,
+      "tvl": 48940845,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Garden",
+      "date": 1785024000,
+      "loss_share": 1.0,
+      "tvl": 450000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "OcelotDex",
+      "date": 1726790400,
+      "loss_share": 1.0,
+      "tvl": 15,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Abracadabra Spell",
+      "date": 1706572800,
+      "loss_share": 0.04065018685577584,
+      "tvl": 159900864,
+      "bucket": ">=2y|100M-1B"
+     },
+     {
+      "name": "Zunami Protocol",
+      "date": 1747267200,
+      "loss_share": 0.8099658194424195,
+      "tvl": 617310,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Voltage V3",
+      "date": 1742256000,
+      "loss_share": 1.0,
+      "tvl": 21767,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "TeleSwap",
+      "date": 1784073600,
+      "loss_share": 1.0,
+      "tvl": 683938,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Zoth ZeUSD",
+      "date": 1740787200,
+      "loss_share": 0.010936571530646096,
+      "tvl": 26059355,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Sirio Finance",
+      "date": 1738368000,
+      "loss_share": 1.0,
+      "tvl": 1969387,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "BetterBank",
+      "date": 1756166400,
+      "loss_share": 0.20716562701287303,
+      "tvl": 24135278,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Raft",
+      "date": 1699574400,
+      "loss_share": 0.2505815770602134,
+      "tvl": 13169364,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Aztec Connect",
+      "date": 1781395200,
+      "loss_share": 0.48123173324545887,
+      "tvl": 4363802,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Florence Finance",
+      "date": 1701302400,
+      "loss_share": 1.0,
+      "tvl": 1450000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "DefiTuna Lending",
+      "date": 1784160000,
+      "loss_share": 0.3725945169504809,
+      "tvl": 1556652,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Zentra Finance",
+      "date": 1788912000,
+      "loss_share": 0.07008578664451096,
+      "tvl": 1997980,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Across",
+      "date": 1784246400,
+      "loss_share": 0.2144897451022935,
+      "tvl": 20980024,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Bonzo Lend",
+      "date": 1783728000,
+      "loss_share": 1.0,
+      "tvl": 3953225,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Nostra Money Market",
+      "date": 1789603200,
+      "loss_share": 1.0,
+      "tvl": 196865,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Kinto Bridge",
+      "date": 1752105600,
+      "loss_share": 1.0,
+      "tvl": 433816,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "The Sandbox",
+      "date": 1787356800,
+      "loss_share": 1.0,
+      "tvl": 675000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Ankr",
+      "date": 1788134400,
+      "loss_share": 0.016131093382820906,
+      "tvl": 25416752,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Wise Lending V1",
+      "date": 1705017600,
+      "loss_share": 0.555565533384819,
+      "tvl": 835185,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Evoq Finance",
+      "date": 1757462400,
+      "loss_share": 0.9590201554069328,
+      "tvl": 437947,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Drop",
+      "date": 1790035200,
+      "loss_share": 1.0,
+      "tvl": 4400000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Bloom",
+      "date": 1715212800,
+      "loss_share": 0.244355611626621,
+      "tvl": 2209894,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Mozaic",
+      "date": 1710460800,
+      "loss_share": 1.0,
+      "tvl": 548498,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Volo Vault",
+      "date": 1776729600,
+      "loss_share": 0.20228385406687932,
+      "tvl": 17302419,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Swarm Markets",
+      "date": 1708560000,
+      "loss_share": 0.21295407742581043,
+      "tvl": 2220629,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "SIR",
+      "date": 1743292800,
+      "loss_share": 1.0,
+      "tvl": 352991,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Ambient",
+      "date": 1780790400,
+      "loss_share": 0.05057828910934194,
+      "tvl": 2186709,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Flamincome",
+      "date": 1789516800,
+      "loss_share": 1.0,
+      "tvl": 595000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "The Idols",
+      "date": 1736812800,
+      "loss_share": 0.03686344006892098,
+      "tvl": 8789196,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Beluga",
+      "date": 1697155200,
+      "loss_share": 1.0,
+      "tvl": 2,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Thetanuts Finance",
+      "date": 1781481600,
+      "loss_share": 0.17950854129897184,
+      "tvl": 587557,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Aethir",
+      "date": 1775692800,
+      "loss_share": 1.0,
+      "tvl": 400000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Goledo",
+      "date": 1706400000,
+      "loss_share": 1.0,
+      "tvl": 67491,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Sumer.money",
+      "date": 1712880000,
+      "loss_share": 0.13152633683368758,
+      "tvl": 2661064,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "dTRINITY dLEND",
+      "date": 1773705600,
+      "loss_share": 0.26409843781149744,
+      "tvl": 973122,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Ionic Protocol",
+      "date": 1738627200,
+      "loss_share": 0.1861297415198965,
+      "tvl": 46204330,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Veil Cash",
+      "date": 1771632000,
+      "loss_share": 0.3742795119395164,
+      "tvl": 13359,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "1inch Swap",
+      "date": 1741305600,
+      "loss_share": 1.0,
+      "tvl": 4237446,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Unleash Protocol",
+      "date": 1767052800,
+      "loss_share": 0.8698543930657884,
+      "tvl": 4483509,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Onyx V2",
+      "date": 1727308800,
+      "loss_share": 0.2769344637506634,
+      "tvl": 13721658,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "AFX Bridge",
+      "date": 1784678400,
+      "loss_share": 0.992352761148621,
+      "tvl": 24336104,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "dYdX V3",
+      "date": 1700265600,
+      "loss_share": 0.021700397793126446,
+      "tvl": 414738941,
+      "bucket": ">=2y|100M-1B"
+     },
+     {
+      "name": "Cozy V2",
+      "date": 1756512000,
+      "loss_share": 1.0,
+      "tvl": 271136,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "zkLend",
+      "date": 1739232000,
+      "loss_share": 0.8250710317042399,
+      "tvl": 11574761,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Goldfinch",
+      "date": 1764633600,
+      "loss_share": 0.07138541569998916,
+      "tvl": 4622793,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "DxSale",
+      "date": 1779926400,
+      "loss_share": 0.29063861385606454,
+      "tvl": 25117103,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "GoonFi",
+      "date": 1774656000,
+      "loss_share": 0.04180520525667106,
+      "tvl": 6075798.418893494,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Ajna V2",
+      "date": 1787875200,
+      "loss_share": 1.0,
+      "tvl": 588362,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Velocore V2",
+      "date": 1717286400,
+      "loss_share": 0.7570555349220812,
+      "tvl": 8982168,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Peapods Finance",
+      "date": 1702425600,
+      "loss_share": 0.14202525300184599,
+      "tvl": 1627823.1871693626,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Goose Finance",
+      "date": 1773446400,
+      "loss_share": 0.03073374773186035,
+      "tvl": 274454,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Unibot",
+      "date": 1698710400,
+      "loss_share": 1.0,
+      "tvl": 640000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "LND",
+      "date": 1746748800,
+      "loss_share": 0.8964303838241416,
+      "tvl": 1316332,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Alephium Bridge",
+      "date": 1780099200,
+      "loss_share": 0.9582260472881615,
+      "tvl": 850530,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Onyx Protocol",
+      "date": 1698796800,
+      "loss_share": 0.7337564662288586,
+      "tvl": 2861985,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "FutureSwap",
+      "date": 1765843200,
+      "loss_share": 0.23452300192916883,
+      "tvl": 1151273,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Lixir Finance",
+      "date": 1782345600,
+      "loss_share": 0.17329557462276513,
+      "tvl": 70977,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Demex Perp",
+      "date": 1790294400,
+      "loss_share": 1.0,
+      "tvl": 185514,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Meteora DAMM V2",
+      "date": 1768608000,
+      "loss_share": 0.06163200938617497,
+      "tvl": 24338002.52400133,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Ribbon",
+      "date": 1765497600,
+      "loss_share": 0.2686531076448227,
+      "tvl": 10050135,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "FlashTrade",
+      "date": 1784592000,
+      "loss_share": 0.012245441634351612,
+      "tvl": 8002978,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Impermax V3",
+      "date": 1762819200,
+      "loss_share": 0.15412513906751857,
+      "tvl": 2465529,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Pike V1",
+      "date": 1714435200,
+      "loss_share": 0.8919109805948043,
+      "tvl": 1793901,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "DeltaPrime",
+      "date": 1731283200,
+      "loss_share": 0.13356072045991635,
+      "tvl": 35938710,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Float Protocol",
+      "date": 1788134400,
+      "loss_share": 0.1287048613664779,
+      "tvl": 217552,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Solido Cash",
+      "date": 1784764800,
+      "loss_share": 1.0,
+      "tvl": 719517,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Balancer V1",
+      "date": 1788048000,
+      "loss_share": 0.031749145927622534,
+      "tvl": 7370277,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Radiant V2",
+      "date": 1704153600,
+      "loss_share": 0.014029248051633619,
+      "tvl": 320758460,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "Ekubo",
+      "date": 1777939200,
+      "loss_share": 0.037384274641330595,
+      "tvl": 37448901,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Wise Lending V2",
+      "date": 1772236800,
+      "loss_share": 1.0,
+      "tvl": 64220,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "OcelotDex",
+      "date": 1726790400,
+      "loss_share": 1.0,
+      "tvl": 15,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Drift Trade",
+      "date": 1775001600,
+      "loss_share": 0.9473962625018331,
+      "tvl": 311379738,
+      "bucket": ">=2y|100M-1B"
+     },
+     {
+      "name": "HyperVault",
+      "date": 1758844800,
+      "loss_share": 1.0,
+      "tvl": 3600000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "KyberSwap Elastic",
+      "date": 1700611200,
+      "loss_share": 0.674983513527682,
+      "tvl": 71112848,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Vicuna Lending",
+      "date": 1743033600,
+      "loss_share": 0.20181145966192543,
+      "tvl": 3468584,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Singularity Finance",
+      "date": 1777248000,
+      "loss_share": 1.0,
+      "tvl": 65816,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "WEMIX.FI Lend",
+      "date": 1785024000,
+      "loss_share": 1.0,
+      "tvl": 2337,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Bisq",
+      "date": 1777593600,
+      "loss_share": 1.0,
+      "tvl": 550000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Astroport",
+      "date": 1790035200,
+      "loss_share": 1.0,
+      "tvl": 4535164,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Starlay Finance",
+      "date": 1707350400,
+      "loss_share": 0.39500659002661026,
+      "tvl": 5316367,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Pine Protocol",
+      "date": 1703203200,
+      "loss_share": 0.45598103118910255,
+      "tvl": 208342,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Lien",
+      "date": 1784764800,
+      "loss_share": 1.0,
+      "tvl": 162988,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Fegex",
+      "date": 1735430400,
+      "loss_share": 1.0,
+      "tvl": 1070000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Humanity",
+      "date": 1780876800,
+      "loss_share": 1.0,
+      "tvl": 32000000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Alkimiya",
+      "date": 1743120000,
+      "loss_share": 1.0,
+      "tvl": 95500,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "ALEX",
+      "date": 1749168000,
+      "loss_share": 0.4195567250162689,
+      "tvl": 19956777,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Abracadabra Spell",
+      "date": 1759536000,
+      "loss_share": 0.07092720253058245,
+      "tvl": 23968237,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Virtue",
+      "date": 1787875200,
+      "loss_share": 0.6051421864270904,
+      "tvl": 1478165,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "CrossCurve",
+      "date": 1769904000,
+      "loss_share": 0.9793360101850945,
+      "tvl": 3063300,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Ploutos Money",
+      "date": 1772064000,
+      "loss_share": 0.1283057651399158,
+      "tvl": 3039614,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Ostium",
+      "date": 1784073600,
+      "loss_share": 0.3744476365251455,
+      "tvl": 63426759,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "OTSea",
+      "date": 1726185600,
+      "loss_share": 0.2546897193515208,
+      "tvl": 102085,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Clober Liquidity Vault",
+      "date": 1733788800,
+      "loss_share": 0.9852799180247108,
+      "tvl": 507470,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "zkFinance",
+      "date": 1731283200,
+      "loss_share": 0.14232342999466288,
+      "tvl": 1405250,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Moonwell Lending",
+      "date": 1771113600,
+      "loss_share": 0.029808631765883276,
+      "tvl": 59714247,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Chi Protocol",
+      "date": 1783900800,
+      "loss_share": 1.0,
+      "tvl": 8474,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Hyperdrive HL Lending",
+      "date": 1758931200,
+      "loss_share": 0.06980146036794474,
+      "tvl": 11203204,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Bodega Market",
+      "date": 1786665600,
+      "loss_share": 0.19509022923101935,
+      "tvl": 18453,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Edel",
+      "date": 1782777600,
+      "loss_share": 0.6683594015612743,
+      "tvl": 602969,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "FilDA",
+      "date": 1766707200,
+      "loss_share": 0.680588537713908,
+      "tvl": 245082,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "PrismaLST",
+      "date": 1711584000,
+      "loss_share": 0.05641450338485318,
+      "tvl": 205620883,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "BlueMove DEX",
+      "date": 1783728000,
+      "loss_share": 1.0,
+      "tvl": 529000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Purrlend",
+      "date": 1777075200,
+      "loss_share": 0.9793884437387044,
+      "tvl": 1531568,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Locus Finance",
+      "date": 1791331200,
+      "loss_share": 0.32810791104629966,
+      "tvl": 54860,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Blend Pools V2",
+      "date": 1771718400,
+      "loss_share": 0.11374543369630397,
+      "tvl": 96443432,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Hinkal",
+      "date": 1782950400,
+      "loss_share": 0.9844705769357753,
+      "tvl": 832935,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Seneca",
+      "date": 1709078400,
+      "loss_share": 1.0,
+      "tvl": 2017186,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Mars Perps",
+      "date": 1765670400,
+      "loss_share": 1.0,
+      "tvl": 290618,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Levana Perps",
+      "date": 1703635200,
+      "loss_share": 0.10358173394504311,
+      "tvl": 10619633,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Step Finance",
+      "date": 1769817600,
+      "loss_share": 1.0,
+      "tvl": 40000000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "DeltaPrime",
+      "date": 1721692800,
+      "loss_share": 0.02245349269804559,
+      "tvl": 44536501,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "WOOFi Swap",
+      "date": 1709596800,
+      "loss_share": 0.3344964251889188,
+      "tvl": 26158725,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "UXLINK",
+      "date": 1758499200,
+      "loss_share": 1.0,
+      "tvl": 11300000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Kelp",
+      "date": 1776470400,
+      "loss_share": 0.17843416324118241,
+      "tvl": 1642062230,
+      "bucket": ">=2y|>=1B"
+     },
+     {
+      "name": "Synthetify",
+      "date": 1697673600,
+      "loss_share": 1.0,
+      "tvl": 4088,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Polycule",
+      "date": 1767744000,
+      "loss_share": 1.0,
+      "tvl": 230000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "BarnBridge",
+      "date": 1783987200,
+      "loss_share": 1.0,
+      "tvl": 23523,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "OpenLeverage",
+      "date": 1711929600,
+      "loss_share": 0.13090704157851704,
+      "tvl": 1802806,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "NEAR Intents",
+      "date": 1790812800,
+      "loss_share": 0.015313533125749257,
+      "tvl": 248146523,
+      "bucket": "<2y|100M-1B"
+     },
+     {
+      "name": "Lazy Summer Protocol",
+      "date": 1783209600,
+      "loss_share": 0.2899493289545224,
+      "tvl": 20831226,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Notional V2",
+      "date": 1788480000,
+      "loss_share": 0.558006613391274,
+      "tvl": 3096346.814779559,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Matcha",
+      "date": 1769299200,
+      "loss_share": 1.0,
+      "tvl": 13430000,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Namada Shielded Pools",
+      "date": 1781827200,
+      "loss_share": 1.0,
+      "tvl": 609,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Tectonic",
+      "date": 1788048000,
+      "loss_share": 1.0,
+      "tvl": 121745946,
+      "bucket": ">=2y|100M-1B"
+     },
+     {
+      "name": "Flooring Protocol",
+      "date": 1702771200,
+      "loss_share": 0.0460761984556007,
+      "tvl": 34725087,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Impermax V3",
+      "date": 1745625600,
+      "loss_share": 0.2364895491326746,
+      "tvl": 1268555,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Radiant V2",
+      "date": 1729036800,
+      "loss_share": 0.6647870212512998,
+      "tvl": 75212058,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Locus Finance",
+      "date": 1703894400,
+      "loss_share": 0.31080016033802665,
+      "tvl": 1032818,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Corepound",
+      "date": 1758585600,
+      "loss_share": 1.0,
+      "tvl": 362280,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "UwU Lend",
+      "date": 1718236800,
+      "loss_share": 1.0,
+      "tvl": 2880262,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Chainflip AMM",
+      "date": 1789171200,
+      "loss_share": 0.06319580223352275,
+      "tvl": 11653340,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Sharwa.Finance",
+      "date": 1760918400,
+      "loss_share": 1.0,
+      "tvl": 101221,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "DeltaPrime",
+      "date": 1726444800,
+      "loss_share": 0.09332725863397703,
+      "tvl": 64075599,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "four.meme",
+      "date": 1739232000,
+      "loss_share": 0.30999820438198555,
+      "tvl": 590326,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Cozy V2",
+      "date": 1788739200,
+      "loss_share": 0.9304098164541819,
+      "tvl": 175542,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Zoth ZeUSD",
+      "date": 1742515200,
+      "loss_share": 0.33532906542160185,
+      "tvl": 26391986,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Loopring",
+      "date": 1717891200,
+      "loss_share": 0.05518231281500065,
+      "tvl": 90608743,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "FOOM Cash",
+      "date": 1772409600,
+      "loss_share": 1.0,
+      "tvl": 2260000,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Bunni V2",
+      "date": 1756771200,
+      "loss_share": 0.16606360536581558,
+      "tvl": 50583028,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Sonne Finance",
+      "date": 1715731200,
+      "loss_share": 1.0,
+      "tvl": 24439,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "Cork V1",
+      "date": 1748390400,
+      "loss_share": 0.5585392671490057,
+      "tvl": 21484613,
+      "bucket": "<2y|<100M"
+     },
+     {
+      "name": "ALEX",
+      "date": 1715817600,
+      "loss_share": 0.0671261508934678,
+      "tvl": 64058492,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Symbiosis",
+      "date": 1788998400,
+      "loss_share": 0.035549040112436536,
+      "tvl": 9451732,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Juicebox V3",
+      "date": 1776643200,
+      "loss_share": 0.1945234176268143,
+      "tvl": 267320,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Cetus CLMM",
+      "date": 1747872000,
+      "loss_share": 1.0,
+      "tvl": 37839954,
+      "bucket": ">=2y|<100M"
+     },
+     {
+      "name": "Ronin Bridge",
+      "date": 1722902400,
+      "loss_share": 0.018738649824126683,
+      "tvl": 640387654,
+      "bucket": ">=2y|100M-1B"
+     }
+    ],
+    "lgd_material_median": 0.5585392671490057,
+    "lgd_by_tvl_bucket": {
+     "<100M": {
+      "n": 194,
+      "median": 0.6716714575444782
+     },
+     "100M-1B": {
+      "n": 14,
+      "median": 0.06369461053332429
+     },
+     ">=1B": {
+      "n": 1,
+      "median": 0.17843416324118241
+     }
+    },
+    "lgd_material_p75": 1.0,
+    "fetched_at": 1791640334,
+    "n_listed_imputed": 1673,
+    "method": "material exploits (net loss >= 1% of TVL) per protocol-year, Jeffreys (k+0.5)/T; DeFi only (CEX/chain/wallet excluded); TVL at hack = TVL history where fetched, else max(current TVL, amount); exposure bucketed by current TVL; missing listedAt = earliest listedAt"
+   },
+   "status": "computed",
+   "source": "DefiLlama hacks + protocols"
+  },
+  "loss_given_exploit": {
+   "value": 0.5585392671490057,
+   "status": "computed",
+   "source": "median net loss / TVL over the same material exploits as the frequency"
+  },
+  "depeg": {
+   "value": {
+    "classes": {
+     "fiat_backed": {
+      "coin_years": 33.5,
+      "coins": {
+       "usd-coin": {
+        "years": 6.77,
+        "min_price": 0.960264,
+        "p_annual_over_24h<0.99": 0.07381782292008689,
+        "episodes<0.99": 2,
+        "p_annual_over_24h<0.97": 0.07381782292008689,
+        "episodes<0.97": 1,
+        "p_annual_over_24h<0.9": 0.07381782292008689,
+        "episodes<0.9": 0
+       },
+       "tether": {
+        "years": 6.77,
+        "min_price": 0.9744295668729073,
+        "p_annual_over_24h<0.99": 0.07381783051759581,
+        "episodes<0.99": 3,
+        "p_annual_over_24h<0.97": 0.07381783051759581,
+        "episodes<0.97": 0,
+        "p_annual_over_24h<0.9": 0.07381783051759581,
+        "episodes<0.9": 0
+       },
+       "true-usd": {
+        "years": 6.77,
+        "min_price": 0.961512,
+        "p_annual_over_24h<0.99": 0.3690886535704022,
+        "episodes<0.99": 9,
+        "p_annual_over_24h<0.97": 0.22145319214224132,
+        "episodes<0.97": 1,
+        "p_annual_over_24h<0.9": 0.07381773071408045,
+        "episodes<0.9": 0
+       },
+       "first-digital-usd": {
+        "years": 3.21,
+        "min_price": 0.985843,
+        "p_annual_over_24h<0.99": 0.1559555364823309,
+        "episodes<0.99": 3,
+        "p_annual_over_24h<0.97": 0.1559555364823309,
+        "episodes<0.97": 0,
+        "p_annual_over_24h<0.9": 0.1559555364823309,
+        "episodes<0.9": 0
+       },
+       "binance-usd": {
+        "years": 6.77,
+        "min_price": 0.872387,
+        "p_annual_over_24h<0.99": 3.3218088691753187,
+        "episodes<0.99": 75,
+        "p_annual_over_24h<0.97": 0.3690898743528132,
+        "episodes<0.97": 21,
+        "p_annual_over_24h<0.9": 0.07381797487056264,
+        "episodes<0.9": 1
+       },
+       "paypal-usd": {
+        "years": 3.15,
+        "min_price": 0.989201,
+        "p_annual_over_24h<0.99": 0.15867255985304074,
+        "episodes<0.99": 1,
+        "p_annual_over_24h<0.97": 0.15867255985304074,
+        "episodes<0.97": 0,
+        "p_annual_over_24h<0.9": 0.15867255985304074,
+        "episodes<0.9": 0
+       }
+      },
+      "thresholds": {
+       "0.99": {
+        "episodes": 93,
+        "episodes_over_24h": 24,
+        "p_annual": 2.7951409449109765,
+        "p_annual_over_24h": 0.7324166112333574,
+        "median_duration_days": 1,
+        "median_trough": 0.981544
+       },
+       "0.97": {
+        "episodes": 23,
+        "episodes_over_24h": 3,
+        "p_annual": 0.7025220556728122,
+        "p_annual_over_24h": 0.10463094446190821,
+        "median_duration_days": 1,
+        "median_trough": 0.957198
+       },
+       "0.9": {
+        "episodes": 1,
+        "episodes_over_24h": 0,
+        "p_annual": 0.0448418333408178,
+        "p_annual_over_24h": 0.014947277780272602,
+        "median_duration_days": 1,
+        "median_trough": 0.872387
+       }
+      }
+     },
+     "crypto_backed": {
+      "coin_years": 18.9,
+      "coins": {
+       "dai": {
+        "years": 6.77,
+        "min_price": 0.966877,
+        "p_annual_over_24h<0.99": 0.22145339831066205,
+        "episodes<0.99": 4,
+        "p_annual_over_24h<0.97": 0.07381779943688735,
+        "episodes<0.97": 2,
+        "p_annual_over_24h<0.9": 0.07381779943688735,
+        "episodes<0.9": 0
+       },
+       "liquity-usd": {
+        "years": 5.51,
+        "min_price": 0.9797723046164221,
+        "p_annual_over_24h<0.99": 0.4536162571595605,
+        "episodes<0.99": 12,
+        "p_annual_over_24h<0.97": 0.09072325143191211,
+        "episodes<0.97": 0,
+        "p_annual_over_24h<0.9": 0.09072325143191211,
+        "episodes<0.9": 0
+       },
+       "crvusd": {
+        "years": 3.38,
+        "min_price": 0.984856,
+        "p_annual_over_24h<0.99": 0.14799408169990264,
+        "episodes<0.99": 4,
+        "p_annual_over_24h<0.97": 0.14799408169990264,
+        "episodes<0.97": 0,
+        "p_annual_over_24h<0.9": 0.14799408169990264,
+        "episodes<0.9": 0
+       },
+       "gho": {
+        "years": 3.24,
+        "min_price": 0.95806,
+        "p_annual_over_24h<0.99": 1.3905511317569552,
+        "episodes<0.99": 12,
+        "p_annual_over_24h<0.97": 1.3905511317569552,
+        "episodes<0.97": 8,
+        "p_annual_over_24h<0.9": 0.15450568130632836,
+        "episodes<0.9": 0
+       }
+      },
+      "thresholds": {
+       "0.99": {
+        "episodes": 32,
+        "episodes_over_24h": 7,
+        "p_annual": 1.719636692490011,
+        "p_annual_over_24h": 0.3968392367284641,
+        "median_duration_days": 1.0,
+        "median_trough": 0.9876244864060846
+       },
+       "0.97": {
+        "episodes": 10,
+        "episodes_over_24h": 4,
+        "p_annual": 0.5555749314198497,
+        "p_annual_over_24h": 0.23810354203707845,
+        "median_duration_days": 1.0,
+        "median_trough": 0.9668315000000001
+       },
+       "0.9": {
+        "episodes": 0,
+        "episodes_over_24h": 0,
+        "p_annual": 0.026455949115230942,
+        "p_annual_over_24h": 0.026455949115230942,
+        "median_duration_days": null,
+        "median_trough": null
+       }
+      }
+     },
+     "synthetic": {
+      "coin_years": 25.6,
+      "coins": {
+       "ethena-usde": {
+        "years": 2.82,
+        "min_price": 0.9789653544810613,
+        "p_annual_over_24h<0.99": 0.17714119054826213,
+        "episodes<0.99": 1,
+        "p_annual_over_24h<0.97": 0.17714119054826213,
+        "episodes<0.97": 0,
+        "p_annual_over_24h<0.9": 0.17714119054826213,
+        "episodes<0.9": 0
+       },
+       "terrausd": {
+        "years": 6.02,
+        "min_price": 0.004335975112076406,
+        "p_annual_over_24h<0.99": 0.4154367894157739,
+        "episodes<0.99": 12,
+        "p_annual_over_24h<0.97": 0.4154367894157739,
+        "episodes<0.97": 3,
+        "p_annual_over_24h<0.9": 0.24926207364946432,
+        "episodes<0.9": 1
+       },
+       "frax": {
+        "years": 5.8,
+        "min_price": 0.965578,
+        "p_annual_over_24h<0.99": 1.2928234593146413,
+        "episodes<0.99": 46,
+        "p_annual_over_24h<0.97": 0.08618823062097608,
+        "episodes<0.97": 1,
+        "p_annual_over_24h<0.9": 0.08618823062097608,
+        "episodes<0.9": 0
+       },
+       "usdd": {
+        "years": 4.44,
+        "min_price": 0.9613187197760233,
+        "p_annual_over_24h<0.99": 3.2653374976391367,
+        "episodes<0.99": 18,
+        "p_annual_over_24h<0.97": 0.33779353423853137,
+        "episodes<0.97": 2,
+        "p_annual_over_24h<0.9": 0.11259784474617712,
+        "episodes<0.9": 0
+       },
+       "nusd": {
+        "years": 6.49,
+        "min_price": 0.2323782142785058,
+        "p_annual_over_24h<0.99": 3.469030896807898,
+        "episodes<0.99": 71,
+        "p_annual_over_24h<0.97": 2.5439559909924583,
+        "episodes<0.97": 33,
+        "p_annual_over_24h<0.9": 1.0021644813000594,
+        "episodes<0.9": 10
+       }
+      },
+      "thresholds": {
+       "0.99": {
+        "episodes": 148,
+        "episodes_over_24h": 45,
+        "p_annual": 5.8080027824256835,
+        "p_annual_over_24h": 1.7795564080832902,
+        "median_duration_days": 1.0,
+        "median_trough": 0.9853639551673405
+       },
+       "0.97": {
+        "episodes": 39,
+        "episodes_over_24h": 19,
+        "p_annual": 1.5448896289953837,
+        "p_annual_over_24h": 0.7626670320356957,
+        "median_duration_days": 1,
+        "median_trough": 0.957548
+       },
+       "0.9": {
+        "episodes": 11,
+        "episodes_over_24h": 7,
+        "p_annual": 0.4497779932518206,
+        "p_annual_over_24h": 0.293333473859883,
+        "median_duration_days": 3,
+        "median_trough": 0.8365333871716181
+       }
+      }
+     }
+    },
+    "method": "daily prices (DefiLlama coins, CoinGecko ids), runs below threshold; >24h = >=2 consecutive daily points; daily data misses intraday CEX wicks"
+   },
+   "status": "computed",
+   "source": "DefiLlama coins daily prices"
+  },
+  "depeg_3pct_24h_annual_usde": {
+   "value": 0.17714119054826213,
+   "status": "computed",
+   "source": "USDe own daily history (2.82y, daily trough 0.979); class rate (incl. UST, sUSD) available as stress"
+  },
+  "depeg_3pct_24h_annual_fiat_backed": {
+   "value": 0.10463094446190821,
+   "status": "computed",
+   "source": "DefiLlama coins daily prices"
+  },
+  "depeg_3pct_24h_annual_synthetic": {
+   "value": 0.7626670320356957,
+   "status": "computed",
+   "source": "DefiLlama coins daily prices"
+  },
+  "depeg_3pct_24h_annual_crypto_backed": {
+   "value": 0.23810354203707845,
+   "status": "computed",
+   "source": "DefiLlama coins daily prices"
+  },
+  "oracle_stale": {
+   "value": 0.21645021645021645,
+   "status": "computed",
+   "source": "Etherscan AnswerUpdated history"
+  }
+ },
+ "detail": {
+  "exploit": {
+   "buckets": {
+    "staking|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 13.9,
+     "p_annual": 0.03601428585677622
+    },
+    "staking|>=2y|>=1B": {
+     "hacks": 1,
+     "protocol_years": 13.6,
+     "p_annual": 0.11068323039605957
+    },
+    "lending|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 9.7,
+     "p_annual": 0.05151743861411092
+    },
+    "lending|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 19.7,
+     "p_annual": 0.02542294821528518
+    },
+    "other|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 10.1,
+     "p_annual": 0.04942840181246092
+    },
+    "other|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 9.0,
+     "p_annual": 0.05565835993276025
+    },
+    "bridge|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 8.0,
+     "p_annual": 0.062228401366748586
+    },
+    "bridge|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 12.2,
+     "p_annual": 0.04113778717297727
+    },
+    "yield_vault|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 4.1,
+     "p_annual": 0.12167711148740487
+    },
+    "yield_vault|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 3.6,
+     "p_annual": 0.13719857887051407
+    },
+    "dex_derivatives|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 3.8,
+     "p_annual": 0.13296370355514245
+    },
+    "dex_derivatives|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 12.9,
+     "p_annual": 0.03865818524929247
+    },
+    "bridge|<2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 25.7,
+     "p_annual": 0.09745432888950709
+    },
+    "bridge|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 3.5,
+     "p_annual": 0.14460129077857484
+    },
+    "lending|<2y|100M-1B": {
+     "hacks": 3,
+     "protocol_years": 22.8,
+     "p_annual": 0.1534929222947335
+    },
+    "lending|>=2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 20.5,
+     "p_annual": 0.12201411511259706
+    },
+    "staking|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 30.1,
+     "p_annual": 0.016627768462055947
+    },
+    "staking|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 29.4,
+     "p_annual": 0.017011432254554433
+    },
+    "other|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 48.7,
+     "p_annual": 0.010274432697465388
+    },
+    "other|>=2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 58.6,
+     "p_annual": 0.04266985245868823
+    },
+    "dex_derivatives|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 25.8,
+     "p_annual": 0.0194077705003534
+    },
+    "dex_derivatives|>=2y|100M-1B": {
+     "hacks": 3,
+     "protocol_years": 14.3,
+     "p_annual": 0.24558443232443322
+    },
+    "rwa|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 16.0,
+     "p_annual": 0.03120627323616804
+    },
+    "rwa|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 5.7,
+     "p_annual": 0.08757546888078387
+    },
+    "yield_vault|<2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 12.1,
+     "p_annual": 0.20598411911139675
+    },
+    "yield_vault|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 19.1,
+     "p_annual": 0.026202330199322613
+    },
+    "other|<2y|<100M": {
+     "hacks": 18,
+     "protocol_years": 1842.7,
+     "p_annual": 0.010039716394144175
+    },
+    "other|>=2y|<100M": {
+     "hacks": 30,
+     "protocol_years": 3828.2,
+     "p_annual": 0.00796724089298718
+    },
+    "staking|<2y|<100M": {
+     "hacks": 0,
+     "protocol_years": 418.9,
+     "p_annual": 0.0011937172181499995
+    },
+    "staking|>=2y|<100M": {
+     "hacks": 2,
+     "protocol_years": 251.9,
+     "p_annual": 0.009924063461544041
+    },
+    "lending|<2y|<100M": {
+     "hacks": 45,
+     "protocol_years": 1054.0,
+     "p_annual": 0.04317081899486421
+    },
+    "lending|>=2y|<100M": {
+     "hacks": 16,
+     "protocol_years": 1026.5,
+     "p_annual": 0.016073993786468524
+    },
+    "dex_derivatives|<2y|<100M": {
+     "hacks": 23,
+     "protocol_years": 2958.8,
+     "p_annual": 0.00794253167060235
+    },
+    "dex_derivatives|>=2y|<100M": {
+     "hacks": 30,
+     "protocol_years": 3660.2,
+     "p_annual": 0.008332961770936361
+    },
+    "yield_vault|<2y|<100M": {
+     "hacks": 15,
+     "protocol_years": 849.7,
+     "p_annual": 0.01824084981023875
+    },
+    "yield_vault|>=2y|<100M": {
+     "hacks": 6,
+     "protocol_years": 1466.4,
+     "p_annual": 0.0044326436184448795
+    },
+    "bridge|<2y|<100M": {
+     "hacks": 2,
+     "protocol_years": 154.1,
+     "p_annual": 0.016227580918271246
+    },
+    "bridge|>=2y|<100M": {
+     "hacks": 3,
+     "protocol_years": 161.7,
+     "p_annual": 0.021643676679845517
+    },
+    "rwa|<2y|<100M": {
+     "hacks": 2,
+     "protocol_years": 197.3,
+     "p_annual": 0.012673505670302846
+    },
+    "rwa|>=2y|<100M": {
+     "hacks": 0,
+     "protocol_years": 100.5,
+     "p_annual": 0.004977142592032367
+    },
+    "stable_synthetic|<2y|<100M": {
+     "hacks": 1,
+     "protocol_years": 118.4,
+     "p_annual": 0.012666743677314667
+    },
+    "stable_synthetic|>=2y|<100M": {
+     "hacks": 1,
+     "protocol_years": 352.0,
+     "p_annual": 0.004261081441440828
+    }
+   },
+   "window_years": 3.0,
+   "n_hacks_matched": 251,
+   "n_material": 209,
+   "material": [
+    {
+     "name": "Typus Perp",
+     "date": 1760486400,
+     "loss_share": 0.9363576232848188,
+     "tvl": 3673810,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Solrise Finance",
+     "date": 1721952000,
+     "loss_share": 1.0,
+     "tvl": 6700000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Atomic Green",
+     "date": 1786147200,
+     "loss_share": 0.33314815226328304,
+     "tvl": 90002,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "MOBOX",
+     "date": 1710460800,
+     "loss_share": 1.0,
+     "tvl": 750000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "TermFinance Vaults",
+     "date": 1787443200,
+     "loss_share": 0.6826924297119954,
+     "tvl": 12450702,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "BasketDAO",
+     "date": 1705449600,
+     "loss_share": 1.0,
+     "tvl": 257923,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "SmartCredit",
+     "date": 1777852800,
+     "loss_share": 0.11074844413817714,
+     "tvl": 650122,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Polter Finance",
+     "date": 1731715200,
+     "loss_share": 0.8905254540323555,
+     "tvl": 9769513,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Aperture LM",
+     "date": 1769299200,
+     "loss_share": 1.0,
+     "tvl": 13344,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "SuperRare",
+     "date": 1753660800,
+     "loss_share": 1.0,
+     "tvl": 730000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Weft V2",
+     "date": 1788048000,
+     "loss_share": 0.14717621233286768,
+     "tvl": 320704,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Lava",
+     "date": 1711670400,
+     "loss_share": 1.0,
+     "tvl": 1529,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Wasabi Perps",
+     "date": 1777507200,
+     "loss_share": 0.6437510036663375,
+     "tvl": 8543676,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "HOPE Lend",
+     "date": 1697587200,
+     "loss_share": 0.8765964681131394,
+     "tvl": 941140,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Yield Protocol",
+     "date": 1714435200,
+     "loss_share": 0.26117195503802143,
+     "tvl": 693030,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Resupply",
+     "date": 1750809600,
+     "loss_share": 0.07097471768179538,
+     "tvl": 135259432,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Clipper",
+     "date": 1733011200,
+     "loss_share": 0.05696938085676885,
+     "tvl": 7898980,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Nemo Yield Trading",
+     "date": 1757289600,
+     "loss_share": 1.0,
+     "tvl": 1533555,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "ThalaSwap",
+     "date": 1731628800,
+     "loss_share": 0.31580403000123425,
+     "tvl": 80746278,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Yearn Ether",
+     "date": 1764460800,
+     "loss_share": 1.0,
+     "tvl": 8693711,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Velar Perps",
+     "date": 1771459200,
+     "loss_share": 1.0,
+     "tvl": 13471,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DefiPlaza",
+     "date": 1720137600,
+     "loss_share": 0.0895256349941383,
+     "tvl": 2233997,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Orange Finance",
+     "date": 1736294400,
+     "loss_share": 1.0,
+     "tvl": 741387,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "1inch Swap",
+     "date": 1730332800,
+     "loss_share": 0.15867469974708615,
+     "tvl": 4556492,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Moonwell Lending",
+     "date": 1787788800,
+     "loss_share": 0.15852955420013395,
+     "tvl": 54879357,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Rhea Lend",
+     "date": 1776297600,
+     "loss_share": 0.22247047831866196,
+     "tvl": 82707603,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Rho Markets",
+     "date": 1721347200,
+     "loss_share": 0.14927740699801484,
+     "tvl": 50911924,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Aftermath Perps",
+     "date": 1777420800,
+     "loss_share": 1.0,
+     "tvl": 1140000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "pump.fun",
+     "date": 1715817600,
+     "loss_share": 1.0,
+     "tvl": 1900000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Moby",
+     "date": 1736294400,
+     "loss_share": 1.0,
+     "tvl": 1470000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Rari Capital",
+     "date": 1766016000,
+     "loss_share": 0.7423315297151599,
+     "tvl": 2694214,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "GoodDollar",
+     "date": 1702684800,
+     "loss_share": 1.0,
+     "tvl": 1648608,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Allbridge Core",
+     "date": 1784419200,
+     "loss_share": 0.07635099617227006,
+     "tvl": 21610720,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Panther Protocol",
+     "date": 1785974400,
+     "loss_share": 1.0,
+     "tvl": 3299,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "UwU Lend",
+     "date": 1717977600,
+     "loss_share": 0.8447770350404221,
+     "tvl": 23674886,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Lumi Finance",
+     "date": 1783900800,
+     "loss_share": 1.0,
+     "tvl": 142913,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Blastoff",
+     "date": 1710115200,
+     "loss_share": 0.28276051551012116,
+     "tvl": 2121937,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Channels Finance",
+     "date": 1703894400,
+     "loss_share": 0.18552219570156667,
+     "tvl": 1724861,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Penpie",
+     "date": 1725321600,
+     "loss_share": 0.21212251580572003,
+     "tvl": 127284932,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "GMX V1 Perps",
+     "date": 1752019200,
+     "loss_share": 0.03549207049470534,
+     "tvl": 56350615,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Secured Finance Lending",
+     "date": 1788566400,
+     "loss_share": 0.4017243244078429,
+     "tvl": 258884,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Aquifer",
+     "date": 1788134400,
+     "loss_share": 0.8869044070698706,
+     "tvl": 2784662,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Thetanuts Finance",
+     "date": 1776643200,
+     "loss_share": 0.05524654322379049,
+     "tvl": 905034,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Balancer V2",
+     "date": 1762128000,
+     "loss_share": 0.2889635114080153,
+     "tvl": 442962502,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Seedify",
+     "date": 1758585600,
+     "loss_share": 1.0,
+     "tvl": 1200000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Garden",
+     "date": 1761782400,
+     "loss_share": 1.0,
+     "tvl": 11400000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Dough Finance",
+     "date": 1720742400,
+     "loss_share": 0.7228708594897638,
+     "tvl": 2711411,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Arcadia V2",
+     "date": 1752537600,
+     "loss_share": 0.12137081833837329,
+     "tvl": 20598032,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Resolv USR",
+     "date": 1774051200,
+     "loss_share": 0.17308880411525202,
+     "tvl": 141545839,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "four.meme",
+     "date": 1742256000,
+     "loss_share": 0.05596969241155914,
+     "tvl": 1429345,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "KiloEx",
+     "date": 1744588800,
+     "loss_share": 0.01758330795475885,
+     "tvl": 42654090,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sharwa.Finance",
+     "date": 1777593600,
+     "loss_share": 0.665586060176274,
+     "tvl": 49355,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Maya Protocol",
+     "date": 1787011200,
+     "loss_share": 0.30490024919318015,
+     "tvl": 5575594,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Chainge Finance",
+     "date": 1713139200,
+     "loss_share": 0.05035619074770757,
+     "tvl": 14218708.551392866,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Gamma",
+     "date": 1704326400,
+     "loss_share": 0.03725193316837625,
+     "tvl": 120799100,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Denaria vAMM",
+     "date": 1775347200,
+     "loss_share": 1.0,
+     "tvl": 165446,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Orbit Bridge",
+     "date": 1703980800,
+     "loss_share": 0.547398590709263,
+     "tvl": 149251389,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Unilend V2",
+     "date": 1736640000,
+     "loss_share": 0.9343628978489793,
+     "tvl": 211481,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Gravity Bridge",
+     "date": 1780099200,
+     "loss_share": 0.4569057883109792,
+     "tvl": 11818629,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Kalax",
+     "date": 1728864000,
+     "loss_share": 1.0,
+     "tvl": 151389,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Abracadabra Spell",
+     "date": 1742860800,
+     "loss_share": 0.2656267990468902,
+     "tvl": 48940845,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Garden",
+     "date": 1785024000,
+     "loss_share": 1.0,
+     "tvl": 450000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "OcelotDex",
+     "date": 1726790400,
+     "loss_share": 1.0,
+     "tvl": 15,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Abracadabra Spell",
+     "date": 1706572800,
+     "loss_share": 0.04065018685577584,
+     "tvl": 159900864,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Zunami Protocol",
+     "date": 1747267200,
+     "loss_share": 0.8099658194424195,
+     "tvl": 617310,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Voltage V3",
+     "date": 1742256000,
+     "loss_share": 1.0,
+     "tvl": 21767,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "TeleSwap",
+     "date": 1784073600,
+     "loss_share": 1.0,
+     "tvl": 683938,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Zoth ZeUSD",
+     "date": 1740787200,
+     "loss_share": 0.010936571530646096,
+     "tvl": 26059355,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sirio Finance",
+     "date": 1738368000,
+     "loss_share": 1.0,
+     "tvl": 1969387,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "BetterBank",
+     "date": 1756166400,
+     "loss_share": 0.20716562701287303,
+     "tvl": 24135278,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Raft",
+     "date": 1699574400,
+     "loss_share": 0.2505815770602134,
+     "tvl": 13169364,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Aztec Connect",
+     "date": 1781395200,
+     "loss_share": 0.48123173324545887,
+     "tvl": 4363802,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Florence Finance",
+     "date": 1701302400,
+     "loss_share": 1.0,
+     "tvl": 1450000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DefiTuna Lending",
+     "date": 1784160000,
+     "loss_share": 0.3725945169504809,
+     "tvl": 1556652,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Zentra Finance",
+     "date": 1788912000,
+     "loss_share": 0.07008578664451096,
+     "tvl": 1997980,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Across",
+     "date": 1784246400,
+     "loss_share": 0.2144897451022935,
+     "tvl": 20980024,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Bonzo Lend",
+     "date": 1783728000,
+     "loss_share": 1.0,
+     "tvl": 3953225,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Nostra Money Market",
+     "date": 1789603200,
+     "loss_share": 1.0,
+     "tvl": 196865,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Kinto Bridge",
+     "date": 1752105600,
+     "loss_share": 1.0,
+     "tvl": 433816,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "The Sandbox",
+     "date": 1787356800,
+     "loss_share": 1.0,
+     "tvl": 675000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Ankr",
+     "date": 1788134400,
+     "loss_share": 0.016131093382820906,
+     "tvl": 25416752,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Wise Lending V1",
+     "date": 1705017600,
+     "loss_share": 0.555565533384819,
+     "tvl": 835185,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Evoq Finance",
+     "date": 1757462400,
+     "loss_share": 0.9590201554069328,
+     "tvl": 437947,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Drop",
+     "date": 1790035200,
+     "loss_share": 1.0,
+     "tvl": 4400000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Bloom",
+     "date": 1715212800,
+     "loss_share": 0.244355611626621,
+     "tvl": 2209894,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Mozaic",
+     "date": 1710460800,
+     "loss_share": 1.0,
+     "tvl": 548498,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Volo Vault",
+     "date": 1776729600,
+     "loss_share": 0.20228385406687932,
+     "tvl": 17302419,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Swarm Markets",
+     "date": 1708560000,
+     "loss_share": 0.21295407742581043,
+     "tvl": 2220629,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "SIR",
+     "date": 1743292800,
+     "loss_share": 1.0,
+     "tvl": 352991,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ambient",
+     "date": 1780790400,
+     "loss_share": 0.05057828910934194,
+     "tvl": 2186709,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Flamincome",
+     "date": 1789516800,
+     "loss_share": 1.0,
+     "tvl": 595000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "The Idols",
+     "date": 1736812800,
+     "loss_share": 0.03686344006892098,
+     "tvl": 8789196,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Beluga",
+     "date": 1697155200,
+     "loss_share": 1.0,
+     "tvl": 2,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Thetanuts Finance",
+     "date": 1781481600,
+     "loss_share": 0.17950854129897184,
+     "tvl": 587557,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Aethir",
+     "date": 1775692800,
+     "loss_share": 1.0,
+     "tvl": 400000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Goledo",
+     "date": 1706400000,
+     "loss_share": 1.0,
+     "tvl": 67491,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sumer.money",
+     "date": 1712880000,
+     "loss_share": 0.13152633683368758,
+     "tvl": 2661064,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "dTRINITY dLEND",
+     "date": 1773705600,
+     "loss_share": 0.26409843781149744,
+     "tvl": 973122,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ionic Protocol",
+     "date": 1738627200,
+     "loss_share": 0.1861297415198965,
+     "tvl": 46204330,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Veil Cash",
+     "date": 1771632000,
+     "loss_share": 0.3742795119395164,
+     "tvl": 13359,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "1inch Swap",
+     "date": 1741305600,
+     "loss_share": 1.0,
+     "tvl": 4237446,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Unleash Protocol",
+     "date": 1767052800,
+     "loss_share": 0.8698543930657884,
+     "tvl": 4483509,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Onyx V2",
+     "date": 1727308800,
+     "loss_share": 0.2769344637506634,
+     "tvl": 13721658,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "AFX Bridge",
+     "date": 1784678400,
+     "loss_share": 0.992352761148621,
+     "tvl": 24336104,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "dYdX V3",
+     "date": 1700265600,
+     "loss_share": 0.021700397793126446,
+     "tvl": 414738941,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Cozy V2",
+     "date": 1756512000,
+     "loss_share": 1.0,
+     "tvl": 271136,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "zkLend",
+     "date": 1739232000,
+     "loss_share": 0.8250710317042399,
+     "tvl": 11574761,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Goldfinch",
+     "date": 1764633600,
+     "loss_share": 0.07138541569998916,
+     "tvl": 4622793,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "DxSale",
+     "date": 1779926400,
+     "loss_share": 0.29063861385606454,
+     "tvl": 25117103,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "GoonFi",
+     "date": 1774656000,
+     "loss_share": 0.04180520525667106,
+     "tvl": 6075798.418893494,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ajna V2",
+     "date": 1787875200,
+     "loss_share": 1.0,
+     "tvl": 588362,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Velocore V2",
+     "date": 1717286400,
+     "loss_share": 0.7570555349220812,
+     "tvl": 8982168,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Peapods Finance",
+     "date": 1702425600,
+     "loss_share": 0.14202525300184599,
+     "tvl": 1627823.1871693626,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Goose Finance",
+     "date": 1773446400,
+     "loss_share": 0.03073374773186035,
+     "tvl": 274454,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Unibot",
+     "date": 1698710400,
+     "loss_share": 1.0,
+     "tvl": 640000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "LND",
+     "date": 1746748800,
+     "loss_share": 0.8964303838241416,
+     "tvl": 1316332,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Alephium Bridge",
+     "date": 1780099200,
+     "loss_share": 0.9582260472881615,
+     "tvl": 850530,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Onyx Protocol",
+     "date": 1698796800,
+     "loss_share": 0.7337564662288586,
+     "tvl": 2861985,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "FutureSwap",
+     "date": 1765843200,
+     "loss_share": 0.23452300192916883,
+     "tvl": 1151273,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Lixir Finance",
+     "date": 1782345600,
+     "loss_share": 0.17329557462276513,
+     "tvl": 70977,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Demex Perp",
+     "date": 1790294400,
+     "loss_share": 1.0,
+     "tvl": 185514,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Meteora DAMM V2",
+     "date": 1768608000,
+     "loss_share": 0.06163200938617497,
+     "tvl": 24338002.52400133,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ribbon",
+     "date": 1765497600,
+     "loss_share": 0.2686531076448227,
+     "tvl": 10050135,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "FlashTrade",
+     "date": 1784592000,
+     "loss_share": 0.012245441634351612,
+     "tvl": 8002978,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Impermax V3",
+     "date": 1762819200,
+     "loss_share": 0.15412513906751857,
+     "tvl": 2465529,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Pike V1",
+     "date": 1714435200,
+     "loss_share": 0.8919109805948043,
+     "tvl": 1793901,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DeltaPrime",
+     "date": 1731283200,
+     "loss_share": 0.13356072045991635,
+     "tvl": 35938710,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Float Protocol",
+     "date": 1788134400,
+     "loss_share": 0.1287048613664779,
+     "tvl": 217552,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Solido Cash",
+     "date": 1784764800,
+     "loss_share": 1.0,
+     "tvl": 719517,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Balancer V1",
+     "date": 1788048000,
+     "loss_share": 0.031749145927622534,
+     "tvl": 7370277,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Radiant V2",
+     "date": 1704153600,
+     "loss_share": 0.014029248051633619,
+     "tvl": 320758460,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Ekubo",
+     "date": 1777939200,
+     "loss_share": 0.037384274641330595,
+     "tvl": 37448901,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Wise Lending V2",
+     "date": 1772236800,
+     "loss_share": 1.0,
+     "tvl": 64220,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "OcelotDex",
+     "date": 1726790400,
+     "loss_share": 1.0,
+     "tvl": 15,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Drift Trade",
+     "date": 1775001600,
+     "loss_share": 0.9473962625018331,
+     "tvl": 311379738,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "HyperVault",
+     "date": 1758844800,
+     "loss_share": 1.0,
+     "tvl": 3600000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "KyberSwap Elastic",
+     "date": 1700611200,
+     "loss_share": 0.674983513527682,
+     "tvl": 71112848,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Vicuna Lending",
+     "date": 1743033600,
+     "loss_share": 0.20181145966192543,
+     "tvl": 3468584,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Singularity Finance",
+     "date": 1777248000,
+     "loss_share": 1.0,
+     "tvl": 65816,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "WEMIX.FI Lend",
+     "date": 1785024000,
+     "loss_share": 1.0,
+     "tvl": 2337,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Bisq",
+     "date": 1777593600,
+     "loss_share": 1.0,
+     "tvl": 550000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Astroport",
+     "date": 1790035200,
+     "loss_share": 1.0,
+     "tvl": 4535164,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Starlay Finance",
+     "date": 1707350400,
+     "loss_share": 0.39500659002661026,
+     "tvl": 5316367,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Pine Protocol",
+     "date": 1703203200,
+     "loss_share": 0.45598103118910255,
+     "tvl": 208342,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Lien",
+     "date": 1784764800,
+     "loss_share": 1.0,
+     "tvl": 162988,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Fegex",
+     "date": 1735430400,
+     "loss_share": 1.0,
+     "tvl": 1070000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Humanity",
+     "date": 1780876800,
+     "loss_share": 1.0,
+     "tvl": 32000000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Alkimiya",
+     "date": 1743120000,
+     "loss_share": 1.0,
+     "tvl": 95500,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "ALEX",
+     "date": 1749168000,
+     "loss_share": 0.4195567250162689,
+     "tvl": 19956777,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Abracadabra Spell",
+     "date": 1759536000,
+     "loss_share": 0.07092720253058245,
+     "tvl": 23968237,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Virtue",
+     "date": 1787875200,
+     "loss_share": 0.6051421864270904,
+     "tvl": 1478165,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "CrossCurve",
+     "date": 1769904000,
+     "loss_share": 0.9793360101850945,
+     "tvl": 3063300,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ploutos Money",
+     "date": 1772064000,
+     "loss_share": 0.1283057651399158,
+     "tvl": 3039614,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ostium",
+     "date": 1784073600,
+     "loss_share": 0.3744476365251455,
+     "tvl": 63426759,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "OTSea",
+     "date": 1726185600,
+     "loss_share": 0.2546897193515208,
+     "tvl": 102085,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Clober Liquidity Vault",
+     "date": 1733788800,
+     "loss_share": 0.9852799180247108,
+     "tvl": 507470,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "zkFinance",
+     "date": 1731283200,
+     "loss_share": 0.14232342999466288,
+     "tvl": 1405250,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Moonwell Lending",
+     "date": 1771113600,
+     "loss_share": 0.029808631765883276,
+     "tvl": 59714247,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Chi Protocol",
+     "date": 1783900800,
+     "loss_share": 1.0,
+     "tvl": 8474,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Hyperdrive HL Lending",
+     "date": 1758931200,
+     "loss_share": 0.06980146036794474,
+     "tvl": 11203204,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Bodega Market",
+     "date": 1786665600,
+     "loss_share": 0.19509022923101935,
+     "tvl": 18453,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Edel",
+     "date": 1782777600,
+     "loss_share": 0.6683594015612743,
+     "tvl": 602969,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "FilDA",
+     "date": 1766707200,
+     "loss_share": 0.680588537713908,
+     "tvl": 245082,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "PrismaLST",
+     "date": 1711584000,
+     "loss_share": 0.05641450338485318,
+     "tvl": 205620883,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "BlueMove DEX",
+     "date": 1783728000,
+     "loss_share": 1.0,
+     "tvl": 529000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Purrlend",
+     "date": 1777075200,
+     "loss_share": 0.9793884437387044,
+     "tvl": 1531568,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Locus Finance",
+     "date": 1791331200,
+     "loss_share": 0.32810791104629966,
+     "tvl": 54860,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Blend Pools V2",
+     "date": 1771718400,
+     "loss_share": 0.11374543369630397,
+     "tvl": 96443432,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Hinkal",
+     "date": 1782950400,
+     "loss_share": 0.9844705769357753,
+     "tvl": 832935,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Seneca",
+     "date": 1709078400,
+     "loss_share": 1.0,
+     "tvl": 2017186,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Mars Perps",
+     "date": 1765670400,
+     "loss_share": 1.0,
+     "tvl": 290618,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Levana Perps",
+     "date": 1703635200,
+     "loss_share": 0.10358173394504311,
+     "tvl": 10619633,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Step Finance",
+     "date": 1769817600,
+     "loss_share": 1.0,
+     "tvl": 40000000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DeltaPrime",
+     "date": 1721692800,
+     "loss_share": 0.02245349269804559,
+     "tvl": 44536501,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "WOOFi Swap",
+     "date": 1709596800,
+     "loss_share": 0.3344964251889188,
+     "tvl": 26158725,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "UXLINK",
+     "date": 1758499200,
+     "loss_share": 1.0,
+     "tvl": 11300000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Kelp",
+     "date": 1776470400,
+     "loss_share": 0.17843416324118241,
+     "tvl": 1642062230,
+     "bucket": ">=2y|>=1B"
+    },
+    {
+     "name": "Synthetify",
+     "date": 1697673600,
+     "loss_share": 1.0,
+     "tvl": 4088,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Polycule",
+     "date": 1767744000,
+     "loss_share": 1.0,
+     "tvl": 230000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "BarnBridge",
+     "date": 1783987200,
+     "loss_share": 1.0,
+     "tvl": 23523,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "OpenLeverage",
+     "date": 1711929600,
+     "loss_share": 0.13090704157851704,
+     "tvl": 1802806,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "NEAR Intents",
+     "date": 1790812800,
+     "loss_share": 0.015313533125749257,
+     "tvl": 248146523,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Lazy Summer Protocol",
+     "date": 1783209600,
+     "loss_share": 0.2899493289545224,
+     "tvl": 20831226,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Notional V2",
+     "date": 1788480000,
+     "loss_share": 0.558006613391274,
+     "tvl": 3096346.814779559,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Matcha",
+     "date": 1769299200,
+     "loss_share": 1.0,
+     "tvl": 13430000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Namada Shielded Pools",
+     "date": 1781827200,
+     "loss_share": 1.0,
+     "tvl": 609,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Tectonic",
+     "date": 1788048000,
+     "loss_share": 1.0,
+     "tvl": 121745946,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Flooring Protocol",
+     "date": 1702771200,
+     "loss_share": 0.0460761984556007,
+     "tvl": 34725087,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Impermax V3",
+     "date": 1745625600,
+     "loss_share": 0.2364895491326746,
+     "tvl": 1268555,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Radiant V2",
+     "date": 1729036800,
+     "loss_share": 0.6647870212512998,
+     "tvl": 75212058,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Locus Finance",
+     "date": 1703894400,
+     "loss_share": 0.31080016033802665,
+     "tvl": 1032818,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Corepound",
+     "date": 1758585600,
+     "loss_share": 1.0,
+     "tvl": 362280,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "UwU Lend",
+     "date": 1718236800,
+     "loss_share": 1.0,
+     "tvl": 2880262,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Chainflip AMM",
+     "date": 1789171200,
+     "loss_share": 0.06319580223352275,
+     "tvl": 11653340,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Sharwa.Finance",
+     "date": 1760918400,
+     "loss_share": 1.0,
+     "tvl": 101221,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DeltaPrime",
+     "date": 1726444800,
+     "loss_share": 0.09332725863397703,
+     "tvl": 64075599,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "four.meme",
+     "date": 1739232000,
+     "loss_share": 0.30999820438198555,
+     "tvl": 590326,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Cozy V2",
+     "date": 1788739200,
+     "loss_share": 0.9304098164541819,
+     "tvl": 175542,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Zoth ZeUSD",
+     "date": 1742515200,
+     "loss_share": 0.33532906542160185,
+     "tvl": 26391986,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Loopring",
+     "date": 1717891200,
+     "loss_share": 0.05518231281500065,
+     "tvl": 90608743,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "FOOM Cash",
+     "date": 1772409600,
+     "loss_share": 1.0,
+     "tvl": 2260000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Bunni V2",
+     "date": 1756771200,
+     "loss_share": 0.16606360536581558,
+     "tvl": 50583028,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sonne Finance",
+     "date": 1715731200,
+     "loss_share": 1.0,
+     "tvl": 24439,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Cork V1",
+     "date": 1748390400,
+     "loss_share": 0.5585392671490057,
+     "tvl": 21484613,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "ALEX",
+     "date": 1715817600,
+     "loss_share": 0.0671261508934678,
+     "tvl": 64058492,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Symbiosis",
+     "date": 1788998400,
+     "loss_share": 0.035549040112436536,
+     "tvl": 9451732,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Juicebox V3",
+     "date": 1776643200,
+     "loss_share": 0.1945234176268143,
+     "tvl": 267320,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Cetus CLMM",
+     "date": 1747872000,
+     "loss_share": 1.0,
+     "tvl": 37839954,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Ronin Bridge",
+     "date": 1722902400,
+     "loss_share": 0.018738649824126683,
+     "tvl": 640387654,
+     "bucket": ">=2y|100M-1B"
+    }
+   ],
+   "lgd_material_median": 0.5585392671490057,
+   "lgd_by_tvl_bucket": {
+    "<100M": {
+     "n": 194,
+     "median": 0.6716714575444782
+    },
+    "100M-1B": {
+     "n": 14,
+     "median": 0.06369461053332429
+    },
+    ">=1B": {
+     "n": 1,
+     "median": 0.17843416324118241
+    }
+   },
+   "lgd_material_p75": 1.0,
+   "fetched_at": 1791640334,
+   "n_listed_imputed": 1673,
+   "method": "material exploits (net loss >= 1% of TVL) per protocol-year, Jeffreys (k+0.5)/T; DeFi only (CEX/chain/wallet excluded); TVL at hack = TVL history where fetched, else max(current TVL, amount); exposure bucketed by current TVL; missing listedAt = earliest listedAt"
+  },
+  "loss_given_exploit": {
+   "buckets": {
+    "staking|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 13.9,
+     "p_annual": 0.03601428585677622
+    },
+    "staking|>=2y|>=1B": {
+     "hacks": 1,
+     "protocol_years": 13.6,
+     "p_annual": 0.11068323039605957
+    },
+    "lending|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 9.7,
+     "p_annual": 0.05151743861411092
+    },
+    "lending|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 19.7,
+     "p_annual": 0.02542294821528518
+    },
+    "other|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 10.1,
+     "p_annual": 0.04942840181246092
+    },
+    "other|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 9.0,
+     "p_annual": 0.05565835993276025
+    },
+    "bridge|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 8.0,
+     "p_annual": 0.062228401366748586
+    },
+    "bridge|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 12.2,
+     "p_annual": 0.04113778717297727
+    },
+    "yield_vault|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 4.1,
+     "p_annual": 0.12167711148740487
+    },
+    "yield_vault|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 3.6,
+     "p_annual": 0.13719857887051407
+    },
+    "dex_derivatives|<2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 3.8,
+     "p_annual": 0.13296370355514245
+    },
+    "dex_derivatives|>=2y|>=1B": {
+     "hacks": 0,
+     "protocol_years": 12.9,
+     "p_annual": 0.03865818524929247
+    },
+    "bridge|<2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 25.7,
+     "p_annual": 0.09745432888950709
+    },
+    "bridge|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 3.5,
+     "p_annual": 0.14460129077857484
+    },
+    "lending|<2y|100M-1B": {
+     "hacks": 3,
+     "protocol_years": 22.8,
+     "p_annual": 0.1534929222947335
+    },
+    "lending|>=2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 20.5,
+     "p_annual": 0.12201411511259706
+    },
+    "staking|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 30.1,
+     "p_annual": 0.016627768462055947
+    },
+    "staking|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 29.4,
+     "p_annual": 0.017011432254554433
+    },
+    "other|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 48.7,
+     "p_annual": 0.010274432697465388
+    },
+    "other|>=2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 58.6,
+     "p_annual": 0.04266985245868823
+    },
+    "dex_derivatives|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 25.8,
+     "p_annual": 0.0194077705003534
+    },
+    "dex_derivatives|>=2y|100M-1B": {
+     "hacks": 3,
+     "protocol_years": 14.3,
+     "p_annual": 0.24558443232443322
+    },
+    "rwa|<2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 16.0,
+     "p_annual": 0.03120627323616804
+    },
+    "rwa|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 5.7,
+     "p_annual": 0.08757546888078387
+    },
+    "yield_vault|<2y|100M-1B": {
+     "hacks": 2,
+     "protocol_years": 12.1,
+     "p_annual": 0.20598411911139675
+    },
+    "yield_vault|>=2y|100M-1B": {
+     "hacks": 0,
+     "protocol_years": 19.1,
+     "p_annual": 0.026202330199322613
+    },
+    "other|<2y|<100M": {
+     "hacks": 18,
+     "protocol_years": 1842.7,
+     "p_annual": 0.010039716394144175
+    },
+    "other|>=2y|<100M": {
+     "hacks": 30,
+     "protocol_years": 3828.2,
+     "p_annual": 0.00796724089298718
+    },
+    "staking|<2y|<100M": {
+     "hacks": 0,
+     "protocol_years": 418.9,
+     "p_annual": 0.0011937172181499995
+    },
+    "staking|>=2y|<100M": {
+     "hacks": 2,
+     "protocol_years": 251.9,
+     "p_annual": 0.009924063461544041
+    },
+    "lending|<2y|<100M": {
+     "hacks": 45,
+     "protocol_years": 1054.0,
+     "p_annual": 0.04317081899486421
+    },
+    "lending|>=2y|<100M": {
+     "hacks": 16,
+     "protocol_years": 1026.5,
+     "p_annual": 0.016073993786468524
+    },
+    "dex_derivatives|<2y|<100M": {
+     "hacks": 23,
+     "protocol_years": 2958.8,
+     "p_annual": 0.00794253167060235
+    },
+    "dex_derivatives|>=2y|<100M": {
+     "hacks": 30,
+     "protocol_years": 3660.2,
+     "p_annual": 0.008332961770936361
+    },
+    "yield_vault|<2y|<100M": {
+     "hacks": 15,
+     "protocol_years": 849.7,
+     "p_annual": 0.01824084981023875
+    },
+    "yield_vault|>=2y|<100M": {
+     "hacks": 6,
+     "protocol_years": 1466.4,
+     "p_annual": 0.0044326436184448795
+    },
+    "bridge|<2y|<100M": {
+     "hacks": 2,
+     "protocol_years": 154.1,
+     "p_annual": 0.016227580918271246
+    },
+    "bridge|>=2y|<100M": {
+     "hacks": 3,
+     "protocol_years": 161.7,
+     "p_annual": 0.021643676679845517
+    },
+    "rwa|<2y|<100M": {
+     "hacks": 2,
+     "protocol_years": 197.3,
+     "p_annual": 0.012673505670302846
+    },
+    "rwa|>=2y|<100M": {
+     "hacks": 0,
+     "protocol_years": 100.5,
+     "p_annual": 0.004977142592032367
+    },
+    "stable_synthetic|<2y|<100M": {
+     "hacks": 1,
+     "protocol_years": 118.4,
+     "p_annual": 0.012666743677314667
+    },
+    "stable_synthetic|>=2y|<100M": {
+     "hacks": 1,
+     "protocol_years": 352.0,
+     "p_annual": 0.004261081441440828
+    }
+   },
+   "window_years": 3.0,
+   "n_hacks_matched": 251,
+   "n_material": 209,
+   "material": [
+    {
+     "name": "Typus Perp",
+     "date": 1760486400,
+     "loss_share": 0.9363576232848188,
+     "tvl": 3673810,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Solrise Finance",
+     "date": 1721952000,
+     "loss_share": 1.0,
+     "tvl": 6700000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Atomic Green",
+     "date": 1786147200,
+     "loss_share": 0.33314815226328304,
+     "tvl": 90002,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "MOBOX",
+     "date": 1710460800,
+     "loss_share": 1.0,
+     "tvl": 750000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "TermFinance Vaults",
+     "date": 1787443200,
+     "loss_share": 0.6826924297119954,
+     "tvl": 12450702,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "BasketDAO",
+     "date": 1705449600,
+     "loss_share": 1.0,
+     "tvl": 257923,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "SmartCredit",
+     "date": 1777852800,
+     "loss_share": 0.11074844413817714,
+     "tvl": 650122,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Polter Finance",
+     "date": 1731715200,
+     "loss_share": 0.8905254540323555,
+     "tvl": 9769513,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Aperture LM",
+     "date": 1769299200,
+     "loss_share": 1.0,
+     "tvl": 13344,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "SuperRare",
+     "date": 1753660800,
+     "loss_share": 1.0,
+     "tvl": 730000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Weft V2",
+     "date": 1788048000,
+     "loss_share": 0.14717621233286768,
+     "tvl": 320704,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Lava",
+     "date": 1711670400,
+     "loss_share": 1.0,
+     "tvl": 1529,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Wasabi Perps",
+     "date": 1777507200,
+     "loss_share": 0.6437510036663375,
+     "tvl": 8543676,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "HOPE Lend",
+     "date": 1697587200,
+     "loss_share": 0.8765964681131394,
+     "tvl": 941140,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Yield Protocol",
+     "date": 1714435200,
+     "loss_share": 0.26117195503802143,
+     "tvl": 693030,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Resupply",
+     "date": 1750809600,
+     "loss_share": 0.07097471768179538,
+     "tvl": 135259432,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Clipper",
+     "date": 1733011200,
+     "loss_share": 0.05696938085676885,
+     "tvl": 7898980,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Nemo Yield Trading",
+     "date": 1757289600,
+     "loss_share": 1.0,
+     "tvl": 1533555,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "ThalaSwap",
+     "date": 1731628800,
+     "loss_share": 0.31580403000123425,
+     "tvl": 80746278,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Yearn Ether",
+     "date": 1764460800,
+     "loss_share": 1.0,
+     "tvl": 8693711,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Velar Perps",
+     "date": 1771459200,
+     "loss_share": 1.0,
+     "tvl": 13471,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DefiPlaza",
+     "date": 1720137600,
+     "loss_share": 0.0895256349941383,
+     "tvl": 2233997,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Orange Finance",
+     "date": 1736294400,
+     "loss_share": 1.0,
+     "tvl": 741387,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "1inch Swap",
+     "date": 1730332800,
+     "loss_share": 0.15867469974708615,
+     "tvl": 4556492,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Moonwell Lending",
+     "date": 1787788800,
+     "loss_share": 0.15852955420013395,
+     "tvl": 54879357,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Rhea Lend",
+     "date": 1776297600,
+     "loss_share": 0.22247047831866196,
+     "tvl": 82707603,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Rho Markets",
+     "date": 1721347200,
+     "loss_share": 0.14927740699801484,
+     "tvl": 50911924,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Aftermath Perps",
+     "date": 1777420800,
+     "loss_share": 1.0,
+     "tvl": 1140000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "pump.fun",
+     "date": 1715817600,
+     "loss_share": 1.0,
+     "tvl": 1900000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Moby",
+     "date": 1736294400,
+     "loss_share": 1.0,
+     "tvl": 1470000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Rari Capital",
+     "date": 1766016000,
+     "loss_share": 0.7423315297151599,
+     "tvl": 2694214,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "GoodDollar",
+     "date": 1702684800,
+     "loss_share": 1.0,
+     "tvl": 1648608,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Allbridge Core",
+     "date": 1784419200,
+     "loss_share": 0.07635099617227006,
+     "tvl": 21610720,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Panther Protocol",
+     "date": 1785974400,
+     "loss_share": 1.0,
+     "tvl": 3299,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "UwU Lend",
+     "date": 1717977600,
+     "loss_share": 0.8447770350404221,
+     "tvl": 23674886,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Lumi Finance",
+     "date": 1783900800,
+     "loss_share": 1.0,
+     "tvl": 142913,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Blastoff",
+     "date": 1710115200,
+     "loss_share": 0.28276051551012116,
+     "tvl": 2121937,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Channels Finance",
+     "date": 1703894400,
+     "loss_share": 0.18552219570156667,
+     "tvl": 1724861,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Penpie",
+     "date": 1725321600,
+     "loss_share": 0.21212251580572003,
+     "tvl": 127284932,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "GMX V1 Perps",
+     "date": 1752019200,
+     "loss_share": 0.03549207049470534,
+     "tvl": 56350615,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Secured Finance Lending",
+     "date": 1788566400,
+     "loss_share": 0.4017243244078429,
+     "tvl": 258884,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Aquifer",
+     "date": 1788134400,
+     "loss_share": 0.8869044070698706,
+     "tvl": 2784662,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Thetanuts Finance",
+     "date": 1776643200,
+     "loss_share": 0.05524654322379049,
+     "tvl": 905034,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Balancer V2",
+     "date": 1762128000,
+     "loss_share": 0.2889635114080153,
+     "tvl": 442962502,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Seedify",
+     "date": 1758585600,
+     "loss_share": 1.0,
+     "tvl": 1200000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Garden",
+     "date": 1761782400,
+     "loss_share": 1.0,
+     "tvl": 11400000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Dough Finance",
+     "date": 1720742400,
+     "loss_share": 0.7228708594897638,
+     "tvl": 2711411,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Arcadia V2",
+     "date": 1752537600,
+     "loss_share": 0.12137081833837329,
+     "tvl": 20598032,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Resolv USR",
+     "date": 1774051200,
+     "loss_share": 0.17308880411525202,
+     "tvl": 141545839,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "four.meme",
+     "date": 1742256000,
+     "loss_share": 0.05596969241155914,
+     "tvl": 1429345,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "KiloEx",
+     "date": 1744588800,
+     "loss_share": 0.01758330795475885,
+     "tvl": 42654090,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sharwa.Finance",
+     "date": 1777593600,
+     "loss_share": 0.665586060176274,
+     "tvl": 49355,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Maya Protocol",
+     "date": 1787011200,
+     "loss_share": 0.30490024919318015,
+     "tvl": 5575594,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Chainge Finance",
+     "date": 1713139200,
+     "loss_share": 0.05035619074770757,
+     "tvl": 14218708.551392866,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Gamma",
+     "date": 1704326400,
+     "loss_share": 0.03725193316837625,
+     "tvl": 120799100,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Denaria vAMM",
+     "date": 1775347200,
+     "loss_share": 1.0,
+     "tvl": 165446,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Orbit Bridge",
+     "date": 1703980800,
+     "loss_share": 0.547398590709263,
+     "tvl": 149251389,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Unilend V2",
+     "date": 1736640000,
+     "loss_share": 0.9343628978489793,
+     "tvl": 211481,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Gravity Bridge",
+     "date": 1780099200,
+     "loss_share": 0.4569057883109792,
+     "tvl": 11818629,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Kalax",
+     "date": 1728864000,
+     "loss_share": 1.0,
+     "tvl": 151389,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Abracadabra Spell",
+     "date": 1742860800,
+     "loss_share": 0.2656267990468902,
+     "tvl": 48940845,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Garden",
+     "date": 1785024000,
+     "loss_share": 1.0,
+     "tvl": 450000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "OcelotDex",
+     "date": 1726790400,
+     "loss_share": 1.0,
+     "tvl": 15,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Abracadabra Spell",
+     "date": 1706572800,
+     "loss_share": 0.04065018685577584,
+     "tvl": 159900864,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Zunami Protocol",
+     "date": 1747267200,
+     "loss_share": 0.8099658194424195,
+     "tvl": 617310,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Voltage V3",
+     "date": 1742256000,
+     "loss_share": 1.0,
+     "tvl": 21767,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "TeleSwap",
+     "date": 1784073600,
+     "loss_share": 1.0,
+     "tvl": 683938,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Zoth ZeUSD",
+     "date": 1740787200,
+     "loss_share": 0.010936571530646096,
+     "tvl": 26059355,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sirio Finance",
+     "date": 1738368000,
+     "loss_share": 1.0,
+     "tvl": 1969387,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "BetterBank",
+     "date": 1756166400,
+     "loss_share": 0.20716562701287303,
+     "tvl": 24135278,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Raft",
+     "date": 1699574400,
+     "loss_share": 0.2505815770602134,
+     "tvl": 13169364,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Aztec Connect",
+     "date": 1781395200,
+     "loss_share": 0.48123173324545887,
+     "tvl": 4363802,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Florence Finance",
+     "date": 1701302400,
+     "loss_share": 1.0,
+     "tvl": 1450000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DefiTuna Lending",
+     "date": 1784160000,
+     "loss_share": 0.3725945169504809,
+     "tvl": 1556652,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Zentra Finance",
+     "date": 1788912000,
+     "loss_share": 0.07008578664451096,
+     "tvl": 1997980,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Across",
+     "date": 1784246400,
+     "loss_share": 0.2144897451022935,
+     "tvl": 20980024,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Bonzo Lend",
+     "date": 1783728000,
+     "loss_share": 1.0,
+     "tvl": 3953225,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Nostra Money Market",
+     "date": 1789603200,
+     "loss_share": 1.0,
+     "tvl": 196865,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Kinto Bridge",
+     "date": 1752105600,
+     "loss_share": 1.0,
+     "tvl": 433816,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "The Sandbox",
+     "date": 1787356800,
+     "loss_share": 1.0,
+     "tvl": 675000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Ankr",
+     "date": 1788134400,
+     "loss_share": 0.016131093382820906,
+     "tvl": 25416752,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Wise Lending V1",
+     "date": 1705017600,
+     "loss_share": 0.555565533384819,
+     "tvl": 835185,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Evoq Finance",
+     "date": 1757462400,
+     "loss_share": 0.9590201554069328,
+     "tvl": 437947,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Drop",
+     "date": 1790035200,
+     "loss_share": 1.0,
+     "tvl": 4400000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Bloom",
+     "date": 1715212800,
+     "loss_share": 0.244355611626621,
+     "tvl": 2209894,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Mozaic",
+     "date": 1710460800,
+     "loss_share": 1.0,
+     "tvl": 548498,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Volo Vault",
+     "date": 1776729600,
+     "loss_share": 0.20228385406687932,
+     "tvl": 17302419,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Swarm Markets",
+     "date": 1708560000,
+     "loss_share": 0.21295407742581043,
+     "tvl": 2220629,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "SIR",
+     "date": 1743292800,
+     "loss_share": 1.0,
+     "tvl": 352991,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ambient",
+     "date": 1780790400,
+     "loss_share": 0.05057828910934194,
+     "tvl": 2186709,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Flamincome",
+     "date": 1789516800,
+     "loss_share": 1.0,
+     "tvl": 595000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "The Idols",
+     "date": 1736812800,
+     "loss_share": 0.03686344006892098,
+     "tvl": 8789196,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Beluga",
+     "date": 1697155200,
+     "loss_share": 1.0,
+     "tvl": 2,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Thetanuts Finance",
+     "date": 1781481600,
+     "loss_share": 0.17950854129897184,
+     "tvl": 587557,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Aethir",
+     "date": 1775692800,
+     "loss_share": 1.0,
+     "tvl": 400000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Goledo",
+     "date": 1706400000,
+     "loss_share": 1.0,
+     "tvl": 67491,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sumer.money",
+     "date": 1712880000,
+     "loss_share": 0.13152633683368758,
+     "tvl": 2661064,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "dTRINITY dLEND",
+     "date": 1773705600,
+     "loss_share": 0.26409843781149744,
+     "tvl": 973122,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ionic Protocol",
+     "date": 1738627200,
+     "loss_share": 0.1861297415198965,
+     "tvl": 46204330,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Veil Cash",
+     "date": 1771632000,
+     "loss_share": 0.3742795119395164,
+     "tvl": 13359,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "1inch Swap",
+     "date": 1741305600,
+     "loss_share": 1.0,
+     "tvl": 4237446,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Unleash Protocol",
+     "date": 1767052800,
+     "loss_share": 0.8698543930657884,
+     "tvl": 4483509,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Onyx V2",
+     "date": 1727308800,
+     "loss_share": 0.2769344637506634,
+     "tvl": 13721658,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "AFX Bridge",
+     "date": 1784678400,
+     "loss_share": 0.992352761148621,
+     "tvl": 24336104,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "dYdX V3",
+     "date": 1700265600,
+     "loss_share": 0.021700397793126446,
+     "tvl": 414738941,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Cozy V2",
+     "date": 1756512000,
+     "loss_share": 1.0,
+     "tvl": 271136,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "zkLend",
+     "date": 1739232000,
+     "loss_share": 0.8250710317042399,
+     "tvl": 11574761,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Goldfinch",
+     "date": 1764633600,
+     "loss_share": 0.07138541569998916,
+     "tvl": 4622793,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "DxSale",
+     "date": 1779926400,
+     "loss_share": 0.29063861385606454,
+     "tvl": 25117103,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "GoonFi",
+     "date": 1774656000,
+     "loss_share": 0.04180520525667106,
+     "tvl": 6075798.418893494,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ajna V2",
+     "date": 1787875200,
+     "loss_share": 1.0,
+     "tvl": 588362,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Velocore V2",
+     "date": 1717286400,
+     "loss_share": 0.7570555349220812,
+     "tvl": 8982168,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Peapods Finance",
+     "date": 1702425600,
+     "loss_share": 0.14202525300184599,
+     "tvl": 1627823.1871693626,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Goose Finance",
+     "date": 1773446400,
+     "loss_share": 0.03073374773186035,
+     "tvl": 274454,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Unibot",
+     "date": 1698710400,
+     "loss_share": 1.0,
+     "tvl": 640000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "LND",
+     "date": 1746748800,
+     "loss_share": 0.8964303838241416,
+     "tvl": 1316332,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Alephium Bridge",
+     "date": 1780099200,
+     "loss_share": 0.9582260472881615,
+     "tvl": 850530,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Onyx Protocol",
+     "date": 1698796800,
+     "loss_share": 0.7337564662288586,
+     "tvl": 2861985,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "FutureSwap",
+     "date": 1765843200,
+     "loss_share": 0.23452300192916883,
+     "tvl": 1151273,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Lixir Finance",
+     "date": 1782345600,
+     "loss_share": 0.17329557462276513,
+     "tvl": 70977,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Demex Perp",
+     "date": 1790294400,
+     "loss_share": 1.0,
+     "tvl": 185514,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Meteora DAMM V2",
+     "date": 1768608000,
+     "loss_share": 0.06163200938617497,
+     "tvl": 24338002.52400133,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ribbon",
+     "date": 1765497600,
+     "loss_share": 0.2686531076448227,
+     "tvl": 10050135,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "FlashTrade",
+     "date": 1784592000,
+     "loss_share": 0.012245441634351612,
+     "tvl": 8002978,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Impermax V3",
+     "date": 1762819200,
+     "loss_share": 0.15412513906751857,
+     "tvl": 2465529,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Pike V1",
+     "date": 1714435200,
+     "loss_share": 0.8919109805948043,
+     "tvl": 1793901,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DeltaPrime",
+     "date": 1731283200,
+     "loss_share": 0.13356072045991635,
+     "tvl": 35938710,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Float Protocol",
+     "date": 1788134400,
+     "loss_share": 0.1287048613664779,
+     "tvl": 217552,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Solido Cash",
+     "date": 1784764800,
+     "loss_share": 1.0,
+     "tvl": 719517,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Balancer V1",
+     "date": 1788048000,
+     "loss_share": 0.031749145927622534,
+     "tvl": 7370277,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Radiant V2",
+     "date": 1704153600,
+     "loss_share": 0.014029248051633619,
+     "tvl": 320758460,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Ekubo",
+     "date": 1777939200,
+     "loss_share": 0.037384274641330595,
+     "tvl": 37448901,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Wise Lending V2",
+     "date": 1772236800,
+     "loss_share": 1.0,
+     "tvl": 64220,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "OcelotDex",
+     "date": 1726790400,
+     "loss_share": 1.0,
+     "tvl": 15,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Drift Trade",
+     "date": 1775001600,
+     "loss_share": 0.9473962625018331,
+     "tvl": 311379738,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "HyperVault",
+     "date": 1758844800,
+     "loss_share": 1.0,
+     "tvl": 3600000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "KyberSwap Elastic",
+     "date": 1700611200,
+     "loss_share": 0.674983513527682,
+     "tvl": 71112848,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Vicuna Lending",
+     "date": 1743033600,
+     "loss_share": 0.20181145966192543,
+     "tvl": 3468584,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Singularity Finance",
+     "date": 1777248000,
+     "loss_share": 1.0,
+     "tvl": 65816,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "WEMIX.FI Lend",
+     "date": 1785024000,
+     "loss_share": 1.0,
+     "tvl": 2337,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Bisq",
+     "date": 1777593600,
+     "loss_share": 1.0,
+     "tvl": 550000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Astroport",
+     "date": 1790035200,
+     "loss_share": 1.0,
+     "tvl": 4535164,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Starlay Finance",
+     "date": 1707350400,
+     "loss_share": 0.39500659002661026,
+     "tvl": 5316367,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Pine Protocol",
+     "date": 1703203200,
+     "loss_share": 0.45598103118910255,
+     "tvl": 208342,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Lien",
+     "date": 1784764800,
+     "loss_share": 1.0,
+     "tvl": 162988,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Fegex",
+     "date": 1735430400,
+     "loss_share": 1.0,
+     "tvl": 1070000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Humanity",
+     "date": 1780876800,
+     "loss_share": 1.0,
+     "tvl": 32000000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Alkimiya",
+     "date": 1743120000,
+     "loss_share": 1.0,
+     "tvl": 95500,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "ALEX",
+     "date": 1749168000,
+     "loss_share": 0.4195567250162689,
+     "tvl": 19956777,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Abracadabra Spell",
+     "date": 1759536000,
+     "loss_share": 0.07092720253058245,
+     "tvl": 23968237,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Virtue",
+     "date": 1787875200,
+     "loss_share": 0.6051421864270904,
+     "tvl": 1478165,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "CrossCurve",
+     "date": 1769904000,
+     "loss_share": 0.9793360101850945,
+     "tvl": 3063300,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ploutos Money",
+     "date": 1772064000,
+     "loss_share": 0.1283057651399158,
+     "tvl": 3039614,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Ostium",
+     "date": 1784073600,
+     "loss_share": 0.3744476365251455,
+     "tvl": 63426759,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "OTSea",
+     "date": 1726185600,
+     "loss_share": 0.2546897193515208,
+     "tvl": 102085,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Clober Liquidity Vault",
+     "date": 1733788800,
+     "loss_share": 0.9852799180247108,
+     "tvl": 507470,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "zkFinance",
+     "date": 1731283200,
+     "loss_share": 0.14232342999466288,
+     "tvl": 1405250,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Moonwell Lending",
+     "date": 1771113600,
+     "loss_share": 0.029808631765883276,
+     "tvl": 59714247,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Chi Protocol",
+     "date": 1783900800,
+     "loss_share": 1.0,
+     "tvl": 8474,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Hyperdrive HL Lending",
+     "date": 1758931200,
+     "loss_share": 0.06980146036794474,
+     "tvl": 11203204,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Bodega Market",
+     "date": 1786665600,
+     "loss_share": 0.19509022923101935,
+     "tvl": 18453,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Edel",
+     "date": 1782777600,
+     "loss_share": 0.6683594015612743,
+     "tvl": 602969,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "FilDA",
+     "date": 1766707200,
+     "loss_share": 0.680588537713908,
+     "tvl": 245082,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "PrismaLST",
+     "date": 1711584000,
+     "loss_share": 0.05641450338485318,
+     "tvl": 205620883,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "BlueMove DEX",
+     "date": 1783728000,
+     "loss_share": 1.0,
+     "tvl": 529000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Purrlend",
+     "date": 1777075200,
+     "loss_share": 0.9793884437387044,
+     "tvl": 1531568,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Locus Finance",
+     "date": 1791331200,
+     "loss_share": 0.32810791104629966,
+     "tvl": 54860,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Blend Pools V2",
+     "date": 1771718400,
+     "loss_share": 0.11374543369630397,
+     "tvl": 96443432,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Hinkal",
+     "date": 1782950400,
+     "loss_share": 0.9844705769357753,
+     "tvl": 832935,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Seneca",
+     "date": 1709078400,
+     "loss_share": 1.0,
+     "tvl": 2017186,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Mars Perps",
+     "date": 1765670400,
+     "loss_share": 1.0,
+     "tvl": 290618,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Levana Perps",
+     "date": 1703635200,
+     "loss_share": 0.10358173394504311,
+     "tvl": 10619633,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Step Finance",
+     "date": 1769817600,
+     "loss_share": 1.0,
+     "tvl": 40000000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DeltaPrime",
+     "date": 1721692800,
+     "loss_share": 0.02245349269804559,
+     "tvl": 44536501,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "WOOFi Swap",
+     "date": 1709596800,
+     "loss_share": 0.3344964251889188,
+     "tvl": 26158725,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "UXLINK",
+     "date": 1758499200,
+     "loss_share": 1.0,
+     "tvl": 11300000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Kelp",
+     "date": 1776470400,
+     "loss_share": 0.17843416324118241,
+     "tvl": 1642062230,
+     "bucket": ">=2y|>=1B"
+    },
+    {
+     "name": "Synthetify",
+     "date": 1697673600,
+     "loss_share": 1.0,
+     "tvl": 4088,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Polycule",
+     "date": 1767744000,
+     "loss_share": 1.0,
+     "tvl": 230000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "BarnBridge",
+     "date": 1783987200,
+     "loss_share": 1.0,
+     "tvl": 23523,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "OpenLeverage",
+     "date": 1711929600,
+     "loss_share": 0.13090704157851704,
+     "tvl": 1802806,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "NEAR Intents",
+     "date": 1790812800,
+     "loss_share": 0.015313533125749257,
+     "tvl": 248146523,
+     "bucket": "<2y|100M-1B"
+    },
+    {
+     "name": "Lazy Summer Protocol",
+     "date": 1783209600,
+     "loss_share": 0.2899493289545224,
+     "tvl": 20831226,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Notional V2",
+     "date": 1788480000,
+     "loss_share": 0.558006613391274,
+     "tvl": 3096346.814779559,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Matcha",
+     "date": 1769299200,
+     "loss_share": 1.0,
+     "tvl": 13430000,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Namada Shielded Pools",
+     "date": 1781827200,
+     "loss_share": 1.0,
+     "tvl": 609,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Tectonic",
+     "date": 1788048000,
+     "loss_share": 1.0,
+     "tvl": 121745946,
+     "bucket": ">=2y|100M-1B"
+    },
+    {
+     "name": "Flooring Protocol",
+     "date": 1702771200,
+     "loss_share": 0.0460761984556007,
+     "tvl": 34725087,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Impermax V3",
+     "date": 1745625600,
+     "loss_share": 0.2364895491326746,
+     "tvl": 1268555,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Radiant V2",
+     "date": 1729036800,
+     "loss_share": 0.6647870212512998,
+     "tvl": 75212058,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Locus Finance",
+     "date": 1703894400,
+     "loss_share": 0.31080016033802665,
+     "tvl": 1032818,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Corepound",
+     "date": 1758585600,
+     "loss_share": 1.0,
+     "tvl": 362280,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "UwU Lend",
+     "date": 1718236800,
+     "loss_share": 1.0,
+     "tvl": 2880262,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Chainflip AMM",
+     "date": 1789171200,
+     "loss_share": 0.06319580223352275,
+     "tvl": 11653340,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Sharwa.Finance",
+     "date": 1760918400,
+     "loss_share": 1.0,
+     "tvl": 101221,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "DeltaPrime",
+     "date": 1726444800,
+     "loss_share": 0.09332725863397703,
+     "tvl": 64075599,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "four.meme",
+     "date": 1739232000,
+     "loss_share": 0.30999820438198555,
+     "tvl": 590326,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Cozy V2",
+     "date": 1788739200,
+     "loss_share": 0.9304098164541819,
+     "tvl": 175542,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Zoth ZeUSD",
+     "date": 1742515200,
+     "loss_share": 0.33532906542160185,
+     "tvl": 26391986,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Loopring",
+     "date": 1717891200,
+     "loss_share": 0.05518231281500065,
+     "tvl": 90608743,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "FOOM Cash",
+     "date": 1772409600,
+     "loss_share": 1.0,
+     "tvl": 2260000,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Bunni V2",
+     "date": 1756771200,
+     "loss_share": 0.16606360536581558,
+     "tvl": 50583028,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Sonne Finance",
+     "date": 1715731200,
+     "loss_share": 1.0,
+     "tvl": 24439,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "Cork V1",
+     "date": 1748390400,
+     "loss_share": 0.5585392671490057,
+     "tvl": 21484613,
+     "bucket": "<2y|<100M"
+    },
+    {
+     "name": "ALEX",
+     "date": 1715817600,
+     "loss_share": 0.0671261508934678,
+     "tvl": 64058492,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Symbiosis",
+     "date": 1788998400,
+     "loss_share": 0.035549040112436536,
+     "tvl": 9451732,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Juicebox V3",
+     "date": 1776643200,
+     "loss_share": 0.1945234176268143,
+     "tvl": 267320,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Cetus CLMM",
+     "date": 1747872000,
+     "loss_share": 1.0,
+     "tvl": 37839954,
+     "bucket": ">=2y|<100M"
+    },
+    {
+     "name": "Ronin Bridge",
+     "date": 1722902400,
+     "loss_share": 0.018738649824126683,
+     "tvl": 640387654,
+     "bucket": ">=2y|100M-1B"
+    }
+   ],
+   "lgd_material_median": 0.5585392671490057,
+   "lgd_by_tvl_bucket": {
+    "<100M": {
+     "n": 194,
+     "median": 0.6716714575444782
+    },
+    "100M-1B": {
+     "n": 14,
+     "median": 0.06369461053332429
+    },
+    ">=1B": {
+     "n": 1,
+     "median": 0.17843416324118241
+    }
+   },
+   "lgd_material_p75": 1.0,
+   "fetched_at": 1791640334,
+   "n_listed_imputed": 1673,
+   "method": "material exploits (net loss >= 1% of TVL) per protocol-year, Jeffreys (k+0.5)/T; DeFi only (CEX/chain/wallet excluded); TVL at hack = TVL history where fetched, else max(current TVL, amount); exposure bucketed by current TVL; missing listedAt = earliest listedAt",
+   "top_hacks_tvl_sample": {
+    "n": 215,
+    "n_hacks": 257,
+    "n_protocols_fetched": 216,
+    "median": 0.2656267990468902,
+    "sample": [
+     {
+      "name": "Typus Perp",
+      "date": 1760486400,
+      "loss": 3440000,
+      "tvl_before": 3673810,
+      "lgd": 0.9363576232848188
+     },
+     {
+      "name": "Taiko Bridge",
+      "date": 1782000000,
+      "loss": 1700000,
+      "tvl_before": 12536687,
+      "lgd": 0.13560201351441573
+     },
+     {
+      "name": "Atomic Green",
+      "date": 1786147200,
+      "loss": 29984,
+      "tvl_before": 90002,
+      "lgd": 0.33314815226328304
+     },
+     {
+      "name": "dYdX V3",
+      "date": 1721692800,
+      "loss": 31000,
+      "tvl_before": 298539322,
+      "lgd": 0.0001038389174073357
+     },
+     {
+      "name": "TermFinance Vaults",
+      "date": 1787443200,
+      "loss": 8500000,
+      "tvl_before": 12450702,
+      "lgd": 0.6826924297119954
+     },
+     {
+      "name": "BasketDAO",
+      "date": 1705449600,
+      "loss": 1200000,
+      "tvl_before": 257923,
+      "lgd": 1.0
+     },
+     {
+      "name": "SmartCredit",
+      "date": 1777852800,
+      "loss": 72000,
+      "tvl_before": 650122,
+      "lgd": 0.11074844413817714
+     },
+     {
+      "name": "Polter Finance",
+      "date": 1731715200,
+      "loss": 8700000,
+      "tvl_before": 9769513,
+      "lgd": 0.8905254540323555
+     },
+     {
+      "name": "Aperture LM",
+      "date": 1769299200,
+      "loss": 3670000,
+      "tvl_before": 13344,
+      "lgd": 1.0
+     },
+     {
+      "name": "Weft V2",
+      "date": 1788048000,
+      "loss": 47200,
+      "tvl_before": 320704,
+      "lgd": 0.14717621233286768
+     },
+     {
+      "name": "Lava",
+      "date": 1711670400,
+      "loss": 340000,
+      "tvl_before": 1529,
+      "lgd": 1.0
+     },
+     {
+      "name": "Wasabi Perps",
+      "date": 1777507200,
+      "loss": 5500000,
+      "tvl_before": 8543676,
+      "lgd": 0.6437510036663375
+     },
+     {
+      "name": "HOPE Lend",
+      "date": 1697587200,
+      "loss": 825000,
+      "tvl_before": 941140,
+      "lgd": 0.8765964681131394
+     },
+     {
+      "name": "Yield Protocol",
+      "date": 1714435200,
+      "loss": 181000,
+      "tvl_before": 693030,
+      "lgd": 0.26117195503802143
+     },
+     {
+      "name": "Resupply",
+      "date": 1750809600,
+      "loss": 9600000,
+      "tvl_before": 135259432,
+      "lgd": 0.07097471768179538
+     },
+     {
+      "name": "Clipper",
+      "date": 1733011200,
+      "loss": 450000,
+      "tvl_before": 7898980,
+      "lgd": 0.05696938085676885
+     },
+     {
+      "name": "Venus Core Pool",
+      "date": 1773532800,
+      "loss": 3700000,
+      "tvl_before": 1264697470,
+      "lgd": 0.0029256008553571315
+     },
+     {
+      "name": "Nemo Yield Trading",
+      "date": 1757289600,
+      "loss": 2590000,
+      "tvl_before": 1533555,
+      "lgd": 1.0
+     },
+     {
+      "name": "Stake DAO Yield",
+      "date": 1773273600,
+      "loss": 176000,
+      "tvl_before": 145962263,
+      "lgd": 0.0012057911160229134
+     },
+     {
+      "name": "ThalaSwap",
+      "date": 1731628800,
+      "loss": 25500000,
+      "tvl_before": 80746278,
+      "lgd": 0.31580403000123425
+     },
+     {
+      "name": "Usual USD0",
+      "date": 1748304000,
+      "loss": 43000,
+      "tvl_before": 379267913,
+      "lgd": 0.00011337631928804902
+     },
+     {
+      "name": "Yearn Ether",
+      "date": 1764460800,
+      "loss": 9000000,
+      "tvl_before": 8693711,
+      "lgd": 1.0
+     },
+     {
+      "name": "Velar Perps",
+      "date": 1771459200,
+      "loss": 401000,
+      "tvl_before": 13471,
+      "lgd": 1.0
+     },
+     {
+      "name": "DefiPlaza",
+      "date": 1720137600,
+      "loss": 200000,
+      "tvl_before": 2233997,
+      "lgd": 0.0895256349941383
+     },
+     {
+      "name": "Munchables",
+      "date": 1711411200,
+      "loss": 62500000,
+      "tvl_before": 91555867,
+      "lgd": 0.68264330892088
+     },
+     {
+      "name": "Orange Finance",
+      "date": 1736294400,
+      "loss": 840000,
+      "tvl_before": 741387,
+      "lgd": 1.0
+     },
+     {
+      "name": "1inch Swap",
+      "date": 1730332800,
+      "loss": 723000,
+      "tvl_before": 4556492,
+      "lgd": 0.15867469974708615
+     },
+     {
+      "name": "Moonwell Lending",
+      "date": 1787788800,
+      "loss": 8700000,
+      "tvl_before": 54879357,
+      "lgd": 0.15852955420013395
+     },
+     {
+      "name": "Rhea Lend",
+      "date": 1776297600,
+      "loss": 18400000,
+      "tvl_before": 82707603,
+      "lgd": 0.22247047831866196
+     },
+     {
+      "name": "Rho Markets",
+      "date": 1721347200,
+      "loss": 7600000,
+      "tvl_before": 50911924,
+      "lgd": 0.14927740699801484
+     },
+     {
+      "name": "Tectonic",
+      "date": 1708560000,
+      "loss": 250000,
+      "tvl_before": 130088327,
+      "lgd": 0.0019217711978108535
+     },
+     {
+      "name": "RISEx",
+      "date": 1785715200,
+      "loss": 673012,
+      "tvl_before": 16799292,
+      "lgd": 0.04006192641928005
+     },
+     {
+      "name": "Rari Capital",
+      "date": 1766016000,
+      "loss": 2000000,
+      "tvl_before": 2694214,
+      "lgd": 0.7423315297151599
+     },
+     {
+      "name": "GoodDollar",
+      "date": 1702684800,
+      "loss": 2000000,
+      "tvl_before": 1648608,
+      "lgd": 1.0
+     },
+     {
+      "name": "Allbridge Core",
+      "date": 1784419200,
+      "loss": 1650000,
+      "tvl_before": 21610720,
+      "lgd": 0.07635099617227006
+     },
+     {
+      "name": "Panther Protocol",
+      "date": 1785974400,
+      "loss": 7578,
+      "tvl_before": 3299,
+      "lgd": 1.0
+     },
+     {
+      "name": "UwU Lend",
+      "date": 1717977600,
+      "loss": 20000000,
+      "tvl_before": 23674886,
+      "lgd": 0.8447770350404221
+     },
+     {
+      "name": "Lumi Finance",
+      "date": 1783900800,
+      "loss": 270000,
+      "tvl_before": 142913,
+      "lgd": 1.0
+     },
+     {
+      "name": "Curve LlamaLend",
+      "date": 1772409600,
+      "loss": 240000,
+      "tvl_before": 77510560,
+      "lgd": 0.0030963522905782127
+     },
+     {
+      "name": "Blastoff",
+      "date": 1710115200,
+      "loss": 600000,
+      "tvl_before": 2121937,
+      "lgd": 0.28276051551012116
+     },
+     {
+      "name": "Channels Finance",
+      "date": 1703894400,
+      "loss": 320000,
+      "tvl_before": 1724861,
+      "lgd": 0.18552219570156667
+     },
+     {
+      "name": "Penpie",
+      "date": 1725321600,
+      "loss": 27000000,
+      "tvl_before": 127284932,
+      "lgd": 0.21212251580572003
+     },
+     {
+      "name": "GMX V1 Perps",
+      "date": 1752019200,
+      "loss": 2000000,
+      "tvl_before": 56350615,
+      "lgd": 0.03549207049470534
+     },
+     {
+      "name": "Tenderize V2",
+      "date": 1743984000,
+      "loss": 10850,
+      "tvl_before": 4436597,
+      "lgd": 0.0024455680784168585
+     },
+     {
+      "name": "Secured Finance Lending",
+      "date": 1788566400,
+      "loss": 104000,
+      "tvl_before": 258884,
+      "lgd": 0.4017243244078429
+     },
+     {
+      "name": "Aquifer",
+      "date": 1788134400,
+      "loss": 2469729,
+      "tvl_before": 2784662,
+      "lgd": 0.8869044070698706
+     },
+     {
+      "name": "Thetanuts Finance",
+      "date": 1776643200,
+      "loss": 50000,
+      "tvl_before": 905034,
+      "lgd": 0.05524654322379049
+     },
+     {
+      "name": "Balancer V2",
+      "date": 1762128000,
+      "loss": 128000000,
+      "tvl_before": 442962502,
+      "lgd": 0.2889635114080153
+     },
+     {
+      "name": "Dough Finance",
+      "date": 1720742400,
+      "loss": 1960000,
+      "tvl_before": 2711411,
+      "lgd": 0.7228708594897638
+     },
+     {
+      "name": "Renegade",
+      "date": 1778371200,
+      "loss": 0.0,
+      "tvl_before": 338736,
+      "lgd": 0.0
+     },
+     {
+      "name": "Arcadia V2",
+      "date": 1752537600,
+      "loss": 2500000,
+      "tvl_before": 20598032,
+      "lgd": 0.12137081833837329
+     },
+     {
+      "name": "Resolv USR",
+      "date": 1774051200,
+      "loss": 24500000,
+      "tvl_before": 141545839,
+      "lgd": 0.17308880411525202
+     },
+     {
+      "name": "four.meme",
+      "date": 1742256000,
+      "loss": 80000,
+      "tvl_before": 1429345,
+      "lgd": 0.05596969241155914
+     },
+     {
+      "name": "KiloEx",
+      "date": 1744588800,
+      "loss": 750000,
+      "tvl_before": 42654090,
+      "lgd": 0.01758330795475885
+     },
+     {
+      "name": "Sharwa.Finance",
+      "date": 1777593600,
+      "loss": 32850,
+      "tvl_before": 49355,
+      "lgd": 0.665586060176274
+     },
+     {
+      "name": "Maya Protocol",
+      "date": 1787011200,
+      "loss": 1700000,
+      "tvl_before": 5575594,
+      "lgd": 0.30490024919318015
+     },
+     {
+      "name": "Scallop Lend",
+      "date": 1777161600,
+      "loss": 142000,
+      "tvl_before": 22716600,
+      "lgd": 0.006250935439282287
+     },
+     {
+      "name": "Gamma",
+      "date": 1704326400,
+      "loss": 4500000,
+      "tvl_before": 120799100,
+      "lgd": 0.03725193316837625
+     },
+     {
+      "name": "ether.fi Liquid",
+      "date": 1789084800,
+      "loss": 43260,
+      "tvl_before": 416982709,
+      "lgd": 0.00010374530901711802
+     },
+     {
+      "name": "Denaria vAMM",
+      "date": 1775347200,
+      "loss": 165618,
+      "tvl_before": 165446,
+      "lgd": 1.0
+     },
+     {
+      "name": "Orbit Bridge",
+      "date": 1703980800,
+      "loss": 81700000,
+      "tvl_before": 149251389,
+      "lgd": 0.547398590709263
+     },
+     {
+      "name": "Unilend V2",
+      "date": 1736640000,
+      "loss": 197600,
+      "tvl_before": 211481,
+      "lgd": 0.9343628978489793
+     },
+     {
+      "name": "Gravity Bridge",
+      "date": 1780099200,
+      "loss": 5400000,
+      "tvl_before": 11818629,
+      "lgd": 0.4569057883109792
+     },
+     {
+      "name": "Yala",
+      "date": 1757808000,
+      "loss": 7640000,
+      "tvl_before": 217164104,
+      "lgd": 0.03518076818073027
+     },
+     {
+      "name": "Kalax",
+      "date": 1728864000,
+      "loss": 350000,
+      "tvl_before": 151389,
+      "lgd": 1.0
+     },
+     {
+      "name": "Abracadabra Spell",
+      "date": 1742860800,
+      "loss": 13000000,
+      "tvl_before": 48940845,
+      "lgd": 0.2656267990468902
+     },
+     {
+      "name": "OcelotDex",
+      "date": 1726790400,
+      "loss": 980000,
+      "tvl_before": 15,
+      "lgd": 1.0
+     },
+     {
+      "name": "Abracadabra Spell",
+      "date": 1706572800,
+      "loss": 6500000,
+      "tvl_before": 159900864,
+      "lgd": 0.04065018685577584
+     },
+     {
+      "name": "Zunami Protocol",
+      "date": 1747267200,
+      "loss": 500000,
+      "tvl_before": 617310,
+      "lgd": 0.8099658194424195
+     },
+     {
+      "name": "Voltage V3",
+      "date": 1742256000,
+      "loss": 322113,
+      "tvl_before": 21767,
+      "lgd": 1.0
+     },
+     {
+      "name": "TeleSwap",
+      "date": 1784073600,
+      "loss": 735000,
+      "tvl_before": 683938,
+      "lgd": 1.0
+     },
+     {
+      "name": "Zoth ZeUSD",
+      "date": 1740787200,
+      "loss": 285000,
+      "tvl_before": 26059355,
+      "lgd": 0.010936571530646096
+     },
+     {
+      "name": "Sirio Finance",
+      "date": 1738368000,
+      "loss": 2000000,
+      "tvl_before": 1969387,
+      "lgd": 1.0
+     },
+     {
+      "name": "BetterBank",
+      "date": 1756166400,
+      "loss": 5000000,
+      "tvl_before": 24135278,
+      "lgd": 0.20716562701287303
+     },
+     {
+      "name": "Raft",
+      "date": 1699574400,
+      "loss": 3300000,
+      "tvl_before": 13169364,
+      "lgd": 0.2505815770602134
+     },
+     {
+      "name": "Aztec Connect",
+      "date": 1781395200,
+      "loss": 2100000,
+      "tvl_before": 4363802,
+      "lgd": 0.48123173324545887
+     },
+     {
+      "name": "DefiTuna Lending",
+      "date": 1784160000,
+      "loss": 580000,
+      "tvl_before": 1556652,
+      "lgd": 0.3725945169504809
+     },
+     {
+      "name": "Zentra Finance",
+      "date": 1788912000,
+      "loss": 140030,
+      "tvl_before": 1997980,
+      "lgd": 0.07008578664451096
+     },
+     {
+      "name": "Across",
+      "date": 1784246400,
+      "loss": 4500000,
+      "tvl_before": 20980024,
+      "lgd": 0.2144897451022935
+     },
+     {
+      "name": "Bonzo Lend",
+      "date": 1783728000,
+      "loss": 9050000,
+      "tvl_before": 3953225,
+      "lgd": 1.0
+     },
+     {
+      "name": "SolvBTC",
+      "date": 1772755200,
+      "loss": 2700000,
+      "tvl_before": 505931216,
+      "lgd": 0.005336693832309411
+     },
+     {
+      "name": "Moonwell Lending",
+      "date": 1762214400,
+      "loss": 1000000,
+      "tvl_before": 151746530,
+      "lgd": 0.006589936521118473
+     },
+     {
+      "name": "Nostra Money Market",
+      "date": 1789603200,
+      "loss": 3500000,
+      "tvl_before": 196865,
+      "lgd": 1.0
+     },
+     {
+      "name": "Kinto Bridge",
+      "date": 1752105600,
+      "loss": 1550000,
+      "tvl_before": 433816,
+      "lgd": 1.0
+     },
+     {
+      "name": "Ankr",
+      "date": 1788134400,
+      "loss": 410000,
+      "tvl_before": 25416752,
+      "lgd": 0.016131093382820906
+     },
+     {
+      "name": "Wise Lending V1",
+      "date": 1705017600,
+      "loss": 464000,
+      "tvl_before": 835185,
+      "lgd": 0.555565533384819
+     },
+     {
+      "name": "Evoq Finance",
+      "date": 1757462400,
+      "loss": 420000,
+      "tvl_before": 437947,
+      "lgd": 0.9590201554069328
+     },
+     {
+      "name": "Bloom",
+      "date": 1715212800,
+      "loss": 540000,
+      "tvl_before": 2209894,
+      "lgd": 0.244355611626621
+     },
+     {
+      "name": "Mozaic",
+      "date": 1710460800,
+      "loss": 2000000,
+      "tvl_before": 548498,
+      "lgd": 1.0
+     },
+     {
+      "name": "Fusion by IPOR",
+      "date": 1767657600,
+      "loss": 336000,
+      "tvl_before": 41356217,
+      "lgd": 0.008124534214529341
+     },
+     {
+      "name": "Volo Vault",
+      "date": 1776729600,
+      "loss": 3500000,
+      "tvl_before": 17302419,
+      "lgd": 0.20228385406687932
+     },
+     {
+      "name": "Dexodus Finance",
+      "date": 1748217600,
+      "loss": 0.0,
+      "tvl_before": 554320,
+      "lgd": 0.0
+     },
+     {
+      "name": "Swarm Markets",
+      "date": 1708560000,
+      "loss": 472892,
+      "tvl_before": 2220629,
+      "lgd": 0.21295407742581043
+     },
+     {
+      "name": "SIR",
+      "date": 1743292800,
+      "loss": 355000,
+      "tvl_before": 352991,
+      "lgd": 1.0
+     },
+     {
+      "name": "Yearn Finance",
+      "date": 1765843200,
+      "loss": 300000,
+      "tvl_before": 419753352,
+      "lgd": 0.0007147054301546114
+     },
+     {
+      "name": "Raydium AMM",
+      "date": 1781049600,
+      "loss": 1340000,
+      "tvl_before": 793925564,
+      "lgd": 0.0016878156602600594
+     },
+     {
+      "name": "Ambient",
+      "date": 1780790400,
+      "loss": 110600,
+      "tvl_before": 2186709,
+      "lgd": 0.05057828910934194
+     },
+     {
+      "name": "The Idols",
+      "date": 1736812800,
+      "loss": 324000,
+      "tvl_before": 8789196,
+      "lgd": 0.03686344006892098
+     },
+     {
+      "name": "Beluga",
+      "date": 1697155200,
+      "loss": 175000,
+      "tvl_before": 2,
+      "lgd": 1.0
+     },
+     {
+      "name": "Thetanuts Finance",
+      "date": 1781481600,
+      "loss": 105471.5,
+      "tvl_before": 587557,
+      "lgd": 0.17950854129897184
+     },
+     {
+      "name": "Echo Bridge",
+      "date": 1779062400,
+      "loss": 821000,
+      "tvl_before": 173490859,
+      "lgd": 0.0047322377947301535
+     },
+     {
+      "name": "Goledo",
+      "date": 1706400000,
+      "loss": 1700000,
+      "tvl_before": 67491,
+      "lgd": 1.0
+     },
+     {
+      "name": "Sumer.money",
+      "date": 1712880000,
+      "loss": 350000,
+      "tvl_before": 2661064,
+      "lgd": 0.13152633683368758
+     },
+     {
+      "name": "dTRINITY dLEND",
+      "date": 1773705600,
+      "loss": 257000,
+      "tvl_before": 973122,
+      "lgd": 0.26409843781149744
+     },
+     {
+      "name": "Juice Finance",
+      "date": 1709942400,
+      "loss": 54000,
+      "tvl_before": 51239623,
+      "lgd": 0.0010538719225159014
+     },
+     {
+      "name": "Ionic Protocol",
+      "date": 1738627200,
+      "loss": 8600000,
+      "tvl_before": 46204330,
+      "lgd": 0.1861297415198965
+     },
+     {
+      "name": "Veil Cash",
+      "date": 1771632000,
+      "loss": 5000,
+      "tvl_before": 13359,
+      "lgd": 0.3742795119395164
+     },
+     {
+      "name": "1inch Swap",
+      "date": 1741305600,
+      "loss": 5000000,
+      "tvl_before": 4237446,
+      "lgd": 1.0
+     },
+     {
+      "name": "Unleash Protocol",
+      "date": 1767052800,
+      "loss": 3900000,
+      "tvl_before": 4483509,
+      "lgd": 0.8698543930657884
+     },
+     {
+      "name": "Onyx V2",
+      "date": 1727308800,
+      "loss": 3800000,
+      "tvl_before": 13721658,
+      "lgd": 0.2769344637506634
+     },
+     {
+      "name": "AFX Bridge",
+      "date": 1784678400,
+      "loss": 24150000,
+      "tvl_before": 24336104,
+      "lgd": 0.992352761148621
+     },
+     {
+      "name": "dYdX V3",
+      "date": 1700265600,
+      "loss": 9000000,
+      "tvl_before": 414738941,
+      "lgd": 0.021700397793126446
+     },
+     {
+      "name": "Cozy V2",
+      "date": 1756512000,
+      "loss": 427000,
+      "tvl_before": 271136,
+      "lgd": 1.0
+     },
+     {
+      "name": "zkLend",
+      "date": 1739232000,
+      "loss": 9550000,
+      "tvl_before": 11574761,
+      "lgd": 0.8250710317042399
+     },
+     {
+      "name": "Arrakis V1",
+      "date": 1787443200,
+      "loss": 7100,
+      "tvl_before": 1494413,
+      "lgd": 0.004751029333925762
+     },
+     {
+      "name": "Goldfinch",
+      "date": 1764633600,
+      "loss": 330000,
+      "tvl_before": 4622793,
+      "lgd": 0.07138541569998916
+     },
+     {
+      "name": "DxSale",
+      "date": 1779926400,
+      "loss": 7300000,
+      "tvl_before": 25117103,
+      "lgd": 0.29063861385606454
+     },
+     {
+      "name": "Ajna V2",
+      "date": 1787875200,
+      "loss": 775400,
+      "tvl_before": 588362,
+      "lgd": 1.0
+     },
+     {
+      "name": "Velocore V2",
+      "date": 1717286400,
+      "loss": 6800000,
+      "tvl_before": 8982168,
+      "lgd": 0.7570555349220812
+     },
+     {
+      "name": "THORChain DEX",
+      "date": 1778803200,
+      "loss": 10700000,
+      "tvl_before": 82806050,
+      "lgd": 0.12921761151510064
+     },
+     {
+      "name": "Goose Finance",
+      "date": 1773446400,
+      "loss": 8435,
+      "tvl_before": 274454,
+      "lgd": 0.03073374773186035
+     },
+     {
+      "name": "LND",
+      "date": 1746748800,
+      "loss": 1180000,
+      "tvl_before": 1316332,
+      "lgd": 0.8964303838241416
+     },
+     {
+      "name": "Alephium Bridge",
+      "date": 1780099200,
+      "loss": 815000,
+      "tvl_before": 850530,
+      "lgd": 0.9582260472881615
+     },
+     {
+      "name": "Onyx Protocol",
+      "date": 1698796800,
+      "loss": 2100000,
+      "tvl_before": 2861985,
+      "lgd": 0.7337564662288586
+     },
+     {
+      "name": "FutureSwap",
+      "date": 1765843200,
+      "loss": 270000,
+      "tvl_before": 1151273,
+      "lgd": 0.23452300192916883
+     },
+     {
+      "name": "Lixir Finance",
+      "date": 1782345600,
+      "loss": 12300,
+      "tvl_before": 70977,
+      "lgd": 0.17329557462276513
+     },
+     {
+      "name": "Demex Perp",
+      "date": 1790294400,
+      "loss": 191929,
+      "tvl_before": 185514,
+      "lgd": 1.0
+     },
+     {
+      "name": "Ribbon",
+      "date": 1765497600,
+      "loss": 2700000,
+      "tvl_before": 10050135,
+      "lgd": 0.2686531076448227
+     },
+     {
+      "name": "FlashTrade",
+      "date": 1784592000,
+      "loss": 98000,
+      "tvl_before": 8002978,
+      "lgd": 0.012245441634351612
+     },
+     {
+      "name": "Impermax V3",
+      "date": 1762819200,
+      "loss": 380000,
+      "tvl_before": 2465529,
+      "lgd": 0.15412513906751857
+     },
+     {
+      "name": "Pike V1",
+      "date": 1714435200,
+      "loss": 1600000,
+      "tvl_before": 1793901,
+      "lgd": 0.8919109805948043
+     },
+     {
+      "name": "DeltaPrime",
+      "date": 1731283200,
+      "loss": 4800000,
+      "tvl_before": 35938710,
+      "lgd": 0.13356072045991635
+     },
+     {
+      "name": "Makina",
+      "date": 1768867200,
+      "loss": 790000,
+      "tvl_before": 100474974,
+      "lgd": 0.00786265443572048
+     },
+     {
+      "name": "Float Protocol",
+      "date": 1788134400,
+      "loss": 28000,
+      "tvl_before": 217552,
+      "lgd": 0.1287048613664779
+     },
+     {
+      "name": "Solido Cash",
+      "date": 1784764800,
+      "loss": 900000,
+      "tvl_before": 719517,
+      "lgd": 1.0
+     },
+     {
+      "name": "Balancer V1",
+      "date": 1788048000,
+      "loss": 234000,
+      "tvl_before": 7370277,
+      "lgd": 0.031749145927622534
+     },
+     {
+      "name": "Radiant V2",
+      "date": 1704153600,
+      "loss": 4500000,
+      "tvl_before": 320758460,
+      "lgd": 0.014029248051633619
+     },
+     {
+      "name": "Ekubo",
+      "date": 1777939200,
+      "loss": 1400000,
+      "tvl_before": 37448901,
+      "lgd": 0.037384274641330595
+     },
+     {
+      "name": "Wise Lending V2",
+      "date": 1772236800,
+      "loss": 66000,
+      "tvl_before": 64220,
+      "lgd": 1.0
+     },
+     {
+      "name": "OcelotDex",
+      "date": 1726790400,
+      "loss": 4900000,
+      "tvl_before": 15,
+      "lgd": 1.0
+     },
+     {
+      "name": "Silo V2",
+      "date": 1775174400,
+      "loss": 359000,
+      "tvl_before": 39112653,
+      "lgd": 0.00917861542145965
+     },
+     {
+      "name": "Drift Trade",
+      "date": 1775001600,
+      "loss": 295000000,
+      "tvl_before": 311379738,
+      "lgd": 0.9473962625018331
+     },
+     {
+      "name": "KyberSwap Elastic",
+      "date": 1700611200,
+      "loss": 48000000,
+      "tvl_before": 71112848,
+      "lgd": 0.674983513527682
+     },
+     {
+      "name": "Vicuna Lending",
+      "date": 1743033600,
+      "loss": 700000,
+      "tvl_before": 3468584,
+      "lgd": 0.20181145966192543
+     },
+     {
+      "name": "Singularity Finance",
+      "date": 1777248000,
+      "loss": 413000,
+      "tvl_before": 65816,
+      "lgd": 1.0
+     },
+     {
+      "name": "Aave V3",
+      "date": 1773273600,
+      "loss": 0.0,
+      "tvl_before": 24730031496,
+      "lgd": 0.0
+     },
+     {
+      "name": "WEMIX.FI Lend",
+      "date": 1785024000,
+      "loss": 737000,
+      "tvl_before": 2337,
+      "lgd": 1.0
+     },
+     {
+      "name": "Astroport",
+      "date": 1790035200,
+      "loss": 4900000,
+      "tvl_before": 4535164,
+      "lgd": 1.0
+     },
+     {
+      "name": "Starlay Finance",
+      "date": 1707350400,
+      "loss": 2100000,
+      "tvl_before": 5316367,
+      "lgd": 0.39500659002661026
+     },
+     {
+      "name": "Pine Protocol",
+      "date": 1703203200,
+      "loss": 95000,
+      "tvl_before": 208342,
+      "lgd": 0.45598103118910255
+     },
+     {
+      "name": "Revert Lend",
+      "date": 1769644800,
+      "loss": 50000,
+      "tvl_before": 14310577,
+      "lgd": 0.0034939192179323027
+     },
+     {
+      "name": "Lien",
+      "date": 1784764800,
+      "loss": 542000,
+      "tvl_before": 162988,
+      "lgd": 1.0
+     },
+     {
+      "name": "ALEX",
+      "date": 1749168000,
+      "loss": 8373000,
+      "tvl_before": 19956777,
+      "lgd": 0.4195567250162689
+     },
+     {
+      "name": "Venus Core Pool",
+      "date": 1743206400,
+      "loss": 902000,
+      "tvl_before": 1608980575,
+      "lgd": 0.0005606034118839501
+     },
+     {
+      "name": "Abracadabra Spell",
+      "date": 1759536000,
+      "loss": 1700000,
+      "tvl_before": 23968237,
+      "lgd": 0.07092720253058245
+     },
+     {
+      "name": "Fluid Lending",
+      "date": 1780185600,
+      "loss": 215000,
+      "tvl_before": 753676172,
+      "lgd": 0.0002852684056993114
+     },
+     {
+      "name": "Virtue",
+      "date": 1787875200,
+      "loss": 894500,
+      "tvl_before": 1478165,
+      "lgd": 0.6051421864270904
+     },
+     {
+      "name": "CrossCurve",
+      "date": 1769904000,
+      "loss": 3000000,
+      "tvl_before": 3063300,
+      "lgd": 0.9793360101850945
+     },
+     {
+      "name": "Ploutos Money",
+      "date": 1772064000,
+      "loss": 390000,
+      "tvl_before": 3039614,
+      "lgd": 0.1283057651399158
+     },
+     {
+      "name": "Flooring Protocol",
+      "date": 1780876800,
+      "loss": 500000,
+      "tvl_before": 9,
+      "lgd": 1.0
+     },
+     {
+      "name": "Ostium",
+      "date": 1784073600,
+      "loss": 23750000,
+      "tvl_before": 63426759,
+      "lgd": 0.3744476365251455
+     },
+     {
+      "name": "OTSea",
+      "date": 1726185600,
+      "loss": 26000,
+      "tvl_before": 102085,
+      "lgd": 0.2546897193515208
+     },
+     {
+      "name": "Clober Liquidity Vault",
+      "date": 1733788800,
+      "loss": 500000,
+      "tvl_before": 507470,
+      "lgd": 0.9852799180247108
+     },
+     {
+      "name": "zkFinance",
+      "date": 1731283200,
+      "loss": 200000,
+      "tvl_before": 1405250,
+      "lgd": 0.14232342999466288
+     },
+     {
+      "name": "Moonwell Lending",
+      "date": 1771113600,
+      "loss": 1780000,
+      "tvl_before": 59714247,
+      "lgd": 0.029808631765883276
+     },
+     {
+      "name": "Chi Protocol",
+      "date": 1783900800,
+      "loss": 8500,
+      "tvl_before": 8474,
+      "lgd": 1.0
+     },
+     {
+      "name": "Hyperdrive HL Lending",
+      "date": 1758931200,
+      "loss": 782000,
+      "tvl_before": 11203204,
+      "lgd": 0.06980146036794474
+     },
+     {
+      "name": "Bodega Market",
+      "date": 1786665600,
+      "loss": 3600,
+      "tvl_before": 18453,
+      "lgd": 0.19509022923101935
+     },
+     {
+      "name": "Edel",
+      "date": 1782777600,
+      "loss": 403000,
+      "tvl_before": 602969,
+      "lgd": 0.6683594015612743
+     },
+     {
+      "name": "FilDA",
+      "date": 1766707200,
+      "loss": 166800,
+      "tvl_before": 245082,
+      "lgd": 0.680588537713908
+     },
+     {
+      "name": "PrismaLST",
+      "date": 1711584000,
+      "loss": 11600000,
+      "tvl_before": 205620883,
+      "lgd": 0.05641450338485318
+     },
+     {
+      "name": "Purrlend",
+      "date": 1777075200,
+      "loss": 1500000,
+      "tvl_before": 1531568,
+      "lgd": 0.9793884437387044
+     },
+     {
+      "name": "Locus Finance",
+      "date": 1791331200,
+      "loss": 18000,
+      "tvl_before": 54860,
+      "lgd": 0.32810791104629966
+     },
+     {
+      "name": "Set Protocol",
+      "date": 1791244800,
+      "loss": 21872.67,
+      "tvl_before": 15387504,
+      "lgd": 0.0014214566572980257
+     },
+     {
+      "name": "Blend Pools V2",
+      "date": 1771718400,
+      "loss": 10970000,
+      "tvl_before": 96443432,
+      "lgd": 0.11374543369630397
+     },
+     {
+      "name": "Hinkal",
+      "date": 1782950400,
+      "loss": 820000,
+      "tvl_before": 832935,
+      "lgd": 0.9844705769357753
+     },
+     {
+      "name": "Seneca",
+      "date": 1709078400,
+      "loss": 6400000,
+      "tvl_before": 2017186,
+      "lgd": 1.0
+     },
+     {
+      "name": "Mars Perps",
+      "date": 1765670400,
+      "loss": 960000,
+      "tvl_before": 290618,
+      "lgd": 1.0
+     },
+     {
+      "name": "Levana Perps",
+      "date": 1703635200,
+      "loss": 1100000,
+      "tvl_before": 10619633,
+      "lgd": 0.10358173394504311
+     },
+     {
+      "name": "Polymarket International",
+      "date": 1782345600,
+      "loss": 3000000,
+      "tvl_before": 457182797,
+      "lgd": 0.006561926694717693
+     },
+     {
+      "name": "DeltaPrime",
+      "date": 1721692800,
+      "loss": 1000000,
+      "tvl_before": 44536501,
+      "lgd": 0.02245349269804559
+     },
+     {
+      "name": "WOOFi Swap",
+      "date": 1709596800,
+      "loss": 8750000,
+      "tvl_before": 26158725,
+      "lgd": 0.3344964251889188
+     },
+     {
+      "name": "Kelp",
+      "date": 1776470400,
+      "loss": 293000000,
+      "tvl_before": 1642062230,
+      "lgd": 0.17843416324118241
+     },
+     {
+      "name": "Synthetify",
+      "date": 1697673600,
+      "loss": 230000,
+      "tvl_before": 4088,
+      "lgd": 1.0
+     },
+     {
+      "name": "BarnBridge",
+      "date": 1783987200,
+      "loss": 776000,
+      "tvl_before": 23523,
+      "lgd": 1.0
+     },
+     {
+      "name": "OpenLeverage",
+      "date": 1711929600,
+      "loss": 236000,
+      "tvl_before": 1802806,
+      "lgd": 0.13090704157851704
+     },
+     {
+      "name": "NEAR Intents",
+      "date": 1790812800,
+      "loss": 3800000,
+      "tvl_before": 248146523,
+      "lgd": 0.015313533125749257
+     },
+     {
+      "name": "Lazy Summer Protocol",
+      "date": 1783209600,
+      "loss": 6040000,
+      "tvl_before": 20831226,
+      "lgd": 0.2899493289545224
+     },
+     {
+      "name": "Namada Shielded Pools",
+      "date": 1781827200,
+      "loss": 600000,
+      "tvl_before": 609,
+      "lgd": 1.0
+     },
+     {
+      "name": "Stake DAO Yield",
+      "date": 1779840000,
+      "loss": 91000,
+      "tvl_before": 155816579,
+      "lgd": 0.0005840200098347686
+     },
+     {
+      "name": "Gondi V3",
+      "date": 1773014400,
+      "loss": 230000,
+      "tvl_before": 436801,
+      "lgd": 0.5265555710724106
+     },
+     {
+      "name": "Tectonic",
+      "date": 1788048000,
+      "loss": 124470000,
+      "tvl_before": 121745946,
+      "lgd": 1.0
+     },
+     {
+      "name": "Flooring Protocol",
+      "date": 1702771200,
+      "loss": 1600000,
+      "tvl_before": 34725087,
+      "lgd": 0.0460761984556007
+     },
+     {
+      "name": "Impermax V3",
+      "date": 1745625600,
+      "loss": 300000,
+      "tvl_before": 1268555,
+      "lgd": 0.2364895491326746
+     },
+     {
+      "name": "Set Protocol",
+      "date": 1785369600,
+      "loss": 9600,
+      "tvl_before": 10135091,
+      "lgd": 0.0009472041247582286
+     },
+     {
+      "name": "Radiant V2",
+      "date": 1729036800,
+      "loss": 50000000,
+      "tvl_before": 75212058,
+      "lgd": 0.6647870212512998
+     },
+     {
+      "name": "Locus Finance",
+      "date": 1703894400,
+      "loss": 321000,
+      "tvl_before": 1032818,
+      "lgd": 0.31080016033802665
+     },
+     {
+      "name": "Corepound",
+      "date": 1758585600,
+      "loss": 400000,
+      "tvl_before": 362280,
+      "lgd": 1.0
+     },
+     {
+      "name": "UwU Lend",
+      "date": 1718236800,
+      "loss": 3700000,
+      "tvl_before": 2880262,
+      "lgd": 1.0
+     },
+     {
+      "name": "Chainflip AMM",
+      "date": 1789171200,
+      "loss": 736442.17,
+      "tvl_before": 11653340,
+      "lgd": 0.06319580223352275
+     },
+     {
+      "name": "Sharwa.Finance",
+      "date": 1760918400,
+      "loss": 146000,
+      "tvl_before": 101221,
+      "lgd": 1.0
+     },
+     {
+      "name": "DeltaPrime",
+      "date": 1726444800,
+      "loss": 5980000,
+      "tvl_before": 64075599,
+      "lgd": 0.09332725863397703
+     },
+     {
+      "name": "Aerodrome V1",
+      "date": 1763683200,
+      "loss": 700000,
+      "tvl_before": 186411240,
+      "lgd": 0.00375513837041157
+     },
+     {
+      "name": "four.meme",
+      "date": 1739232000,
+      "loss": 183000,
+      "tvl_before": 590326,
+      "lgd": 0.30999820438198555
+     },
+     {
+      "name": "Cozy V2",
+      "date": 1788739200,
+      "loss": 163326,
+      "tvl_before": 175542,
+      "lgd": 0.9304098164541819
+     },
+     {
+      "name": "Zoth ZeUSD",
+      "date": 1742515200,
+      "loss": 8850000,
+      "tvl_before": 26391986,
+      "lgd": 0.33532906542160185
+     },
+     {
+      "name": "Loopring",
+      "date": 1717891200,
+      "loss": 5000000,
+      "tvl_before": 90608743,
+      "lgd": 0.05518231281500065
+     },
+     {
+      "name": "Bunni V2",
+      "date": 1756771200,
+      "loss": 8400000,
+      "tvl_before": 50583028,
+      "lgd": 0.16606360536581558
+     },
+     {
+      "name": "Sonne Finance",
+      "date": 1715731200,
+      "loss": 20000000,
+      "tvl_before": 24439,
+      "lgd": 1.0
+     },
+     {
+      "name": "Cork V1",
+      "date": 1748390400,
+      "loss": 12000000,
+      "tvl_before": 21484613,
+      "lgd": 0.5585392671490057
+     },
+     {
+      "name": "ALEX",
+      "date": 1715817600,
+      "loss": 4300000,
+      "tvl_before": 64058492,
+      "lgd": 0.0671261508934678
+     },
+     {
+      "name": "Symbiosis",
+      "date": 1788998400,
+      "loss": 336000,
+      "tvl_before": 9451732,
+      "lgd": 0.035549040112436536
+     },
+     {
+      "name": "Juicebox V3",
+      "date": 1776643200,
+      "loss": 52000,
+      "tvl_before": 267320,
+      "lgd": 0.1945234176268143
+     },
+     {
+      "name": "Cetus CLMM",
+      "date": 1747872000,
+      "loss": 223000000,
+      "tvl_before": 37839954,
+      "lgd": 1.0
+     },
+     {
+      "name": "Ronin Bridge",
+      "date": 1722902400,
+      "loss": 12000000,
+      "tvl_before": 640387654,
+      "lgd": 0.018738649824126683
+     }
+    ],
+    "method": "net loss / protocol TVL within 7 days before the hack (DefiLlama TVL history)"
+   }
+  },
+  "depeg": {
+   "classes": {
+    "fiat_backed": {
+     "coin_years": 33.5,
+     "coins": {
+      "usd-coin": {
+       "years": 6.77,
+       "min_price": 0.960264,
+       "p_annual_over_24h<0.99": 0.07381782292008689,
+       "episodes<0.99": 2,
+       "p_annual_over_24h<0.97": 0.07381782292008689,
+       "episodes<0.97": 1,
+       "p_annual_over_24h<0.9": 0.07381782292008689,
+       "episodes<0.9": 0
+      },
+      "tether": {
+       "years": 6.77,
+       "min_price": 0.9744295668729073,
+       "p_annual_over_24h<0.99": 0.07381783051759581,
+       "episodes<0.99": 3,
+       "p_annual_over_24h<0.97": 0.07381783051759581,
+       "episodes<0.97": 0,
+       "p_annual_over_24h<0.9": 0.07381783051759581,
+       "episodes<0.9": 0
+      },
+      "true-usd": {
+       "years": 6.77,
+       "min_price": 0.961512,
+       "p_annual_over_24h<0.99": 0.3690886535704022,
+       "episodes<0.99": 9,
+       "p_annual_over_24h<0.97": 0.22145319214224132,
+       "episodes<0.97": 1,
+       "p_annual_over_24h<0.9": 0.07381773071408045,
+       "episodes<0.9": 0
+      },
+      "first-digital-usd": {
+       "years": 3.21,
+       "min_price": 0.985843,
+       "p_annual_over_24h<0.99": 0.1559555364823309,
+       "episodes<0.99": 3,
+       "p_annual_over_24h<0.97": 0.1559555364823309,
+       "episodes<0.97": 0,
+       "p_annual_over_24h<0.9": 0.1559555364823309,
+       "episodes<0.9": 0
+      },
+      "binance-usd": {
+       "years": 6.77,
+       "min_price": 0.872387,
+       "p_annual_over_24h<0.99": 3.3218088691753187,
+       "episodes<0.99": 75,
+       "p_annual_over_24h<0.97": 0.3690898743528132,
+       "episodes<0.97": 21,
+       "p_annual_over_24h<0.9": 0.07381797487056264,
+       "episodes<0.9": 1
+      },
+      "paypal-usd": {
+       "years": 3.15,
+       "min_price": 0.989201,
+       "p_annual_over_24h<0.99": 0.15867255985304074,
+       "episodes<0.99": 1,
+       "p_annual_over_24h<0.97": 0.15867255985304074,
+       "episodes<0.97": 0,
+       "p_annual_over_24h<0.9": 0.15867255985304074,
+       "episodes<0.9": 0
+      }
+     },
+     "thresholds": {
+      "0.99": {
+       "episodes": 93,
+       "episodes_over_24h": 24,
+       "p_annual": 2.7951409449109765,
+       "p_annual_over_24h": 0.7324166112333574,
+       "median_duration_days": 1,
+       "median_trough": 0.981544
+      },
+      "0.97": {
+       "episodes": 23,
+       "episodes_over_24h": 3,
+       "p_annual": 0.7025220556728122,
+       "p_annual_over_24h": 0.10463094446190821,
+       "median_duration_days": 1,
+       "median_trough": 0.957198
+      },
+      "0.9": {
+       "episodes": 1,
+       "episodes_over_24h": 0,
+       "p_annual": 0.0448418333408178,
+       "p_annual_over_24h": 0.014947277780272602,
+       "median_duration_days": 1,
+       "median_trough": 0.872387
+      }
+     }
+    },
+    "crypto_backed": {
+     "coin_years": 18.9,
+     "coins": {
+      "dai": {
+       "years": 6.77,
+       "min_price": 0.966877,
+       "p_annual_over_24h<0.99": 0.22145339831066205,
+       "episodes<0.99": 4,
+       "p_annual_over_24h<0.97": 0.07381779943688735,
+       "episodes<0.97": 2,
+       "p_annual_over_24h<0.9": 0.07381779943688735,
+       "episodes<0.9": 0
+      },
+      "liquity-usd": {
+       "years": 5.51,
+       "min_price": 0.9797723046164221,
+       "p_annual_over_24h<0.99": 0.4536162571595605,
+       "episodes<0.99": 12,
+       "p_annual_over_24h<0.97": 0.09072325143191211,
+       "episodes<0.97": 0,
+       "p_annual_over_24h<0.9": 0.09072325143191211,
+       "episodes<0.9": 0
+      },
+      "crvusd": {
+       "years": 3.38,
+       "min_price": 0.984856,
+       "p_annual_over_24h<0.99": 0.14799408169990264,
+       "episodes<0.99": 4,
+       "p_annual_over_24h<0.97": 0.14799408169990264,
+       "episodes<0.97": 0,
+       "p_annual_over_24h<0.9": 0.14799408169990264,
+       "episodes<0.9": 0
+      },
+      "gho": {
+       "years": 3.24,
+       "min_price": 0.95806,
+       "p_annual_over_24h<0.99": 1.3905511317569552,
+       "episodes<0.99": 12,
+       "p_annual_over_24h<0.97": 1.3905511317569552,
+       "episodes<0.97": 8,
+       "p_annual_over_24h<0.9": 0.15450568130632836,
+       "episodes<0.9": 0
+      }
+     },
+     "thresholds": {
+      "0.99": {
+       "episodes": 32,
+       "episodes_over_24h": 7,
+       "p_annual": 1.719636692490011,
+       "p_annual_over_24h": 0.3968392367284641,
+       "median_duration_days": 1.0,
+       "median_trough": 0.9876244864060846
+      },
+      "0.97": {
+       "episodes": 10,
+       "episodes_over_24h": 4,
+       "p_annual": 0.5555749314198497,
+       "p_annual_over_24h": 0.23810354203707845,
+       "median_duration_days": 1.0,
+       "median_trough": 0.9668315000000001
+      },
+      "0.9": {
+       "episodes": 0,
+       "episodes_over_24h": 0,
+       "p_annual": 0.026455949115230942,
+       "p_annual_over_24h": 0.026455949115230942,
+       "median_duration_days": null,
+       "median_trough": null
+      }
+     }
+    },
+    "synthetic": {
+     "coin_years": 25.6,
+     "coins": {
+      "ethena-usde": {
+       "years": 2.82,
+       "min_price": 0.9789653544810613,
+       "p_annual_over_24h<0.99": 0.17714119054826213,
+       "episodes<0.99": 1,
+       "p_annual_over_24h<0.97": 0.17714119054826213,
+       "episodes<0.97": 0,
+       "p_annual_over_24h<0.9": 0.17714119054826213,
+       "episodes<0.9": 0
+      },
+      "terrausd": {
+       "years": 6.02,
+       "min_price": 0.004335975112076406,
+       "p_annual_over_24h<0.99": 0.4154367894157739,
+       "episodes<0.99": 12,
+       "p_annual_over_24h<0.97": 0.4154367894157739,
+       "episodes<0.97": 3,
+       "p_annual_over_24h<0.9": 0.24926207364946432,
+       "episodes<0.9": 1
+      },
+      "frax": {
+       "years": 5.8,
+       "min_price": 0.965578,
+       "p_annual_over_24h<0.99": 1.2928234593146413,
+       "episodes<0.99": 46,
+       "p_annual_over_24h<0.97": 0.08618823062097608,
+       "episodes<0.97": 1,
+       "p_annual_over_24h<0.9": 0.08618823062097608,
+       "episodes<0.9": 0
+      },
+      "usdd": {
+       "years": 4.44,
+       "min_price": 0.9613187197760233,
+       "p_annual_over_24h<0.99": 3.2653374976391367,
+       "episodes<0.99": 18,
+       "p_annual_over_24h<0.97": 0.33779353423853137,
+       "episodes<0.97": 2,
+       "p_annual_over_24h<0.9": 0.11259784474617712,
+       "episodes<0.9": 0
+      },
+      "nusd": {
+       "years": 6.49,
+       "min_price": 0.2323782142785058,
+       "p_annual_over_24h<0.99": 3.469030896807898,
+       "episodes<0.99": 71,
+       "p_annual_over_24h<0.97": 2.5439559909924583,
+       "episodes<0.97": 33,
+       "p_annual_over_24h<0.9": 1.0021644813000594,
+       "episodes<0.9": 10
+      }
+     },
+     "thresholds": {
+      "0.99": {
+       "episodes": 148,
+       "episodes_over_24h": 45,
+       "p_annual": 5.8080027824256835,
+       "p_annual_over_24h": 1.7795564080832902,
+       "median_duration_days": 1.0,
+       "median_trough": 0.9853639551673405
+      },
+      "0.97": {
+       "episodes": 39,
+       "episodes_over_24h": 19,
+       "p_annual": 1.5448896289953837,
+       "p_annual_over_24h": 0.7626670320356957,
+       "median_duration_days": 1,
+       "median_trough": 0.957548
+      },
+      "0.9": {
+       "episodes": 11,
+       "episodes_over_24h": 7,
+       "p_annual": 0.4497779932518206,
+       "p_annual_over_24h": 0.293333473859883,
+       "median_duration_days": 3,
+       "median_trough": 0.8365333871716181
+      }
+     }
+    }
+   },
+   "method": "daily prices (DefiLlama coins, CoinGecko ids), runs below threshold; >24h = >=2 consecutive daily points; daily data misses intraday CEX wicks"
+  },
+  "oracle_stale": {
+   "USDe/USD": {
+    "aggregator": "0xcc16f670129f965b396f2e81312f6e339ffdb18e",
+    "n_updates": 849,
+    "years": 2.24,
+    "heartbeat_p95_s": 86436,
+    "stale_events": 0,
+    "p_stale_annual": 0.22275914364534183,
+    "max_gap_s": 86484
+   },
+   "USDC/USD": {
+    "aggregator": "0x54bcc589d9743e521c64233706fc8cb36d275b07",
+    "n_updates": 28,
+    "years": 0.07,
+    "heartbeat_p95_s": 82836,
+    "stale_events": 0,
+    "p_stale_annual": 7.110603987648781,
+    "max_gap_s": 82836
+   }
+  }
+ },
+ "method_params": {
+  "window_years": {
+   "value": 3.0,
+   "source": "method choice (Fault Line), shown in Assumptions"
+  },
+  "min_exposure_protocol_years": {
+   "value": 50.0,
+   "source": "method choice (Fault Line), shown in Assumptions"
+  },
+  "material_loss_share": {
+   "value": 0.01,
+   "source": "method choice (Fault Line), shown in Assumptions"
+  },
+  "jeffreys_prior": {
+   "value": 0.5,
+   "source": "method choice (Fault Line), shown in Assumptions"
+  }
+ }
+}
