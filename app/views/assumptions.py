@@ -32,12 +32,31 @@ ui.findings([
     "cached fork measurements.",
     f"Source of every assumed value: <b>{SOURCE}</b>. Each one is replaced as soon as Belem answers (QUESTIONS.md)."])
 
-if st.button("Reset all to ASSUMED_ANSWERS.md"):
+
+
+def _wkey(a) -> str:
+    return f"tg_{a.key}" if isinstance(a.default, bool) else f"sl_{a.key}"
+
+
+def _cast(a, v):
+    return bool(v) if isinstance(a.default, bool) else int(v) if isinstance(a.default, int) else float(v)
+
+
+def _reset() -> None:
+    """Button callback (runs before the widgets are drawn): every widget's state back to its default."""
     ov.clear()
-    # the widgets keep their own state under their keys: drop it too, or they write the old values straight back
-    for k in [k for k in st.session_state if str(k).startswith(("sl_", "tg_"))]:
-        del st.session_state[k]
-    st.rerun()
+    for a in assumptions():
+        if (a.numeric and a.slider) or isinstance(a.default, bool):
+            st.session_state[_wkey(a)] = _cast(a, a.default)
+
+
+# the widgets are driven by session state only (no value= argument): seeded once from the current value, so leaving
+# and coming back to this page keeps the overrides, and the reset above really moves the sliders back
+for a in allv:
+    if (a.numeric and a.slider) or isinstance(a.default, bool):
+        st.session_state.setdefault(_wkey(a), _cast(a, a.value))
+
+st.button("Reset all to ASSUMED_ANSWERS.md", on_click=_reset)
 
 st.markdown("### Assumptions")
 by_section = defaultdict(list)
@@ -57,15 +76,14 @@ for section, items in by_section.items():
                 is_int = isinstance(a.default, int)
                 v = st.slider(label, min_value=int(lo) if is_int else float(lo),
                               max_value=int(hi) if is_int else float(hi),
-                              value=int(a.value) if is_int else float(a.value),
-                              step=int(step) if is_int else float(step), key=f"sl_{a.key}",
+                              step=int(step) if is_int else float(step), key=_wkey(a),
                               help=f"default {a.default} · {a.source}")
                 if v != a.default:
                     ov[a.key] = v
                 else:
                     ov.pop(a.key, None)
             elif isinstance(a.default, bool):
-                v = st.toggle(label, value=bool(a.value), key=f"tg_{a.key}", help=a.source)
+                v = st.toggle(label, key=_wkey(a), help=a.source)
                 if v != a.default:
                     ov[a.key] = v
                 else:
