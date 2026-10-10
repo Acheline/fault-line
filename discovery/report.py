@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
-from pathlib import Path
 
 import networkx as nx
 
@@ -108,28 +107,6 @@ def critical_nodes(g: DependencyGraph) -> list[dict]:
                         "paths": sorted(p.value for p in n.paths)})
     return sorted(out, key=lambda x: (-len(x["paths"]), x["label"]))
 
-
-COLORS = {"POSITION": "#111111", "ASSET": "#2b8a3e", "ORACLE": "#e8590c", "LIQUIDITY_VENUE": "#1971c2",
-          "LENDING_MARKET": "#7048e8", "VAULT": "#9c36b5", "GOVERNANCE": "#c92a2a", "ISSUER": "#f08c00",
-          "OFFCHAIN": "#868e96", "CONTRACT": "#adb5bd", "CHAIN": "#000000"}
-
-
-def render_html(g: DependencyGraph, out: Path):
-    from pyvis.network import Network
-    net = Network(height="900px", width="100%", directed=True, cdn_resources="in_line")
-    for n in g.nodes.values():
-        prov = "<br>".join(f"{p.source}:{p.call or ''} {p.detail or ''} {p.url or ''}" for p in n.provenance[:4])
-        title = f"<b>{n.label}</b><br>{n.type.value} {n.id}<br>tags: {sorted(n.tags)}<br>paths: {sorted(p.value for p in n.paths)}<br>{prov}"
-        net.add_node(n.id, label=n.label[:32], color=COLORS.get(n.type.value, "#ccc"), title=title,
-                     size=28 if "critical" in n.tags else (22 if n.type != NodeType.CONTRACT else 10),
-                     borderWidth=4 if n.tags & {"fixed_schedule", "issuer_reported"} else 1)
-    for e in g.edges.values():
-        net.add_edge(e.src, e.dst, title=f"{e.type.value} {e.props.get('functions', '') or e.props.get('getter', '')}",
-                     label=e.type.value if e.type not in (EdgeType.EXIT_ROUTE, EdgeType.DELEGATES_TO) else "",
-                     color={"prices": "#e8590c", "exit_route": "#1971c2", "liquidation_route": "#7048e8",
-                            "governs": "#c92a2a", "backs": "#868e96"}.get(e.type.value, "#999"))
-    net.set_options('{"physics": {"solver": "forceAtlas2Based", "stabilization": {"iterations": 300}}}')
-    out.write_text(net.generate_html())
 
 
 BRIEF_LAYERS = ["1. settlement chain", "2. yield source & issuer", "3. oracle", "4. PT AMM", "5. lending market"]

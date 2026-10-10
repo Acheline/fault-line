@@ -20,7 +20,8 @@ from core.fork import ROOT, DiskCache, Fork, selector
 from core.schemas import CriticalPath, Edge, EdgeType, Node, NodeType, Provenance, stable_hash
 from discovery import disclosures, oracle_quality, tvl
 from discovery.builder import GraphBuilder
-from discovery.report import brief_layers, critical_nodes, depth_report, render_html
+from discovery import viz
+from discovery.report import brief_layers, critical_nodes, depth_report
 
 H = A.HERO1
 HARNESS = "0xfa0171fa0171fa0171fa0171fa0171fa0171fa01"   # our simulated holder / liquidator
@@ -199,7 +200,7 @@ def build(offline: bool = False):
               "n_nodes": len(g.nodes), "n_edges": len(g.edges)}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "hero1.json").write_text(g.to_json())
-    render_html(g, OUT / "hero1.html")
+    viz.export(OUT / "hero1.json", ROOT / "output" / "hero1_graph.html")
     return g
 
 
@@ -343,4 +344,4 @@ def print_summary(g):
 if __name__ == "__main__":
     graph = build(offline="--offline" in sys.argv)
     print_summary(graph)
-    print(f"\n→ {OUT/'hero1.json'}\n→ {OUT/'hero1.html'}")
+    print(f"\n→ {OUT/'hero1.json'}\n→ {ROOT/'output'/'hero1_graph.html'}")
