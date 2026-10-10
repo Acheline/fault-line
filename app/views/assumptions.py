@@ -34,6 +34,9 @@ ui.findings([
 
 if st.button("Reset all to ASSUMED_ANSWERS.md"):
     ov.clear()
+    # the widgets keep their own state under their keys: drop it too, or they write the old values straight back
+    for k in [k for k in st.session_state if str(k).startswith(("sl_", "tg_"))]:
+        del st.session_state[k]
     st.rerun()
 
 st.markdown("### Assumptions")
