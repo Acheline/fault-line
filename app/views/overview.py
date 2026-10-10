@@ -9,9 +9,9 @@ from core.config import cfg
 from core.fork import ROOT
 
 ui.setup("⚡ Fault Line", "Fork it. Trace it. Break it. Then: stay or get out.")
-st.markdown("<div style='font-size:17px;margin-bottom:8px'>Other tools guess the dependency graph and guess the losses. "
-            "Fault Line reads them from the protocols' own code, executed on a fork of real Ethereum state, and turns "
-            "them into <b>one number</b> per position: the net value of exiting now.</div>", unsafe_allow_html=True)
+st.markdown("<div style='font-size:17px;margin-bottom:8px'>We read dependencies and losses from the protocols' own code, "
+            "executed on a fork of real Ethereum, and turn them into one decision per position.</div>",
+            unsafe_allow_html=True)
 
 ov = overrides()
 ov_key = tuple(sorted(ov.items()))

@@ -143,6 +143,9 @@ def setup(title: str, subtitle: str = "") -> None:
     .fl-find {font-size: 16px; line-height: 1.5; margin: 0 0 4px 0; color: #c2ccd7}
     .fl-find b {color: #fff}
     .fl-take {font-size: 16px; color: #c2ccd7; margin: -6px 0 6px 0}
+    .fl-card .num .words {font-size: 0.62em; font-weight: 600; color: #c2ccd7; letter-spacing: 0}
+    .fl-marginal {--c: #40566b; color: #c2ccd7 !important; font-size: 13px !important; font-weight: 650;
+                  margin-left: 10px; vertical-align: middle; letter-spacing: .04em}
     .fl-tag {display: inline-block; border-radius: 4px; padding: 1px 7px; font-size: 13px; font-weight: 600;
              color: #fff; background: var(--c)}
     </style>""", unsafe_allow_html=True)
@@ -157,13 +160,18 @@ def headline_card(h: dict, why: str, label: str = "Net value of exiting now", sm
                   extra: str = "") -> None:
     """Action in large colored text, net $ and bps next to it, one-line why."""
     c = ACTION_COLORS.get(h["action"], INK)
-    net = h["net_value_exit_now_usd"]
+    net, b = h["net_value_exit_now_usd"], h["net_value_exit_now_bps_book"]
+    # plain words; the sign decides (a budget-forced REDUCE can carry a negative net, which is a cost, not a saving)
+    saves = net >= 0
+    words = "Exiting now saves you" if saves else "Exiting now would cost you"
+    marginal = "<span class='fl-tag fl-marginal'>marginal</span>" if abs(b) < 1 else ""
     st.markdown(
         f"<div class='fl-card{' small' if small else ''}' style='--c:{c}'>"
         f"<div class='lab'>{html.escape(label)}</div><div class='row'>"
-        f"<div class='act'>{html.escape(action_label(h))}</div>"
-        f"<div><div class='num'>{usd(net, signed=True)}</div>"
-        f"<div class='sub'>{bps(h['net_value_exit_now_bps_book'])} bps of the {html.escape(h['bps_basis'])}</div></div>"
+        f"<div class='act'>{html.escape(action_label(h))}{marginal}</div>"
+        f"<div><div class='num'><span class='words'>{words}</span> {usd(abs(net))}</div>"
+        f"<div class='sub'>{'saves' if saves else 'would cost'} {abs(b):.1f} bps of the "
+        f"{html.escape(h['bps_basis'])}</div></div>"
         f"</div><div class='why'>{html.escape(why)}</div>{extra}</div>", unsafe_allow_html=True)
 
 
