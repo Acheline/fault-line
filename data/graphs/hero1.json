@@ -36,8 +36,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
@@ -62,13 +62,13 @@
    "chain": "ethereum",
    "address": "0xb195b618ea52b77cb2a58846f452f59f8dfa9390",
    "tags": [
-    "pendle_pt",
-    "critical"
+    "critical",
+    "pendle_pt"
    ],
    "paths": [
     "exit",
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -148,8 +148,8 @@
    "chain": "ethereum",
    "address": "0xbf98480425a29197e5d99d003017f63a1e595d02",
    "tags": [
-    "pendle_sy",
-    "critical"
+    "critical",
+    "pendle_sy"
    ],
    "paths": [
     "exit",
@@ -273,8 +273,8 @@
    "chain": "ethereum",
    "address": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
    "tags": [
-    "erc4626",
-    "critical"
+    "critical",
+    "erc4626"
    ],
    "paths": [
     "exit",
@@ -497,12 +497,12 @@
    "chain": "ethereum",
    "address": "0xf8b29e7e9c00ce531434775f7923cc9fbca01b08",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -603,8 +603,8 @@
     "implementation"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -641,12 +641,12 @@
    "chain": "ethereum",
    "address": "0x8fca98c9abee4dcb33ba9f3d17db4ad57f72706d",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -726,14 +726,14 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
-    "chainlink_interface",
     "fixed_schedule",
+    "critical",
     "no_update_timestamp",
-    "critical"
+    "chainlink_interface"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
@@ -975,8 +975,8 @@
    "chain": "ethereum",
    "address": "0x89e6e5f7c3a60e7d6347f054051a29a272f4ce44",
    "tags": [
-    "pendle_pt",
-    "critical"
+    "critical",
+    "pendle_pt"
    ],
    "paths": [
     "exit",
@@ -1704,8 +1704,8 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "exit",
@@ -2982,8 +2982,8 @@
    "chain": "ethereum",
    "address": "0xd8063123bba3b480569244ae66bfe72b6c84b00d",
    "tags": [
-    "erc4626",
-    "implementation"
+    "implementation",
+    "erc4626"
    ],
    "paths": [
     "exit"
@@ -4637,8 +4637,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -6522,8 +6522,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {
@@ -6547,8 +6547,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {
@@ -6572,8 +6572,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {
