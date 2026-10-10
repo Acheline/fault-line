@@ -1,6 +1,6 @@
 {
  "position_id": "P3",
- "fork_block": 26161499,
+ "fork_block": 26162857,
  "nodes": {
   "position:P3": {
    "id": "position:P3",
@@ -37,8 +37,8 @@
     "erc4626"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "StakedUSDeV2",
@@ -47,7 +47,7 @@
     "underlying": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
     "storage_slots_read": {
      "value": 3,
-     "exit": 36
+     "exit": 34
     }
    },
    "provenance": [
@@ -61,7 +61,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P3.convertToAssets",
      "detail": "CALL 0x07a2d13a",
      "url": null,
@@ -69,7 +69,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -77,7 +77,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -85,7 +85,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -93,7 +93,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -109,8 +109,8 @@
    "address": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
    "tags": [],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "USDe",
@@ -124,7 +124,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P3.convertToAssets",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -132,7 +132,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -140,7 +140,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -167,7 +167,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xe21fd0e9",
      "url": null,
@@ -193,13 +193,13 @@
     "symbol": "USDC",
     "decimals": 6,
     "storage_slots_read": {
-     "exit": 21
+     "exit": 22
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -207,7 +207,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -215,7 +215,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -223,7 +223,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -231,7 +231,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -263,7 +263,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -271,7 +271,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -279,7 +279,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -287,7 +287,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xdd62ed3e",
      "url": null,
@@ -295,7 +295,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -322,7 +322,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xd9c45357",
      "url": null,
@@ -330,7 +330,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x91dd7346",
      "url": null,
@@ -338,7 +338,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -346,7 +346,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x2c8958f6",
      "url": null,
@@ -354,7 +354,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3ed37eda",
      "url": null,
@@ -362,9 +362,9 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
-     "detail": "CALL 0x",
+     "detail": "CALL 0xfa461e33",
      "url": null,
      "confidence": 1.0
     }
@@ -392,7 +392,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xd9c45357",
      "url": null,
@@ -400,7 +400,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x91dd7346",
      "url": null,
@@ -408,7 +408,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -416,7 +416,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x2c8958f6",
      "url": null,
@@ -424,9 +424,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3ed37eda",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0xfa461e33",
      "url": null,
      "confidence": 1.0
     }
@@ -454,7 +462,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x736e774d",
      "url": null,
@@ -475,13 +483,13 @@
    "props": {
     "contract_name": "PoolManager",
     "storage_slots_read": {
-     "exit": 157
+     "exit": 62
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x48c89491",
      "url": null,
@@ -489,7 +497,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa5841194",
      "url": null,
@@ -497,7 +505,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x11da60b4",
      "url": null,
@@ -505,7 +513,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf3cd914c",
      "url": null,
@@ -513,7 +521,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x0b0d9c09",
      "url": null,
@@ -521,7 +529,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1e2eaeaf",
      "url": null,
@@ -551,7 +559,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x91dd7346",
      "url": null,
@@ -559,7 +567,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -567,7 +575,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x61f598cd",
      "url": null,
@@ -590,13 +598,13 @@
     "symbol": "USDT",
     "decimals": 6,
     "storage_slots_read": {
-     "exit": 21
+     "exit": 22
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -604,7 +612,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -612,7 +620,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -620,7 +628,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x095ea7b3",
      "url": null,
@@ -628,7 +636,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -658,7 +666,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x08fce009",
      "url": null,
@@ -666,7 +674,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xb3729668",
      "url": null,
@@ -674,7 +682,15 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x3b9d6e09",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xbd1eba5b",
      "url": null,
@@ -706,7 +722,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -714,7 +730,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -722,7 +738,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -730,7 +746,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -738,7 +754,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -753,8 +769,8 @@
    "chain": "ethereum",
    "address": "0xd8063123bba3b480569244ae66bfe72b6c84b00d",
    "tags": [
-    "implementation",
-    "erc4626"
+    "erc4626",
+    "implementation"
    ],
    "paths": [
     "exit"
@@ -772,7 +788,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -780,7 +796,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x07a2d13a",
      "url": null,
@@ -788,7 +804,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -796,7 +812,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xba087652",
      "url": null,
@@ -804,7 +820,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -833,7 +849,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -863,7 +879,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xe972feb9",
      "url": null,
@@ -871,7 +887,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xc318eada",
      "url": null,
@@ -898,7 +914,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -906,7 +922,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -914,7 +930,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -941,7 +957,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -966,13 +982,13 @@
     "proxy_admin": "0x2386dc45added673317ef068992f19421b481f4c",
     "contract_name": "FluidLiquidityProxy",
     "storage_slots_read": {
-     "exit": 25
+     "exit": 27
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -980,7 +996,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -1010,7 +1026,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xad967e15",
      "url": null,
@@ -1039,7 +1055,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1047,7 +1063,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1074,7 +1090,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -1082,7 +1098,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -1090,7 +1106,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -1117,7 +1133,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -1146,7 +1162,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1154,7 +1170,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1162,7 +1178,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1191,7 +1207,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -1224,7 +1240,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1232,7 +1248,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1240,7 +1256,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1272,7 +1288,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -1280,7 +1296,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -1288,7 +1304,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -1296,7 +1312,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1325,7 +1341,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -1357,7 +1373,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1365,7 +1381,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -1373,7 +1389,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1381,7 +1397,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -1410,7 +1426,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -1437,7 +1453,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x20aba08b",
      "url": null,
@@ -1445,7 +1461,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xc92aecc4",
      "url": null,
@@ -1453,7 +1469,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x487bf082",
      "url": null,
@@ -1461,7 +1477,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9f678cca",
      "url": null,
@@ -1469,7 +1485,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7f8661a1",
      "url": null,
@@ -1501,7 +1517,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1509,7 +1525,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1541,7 +1557,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -1549,7 +1565,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -1557,7 +1573,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1586,7 +1602,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -1613,7 +1629,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x693de592",
      "url": null,
@@ -1642,7 +1658,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x0902f1ac",
      "url": null,
@@ -1650,7 +1666,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x022c0d9f",
      "url": null,
@@ -1680,7 +1696,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x6efd106f",
      "url": null,
@@ -1701,13 +1717,13 @@
    "props": {
     "contract_name": "AlgebraPool",
     "storage_slots_read": {
-     "exit": 24
+     "exit": 36
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x128acb08",
      "url": null,
@@ -1715,7 +1731,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xe76c01e4",
      "url": null,
@@ -1723,7 +1739,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -1731,7 +1747,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x050a4d21",
      "url": null,
@@ -1739,7 +1755,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd5c35a7e",
      "url": null,
@@ -1747,7 +1763,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xddca3f43",
      "url": null,
@@ -1755,7 +1771,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xf30dba93",
      "url": null,
@@ -1776,13 +1792,13 @@
    "props": {
     "contract_name": "AlgebraBasePluginV3",
     "storage_slots_read": {
-     "exit": 14
+     "exit": 15
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x029c1cb7",
      "url": null,
@@ -1790,7 +1806,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9cb5a963",
      "url": null,
@@ -1817,7 +1833,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x15d9d2f9",
      "url": null,
@@ -1844,7 +1860,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1101ce3e",
      "url": null,
@@ -1865,13 +1881,13 @@
    "props": {
     "contract_name": "EternalVirtualPool",
     "storage_slots_read": {
-     "exit": 17
+     "exit": 29
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x34d33590",
      "url": null,
@@ -1898,7 +1914,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x65309024",
      "url": null,
@@ -1925,7 +1941,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x6bc7df91",
      "url": null,
@@ -1952,7 +1968,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x3ad09da2",
      "url": null,
@@ -1979,7 +1995,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd0c93a7c",
      "url": null,
@@ -1987,7 +2003,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -1995,7 +2011,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x3850c7bd",
      "url": null,
@@ -2003,7 +2019,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x5339c296",
      "url": null,
@@ -2011,7 +2027,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xf30dba93",
      "url": null,
@@ -2032,13 +2048,13 @@
    "props": {
     "contract_name": "UniswapV3Pool",
     "storage_slots_read": {
-     "exit": 7
+     "exit": 9
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd0c93a7c",
      "url": null,
@@ -2046,7 +2062,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -2054,7 +2070,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x3850c7bd",
      "url": null,
@@ -2062,7 +2078,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x5339c296",
      "url": null,
@@ -2070,7 +2086,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xf30dba93",
      "url": null,
@@ -2078,75 +2094,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xddca3f43",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x865377367054516e17014ccded1e7d814edc9ce4": {
-   "id": "0x865377367054516e17014ccded1e7d814edc9ce4",
-   "type": "ASSET",
-   "label": "DOLA",
-   "chain": "ethereum",
-   "address": "0x865377367054516e17014ccded1e7d814edc9ce4",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "ERC20",
-    "symbol": "DOLA",
-    "decimals": 18,
-    "storage_slots_read": {
-     "exit": 3
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x70a08231",
      "url": null,
      "confidence": 1.0
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef": {
-   "id": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
-   "type": "LIQUIDITY_VENUE",
-   "label": "CurveStableSwapNG DOLA-sUSDe",
-   "chain": "ethereum",
-   "address": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "CurveStableSwapNG",
-    "symbol": "DOLA-sUSDe",
-    "decimals": 18,
-    "storage_slots_read": {
-     "exit": 17
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x3df02124",
+     "detail": "CALL 0x128acb08",
      "url": null,
      "confidence": 1.0
     }
@@ -2174,7 +2132,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x890e6337",
      "url": null,
@@ -2201,7 +2159,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7083527c",
      "url": null,
@@ -2222,13 +2180,13 @@
    "props": {
     "contract_name": null,
     "storage_slots_read": {
-     "exit": 22
+     "exit": 14
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x61d027b3",
      "url": null,
@@ -2236,7 +2194,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x6367f5c8",
      "url": null,
@@ -2263,9 +2221,179 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7362ecbe",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1b70046376a3db8b129409f5643ac9474a3be813": {
+   "id": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "type": "CONTRACT",
+   "label": "0x1b700463",
+   "chain": "ethereum",
+   "address": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x39072a45",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b": {
+   "id": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
+   "type": "CONTRACT",
+   "label": "FluidDexT1",
+   "chain": "ethereum",
+   "address": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "FluidDexT1",
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xbe17c79c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xad207501",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xb7791bf2",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0": {
+   "id": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "type": "LIQUIDITY_VENUE",
+   "label": "StablePairHook 0x000011",
+   "chain": "ethereum",
+   "address": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
+    "contract_name": "StablePairHook",
+    "storage_slots_read": {
+     "exit": 3
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x575e24b4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xb47b2fb1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x69516b74",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x5f216d21b1c81346938eddc1df7e0111a0f64000": {
+   "id": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
+   "type": "CONTRACT",
+   "label": "StablePairHook 0x5f216d",
+   "chain": "ethereum",
+   "address": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "StablePairHook",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x575e24b4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0xb47b2fb1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x69516b74",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26162857,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
      "url": null,
      "confidence": 1.0
     }
@@ -2293,9 +2421,125 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x8bc041a8",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45": {
+   "id": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "type": "CONTRACT",
+   "label": "0x2fca69d3",
+   "chain": "ethereum",
+   "address": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa963b1028e48e31c7d4b6056e3836d84602856a0": {
+   "id": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "type": "CONTRACT",
+   "label": "0xa963b102",
+   "chain": "ethereum",
+   "address": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x67e828bf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a": {
+   "id": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "type": "CONTRACT",
+   "label": "0xaff0c7a2",
+   "chain": "ethereum",
+   "address": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe844701934d9c6085b292e428f41b911cc0b3872": {
+   "id": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "type": "CONTRACT",
+   "label": "0xe8447019",
+   "chain": "ethereum",
+   "address": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 1
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xb5e4b813",
      "url": null,
      "confidence": 1.0
     }
@@ -2323,7 +2567,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3155ea38",
      "url": null,
@@ -2353,7 +2597,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3155ea38",
      "url": null,
@@ -2361,7 +2605,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2385,13 +2629,13 @@
     "implementation": "0x6eeb3337579890cd765f5c4afda1aa404f830ace",
     "contract_name": "ERC1967Proxy",
     "storage_slots_read": {
-     "exit": 27
+     "exit": 20
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf05bb6c4",
      "url": null,
@@ -2421,7 +2665,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xf05bb6c4",
      "url": null,
@@ -2429,7 +2673,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2459,79 +2703,9 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x04a04682",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b": {
-   "id": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
-   "type": "CONTRACT",
-   "label": "FluidDexT1",
-   "chain": "ethereum",
-   "address": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "FluidDexT1",
-    "storage_slots_read": {
-     "exit": 2
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xbe17c79c",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xad207501",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xb7791bf2",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x1b70046376a3db8b129409f5643ac9474a3be813": {
-   "id": "0x1b70046376a3db8b129409f5643ac9474a3be813",
-   "type": "CONTRACT",
-   "label": "0x1b700463",
-   "chain": "ethereum",
-   "address": "0x1b70046376a3db8b129409f5643ac9474a3be813",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": null,
-    "storage_slots_read": {
-     "exit": 0
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x39072a45",
      "url": null,
      "confidence": 1.0
     }
@@ -2561,7 +2735,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2569,7 +2743,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2577,7 +2751,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -2585,7 +2759,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9dc29fac",
      "url": null,
@@ -2617,7 +2791,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -2625,7 +2799,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -2633,7 +2807,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -2641,7 +2815,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x9dc29fac",
      "url": null,
@@ -2649,7 +2823,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2676,7 +2850,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -2684,7 +2858,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -2711,7 +2885,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -2719,7 +2893,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -2746,7 +2920,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3b4da69f",
      "url": null,
@@ -2773,7 +2947,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -2781,7 +2955,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf24e23eb",
      "url": null,
@@ -2808,7 +2982,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -2837,7 +3011,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -2845,7 +3019,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -2853,7 +3027,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2882,7 +3056,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2890,7 +3064,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2898,7 +3072,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -2927,7 +3101,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x5b41b908",
      "url": null,
@@ -2954,7 +3128,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x4a2ab3be",
      "url": null,
@@ -2962,7 +3136,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfa18042d",
      "url": null,
@@ -2970,7 +3144,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x81d18d87",
      "url": null,
@@ -2978,7 +3152,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x7b12e009",
      "url": null,
@@ -2986,7 +3160,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x754b76b3",
      "url": null,
@@ -2994,7 +3168,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xbad1dc26",
      "url": null,
@@ -3002,19 +3176,19 @@
     }
    ]
   },
-  "0x390f3595bca2df7d23783dfd126427cceb997bf4": {
-   "id": "0x390f3595bca2df7d23783dfd126427cceb997bf4",
+  "0x4dece678ceceb27446b35c672dc7d61f30bad69e": {
+   "id": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
    "type": "LIQUIDITY_VENUE",
-   "label": "Vyper_contract crvUSDUSDT-f",
+   "label": "Vyper_contract crvUSDUSDC-f",
    "chain": "ethereum",
-   "address": "0x390f3595bca2df7d23783dfd126427cceb997bf4",
+   "address": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
    "tags": [],
    "paths": [
     "exit"
    ],
    "props": {
     "contract_name": "Vyper_contract",
-    "symbol": "crvUSDUSDT-f",
+    "symbol": "crvUSDUSDC-f",
     "decimals": 18,
     "storage_slots_read": {
      "exit": 13
@@ -3023,7 +3197,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -3055,9 +3229,38 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3df02124",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x390f3595bca2df7d23783dfd126427cceb997bf4": {
+   "id": "0x390f3595bca2df7d23783dfd126427cceb997bf4",
+   "type": "LIQUIDITY_VENUE",
+   "label": "Vyper_contract crvUSDUSDT-f",
+   "chain": "ethereum",
+   "address": "0x390f3595bca2df7d23783dfd126427cceb997bf4",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "Vyper_contract",
+    "symbol": "crvUSDUSDT-f",
+    "decimals": 18,
+    "storage_slots_read": {
+     "exit": 13
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x3df02124",
      "url": null,
      "confidence": 1.0
     }
@@ -3082,109 +3285,9 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x5e3bc7bc",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0": {
-   "id": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "type": "LIQUIDITY_VENUE",
-   "label": "StablePairHook 0x000011",
-   "chain": "ethereum",
-   "address": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "tags": [
-    "proxy"
-   ],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "implementation": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
-    "contract_name": "StablePairHook",
-    "storage_slots_read": {
-     "exit": 3
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x69516b74",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x575e24b4",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xb47b2fb1",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x5f216d21b1c81346938eddc1df7e0111a0f64000": {
-   "id": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
-   "type": "CONTRACT",
-   "label": "StablePairHook 0x5f216d",
-   "chain": "ethereum",
-   "address": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
-   "tags": [
-    "implementation"
-   ],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "StablePairHook",
-    "probed_type": "CONTRACT",
-    "storage_slots_read": {
-     "exit": 0
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x69516b74",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x575e24b4",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0xb47b2fb1",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "storage",
-     "block": 26161499,
-     "call": null,
-     "detail": "EIP-1967/1822 implementation slot",
      "url": null,
      "confidence": 1.0
     }
@@ -3209,7 +3312,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -3217,7 +3320,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -3225,7 +3328,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -3254,36 +3357,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x3df02124",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x4dece678ceceb27446b35c672dc7d61f30bad69e": {
-   "id": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
-   "type": "LIQUIDITY_VENUE",
-   "label": "Vyper_contract crvUSDUSDC-f",
-   "chain": "ethereum",
-   "address": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "Vyper_contract",
-    "symbol": "crvUSDUSDC-f",
-    "decimals": 18,
-    "storage_slots_read": {
-     "exit": 13
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -3310,7 +3384,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -3318,7 +3392,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -3326,7 +3400,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -3353,161 +3427,9 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf763f7a6",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x71e6cabe7e27633787d242afc4f719adf7cee2dd": {
-   "id": "0x71e6cabe7e27633787d242afc4f719adf7cee2dd",
-   "type": "CONTRACT",
-   "label": "0x71e6cabe",
-   "chain": "ethereum",
-   "address": "0x71e6cabe7e27633787d242afc4f719adf7cee2dd",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": null,
-    "storage_slots_read": {
-     "exit": 0
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x15d6831c",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xe57180685e3348589e9521aa53af0bcd497e884d": {
-   "id": "0xe57180685e3348589e9521aa53af0bcd497e884d",
-   "type": "LIQUIDITY_VENUE",
-   "label": "Vyper_contract DOLAFRAXBP3CRV-f",
-   "chain": "ethereum",
-   "address": "0xe57180685e3348589e9521aa53af0bcd497e884d",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "Vyper_contract",
-    "symbol": "DOLAFRAXBP3CRV-f",
-    "decimals": 18,
-    "storage_slots_read": {
-     "exit": 6
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x07211ef7",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x33bb0e62d5e8c688e645dd46dfb48cd613250067": {
-   "id": "0x33bb0e62d5e8c688e645dd46dfb48cd613250067",
-   "type": "CONTRACT",
-   "label": "Vyper_contract 0x33bb0e",
-   "chain": "ethereum",
-   "address": "0x33bb0e62d5e8c688e645dd46dfb48cd613250067",
-   "tags": [
-    "implementation"
-   ],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "Vyper_contract",
-    "symbol": "",
-    "decimals": 18,
-    "probed_type": "LIQUIDITY_VENUE",
-    "storage_slots_read": {
-     "exit": 0
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x07211ef7",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xdcef968d416a41cdac0ed8702fac8128a64241a2": {
-   "id": "0xdcef968d416a41cdac0ed8702fac8128a64241a2",
-   "type": "LIQUIDITY_VENUE",
-   "label": "Vyper_contract 0xdcef96",
-   "chain": "ethereum",
-   "address": "0xdcef968d416a41cdac0ed8702fac8128a64241a2",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "Vyper_contract",
-    "storage_slots_read": {
-     "exit": 6
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xbb7b8b80",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xcc2b27d7",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x3175df0976dfa876431c2e9ee6bc45b65d3473cc": {
-   "id": "0x3175df0976dfa876431c2e9ee6bc45b65d3473cc",
-   "type": "ASSET",
-   "label": "crvFRAX",
-   "chain": "ethereum",
-   "address": "0x3175df0976dfa876431c2e9ee6bc45b65d3473cc",
-   "tags": [],
-   "paths": [
-    "exit"
-   ],
-   "props": {
-    "contract_name": "Vyper_contract",
-    "symbol": "crvFRAX",
-    "decimals": 18,
-    "storage_slots_read": {
-     "exit": 1
-    }
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x18160ddd",
      "url": null,
      "confidence": 1.0
     }
@@ -3528,13 +3450,13 @@
     "symbol": "WETH",
     "decimals": 18,
     "storage_slots_read": {
-     "exit": 2
+     "exit": 5
     }
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -3542,25 +3464,9 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x2e1a7d4d",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xd0e30db0",
      "url": null,
      "confidence": 1.0
     }
@@ -3587,9 +3493,134 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x70810e46a7b13436c4efccbde546a024cdde57cd": {
+   "id": "0x70810e46a7b13436c4efccbde546a024cdde57cd",
+   "type": "CONTRACT",
+   "label": "0x70810e46",
+   "chain": "ethereum",
+   "address": "0x70810e46a7b13436c4efccbde546a024cdde57cd",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x5560ed8f",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x00000003f1ec2379e79f58e12ec6c4f51ee92149": {
+   "id": "0x00000003f1ec2379e79f58e12ec6c4f51ee92149",
+   "type": "CONTRACT",
+   "label": "0x00000003",
+   "chain": "ethereum",
+   "address": "0x00000003f1ec2379e79f58e12ec6c4f51ee92149",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x94c4c2a02085e05ac2aaec84618700563d6d4914",
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 8
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x94c4c2a02085e05ac2aaec84618700563d6d4914": {
+   "id": "0x94c4c2a02085e05ac2aaec84618700563d6d4914",
+   "type": "CONTRACT",
+   "label": "0x94c4c2a0",
+   "chain": "ethereum",
+   "address": "0x94c4c2a02085e05ac2aaec84618700563d6d4914",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26162857,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xda7afeed021eafc1c1af9c362de477dad0396b81": {
+   "id": "0xda7afeed021eafc1c1af9c362de477dad0396b81",
+   "type": "CONTRACT",
+   "label": "PrioUpdateRegistry",
+   "chain": "ethereum",
+   "address": "0xda7afeed021eafc1c1af9c362de477dad0396b81",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "PrioUpdateRegistry",
+    "storage_slots_read": {
+     "exit": 2
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x16c83adc",
      "url": null,
      "confidence": 1.0
     }
@@ -3614,7 +3645,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xe24f0884",
      "url": null,
@@ -3622,7 +3653,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd8306786",
      "url": null,
@@ -3649,7 +3680,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x171755b1",
      "url": null,
@@ -3676,9 +3707,104 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xe3079c1b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3": {
+   "id": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "type": "CONTRACT",
+   "label": "PropAMM",
+   "chain": "ethereum",
+   "address": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "tags": [
+    "proxy"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "implementation": "0x9c39d26bef47f1c2450f89296dc8c3bc614b815b",
+    "contract_name": "PropAMM",
+    "storage_slots_read": {
+     "exit": 4
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x9c39d26bef47f1c2450f89296dc8c3bc614b815b": {
+   "id": "0x9c39d26bef47f1c2450f89296dc8c3bc614b815b",
+   "type": "CONTRACT",
+   "label": "PropAMM",
+   "chain": "ethereum",
+   "address": "0x9c39d26bef47f1c2450f89296dc8c3bc614b815b",
+   "tags": [
+    "implementation"
+   ],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "PropAMM",
+    "probed_type": "CONTRACT",
+    "storage_slots_read": {
+     "exit": 0
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "storage",
+     "block": 26162857,
+     "call": null,
+     "detail": "EIP-1967/1822 implementation slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f": {
+   "id": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "type": "LIQUIDITY_VENUE",
+   "label": "UniswapV3Pool 0xe0554a",
+   "chain": "ethereum",
+   "address": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": "UniswapV3Pool",
+    "storage_slots_read": {
+     "exit": 5
+    }
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x128acb08",
      "url": null,
      "confidence": 1.0
     }
@@ -3701,7 +3827,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3723,7 +3849,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "silo()",
      "url": null,
@@ -3745,7 +3871,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "minter()",
      "url": null,
@@ -3769,7 +3895,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3791,7 +3917,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -3815,7 +3941,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -3837,7 +3963,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3859,7 +3985,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -3881,7 +4007,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -3889,7 +4015,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -3897,7 +4023,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3905,7 +4031,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -3927,7 +4053,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3952,7 +4078,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3960,7 +4086,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -3984,7 +4110,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4009,7 +4135,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -4034,7 +4160,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -4042,7 +4168,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -4066,7 +4192,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -4101,7 +4227,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4109,7 +4235,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -4131,7 +4257,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4164,7 +4290,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4188,7 +4314,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4213,7 +4339,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4221,23 +4347,32 @@
     }
    ]
   },
-  "0xecb456ea5365865ebab8a2661b0c503410e9b347": {
-   "id": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+  "0xcd801cc7538b46ccb7f125ed5b798c3c114459e7": {
+   "id": "0xcd801cc7538b46ccb7f125ed5b798c3c114459e7",
    "type": "GOVERNANCE",
-   "label": "Vyper_contract",
+   "label": "Safe 3/5 0xcd801c",
    "chain": "ethereum",
-   "address": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+   "address": "0xcd801cc7538b46ccb7f125ed5b798c3c114459e7",
    "tags": [
-    "governance_role"
+    "safe"
    ],
    "paths": [],
    "props": {
-    "contract_name": "Vyper_contract"
+    "contract_name": "SafeProxy",
+    "threshold": 3,
+    "owners": [
+     "0x3ffae1257f1477e3f3829d0ff6b1878cb2d8c317",
+     "0x859808fb6386d9395d811de4e2ab59a0014ff15a",
+     "0x7621c1313c857f91e464400587a749663fe7f121",
+     "0xf532eaf4d86b470b22116ce0543b4282e18f33fd",
+     "0xcc9122857f2e526031d7a18b528aacd5bb6b919a"
+    ],
+    "n_owners": 5
    },
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4259,7 +4394,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4283,7 +4418,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -4307,7 +4442,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -4331,7 +4466,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -4356,7 +4491,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4389,114 +4524,9 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x467947ee34af926cf1dcac093870f613c96b1e0c": {
-   "id": "0x467947ee34af926cf1dcac093870f613c96b1e0c",
-   "type": "GOVERNANCE",
-   "label": "Safe 5/9 0x467947",
-   "chain": "ethereum",
-   "address": "0x467947ee34af926cf1dcac093870f613c96b1e0c",
-   "tags": [
-    "safe"
-   ],
-   "paths": [],
-   "props": {
-    "contract_name": "Proxy",
-    "threshold": 5,
-    "owners": [
-     "0xe9a65fe8190fa5a4b5e277b84f0aace686fdc174",
-     "0x7a1057e6e9093da9c1d4c1d049609b6889fc4c67",
-     "0x2b47c57a4c9fc1649b43500f4c0cda6cf29be278",
-     "0xdaa094a0ed166fedf8a0a4310f3f74a1e96f9195",
-     "0x99bc02c239025e431d5741cc1dba8ce77fc51ce3",
-     "0xaf17517acd484429fc0da2312fd1f42039592cd0",
-     "0xc6f3aac21d8282f166938a8b30a9ec62de30accc",
-     "0xaac0aa431c237c2c0b5f041c8e59b3f1a43ac78f",
-     "0x8a7dbc2824acac4d272289a33b255c3f1f3cdf32"
-    ],
-    "n_owners": 9
-   },
-   "provenance": [
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "emergency_admin()",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "future_emergency_admin()",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x40907540d8a6c65c637785e8f8b742ae6b0b9968": {
-   "id": "0x40907540d8a6c65c637785e8f8b742ae6b0b9968",
-   "type": "CONTRACT",
-   "label": "AppProxyUpgradeable",
-   "chain": "ethereum",
-   "address": "0x40907540d8a6c65c637785e8f8b742ae6b0b9968",
-   "tags": [],
-   "paths": [],
-   "props": {
-    "contract_name": "AppProxyUpgradeable"
-   },
-   "provenance": [
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "future_ownership_admin()",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "ownership_admin()",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x4eeb3ba4f221ca16ed4a0cc7254e2e32df948c5f": {
-   "id": "0x4eeb3ba4f221ca16ed4a0cc7254e2e32df948c5f",
-   "type": "CONTRACT",
-   "label": "AppProxyUpgradeable",
-   "chain": "ethereum",
-   "address": "0x4eeb3ba4f221ca16ed4a0cc7254e2e32df948c5f",
-   "tags": [],
-   "paths": [],
-   "props": {
-    "contract_name": "AppProxyUpgradeable"
-   },
-   "provenance": [
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "future_parameter_admin()",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "parameter_admin()",
      "url": null,
      "confidence": 1.0
     }
@@ -4516,7 +4546,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -4538,7 +4568,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -4761,8 +4791,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {},
@@ -4784,8 +4814,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {},
@@ -4807,8 +4837,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "custodian",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "custodian"
    ],
    "paths": [],
    "props": {},
@@ -4944,7 +4974,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P3.convertToAssets",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -4965,7 +4995,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xe21fd0e9",
      "url": null,
@@ -4987,7 +5017,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -4995,7 +5025,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5016,7 +5046,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5040,7 +5070,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -5048,7 +5078,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -5056,7 +5086,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -5064,7 +5094,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xdd62ed3e",
      "url": null,
@@ -5085,7 +5115,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xd9c45357",
      "url": null,
@@ -5104,14 +5134,15 @@
      "0x3ed37eda",
      "0x91dd7346",
      "0x9410ae88",
-     "0xd9c45357"
+     "0xd9c45357",
+     "0xfa461e33"
     ],
     "reverted": "execution reverted"
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xd9c45357",
      "url": null,
@@ -5119,7 +5150,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x91dd7346",
      "url": null,
@@ -5127,7 +5158,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -5135,7 +5166,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x2c8958f6",
      "url": null,
@@ -5143,9 +5174,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3ed37eda",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0xfa461e33",
      "url": null,
      "confidence": 1.0
     }
@@ -5165,7 +5204,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5173,7 +5212,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5194,7 +5233,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x736e774d",
      "url": null,
@@ -5219,7 +5258,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x48c89491",
      "url": null,
@@ -5227,7 +5266,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa5841194",
      "url": null,
@@ -5235,7 +5274,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x11da60b4",
      "url": null,
@@ -5243,7 +5282,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf3cd914c",
      "url": null,
@@ -5251,7 +5290,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x0b0d9c09",
      "url": null,
@@ -5272,7 +5311,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x91dd7346",
      "url": null,
@@ -5295,7 +5334,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x91dd7346",
      "url": null,
@@ -5303,7 +5342,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -5311,7 +5350,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x61f598cd",
      "url": null,
@@ -5326,15 +5365,24 @@
    "path": "exit",
    "props": {
     "functions": [
-     "balanceOf"
+     "balanceOf",
+     "transfer"
     ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
      "url": null,
      "confidence": 1.0
     }
@@ -5354,7 +5402,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5362,7 +5410,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5378,6 +5426,7 @@
    "props": {
     "functions": [
      "0x08fce009",
+     "0x3b9d6e09",
      "0xb3729668",
      "0xbd1eba5b"
     ]
@@ -5385,7 +5434,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x08fce009",
      "url": null,
@@ -5393,7 +5442,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xb3729668",
      "url": null,
@@ -5401,7 +5450,15 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x3b9d6e09",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xbd1eba5b",
      "url": null,
@@ -5423,7 +5480,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5431,7 +5488,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -5456,7 +5513,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -5464,7 +5521,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x07a2d13a",
      "url": null,
@@ -5472,7 +5529,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -5480,7 +5537,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xba087652",
      "url": null,
@@ -5488,7 +5545,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -5509,7 +5566,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -5531,7 +5588,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -5539,7 +5596,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5562,7 +5619,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -5570,7 +5627,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5578,7 +5635,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -5599,7 +5656,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5621,7 +5678,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xe972feb9",
      "url": null,
@@ -5629,7 +5686,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xc318eada",
      "url": null,
@@ -5651,7 +5708,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -5659,7 +5716,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -5680,7 +5737,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -5702,7 +5759,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -5710,7 +5767,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -5731,7 +5788,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xad967e15",
      "url": null,
@@ -5752,7 +5809,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5773,7 +5830,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -5794,7 +5851,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -5816,7 +5873,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5824,7 +5881,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5846,7 +5903,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -5854,7 +5911,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -5875,7 +5932,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -5897,7 +5954,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -5905,7 +5962,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -5926,7 +5983,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -5947,7 +6004,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -5969,7 +6026,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5977,7 +6034,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5998,7 +6055,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6019,7 +6076,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -6042,7 +6099,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -6050,7 +6107,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6058,7 +6115,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -6079,7 +6136,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6100,7 +6157,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6123,7 +6180,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -6131,7 +6188,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -6139,7 +6196,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -6160,7 +6217,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -6183,7 +6240,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -6191,7 +6248,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6199,7 +6256,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -6220,7 +6277,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6242,7 +6299,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6250,7 +6307,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -6271,7 +6328,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -6293,7 +6350,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -6301,7 +6358,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6326,7 +6383,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x20aba08b",
      "url": null,
@@ -6334,7 +6391,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xc92aecc4",
      "url": null,
@@ -6342,7 +6399,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x487bf082",
      "url": null,
@@ -6350,7 +6407,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9f678cca",
      "url": null,
@@ -6358,7 +6415,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7f8661a1",
      "url": null,
@@ -6381,7 +6438,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -6389,7 +6446,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6397,7 +6454,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -6419,7 +6476,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6427,7 +6484,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6449,7 +6506,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -6457,7 +6514,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -6478,7 +6535,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -6499,7 +6556,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x693de592",
      "url": null,
@@ -6522,7 +6579,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -6530,7 +6587,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6538,7 +6595,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -6559,7 +6616,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6581,7 +6638,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x0902f1ac",
      "url": null,
@@ -6589,7 +6646,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x022c0d9f",
      "url": null,
@@ -6611,7 +6668,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6619,7 +6676,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6640,7 +6697,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6661,7 +6718,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x6efd106f",
      "url": null,
@@ -6682,7 +6739,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x128acb08",
      "url": null,
@@ -6704,7 +6761,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x029c1cb7",
      "url": null,
@@ -6712,7 +6769,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9cb5a963",
      "url": null,
@@ -6733,7 +6790,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x15d9d2f9",
      "url": null,
@@ -6754,7 +6811,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xe76c01e4",
      "url": null,
@@ -6775,7 +6832,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1101ce3e",
      "url": null,
@@ -6797,7 +6854,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6805,7 +6862,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6827,7 +6884,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6835,7 +6892,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -6856,7 +6913,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x2c8958f6",
      "url": null,
@@ -6877,7 +6934,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x34d33590",
      "url": null,
@@ -6898,7 +6955,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x65309024",
      "url": null,
@@ -6919,7 +6976,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x6bc7df91",
      "url": null,
@@ -6940,7 +6997,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x3ad09da2",
      "url": null,
@@ -6966,7 +7023,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -6974,7 +7031,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x050a4d21",
      "url": null,
@@ -6982,7 +7039,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd5c35a7e",
      "url": null,
@@ -6990,7 +7047,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xe76c01e4",
      "url": null,
@@ -6998,7 +7055,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xddca3f43",
      "url": null,
@@ -7006,7 +7063,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xf30dba93",
      "url": null,
@@ -7031,7 +7088,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd0c93a7c",
      "url": null,
@@ -7039,7 +7096,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -7047,7 +7104,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x3850c7bd",
      "url": null,
@@ -7055,7 +7112,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x5339c296",
      "url": null,
@@ -7063,7 +7120,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xf30dba93",
      "url": null,
@@ -7088,7 +7145,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd0c93a7c",
      "url": null,
@@ -7096,7 +7153,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -7104,7 +7161,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x3850c7bd",
      "url": null,
@@ -7112,7 +7169,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x5339c296",
      "url": null,
@@ -7120,120 +7177,9 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xf30dba93",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x865377367054516e17014ccded1e7d814edc9ce4|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x865377367054516e17014ccded1e7d814edc9ce4",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "balanceOf",
-     "transfer"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x70a08231",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "exchange"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x3df02124",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef|0x9d39a5de30e57443bff2a8307a4256c8797a3497|exit_route|exit": {
-   "src": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
-   "dst": "0x9d39a5de30e57443bff2a8307a4256c8797a3497",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "balanceOf",
-     "convertToAssets",
-     "transferFrom"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x07a2d13a",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x70a08231",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x23b872dd",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef|0x865377367054516e17014ccded1e7d814edc9ce4|exit_route|exit": {
-   "src": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
-   "dst": "0x865377367054516e17014ccded1e7d814edc9ce4",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "transfer"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
      "url": null,
      "confidence": 1.0
     }
@@ -7253,7 +7199,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7261,7 +7207,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7282,7 +7228,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x890e6337",
      "url": null,
@@ -7304,7 +7250,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7312,7 +7258,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7333,7 +7279,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7083527c",
      "url": null,
@@ -7355,7 +7301,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x61d027b3",
      "url": null,
@@ -7363,7 +7309,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x6367f5c8",
      "url": null,
@@ -7384,7 +7330,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7405,7 +7351,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7362ecbe",
      "url": null,
@@ -7426,9 +7372,330 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x1b70046376a3db8b129409f5643ac9474a3be813|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x39072a45"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x39072a45",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x1b70046376a3db8b129409f5643ac9474a3be813|0x3416cf6c708da44db2624d63ea0aaef7113527c6|exit_route|exit": {
+   "src": "0x1b70046376a3db8b129409f5643ac9474a3be813",
+   "dst": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "fee",
+     "liquidity",
+     "slot0",
+     "tickBitmap",
+     "tickSpacing",
+     "ticks"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x3850c7bd",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x1a686502",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xd0c93a7c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xddca3f43",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x5339c296",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xf30dba93",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "constantsView",
+     "swapInWithCallback"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xbe17c79c",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xb7791bf2",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|0x52aa899454998be5b000ad077a46bbe360f4e497|exit_route|exit": {
+   "src": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
+   "dst": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "operate",
+     "readFromStorage"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xb5c736e4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xad967e15",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|exit_route|exit": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "liquidityCallback"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xad207501",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x9410ae88"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x9410ae88",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x52aa899454998be5b000ad077a46bbe360f4e497|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0x0000113dcf4add69999fad8f20f2b63f979bfcc0|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "afterSwap",
+     "beforeSwap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x575e24b4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xb47b2fb1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0|0x5f216d21b1c81346938eddc1df7e0111a0f64000|delegates_to|exit": {
+   "src": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "dst": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "afterSwap",
+     "beforeSwap",
+     "getFee"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x575e24b4",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0xb47b2fb1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x69516b74",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0|0x000000000004444c5dc75cb358380d2e3de08a90|exit_route|exit": {
+   "src": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "dst": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "extsload"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x1e2eaeaf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x000000000004444c5dc75cb358380d2e3de08a90|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
      "url": null,
      "confidence": 1.0
     }
@@ -7448,9 +7715,117 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x8bc041a8",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xe24f0884"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xa963b1028e48e31c7d4b6056e3836d84602856a0|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x171755b1"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xa963b1028e48e31c7d4b6056e3836d84602856a0|0xaff0c7a21c958bf4354d750afdb7a01da44a939a|exit_route|exit": {
+   "src": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "dst": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x171755b1"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a|0xa963b1028e48e31c7d4b6056e3836d84602856a0|exit_route|exit": {
+   "src": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "dst": "0xa963b1028e48e31c7d4b6056e3836d84602856a0",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x67e828bf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x67e828bf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a|0xe844701934d9c6085b292e428f41b911cc0b3872|exit_route|exit": {
+   "src": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "dst": "0xe844701934d9c6085b292e428f41b911cc0b3872",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xb5e4b813"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0xb5e4b813",
      "url": null,
      "confidence": 1.0
     }
@@ -7469,7 +7844,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3155ea38",
      "url": null,
@@ -7490,7 +7865,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3155ea38",
      "url": null,
@@ -7513,7 +7888,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7521,7 +7896,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7529,7 +7904,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x095ea7b3",
      "url": null,
@@ -7551,7 +7926,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7559,7 +7934,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7580,7 +7955,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf05bb6c4",
      "url": null,
@@ -7601,7 +7976,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xf05bb6c4",
      "url": null,
@@ -7622,7 +7997,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x04a04682",
      "url": null,
@@ -7646,7 +8021,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7654,7 +8029,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -7662,7 +8037,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7670,7 +8045,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x095ea7b3",
      "url": null,
@@ -7693,7 +8068,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7701,7 +8076,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7709,7 +8084,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -7730,231 +8105,9 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x7083527c",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "constantsView",
-     "swapInWithCallback"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xbe17c79c",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xb7791bf2",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|0x52aa899454998be5b000ad077a46bbe360f4e497|exit_route|exit": {
-   "src": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
-   "dst": "0x52aa899454998be5b000ad077a46bbe360f4e497",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "operate",
-     "readFromStorage"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xb5c736e4",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xad967e15",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x52aa899454998be5b000ad077a46bbe360f4e497|0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|exit_route|exit": {
-   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
-   "dst": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "liquidityCallback"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xad207501",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
-   "src": "0x667701e51b4d1ca244f17c78f7ab8744b4c99f9b",
-   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "0x9410ae88"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x9410ae88",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x52aa899454998be5b000ad077a46bbe360f4e497|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
-   "src": "0x52aa899454998be5b000ad077a46bbe360f4e497",
-   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "transfer"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x1b70046376a3db8b129409f5643ac9474a3be813|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x1b70046376a3db8b129409f5643ac9474a3be813",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "0x39072a45"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x39072a45",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x1b70046376a3db8b129409f5643ac9474a3be813|0x3416cf6c708da44db2624d63ea0aaef7113527c6|exit_route|exit": {
-   "src": "0x1b70046376a3db8b129409f5643ac9474a3be813",
-   "dst": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "fee",
-     "liquidity",
-     "slot0",
-     "tickBitmap",
-     "tickSpacing"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x3850c7bd",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x1a686502",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xd0c93a7c",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xddca3f43",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x5339c296",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x000000000004444c5dc75cb358380d2e3de08a90|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
-   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
-   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "transfer"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
      "url": null,
      "confidence": 1.0
     }
@@ -7973,7 +8126,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7997,7 +8150,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -8005,7 +8158,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -8013,7 +8166,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -8021,9 +8174,93 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x9dc29fac",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x3416cf6c708da44db2624d63ea0aaef7113527c6|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3416cf6c708da44db2624d63ea0aaef7113527c6|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3416cf6c708da44db2624d63ea0aaef7113527c6|0xdac17f958d2ee523a2206206994597c13d831ec7|exit_route|exit": {
+   "src": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+   "dst": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x3416cf6c708da44db2624d63ea0aaef7113527c6|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xfa461e33"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xfa461e33",
      "url": null,
      "confidence": 1.0
     }
@@ -8042,7 +8279,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8064,7 +8301,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -8072,7 +8309,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -8094,7 +8331,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -8102,7 +8339,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -8123,7 +8360,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8144,7 +8381,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3b4da69f",
      "url": null,
@@ -8165,7 +8402,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -8186,7 +8423,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9dc29fac",
      "url": null,
@@ -8207,7 +8444,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -8228,7 +8465,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -8249,7 +8486,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -8270,7 +8507,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8291,7 +8528,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8312,7 +8549,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8333,7 +8570,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8354,7 +8591,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x5b41b908",
      "url": null,
@@ -8380,7 +8617,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x4a2ab3be",
      "url": null,
@@ -8388,7 +8625,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfa18042d",
      "url": null,
@@ -8396,7 +8633,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x81d18d87",
      "url": null,
@@ -8404,7 +8641,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x7b12e009",
      "url": null,
@@ -8412,7 +8649,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x754b76b3",
      "url": null,
@@ -8420,7 +8657,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xbad1dc26",
      "url": null,
@@ -8441,7 +8678,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8462,7 +8699,91 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x4dece678ceceb27446b35c672dc7d61f30bad69e|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "exchange"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x3df02124",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4dece678ceceb27446b35c672dc7d61f30bad69e|0x67fe41a94e779ccfa22cff02cc2957dc9c0e4286|delegates_to|exit": {
+   "src": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "dst": "0x67fe41a94e779ccfa22cff02cc2957dc9c0e4286",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "exchange"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x3df02124",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4dece678ceceb27446b35c672dc7d61f30bad69e|0xf939e0a03fb07f59a73314e73794be0e57ac1b4e|exit_route|exit": {
+   "src": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "dst": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transferFrom"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x23b872dd",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x4dece678ceceb27446b35c672dc7d61f30bad69e|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8483,7 +8804,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -8504,7 +8825,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3df02124",
      "url": null,
@@ -8525,7 +8846,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8546,7 +8867,37 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf",
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8567,90 +8918,9 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x5e3bc7bc",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xc41e7f975cba456700a1f80781895e486570097c|0x0000113dcf4add69999fad8f20f2b63f979bfcc0|exit_route|exit": {
-   "src": "0xc41e7f975cba456700a1f80781895e486570097c",
-   "dst": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "getFee"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x69516b74",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0|0x5f216d21b1c81346938eddc1df7e0111a0f64000|delegates_to|exit": {
-   "src": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "dst": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
-   "type": "delegates_to",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "afterSwap",
-     "beforeSwap",
-     "getFee"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x69516b74",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x575e24b4",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0xb47b2fb1",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0|0x000000000004444c5dc75cb358380d2e3de08a90|exit_route|exit": {
-   "src": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "dst": "0x000000000004444c5dc75cb358380d2e3de08a90",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "extsload"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x1e2eaeaf",
      "url": null,
      "confidence": 1.0
     }
@@ -8669,69 +8939,9 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x1e2eaeaf",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x000000000004444c5dc75cb358380d2e3de08a90|0x0000113dcf4add69999fad8f20f2b63f979bfcc0|exit_route|exit": {
-   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
-   "dst": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "afterSwap",
-     "beforeSwap"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x575e24b4",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xb47b2fb1",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x40d16fc0246ad3160ccc09b8d0d3a2cd28ae6c2f",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "balanceOf",
-     "transfer"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x70a08231",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
      "url": null,
      "confidence": 1.0
     }
@@ -8751,7 +8961,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -8759,7 +8969,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -8781,7 +8991,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -8789,7 +8999,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -8810,7 +9020,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -8831,7 +9041,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -8852,7 +9062,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -8874,7 +9084,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8882,7 +9092,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8903,91 +9113,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xa9059cbb",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x4dece678ceceb27446b35c672dc7d61f30bad69e|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "exchange"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x3df02124",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x4dece678ceceb27446b35c672dc7d61f30bad69e|0x67fe41a94e779ccfa22cff02cc2957dc9c0e4286|delegates_to|exit": {
-   "src": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
-   "dst": "0x67fe41a94e779ccfa22cff02cc2957dc9c0e4286",
-   "type": "delegates_to",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "exchange"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x3df02124",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x4dece678ceceb27446b35c672dc7d61f30bad69e|0xf939e0a03fb07f59a73314e73794be0e57ac1b4e|exit_route|exit": {
-   "src": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
-   "dst": "0xf939e0a03fb07f59a73314e73794be0e57ac1b4e",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "transferFrom"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0x23b872dd",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x4dece678ceceb27446b35c672dc7d61f30bad69e|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
-   "src": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
-   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "transfer"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9009,7 +9135,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf24e23eb",
      "url": null,
@@ -9017,7 +9143,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -9038,7 +9164,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -9059,7 +9185,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9081,7 +9207,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -9089,7 +9215,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -9111,7 +9237,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -9119,7 +9245,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -9140,7 +9266,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -9162,7 +9288,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -9170,7 +9296,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -9191,7 +9317,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9212,7 +9338,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -9233,7 +9359,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -9241,136 +9367,22 @@
     }
    ]
   },
-  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x71e6cabe7e27633787d242afc4f719adf7cee2dd|exit_route|exit": {
-   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "dst": "0x71e6cabe7e27633787d242afc4f719adf7cee2dd",
+  "0xc41e7f975cba456700a1f80781895e486570097c|0x0000113dcf4add69999fad8f20f2b63f979bfcc0|exit_route|exit": {
+   "src": "0xc41e7f975cba456700a1f80781895e486570097c",
+   "dst": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
    "type": "exit_route",
    "path": "exit",
    "props": {
     "functions": [
-     "0x15d6831c"
+     "getFee"
     ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
-     "detail": "CALL 0x15d6831c",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x71e6cabe7e27633787d242afc4f719adf7cee2dd|0xe57180685e3348589e9521aa53af0bcd497e884d|exit_route|exit": {
-   "src": "0x71e6cabe7e27633787d242afc4f719adf7cee2dd",
-   "dst": "0xe57180685e3348589e9521aa53af0bcd497e884d",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "get_dy_underlying"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x07211ef7",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xe57180685e3348589e9521aa53af0bcd497e884d|0x33bb0e62d5e8c688e645dd46dfb48cd613250067|delegates_to|exit": {
-   "src": "0xe57180685e3348589e9521aa53af0bcd497e884d",
-   "dst": "0x33bb0e62d5e8c688e645dd46dfb48cd613250067",
-   "type": "delegates_to",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "get_dy_underlying"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "DELEGATECALL 0x07211ef7",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xe57180685e3348589e9521aa53af0bcd497e884d|0xdcef968d416a41cdac0ed8702fac8128a64241a2|exit_route|exit": {
-   "src": "0xe57180685e3348589e9521aa53af0bcd497e884d",
-   "dst": "0xdcef968d416a41cdac0ed8702fac8128a64241a2",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "calc_withdraw_one_coin",
-     "get_virtual_price"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xbb7b8b80",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0xcc2b27d7",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xdcef968d416a41cdac0ed8702fac8128a64241a2|0x3175df0976dfa876431c2e9ee6bc45b65d3473cc|exit_route|exit": {
-   "src": "0xdcef968d416a41cdac0ed8702fac8128a64241a2",
-   "dst": "0x3175df0976dfa876431c2e9ee6bc45b65d3473cc",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "totalSupply"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x18160ddd",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0x000000000004444c5dc75cb358380d2e3de08a90|0x865377367054516e17014ccded1e7d814edc9ce4|exit_route|exit": {
-   "src": "0x000000000004444c5dc75cb358380d2e3de08a90",
-   "dst": "0x865377367054516e17014ccded1e7d814edc9ce4",
-   "type": "exit_route",
-   "path": "exit",
-   "props": {
-    "functions": [
-     "balanceOf"
-    ]
-   },
-   "provenance": [
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "STATICCALL 0x70a08231",
+     "detail": "STATICCALL 0x69516b74",
      "url": null,
      "confidence": 1.0
     }
@@ -9384,14 +9396,13 @@
    "props": {
     "functions": [
      "balanceOf",
-     "deposit",
-     "withdraw"
+     "transfer"
     ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9399,17 +9410,9 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
-     "detail": "CALL 0x2e1a7d4d",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "trace",
-     "block": 26161499,
-     "call": "exit:P3.kyber",
-     "detail": "CALL 0xd0e30db0",
+     "detail": "CALL 0xa9059cbb",
      "url": null,
      "confidence": 1.0
     }
@@ -9428,7 +9431,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -9449,7 +9452,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "DELEGATECALL 0x3df02124",
      "url": null,
@@ -9470,7 +9473,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -9491,7 +9494,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9499,22 +9502,89 @@
     }
    ]
   },
-  "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
-   "src": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
-   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
-   "type": "exit_route",
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x70810e46a7b13436c4efccbde546a024cdde57cd|delegates_to|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x70810e46a7b13436c4efccbde546a024cdde57cd",
+   "type": "delegates_to",
    "path": "exit",
    "props": {
     "functions": [
-     "0x"
-    ]
+     "0x5560ed8f"
+    ],
+    "reverted": "execution reverted"
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
-     "detail": "CALL 0x",
+     "detail": "DELEGATECALL 0x5560ed8f",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0x00000003f1ec2379e79f58e12ec6c4f51ee92149|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0x00000003f1ec2379e79f58e12ec6c4f51ee92149",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x9908fc8b"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x00000003f1ec2379e79f58e12ec6c4f51ee92149|0x94c4c2a02085e05ac2aaec84618700563d6d4914|delegates_to|exit": {
+   "src": "0x00000003f1ec2379e79f58e12ec6c4f51ee92149",
+   "dst": "0x94c4c2a02085e05ac2aaec84618700563d6d4914",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x9908fc8b"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x00000003f1ec2379e79f58e12ec6c4f51ee92149|0xda7afeed021eafc1c1af9c362de477dad0396b81|exit_route|exit": {
+   "src": "0x00000003f1ec2379e79f58e12ec6c4f51ee92149",
+   "dst": "0xda7afeed021eafc1c1af9c362de477dad0396b81",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getState"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x16c83adc",
      "url": null,
      "confidence": 1.0
     }
@@ -9534,7 +9604,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xe24f0884",
      "url": null,
@@ -9556,7 +9626,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0x171755b1",
      "url": null,
@@ -9577,7 +9647,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "CALL 0xe3079c1b",
      "url": null,
@@ -9598,9 +9668,159 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P3.kyber",
      "detail": "STATICCALL 0xd8306786",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3|0x9c39d26bef47f1c2450f89296dc8c3bc614b815b|delegates_to|exit": {
+   "src": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "dst": "0x9c39d26bef47f1c2450f89296dc8c3bc614b815b",
+   "type": "delegates_to",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "DELEGATECALL 0x9908fc8b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3|0xda7afeed021eafc1c1af9c362de477dad0396b81|exit_route|exit": {
+   "src": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "dst": "0xda7afeed021eafc1c1af9c362de477dad0396b81",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "getState"
+    ],
+    "reverted": "execution reverted"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x16c83adc",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996|0xe0554a476a092703abdb3ef35c80e0d76d32939f|exit_route|exit": {
+   "src": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "dst": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "swap"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0x128acb08",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f|0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2|exit_route|exit": {
+   "src": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "dst": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe0554a476a092703abdb3ef35c80e0d76d32939f|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xfa461e33"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:P3.kyber",
+     "detail": "CALL 0xfa461e33",
      "url": null,
      "confidence": 1.0
     }
@@ -9617,7 +9837,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -9638,7 +9858,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9657,7 +9877,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "silo()",
      "url": null,
@@ -9676,7 +9896,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "minter()",
      "url": null,
@@ -9697,7 +9917,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9718,7 +9938,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9735,7 +9955,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -9756,7 +9976,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -9777,7 +9997,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -9798,7 +10018,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9819,7 +10039,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -9843,7 +10063,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -9851,7 +10071,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -9859,7 +10079,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9867,7 +10087,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -9888,7 +10108,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9909,7 +10129,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9930,7 +10150,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -9947,7 +10167,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -9968,7 +10188,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -9985,7 +10205,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -10006,7 +10226,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -10027,7 +10247,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10048,7 +10268,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10065,7 +10285,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -10086,7 +10306,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10107,7 +10327,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10128,7 +10348,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10149,9 +10369,26 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0|0x5f216d21b1c81346938eddc1df7e0111a0f64000|delegates_to": {
+   "src": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "dst": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26162857,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
      "url": null,
      "confidence": 1.0
     }
@@ -10166,7 +10403,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -10183,7 +10420,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -10200,7 +10437,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -10221,7 +10458,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10229,16 +10466,16 @@
     }
    ]
   },
-  "0x0000113dcf4add69999fad8f20f2b63f979bfcc0|0x5f216d21b1c81346938eddc1df7e0111a0f64000|delegates_to": {
-   "src": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "dst": "0x5f216d21b1c81346938eddc1df7e0111a0f64000",
+  "0x00000003f1ec2379e79f58e12ec6c4f51ee92149|0x94c4c2a02085e05ac2aaec84618700563d6d4914|delegates_to": {
+   "src": "0x00000003f1ec2379e79f58e12ec6c4f51ee92149",
+   "dst": "0x94c4c2a02085e05ac2aaec84618700563d6d4914",
    "type": "delegates_to",
    "path": null,
    "props": {},
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -10246,9 +10483,26 @@
     }
    ]
   },
-  "0xdcef968d416a41cdac0ed8702fac8128a64241a2|0xecb456ea5365865ebab8a2661b0c503410e9b347|governs": {
-   "src": "0xdcef968d416a41cdac0ed8702fac8128a64241a2",
-   "dst": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
+  "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3|0x9c39d26bef47f1c2450f89296dc8c3bc614b815b|delegates_to": {
+   "src": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "dst": "0x9c39d26bef47f1c2450f89296dc8c3bc614b815b",
+   "type": "delegates_to",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "storage",
+     "block": 26162857,
+     "call": null,
+     "detail": "EIP-1967 impl slot",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3|0xcd801cc7538b46ccb7f125ed5b798c3c114459e7|governs": {
+   "src": "0xcf211b4dd0d2be5c173ea57bcf938fc61d1d3bd3",
+   "dst": "0xcd801cc7538b46ccb7f125ed5b798c3c114459e7",
    "type": "governs",
    "path": null,
    "props": {
@@ -10259,7 +10513,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10280,7 +10534,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10299,7 +10553,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -10320,7 +10574,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10341,7 +10595,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -10362,7 +10616,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -10383,7 +10637,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -10404,7 +10658,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10425,7 +10679,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -10446,90 +10700,9 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xecb456ea5365865ebab8a2661b0c503410e9b347|0x467947ee34af926cf1dcac093870f613c96b1e0c|references": {
-   "src": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
-   "dst": "0x467947ee34af926cf1dcac093870f613c96b1e0c",
-   "type": "references",
-   "path": null,
-   "props": {
-    "getter": "future_emergency_admin"
-   },
-   "provenance": [
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "emergency_admin()",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "future_emergency_admin()",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xecb456ea5365865ebab8a2661b0c503410e9b347|0x40907540d8a6c65c637785e8f8b742ae6b0b9968|references": {
-   "src": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
-   "dst": "0x40907540d8a6c65c637785e8f8b742ae6b0b9968",
-   "type": "references",
-   "path": null,
-   "props": {
-    "getter": "ownership_admin"
-   },
-   "provenance": [
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "future_ownership_admin()",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "ownership_admin()",
-     "url": null,
-     "confidence": 1.0
-    }
-   ]
-  },
-  "0xecb456ea5365865ebab8a2661b0c503410e9b347|0x4eeb3ba4f221ca16ed4a0cc7254e2e32df948c5f|references": {
-   "src": "0xecb456ea5365865ebab8a2661b0c503410e9b347",
-   "dst": "0x4eeb3ba4f221ca16ed4a0cc7254e2e32df948c5f",
-   "type": "references",
-   "path": null,
-   "props": {
-    "getter": "parameter_admin"
-   },
-   "provenance": [
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "future_parameter_admin()",
-     "url": null,
-     "confidence": 1.0
-    },
-    {
-     "source": "onchain_read",
-     "block": 26161499,
-     "call": null,
-     "detail": "parameter_admin()",
      "url": null,
      "confidence": 1.0
     }
@@ -10548,7 +10721,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -10567,7 +10740,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -10588,7 +10761,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -10607,7 +10780,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -10628,7 +10801,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -10948,8 +11121,8 @@
    "route": "KyberSwap aggregator",
    "size_usd": 5000000.0,
    "token_price_usd": 1.245129,
-   "usdc_out": 4332288.493644,
-   "quote_usdc": 4332288.493643,
+   "usdc_out": 4350401.121006,
+   "quote_usdc": 4351659.216562,
    "error": null
   },
   "pocket": "P3",

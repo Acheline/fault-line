@@ -1,7 +1,7 @@
 """Hero position addresses. Every entry was verified on the anvil fork (block FORK_BLOCK) on 2026-10-10:
 see the comment next to each for the on-chain read that verified it."""
 
-FORK_BLOCK = 26161499          # anvil fork head when verified (mainnet, 2026-10-10)
+FORK_BLOCK = 26162857          # anvil --fork-block-number (mainnet, 2026-10-10, re-pinned so large exit routes execute)
 
 # ---- shared ----
 USDC = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"

@@ -2,23 +2,23 @@
  "book": "Belem assumed market-neutral stablecoin mandate (10 pockets)",
  "n_pockets": 10,
  "weights": {
-  "P1": 0.001615426,
-  "P2": 0.001615426,
-  "P3": 0.1,
-  "P4": 0.1,
-  "P5": 0.0556456632,
-  "P6": 0.3411234848,
-  "P7": 0.1,
-  "P8": 0.1,
-  "P9": 0.1,
-  "P10": 0.1
+  "P1": 0.0016154660003230932,
+  "P2": 0.0016154660003230932,
+  "P3": 0.10000000002,
+  "P4": 0.10000000002,
+  "P5": 0.05564712381112942,
+  "P6": 0.3411219440682244,
+  "P7": 0.10000000002,
+  "P8": 0.10000000002,
+  "P9": 0.10000000002,
+  "P10": 0.10000000002
  },
  "bets": [
   {
    "pockets": [
     "P6"
    ],
-   "weight": 0.3411234848,
+   "weight": 0.3411219440682244,
    "shared_ancestors": []
   },
   {
@@ -26,7 +26,7 @@
     "P4",
     "P5"
    ],
-   "weight": 0.1556456632,
+   "weight": 0.1556471238311294,
    "shared_ancestors": [
     "USDC / USD (AccessControlledOCR2Aggregator)",
     "USDC / USD (EACAggregatorProxy)"
@@ -38,7 +38,7 @@
     "P2",
     "P3"
    ],
-   "weight": 0.10323085200000001,
+   "weight": 0.10323093202064618,
    "shared_ancestors": [
     "Ethena Labs (USDe issuer)",
     "CEX: Binance",
@@ -51,33 +51,33 @@
    "pockets": [
     "P7"
    ],
-   "weight": 0.1,
+   "weight": 0.10000000002,
    "shared_ancestors": []
   },
   {
    "pockets": [
     "P8"
    ],
-   "weight": 0.1,
+   "weight": 0.10000000002,
    "shared_ancestors": []
   },
   {
    "pockets": [
     "P9"
    ],
-   "weight": 0.1,
+   "weight": 0.10000000002,
    "shared_ancestors": []
   },
   {
    "pockets": [
     "P10"
    ],
-   "weight": 0.1,
+   "weight": 0.10000000002,
    "shared_ancestors": []
   }
  ],
  "n_bets": 7,
- "effective_independent_bets": 5.228828894877161,
+ "effective_independent_bets": 5.228844750755305,
  "worst_single_point_of_failure": {
   "id": "0x54bcc589d9743e521c64233706fc8cb36d275b07",
   "label": "USDC / USD (AccessControlledOCR2Aggregator)",
@@ -86,7 +86,7 @@
    "P4",
    "P5"
   ],
-  "book_share": 0.1556456632,
+  "book_share": 0.1556471238311294,
   "numeraire": false,
   "how": {
    "P4": [
@@ -201,7 +201,7 @@
     "P8",
     "P9"
    ],
-   "book_share": 0.3572610892,
+   "book_share": 0.3572625898714525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -334,7 +334,7 @@
     "P8",
     "P9"
    ],
-   "book_share": 0.3572610892,
+   "book_share": 0.3572625898714525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -501,7 +501,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -588,7 +588,7 @@
     "P7",
     "P8"
    ],
-   "book_share": 0.8,
+   "book_share": 0.7999999999599999,
    "numeraire": false,
    "how": {
     "P1": [
@@ -676,7 +676,7 @@
     "P8",
     "P9"
    ],
-   "book_share": 0.3572610892,
+   "book_share": 0.3572625898714525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -809,7 +809,7 @@
     "P8",
     "P9"
    ],
-   "book_share": 0.3572610892,
+   "book_share": 0.3572625898714525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -976,7 +976,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1057,7 +1057,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1198,7 +1198,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1307,7 +1307,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1416,7 +1416,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1553,7 +1553,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1662,7 +1662,7 @@
     "P5",
     "P8"
    ],
-   "book_share": 0.2572610892,
+   "book_share": 0.2572625898514525,
    "numeraire": true,
    "how": {
     "P2": [
@@ -1771,7 +1771,7 @@
     "P4",
     "P5"
    ],
-   "book_share": 0.1588765152,
+   "book_share": 0.1588780558317756,
    "numeraire": false,
    "how": {
     "P1": [
@@ -1956,7 +1956,7 @@
     "P4",
     "P5"
    ],
-   "book_share": 0.1572610892,
+   "book_share": 0.1572625898314525,
    "numeraire": false,
    "how": {
     "P2": [
@@ -2059,7 +2059,7 @@
     "P4",
     "P5"
    ],
-   "book_share": 0.1556456632,
+   "book_share": 0.1556471238311294,
    "numeraire": false,
    "how": {
     "P4": [
@@ -2170,7 +2170,7 @@
     "P4",
     "P5"
    ],
-   "book_share": 0.1556456632,
+   "book_share": 0.1556471238311294,
    "numeraire": false,
    "how": {
     "P4": [
@@ -2266,7 +2266,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -2350,7 +2350,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -2428,7 +2428,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -2527,7 +2527,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -2626,7 +2626,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -2752,7 +2752,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -2878,7 +2878,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3004,7 +3004,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3130,7 +3130,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3256,7 +3256,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3382,7 +3382,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3508,7 +3508,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3634,7 +3634,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3739,7 +3739,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3844,7 +3844,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001,
+   "book_share": 0.10323093202064618,
    "numeraire": false,
    "how": {
     "P1": [
@@ -3949,7 +3949,7 @@
     "P2",
     "P5"
    ],
-   "book_share": 0.0588765152,
+   "book_share": 0.058878055811775604,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4062,7 +4062,7 @@
     "P2",
     "P5"
    ],
-   "book_share": 0.0588765152,
+   "book_share": 0.058878055811775604,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4175,7 +4175,7 @@
     "P2",
     "P5"
    ],
-   "book_share": 0.0588765152,
+   "book_share": 0.058878055811775604,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4294,7 +4294,7 @@
     "P2",
     "P5"
    ],
-   "book_share": 0.057261089200000004,
+   "book_share": 0.05726258981145251,
    "numeraire": true,
    "how": {
     "P2": [
@@ -4379,7 +4379,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4417,7 +4417,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4469,7 +4469,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4535,7 +4535,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4601,7 +4601,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4653,7 +4653,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4743,7 +4743,7 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852,
+   "book_share": 0.0032309320006461864,
    "numeraire": false,
    "how": {
     "P1": [
@@ -4820,17 +4820,27 @@
     "P3",
     "P8"
    ],
-   "book_share": 0.20323085200000002
+   "book_share": 0.20323093204064618
   },
   {
-   "id": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
-   "label": "CurveStableSwapNG DOLA-sUSDe",
+   "id": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
+   "label": "StablePairHook 0x000011",
    "pockets": [
     "P1",
     "P2",
-    "P3"
+    "P3",
+    "P8"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.20323093204064618
+  },
+  {
+   "id": "0xe0554a476a092703abdb3ef35c80e0d76d32939f",
+   "label": "UniswapV3Pool 0xe0554a",
+   "pockets": [
+    "P3",
+    "P8"
+   ],
+   "book_share": 0.20000000004
   },
   {
    "id": "0x167478921b907422f8e88b43c4af2b8bea278d3a",
@@ -4840,7 +4850,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0x5c2ab69eb2bf12a2f4572d178687bd4660512972",
@@ -4850,7 +4860,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0xd29f8980852c2c76fc3f6e96a7aa06e0bedcc1b1",
@@ -4860,7 +4870,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0x47ab5f9d8c9c7d002a92320f23a696d348c56a7f",
@@ -4870,7 +4880,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0x4dece678ceceb27446b35c672dc7d61f30bad69e",
@@ -4880,7 +4890,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0x13e12bb0e6a2f1a3d6901a59a9d585e89a6243e1",
@@ -4890,17 +4900,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
-  },
-  {
-   "id": "0x0000113dcf4add69999fad8f20f2b63f979bfcc0",
-   "label": "StablePairHook 0x000011",
-   "pockets": [
-    "P1",
-    "P2",
-    "P3"
-   ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0x3416cf6c708da44db2624d63ea0aaef7113527c6",
@@ -4910,7 +4910,7 @@
     "P2",
     "P3"
    ],
-   "book_share": 0.10323085200000001
+   "book_share": 0.10323093202064618
   },
   {
    "id": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
@@ -4919,7 +4919,16 @@
     "P1",
     "P2"
    ],
-   "book_share": 0.003230852
+   "book_share": 0.0032309320006461864
+  },
+  {
+   "id": "0x744793b5110f6ca9cc7cdfe1ce16677c3eb192ef",
+   "label": "CurveStableSwapNG DOLA-sUSDe",
+   "pockets": [
+    "P1",
+    "P2"
+   ],
+   "book_share": 0.0032309320006461864
   }
  ],
  "headline": "These 10 pockets are 7 bets (effective 5.2): 16% of the book depends on USDC / USD (AccessControlledOCR2Aggregator) (P4, P5).",

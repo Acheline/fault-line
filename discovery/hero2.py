@@ -187,11 +187,12 @@ def group_exposure(ms: list[dict], oq: dict) -> dict:
 
 
 # =========================================================================== Q2: can borrowers repay?
-def borrowers(fork: Fork, m: dict, offline: bool) -> list[dict]:
+def borrowers(fork: Fork, m: dict, offline: bool, n: int = N_BORROWERS) -> list[dict]:
     """Largest borrowers from the Morpho API; position and health factor re-read on the fork (source of truth)."""
     q = ('{ marketPositions(first:%d, orderBy: BorrowShares, orderDirection: Desc, where:{marketUniqueKey_in:["%s"], '
-         'chainId_in:[1]}){ items{ user{address} } } }' % (N_BORROWERS, m["market_id"]))
-    items = (_api(f"morpho_borrowers_{m['market_id'][:18]}", lambda: _morpho(q), offline) or {}) \
+         'chainId_in:[1]}){ items{ user{address} } } }' % (n, m["market_id"]))
+    key = f"morpho_borrowers_{m['market_id'][:18]}" + (f"_n{n}" if n != N_BORROWERS else "")
+    items = (_api(key, lambda: _morpho(q), offline) or {}) \
         .get("marketPositions", {}).get("items", [])
     mid = bytes.fromhex(m["market_id"][2:])
     mk = fork.call(A.MORPHO_BLUE, "market(bytes32)", ["bytes32"], [mid], ["uint128"] * 6)
@@ -223,54 +224,103 @@ def hf_buckets(bs: list[dict]) -> dict:
             for lo, hi, lab in edges}
 
 
+NO_V4 = "uniswap-v4,uniswap-v4-fairflow,uniswap-v4-kem"
 EXIT_SIZES = [0.1, 0.25, 0.5, 1.0]     # x the largest borrower's collateral (one liquidation, seized at once)
 
 
-def pendle_quote(token: str, amount: int, offline: bool) -> float | None:
-    """USDC out from the Pendle router (PT -> SY -> underlying -> USDC, aggregator enabled). Cached."""
-    p = {"receiver": HARNESS, "slippage": "0.01", "enableAggregator": "true", "tokensIn": token,
+def pendle_route(token: str, amount: int, offline: bool, block: int | None = None) -> dict | None:
+    """Pendle router convert (PT -> SY -> underlying -> USDC, aggregator enabled): {to, data, amount_out}. Cached."""
+    p = {"receiver": HARNESS, "slippage": "0.05", "enableAggregator": "true", "tokensIn": token,
          "amountsIn": str(amount), "tokensOut": A.USDC}
-    try:
-        r = _api(f"pendle_convert_{token.lower()[:12]}_{amount}", lambda: requests.get(
-            "https://api-v2.pendle.finance/core/v2/sdk/1/convert", params=p, timeout=60).json(), offline)
-        return int(r["routes"][0]["outputs"][0]["amount"]) / 1e6
-    except Exception:
-        return None
+
+    def fetch():
+        r = requests.get("https://api-v2.pendle.finance/core/v2/sdk/1/convert", params=p, timeout=60).json()
+        rt = r["routes"][0]
+        return {"to": rt["tx"]["to"], "data": rt["tx"]["data"], "amount_out": int(rt["outputs"][0]["amount"])}
+    for attempt in range(4):
+        try:
+            return _api(f"pendle_route_{token.lower()}_{amount}" + (f"_b{block}" if block else ""), fetch, offline)
+        except Exception:
+            if offline:
+                return None
+            time.sleep(2 * (attempt + 1))
+    return None
 
 
-def collateral_exit(m: dict, bs: list[dict], offline: bool) -> dict:
-    """Can a liquidator sell the seized collateral? Quote curve at 0.1/0.25/0.5/1x the largest borrower's collateral.
-    PTs are quoted through the Pendle router (aggregator-only quotes miss the Pendle AMM); others via KyberSwap.
-    A >5% discount already at 0.1x means no liquid pool: the quote comes from residual orders, confidence low."""
+def execute_exit(fork: Fork, token: str, amount: int, route: dict) -> float | None:
+    """Sell `amount` of collateral on the fork through the router calldata. The tokens are the borrowers' own
+    collateral, moved out of Morpho Blue (impersonated), so no balance slot needs to be forged. USDC received."""
+    with fork.snapshot():
+        try:
+            fork.send(A.MORPHO_BLUE, token, selector("transfer(address,uint256)") + encode(["address", "uint256"], [HARNESS, amount]))
+            fork.send(HARNESS, token, selector("approve(address,uint256)") + encode(["address", "uint256"], [route["to"], 2**256 - 1]))
+            u0 = fork.call1(A.USDC, "balanceOf(address)", "uint256", ["address"], [HARNESS]) or 0
+            fork.send(HARNESS, route["to"], route["data"], gas=12_000_000)
+            return ((fork.call1(A.USDC, "balanceOf(address)", "uint256", ["address"], [HARNESS]) or 0) - u0) / 1e6
+        except RuntimeError:
+            return None
+
+
+def collateral_exit(fork: Fork, m: dict, bs: list[dict], offline: bool) -> dict:
+    """Can a liquidator sell the seized collateral? Curve at 0.1/0.25/0.5/1x the largest borrower's collateral, each
+    size EXECUTED on the fork (router calldata). PTs go through the Pendle router (aggregator-only routes miss the
+    Pendle AMM); others through KyberSwap. A >5% discount already at 0.1x means no liquid pool: the price comes from
+    residual orders, confidence low. capacity = largest size whose discount stays within the liquidation bonus."""
     if not bs:
         return {}
     big, val = bs[0]["collateral"], bs[0]["collateral_value_usd"]
     is_pt = m["collateral_symbol"].startswith("PT-")
+    bonus = lif(int(m["lltv"] * WAD)) / WAD - 1
     curve = []
     for k in EXIT_SIZES:
         amt = int(big * k)
         if is_pt:
-            got = pendle_quote(m["collateral"], amt, offline)
+            rt = pendle_route(m["collateral"], amt, offline, fork.fork_block)
         else:
-            q = kyber_exit(m["collateral"], amt, offline)
-            got = q["amount_out"] / 1e6 if q else None
-        curve.append({"x": k, "oracle_value_usd": val * k, "usdc_out": got,
-                      "discount_vs_oracle": 1 - got / (val * k) if got and val else None})
+            q = kyber_exit(m["collateral"], amt, offline, fork.fork_block)
+            rt = q and {"to": q["to"], "data": q["data"], "amount_out": q["amount_out"]}
+        quoted = rt["amount_out"] / 1e6 if rt else None
+        got = execute_exit(fork, m["collateral"], amt, rt) if rt else None
+        if got is None and not is_pt:   # Uniswap v4 hops carry builder-set price limits that trip on fork state
+            q = kyber_exit(m["collateral"], amt, offline, fork.fork_block, exclude=NO_V4)
+            if q:
+                got = execute_exit(fork, m["collateral"], amt, q)
+        ref = val * k
+        curve.append({"x": k, "oracle_value_usd": ref, "quoted_usdc": quoted, "executed_usdc": got,
+                      "usdc_out": got if got is not None else quoted, "executed": got is not None,
+                      "discount_vs_oracle": 1 - (got if got is not None else quoted) / ref if (got or quoted) and ref else None})
+    n_exec = sum(c["executed"] for c in curve)
     rec = {"route": "Pendle router" if is_pt else "KyberSwap aggregator", "size_collateral_usd_at_oracle": val,
-           "curve": curve, "confidence": "medium",
-           "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted"}
+           "curve": curve, "liquidation_bonus": bonus,
+           "confidence": "high" if n_exec == len(curve) else "medium",
+           "evidence": f"{n_exec}/{len(curve)} sizes executed on the fork (router calldata, real collateral); "
+                       "the rest are live quotes"}
+    # liquidation capacity: largest seized size (USD at oracle) a liquidator can sell within the bonus, interpolated
+    cap, prev = 0.0, (0.0, 0.0)
+    for c in curve:
+        d = c["discount_vs_oracle"]
+        if d is None:
+            break
+        if d <= bonus:
+            cap, prev = c["oracle_value_usd"], (c["oracle_value_usd"], d)
+            continue
+        x0, d0 = prev
+        cap = x0 + (c["oracle_value_usd"] - x0) * (bonus - d0) / (d - d0) if d > d0 else x0
+        break
+    else:
+        cap = curve[-1]["oracle_value_usd"]
+    rec["liquidation_capacity_usd"] = cap
     full = curve[-1]
     rec.update(usdc_out=full["usdc_out"], discount_vs_oracle=full["discount_vs_oracle"])
     if full["usdc_out"] is None:
-        rec.update(flag="no route at liquidation size: liquidators have no on-chain exit", confidence="medium")
+        rec.update(flag="no route at liquidation size: liquidators have no on-chain exit", liquidation_capacity_usd=0.0)
     elif (curve[0]["discount_vs_oracle"] or 0) > 0.05:
         rec.update(flag=f"no liquid pool: {curve[0]['discount_vs_oracle']:.0%} below oracle already at 0.1x size "
-                        "(quote from residual orders); exit is issuer redemption", confidence="low")
+                        "(residual orders); exit is issuer redemption", confidence="low", liquidation_capacity_usd=0.0)
     elif full["discount_vs_oracle"] > 0.10:
-        thin = next((c for c in curve if c["discount_vs_oracle"] > 0.02), full)
         rec["flag"] = (f"thin liquidity: {full['discount_vs_oracle']:.0%} below oracle at full liquidation size "
-                       f"(${val:,.0f}); {curve[0]['discount_vs_oracle']:+.1%} at 0.1x, >2% from {thin['x']}x")
-    rec["liquidation_profitable_full_size"] = (full["usdc_out"] or 0) * lif(int(m["lltv"] * WAD)) / WAD >= val
+                       f"(${val:,.0f}); liquidators can clear ~${cap:,.0f} within the {bonus:.2%} bonus")
+    rec["liquidation_profitable_full_size"] = (full["usdc_out"] or 0) * (1 + bonus) >= val
     return rec
 
 
@@ -530,7 +580,7 @@ def build(offline: bool = False):
         bs = borrowers(fork, m, offline)
         rec = {"market": m["collateral_symbol"], "market_id": m["market_id"], "n_borrowers_read": len(bs),
                "debt_covered_usd": sum(x["debt_usd"] for x in bs), "market_borrow_usd": m["market_borrow_usd"],
-               "largest": bs[:5], "hf_buckets": hf_buckets(bs), "collateral_exit": collateral_exit(m, bs, offline),
+               "largest": bs[:5], "hf_buckets": hf_buckets(bs), "collateral_exit": collateral_exit(fork, m, bs, offline),
                "shocks": [shock_market(fork, m, bs, s) for s in SHOCKS] if bs else []}
         if bs:
             traces.append((CriticalPath.LIQUIDATION, liquidation_trace(fork, m, bs[0]), m["node"]))
@@ -586,6 +636,8 @@ def build(offline: bool = False):
                               "issuer_reported" if oracle_quality.ISSUER_REPORTED in kinds else
                               "exchange_rate" if oracle_quality.EXCHANGE_RATE in kinds else
                               "hardcoded" if set(kinds) & set(oracle_quality.HARDCODED) else "unknown"}
+        # an executed component we could not classify (e.g. Ojo PT feed internals) caps confidence at medium
+        rec["confidence"] = "medium" if "unknown" in src.values() else "high"
         if rec["n_market_derived"] == 0:
             rec["flag"] = (f"NO market-derived feed: collateral priced by {rec['price_basis'].replace('_', ' ')} "
                            "(the market cannot signal a loss; issuer or schedule sets the price)")

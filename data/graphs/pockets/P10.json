@@ -117,8 +117,8 @@
    "chain": "arbitrum",
    "address": null,
    "tags": [
-    "bridge",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "bridge"
    ],
    "paths": [],
    "props": {},

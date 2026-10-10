@@ -55,19 +55,29 @@ def _root(b: GraphBuilder, pos: Position, chain: str = "ethereum"):
 
 
 # --------------------------------------------------------------------------- token_hold
-def kyber_exit(token: str, amount: int, offline: bool) -> dict | None:
+def kyber_exit(token: str, amount: int, offline: bool, block: int | None = None, exclude: str = "") -> dict | None:
+    """Route + calldata. `block` keys the cache to a fork block: calldata built against other state reverts; with a
+    block, min-out is set wide (50%) so the FORK's pools decide the output. `exclude`: Kyber sources to skip."""
     def fetch():
-        r = requests.get(f"{KYBER}/routes", params={"tokenIn": token, "tokenOut": A.USDC, "amountIn": str(amount)},
-                         headers={"x-client-id": "fault-line"}, timeout=60).json()
+        prm = {"tokenIn": token, "tokenOut": A.USDC, "amountIn": str(amount)}
+        if exclude:
+            prm["excludedSources"] = exclude
+        r = requests.get(f"{KYBER}/routes", params=prm, headers={"x-client-id": "fault-line"}, timeout=60).json()
         rs = r["data"]["routeSummary"]
         bld = requests.post(f"{KYBER}/route/build", headers={"x-client-id": "fault-line"}, timeout=60, json={
-            "routeSummary": rs, "sender": HARNESS, "recipient": HARNESS, "slippageTolerance": 100}).json()["data"]
+            "routeSummary": rs, "sender": HARNESS, "recipient": HARNESS, "slippageTolerance": 5000 if block else 100,
+            "deadline": 2**40}).json()["data"]
         return {"to": bld["routerAddress"], "data": bld["data"], "amount_out": int(bld["amountOut"]),
                 "amount_in_usd": float(rs.get("amountInUsd") or 0), "amount_out_usd": float(rs.get("amountOutUsd") or 0)}
-    try:
-        return _api(f"kyber_{token.lower()}_{amount}", fetch, offline)
-    except Exception:
-        return None
+    for attempt in range(4):           # free tier rate-limits bursts
+        try:
+            return _api(f"kyber_{token.lower()}_{amount}" + (f"_b{block}" if block else "") + (f"_x{exclude[:12]}" if exclude else ""),
+                        fetch, offline)
+        except Exception:
+            if offline:
+                return None
+            time.sleep(2 * (attempt + 1))
+    return None
 
 
 def token_price_usd(token: str, dec: int, offline: bool) -> float | None:
@@ -108,7 +118,7 @@ def token_hold(pos: Position, fork: Fork, offline: bool) -> tuple[DependencyGrap
     else:
         px = token_price_usd(token, dec, offline)
         amt = int((pos.size_usd or 0) / px * 10**dec) if px else 0
-        q = kyber_exit(token, amt, offline) if amt else None
+        q = kyber_exit(token, amt, offline, fork.fork_block) if amt else None
         if q:
             with fork.snapshot():
                 fork.fund_erc20(token, HARNESS, amt)

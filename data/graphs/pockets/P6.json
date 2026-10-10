@@ -1,6 +1,6 @@
 {
  "position_id": "P6",
- "fork_block": 26161499,
+ "fork_block": 26162857,
  "nodes": {
   "position:P6": {
    "id": "position:P6",
@@ -11,7 +11,7 @@
    "tags": [],
    "paths": [],
    "props": {
-    "size_usd": 17056174.24,
+    "size_usd": 17056097.2,
     "pocket": "P6"
    },
    "provenance": []
@@ -37,8 +37,8 @@
     "proxy"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "implementation": "0xadc45df3cf1584624c97338bef33363bf5b97ada",
@@ -60,7 +60,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0x1da24f3e",
      "url": null,
@@ -68,7 +68,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0xb18d6afd",
      "url": null,
@@ -86,8 +86,8 @@
     "proxy"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "implementation": "0x728a138a4823392c2efa55e028d434f526fe03cf",
@@ -100,7 +100,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P6.aave_income",
      "detail": "CALL 0xd15e0053",
      "url": null,
@@ -108,7 +108,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0x69328dec",
      "url": null,
@@ -116,7 +116,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "POOL()",
      "url": null,
@@ -134,8 +134,8 @@
     "implementation"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "PoolInstance",
@@ -148,7 +148,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P6.aave_income",
      "detail": "DELEGATECALL 0xd15e0053",
      "url": null,
@@ -156,7 +156,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x69328dec",
      "url": null,
@@ -164,7 +164,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -191,7 +191,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0xfca513a8",
      "url": null,
@@ -199,7 +199,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "ADDRESSES_PROVIDER()",
      "url": null,
@@ -229,7 +229,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x186dea44",
      "url": null,
@@ -237,7 +237,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getSupplyLogic()",
      "url": null,
@@ -269,7 +269,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0xb1bf962d",
      "url": null,
@@ -301,7 +301,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0xb1bf962d",
      "url": null,
@@ -309,7 +309,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -341,7 +341,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x1da24f3e",
      "url": null,
@@ -349,7 +349,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0xb18d6afd",
      "url": null,
@@ -357,7 +357,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -384,7 +384,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0xb90db31b",
      "url": null,
@@ -392,7 +392,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "RESERVE_INTEREST_RATE_STRATEGY()",
      "url": null,
@@ -422,7 +422,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0x31873e2e",
      "url": null,
@@ -430,7 +430,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "REWARDS_CONTROLLER()",
      "url": null,
@@ -438,7 +438,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getIncentivesController()",
      "url": null,
@@ -468,7 +468,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x31873e2e",
      "url": null,
@@ -476,7 +476,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -508,7 +508,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -516,7 +516,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "UNDERLYING_ASSET_ADDRESS()",
      "url": null,
@@ -524,7 +524,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -556,7 +556,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -564,7 +564,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -586,7 +586,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBorrowLogic()",
      "url": null,
@@ -608,7 +608,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getFlashLoanLogic()",
      "url": null,
@@ -630,7 +630,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLiquidationLogic()",
      "url": null,
@@ -652,7 +652,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPoolLogic()",
      "url": null,
@@ -676,7 +676,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -684,7 +684,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "whoCanRescue()",
      "url": null,
@@ -706,7 +706,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -730,7 +730,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -752,7 +752,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -774,7 +774,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -796,7 +796,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -804,7 +804,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -812,7 +812,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -820,7 +820,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -835,8 +835,8 @@
    "chain": "ethereum",
    "address": "0xdabad81af85554e9ae636395611c58f7ec1aaec5",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -847,7 +847,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -869,7 +869,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -894,7 +894,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -918,7 +918,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -944,7 +944,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "CROSS_CHAIN_CONTROLLER()",
      "url": null,
@@ -970,7 +970,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "MESSAGE_ORIGINATOR()",
      "url": null,
@@ -1007,7 +1007,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -1032,7 +1032,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1056,7 +1056,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -1081,7 +1081,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1105,7 +1105,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -1129,7 +1129,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -1214,7 +1214,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P6.aave_income",
      "detail": "CALL 0xd15e0053",
      "url": null,
@@ -1235,7 +1235,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P6.aave_income",
      "detail": "DELEGATECALL 0xd15e0053",
      "url": null,
@@ -1256,7 +1256,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0x69328dec",
      "url": null,
@@ -1277,7 +1277,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x69328dec",
      "url": null,
@@ -1298,7 +1298,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0xfca513a8",
      "url": null,
@@ -1319,7 +1319,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x186dea44",
      "url": null,
@@ -1340,7 +1340,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0xb1bf962d",
      "url": null,
@@ -1361,7 +1361,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0xb1bf962d",
      "url": null,
@@ -1383,7 +1383,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0x1da24f3e",
      "url": null,
@@ -1391,7 +1391,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0xb18d6afd",
      "url": null,
@@ -1413,7 +1413,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x1da24f3e",
      "url": null,
@@ -1421,7 +1421,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0xb18d6afd",
      "url": null,
@@ -1442,7 +1442,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "STATICCALL 0xb90db31b",
      "url": null,
@@ -1463,7 +1463,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0x31873e2e",
      "url": null,
@@ -1484,7 +1484,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0x31873e2e",
      "url": null,
@@ -1505,7 +1505,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1526,7 +1526,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P6.aave_withdraw",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -1543,7 +1543,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -1562,7 +1562,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "POOL()",
      "url": null,
@@ -1581,7 +1581,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "REWARDS_CONTROLLER()",
      "url": null,
@@ -1589,7 +1589,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getIncentivesController()",
      "url": null,
@@ -1608,7 +1608,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "UNDERLYING_ASSET_ADDRESS()",
      "url": null,
@@ -1625,7 +1625,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -1644,7 +1644,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "ADDRESSES_PROVIDER()",
      "url": null,
@@ -1663,7 +1663,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "RESERVE_INTEREST_RATE_STRATEGY()",
      "url": null,
@@ -1682,7 +1682,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBorrowLogic()",
      "url": null,
@@ -1701,7 +1701,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getFlashLoanLogic()",
      "url": null,
@@ -1720,7 +1720,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLiquidationLogic()",
      "url": null,
@@ -1739,7 +1739,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPoolLogic()",
      "url": null,
@@ -1758,7 +1758,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getSupplyLogic()",
      "url": null,
@@ -1777,7 +1777,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "ADDRESSES_PROVIDER()",
      "url": null,
@@ -1796,7 +1796,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "RESERVE_INTEREST_RATE_STRATEGY()",
      "url": null,
@@ -1815,7 +1815,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBorrowLogic()",
      "url": null,
@@ -1834,7 +1834,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getFlashLoanLogic()",
      "url": null,
@@ -1853,7 +1853,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLiquidationLogic()",
      "url": null,
@@ -1872,7 +1872,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPoolLogic()",
      "url": null,
@@ -1891,7 +1891,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getSupplyLogic()",
      "url": null,
@@ -1912,7 +1912,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -1929,7 +1929,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -1946,7 +1946,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -1963,7 +1963,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -1984,7 +1984,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -2005,7 +2005,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -2026,7 +2026,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2047,7 +2047,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -2071,7 +2071,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -2079,7 +2079,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -2087,7 +2087,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2095,7 +2095,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -2116,7 +2116,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2135,7 +2135,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -2156,7 +2156,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2173,7 +2173,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -2194,7 +2194,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -2213,7 +2213,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "CROSS_CHAIN_CONTROLLER()",
      "url": null,
@@ -2232,7 +2232,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "MESSAGE_ORIGINATOR()",
      "url": null,
@@ -2253,7 +2253,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -2274,7 +2274,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2293,7 +2293,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "whoCanRescue()",
      "url": null,
@@ -2314,7 +2314,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2331,7 +2331,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -2352,7 +2352,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -2373,7 +2373,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -2394,7 +2394,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2411,7 +2411,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -2432,7 +2432,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -2453,7 +2453,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -2474,7 +2474,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2493,7 +2493,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "CROSS_CHAIN_CONTROLLER()",
      "url": null,
@@ -2514,7 +2514,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2535,7 +2535,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2581,12 +2581,12 @@
  "meta": {
   "exit": {
    "route": "Aave Pool.withdraw",
-   "size_usd": 17056174.24,
+   "size_usd": 17056097.2,
    "error": null,
-   "usdc_out": 17056174.239998
+   "usdc_out": 17056097.199998
   },
   "pocket": "P6",
-  "size_usd": 17056174.24,
+  "size_usd": 17056097.2,
   "pipeline": "discovery.token_hold"
  }
 }

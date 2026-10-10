@@ -7,7 +7,7 @@ aum_usd: 400000000
 aum_source: "assumption: brief states Belem runs ~$400M"
 risk_aversion_lambda: 0.5
 lambda_source: "assumption: to be replaced by Belem's answer (QUESTIONS.md #3)"
-fork_block: 26161499
+fork_block: 26162857
 
 positions:
   - id: hero1_pt_susde_26nov2026
@@ -35,8 +35,8 @@ positions:
     chain: ethereum
     mandate: curated_vault
     pipeline: discovery.hero2
-    size_usd: 2782283
-    size_source: "assumption: ASSUMED_ANSWERS.md §4 cap, 15% of vault totalAssets 18,548,554 USDC at block 26161499"
+    size_usd: 2782356
+    size_source: "assumption: ASSUMED_ANSWERS.md §4 cap, 15% of vault totalAssets 18,549,041 USDC at block 26162857"
     tags: [curated_vault, rwa, lender_side, belem_rockawayx]
     legs:
       - type: vault_deposit

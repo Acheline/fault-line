@@ -1,6 +1,6 @@
 {
  "position_id": "hero1_pt_susde_26nov2026",
- "fork_block": 26161499,
+ "fork_block": 26162857,
  "nodes": {
   "position:hero1_pt_susde_26nov2026": {
    "id": "position:hero1_pt_susde_26nov2026",
@@ -36,8 +36,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
@@ -47,7 +47,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -66,9 +66,9 @@
     "critical"
    ],
    "paths": [
+    "liquidation",
     "exit",
-    "value",
-    "liquidation"
+    "value"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -85,7 +85,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -93,7 +93,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -101,7 +101,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -109,7 +109,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -117,7 +117,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xb64761f9",
      "url": null,
@@ -125,7 +125,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -133,7 +133,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -148,8 +148,8 @@
    "chain": "ethereum",
    "address": "0xbf98480425a29197e5d99d003017f63a1e595d02",
    "tags": [
-    "pendle_sy",
-    "critical"
+    "critical",
+    "pendle_sy"
    ],
    "paths": [
     "exit",
@@ -159,7 +159,7 @@
     "contract_name": "PendleSUSDESY",
     "symbol": "SY-sUSDE",
     "decimals": 18,
-    "exchange_rate": 1252336469239978347,
+    "exchange_rate": 1252367266450060530,
     "storage_slots_read": {
      "value": 0,
      "exit": 9
@@ -170,7 +170,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -178,7 +178,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x3ba0b9a9",
      "url": null,
@@ -186,7 +186,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "CALL 0x3ba0b9a9",
      "url": null,
@@ -194,7 +194,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x3ba0b9a9",
      "url": null,
@@ -202,7 +202,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xc4f59f9b",
      "url": null,
@@ -210,7 +210,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf8b2f991",
      "url": null,
@@ -218,7 +218,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -226,7 +226,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -234,7 +234,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -242,7 +242,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -250,7 +250,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x769f8e5d",
      "url": null,
@@ -258,7 +258,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -287,7 +287,7 @@
     "underlying": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
     "storage_slots_read": {
      "value": 3,
-     "exit": 43
+     "exit": 44
     },
     "protocol": "ethena-usde",
     "brief_layer": "2. yield source & issuer"
@@ -295,7 +295,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -303,7 +303,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x01e1d114",
      "url": null,
@@ -311,7 +311,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x18160ddd",
      "url": null,
@@ -319,7 +319,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "STATICCALL 0x01e1d114",
      "url": null,
@@ -327,7 +327,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "STATICCALL 0x18160ddd",
      "url": null,
@@ -335,7 +335,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:susde.convertToAssets",
      "detail": "CALL 0x07a2d13a",
      "url": null,
@@ -343,7 +343,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x01e1d114",
      "url": null,
@@ -351,7 +351,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x18160ddd",
      "url": null,
@@ -359,7 +359,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -367,7 +367,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -375,7 +375,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -383,7 +383,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -391,7 +391,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -399,7 +399,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldToken()",
      "url": null,
@@ -434,7 +434,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -442,7 +442,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -450,7 +450,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -458,7 +458,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:susde.convertToAssets",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -466,7 +466,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -474,7 +474,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -482,7 +482,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usde()",
      "url": null,
@@ -501,18 +501,18 @@
     "morpho_oracle_interface"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
-    "price": 992347144216133943000000,
+    "price": 992378308599695586000000,
     "storage_slots_read": {
      "value": 1,
      "liquidation": 1
     },
     "params": {
-     "backupPrice": 991947049694528882116861,
+     "backupPrice": 991978201513234360733636,
      "canAcceptChallenge": false,
      "canAcceptHealing": false,
      "challengeExpiresAt": 0,
@@ -528,8 +528,8 @@
      "isDeviant": false,
      "isHealing": false,
      "isPrimary": true,
-     "price": 992347144216133943000000,
-     "primaryPrice": 992347144216133943000000
+     "price": 992378308599695586000000,
+     "primaryPrice": 992378308599695586000000
     },
     "feed_quality": {
      "id": "0xf8b29e7e9c00ce531434775f7923cc9fbca01b08",
@@ -550,16 +550,16 @@
      "spot_checks": [
       {
        "reference": "executed exit PT->USDC on fork (1,000,000 PT)",
-       "ref_value": 0.9925478433489999,
-       "oracle_value": 0.9923471442161339,
-       "deviation_pct": -0.0202,
+       "ref_value": 0.992543462069,
+       "oracle_value": 0.9923783085996957,
+       "deviation_pct": -0.0166,
        "source": "trace"
       },
       {
        "reference": "Pendle 15m TWAP x Chainlink USDe/USD",
-       "ref_value": 0.9933822796969547,
-       "oracle_value": 0.9923471442161339,
-       "deviation_pct": -0.1042,
+       "ref_value": 0.9934075083812929,
+       "oracle_value": 0.9923783085996957,
+       "deviation_pct": -0.1036,
        "source": "onchain_read"
       }
      ]
@@ -569,7 +569,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -577,7 +577,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -585,7 +585,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -603,8 +603,8 @@
     "implementation"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -618,7 +618,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "DELEGATECALL 0xa035b1fe",
      "url": null,
@@ -626,7 +626,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "DELEGATECALL 0xa035b1fe",
      "url": null,
@@ -645,12 +645,12 @@
     "morpho_oracle_interface"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 992347144216133943000000,
+    "price": 992378308599695586000000,
     "storage_slots_read": {
      "value": 0,
      "liquidation": 0
@@ -659,7 +659,7 @@
      "BASE_VAULT_CONVERSION_SAMPLE": 1,
      "QUOTE_VAULT_CONVERSION_SAMPLE": 1,
      "SCALE_FACTOR": 1000000,
-     "price": 992347144216133943000000
+     "price": 992378308599695586000000
     },
     "feed_quality": {
      "id": "0x8fca98c9abee4dcb33ba9f3d17db4ad57f72706d",
@@ -687,7 +687,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -695,7 +695,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -703,7 +703,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "currentOracle()",
      "url": null,
@@ -711,7 +711,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "primaryOracle()",
      "url": null,
@@ -727,17 +727,17 @@
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
     "fixed_schedule",
-    "no_update_timestamp",
     "chainlink_interface",
-    "critical"
+    "critical",
+    "no_update_timestamp"
    ],
    "paths": [
-    "value",
-    "liquidation"
+    "liquidation",
+    "value"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
-    "answer": 992347144216133943,
+    "answer": 992378308599695586,
     "updated_at": 0,
     "storage_slots_read": {
      "value": 0,
@@ -765,9 +765,9 @@
      "spot_checks": [
       {
        "reference": "Pendle 15m TWAP PT->USDe",
-       "ref_value": 0.9937829531079887,
-       "oracle_value": 0.9923471442161339,
-       "deviation_pct": -0.1445,
+       "ref_value": 0.9938081919681305,
+       "oracle_value": 0.9923783085996957,
+       "deviation_pct": -0.1439,
        "source": "onchain_read"
       }
      ]
@@ -778,7 +778,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -786,7 +786,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -794,7 +794,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -849,7 +849,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "CALL 0xabca0eab",
      "url": null,
@@ -881,7 +881,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "DELEGATECALL 0xabca0eab",
      "url": null,
@@ -889,7 +889,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -928,7 +928,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x2c8ce6bc",
      "url": null,
@@ -936,7 +936,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0xe184c9be",
      "url": null,
@@ -944,7 +944,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x883bdbfd",
      "url": null,
@@ -952,7 +952,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x2c8ce6bc",
      "url": null,
@@ -960,7 +960,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x29910b11",
      "url": null,
@@ -997,7 +997,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0xd2a3584e",
      "url": null,
@@ -1005,7 +1005,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x516399df",
      "url": null,
@@ -1013,7 +1013,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x60e0a9e1",
      "url": null,
@@ -1021,7 +1021,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xe184c9be",
      "url": null,
@@ -1029,7 +1029,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xafd27bf5",
      "url": null,
@@ -1037,7 +1037,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xd94073d4",
      "url": null,
@@ -1045,7 +1045,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x1d52edc4",
      "url": null,
@@ -1053,7 +1053,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1061,7 +1061,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbcb7ea5d",
      "url": null,
@@ -1094,7 +1094,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "DELEGATECALL 0x1dd421ce",
      "url": null,
@@ -1102,7 +1102,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x4af74b68",
      "url": null,
@@ -1146,11 +1146,11 @@
      "flags": [
       "changeable_without_timelock"
      ],
-     "staleness_s": 24108,
+     "staleness_s": 40488,
      "n_transmitters": 16,
-     "n_updates_30d": 32,
+     "n_updates_30d": 31,
      "heartbeat_s_observed": 82836,
-     "median_gap_s": 82812,
+     "median_gap_s": 82818.0,
      "deviation_trigger_observed_pct": null,
      "n_deviation_updates_30d": 0,
      "answer_min_30d": 99922072,
@@ -1166,9 +1166,9 @@
      "spot_checks": [
       {
        "reference": "Curve USDe/USDC get_dy(1k USDe)",
-       "ref_value": 0.99959924,
+       "ref_value": 0.999659449,
        "oracle_value": 0.99959682,
-       "deviation_pct": -0.0002,
+       "deviation_pct": -0.0063,
        "source": "onchain_read"
       }
      ]
@@ -1178,7 +1178,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:usde_usd.latestRoundData",
      "detail": "CALL 0xfeaf968c",
      "url": null,
@@ -1186,7 +1186,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_2()",
      "url": null,
@@ -1233,11 +1233,11 @@
      "flags": [
       "changeable_without_timelock"
      ],
-     "staleness_s": 24108,
+     "staleness_s": 40488,
      "n_transmitters": 16,
-     "n_updates_30d": 32,
+     "n_updates_30d": 31,
      "heartbeat_s_observed": 82836,
-     "median_gap_s": 82812,
+     "median_gap_s": 82818.0,
      "deviation_trigger_observed_pct": null,
      "n_deviation_updates_30d": 0,
      "answer_min_30d": 99922072,
@@ -1257,7 +1257,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:usde_usd.latestRoundData",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1265,7 +1265,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "aggregator()",
      "url": null,
@@ -1294,7 +1294,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x594a88cc",
      "url": null,
@@ -1302,7 +1302,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xeb3a7d47",
      "url": null,
@@ -1310,7 +1310,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "ROUTER()",
      "url": null,
@@ -1341,7 +1341,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x594a88cc",
      "url": null,
@@ -1374,7 +1374,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x6122b173",
      "url": null,
@@ -1406,7 +1406,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x6122b173",
      "url": null,
@@ -1414,7 +1414,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1445,7 +1445,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xeb3a7d47",
      "url": null,
@@ -1478,7 +1478,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x5c098c11",
      "url": null,
@@ -1510,7 +1510,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x5c098c11",
      "url": null,
@@ -1518,7 +1518,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1550,7 +1550,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x2bdb823c",
      "url": null,
@@ -1582,7 +1582,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x2bdb823c",
      "url": null,
@@ -1590,7 +1590,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1621,7 +1621,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xe4da6f2e",
      "url": null,
@@ -1652,7 +1652,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xe4da6f2e",
      "url": null,
@@ -1660,7 +1660,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1689,7 +1689,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xe21fd0e9",
      "url": null,
@@ -1704,12 +1704,12 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "critical",
-    "proxy"
+    "proxy",
+    "critical"
    ],
    "paths": [
-    "exit",
-    "liquidation"
+    "liquidation",
+    "exit"
    ],
    "props": {
     "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
@@ -1717,7 +1717,7 @@
     "symbol": "USDC",
     "decimals": 6,
     "storage_slots_read": {
-     "exit": 14,
+     "exit": 15,
      "liquidation": 6
     },
     "brief_layer": "5. lending market"
@@ -1725,7 +1725,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1733,7 +1733,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1741,7 +1741,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1749,7 +1749,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1757,7 +1757,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -1765,7 +1765,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "token0()",
      "url": null,
@@ -1773,7 +1773,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "gem()",
      "url": null,
@@ -1781,7 +1781,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -1799,8 +1799,8 @@
     "implementation"
    ],
    "paths": [
-    "exit",
-    "liquidation"
+    "liquidation",
+    "exit"
    ],
    "props": {
     "contract_name": "FiatTokenV2_2",
@@ -1816,7 +1816,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -1824,7 +1824,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -1832,7 +1832,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -1840,7 +1840,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -1848,7 +1848,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1876,7 +1876,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xd9c45357",
      "url": null,
@@ -1884,7 +1884,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3ed37eda",
      "url": null,
@@ -1892,7 +1892,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -1900,9 +1900,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xc3251075",
      "url": null,
      "confidence": 1.0
     }
@@ -1931,7 +1939,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xd9c45357",
      "url": null,
@@ -1939,7 +1947,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x3ed37eda",
      "url": null,
@@ -1947,7 +1955,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -1955,9 +1963,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "DELEGATECALL 0xc3251075",
      "url": null,
      "confidence": 1.0
     }
@@ -1983,7 +1999,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x5e3bc7bc",
      "url": null,
@@ -2012,7 +2028,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x1e2eaeaf",
      "url": null,
@@ -2020,7 +2036,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x48c89491",
      "url": null,
@@ -2028,7 +2044,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa5841194",
      "url": null,
@@ -2036,7 +2052,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x11da60b4",
      "url": null,
@@ -2044,7 +2060,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf3cd914c",
      "url": null,
@@ -2052,7 +2068,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x0b0d9c09",
      "url": null,
@@ -2060,7 +2076,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "poolManager()",
      "url": null,
@@ -2091,7 +2107,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xe972feb9",
      "url": null,
@@ -2099,7 +2115,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xc318eada",
      "url": null,
@@ -2128,7 +2144,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -2136,7 +2152,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -2144,7 +2160,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -2172,7 +2188,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -2197,7 +2213,7 @@
     "proxy_admin": "0x2386dc45added673317ef068992f19421b481f4c",
     "contract_name": "FluidLiquidityProxy",
     "storage_slots_read": {
-     "exit": 24
+     "exit": 26
     },
     "protocol": "fluid-dex",
     "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
@@ -2205,7 +2221,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -2213,7 +2229,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -2245,7 +2261,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xad967e15",
      "url": null,
@@ -2276,7 +2292,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -2284,9 +2300,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "DELEGATECALL 0x61f598cd",
      "url": null,
      "confidence": 1.0
     }
@@ -2307,14 +2331,14 @@
     "symbol": "USDT",
     "decimals": 6,
     "storage_slots_read": {
-     "exit": 10
+     "exit": 11
     },
     "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2322,7 +2346,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2330,7 +2354,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "token1()",
      "url": null,
@@ -2361,7 +2385,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x736e774d",
      "url": null,
@@ -2390,7 +2414,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -2398,7 +2422,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -2406,7 +2430,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -2435,7 +2459,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -2465,7 +2489,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2473,7 +2497,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2504,7 +2528,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x08fce009",
      "url": null,
@@ -2512,7 +2536,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xbd1eba5b",
      "url": null,
@@ -2542,7 +2566,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2550,7 +2574,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2581,7 +2605,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -2614,7 +2638,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2622,7 +2646,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -2630,7 +2654,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2638,7 +2662,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -2669,7 +2693,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -2697,7 +2721,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x20aba08b",
      "url": null,
@@ -2705,7 +2729,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xc92aecc4",
      "url": null,
@@ -2713,7 +2737,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x487bf082",
      "url": null,
@@ -2721,7 +2745,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9f678cca",
      "url": null,
@@ -2729,7 +2753,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x7f8661a1",
      "url": null,
@@ -2737,7 +2761,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pot()",
      "url": null,
@@ -2770,7 +2794,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2778,7 +2802,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2811,7 +2835,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -2819,7 +2843,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -2827,7 +2851,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2858,7 +2882,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -2886,7 +2910,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x693de592",
      "url": null,
@@ -2919,7 +2943,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2927,7 +2951,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -2935,7 +2959,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -2943,7 +2967,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -2978,7 +3002,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -2986,7 +3010,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x07a2d13a",
      "url": null,
@@ -2994,7 +3018,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -3002,7 +3026,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xba087652",
      "url": null,
@@ -3033,7 +3057,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -3068,7 +3092,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -3076,7 +3100,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -3084,7 +3108,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -3118,7 +3142,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -3126,7 +3150,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -3134,7 +3158,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -3142,7 +3166,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3173,7 +3197,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -3202,7 +3226,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -3210,7 +3234,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -3218,7 +3242,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -3246,7 +3270,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x39072a45",
      "url": null,
@@ -3275,7 +3299,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x3850c7bd",
      "url": null,
@@ -3283,7 +3307,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -3291,7 +3315,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xd0c93a7c",
      "url": null,
@@ -3299,7 +3323,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xddca3f43",
      "url": null,
@@ -3307,7 +3331,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x5339c296",
      "url": null,
@@ -3338,7 +3362,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x8bc041a8",
      "url": null,
@@ -3359,16 +3383,40 @@
    "props": {
     "contract_name": null,
     "storage_slots_read": {
-     "exit": 1
+     "exit": 6
     },
     "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xe24f0884",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0x1e2eaeaf",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0xbcdb4dad",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0xdbd035ff",
      "url": null,
      "confidence": 1.0
     }
@@ -3394,7 +3442,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x171755b1",
      "url": null,
@@ -3402,7 +3450,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x67e828bf",
      "url": null,
@@ -3423,16 +3471,32 @@
    "props": {
     "contract_name": null,
     "storage_slots_read": {
-     "exit": 5
+     "exit": 8
     },
     "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x171755b1",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0x3b9009e0",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xe6a7bba0",
      "url": null,
      "confidence": 1.0
     }
@@ -3451,16 +3515,88 @@
    "props": {
     "contract_name": null,
     "storage_slots_read": {
-     "exit": 1
+     "exit": 2
     },
     "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5e4b813",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0x893ddf87",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xe3079c1b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xebc53e61078976118e384f110c262a263decb84b": {
+   "id": "0xebc53e61078976118e384f110c262a263decb84b",
+   "type": "CONTRACT",
+   "label": "0xebc53e61",
+   "chain": "ethereum",
+   "address": "0xebc53e61078976118e384f110c262a263decb84b",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 2
+    },
+    "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0x3b9009e0",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe4038fa09f0bb9963068afaf97be0c045155090d": {
+   "id": "0xe4038fa09f0bb9963068afaf97be0c045155090d",
+   "type": "CONTRACT",
+   "label": "0xe4038fa0",
+   "chain": "ethereum",
+   "address": "0xe4038fa09f0bb9963068afaf97be0c045155090d",
+   "tags": [],
+   "paths": [
+    "exit"
+   ],
+   "props": {
+    "contract_name": null,
+    "storage_slots_read": {
+     "exit": 3
+    },
+    "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xe6a7bba0",
      "url": null,
      "confidence": 1.0
     }
@@ -3491,7 +3627,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -3499,7 +3635,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -3507,7 +3643,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -3515,7 +3651,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9dc29fac",
      "url": null,
@@ -3523,7 +3659,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -3531,7 +3667,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usds()",
      "url": null,
@@ -3564,7 +3700,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -3572,7 +3708,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -3580,7 +3716,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -3588,7 +3724,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x9dc29fac",
      "url": null,
@@ -3596,7 +3732,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3604,7 +3740,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getImplementation()",
      "url": null,
@@ -3635,7 +3771,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x575e24b4",
      "url": null,
@@ -3643,7 +3779,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xb47b2fb1",
      "url": null,
@@ -3674,7 +3810,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x575e24b4",
      "url": null,
@@ -3682,7 +3818,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xb47b2fb1",
      "url": null,
@@ -3690,7 +3826,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3718,7 +3854,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xb6ac8926",
      "url": null,
@@ -3746,7 +3882,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x300aa47f",
      "url": null,
@@ -3774,7 +3910,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xc9e270d0",
      "url": null,
@@ -3782,7 +3918,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "fermi()",
      "url": null,
@@ -3810,7 +3946,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xe24f0884",
      "url": null,
@@ -3838,7 +3974,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x171755b1",
      "url": null,
@@ -3846,7 +3982,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x67e828bf",
      "url": null,
@@ -3874,7 +4010,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x171755b1",
      "url": null,
@@ -3902,7 +4038,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -3910,7 +4046,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -3938,7 +4074,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -3946,7 +4082,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -3954,7 +4090,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "psm()",
      "url": null,
@@ -3982,7 +4118,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3b4da69f",
      "url": null,
@@ -3990,7 +4126,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usdsJoin()",
      "url": null,
@@ -4018,7 +4154,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -4026,7 +4162,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf24e23eb",
      "url": null,
@@ -4034,7 +4170,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -4062,7 +4198,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -4070,7 +4206,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "daiJoin()",
      "url": null,
@@ -4100,7 +4236,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -4108,7 +4244,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -4116,7 +4252,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -4124,7 +4260,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -4132,7 +4268,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -4161,7 +4297,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -4169,7 +4305,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -4177,7 +4313,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -4206,7 +4342,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -4214,7 +4350,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -4222,7 +4358,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -4251,7 +4387,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -4282,7 +4418,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -4290,7 +4426,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -4298,7 +4434,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -4306,7 +4442,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -4337,7 +4473,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -4371,7 +4507,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x3df02124",
      "url": null,
@@ -4402,7 +4538,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -4433,7 +4569,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0xd8eabcb8",
      "url": null,
@@ -4441,7 +4577,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -4449,7 +4585,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "MORPHO()",
      "url": null,
@@ -4478,7 +4614,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0x9451fed4",
      "url": null,
@@ -4486,7 +4622,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -4501,8 +4637,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "governance_role",
-    "proxy"
+    "proxy",
+    "governance_role"
    ],
    "paths": [],
    "props": {
@@ -4514,7 +4650,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4541,7 +4677,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4565,7 +4701,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "silo()",
      "url": null,
@@ -4589,7 +4725,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "minter()",
      "url": null,
@@ -4609,12 +4745,12 @@
    "paths": [],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 991947049694528882116861,
+    "price": 991978201513234360733636,
     "params": {
      "BASE_VAULT_CONVERSION_SAMPLE": 1,
      "QUOTE_VAULT_CONVERSION_SAMPLE": 1,
      "SCALE_FACTOR": 10000000000,
-     "price": 991947049694528882116861
+     "price": 991978201513234360733636
     },
     "feed_quality": {
      "id": "0xe2f4cfe07aecd7fd8fb0d293a22cde7d08175465",
@@ -4642,7 +4778,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "backupOracle()",
      "url": null,
@@ -4667,7 +4803,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -4701,7 +4837,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4739,7 +4875,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4762,7 +4898,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBillingAccessController()",
      "url": null,
@@ -4787,7 +4923,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLinkToken()",
      "url": null,
@@ -4810,7 +4946,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getRequesterAccessController()",
      "url": null,
@@ -4837,7 +4973,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "gaugeController()",
      "url": null,
@@ -4860,7 +4996,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "marketCreationCodeContractA()",
      "url": null,
@@ -4883,7 +5019,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "marketCreationCodeContractB()",
      "url": null,
@@ -4911,7 +5047,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldContractFactory()",
      "url": null,
@@ -4934,7 +5070,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "_tokenApprove()",
      "url": null,
@@ -4959,7 +5095,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -4983,7 +5119,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -5008,7 +5144,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -5032,7 +5168,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5056,7 +5192,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -5080,7 +5216,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -5088,7 +5224,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -5096,7 +5232,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5104,7 +5240,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -5128,7 +5264,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5154,7 +5290,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5162,7 +5298,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5186,7 +5322,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "protocolFeeController()",
      "url": null,
@@ -5213,7 +5349,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -5240,7 +5376,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -5248,7 +5384,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5273,7 +5409,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getOwner()",
      "url": null,
@@ -5281,7 +5417,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5307,7 +5443,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "operator()",
      "url": null,
@@ -5315,7 +5451,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "timelock()",
      "url": null,
@@ -5323,7 +5459,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5331,7 +5467,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "governance()",
      "url": null,
@@ -5354,7 +5490,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -5377,7 +5513,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "navReceiver()",
      "url": null,
@@ -5400,7 +5536,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "role_manager()",
      "url": null,
@@ -5408,7 +5544,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dao()",
      "url": null,
@@ -5433,7 +5569,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -5469,7 +5605,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5477,7 +5613,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5500,7 +5636,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "traderVault()",
      "url": null,
@@ -5524,7 +5660,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "minter()",
      "url": null,
@@ -5563,7 +5699,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5590,7 +5726,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -5605,14 +5741,14 @@
    "chain": "ethereum",
    "address": "0xc3866d726c204c0836e0677a31973c649888973d",
    "tags": [
-    "chainlink_interface",
-    "fixed_price"
+    "fixed_price",
+    "chainlink_interface"
    ],
    "paths": [],
    "props": {
     "contract_name": "DummyFeed",
     "answer": 1000000000000,
-    "updated_at": 1791628859,
+    "updated_at": 1791645239,
     "description": "Dummy feed with 12 decimals",
     "params": {
      "ONE": 1000000000000,
@@ -5637,9 +5773,9 @@
      "spot_checks": [
       {
        "reference": "Chainlink USDC/USD",
-       "ref_value": 0.9998651,
+       "ref_value": 0.99988047,
        "oracle_value": 1.0,
-       "deviation_pct": 0.0135,
+       "deviation_pct": 0.012,
        "source": "onchain_read"
       }
      ]
@@ -5649,7 +5785,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -5676,7 +5812,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -5703,7 +5839,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -5727,7 +5863,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5751,7 +5887,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5776,7 +5912,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5802,7 +5938,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5827,7 +5963,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -5853,7 +5989,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5861,7 +5997,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "governorMills()",
      "url": null,
@@ -5887,7 +6023,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5913,7 +6049,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -5936,7 +6072,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -5960,7 +6096,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -5985,7 +6121,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -6011,7 +6147,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "inv()",
      "url": null,
@@ -6037,7 +6173,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "xinv()",
      "url": null,
@@ -6075,7 +6211,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "emergency()",
      "url": null,
@@ -6111,7 +6247,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "rwg()",
      "url": null,
@@ -6119,7 +6255,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "policyCommittee()",
      "url": null,
@@ -6145,7 +6281,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -6256,9 +6392,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
     "offchain_disclosed",
-    "venue"
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6282,9 +6418,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
     "offchain_disclosed",
-    "venue"
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6308,9 +6444,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
     "offchain_disclosed",
-    "venue"
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6334,9 +6470,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
     "offchain_disclosed",
-    "venue"
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6360,9 +6496,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "cex",
     "offchain_disclosed",
-    "venue"
+    "venue",
+    "cex"
    ],
    "paths": [],
    "props": {
@@ -6565,7 +6701,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -6586,7 +6722,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "DELEGATECALL 0xa035b1fe",
      "url": null,
@@ -6607,7 +6743,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -6628,7 +6764,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:morpho_oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -6649,7 +6785,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "CALL 0xabca0eab",
      "url": null,
@@ -6670,7 +6806,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "DELEGATECALL 0xabca0eab",
      "url": null,
@@ -6693,7 +6829,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x2c8ce6bc",
      "url": null,
@@ -6701,7 +6837,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0xe184c9be",
      "url": null,
@@ -6709,7 +6845,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x883bdbfd",
      "url": null,
@@ -6730,7 +6866,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x3ba0b9a9",
      "url": null,
@@ -6752,7 +6888,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x01e1d114",
      "url": null,
@@ -6760,7 +6896,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x18160ddd",
      "url": null,
@@ -6768,7 +6904,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "STATICCALL 0x01e1d114",
      "url": null,
@@ -6776,7 +6912,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "STATICCALL 0x18160ddd",
      "url": null,
@@ -6797,7 +6933,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6805,7 +6941,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:sy.exchangeRate",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6813,7 +6949,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:susde.convertToAssets",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -6836,7 +6972,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0xd2a3584e",
      "url": null,
@@ -6844,7 +6980,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x516399df",
      "url": null,
@@ -6852,7 +6988,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "STATICCALL 0x60e0a9e1",
      "url": null,
@@ -6873,7 +7009,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:pendle_twap.getPtToAssetRate(900s)",
      "detail": "DELEGATECALL 0x1dd421ce",
      "url": null,
@@ -6894,7 +7030,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:usde_usd.latestRoundData",
      "detail": "CALL 0xfeaf968c",
      "url": null,
@@ -6915,7 +7051,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:usde_usd.latestRoundData",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -6936,7 +7072,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x594a88cc",
      "url": null,
@@ -6957,7 +7093,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x594a88cc",
      "url": null,
@@ -6979,7 +7115,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x2c8ce6bc",
      "url": null,
@@ -6987,7 +7123,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x29910b11",
      "url": null,
@@ -7009,7 +7145,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7017,7 +7153,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7038,7 +7174,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x6122b173",
      "url": null,
@@ -7059,7 +7195,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x6122b173",
      "url": null,
@@ -7084,7 +7220,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xe184c9be",
      "url": null,
@@ -7092,7 +7228,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xafd27bf5",
      "url": null,
@@ -7100,7 +7236,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xd94073d4",
      "url": null,
@@ -7108,7 +7244,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x1d52edc4",
      "url": null,
@@ -7116,7 +7252,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7141,7 +7277,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x3ba0b9a9",
      "url": null,
@@ -7149,7 +7285,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xc4f59f9b",
      "url": null,
@@ -7157,7 +7293,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf8b2f991",
      "url": null,
@@ -7165,7 +7301,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7173,7 +7309,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7196,7 +7332,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x01e1d114",
      "url": null,
@@ -7204,7 +7340,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x18160ddd",
      "url": null,
@@ -7212,7 +7348,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7233,7 +7369,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7254,7 +7390,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xeb3a7d47",
      "url": null,
@@ -7275,7 +7411,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xeb3a7d47",
      "url": null,
@@ -7298,7 +7434,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xd94073d4",
      "url": null,
@@ -7306,7 +7442,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbcb7ea5d",
      "url": null,
@@ -7314,7 +7450,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xafd27bf5",
      "url": null,
@@ -7336,7 +7472,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7344,7 +7480,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xb64761f9",
      "url": null,
@@ -7367,7 +7503,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7375,7 +7511,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -7383,7 +7519,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x769f8e5d",
      "url": null,
@@ -7406,7 +7542,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7414,7 +7550,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x769f8e5d",
      "url": null,
@@ -7422,7 +7558,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7443,7 +7579,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7464,7 +7600,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x5c098c11",
      "url": null,
@@ -7485,7 +7621,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x5c098c11",
      "url": null,
@@ -7506,7 +7642,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x1d52edc4",
      "url": null,
@@ -7527,7 +7663,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7548,7 +7684,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x4af74b68",
      "url": null,
@@ -7569,7 +7705,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7590,7 +7726,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x2bdb823c",
      "url": null,
@@ -7611,7 +7747,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x2bdb823c",
      "url": null,
@@ -7632,7 +7768,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xdd62ed3e",
      "url": null,
@@ -7653,7 +7789,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xe4da6f2e",
      "url": null,
@@ -7674,7 +7810,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xe4da6f2e",
      "url": null,
@@ -7695,7 +7831,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xe21fd0e9",
      "url": null,
@@ -7717,7 +7853,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -7725,7 +7861,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7746,7 +7882,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7769,7 +7905,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -7777,7 +7913,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -7785,7 +7921,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -7806,7 +7942,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xd9c45357",
      "url": null,
@@ -7824,6 +7960,7 @@
      "0x3ed37eda",
      "0x91dd7346",
      "0x9410ae88",
+     "0xc3251075",
      "0xd9c45357"
     ],
     "reverted": "execution reverted"
@@ -7831,7 +7968,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xd9c45357",
      "url": null,
@@ -7839,7 +7976,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x3ed37eda",
      "url": null,
@@ -7847,7 +7984,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -7855,9 +7992,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "DELEGATECALL 0xc3251075",
      "url": null,
      "confidence": 1.0
     }
@@ -7877,7 +8022,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -7885,7 +8030,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -7906,7 +8051,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x5e3bc7bc",
      "url": null,
@@ -7927,7 +8072,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x1e2eaeaf",
      "url": null,
@@ -7949,7 +8094,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xe972feb9",
      "url": null,
@@ -7957,7 +8102,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xc318eada",
      "url": null,
@@ -7979,7 +8124,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -7987,7 +8132,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -8008,7 +8153,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -8030,7 +8175,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -8038,7 +8183,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -8059,7 +8204,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xad967e15",
      "url": null,
@@ -8080,7 +8225,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8101,7 +8246,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -8122,7 +8267,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -8137,6 +8282,7 @@
    "path": "exit",
    "props": {
     "functions": [
+     "0x61f598cd",
      "0x91dd7346",
      "0x9410ae88"
     ]
@@ -8144,7 +8290,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x9410ae88",
      "url": null,
@@ -8152,9 +8298,17 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x91dd7346",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "DELEGATECALL 0x61f598cd",
      "url": null,
      "confidence": 1.0
     }
@@ -8174,7 +8328,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8182,7 +8336,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8203,7 +8357,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x736e774d",
      "url": null,
@@ -8228,7 +8382,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x48c89491",
      "url": null,
@@ -8236,7 +8390,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa5841194",
      "url": null,
@@ -8244,7 +8398,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x11da60b4",
      "url": null,
@@ -8252,7 +8406,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf3cd914c",
      "url": null,
@@ -8260,7 +8414,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x0b0d9c09",
      "url": null,
@@ -8281,7 +8435,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x91dd7346",
      "url": null,
@@ -8302,7 +8456,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8324,7 +8478,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8332,7 +8486,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8354,7 +8508,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -8362,7 +8516,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -8383,7 +8537,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -8405,7 +8559,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -8413,7 +8567,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -8434,7 +8588,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -8455,7 +8609,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -8477,7 +8631,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8485,7 +8639,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8507,7 +8661,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x08fce009",
      "url": null,
@@ -8515,7 +8669,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xbd1eba5b",
      "url": null,
@@ -8537,7 +8691,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8545,7 +8699,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8566,7 +8720,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -8589,7 +8743,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -8597,7 +8751,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8605,7 +8759,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8626,7 +8780,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8648,7 +8802,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8656,7 +8810,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -8677,7 +8831,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -8699,7 +8853,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -8707,7 +8861,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8732,7 +8886,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x20aba08b",
      "url": null,
@@ -8740,7 +8894,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xc92aecc4",
      "url": null,
@@ -8748,7 +8902,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x487bf082",
      "url": null,
@@ -8756,7 +8910,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9f678cca",
      "url": null,
@@ -8764,7 +8918,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x7f8661a1",
      "url": null,
@@ -8787,7 +8941,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -8795,7 +8949,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8803,7 +8957,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8825,7 +8979,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8833,7 +8987,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8855,7 +9009,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -8863,7 +9017,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -8884,7 +9038,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -8905,7 +9059,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x693de592",
      "url": null,
@@ -8928,7 +9082,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -8936,7 +9090,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8944,7 +9098,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -8965,7 +9119,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -8987,7 +9141,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -8995,7 +9149,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -9019,7 +9173,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -9027,7 +9181,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x07a2d13a",
      "url": null,
@@ -9035,7 +9189,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -9043,7 +9197,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xba087652",
      "url": null,
@@ -9064,7 +9218,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -9086,7 +9240,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -9094,7 +9248,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9117,7 +9271,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -9125,7 +9279,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9133,7 +9287,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -9154,7 +9308,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9177,7 +9331,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -9185,7 +9339,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -9193,7 +9347,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -9214,7 +9368,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -9237,7 +9391,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -9245,7 +9399,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9253,7 +9407,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -9274,7 +9428,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9296,7 +9450,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9304,7 +9458,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9326,7 +9480,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -9334,7 +9488,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -9356,7 +9510,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -9364,7 +9518,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -9385,7 +9539,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -9406,7 +9560,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -9427,7 +9581,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9448,7 +9602,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x39072a45",
      "url": null,
@@ -9473,7 +9627,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x3850c7bd",
      "url": null,
@@ -9481,7 +9635,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x1a686502",
      "url": null,
@@ -9489,7 +9643,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xd0c93a7c",
      "url": null,
@@ -9497,7 +9651,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xddca3f43",
      "url": null,
@@ -9505,7 +9659,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x5339c296",
      "url": null,
@@ -9527,7 +9681,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x8bc041a8",
      "url": null,
@@ -9549,7 +9703,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -9557,7 +9711,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9573,13 +9727,12 @@
    "props": {
     "functions": [
      "0xe24f0884"
-    ],
-    "reverted": "execution reverted"
+    ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xe24f0884",
      "url": null,
@@ -9595,13 +9748,12 @@
    "props": {
     "functions": [
      "0x171755b1"
-    ],
-    "reverted": "execution reverted"
+    ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x171755b1",
      "url": null,
@@ -9617,13 +9769,12 @@
    "props": {
     "functions": [
      "0x171755b1"
-    ],
-    "reverted": "execution reverted"
+    ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x171755b1",
      "url": null,
@@ -9644,7 +9795,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x67e828bf",
      "url": null,
@@ -9659,15 +9810,219 @@
    "path": "exit",
    "props": {
     "functions": [
-     "0xb5e4b813"
+     "0x893ddf87",
+     "0xb5e4b813",
+     "0xe3079c1b"
     ]
    },
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5e4b813",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0x893ddf87",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xe3079c1b",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xaff0c7a21c958bf4354d750afdb7a01da44a939a|0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|exit_route|exit": {
+   "src": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "dst": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x1e2eaeaf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0x1e2eaeaf",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xaff0c7a21c958bf4354d750afdb7a01da44a939a|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xaff0c7a21c958bf4354d750afdb7a01da44a939a",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x3b9009e0",
+     "0xe6a7bba0"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0x3b9009e0",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xe6a7bba0",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xebc53e61078976118e384f110c262a263decb84b|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xebc53e61078976118e384f110c262a263decb84b",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0x3b9009e0"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0x3b9009e0",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "transfer"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xa9059cbb",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xdac17f958d2ee523a2206206994597c13d831ec7|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xdac17f958d2ee523a2206206994597c13d831ec7",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "balanceOf"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0x70a08231",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0x8f10b468b06c6fd214b65f87778827f7d113f996|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0x8f10b468b06c6fd214b65f87778827f7d113f996",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xc3251075"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xc3251075",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|0xe4038fa09f0bb9963068afaf97be0c045155090d|exit_route|exit": {
+   "src": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "dst": "0xe4038fa09f0bb9963068afaf97be0c045155090d",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xe6a7bba0"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "CALL 0xe6a7bba0",
+     "url": null,
+     "confidence": 1.0
+    }
+   ]
+  },
+  "0xe4038fa09f0bb9963068afaf97be0c045155090d|0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45|exit_route|exit": {
+   "src": "0xe4038fa09f0bb9963068afaf97be0c045155090d",
+   "dst": "0x2fca69d39ce89b3c8cfbec13c39d188c000a0b45",
+   "type": "exit_route",
+   "path": "exit",
+   "props": {
+    "functions": [
+     "0xbcdb4dad",
+     "0xdbd035ff"
+    ]
+   },
+   "provenance": [
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0xbcdb4dad",
+     "url": null,
+     "confidence": 1.0
+    },
+    {
+     "source": "trace",
+     "block": 26162857,
+     "call": "exit:pendle_router.PT->USDC",
+     "detail": "STATICCALL 0xdbd035ff",
      "url": null,
      "confidence": 1.0
     }
@@ -9686,7 +10041,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9707,7 +10062,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -9731,7 +10086,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -9739,7 +10094,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -9747,7 +10102,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -9755,7 +10110,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x9dc29fac",
      "url": null,
@@ -9777,7 +10132,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x575e24b4",
      "url": null,
@@ -9785,7 +10140,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xb47b2fb1",
      "url": null,
@@ -9807,7 +10162,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x575e24b4",
      "url": null,
@@ -9815,7 +10170,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0xb47b2fb1",
      "url": null,
@@ -9836,7 +10191,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x1e2eaeaf",
      "url": null,
@@ -9858,7 +10213,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xb6ac8926",
      "url": null,
@@ -9880,7 +10235,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x300aa47f",
      "url": null,
@@ -9902,7 +10257,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xc9e270d0",
      "url": null,
@@ -9924,7 +10279,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xe24f0884",
      "url": null,
@@ -9946,7 +10301,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x171755b1",
      "url": null,
@@ -9968,7 +10323,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x171755b1",
      "url": null,
@@ -9989,7 +10344,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x67e828bf",
      "url": null,
@@ -10010,7 +10365,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5e4b813",
      "url": null,
@@ -10031,7 +10386,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10053,7 +10408,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -10061,7 +10416,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -10083,7 +10438,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -10091,7 +10446,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -10112,7 +10467,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -10133,7 +10488,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3b4da69f",
      "url": null,
@@ -10154,7 +10509,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -10175,7 +10530,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9dc29fac",
      "url": null,
@@ -10196,7 +10551,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -10217,7 +10572,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -10238,7 +10593,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -10259,7 +10614,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -10280,7 +10635,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -10302,7 +10657,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10310,7 +10665,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -10332,7 +10687,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -10340,7 +10695,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -10362,7 +10717,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -10370,7 +10725,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -10391,7 +10746,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -10412,7 +10767,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -10433,7 +10788,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10455,7 +10810,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf24e23eb",
      "url": null,
@@ -10463,7 +10818,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -10484,7 +10839,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -10505,7 +10860,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10527,7 +10882,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -10535,7 +10890,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -10557,7 +10912,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xbe17c79c",
      "url": null,
@@ -10565,7 +10920,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb7791bf2",
      "url": null,
@@ -10586,7 +10941,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xf763f7a6",
      "url": null,
@@ -10608,7 +10963,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0xb5c736e4",
      "url": null,
@@ -10616,7 +10971,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad967e15",
      "url": null,
@@ -10637,7 +10992,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10658,7 +11013,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xad207501",
      "url": null,
@@ -10679,7 +11034,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x9410ae88",
      "url": null,
@@ -10700,7 +11055,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -10721,7 +11076,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10742,7 +11097,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -10763,7 +11118,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "DELEGATECALL 0x3df02124",
      "url": null,
@@ -10784,7 +11139,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -10805,7 +11160,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -10826,7 +11181,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x3df02124",
      "url": null,
@@ -10848,7 +11203,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10856,7 +11211,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -10877,7 +11232,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -10899,7 +11254,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -10907,7 +11262,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:pendle_router.PT->USDC",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -10928,7 +11283,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0xd8eabcb8",
      "url": null,
@@ -10949,7 +11304,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0x9451fed4",
      "url": null,
@@ -10970,7 +11325,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -10991,7 +11346,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "DELEGATECALL 0xa035b1fe",
      "url": null,
@@ -11012,7 +11367,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -11033,7 +11388,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -11054,7 +11409,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -11075,7 +11430,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -11096,7 +11451,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "liquidation:morpho.liquidate",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -11145,7 +11500,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -11162,7 +11517,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -11181,7 +11536,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -11198,7 +11553,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -11215,7 +11570,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "Morpho.idToMarketParams(id)",
      "url": null,
@@ -11234,7 +11589,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -11253,7 +11608,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -11274,7 +11629,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11293,7 +11648,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldToken()",
      "url": null,
@@ -11312,7 +11667,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -11333,7 +11688,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11352,7 +11707,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "silo()",
      "url": null,
@@ -11371,7 +11726,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "minter()",
      "url": null,
@@ -11392,7 +11747,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11411,7 +11766,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "backupOracle()",
      "url": null,
@@ -11430,7 +11785,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "currentOracle()",
      "url": null,
@@ -11438,7 +11793,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "primaryOracle()",
      "url": null,
@@ -11457,7 +11812,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -11476,7 +11831,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -11493,7 +11848,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -11514,7 +11869,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -11535,7 +11890,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11554,7 +11909,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -11573,7 +11928,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -11592,7 +11947,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "aggregator()",
      "url": null,
@@ -11613,7 +11968,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11632,7 +11987,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBillingAccessController()",
      "url": null,
@@ -11651,7 +12006,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLinkToken()",
      "url": null,
@@ -11670,7 +12025,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getRequesterAccessController()",
      "url": null,
@@ -11691,7 +12046,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11708,7 +12063,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -11729,7 +12084,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -11748,7 +12103,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "ROUTER()",
      "url": null,
@@ -11769,7 +12124,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11788,7 +12143,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "ROUTER()",
      "url": null,
@@ -11805,7 +12160,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -11826,7 +12181,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -11845,7 +12200,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "gaugeController()",
      "url": null,
@@ -11864,7 +12219,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "marketCreationCodeContractA()",
      "url": null,
@@ -11883,7 +12238,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "marketCreationCodeContractB()",
      "url": null,
@@ -11904,7 +12259,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -11923,7 +12278,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldContractFactory()",
      "url": null,
@@ -11942,7 +12297,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "gaugeController()",
      "url": null,
@@ -11961,7 +12316,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "marketCreationCodeContractA()",
      "url": null,
@@ -11980,7 +12335,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "marketCreationCodeContractB()",
      "url": null,
@@ -11999,7 +12354,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldContractFactory()",
      "url": null,
@@ -12016,7 +12371,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12035,7 +12390,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "_tokenApprove()",
      "url": null,
@@ -12056,7 +12411,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12075,7 +12430,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "_tokenApprove()",
      "url": null,
@@ -12092,7 +12447,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12113,7 +12468,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12130,7 +12485,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12151,7 +12506,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -12172,7 +12527,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -12193,7 +12548,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12214,7 +12569,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -12238,7 +12593,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -12246,7 +12601,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -12254,7 +12609,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12262,7 +12617,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -12283,7 +12638,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12304,7 +12659,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12323,7 +12678,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "protocolFeeController()",
      "url": null,
@@ -12340,7 +12695,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12361,7 +12716,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -12380,7 +12735,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getOwner()",
      "url": null,
@@ -12401,7 +12756,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12420,7 +12775,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "operator()",
      "url": null,
@@ -12439,7 +12794,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -12458,7 +12813,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -12477,7 +12832,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "daiJoin()",
      "url": null,
@@ -12496,7 +12851,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pot()",
      "url": null,
@@ -12515,7 +12870,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -12534,7 +12889,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -12553,7 +12908,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -12570,7 +12925,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12589,7 +12944,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "navReceiver()",
      "url": null,
@@ -12608,7 +12963,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -12627,7 +12982,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "role_manager()",
      "url": null,
@@ -12644,7 +12999,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12665,7 +13020,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -12686,7 +13041,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12707,7 +13062,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -12726,7 +13081,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "token0()",
      "url": null,
@@ -12745,7 +13100,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "token1()",
      "url": null,
@@ -12762,7 +13117,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12781,7 +13136,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getImplementation()",
      "url": null,
@@ -12798,7 +13153,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -12817,7 +13172,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "poolManager()",
      "url": null,
@@ -12836,7 +13191,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "poolManager()",
      "url": null,
@@ -12855,7 +13210,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "fermi()",
      "url": null,
@@ -12874,7 +13229,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "traderVault()",
      "url": null,
@@ -12893,7 +13248,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -12901,7 +13256,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usds()",
      "url": null,
@@ -12920,7 +13275,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "gem()",
      "url": null,
@@ -12939,7 +13294,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "psm()",
      "url": null,
@@ -12958,7 +13313,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usdsJoin()",
      "url": null,
@@ -12977,7 +13332,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -12996,7 +13351,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -13015,7 +13370,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -13034,7 +13389,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "daiJoin()",
      "url": null,
@@ -13053,7 +13408,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "gem()",
      "url": null,
@@ -13072,7 +13427,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -13091,7 +13446,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -13110,7 +13465,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -13118,7 +13473,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usds()",
      "url": null,
@@ -13137,7 +13492,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -13156,7 +13511,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dai()",
      "url": null,
@@ -13175,7 +13530,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -13194,7 +13549,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "minter()",
      "url": null,
@@ -13215,7 +13570,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13234,7 +13589,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "MORPHO()",
      "url": null,
@@ -13251,7 +13606,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -13272,7 +13627,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13291,7 +13646,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usde()",
      "url": null,
@@ -13310,7 +13665,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -13329,7 +13684,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_2()",
      "url": null,
@@ -13348,7 +13703,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -13369,7 +13724,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13390,7 +13745,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13411,7 +13766,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13428,7 +13783,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -13449,7 +13804,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13466,7 +13821,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -13487,7 +13842,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -13508,7 +13863,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13529,7 +13884,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13548,7 +13903,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -13569,7 +13924,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13590,7 +13945,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13611,7 +13966,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13632,7 +13987,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13653,7 +14008,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -13674,7 +14029,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13695,7 +14050,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -13716,7 +14071,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13737,7 +14092,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13756,7 +14111,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -13777,7 +14132,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13796,7 +14151,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "implementation()",
      "url": null,
@@ -13817,7 +14172,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "guardian()",
      "url": null,
@@ -13836,7 +14191,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "inv()",
      "url": null,
@@ -13857,7 +14212,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "timelock()",
      "url": null,
@@ -13876,7 +14231,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "xinv()",
      "url": null,
@@ -13897,7 +14252,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -13916,7 +14271,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "dao()",
      "url": null,
@@ -13935,7 +14290,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "emergency()",
      "url": null,
@@ -13954,7 +14309,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "governorMills()",
      "url": null,
@@ -13973,7 +14328,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "rwg()",
      "url": null,
@@ -13994,7 +14349,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -14015,7 +14370,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "admin()",
      "url": null,
@@ -14036,7 +14391,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "governance()",
      "url": null,
@@ -14055,7 +14410,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "policyCommittee()",
      "url": null,
@@ -14074,7 +14429,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "xinv()",
      "url": null,
@@ -14392,7 +14747,7 @@
  "meta": {
   "exit": {
    "size_pt": 1000000.0,
-   "usdc_out": 992547.843349,
+   "usdc_out": 992543.462069,
    "api_quote_usdc": 992536.745943,
    "aggregator": "KYBERSWAP",
    "error": null
@@ -14401,10 +14756,10 @@
    "borrower": "0x5C430FF6F374da12218b380d2040299Ae5B6d40E",
    "debt_usdc": 2941926.701331,
    "collateral_pt": 3272383.7850635857,
-   "hf_on_fork": 1.0099900662760593,
+   "hf_on_fork": 1.0100217847305002,
    "setup": "collateral trimmed in storage to HF=0.99 (synthetic); oracle untouched",
-   "seized_pt": 320761.56542389456,
-   "repaid_usdc": 310192.877848,
+   "seized_pt": 320751.49231329747,
+   "repaid_usdc": 310190.064844,
    "error": null
   },
   "depth": {
@@ -14616,7 +14971,9 @@
     "0xa963b102",
     "0xaff0c7a2",
     "0xc41e7f97",
+    "0xe4038fa0",
     "0xe8447019",
+    "0xebc53e61",
     "AppProxyUpgradeable",
     "CurveStableSwapNG DOLA-sUSDe",
     "CurveStableSwapNG MtEthena",
@@ -14892,16 +15249,16 @@
      "spot_checks": [
       {
        "reference": "executed exit PT->USDC on fork (1,000,000 PT)",
-       "ref_value": 0.9925478433489999,
-       "oracle_value": 0.9923471442161339,
-       "deviation_pct": -0.0202,
+       "ref_value": 0.992543462069,
+       "oracle_value": 0.9923783085996957,
+       "deviation_pct": -0.0166,
        "source": "trace"
       },
       {
        "reference": "Pendle 15m TWAP x Chainlink USDe/USD",
-       "ref_value": 0.9933822796969547,
-       "oracle_value": 0.9923471442161339,
-       "deviation_pct": -0.1042,
+       "ref_value": 0.9934075083812929,
+       "oracle_value": 0.9923783085996957,
+       "deviation_pct": -0.1036,
        "source": "onchain_read"
       }
      ]
@@ -14943,9 +15300,9 @@
      "spot_checks": [
       {
        "reference": "Pendle 15m TWAP PT->USDe",
-       "ref_value": 0.9937829531079887,
-       "oracle_value": 0.9923471442161339,
-       "deviation_pct": -0.1445,
+       "ref_value": 0.9938081919681305,
+       "oracle_value": 0.9923783085996957,
+       "deviation_pct": -0.1439,
        "source": "onchain_read"
       }
      ]
@@ -14976,11 +15333,11 @@
      "flags": [
       "changeable_without_timelock"
      ],
-     "staleness_s": 24108,
+     "staleness_s": 40488,
      "n_transmitters": 16,
-     "n_updates_30d": 32,
+     "n_updates_30d": 31,
      "heartbeat_s_observed": 82836,
-     "median_gap_s": 82812,
+     "median_gap_s": 82818.0,
      "deviation_trigger_observed_pct": null,
      "n_deviation_updates_30d": 0,
      "answer_min_30d": 99922072,
@@ -14996,9 +15353,9 @@
      "spot_checks": [
       {
        "reference": "Curve USDe/USDC get_dy(1k USDe)",
-       "ref_value": 0.99959924,
+       "ref_value": 0.999659449,
        "oracle_value": 0.99959682,
-       "deviation_pct": -0.0002,
+       "deviation_pct": -0.0063,
        "source": "onchain_read"
       }
      ]
@@ -15011,11 +15368,11 @@
      "flags": [
       "changeable_without_timelock"
      ],
-     "staleness_s": 24108,
+     "staleness_s": 40488,
      "n_transmitters": 16,
-     "n_updates_30d": 32,
+     "n_updates_30d": 31,
      "heartbeat_s_observed": 82836,
-     "median_gap_s": 82812,
+     "median_gap_s": 82818.0,
      "deviation_trigger_observed_pct": null,
      "n_deviation_updates_30d": 0,
      "answer_min_30d": 99922072,
@@ -15067,9 +15424,9 @@
      "spot_checks": [
       {
        "reference": "Chainlink USDC/USD",
-       "ref_value": 0.9998651,
+       "ref_value": 0.99988047,
        "oracle_value": 1.0,
-       "deviation_pct": 0.0135,
+       "deviation_pct": 0.012,
        "source": "onchain_read"
       }
      ]
@@ -15275,7 +15632,7 @@
     }
    }
   ],
-  "n_nodes": 169,
-  "n_edges": 344
+  "n_nodes": 171,
+  "n_edges": 352
  }
 }

@@ -1,17 +1,17 @@
 {
  "position_id": "P5",
- "fork_block": 26161499,
+ "fork_block": 26162857,
  "nodes": {
   "position:P5": {
    "id": "position:P5",
    "type": "POSITION",
-   "label": "RockawayX USDC Yield vault deposit",
+   "label": "RockawayX USDC Yield vault deposit (Belem / RockawayX vaults)",
    "chain": "ethereum",
    "address": null,
    "tags": [],
    "paths": [],
    "props": {
-    "size_usd": 2782283.16,
+    "size_usd": 2782356.19,
     "pocket": "P5"
    },
    "provenance": []
@@ -37,8 +37,8 @@
     "morpho_vault_v2"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "VaultV2",
@@ -60,7 +60,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "CALL 0x01e1d114",
      "url": null,
@@ -68,7 +68,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -76,7 +76,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0xc69507dd",
      "url": null,
@@ -84,7 +84,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "parentVault()",
      "url": null,
@@ -100,8 +100,8 @@
    "address": "0xce0b17e6e94c9068b760557ba11a7bb1943f5674",
    "tags": [],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "MorphoMarketV1AdapterV2",
@@ -113,7 +113,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vault.adapters(0)",
      "url": null,
@@ -121,7 +121,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x56c07573",
      "url": null,
@@ -129,7 +129,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x56c07573",
      "url": null,
@@ -137,7 +137,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x4e45f1ff",
      "url": null,
@@ -145,7 +145,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "liquidityAdapter()",
      "url": null,
@@ -174,7 +174,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -182,7 +182,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -204,7 +204,7 @@
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 981685172536656026000000000000000000,
+    "price": 981736317638088421000000000000000000,
     "storage_slots_read": {
      "value": 0
     }
@@ -212,7 +212,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -220,7 +220,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -238,8 +238,8 @@
     "proxy"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
@@ -254,7 +254,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -262,7 +262,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -270,7 +270,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -278,7 +278,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -286,7 +286,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -294,7 +294,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -302,7 +302,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "USDC()",
      "url": null,
@@ -310,7 +310,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -331,12 +331,12 @@
    "props": {
     "market_id": "0x1e9d614631a7df0ec07fb05b2c8cb2491575fd1a63a33bf187a6afb295a4fc64",
     "lltv": 0.915,
-    "allocation_usd": 9300423.68103
+    "allocation_usd": 9300768.730104
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -354,8 +354,8 @@
     "morpho_blue"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "Morpho",
@@ -367,7 +367,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -375,7 +375,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x5c60e39a",
      "url": null,
@@ -383,7 +383,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x5c60e39a",
      "url": null,
@@ -391,7 +391,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x5c2bea49",
      "url": null,
@@ -399,7 +399,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "morpho()",
      "url": null,
@@ -407,7 +407,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "MORPHO()",
      "url": null,
@@ -436,7 +436,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -444,7 +444,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -466,7 +466,7 @@
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 970157189051327631097435,
+    "price": 970264351046688322655206,
     "storage_slots_read": {
      "value": 0
     }
@@ -474,7 +474,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -482,7 +482,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -503,12 +503,12 @@
    "props": {
     "market_id": "0xf062a110320da27e0e7e7d9e1bdf458dd51e2d2089e55f63ff9fd54f415ce35d",
     "lltv": 0.86,
-    "allocation_usd": 256995.044497
+    "allocation_usd": 257003.2217
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -523,8 +523,8 @@
    "chain": "ethereum",
    "address": "0x280839980a7ed0d7717f64125fe241012e5f5815",
    "tags": [
-    "proxy",
-    "erc4626"
+    "erc4626",
+    "proxy"
    ],
    "paths": [
     "value"
@@ -539,7 +539,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -561,7 +561,7 @@
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 1029834174630157608261354,
+    "price": 1029892052997094742734599,
     "storage_slots_read": {
      "value": 0
     }
@@ -569,7 +569,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -577,7 +577,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -598,12 +598,12 @@
    "props": {
     "market_id": "0x975c6e8b71073a82216ae464bc44f67d71988450d2542d635d88bc78fca344b1",
     "lltv": 0.86,
-    "allocation_usd": 4909357.057171
+    "allocation_usd": 4909512.790607
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -633,7 +633,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -655,7 +655,7 @@
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 1014720895848850009866330,
+    "price": 1014705297724236978045985,
     "storage_slots_read": {
      "value": 0
     }
@@ -663,7 +663,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -671,7 +671,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -692,12 +692,12 @@
    "props": {
     "market_id": "0xff836cc9796e2889ebf73b26c2de2de74b35f985bb83e9d79380deb4229e365b",
     "lltv": 0.86,
-    "allocation_usd": 113298.519038
+    "allocation_usd": 113302.24855
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -729,7 +729,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -737,7 +737,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -745,7 +745,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_VAULT()",
      "url": null,
@@ -767,7 +767,7 @@
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 1093757210000000000000000,
+    "price": 1093785910000000000000000,
     "storage_slots_read": {
      "value": 0
     }
@@ -775,7 +775,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -783,7 +783,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -804,12 +804,12 @@
    "props": {
     "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
     "lltv": 0.915,
-    "allocation_usd": 2357248.838816
+    "allocation_usd": 2357328.979907
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -824,8 +824,8 @@
    "chain": "ethereum",
    "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
    "tags": [
-    "proxy",
-    "erc4626"
+    "erc4626",
+    "proxy"
    ],
    "paths": [
     "value"
@@ -840,7 +840,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -862,7 +862,7 @@
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
-    "price": 1063899384570780264257648356763327372,
+    "price": 1063883030482435231483219189189683842,
     "storage_slots_read": {
      "value": 0
     }
@@ -870,7 +870,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -878,7 +878,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -899,12 +899,12 @@
    "props": {
     "market_id": "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d",
     "lltv": 0.86,
-    "allocation_usd": 1611231.250081
+    "allocation_usd": 1611125.323583
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -922,8 +922,8 @@
     "implementation"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "FiatTokenV2_2",
@@ -938,7 +938,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -946,7 +946,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -954,7 +954,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -962,7 +962,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -970,7 +970,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -986,8 +986,8 @@
    "address": "0x870ac11d48b15db9a138cf899d20f13f79ba00bc",
    "tags": [],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "AdaptiveCurveIrm",
@@ -999,7 +999,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x01977b57",
      "url": null,
@@ -1007,7 +1007,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x01977b57",
      "url": null,
@@ -1015,7 +1015,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x9451fed4",
      "url": null,
@@ -1023,7 +1023,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adaptiveCurveIrm()",
      "url": null,
@@ -1045,8 +1045,8 @@
    ],
    "props": {
     "contract_name": "OjoPTFeed",
-    "answer": 981685172536656026,
-    "updated_at": 1791628859,
+    "answer": 981736317638088421,
+    "updated_at": 1791645239,
     "description": "Ojo PT Feed Pendle Chainlink-compatible Oracle",
     "storage_slots_read": {
      "value": 2
@@ -1055,7 +1055,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1063,7 +1063,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -1093,7 +1093,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -1115,8 +1115,8 @@
    ],
    "props": {
     "contract_name": "PendleChainlinkOracle",
-    "answer": 981685172536656026,
-    "updated_at": 1791628859,
+    "answer": 981736317638088421,
+    "updated_at": 1791645239,
     "description": "Pendle Chainlink-compatible Oracle",
     "storage_slots_read": {
      "value": 0
@@ -1125,7 +1125,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1133,7 +1133,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "FEED_1()",
      "url": null,
@@ -1141,7 +1141,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getActiveOracle()",
      "url": null,
@@ -1175,7 +1175,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x2c8ce6bc",
      "url": null,
@@ -1183,7 +1183,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xe184c9be",
      "url": null,
@@ -1191,7 +1191,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x883bdbfd",
      "url": null,
@@ -1199,7 +1199,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "market()",
      "url": null,
@@ -1214,8 +1214,8 @@
    "chain": "ethereum",
    "address": "0x9487bd5a3b16ecb5f3184453e3ee75b800141648",
    "tags": [
-    "pendle_sy",
-    "proxy"
+    "proxy",
+    "pendle_sy"
    ],
    "paths": [
     "value"
@@ -1234,7 +1234,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x3ba0b9a9",
      "url": null,
@@ -1242,7 +1242,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -1274,7 +1274,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "DELEGATECALL 0x3ba0b9a9",
      "url": null,
@@ -1282,7 +1282,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1309,7 +1309,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xe6aa216c",
      "url": null,
@@ -1317,7 +1317,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "exchangeRateOracle()",
      "url": null,
@@ -1344,7 +1344,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x5b1dac60",
      "url": null,
@@ -1352,7 +1352,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EXCHANGE_RATE_SOURCE()",
      "url": null,
@@ -1384,7 +1384,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xd2a3584e",
      "url": null,
@@ -1392,7 +1392,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x516399df",
      "url": null,
@@ -1400,7 +1400,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x60e0a9e1",
      "url": null,
@@ -1430,7 +1430,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "DELEGATECALL 0x1dd421ce",
      "url": null,
@@ -1452,8 +1452,8 @@
    ],
    "props": {
     "contract_name": "ChainlinkCurrentTimestampAdapter",
-    "answer": 990045774353120244,
-    "updated_at": 1791628859,
+    "answer": 990076938736681888,
+    "updated_at": 1791645239,
     "storage_slots_read": {
      "value": 0
     }
@@ -1461,7 +1461,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1469,7 +1469,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "FEED_2()",
      "url": null,
@@ -1492,7 +1492,7 @@
    ],
    "props": {
     "contract_name": "PTDiscountOracle",
-    "answer": 990045774353120244,
+    "answer": 990076938736681888,
     "updated_at": 0,
     "storage_slots_read": {
      "value": 0
@@ -1501,7 +1501,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1509,7 +1509,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "innerOracle()",
      "url": null,
@@ -1525,15 +1525,15 @@
    "address": "0xcb8c6585bd593a4b7d91bfcc85ff1dcfa04a640b",
    "tags": [
     "no_update_timestamp",
-    "chainlink_interface",
-    "fixed_schedule"
+    "fixed_schedule",
+    "chainlink_interface"
    ],
    "paths": [
     "value"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
-    "answer": 970026314846524607,
+    "answer": 970148375348807712,
     "updated_at": 0,
     "storage_slots_read": {
      "value": 0
@@ -1542,7 +1542,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1550,7 +1550,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -1576,7 +1576,7 @@
     "proxy_admin": "0x8223a6271d1e0bda019ee55d545d7b86eff1f573",
     "contract_name": "EthereumPriceFeedTrusdFundamentalWithoutRoundsV1",
     "answer": 100000000,
-    "updated_at": 1791599147,
+    "updated_at": 1791642359,
     "description": "RedStone Price Feed for trUSD_FUNDAMENTAL",
     "storage_slots_read": {
      "value": 2
@@ -1585,7 +1585,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1593,7 +1593,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_2()",
      "url": null,
@@ -1617,7 +1617,7 @@
    "props": {
     "contract_name": "EthereumPriceFeedTrusdFundamentalWithoutRoundsV1",
     "answer": 100000000,
-    "updated_at": 1791599147,
+    "updated_at": 1791642359,
     "description": "RedStone Price Feed for trUSD_FUNDAMENTAL",
     "probed_type": "CONTRACT",
     "storage_slots_read": {
@@ -1627,7 +1627,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -1635,7 +1635,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1666,7 +1666,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfb2eeb3b",
      "url": null,
@@ -1674,7 +1674,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfb2eeb3b",
      "url": null,
@@ -1682,7 +1682,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfb2eeb3b",
      "url": null,
@@ -1690,7 +1690,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -1720,7 +1720,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "DELEGATECALL 0xfb2eeb3b",
      "url": null,
@@ -1728,7 +1728,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "DELEGATECALL 0xfb2eeb3b",
      "url": null,
@@ -1736,7 +1736,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "DELEGATECALL 0xfb2eeb3b",
      "url": null,
@@ -1744,7 +1744,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1766,8 +1766,8 @@
    ],
    "props": {
     "contract_name": "EACAggregatorProxy",
-    "answer": 99986510,
-    "updated_at": 1791556739,
+    "answer": 99988047,
+    "updated_at": 1791639575,
     "description": "USDC / USD",
     "storage_slots_read": {
      "value": 2
@@ -1776,7 +1776,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1784,7 +1784,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1792,7 +1792,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1800,7 +1800,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1808,7 +1808,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -1830,8 +1830,8 @@
    ],
    "props": {
     "contract_name": "AccessControlledOCR2Aggregator",
-    "answer": 99986510,
-    "updated_at": 1791556739,
+    "answer": 99988047,
+    "updated_at": 1791639575,
     "description": "USDC / USD",
     "storage_slots_read": {
      "value": 3
@@ -1840,7 +1840,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1848,7 +1848,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1856,7 +1856,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1864,7 +1864,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1872,7 +1872,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "aggregator()",
      "url": null,
@@ -1897,8 +1897,8 @@
     "implementation": "0x186365fdd6f6c323365ab306040f840632977a96",
     "proxy_admin": "0x8223a6271d1e0bda019ee55d545d7b86eff1f573",
     "contract_name": "EthereumPriceFeedStrusdFundamentalWithoutRoundsV1",
-    "answer": 102969525,
-    "updated_at": 1791620759,
+    "answer": 102976895,
+    "updated_at": 1791642383,
     "description": "RedStone Price Feed for strUSD_FUNDAMENTAL",
     "storage_slots_read": {
      "value": 2
@@ -1907,7 +1907,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -1915,7 +1915,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -1938,8 +1938,8 @@
    ],
    "props": {
     "contract_name": "EthereumPriceFeedStrusdFundamentalWithoutRoundsV1",
-    "answer": 102969525,
-    "updated_at": 1791620759,
+    "answer": 102976895,
+    "updated_at": 1791642383,
     "description": "RedStone Price Feed for strUSD_FUNDAMENTAL",
     "probed_type": "CONTRACT",
     "storage_slots_read": {
@@ -1949,7 +1949,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -1957,7 +1957,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -1983,7 +1983,7 @@
     "proxy_admin": "0x8223a6271d1e0bda019ee55d545d7b86eff1f573",
     "contract_name": "EthereumPriceFeedEtrusdFundamentalusdWithoutRoundsV1",
     "answer": 101458401,
-    "updated_at": 1791620759,
+    "updated_at": 1791642383,
     "description": "RedStone Price Feed for etrUSD_FUNDAMENTAL/USD",
     "storage_slots_read": {
      "value": 2
@@ -1992,7 +1992,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -2000,7 +2000,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -2024,7 +2024,7 @@
    "props": {
     "contract_name": "EthereumPriceFeedEtrusdFundamentalusdWithoutRoundsV1",
     "answer": 101458401,
-    "updated_at": 1791620759,
+    "updated_at": 1791642383,
     "description": "RedStone Price Feed for etrUSD_FUNDAMENTAL/USD",
     "probed_type": "CONTRACT",
     "storage_slots_read": {
@@ -2034,7 +2034,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -2042,7 +2042,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2072,7 +2072,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "DELEGATECALL 0x5487c577",
      "url": null,
@@ -2080,7 +2080,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "DELEGATECALL 0x72b86489",
      "url": null,
@@ -2088,7 +2088,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "DELEGATECALL 0x342a7b01",
      "url": null,
@@ -2117,7 +2117,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -2125,7 +2125,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -2133,7 +2133,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "receiptToken()",
      "url": null,
@@ -2157,7 +2157,7 @@
    "props": {
     "contract_name": "ChainlinkRTOracle",
     "answer": 1000000000000000000,
-    "updated_at": 1791628859,
+    "updated_at": 1791645239,
     "description": "Chainlink-formatted InfiniFi RT Oracle",
     "price": 1000000000000000000,
     "storage_slots_read": {
@@ -2167,7 +2167,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -2175,7 +2175,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -2202,7 +2202,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xaea91078",
      "url": null,
@@ -2210,7 +2210,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "accounting()",
      "url": null,
@@ -2240,7 +2240,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -2264,7 +2264,7 @@
    "props": {
     "contract_name": "DummyFeed",
     "answer": 1000000000000,
-    "updated_at": 1791628859,
+    "updated_at": 1791645239,
     "description": "Dummy feed with 12 decimals",
     "storage_slots_read": {
      "value": 0
@@ -2273,7 +2273,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -2281,7 +2281,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -2313,7 +2313,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -2321,7 +2321,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -2353,7 +2353,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -2361,7 +2361,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "aggregator()",
      "url": null,
@@ -2383,7 +2383,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapterRegistry()",
      "url": null,
@@ -2419,7 +2419,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "curator()",
      "url": null,
@@ -2427,7 +2427,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2449,7 +2449,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -2473,7 +2473,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -2495,7 +2495,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2517,7 +2517,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -2555,7 +2555,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2570,8 +2570,8 @@
    "chain": "ethereum",
    "address": "0x7e8a16e87fa6b0f2e657db47f3dbfe2e981ef211",
    "tags": [
-    "pendle_sy",
-    "proxy"
+    "proxy",
+    "pendle_sy"
    ],
    "paths": [],
    "props": {
@@ -2580,12 +2580,12 @@
     "contract_name": "PendleERC4626WithAdapterSY",
     "symbol": "SY-strUSD",
     "decimals": 18,
-    "exchange_rate": 1029722940372475194
+    "exchange_rate": 1029778761312917026
    },
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -2612,7 +2612,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2639,7 +2639,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -2672,7 +2672,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "defaultAdmin()",
      "url": null,
@@ -2680,7 +2680,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2702,7 +2702,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "silo()",
      "url": null,
@@ -2729,7 +2729,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2753,7 +2753,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -2775,7 +2775,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "endpoint()",
      "url": null,
@@ -2809,7 +2809,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2831,7 +2831,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -2857,7 +2857,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldSharing()",
      "url": null,
@@ -2884,7 +2884,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -2899,8 +2899,8 @@
    "chain": "ethereum",
    "address": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
    "tags": [
-    "proxy",
-    "erc4626"
+    "erc4626",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -2913,7 +2913,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -2921,7 +2921,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldVault()",
      "url": null,
@@ -2946,7 +2946,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "navOracle()",
      "url": null,
@@ -2968,7 +2968,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -2976,7 +2976,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -2984,7 +2984,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2992,7 +2992,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -3000,7 +3000,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -3027,7 +3027,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "REUSD()",
      "url": null,
@@ -3035,7 +3035,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldToken()",
      "url": null,
@@ -3050,8 +3050,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -3061,7 +3061,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3083,7 +3083,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "depositTokenRegistry()",
      "url": null,
@@ -3107,7 +3107,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -3144,7 +3144,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3166,7 +3166,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBillingAccessController()",
      "url": null,
@@ -3190,7 +3190,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLinkToken()",
      "url": null,
@@ -3212,7 +3212,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getRequesterAccessController()",
      "url": null,
@@ -3234,7 +3234,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "farmRegistry()",
      "url": null,
@@ -3256,7 +3256,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3279,13 +3279,13 @@
     "contract_name": "PendleERC4626WithAdapterSY",
     "symbol": "",
     "decimals": 18,
-    "exchange_rate": 1029722940372475194,
+    "exchange_rate": 1029778761312917026,
     "probed_type": "ASSET"
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3309,7 +3309,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -3336,7 +3336,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3370,7 +3370,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3394,7 +3394,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3419,7 +3419,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3443,7 +3443,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -3458,8 +3458,8 @@
    "chain": "ethereum",
    "address": "0x06e0b9155a3cf07f41ac826ccfee7ef8413a9723",
    "tags": [
-    "implementation",
-    "erc4626"
+    "erc4626",
+    "implementation"
    ],
    "paths": [],
    "props": {
@@ -3472,7 +3472,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3497,7 +3497,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3524,7 +3524,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3549,7 +3549,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -3580,7 +3580,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3613,7 +3613,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3638,7 +3638,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -3689,6 +3689,50 @@
      "confidence": 0.9
     }
    ]
+  },
+  "issuer:hastra": {
+   "id": "issuer:hastra",
+   "type": "ISSUER",
+   "label": "Hastra (PRIME issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://rockawayx.com/insights",
+     "confidence": 0.6
+    }
+   ]
+  },
+  "offchain:figure_heloc": {
+   "id": "offchain:figure_heloc",
+   "type": "OFFCHAIN",
+   "label": "Figure HELOC warehouse (off-chain originator)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://rockawayx.com/insights",
+     "confidence": 0.5
+    }
+   ]
   }
  },
  "edges": {
@@ -3719,7 +3763,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapters(0)",
      "url": null,
@@ -3733,12 +3777,12 @@
    "type": "allocates_to",
    "path": null,
    "props": {
-    "allocation_usd": 9300423.68103
+    "allocation_usd": 9300768.730104
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3757,7 +3801,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3774,7 +3818,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3791,7 +3835,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3808,7 +3852,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3822,12 +3866,12 @@
    "type": "allocates_to",
    "path": null,
    "props": {
-    "allocation_usd": 256995.044497
+    "allocation_usd": 257003.2217
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3846,7 +3890,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3863,7 +3907,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3880,7 +3924,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3897,7 +3941,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3911,12 +3955,12 @@
    "type": "allocates_to",
    "path": null,
    "props": {
-    "allocation_usd": 4909357.057171
+    "allocation_usd": 4909512.790607
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3935,7 +3979,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3952,7 +3996,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3969,7 +4013,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -3986,7 +4030,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4000,12 +4044,12 @@
    "type": "allocates_to",
    "path": null,
    "props": {
-    "allocation_usd": 113298.519038
+    "allocation_usd": 113302.24855
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4024,7 +4068,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4041,7 +4085,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4058,7 +4102,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4075,7 +4119,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4089,12 +4133,12 @@
    "type": "allocates_to",
    "path": null,
    "props": {
-    "allocation_usd": 2357248.838816
+    "allocation_usd": 2357328.979907
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4113,7 +4157,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4130,7 +4174,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4147,7 +4191,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4164,7 +4208,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4178,12 +4222,12 @@
    "type": "allocates_to",
    "path": null,
    "props": {
-    "allocation_usd": 1611231.250081
+    "allocation_usd": 1611125.323583
    },
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4202,7 +4246,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4219,7 +4263,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4236,7 +4280,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4253,7 +4297,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapter.marketIds + Morpho.idToMarketParams",
      "url": null,
@@ -4274,7 +4318,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -4295,7 +4339,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -4316,7 +4360,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x56c07573",
      "url": null,
@@ -4337,7 +4381,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x5c60e39a",
      "url": null,
@@ -4358,7 +4402,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.totalAssets",
      "detail": "STATICCALL 0x01977b57",
      "url": null,
@@ -4379,7 +4423,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -4400,7 +4444,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4421,7 +4465,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -4442,7 +4486,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4465,7 +4509,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x2c8ce6bc",
      "url": null,
@@ -4473,7 +4517,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xe184c9be",
      "url": null,
@@ -4481,7 +4525,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x883bdbfd",
      "url": null,
@@ -4502,7 +4546,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x3ba0b9a9",
      "url": null,
@@ -4523,7 +4567,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "DELEGATECALL 0x3ba0b9a9",
      "url": null,
@@ -4544,7 +4588,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xe6aa216c",
      "url": null,
@@ -4565,7 +4609,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x5b1dac60",
      "url": null,
@@ -4588,7 +4632,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xd2a3584e",
      "url": null,
@@ -4596,7 +4640,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x516399df",
      "url": null,
@@ -4604,7 +4648,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0x60e0a9e1",
      "url": null,
@@ -4625,7 +4669,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "DELEGATECALL 0x1dd421ce",
      "url": null,
@@ -4646,7 +4690,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4667,7 +4711,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-reUSD-10DEC2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4688,7 +4732,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -4709,7 +4753,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4730,7 +4774,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4751,7 +4795,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -4772,7 +4816,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfb2eeb3b",
      "url": null,
@@ -4793,7 +4837,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "DELEGATECALL 0xfb2eeb3b",
      "url": null,
@@ -4801,7 +4845,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "DELEGATECALL 0xfb2eeb3b",
      "url": null,
@@ -4809,7 +4853,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "DELEGATECALL 0xfb2eeb3b",
      "url": null,
@@ -4830,7 +4874,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4851,7 +4895,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PT-strUSD-26NOV2026.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4859,7 +4903,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4867,7 +4911,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4875,7 +4919,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4896,7 +4940,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -4917,7 +4961,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -4938,7 +4982,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -4959,7 +5003,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfb2eeb3b",
      "url": null,
@@ -4980,7 +5024,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.strUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5001,7 +5045,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -5022,7 +5066,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5043,7 +5087,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "DELEGATECALL 0xfeaf968c",
      "url": null,
@@ -5064,7 +5108,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfb2eeb3b",
      "url": null,
@@ -5085,7 +5129,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.etrUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5106,7 +5150,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -5127,7 +5171,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0x07a2d13a",
      "url": null,
@@ -5150,7 +5194,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "DELEGATECALL 0x5487c577",
      "url": null,
@@ -5158,7 +5202,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "DELEGATECALL 0x72b86489",
      "url": null,
@@ -5166,7 +5210,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "DELEGATECALL 0x342a7b01",
      "url": null,
@@ -5187,7 +5231,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5208,7 +5252,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5229,7 +5273,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xaea91078",
      "url": null,
@@ -5250,7 +5294,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xa035b1fe",
      "url": null,
@@ -5271,7 +5315,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.siUSD.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5292,7 +5336,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "CALL 0xa035b1fe",
      "url": null,
@@ -5313,7 +5357,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5334,7 +5378,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5355,7 +5399,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P5.PRIME.oracle.price",
      "detail": "STATICCALL 0xfeaf968c",
      "url": null,
@@ -5378,7 +5422,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -5386,7 +5430,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -5394,7 +5438,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5417,7 +5461,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -5425,7 +5469,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -5433,7 +5477,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -5455,7 +5499,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x56c07573",
      "url": null,
@@ -5463,7 +5507,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x4e45f1ff",
      "url": null,
@@ -5485,7 +5529,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x5c60e39a",
      "url": null,
@@ -5493,7 +5537,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x5c2bea49",
      "url": null,
@@ -5514,7 +5558,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0x01977b57",
      "url": null,
@@ -5535,7 +5579,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0x9451fed4",
      "url": null,
@@ -5556,7 +5600,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -5577,7 +5621,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P5.redeem",
      "detail": "STATICCALL 0xc69507dd",
      "url": null,
@@ -5596,7 +5640,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adapterRegistry()",
      "url": null,
@@ -5615,7 +5659,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -5637,7 +5681,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "curator()",
      "url": null,
@@ -5645,7 +5689,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5664,7 +5708,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "liquidityAdapter()",
      "url": null,
@@ -5683,7 +5727,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "adaptiveCurveIrm()",
      "url": null,
@@ -5702,7 +5746,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -5721,7 +5765,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "morpho()",
      "url": null,
@@ -5740,7 +5784,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "parentVault()",
      "url": null,
@@ -5759,7 +5803,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -5778,7 +5822,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -5795,7 +5839,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -5816,7 +5860,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -5837,7 +5881,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -5858,7 +5902,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5879,7 +5923,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -5900,7 +5944,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -5919,7 +5963,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -5938,7 +5982,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -5957,7 +6001,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_2()",
      "url": null,
@@ -5976,7 +6020,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -5993,7 +6037,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -6012,7 +6056,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -6031,7 +6075,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "defaultAdmin()",
      "url": null,
@@ -6052,7 +6096,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -6071,7 +6115,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "silo()",
      "url": null,
@@ -6090,7 +6134,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -6109,7 +6153,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -6126,7 +6170,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -6147,7 +6191,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -6166,7 +6210,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "endpoint()",
      "url": null,
@@ -6187,7 +6231,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -6206,7 +6250,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -6225,7 +6269,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -6244,7 +6288,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -6263,7 +6307,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -6282,7 +6326,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldSharing()",
      "url": null,
@@ -6301,7 +6345,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -6320,7 +6364,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_VAULT()",
      "url": null,
@@ -6339,7 +6383,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -6356,7 +6400,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -6375,7 +6419,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -6394,7 +6438,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "navOracle()",
      "url": null,
@@ -6413,7 +6457,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldVault()",
      "url": null,
@@ -6432,7 +6476,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "BASE_FEED_1()",
      "url": null,
@@ -6451,7 +6495,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "QUOTE_FEED_1()",
      "url": null,
@@ -6475,7 +6519,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -6483,7 +6527,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -6491,7 +6535,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -6499,7 +6543,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -6518,7 +6562,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "MORPHO()",
      "url": null,
@@ -6537,7 +6581,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "FEED_1()",
      "url": null,
@@ -6545,7 +6589,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getActiveOracle()",
      "url": null,
@@ -6564,7 +6608,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "FEED_2()",
      "url": null,
@@ -6583,7 +6627,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "market()",
      "url": null,
@@ -6600,7 +6644,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -6621,7 +6665,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -6640,7 +6684,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "REUSD()",
      "url": null,
@@ -6659,7 +6703,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "USDC()",
      "url": null,
@@ -6678,7 +6722,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "exchangeRateOracle()",
      "url": null,
@@ -6699,7 +6743,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -6718,7 +6762,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldToken()",
      "url": null,
@@ -6737,7 +6781,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "REUSD()",
      "url": null,
@@ -6756,7 +6800,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "USDC()",
      "url": null,
@@ -6775,7 +6819,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "yieldToken()",
      "url": null,
@@ -6794,7 +6838,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EXCHANGE_RATE_SOURCE()",
      "url": null,
@@ -6813,7 +6857,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "depositTokenRegistry()",
      "url": null,
@@ -6832,7 +6876,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -6851,7 +6895,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "SY()",
      "url": null,
@@ -6870,7 +6914,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "innerOracle()",
      "url": null,
@@ -6889,7 +6933,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -6908,7 +6952,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "PT()",
      "url": null,
@@ -6925,7 +6969,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -6946,7 +6990,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -6965,7 +7009,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -6984,7 +7028,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -7001,7 +7045,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7022,7 +7066,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -7041,7 +7085,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "aggregator()",
      "url": null,
@@ -7062,7 +7106,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7081,7 +7125,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBillingAccessController()",
      "url": null,
@@ -7100,7 +7144,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLinkToken()",
      "url": null,
@@ -7119,7 +7163,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getRequesterAccessController()",
      "url": null,
@@ -7140,7 +7184,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7157,7 +7201,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7178,7 +7222,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -7197,7 +7241,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -7216,7 +7260,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -7233,7 +7277,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7254,7 +7298,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -7273,7 +7317,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -7292,7 +7336,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getPriceFeedAdapter()",
      "url": null,
@@ -7311,7 +7355,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -7330,7 +7374,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "accounting()",
      "url": null,
@@ -7349,7 +7393,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -7368,7 +7412,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "receiptToken()",
      "url": null,
@@ -7387,7 +7431,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -7406,7 +7450,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "farmRegistry()",
      "url": null,
@@ -7425,7 +7469,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -7444,7 +7488,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "aggregator()",
      "url": null,
@@ -7465,7 +7509,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7484,7 +7528,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getBillingAccessController()",
      "url": null,
@@ -7503,7 +7547,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getLinkToken()",
      "url": null,
@@ -7522,7 +7566,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getRequesterAccessController()",
      "url": null,
@@ -7543,7 +7587,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7564,7 +7608,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7583,7 +7627,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -7604,7 +7648,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7621,7 +7665,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7642,7 +7686,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -7663,7 +7707,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7680,7 +7724,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7701,7 +7745,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7722,7 +7766,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7743,7 +7787,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7760,7 +7804,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7781,7 +7825,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 admin slot",
      "url": null,
@@ -7798,7 +7842,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7815,7 +7859,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7832,7 +7876,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7849,7 +7893,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -7870,7 +7914,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7891,7 +7935,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7912,7 +7956,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7933,7 +7977,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7954,7 +7998,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -7973,7 +8017,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "core()",
      "url": null,
@@ -8014,6 +8058,40 @@
      "confidence": 0.9
     }
    ]
+  },
+  "0x19ebb35279a16207ec4ba82799cc64715065f7f6|issuer:hastra|issued_by": {
+   "src": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
+   "dst": "issuer:hastra",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://rockawayx.com/insights",
+     "confidence": 0.6
+    }
+   ]
+  },
+  "issuer:hastra|offchain:figure_heloc|backs": {
+   "src": "issuer:hastra",
+   "dst": "offchain:figure_heloc",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://rockawayx.com/insights",
+     "confidence": 0.5
+    }
+   ]
   }
  },
  "meta": {
@@ -8021,59 +8099,59 @@
    {
     "market_id": "0x1e9d614631a7df0ec07fb05b2c8cb2491575fd1a63a33bf187a6afb295a4fc64",
     "collateral": "PT-reUSD-10DEC2026",
-    "allocation_usd": 9300423.68103,
+    "allocation_usd": 9300768.730104,
     "lltv": 0.915,
     "oracle": "0x217d6ddcdb95112c51657f6270e8c079cfdb51f0"
    },
    {
     "market_id": "0xf062a110320da27e0e7e7d9e1bdf458dd51e2d2089e55f63ff9fd54f415ce35d",
     "collateral": "PT-strUSD-26NOV2026",
-    "allocation_usd": 256995.044497,
+    "allocation_usd": 257003.2217,
     "lltv": 0.86,
     "oracle": "0xdb6e2e77ac10f05b9a52efe02d4c61c2770a776d"
    },
    {
     "market_id": "0x975c6e8b71073a82216ae464bc44f67d71988450d2542d635d88bc78fca344b1",
     "collateral": "strUSD",
-    "allocation_usd": 4909357.057171,
+    "allocation_usd": 4909512.790607,
     "lltv": 0.86,
     "oracle": "0x1506c98ce61ac63c8438b710c054a51c5dd9a6a4"
    },
    {
     "market_id": "0xff836cc9796e2889ebf73b26c2de2de74b35f985bb83e9d79380deb4229e365b",
     "collateral": "etrUSD",
-    "allocation_usd": 113298.519038,
+    "allocation_usd": 113302.24855,
     "lltv": 0.86,
     "oracle": "0xf73166adf598f4c03776d058564f6543f8184dcf"
    },
    {
     "market_id": "0xbbf7ce1b40d32d3e3048f5cf27eeaa6de8cb27b80194690aab191a63381d8c99",
     "collateral": "siUSD",
-    "allocation_usd": 2357248.838816,
+    "allocation_usd": 2357328.979907,
     "lltv": 0.915,
     "oracle": "0xd2cc46b9b2d761502ef933320ecf0268ec0dfa6d"
    },
    {
     "market_id": "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d",
     "collateral": "PRIME",
-    "allocation_usd": 1611231.250081,
+    "allocation_usd": 1611125.323583,
     "lltv": 0.86,
     "oracle": "0x999eff9ca63d23a60a0cd19b9f65a0918674119a"
    }
   ],
   "exit": {
    "route": "vault.redeem via liquidity adapter",
-   "size_usd": 2782283.16,
-   "withdrawable_now_usd": 350085.042051,
+   "size_usd": 2782356.19,
+   "withdrawable_now_usd": 349951.004136,
    "idle_usd": 0.0,
-   "liquidity_market_free_usd": 350085.042051,
+   "liquidity_market_free_usd": 349951.004136,
    "liquidity_market": "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d",
-   "locked_usd": 2432198.117949,
-   "traced_redeem_usd": 350085.04205,
+   "locked_usd": 2432405.185864,
+   "traced_redeem_usd": 349951.004135,
    "error": null
   },
   "pocket": "P5",
-  "size_usd": 2782283.16,
+  "size_usd": 2782356.19,
   "pipeline": "discovery.vault"
  }
 }

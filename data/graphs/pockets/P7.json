@@ -1,6 +1,6 @@
 {
  "position_id": "P7",
- "fork_block": 26161499,
+ "fork_block": 26162857,
  "nodes": {
   "position:P7": {
    "id": "position:P7",
@@ -34,12 +34,12 @@
    "chain": "ethereum",
    "address": "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd",
    "tags": [
-    "proxy",
-    "erc4626"
+    "erc4626",
+    "proxy"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "implementation": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
@@ -63,7 +63,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P7.convertToAssets",
      "detail": "CALL 0x07a2d13a",
      "url": null,
@@ -71,7 +71,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -79,7 +79,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -87,7 +87,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -102,12 +102,12 @@
    "chain": "ethereum",
    "address": "0x4e7991e5c547ce825bdeb665ee14a3274f9f61e0",
    "tags": [
-    "implementation",
-    "erc4626"
+    "erc4626",
+    "implementation"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "SUsds",
@@ -123,7 +123,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P7.convertToAssets",
      "detail": "DELEGATECALL 0x07a2d13a",
      "url": null,
@@ -131,7 +131,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -139,7 +139,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -147,7 +147,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xba087652",
      "url": null,
@@ -155,7 +155,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -163,7 +163,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getImplementation()",
      "url": null,
@@ -190,7 +190,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xe21fd0e9",
      "url": null,
@@ -222,7 +222,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -230,7 +230,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -238,7 +238,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -270,7 +270,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -278,7 +278,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -286,7 +286,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -313,7 +313,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xd9c45357",
      "url": null,
@@ -343,7 +343,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xd9c45357",
      "url": null,
@@ -373,7 +373,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xbd1eba5b",
      "url": null,
@@ -400,7 +400,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xf24e23eb",
      "url": null,
@@ -408,7 +408,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -416,7 +416,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -443,7 +443,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -451,7 +451,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x3b4da69f",
      "url": null,
@@ -459,7 +459,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usdsJoin()",
      "url": null,
@@ -491,7 +491,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -499,7 +499,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -507,7 +507,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -515,7 +515,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -523,7 +523,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x9dc29fac",
      "url": null,
@@ -531,7 +531,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -539,7 +539,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usds()",
      "url": null,
@@ -571,7 +571,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x40c10f19",
      "url": null,
@@ -579,7 +579,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -587,7 +587,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -595,7 +595,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -603,7 +603,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x9dc29fac",
      "url": null,
@@ -611,7 +611,7 @@
     },
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967/1822 implementation slot",
      "url": null,
@@ -641,7 +641,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x93e495c3",
      "url": null,
@@ -649,7 +649,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xa14b7909",
      "url": null,
@@ -676,7 +676,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x68f30150",
      "url": null,
@@ -703,7 +703,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -732,7 +732,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -740,7 +740,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -748,7 +748,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -775,7 +775,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -783,7 +783,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -805,7 +805,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -829,7 +829,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -851,7 +851,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -875,7 +875,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -897,7 +897,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -919,7 +919,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -941,7 +941,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -949,7 +949,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -957,7 +957,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -965,7 +965,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -987,7 +987,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -1009,7 +1009,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -1138,7 +1138,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "value:P7.convertToAssets",
      "detail": "DELEGATECALL 0x07a2d13a",
      "url": null,
@@ -1159,7 +1159,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xe21fd0e9",
      "url": null,
@@ -1181,7 +1181,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1189,7 +1189,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1212,7 +1212,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -1220,7 +1220,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -1228,7 +1228,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xba087652",
      "url": null,
@@ -1249,7 +1249,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1271,7 +1271,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -1279,7 +1279,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -1300,7 +1300,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xd9c45357",
      "url": null,
@@ -1321,7 +1321,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xd9c45357",
      "url": null,
@@ -1343,7 +1343,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1351,7 +1351,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xba087652",
      "url": null,
@@ -1372,7 +1372,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xbd1eba5b",
      "url": null,
@@ -1393,7 +1393,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xf24e23eb",
      "url": null,
@@ -1414,7 +1414,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -1435,7 +1435,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -1457,7 +1457,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -1465,7 +1465,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x9dc29fac",
      "url": null,
@@ -1490,7 +1490,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x40c10f19",
      "url": null,
@@ -1498,7 +1498,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xa9059cbb",
      "url": null,
@@ -1506,7 +1506,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x70a08231",
      "url": null,
@@ -1514,7 +1514,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x23b872dd",
      "url": null,
@@ -1522,7 +1522,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x9dc29fac",
      "url": null,
@@ -1543,7 +1543,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xa9059cbb",
      "url": null,
@@ -1564,7 +1564,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1586,7 +1586,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0x93e495c3",
      "url": null,
@@ -1594,7 +1594,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "DELEGATECALL 0xa14b7909",
      "url": null,
@@ -1615,7 +1615,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x68f30150",
      "url": null,
@@ -1636,7 +1636,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1657,7 +1657,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x3b4da69f",
      "url": null,
@@ -1678,7 +1678,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xef693bed",
      "url": null,
@@ -1699,7 +1699,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0xbb35783b",
      "url": null,
@@ -1720,7 +1720,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x40c10f19",
      "url": null,
@@ -1741,7 +1741,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1763,7 +1763,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0xfae036d5",
      "url": null,
@@ -1771,7 +1771,7 @@
     },
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x8d7ef9bb",
      "url": null,
@@ -1792,7 +1792,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1813,7 +1813,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "CALL 0x23b872dd",
      "url": null,
@@ -1834,7 +1834,7 @@
    "provenance": [
     {
      "source": "trace",
-     "block": 26161499,
+     "block": 26162857,
      "call": "exit:P7.kyber",
      "detail": "STATICCALL 0x70a08231",
      "url": null,
@@ -1851,7 +1851,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -1870,7 +1870,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -1889,7 +1889,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getImplementation()",
      "url": null,
@@ -1908,7 +1908,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usds()",
      "url": null,
@@ -1927,7 +1927,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usdsJoin()",
      "url": null,
@@ -1946,7 +1946,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -1965,7 +1965,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -1984,7 +1984,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "asset()",
      "url": null,
@@ -2003,7 +2003,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usds()",
      "url": null,
@@ -2022,7 +2022,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "usdsJoin()",
      "url": null,
@@ -2041,7 +2041,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vat()",
      "url": null,
@@ -2060,7 +2060,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "vow()",
      "url": null,
@@ -2081,7 +2081,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2098,7 +2098,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -2119,7 +2119,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -2140,7 +2140,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -2161,7 +2161,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2182,7 +2182,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -2206,7 +2206,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "blacklister()",
      "url": null,
@@ -2214,7 +2214,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "masterMinter()",
      "url": null,
@@ -2222,7 +2222,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2230,7 +2230,7 @@
     },
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "pauser()",
      "url": null,
@@ -2251,7 +2251,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2268,7 +2268,7 @@
    "provenance": [
     {
      "source": "storage",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "EIP-1967 impl slot",
      "url": null,
@@ -2287,7 +2287,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "getMinterManager()",
      "url": null,
@@ -2308,7 +2308,7 @@
    "provenance": [
     {
      "source": "onchain_read",
-     "block": 26161499,
+     "block": 26162857,
      "call": null,
      "detail": "owner()",
      "url": null,
@@ -2407,8 +2407,8 @@
    "route": "KyberSwap aggregator",
    "size_usd": 5000000.0,
    "token_price_usd": 1.112381,
-   "usdc_out": 4999787.271269,
-   "quote_usdc": 4999787.259442,
+   "usdc_out": 4999822.926524,
+   "quote_usdc": 4999823.092085,
    "error": null
   },
   "pocket": "P7",

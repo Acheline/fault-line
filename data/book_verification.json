@@ -2,10 +2,10 @@
  {
   "pocket": "P1",
   "check": "Pendle market PT-sUSDe-26NOV2026 liquidity (on-chain reserves)",
-  "value": 3821567.5280213323,
+  "value": 3821662.283904267,
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
   "api_liquidity": 3820244.472868265,
   "expiry": 1795651200,
@@ -17,7 +17,7 @@
   "value": 7757170.494619,
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
   "utilization": 0.9014439061738645
  },
@@ -26,11 +26,11 @@
   "check": "sUSDe asset()/totalAssets()",
   "value": {
    "asset": "0x4c9edd5852cd905f086c759e8383e09bff1e68b3",
-   "total_assets": 1213939926.0664482
+   "total_assets": 1213740801.3608832
   },
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0x9D39A5DE30e57443BfF2A8307A4256c8797A3497"
  },
  {
@@ -38,11 +38,11 @@
   "check": "gtusdcp asset()/totalAssets()",
   "value": {
    "asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-   "total_assets": 121131582.104483
+   "total_assets": 120126594.560373
   },
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0x8c106EEDAd96553e64287A5A6839c3Cc78afA3D0"
  },
  {
@@ -59,30 +59,30 @@
   "check": "roxUSDCy asset()/totalAssets()",
   "value": {
    "asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-   "total_assets": 18548554.390633
+   "total_assets": 18549041.294451
   },
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0xE0181090c22579B6A217f1522cbf8c9f1F0C1965"
  },
  {
   "pocket": "P5",
   "check": "footnote: Figure USDC Main totalAssets (previous hero #2 candidate)",
-  "value": 11.3618,
+  "value": 11.361998,
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0xd65d6E8dbC3Cd3D12418199E6f4014dB3aaa0097",
   "note": "wound down; kept as a possible time-machine story"
  },
  {
   "pocket": "P6",
   "check": "Aave v3 aEthUSDC totalSupply",
-  "value": 2413263260.949851,
+  "value": 2407623857.575491,
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0x98c23e9d8f34fefb1b7bd6a91b7ff122f4e16f5c",
   "pool": "0x87870Bca3F3fD6335C3F4ce8392D69350B4fA4E2"
  },
@@ -91,11 +91,11 @@
   "check": "sUSDS asset()/totalAssets()",
   "value": {
    "asset": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
-   "total_assets": 4906274400.977326
+   "total_assets": 4900508477.872611
   },
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0xa3931d71877C0E7a3148CB7Eb4463524FEc27fbD"
  },
  {
@@ -103,11 +103,11 @@
   "check": "syrupUSDC asset()/totalAssets()",
   "value": {
    "asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-   "total_assets": 1059987473.322161
+   "total_assets": 1060225836.502117
   },
   "source": "onchain",
   "ok": true,
-  "block": 26161499,
+  "block": 26162857,
   "address": "0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b"
  },
  {
@@ -137,12 +137,12 @@
   "check": "venue cap pendle:0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
   "ok": false,
   "value": {
-   "cap_usd": 382156.75280213327,
+   "cap_usd": 382166.2283904267,
    "cap_rule": "max_share_pendle_pool=0.1",
-   "venue_tvl_usd": 3821567.5280213323,
+   "venue_tvl_usd": 3821662.283904267,
    "requested_notional_usd": 23656716.417910457,
    "from_usd": 5000000,
-   "to_usd": 80771.30106543508
+   "to_usd": 80773.30379229835
   },
   "source": "ASSUMED_ANSWERS.md (pending Belem confirmation)",
   "note": "capacity-constrained: excess parked in P6 (Aave USDC)"
@@ -152,12 +152,12 @@
   "check": "venue cap pendle:0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
   "ok": false,
   "value": {
-   "cap_usd": 382156.75280213327,
+   "cap_usd": 382166.2283904267,
    "cap_rule": "max_share_pendle_pool=0.1",
-   "venue_tvl_usd": 3821567.5280213323,
+   "venue_tvl_usd": 3821662.283904267,
    "requested_notional_usd": 23656716.417910457,
    "from_usd": 5000000,
-   "to_usd": 80771.30106543508
+   "to_usd": 80773.30379229835
   },
   "source": "ASSUMED_ANSWERS.md (pending Belem confirmation)",
   "note": "capacity-constrained: excess parked in P6 (Aave USDC)"
@@ -167,12 +167,12 @@
   "check": "venue cap vault:0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
   "ok": false,
   "value": {
-   "cap_usd": 2782283.1585949496,
+   "cap_usd": 2782356.19416765,
    "cap_rule": "max_share_curated_vault_tvl=0.15",
-   "venue_tvl_usd": 18548554.390633,
+   "venue_tvl_usd": 18549041.294451,
    "requested_notional_usd": 5000000.0,
    "from_usd": 5000000,
-   "to_usd": 2782283.1585949496
+   "to_usd": 2782356.19416765
   },
   "source": "ASSUMED_ANSWERS.md (pending Belem confirmation)",
   "note": "capacity-constrained: excess parked in P6 (Aave USDC)"
@@ -180,7 +180,7 @@
  {
   "pocket": "P6",
   "check": "parked excess",
-  "value": 12056174.239274181,
+  "value": 12056097.198247753,
   "source": "ASSUMED_ANSWERS.md (pending Belem confirmation)",
   "ok": true,
   "note": "['P1', 'P2', 'P5'] capacity-constrained"
