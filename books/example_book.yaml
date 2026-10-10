@@ -1,0 +1,43 @@
+# Fault Line portfolio input. Every number not read on-chain is tagged with its source.
+# Replace with Belem's reference portfolio when mentors share it (see QUESTIONS.md).
+name: "Example market-neutral yield book"
+owner: "Fault Line demo (NOT Belem's book; hero #2 is a RockawayX vault used as a real test case)"
+base_currency: USD
+aum_usd: 400000000
+aum_source: "assumption: brief states Belem runs ~$400M"
+risk_aversion_lambda: 0.5
+lambda_source: "assumption: to be replaced by Belem's answer (QUESTIONS.md #3)"
+fork_block: 26161499
+
+positions:
+  - id: hero1_pt_susde_26nov2026
+    label: "PT-sUSDe-26NOV2026 outright + Morpho loop (borrow USDC)"
+    chain: ethereum
+    mandate: fund
+    pipeline: discovery.hero1
+    size_usd: 2000000
+    size_source: "assumption: 1M PT outright + 1M PT collateral; liquid size for a $3.8M Pendle pool"
+    tags: [pendle_pt, lending_loop, brief_scenario_a]
+    legs:
+      - type: hold
+        asset: "0xB195B618EA52b77CB2a58846F452f59f8dFa9390"     # PT-sUSDE-26NOV2026
+        amount: 1000000
+      - type: morpho_collateral
+        asset: "0xB195B618EA52b77CB2a58846F452f59f8dFa9390"
+        market_id: "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05"
+        amount: 1000000
+        borrow_asset: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"  # USDC
+        borrow_amount: 850000
+        notes: "assumption: LTV ~86% vs LLTV 91.5%"
+
+  - id: hero2_rockawayx_figure_usdc_main
+    label: "Deposit in RockawayX 'Figure USDC Main' (Morpho Vault V2)"
+    chain: ethereum
+    mandate: curated_vault
+    pipeline: discovery.hero2
+    size_usd: null
+    size_source: "onchain: vault totalAssets = 11.36 USDC at block 26161499 (wound down); size TBD by team"
+    tags: [curated_vault, rwa, lender_side, rockawayx_not_belem]
+    legs:
+      - type: vault_deposit
+        asset: "0xd65d6E8dbC3Cd3D12418199E6f4014dB3aaa0097"

@@ -1,0 +1,12 @@
+web3>=7
+python-dotenv
+requests
+pydantic>=2
+networkx
+numpy
+scipy
+pandas
+streamlit
+pyvis
+plotly
+pytestpyyaml
