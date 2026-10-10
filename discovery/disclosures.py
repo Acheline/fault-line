@@ -25,6 +25,10 @@ SUSDS = "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
 SYRUP_USDC = "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b"
 PRIME = "0x19ebb35279a16207ec4ba82799cc64715065f7f6"     # name() "Hastra PRIME"
 ROCKAWAYX_INSIGHTS = "https://rockawayx.com/insights"
+REUSD = "0x5086bf358635b81d8c47c66d1c8b9e567db70c72"      # name() "Re Protocol Deposit Token"
+RE_DOCS = "https://re.xyz"
+TRUSD = "0xd0580192e98ea6ceb9c7b6191ed2e27560911697"      # Tori trUSD (minter: ToriMinting)
+TORI_DOCS = "https://tori.finance"
 
 ETHENA_VENUES = ["Binance", "Bybit", "OKX", "Deribit", "Bitget"]
 ETHENA_CUSTODIANS = ["Copper", "Ceffu", "Cobo"]
@@ -94,8 +98,28 @@ def _prime(g: DependencyGraph, asset: str):
     _e(g, "issuer:hastra", "offchain:figure_heloc", EdgeType.BACKS, ROCKAWAYX_INSIGHTS, 0.5)
 
 
+def _re(g: DependencyGraph, asset: str):
+    """reUSD: senior, principal-protected deposit token over reinsurance underwriting pools; reUSDe is the
+    risk-bearing junior tranche (Re Protocol description, CoinGecko re-protocol-reusd)."""
+    _n(g, "issuer:re_protocol", NodeType.ISSUER, "Re Protocol / Re Foundation (reUSD issuer)", RE_DOCS, 0.7)
+    _n(g, "offchain:re_reinsurance", NodeType.OFFCHAIN, "Reinsurance underwriting pools (off-chain contracts)", RE_DOCS, 0.5)
+    _n(g, "asset:reusde_junior", NodeType.ASSET, "reUSDe (junior, first-loss tranche)", RE_DOCS, 0.6)
+    _e(g, asset, "issuer:re_protocol", EdgeType.ISSUED_BY, RE_DOCS, 0.7)
+    _e(g, "issuer:re_protocol", "offchain:re_reinsurance", EdgeType.BACKS, RE_DOCS, 0.5)
+    _e(g, asset, "asset:reusde_junior", EdgeType.BACKS, RE_DOCS, 0.6)
+
+
+def _tori(g: DependencyGraph, asset: str):
+    """trUSD: synthetic dollar backed by Tori's delta-neutral trading positions; redemption by eligible users."""
+    _n(g, "issuer:tori", NodeType.ISSUER, "Tori Finance (trUSD issuer)", TORI_DOCS, 0.7)
+    _n(g, "offchain:tori_positions", NodeType.OFFCHAIN, "Delta-neutral trading positions (venues not disclosed on-chain)",
+       TORI_DOCS, 0.5, tags=("cex",))
+    _e(g, asset, "issuer:tori", EdgeType.ISSUED_BY, TORI_DOCS, 0.7)
+    _e(g, "issuer:tori", "offchain:tori_positions", EdgeType.BACKS, TORI_DOCS, 0.5)
+
+
 REGISTRY = {USDE: _ethena, SUSDE: _ethena, USDC_ETH: _circle, USDC_SOL: _circle, USDS: _sky, SUSDS: _sky,
-            SYRUP_USDC: _maple, PRIME: _prime}
+            SYRUP_USDC: _maple, PRIME: _prime, REUSD: _re, TRUSD: _tori}
 
 
 def apply(g: DependencyGraph) -> list[str]:

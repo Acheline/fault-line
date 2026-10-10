@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import os
+import time
 from contextlib import contextmanager
 from pathlib import Path
 from typing import Any
@@ -59,7 +60,12 @@ class Fork:
 
     # ---------- raw RPC ----------
     def rpc(self, method: str, params: list):
-        r = self.w3.provider.make_request(method, params)
+        for attempt in range(6):         # the fork's upstream (Alchemy free tier) rate-limits bursts with HTTP 429
+            r = self.w3.provider.make_request(method, params)
+            if "error" in r and "429" in str(r["error"]) and attempt < 5:
+                time.sleep(3 * (attempt + 1))
+                continue
+            break
         if "error" in r:
             raise RuntimeError(f"{method}: {r['error']}")
         return r["result"]
@@ -183,7 +189,14 @@ class Fork:
         self.rpc("anvil_setBalance", [sender, hex(10**20)])
         h = self.rpc("eth_sendTransaction", [{"from": sender, "to": to_checksum_address(to), "data": data_hex,
                                               "gas": hex(gas)}])
-        rcpt = self.w3.eth.wait_for_transaction_receipt(h)
+        for attempt in range(6):         # only the receipt poll is retried: the tx itself is never re-sent
+            try:
+                rcpt = self.w3.eth.wait_for_transaction_receipt(h)
+                break
+            except Exception as e:
+                if "429" not in str(e) or attempt == 5:
+                    raise
+                time.sleep(3 * (attempt + 1))
         self.calls.put(okey, {"ok": rcpt["status"] == 1})
         if rcpt["status"] != 1:
             raise RuntimeError(f"setup tx reverted: {sender}->{to} {data_hex[:10]}")

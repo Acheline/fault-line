@@ -36,8 +36,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "market_id": "0x5613b170ded221c588b6e9637b910f49e5508680ceede207f44aa72e5c46cb05",
@@ -66,9 +66,9 @@
     "critical"
    ],
    "paths": [
+    "value",
     "liquidation",
-    "exit",
-    "value"
+    "exit"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -148,12 +148,12 @@
    "chain": "ethereum",
    "address": "0xbf98480425a29197e5d99d003017f63a1e595d02",
    "tags": [
-    "critical",
-    "pendle_sy"
+    "pendle_sy",
+    "critical"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "PendleSUSDESY",
@@ -277,8 +277,8 @@
     "critical"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "StakedUSDeV2",
@@ -417,8 +417,8 @@
     "critical"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "USDe",
@@ -497,12 +497,12 @@
    "chain": "ethereum",
    "address": "0xf8b29e7e9c00ce531434775f7923cc9fbca01b08",
    "tags": [
-    "critical",
-    "morpho_oracle_interface"
+    "morpho_oracle_interface",
+    "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -603,8 +603,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MetaOracleDeviationTimelock",
@@ -641,12 +641,12 @@
    "chain": "ethereum",
    "address": "0x8fca98c9abee4dcb33ba9f3d17db4ad57f72706d",
    "tags": [
-    "critical",
-    "morpho_oracle_interface"
+    "morpho_oracle_interface",
+    "critical"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "MorphoChainlinkOracleV2",
@@ -726,14 +726,14 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
-    "fixed_schedule",
-    "chainlink_interface",
+    "no_update_timestamp",
     "critical",
-    "no_update_timestamp"
+    "fixed_schedule",
+    "chainlink_interface"
    ],
    "paths": [
-    "liquidation",
-    "value"
+    "value",
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendleSparkLinearDiscountOracle",
@@ -904,12 +904,12 @@
    "chain": "ethereum",
    "address": "0x47ad2cd1dd15739a7a035b9d3b7828d916fef77e",
    "tags": [
-    "pendle_market",
-    "critical"
+    "critical",
+    "pendle_market"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "PendleMarketV7",
@@ -979,8 +979,8 @@
     "critical"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "PendleYieldToken",
@@ -1079,8 +1079,8 @@
     "implementation"
    ],
    "paths": [
-    "exit",
-    "value"
+    "value",
+    "exit"
    ],
    "props": {
     "contract_name": "OracleLib",
@@ -6393,8 +6393,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6419,8 +6419,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6445,8 +6445,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6471,8 +6471,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6497,8 +6497,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6635,6 +6635,78 @@
      "detail": "public disclosure; lists and sizes must be re-verified live",
      "url": "https://www.circle.com/transparency",
      "confidence": 0.9
+    }
+   ]
+  },
+  "issuer:re_protocol": {
+   "id": "issuer:re_protocol",
+   "type": "ISSUER",
+   "label": "Re Protocol / Re Foundation (reUSD issuer)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {
+    "brief_layer": "2. yield source & issuer"
+   },
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://re.xyz",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "offchain:re_reinsurance": {
+   "id": "offchain:re_reinsurance",
+   "type": "OFFCHAIN",
+   "label": "Reinsurance underwriting pools (off-chain contracts)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {
+    "brief_layer": "2. yield source & issuer"
+   },
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://re.xyz",
+     "confidence": 0.5
+    }
+   ]
+  },
+  "asset:reusde_junior": {
+   "id": "asset:reusde_junior",
+   "type": "ASSET",
+   "label": "reUSDe (junior, first-loss tranche)",
+   "chain": "ethereum",
+   "address": null,
+   "tags": [
+    "offchain_disclosed"
+   ],
+   "paths": [],
+   "props": {
+    "brief_layer": "+ exit liquidity: DEX pools, tokens & routers on the executed exit"
+   },
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://re.xyz",
+     "confidence": 0.6
     }
    ]
   },
@@ -14709,6 +14781,57 @@
     }
    ]
   },
+  "0x5086bf358635b81d8c47c66d1c8b9e567db70c72|issuer:re_protocol|issued_by": {
+   "src": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+   "dst": "issuer:re_protocol",
+   "type": "issued_by",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://re.xyz",
+     "confidence": 0.7
+    }
+   ]
+  },
+  "issuer:re_protocol|offchain:re_reinsurance|backs": {
+   "src": "issuer:re_protocol",
+   "dst": "offchain:re_reinsurance",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://re.xyz",
+     "confidence": 0.5
+    }
+   ]
+  },
+  "0x5086bf358635b81d8c47c66d1c8b9e567db70c72|asset:reusde_junior|backs": {
+   "src": "0x5086bf358635b81d8c47c66d1c8b9e567db70c72",
+   "dst": "asset:reusde_junior",
+   "type": "backs",
+   "path": null,
+   "props": {},
+   "provenance": [
+    {
+     "source": "disclosure",
+     "block": null,
+     "call": null,
+     "detail": "public disclosure; lists and sizes must be re-verified live",
+     "url": "https://re.xyz",
+     "confidence": 0.6
+    }
+   ]
+  },
   "0xdc035d45d973e3ec169d2276ddab16f1e407384f|issuer:sky|issued_by": {
    "src": "0xdc035d45d973e3ec169d2276ddab16f1e407384f",
    "dst": "issuer:sky",
@@ -14876,6 +14999,8 @@
     "Ethena off-exchange custodians (OES)",
     "Ethena reserve fund",
     "EthenaMinting",
+    "Re Protocol / Re Foundation (reUSD issuer)",
+    "Reinsurance underwriting pools (off-chain contracts)",
     "Sky (USDS issuer, ex-Maker)",
     "Sky RWA / T-bill vaults (off-chain arrangers)",
     "USDC reserves (cash + T-bills)",
@@ -15024,6 +15149,7 @@
     "crvUSD ControllerFactory",
     "frxUSD",
     "reUSD",
+    "reUSDe (junior, first-loss tranche)",
     "sDAI",
     "scrvUSD"
    ],
@@ -15632,7 +15758,7 @@
     }
    }
   ],
-  "n_nodes": 171,
-  "n_edges": 352
+  "n_nodes": 174,
+  "n_edges": 355
  }
 }

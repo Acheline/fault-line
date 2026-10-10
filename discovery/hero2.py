@@ -228,10 +228,13 @@ NO_V4 = "uniswap-v4,uniswap-v4-fairflow,uniswap-v4-kem"
 EXIT_SIZES = [0.1, 0.25, 0.5, 1.0]     # x the largest borrower's collateral (one liquidation, seized at once)
 
 
-def pendle_route(token: str, amount: int, offline: bool, block: int | None = None) -> dict | None:
-    """Pendle router convert (PT -> SY -> underlying -> USDC, aggregator enabled): {to, data, amount_out}. Cached."""
-    p = {"receiver": HARNESS, "slippage": "0.05", "enableAggregator": "true", "tokensIn": token,
-         "amountsIn": str(amount), "tokensOut": A.USDC}
+def pendle_route(token: str, amount: int, offline: bool, block: int | None = None, token_out: str = A.USDC,
+                 aggregator: bool = True, limit_orders: bool = True) -> dict | None:
+    """Pendle router convert (PT -> SY -> underlying -> token_out): {to, data, amount_out}. Cached per fork block."""
+    p = {"receiver": HARNESS, "slippage": "0.05", "enableAggregator": "true" if aggregator else "false",
+         "tokensIn": token, "amountsIn": str(amount), "tokensOut": token_out}
+    if not limit_orders:
+        p["useLimitOrder"] = "false"
 
     def fetch():
         r = requests.get("https://api-v2.pendle.finance/core/v2/sdk/1/convert", params=p, timeout=60).json()
@@ -239,7 +242,10 @@ def pendle_route(token: str, amount: int, offline: bool, block: int | None = Non
         return {"to": rt["tx"]["to"], "data": rt["tx"]["data"], "amount_out": int(rt["outputs"][0]["amount"])}
     for attempt in range(4):
         try:
-            return _api(f"pendle_route_{token.lower()}_{amount}" + (f"_b{block}" if block else ""), fetch, offline)
+            return _api(f"pendle_route_{token.lower()}_{amount}" + (f"_b{block}" if block else "")
+                        + ("" if token_out == A.USDC and aggregator else f"_{token_out.lower()[:10]}_{int(aggregator)}")
+                        + ("" if limit_orders else "_nolo"),
+                        fetch, offline)
         except Exception:
             if offline:
                 return None
@@ -646,17 +652,45 @@ def build(offline: bool = False):
         oq["per_market"][m["collateral_symbol"]] = rec
     conc_tvl = tvl.concentration(g, "ethereum", offline=fork.offline)
 
+    # the brief's 5-layer Pendle picture, for the PT market inside Belem's own vault (PT-reUSD)
+    pt_layers = {}
+    for m in ms:
+        if m["collateral_symbol"].startswith("PT-"):
+            pt_layers[m["collateral_symbol"]] = pt_market_layers(g, m["node"], m["oracle"])
     q1 = {"roles": r, "markets": [{k: v for k, v in m.items() if k not in ("params",)} for m in ms],
           "exposure": group_exposure(ms, oq), "idle_usd": idle}
     q3 = {"withdrawable_now": wn, "depositor_concentration": conc, "top_depositors": deps, "run": run}
     g.meta = {"label": LABEL, "vault": V, "fork_block": blk, "q1": q1, "q2": q2, "q3": q3,
-              "oracle_quality": oq, "tvl_concentration": conc_tvl, "depth": depth_report(g),
+              "oracle_quality": oq, "tvl_concentration": conc_tvl, "depth": depth_report(g), "pt_layers": pt_layers,
               "critical_nodes": critical_nodes(g), "findings": findings(q1, q2, q3, oq),
               "n_nodes": len(g.nodes), "n_edges": len(g.edges)}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "hero2.json").write_text(g.to_json())
     viz.export(OUT / "hero2.json", ROOT / "output" / "hero2_graph.html")
     return g
+
+
+def pt_market_layers(g, market_node: str, oracle: str) -> dict:
+    """brief_layers on the subgraph reachable from one PT market (plus the chain): the brief's 5 layers for that PT."""
+    import copy
+
+    import networkx as nx
+
+    from core.schemas import DependencyGraph
+    from discovery.report import brief_layers
+    # shared singletons (Morpho Blue, USDC) are kept as nodes but not expanded: their own trace edges reach every
+    # other market of the vault, which is not this PT's stack
+    stop = {A.MORPHO_BLUE.lower(), A.USDC.lower(), "chain:ethereum"}
+    G = nx.DiGraph([(e.src, e.dst) for e in g.edges.values() if e.src not in stop])
+    keep = (nx.descendants(G, market_node) | {market_node, "chain:ethereum"}) if market_node in G else {market_node}
+    sub = DependencyGraph(position_id=g.position_id, fork_block=g.fork_block)
+    for nid in keep:
+        if nid in g.nodes:
+            sub.nodes[nid] = copy.deepcopy(g.nodes[nid])
+    for k, e in g.edges.items():
+        if e.src in keep and e.dst in keep:
+            sub.edges[k] = e
+    return brief_layers(sub, market_node, oracle)
 
 
 def findings(q1: dict, q2: list[dict], q3: dict, oq: dict) -> list[dict]:

@@ -1,0 +1,544 @@
+{
+ "fork_block": 26162857,
+ "sizes": {
+  "p1_usd": 80773.3,
+  "p2_equity_usd": 80773.3,
+  "loop": {
+   "lltv": 0.915,
+   "target_ltv": 0.7320000000000001,
+   "gross_leverage": 3.731343283582091,
+   "deleverage_ltv": 0.8235,
+   "emergency_unwind_ltv": 0.86925
+  }
+ },
+ "unwind_pt_usd": 382166.2104477613,
+ "exit_curve": [
+  {
+   "x": 0.25,
+   "pt": 96275.33349328756,
+   "oracle_value_usd": 95541.55261194032,
+   "usde_out": 95665.69801722822,
+   "susde_out": 76387.07240957809,
+   "usdc_out": 95583.591297,
+   "quoted_susde": 76387.07281945848,
+   "amm_cost": -0.0012993865171120333,
+   "cost": -0.00044000420665590845,
+   "executed": true
+  },
+  {
+   "x": 0.5,
+   "pt": 192550.66698657512,
+   "oracle_value_usd": 191083.10522388064,
+   "usde_out": 191331.32581581682,
+   "susde_out": 152774.08553269177,
+   "usdc_out": 191152.038336,
+   "quoted_susde": 152774.08648164515,
+   "amm_cost": -0.0012990190401467316,
+   "cost": -0.0003607493819957064,
+   "executed": true
+  },
+  {
+   "x": 1.0,
+   "pt": 385101.33397315023,
+   "oracle_value_usd": 382166.2104477613,
+   "usde_out": 382654.2353754049,
+   "susde_out": 305541.43844645296,
+   "usdc_out": 382246.047183,
+   "quoted_susde": 305541.4403868943,
+   "amm_cost": -0.0012769965378984782,
+   "cost": -0.0002089057929668403,
+   "executed": true
+  },
+  {
+   "x": 2.0,
+   "pt": 770202.6679463005,
+   "oracle_value_usd": 764332.4208955226,
+   "usde_out": 765227.8996608955,
+   "susde_out": 611018.5149731926,
+   "usdc_out": 764234.999708,
+   "quoted_susde": 611018.5195711443,
+   "amm_cost": -0.0011715828622365088,
+   "cost": 0.00012745918511269938,
+   "executed": true
+  }
+ ],
+ "exit_curve_amm_only": [
+  {
+   "x": 0.25,
+   "pt": 96275.33349328756,
+   "oracle_value_usd": 95541.55261194032,
+   "usde_out": 95641.55389163336,
+   "susde_out": 76367.7208580054,
+   "usdc_out": 95559.282225,
+   "quoted_susde": 76367.72158718281,
+   "amm_cost": -0.0010466784028433374,
+   "cost": -0.00018556965608129694,
+   "executed": true
+  },
+  {
+   "x": 0.5,
+   "pt": 192550.66698657512,
+   "oracle_value_usd": 191083.10522388064,
+   "usde_out": 191232.16427417644,
+   "susde_out": 152694.7591367001,
+   "usdc_out": 191052.990268,
+   "quoted_susde": 152694.76128538843,
+   "amm_cost": -0.0007800744609061105,
+   "cost": 0.00015760135280074028,
+   "executed": true
+  },
+  {
+   "x": 1.0,
+   "pt": 385101.33397315023,
+   "oracle_value_usd": 382166.2104477613,
+   "usde_out": 382273.7191465694,
+   "susde_out": 305237.30561996135,
+   "usdc_out": 381866.780099,
+   "quoted_susde": 305237.3127241393,
+   "amm_cost": -0.00028131398294517496,
+   "cost": 0.0007835081715111825,
+   "executed": true
+  },
+  {
+   "x": 2.0,
+   "pt": 770202.6679463005,
+   "oracle_value_usd": 764332.4208955226,
+   "usde_out": 763847.7208812238,
+   "susde_out": 609915.8937443417,
+   "usdc_out": 762855.702181,
+   "quoted_susde": 609915.9185673408,
+   "amm_cost": 0.0006341481808803673,
+   "cost": 0.0019320372578103262,
+   "executed": true
+  }
+ ],
+ "usde_depeg": [
+  {
+   "severity": 0.02,
+   "frozen_phase": {
+    "hf": 1.250014867883286,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "switch": {
+    "timelock_s": 57600,
+    "steps": {
+     "challenge()": "ok",
+     "acceptChallenge()": "ok"
+    },
+    "is_backup": true,
+    "price_now": 972150200399061397274624
+   },
+   "after_switch": {
+    "hf": 1.224520669151076,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "p1_loss_usd": 1615.4660000000001,
+   "p2_loss_usd": 6027.8582089552265,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.047313432835820915,
+   "time_to_liquidation_s": 57600
+  },
+  {
+   "severity": 0.05,
+   "frozen_phase": {
+    "hf": 1.250014867883286,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "switch": {
+    "timelock_s": 57600,
+    "steps": {
+     "challenge()": "ok",
+     "acceptChallenge()": "ok"
+    },
+    "is_backup": true,
+    "price_now": 942390500386845174530048
+   },
+   "after_switch": {
+    "hf": 1.1870353425444102,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "p1_loss_usd": 4038.6650000000004,
+   "p2_loss_usd": 15069.645522388066,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.11828358208955228,
+   "time_to_liquidation_s": 57600
+  },
+  {
+   "severity": 0.1,
+   "frozen_phase": {
+    "hf": 1.250014867883286,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "switch": {
+    "timelock_s": 57600,
+    "steps": {
+     "challenge()": "ok",
+     "acceptChallenge()": "ok"
+    },
+    "is_backup": true,
+    "price_now": 892791000366485071724544
+   },
+   "after_switch": {
+    "hf": 1.1245597981999678,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "p1_loss_usd": 8077.330000000001,
+   "p2_loss_usd": 30139.29104477613,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.23656716417910456,
+   "time_to_liquidation_s": 57600
+  },
+  {
+   "severity": 0.25,
+   "frozen_phase": {
+    "hf": 1.250014867883286,
+    "liquidated": false,
+    "seized_pt": 0.0,
+    "repaid_usdc": 0.0
+   },
+   "switch": {
+    "timelock_s": 57600,
+    "steps": {
+     "challenge()": "ok",
+     "acceptChallenge()": "ok"
+    },
+    "is_backup": true,
+    "price_now": 743992500305404226437120
+   },
+   "after_switch": {
+    "hf": 0.9371331651666397,
+    "liquidated": true,
+    "seized_pt": 303707.6766349766,
+    "repaid_usdc": 220619.610448
+   },
+   "p1_loss_usd": 20193.325,
+   "p2_loss_usd": 80773.29999976131,
+   "liquidation_penalty_usd": 5425.072387820983,
+   "loss_per_usd": 0.6249999999985224,
+   "time_to_liquidation_s": 57600
+  }
+ ],
+ "oracle_shock": [
+  {
+   "severity": 0.02,
+   "hf": 1.2250145705256201,
+   "liquidated": false,
+   "seized_pt": 0.0,
+   "repaid_usdc": 0.0,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.0
+  },
+  {
+   "severity": 0.05,
+   "hf": 1.1875141244891216,
+   "liquidated": false,
+   "seized_pt": 0.0,
+   "repaid_usdc": 0.0,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.0
+  },
+  {
+   "severity": 0.08,
+   "hf": 1.1500136784526234,
+   "liquidated": false,
+   "seized_pt": 0.0,
+   "repaid_usdc": 0.0,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.0
+  },
+  {
+   "severity": 0.15,
+   "hf": 1.0625126377007934,
+   "liquidated": false,
+   "seized_pt": 0.0,
+   "repaid_usdc": 0.0,
+   "liquidation_penalty_usd": 0.0,
+   "loss_per_usd": 0.0
+  }
+ ],
+ "pendle_liquidity": [
+  {
+   "severity": 0.5,
+   "lp_burned_share": 0.5,
+   "lps_impersonated": 7,
+   "curve": [
+    {
+     "x": 0.25,
+     "pt": 96274.13005290861,
+     "oracle_value_usd": 95541.55261194032,
+     "usde_out": 95614.90825505042,
+     "susde_out": 76346.42777404534,
+     "usdc_out": 95532.030228,
+     "quoted_susde": 76366.76900272649,
+     "amm_cost": -0.0007677878483727252,
+     "cost": 9.966746070155796e-05,
+     "executed": true
+    },
+    {
+     "x": 0.5,
+     "pt": 192548.26010581723,
+     "oracle_value_usd": 191083.10522388064,
+     "usde_out": 191134.50927611804,
+     "susde_out": 152616.7522654531,
+     "usdc_out": 190954.463957,
+     "quoted_susde": 152692.85828273452,
+     "amm_cost": -0.00026901411392277197,
+     "cost": 0.0006732215636223726,
+     "executed": true
+    },
+    {
+     "x": 1.0,
+     "pt": 385096.52021163446,
+     "oracle_value_usd": 382166.2104477613,
+     "usde_out": 381919.1849763234,
+     "susde_out": 304954.1613039942,
+     "usdc_out": 381509.770901,
+     "quoted_susde": 305233.51328225154,
+     "amm_cost": 0.0006463822930563579,
+     "cost": 0.0017176807598771049,
+     "executed": true
+    },
+    {
+     "x": 2.0,
+     "pt": 770193.0404232689,
+     "oracle_value_usd": 764332.4208955226,
+     "usde_out": 762462.5829303283,
+     "susde_out": 608809.7728569467,
+     "usdc_out": 761465.218594,
+     "quoted_susde": 609908.349498994,
+     "amm_cost": 0.002446367462737631,
+     "cost": 0.0037512504024928006,
+     "executed": true
+    }
+   ],
+   "note": "AMM only (Pendle limit orders excluded): the LP withdrawal acts on the AMM",
+   "extra_exit_cost": 0.0009276962760015328,
+   "loss_per_usd": 0.002194624772331985
+  },
+  {
+   "severity": 0.8,
+   "lp_burned_share": 0.8,
+   "lps_impersonated": 21,
+   "curve": [
+    {
+     "x": 0.25,
+     "pt": 96274.11639440215,
+     "oracle_value_usd": 95541.55261194032,
+     "usde_out": 95544.6469980496,
+     "susde_out": 76290.3156990267,
+     "usdc_out": 95461.823353,
+     "quoted_susde": 76366.75911376749,
+     "amm_cost": -3.238785664128052e-05,
+     "cost": 0.0008344982550593238,
+     "executed": true
+    },
+    {
+     "x": 0.5,
+     "pt": 192548.2327888043,
+     "oracle_value_usd": 191083.10522388064,
+     "usde_out": 190875.57369362703,
+     "susde_out": 152409.97627223228,
+     "usdc_out": 190695.792805,
+     "quoted_susde": 152692.83975661386,
+     "amm_cost": 0.0010860799546378308,
+     "cost": 0.0020269317814719523,
+     "executed": true
+    },
+    {
+     "x": 1.0,
+     "pt": 385096.4655776086,
+     "oracle_value_usd": 382166.2104477613,
+     "usde_out": 380826.09475366754,
+     "susde_out": 304081.28482109145,
+     "usdc_out": 380416.199566,
+     "quoted_susde": 305233.48484589165,
+     "amm_cost": 0.003506630511691755,
+     "cost": 0.004579187887152281,
+     "executed": true
+    },
+    {
+     "x": 2.0,
+     "pt": 770192.9311552172,
+     "oracle_value_usd": 764332.4208955226,
+     "usde_out": null,
+     "usdc_out": null,
+     "quoted_susde": 609908.312768881,
+     "amm_cost": null,
+     "cost": null,
+     "executed": false
+    }
+   ],
+   "note": "AMM only (Pendle limit orders excluded): the LP withdrawal acts on the AMM",
+   "extra_exit_cost": 0.00378794449463693,
+   "loss_per_usd": 0.008961032871641097
+  }
+ ],
+ "liquidity_base_rates": {
+  "market_days": 4436,
+  "market_years": 12.145106091718,
+  "drops": {
+   "0.5": 7,
+   "0.8": 1
+  },
+  "annual_rate": {
+   "0.5": 0.6175326871055005,
+   "0.8": 0.1235065374211001
+  },
+  "n_markets": 47
+ },
+ "drivers": {
+  "usde": {
+   "id": "usde",
+   "label": "USDe depeg",
+   "annual_rate": 0.5319148936170213,
+   "severities": [
+    0.021034645518938744
+   ],
+   "family": "market_disruption",
+   "kpi": "counterparty_defaults",
+   "source": "USDe's own daily prices: 1 episodes < $0.99 in 2.82 years (min 0.979)",
+   "badge": null
+  },
+  "oracle": {
+   "id": "oracle",
+   "label": "Morpho oracle / feed failure",
+   "annual_rate": 0.21645021645021645,
+   "severities": [
+    0.02,
+    0.05,
+    0.08,
+    0.15
+   ],
+   "family": "technical_failure",
+   "kpi": "liquidations",
+   "source": "oracle staleness events per feed-year (base_rates oracle_stale); severity: the tested grid (no data on mispricing size)",
+   "badge": "severity_grid"
+  },
+  "pendle_liq": {
+   "id": "pendle_liq",
+   "label": "Pendle pool liquidity withdrawal",
+   "annual_rate": 0.6175326871055005,
+   "severities": [
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.8,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ],
+   "family": "market_disruption",
+   "kpi": "liquidations",
+   "source": "daily TVL drops across 47 active Pendle markets: {0.5: 7, 0.8: 1} in 12.1 market-years (Jeffreys)",
+   "badge": null
+  }
+ },
+ "borrow_apr": 0.036766831097376,
+ "pt_implied_apy": 0.050110361308298046,
+ "generated_at": 1791653436
+}

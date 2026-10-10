@@ -168,6 +168,12 @@ with st.expander("Roles and timelocks (read from the vault)"):
     st.dataframe(pd.DataFrame([{"function": k, "timelock h": (v["timelock_s"] or 0) / 3600, "abdicated": v["abdicated"]}
                                for k, v in r["timelocks"].items()]), hide_index=True, width="stretch")
 
+if m.get("pt_layers"):
+    with st.expander("PT-reUSD through the brief's 5 layers (the brief's PT example, inside Belem's own vault)", expanded=False):
+        lay = m["pt_layers"].get("PT-reUSD-10DEC2026") or next(iter(m["pt_layers"].values()))
+        st.dataframe(pd.DataFrame([{"layer": k, "n": len(v), "nodes": ", ".join(v[:6]) + (" …" if len(v) > 6 else "")}
+                                   for k, v in lay.items()]), hide_index=True, width="stretch")
+
 # ---------------------------------------------------------------- Q2
 st.header("Q2 · Can borrowers repay?")
 rows, shocks = [], []
