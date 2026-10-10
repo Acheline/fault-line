@@ -33,8 +33,14 @@ def _kind(n) -> tuple[str, str]:
         return "Pendle/Spark linear discount", HARDCODED_SCHEDULE
     if "fixed_price" in n.tags:
         return "constant", HARDCODED_CONSTANT
-    if "nav" in name or "nav" in desc or "issuer_reported" in n.tags:
-        return "issuer", ISSUER_REPORTED
+    provider = "RedStone" if "redstone" in desc else "Chainlink" if ("eacaggregator" in name or "ocr" in name) else None
+    if "nav" in name or "nav" in desc or "fundamental" in desc or "issuer_reported" in n.tags:
+        # RedStone *_FUNDAMENTAL feeds publish the issuer's reported value, not a traded price
+        return provider or "issuer", ISSUER_REPORTED
+    if "exchange rate" in desc or "rtoracle" in name:
+        # a feed named "X / Y Exchange Rate" or a protocol redemption-rate oracle: rate between two of the
+        # issuer's own tokens, not a market price
+        return provider or (n.props.get("contract_name") or "protocol"), EXCHANGE_RATE
     if "metaoracle" in name:
         return "Morpho MetaOracle (primary/backup)", SWITCH
     if "morphochainlinkoracle" in name:

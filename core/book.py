@@ -52,13 +52,12 @@ class Position(BaseModel):
     tags: list[str] = Field(default_factory=list)
     requested_usd: float | None = None         # ticket before venue caps
     capacity_constrained: bool = False         # size cut by a venue cap (excess parked elsewhere)
-    disclaimer: str | None = None              # e.g. "RockawayX vault used as a real example, not a Belem position"
     verification: list[dict[str, Any]] = Field(default_factory=list)   # on-chain / API checks behind this pocket
 
 
 class Book(BaseModel):
     name: str
-    owner: str                                 # whose book this is. Never present RockawayX figures as Belem's.
+    owner: str                                 # whose book this is; say which parts are assumed vs real
     base_currency: str = "USD"
     aum_usd: float                             # denominator for "bps of book"
     aum_source: str = "assumption"

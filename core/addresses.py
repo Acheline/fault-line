@@ -32,9 +32,14 @@ HERO1 = dict(
     liq_borrower="0x5C430FF6F374da12218b380d2040299Ae5B6d40E",
 )
 
-# ---- hero #2 candidates (RockawayX, Morpho Vault V2; NOT Belem's book) ----
-FIGURE_USDC_MAIN = "0xd65d6E8dbC3Cd3D12418199E6f4014dB3aaa0097"   # VaultV2, totalAssets 11.36 USDC: wound down
-ROCKAWAYX_USDC_YIELD = "0xE0181090c22579B6A217f1522cbf8c9f1F0C1965"  # VaultV2, ~$18.5M (Morpho API)
+# ---- hero #2: Belem / RockawayX vaults (Morpho Vault V2). The challenge setter's own curated book. ----
+# RockawayX USDC Yield: name() "RockawayX USDC Yield", symbol roxUSDCy, asset USDC, totalAssets 18,548,554 USDC,
+# owner == curator == ROCKAWAYX_OWNER_CURATOR (Safe 4/8), 1 adapter (MorphoMarketV1Adapter) over 6 Morpho markets.
+# Roles, markets and caps are NOT listed here: discovery.hero2 reads them from the vault every run.
+ROCKAWAYX_USDC_YIELD = "0xE0181090c22579B6A217f1522cbf8c9f1F0C1965"
+HERO2 = dict(position_id="hero2_rockawayx_usdc_yield", vault=ROCKAWAYX_USDC_YIELD)
+# Footnote: the previous hero #2 candidate, wound down (totalAssets 11.36 USDC). Possible time-machine story.
+FIGURE_USDC_MAIN = "0xd65d6E8dbC3Cd3D12418199E6f4014dB3aaa0097"
 ROCKAWAYX_CONF_RWA_USDC = "0xc207d3f66537D7F66456808379A0E560cF20Da36"  # VaultV2, ~$26.4M (Morpho API)
 ROCKAWAYX_OWNER_CURATOR = "0xbBacDCFB9691DFA1066aB29edfcc4A73f6DEf918"
 PRIME_USDC_MARKET_ID = "0x755f954513d31d5f24aaf3d0cdc5e913a28383f8ea8ff85be9ffffa7371fb64d"  # LLTV 86%

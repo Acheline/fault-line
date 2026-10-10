@@ -1,0 +1,1 @@
+{"name": "GnosisSafeProxy", "abi": [{"inputs": [{"internalType": "address", "name": "_singleton", "type": "address"}], "stateMutability": "nonpayable", "type": "constructor"}, {"stateMutability": "payable", "type": "fallback"}], "proxy": true, "implementation": "0xd963eb9c01388346db94726cb40f0d1328651111"}

@@ -46,11 +46,16 @@ Stack: Python + Foundry (anvil/cast) + web3.py + NetworkX + Streamlit. One comma
 Environment already verified: anvil fork running on 127.0.0.1:8545, debug_traceCall works with
 BOTH callTracer and prestateTracer on anvil, anvil_setBalance works. Keys are in .env.
 
-# REFERENCE BOOK: CURATED VAULTS (real data to build on)
-Reference dashboard provided by the team: https://dune.com/rockawayxvault/rockawayx-dashboard
-NOTE: this dashboard belongs to RockawayX, a curator separate from Belem Capital. Treat it as a
-REAL curated-vault book to test Fault Line on, not as Belem's own book, unless the team says
-otherwise. Never present RockawayX figures as Belem's.
+# REFERENCE BOOK: THE CHALLENGE SETTER'S OWN CURATED VAULTS (real data to build on)
+Dashboard: https://dune.com/rockawayxvault/rockawayx-dashboard
+The team confirms RockawayX and Belem are the same group: these vaults ARE the challenge setter's
+curated-vault book ("the portfolio structures we actually run"). In the UI and README, call it
+"Belem / RockawayX vaults". This is the most important real data in the project.
+
+Dashboard headline KPIs (screenshot from the team, dashboard queries refresh every ~6 h; re-read
+live via Dune before the demo): total TVL ≈ $293.56M, 2,434 unique holders, 33 active vaults,
+average deposit per holder ≈ $120.6k, 8 chains (incl. Ethereum, Solana, Plume, Etherlink, 0G),
+9 protocols hosting vaults (incl. Morpho, Kamino, Midas).
 
 What RockawayX has published about this book (mid-2026 snapshot, from rockawayx.com/insights;
 MUST be re-verified live before use, numbers and allocations change):
@@ -81,11 +86,26 @@ Data access for this book (in order of preference):
    borrowing USDC. Mirrors the brief's 5-layer worked example. Look up and verify on-chain the
    current addresses (PT, Pendle market, SY, Morpho market id, oracle). Pick a PT that is liquid
    today, or the most recent liquid maturity.
-2. A CURATED VAULT POSITION: a deposit in RockawayX "Figure USDC Main" on Morpho (Ethereum).
-   Dependency chain to discover: vault → owner/curator/guardian/allocators + timelock → withdraw
-   & supply queues → each Morpho market (PRIME/USDC first) → collateral token PRIME → its issuer
-   (Hastra) and off-chain originator (Figure HELOC warehouse) → the market's oracle and what feeds
-   it (market price vs issuer-reported NAV) → IRM → Ethereum.
+2. HERO #2: RockawayX USDC Yield vault (Morpho, Ethereum, ~$18.5M). The setter's own vault.
+   Scenario: a depositor puts USDC into a vault that allocates it to lending markets. Fault Line
+   must answer THREE questions, each with measured numbers and a block number:
+   Q1. WHERE DOES THE MONEY GO? Verify on-chain that RockawayX curates it (owner/curator/
+       guardian/allocators, timelock). List every market in the supply and withdraw queues with
+       allocation $ and %, supply cap, collateral token, LLTV, oracle (and what feeds it: market
+       price, exchange rate, or issuer-reported NAV), IRM, and the collateral's issuer and
+       off-chain originator where relevant. Group exposure by collateral, issuer, oracle and
+       protocol.
+   Q2. CAN BORROWERS REPAY? Per market: borrower health-factor distribution (largest borrowers
+       first), how close they are to LLTV, how liquid the collateral is at liquidation size
+       (measured exit quotes on the fork), and on-fork shocks (collateral price/NAV down, oracle
+       frozen, redemption gate) re-running liquidate() to measure what is recovered and what
+       becomes BAD DEBT socialized to vault depositors (loss per vault share).
+   Q3. CAN DEPOSITORS WITHDRAW? Withdrawable now = vault idle + unborrowed liquidity along the
+       withdraw queue (measured by simulating redeem() on the fork as the top depositors,
+       impersonated). Utilization per market, depositor concentration (top holders of vault
+       shares), and a run simulation: depositor rank vs % recovered and time to full exit.
+   Previous candidate "Figure USDC Main" (0xd65d…0097) now holds ~$11: keep only as a footnote
+   (its TVL collapse is a possible time-machine story).
    This is the lender-side case: the depositor's risk is bad debt in the markets and being UNABLE
    to withdraw, not AMM slippage.
 3. A vault that deploys into an EXTERNAL VENUE (explicitly named in the brief), e.g. a vault or
@@ -206,6 +226,9 @@ Merge their graphs and find SHARED ANCESTORS (same oracle, same collateral, same
 originator, same admin multisig, same CEX).
 Output the "effective number of independent bets" and the worst single point of failure for the
 book: "These 10 pockets are 3 bets: 46% of the book depends on one oracle."
+Stretch (high value for this jury): run the X-ray across ALL of the setter's vaults (33 vaults,
+8 chains, 9 protocols per the dashboard), using Dune for the vault list and on-chain/API reads for
+allocations, to find shared collateral, issuers and oracles across their whole curated book.
 Then run the curator's OWN published concentration limits (single protocol 25%, single oracle 40%,
 correlated assets 40%, single chain 60%, max 15% per AA market) against the TRUE discovered
 dependencies, not the labels: two "different" markets sharing one oracle, one issuer, or one
@@ -269,7 +292,7 @@ README section titled "How Fault Line answers the brief".
    `book.yaml` portfolio input format. Write QUESTIONS.md for Belem's office hours (their
    reference portfolio, the incident families they care most about, their risk-aversion λ,
    typical position sizes, their own exit-cost assumptions).
-2. Find and verify the hero positions' addresses (PT-sUSDe stack; RockawayX Figure USDC Main
-   vault and its markets), and list them with block numbers.
+2. Find and verify the hero positions' addresses (PT-sUSDe stack; RockawayX USDC Yield vault,
+   its roles and its markets), and list them with block numbers.
 3. Write the M1 trace script for hero #1 and run it. Show the discovered graph before moving on.
 4. Tell us immediately what keys or access you need from us (e.g. Dune API key and query IDs).

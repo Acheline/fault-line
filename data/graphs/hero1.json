@@ -66,9 +66,9 @@
     "pendle_pt"
    ],
    "paths": [
-    "liquidation",
+    "exit",
     "value",
-    "exit"
+    "liquidation"
    ],
    "props": {
     "contract_name": "PendlePrincipalToken",
@@ -152,8 +152,8 @@
     "pendle_sy"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendleSUSDESY",
@@ -277,8 +277,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "StakedUSDeV2",
@@ -417,8 +417,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "USDe",
@@ -726,10 +726,10 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
-    "no_update_timestamp",
     "fixed_schedule",
     "chainlink_interface",
-    "critical"
+    "critical",
+    "no_update_timestamp"
    ],
    "paths": [
     "value",
@@ -908,8 +908,8 @@
     "critical"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendleMarketV7",
@@ -979,8 +979,8 @@
     "pendle_pt"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "PendleYieldToken",
@@ -1079,8 +1079,8 @@
     "implementation"
    ],
    "paths": [
-    "value",
-    "exit"
+    "exit",
+    "value"
    ],
    "props": {
     "contract_name": "OracleLib",
@@ -1704,12 +1704,12 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "critical",
-    "proxy"
+    "proxy",
+    "critical"
    ],
    "paths": [
-    "liquidation",
-    "exit"
+    "exit",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
@@ -1799,8 +1799,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "exit"
+    "exit",
+    "liquidation"
    ],
    "props": {
     "contract_name": "FiatTokenV2_2",
@@ -2958,8 +2958,8 @@
    "chain": "ethereum",
    "address": "0xd8063123bba3b480569244ae66bfe72b6c84b00d",
    "tags": [
-    "implementation",
-    "erc4626"
+    "erc4626",
+    "implementation"
    ],
    "paths": [
     "exit"
@@ -4501,8 +4501,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "governance_role",
-    "proxy"
+    "proxy",
+    "governance_role"
    ],
    "paths": [],
    "props": {
@@ -6257,8 +6257,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6283,8 +6283,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6309,8 +6309,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6335,8 +6335,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6361,8 +6361,8 @@
    "address": null,
    "tags": [
     "offchain_disclosed",
-    "venue",
-    "cex"
+    "cex",
+    "venue"
    ],
    "paths": [],
    "props": {

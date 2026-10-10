@@ -170,7 +170,12 @@ class Fork:
     def send(self, sender: str, to: str, data: bytes | str, gas: int = 3_000_000) -> dict:
         data_hex = data if isinstance(data, str) else "0x" + data.hex()
         tag = f"send{sender.lower()}{to.lower()}{data_hex}"
+        # the outcome is cached so an offline replay takes the same branch (a reverted tx leaves the setup unchanged)
+        okey = stable_hash(["send", self.fork_block, self.setup_id, tag])
         if self.offline:
+            hit = self.calls.get(okey)
+            if hit is not None and not hit["ok"]:
+                raise RuntimeError(f"setup tx reverted (cached): {sender}->{to} {data_hex[:10]}")
             self.mark_setup(tag)
             return {}
         sender = to_checksum_address(sender)
@@ -179,6 +184,7 @@ class Fork:
         h = self.rpc("eth_sendTransaction", [{"from": sender, "to": to_checksum_address(to), "data": data_hex,
                                               "gas": hex(gas)}])
         rcpt = self.w3.eth.wait_for_transaction_receipt(h)
+        self.calls.put(okey, {"ok": rcpt["status"] == 1})
         if rcpt["status"] != 1:
             raise RuntimeError(f"setup tx reverted: {sender}->{to} {data_hex[:10]}")
         self.mark_setup(tag)
@@ -189,6 +195,15 @@ class Fork:
         if not self.offline:
             self.rpc("anvil_setStorageAt", [to_checksum_address(addr), slot_hex, "0x" + value.to_bytes(32, "big").hex()])
         self.mark_setup(f"sstore{addr}{slot_hex}{value}")
+
+    def set_code(self, addr: str, code_hex: str):
+        if not self.offline:
+            self.rpc("anvil_setCode", [to_checksum_address(addr), code_hex])
+        self.mark_setup(f"code{addr.lower()}{code_hex}")
+
+    def pin_price(self, oracle: str, price: int):
+        """Replace a Morpho oracle with code that returns `price` for any call (PUSH32 p; MSTORE; RETURN 32)."""
+        self.set_code(oracle, "0x7f" + price.to_bytes(32, "big").hex() + "60005260206000f3")
 
     def fund_erc20(self, token: str, holder: str, amount: int, max_slot: int = 80) -> int:
         """Set balanceOf(holder)=amount by brute-forcing the balances mapping slot. Returns the slot."""

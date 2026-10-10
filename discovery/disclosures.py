@@ -23,6 +23,8 @@ USDC_SOL = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v".lower()   # Solana min
 USDS = "0xdc035d45d973e3ec169d2276ddab16f1e407384f"
 SUSDS = "0xa3931d71877c0e7a3148cb7eb4463524fec27fbd"
 SYRUP_USDC = "0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b"
+PRIME = "0x19ebb35279a16207ec4ba82799cc64715065f7f6"     # name() "Hastra PRIME"
+ROCKAWAYX_INSIGHTS = "https://rockawayx.com/insights"
 
 ETHENA_VENUES = ["Binance", "Bybit", "OKX", "Deribit", "Bitget"]
 ETHENA_CUSTODIANS = ["Copper", "Ceffu", "Cobo"]
@@ -82,8 +84,18 @@ def _maple(g: DependencyGraph, asset: str):
     _e(g, "issuer:maple", "offchain:maple_borrowers", EdgeType.BACKS, MAPLE_DOCS, 0.6)
 
 
+def _prime(g: DependencyGraph, asset: str):
+    """PRIME: Hastra wrapper over Figure HELOC warehouse credit (RockawayX insights, mid-2026). Its Morpho oracle
+    is checked separately by oracle_quality: if NAV is pushed by the issuer, the issuer also sets the price."""
+    _n(g, "issuer:hastra", NodeType.ISSUER, "Hastra (PRIME issuer)", ROCKAWAYX_INSIGHTS, 0.6)
+    _n(g, "offchain:figure_heloc", NodeType.OFFCHAIN, "Figure HELOC warehouse (off-chain originator)",
+       ROCKAWAYX_INSIGHTS, 0.5)
+    _e(g, asset, "issuer:hastra", EdgeType.ISSUED_BY, ROCKAWAYX_INSIGHTS, 0.6)
+    _e(g, "issuer:hastra", "offchain:figure_heloc", EdgeType.BACKS, ROCKAWAYX_INSIGHTS, 0.5)
+
+
 REGISTRY = {USDE: _ethena, SUSDE: _ethena, USDC_ETH: _circle, USDC_SOL: _circle, USDS: _sky, SUSDS: _sky,
-            SYRUP_USDC: _maple}
+            SYRUP_USDC: _maple, PRIME: _prime}
 
 
 def apply(g: DependencyGraph) -> list[str]:

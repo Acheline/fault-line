@@ -11,6 +11,19 @@ Each answer replaces a value tagged `assumption` in the code. Where it goes is s
 - Do you run PT + Morpho loops (PT collateral, borrow stables)? If so, at what LTV relative to LLTV?
   - *Assumed answer:* yes (P2); target LTV 0.80 × LLTV, deleverage at 0.90 × LLTV, emergency unwind at 0.95 × LLTV. → [ASSUMED_ANSWERS.md §1](ASSUMED_ANSWERS.md#1-reference-portfolio-booksbelem_assumed_bookyaml)
 
+## 1b. Belem / RockawayX vaults [discovery.hero2, Portfolio X-ray]
+The curated vaults on https://dune.com/rockawayxvault/rockawayx-dashboard are Belem's own book (same group). They are
+measured data, not assumptions. Questions raised by what hero #2 measured on the RockawayX USDC Yield vault:
+- Can we get the Dune query IDs behind the dashboard (vault list, allocations, holders) and an API key? They are
+  the input for the 33-vault X-ray (8 chains, 9 protocols). Without them we cover the Ethereum Morpho vaults only.
+- The vault's liquidity market (where withdrawals are served from) is PRIME/USDC, with ~$350k free. Is that a
+  deliberate choice? Is forceDeallocate (0.5% penalty) the exit you expect depositors to use in a run?
+- setIsAllocator, setForceDeallocatePenalty and decreaseTimelock have no timelock, and the owner Safe is also the
+  curator. Which of these are covered by internal policy rather than by on-chain delays?
+- How do you assess collateral whose Morpho oracle is a fundamental/NAV or exchange-rate feed (strUSD, trUSD,
+  etrUSD, PRIME) rather than a traded price?
+- Who are the largest depositors by type (fund, treasury, other vault)? The top 5 hold ~76% of shares.
+
 ## 2. Incident families [Module 2 shock tags, Module 3 priors]
 - Of the brief's three families (security incident, market disruption, technical failure), which have
   actually cost you money, and which do you lose sleep over?

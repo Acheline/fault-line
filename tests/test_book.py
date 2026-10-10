@@ -5,7 +5,7 @@ from core.schemas import Headline, IncidentFamily, Shock, ShockKind
 def test_example_book_loads():
     book = load_book("books/example_book.yaml")
     assert book.aum_usd > 0 and book.positions
-    assert "Belem" not in book.owner or "NOT Belem" in book.owner
+    assert book.owner
 
 
 def test_shock_requires_family():
@@ -25,4 +25,4 @@ def test_belem_assumed_book_respects_caps_and_parks_excess():
     parked = sum(p["requested_usd"] - p["size_usd"] for k, p in pos.items() if k in constrained)
     assert abs(pos["P6"]["size_usd"] - (pos["P6"]["requested_usd"] + parked)) < 1
     assert all(p["verification"] for p in pos.values())                     # every pocket verified
-    assert "not a Belem position" in pos["P5"]["disclaimer"]
+    assert "belem_rockawayx" in pos["P5"]["tags"] and pos["P5"]["mandate"] == "curated_vault"

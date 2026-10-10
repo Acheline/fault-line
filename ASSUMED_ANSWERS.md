@@ -12,6 +12,12 @@ any venue, fast reaction. Every assumption below leans conservative for that rea
 
 ## 1. Reference portfolio [books/belem_assumed_book.yaml]
 
+**Real reference data:** the Belem / RockawayX curated vaults on
+https://dune.com/rockawayxvault/rockawayx-dashboard (≈ $293.56M TVL, 33 vaults, 8 chains,
+9 protocols, 2,434 holders). These are the setter's actual vaults, so they are measured data, not
+assumptions. The 10-pocket mandate below is the ASSUMED part: how one fund mandate might combine
+those vaults with other positions.
+
 **Assumed mandate:** one stablecoin market-neutral mandate of **$50M** (about 12.5% of Belem's ~$400M AUM),
 split into the brief's own structure: **10 pockets × 10% ($5M each)**. We use 10 × 10% because the
 brief uses it; the code must accept any number of pockets and weights.
@@ -22,7 +28,7 @@ brief uses it; the code must accept any number of pockets and weights.
 | P2 | PT-sUSDe as collateral on Morpho Blue, borrowing USDC (loop) | Ethereum | Hero #1, part b: liquidation path |
 | P3 | sUSDe (Ethena staked USDe) | Ethereum | Common yield leg; creates a hidden shared ancestor with P1/P2 |
 | P4 | Morpho curated USDC vault (a large, established curator) | Ethereum | Lender-side vault, diversified |
-| P5 | RockawayX USDC Yield vault deposit | Ethereum | Hero #2. LABEL: "RockawayX vault used as a real curated-vault example, not a Belem position" |
+| P5 | RockawayX USDC Yield vault deposit | Ethereum | Hero #2: the setter's own curated vault (Belem / RockawayX) |
 | P6 | Aave v3 USDC supply | Ethereum | Blue-chip lending benchmark, low risk |
 | P7 | sUSDS (Sky savings) | Ethereum | Different issuer and yield source |
 | P8 | syrupUSDC (Maple) | Ethereum | Institutional credit exposure |

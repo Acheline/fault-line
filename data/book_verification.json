@@ -56,16 +56,6 @@
  },
  {
   "pocket": "P5",
-  "check": "Figure USDC Main totalAssets (CLAUDE.md hero #2)",
-  "value": 11.3618,
-  "source": "onchain",
-  "ok": false,
-  "block": 26161499,
-  "address": "0xd65d6E8dbC3Cd3D12418199E6f4014dB3aaa0097",
-  "note": "wound down: replaced by RockawayX USDC Yield, same curator, supplies PRIME/USDC"
- },
- {
-  "pocket": "P5",
   "check": "roxUSDCy asset()/totalAssets()",
   "value": {
    "asset": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
@@ -75,6 +65,16 @@
   "ok": true,
   "block": 26161499,
   "address": "0xE0181090c22579B6A217f1522cbf8c9f1F0C1965"
+ },
+ {
+  "pocket": "P5",
+  "check": "footnote: Figure USDC Main totalAssets (previous hero #2 candidate)",
+  "value": 11.3618,
+  "source": "onchain",
+  "ok": true,
+  "block": 26161499,
+  "address": "0xd65d6E8dbC3Cd3D12418199E6f4014dB3aaa0097",
+  "note": "wound down; kept as a possible time-machine story"
  },
  {
   "pocket": "P6",
