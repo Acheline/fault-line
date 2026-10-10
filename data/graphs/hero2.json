@@ -31,8 +31,8 @@
    "chain": "ethereum",
    "address": "0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
    "tags": [
-    "belem_rockawayx",
     "critical",
+    "belem_rockawayx",
     "morpho_vault_v2"
    ],
    "paths": [
@@ -478,8 +478,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
     "exit",
+    "liquidation",
     "value"
    ],
    "props": {
@@ -589,12 +589,12 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "critical",
-    "proxy"
+    "proxy",
+    "critical"
    ],
    "paths": [
-    "liquidation",
     "exit",
+    "liquidation",
     "value"
    ],
    "props": {
@@ -734,8 +734,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
     "exit",
+    "liquidation",
     "value"
    ],
    "props": {
@@ -930,9 +930,9 @@
    "chain": "ethereum",
    "address": "0x280839980a7ed0d7717f64125fe241012e5f5815",
    "tags": [
+    "proxy",
     "erc4626",
-    "critical",
-    "proxy"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -1415,9 +1415,9 @@
    "chain": "ethereum",
    "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
    "tags": [
+    "proxy",
     "erc4626",
-    "critical",
-    "proxy"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -1568,8 +1568,8 @@
    "chain": "ethereum",
    "address": "0x6ad038ca6c04e885630851278ca0a856ad9a66cc",
    "tags": [
-    "erc4626",
-    "proxy"
+    "proxy",
+    "erc4626"
    ],
    "paths": [],
    "props": {
@@ -1775,8 +1775,8 @@
    "chain": "ethereum",
    "address": "0x6f20ae2c98c2d34e6a57f3411f2c5af92e32592d",
    "tags": [
-    "critical",
-    "proxy"
+    "proxy",
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -1930,8 +1930,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
     "exit",
+    "liquidation",
     "value"
    ],
    "props": {
@@ -2312,9 +2312,9 @@
    "chain": "ethereum",
    "address": "0x9487bd5a3b16ecb5f3184453e3ee75b800141648",
    "tags": [
+    "proxy",
     "pendle_sy",
-    "critical",
-    "proxy"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -2705,8 +2705,8 @@
    "chain": "ethereum",
    "address": "0x8e42d93eac7dfef8d061dd18a2acfc839e724309",
    "tags": [
-    "chainlink_interface",
     "critical",
+    "chainlink_interface",
     "no_update_timestamp"
    ],
    "paths": [
@@ -2770,9 +2770,9 @@
    "chain": "ethereum",
    "address": "0x7fda577c085330e69df3179a2a5867751a9d0caa",
    "tags": [
+    "proxy",
     "chainlink_interface",
-    "critical",
-    "proxy"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -2844,8 +2844,8 @@
    "chain": "ethereum",
    "address": "0x186365fdd6f6c323365ab306040f840632977a96",
    "tags": [
-    "chainlink_interface",
-    "implementation"
+    "implementation",
+    "chainlink_interface"
    ],
    "paths": [
     "liquidation",
@@ -2896,8 +2896,8 @@
    "chain": "ethereum",
    "address": "0xd72a6ba4a87ddb33e801b3f1c7750b2d0911fc6c",
    "tags": [
-    "critical",
-    "proxy"
+    "proxy",
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -3550,9 +3550,9 @@
    "chain": "ethereum",
    "address": "0xc3866d726c204c0836e0677a31973c649888973d",
    "tags": [
+    "chainlink_interface",
     "fixed_price",
-    "critical",
-    "chainlink_interface"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -3765,10 +3765,10 @@
    "chain": "ethereum",
    "address": "0xcb8c6585bd593a4b7d91bfcc85ff1dcfa04a640b",
    "tags": [
+    "no_update_timestamp",
     "chainlink_interface",
     "fixed_schedule",
-    "critical",
-    "no_update_timestamp"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -3834,9 +3834,9 @@
    "chain": "ethereum",
    "address": "0x33c6f75916db4267e52209a8e6b270b22d983b53",
    "tags": [
+    "proxy",
     "chainlink_interface",
-    "critical",
-    "proxy"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -3908,8 +3908,8 @@
    "chain": "ethereum",
    "address": "0x7219bebd4929dc52961ffe8bd41a6be22b6060d6",
    "tags": [
-    "chainlink_interface",
-    "implementation"
+    "implementation",
+    "chainlink_interface"
    ],
    "paths": [
     "liquidation",
@@ -3960,9 +3960,9 @@
    "chain": "ethereum",
    "address": "0x835cfff06a60a16fd1880c3b0befac9968abd659",
    "tags": [
+    "proxy",
     "chainlink_interface",
-    "critical",
-    "proxy"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -4034,8 +4034,8 @@
    "chain": "ethereum",
    "address": "0xb5ba31358ea1282b4f0fc0f5c11f126e52747f82",
    "tags": [
-    "chainlink_interface",
-    "implementation"
+    "implementation",
+    "chainlink_interface"
    ],
    "paths": [
     "liquidation",
@@ -4495,8 +4495,8 @@
    "chain": "ethereum",
    "address": "0x90e91f5bfd9a0a4d925bf30b512add8cd2bbae3b",
    "tags": [
-    "governance_role",
-    "proxy"
+    "proxy",
+    "governance_role"
    ],
    "paths": [],
    "props": {
@@ -4555,8 +4555,8 @@
    "chain": "ethereum",
    "address": "0x06e0b9155a3cf07f41ac826ccfee7ef8413a9723",
    "tags": [
-    "erc4626",
-    "implementation"
+    "implementation",
+    "erc4626"
    ],
    "paths": [],
    "props": {
@@ -4585,8 +4585,8 @@
    "chain": "ethereum",
    "address": "0x7e8a16e87fa6b0f2e657db47f3dbfe2e981ef211",
    "tags": [
-    "pendle_sy",
-    "proxy"
+    "proxy",
+    "pendle_sy"
    ],
    "paths": [],
    "props": {
@@ -4750,8 +4750,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "governance_role",
-    "proxy"
+    "proxy",
+    "governance_role"
    ],
    "paths": [],
    "props": {
@@ -14483,10 +14483,10 @@
      ],
      "kinds": {
       "ChainlinkCurrentTimestampAdapter": "unknown",
-      "Pendle Chainlink-compatible Oracle": "market_derived",
       "PTDiscountOracle": "unknown",
       "ExchangeRateOracle": "exchange_rate",
-      "Ojo PT Feed Pendle Chainlink-compatible Oracle": "market_derived"
+      "Ojo PT Feed Pendle Chainlink-compatible Oracle": "market_derived",
+      "Pendle Chainlink-compatible Oracle": "market_derived"
      },
      "n_market_derived": 2,
      "price_basis": "market",
@@ -14510,8 +14510,8 @@
       "Dummy feed with 12 decimals"
      ],
      "kinds": {
-      "Chainlink-formatted InfiniFi RT Oracle": "exchange_rate",
-      "Dummy feed with 12 decimals": "hardcoded_constant"
+      "Dummy feed with 12 decimals": "hardcoded_constant",
+      "Chainlink-formatted InfiniFi RT Oracle": "exchange_rate"
      },
      "n_market_derived": 0,
      "price_basis": "exchange_rate",
@@ -14536,8 +14536,8 @@
       "RedStone Price Feed for trUSD_FUNDAMENTAL"
      ],
      "kinds": {
-      "RedStone Price Feed for trUSD_FUNDAMENTAL": "issuer_reported",
-      "PendleSparkLinearDiscountOracle": "hardcoded_schedule"
+      "PendleSparkLinearDiscountOracle": "hardcoded_schedule",
+      "RedStone Price Feed for trUSD_FUNDAMENTAL": "issuer_reported"
      },
      "n_market_derived": 0,
      "price_basis": "issuer_reported",
@@ -14636,7 +14636,7 @@
    ],
    "governance_depth": 2,
    "governance_chain": [
-    "RedStone Price Feed for trUSD_FUNDAMENTAL (EthereumPriceFeedTrusdFundamentalWithoutRoundsV1) [ORACLE]",
+    "RedStone Price Feed for etrUSD_FUNDAMENTAL/USD (EthereumPriceFeedEtrusdFundamentalusdWithoutRoundsV1) [ORACLE]",
     "ProxyAdmin [GOVERNANCE]",
     "Safe 2/3 0x6906f3 [GOVERNANCE]"
    ],

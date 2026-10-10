@@ -66,8 +66,8 @@
     "critical"
    ],
    "paths": [
-    "liquidation",
     "exit",
+    "liquidation",
     "value"
    ],
    "props": {
@@ -726,10 +726,10 @@
    "chain": "ethereum",
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
+    "no_update_timestamp",
     "chainlink_interface",
     "fixed_schedule",
-    "critical",
-    "no_update_timestamp"
+    "critical"
    ],
    "paths": [
     "liquidation",
@@ -1704,12 +1704,12 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "critical",
-    "proxy"
+    "proxy",
+    "critical"
    ],
    "paths": [
-    "liquidation",
-    "exit"
+    "exit",
+    "liquidation"
    ],
    "props": {
     "implementation": "0x43506849d7c04f9138d1a2050bbf3a0c054402dd",
@@ -1799,8 +1799,8 @@
     "implementation"
    ],
    "paths": [
-    "liquidation",
-    "exit"
+    "exit",
+    "liquidation"
    ],
    "props": {
     "contract_name": "FiatTokenV2_2",
@@ -2982,8 +2982,8 @@
    "chain": "ethereum",
    "address": "0xd8063123bba3b480569244ae66bfe72b6c84b00d",
    "tags": [
-    "erc4626",
-    "implementation"
+    "implementation",
+    "erc4626"
    ],
    "paths": [
     "exit"
@@ -4637,8 +4637,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "governance_role",
-    "proxy"
+    "proxy",
+    "governance_role"
    ],
    "paths": [],
    "props": {
@@ -5741,8 +5741,8 @@
    "chain": "ethereum",
    "address": "0xc3866d726c204c0836e0677a31973c649888973d",
    "tags": [
-    "fixed_price",
-    "chainlink_interface"
+    "chainlink_interface",
+    "fixed_price"
    ],
    "paths": [],
    "props": {
@@ -6392,9 +6392,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "venue",
     "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6418,9 +6418,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "venue",
     "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6444,9 +6444,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "venue",
     "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6470,9 +6470,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "venue",
     "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue"
    ],
    "paths": [],
    "props": {
@@ -6496,9 +6496,9 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "venue",
     "cex",
-    "offchain_disclosed"
+    "offchain_disclosed",
+    "venue"
    ],
    "paths": [],
    "props": {
