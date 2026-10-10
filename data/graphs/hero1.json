@@ -62,8 +62,8 @@
    "chain": "ethereum",
    "address": "0xb195b618ea52b77cb2a58846f452f59f8dfa9390",
    "tags": [
-    "critical",
-    "pendle_pt"
+    "pendle_pt",
+    "critical"
    ],
    "paths": [
     "exit",
@@ -148,8 +148,8 @@
    "chain": "ethereum",
    "address": "0xbf98480425a29197e5d99d003017f63a1e595d02",
    "tags": [
-    "critical",
-    "pendle_sy"
+    "pendle_sy",
+    "critical"
    ],
    "paths": [
     "exit",
@@ -497,8 +497,8 @@
    "chain": "ethereum",
    "address": "0xf8b29e7e9c00ce531434775f7923cc9fbca01b08",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -641,8 +641,8 @@
    "chain": "ethereum",
    "address": "0x8fca98c9abee4dcb33ba9f3d17db4ad57f72706d",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -727,9 +727,9 @@
    "address": "0xa572dad7db3d975e9ce780db1cf3bf959401cd35",
    "tags": [
     "fixed_schedule",
+    "no_update_timestamp",
     "chainlink_interface",
-    "critical",
-    "no_update_timestamp"
+    "critical"
    ],
    "paths": [
     "value",
@@ -975,8 +975,8 @@
    "chain": "ethereum",
    "address": "0x89e6e5f7c3a60e7d6347f054051a29a272f4ce44",
    "tags": [
-    "critical",
-    "pendle_pt"
+    "pendle_pt",
+    "critical"
    ],
    "paths": [
     "exit",
@@ -1704,8 +1704,8 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "exit",
@@ -4501,8 +4501,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -5605,8 +5605,8 @@
    "chain": "ethereum",
    "address": "0xc3866d726c204c0836e0677a31973c649888973d",
    "tags": [
-    "fixed_price",
-    "chainlink_interface"
+    "chainlink_interface",
+    "fixed_price"
    ],
    "paths": [],
    "props": {
@@ -6256,8 +6256,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
     "cex",
+    "offchain_disclosed",
     "venue"
    ],
    "paths": [],
@@ -6282,8 +6282,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
     "cex",
+    "offchain_disclosed",
     "venue"
    ],
    "paths": [],
@@ -6308,8 +6308,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
     "cex",
+    "offchain_disclosed",
     "venue"
    ],
    "paths": [],
@@ -6334,8 +6334,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
     "cex",
+    "offchain_disclosed",
     "venue"
    ],
    "paths": [],
@@ -6360,8 +6360,8 @@
    "chain": "ethereum",
    "address": null,
    "tags": [
-    "offchain_disclosed",
     "cex",
+    "offchain_disclosed",
     "venue"
    ],
    "paths": [],

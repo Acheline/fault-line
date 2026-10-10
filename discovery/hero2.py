@@ -223,20 +223,68 @@ def hf_buckets(bs: list[dict]) -> dict:
             for lo, hi, lab in edges}
 
 
+EXIT_SIZES = [0.1, 0.25, 0.5, 1.0]     # x the largest borrower's collateral (one liquidation, seized at once)
+
+
+def pendle_quote(token: str, amount: int, offline: bool) -> float | None:
+    """USDC out from the Pendle router (PT -> SY -> underlying -> USDC, aggregator enabled). Cached."""
+    p = {"receiver": HARNESS, "slippage": "0.01", "enableAggregator": "true", "tokensIn": token,
+         "amountsIn": str(amount), "tokensOut": A.USDC}
+    try:
+        r = _api(f"pendle_convert_{token.lower()[:12]}_{amount}", lambda: requests.get(
+            "https://api-v2.pendle.finance/core/v2/sdk/1/convert", params=p, timeout=60).json(), offline)
+        return int(r["routes"][0]["outputs"][0]["amount"]) / 1e6
+    except Exception:
+        return None
+
+
 def collateral_exit(m: dict, bs: list[dict], offline: bool) -> dict:
-    """Can a liquidator sell the seized collateral? Aggregator quote at the largest borrower's collateral size."""
+    """Can a liquidator sell the seized collateral? Quote curve at 0.1/0.25/0.5/1x the largest borrower's collateral.
+    PTs are quoted through the Pendle router (aggregator-only quotes miss the Pendle AMM); others via KyberSwap.
+    A >5% discount already at 0.1x means no liquid pool: the quote comes from residual orders, confidence low."""
     if not bs:
         return {}
-    amt = bs[0]["collateral"]
-    q = kyber_exit(m["collateral"], amt, offline)
-    oracle_val = bs[0]["collateral_value_usd"]
-    if not q:
-        return {"size_collateral_usd_at_oracle": oracle_val, "route": None,
-                "flag": "no aggregator route at liquidation size: liquidators have no on-chain exit"}
-    got = q["amount_out"] / 1e6
-    return {"size_collateral_usd_at_oracle": oracle_val, "route": "KyberSwap aggregator", "usdc_out": got,
-            "discount_vs_oracle": 1 - got / oracle_val if oracle_val else None,
-            "liquidation_profitable": got * lif(int(m["lltv"] * WAD)) / WAD >= oracle_val if oracle_val else None}
+    big, val = bs[0]["collateral"], bs[0]["collateral_value_usd"]
+    is_pt = m["collateral_symbol"].startswith("PT-")
+    curve = []
+    for k in EXIT_SIZES:
+        amt = int(big * k)
+        if is_pt:
+            got = pendle_quote(m["collateral"], amt, offline)
+        else:
+            q = kyber_exit(m["collateral"], amt, offline)
+            got = q["amount_out"] / 1e6 if q else None
+        curve.append({"x": k, "oracle_value_usd": val * k, "usdc_out": got,
+                      "discount_vs_oracle": 1 - got / (val * k) if got and val else None})
+    rec = {"route": "Pendle router" if is_pt else "KyberSwap aggregator", "size_collateral_usd_at_oracle": val,
+           "curve": curve, "confidence": "medium",
+           "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted"}
+    full = curve[-1]
+    rec.update(usdc_out=full["usdc_out"], discount_vs_oracle=full["discount_vs_oracle"])
+    if full["usdc_out"] is None:
+        rec.update(flag="no route at liquidation size: liquidators have no on-chain exit", confidence="medium")
+    elif (curve[0]["discount_vs_oracle"] or 0) > 0.05:
+        rec.update(flag=f"no liquid pool: {curve[0]['discount_vs_oracle']:.0%} below oracle already at 0.1x size "
+                        "(quote from residual orders); exit is issuer redemption", confidence="low")
+    elif full["discount_vs_oracle"] > 0.10:
+        thin = next((c for c in curve if c["discount_vs_oracle"] > 0.02), full)
+        rec["flag"] = (f"thin liquidity: {full['discount_vs_oracle']:.0%} below oracle at full liquidation size "
+                       f"(${val:,.0f}); {curve[0]['discount_vs_oracle']:+.1%} at 0.1x, >2% from {thin['x']}x")
+    rec["liquidation_profitable_full_size"] = (full["usdc_out"] or 0) * lif(int(m["lltv"] * WAD)) / WAD >= val
+    return rec
+
+
+def hf_at_market(bs: list[dict], ce: dict) -> dict:
+    """Health factors re-priced at the market marginal price (0.1x quote) instead of the oracle, where a liquid
+    market exists. HF scales linearly with the collateral price."""
+    c0 = (ce.get("curve") or [{}])[0]
+    if not bs or c0.get("usdc_out") is None or ce.get("confidence") == "low":
+        return {"available": False, "why": "no reliable market price (no liquid pool)"}
+    scale = c0["usdc_out"] / c0["oracle_value_usd"]
+    tot = sum(b["debt_usd"] for b in bs) or 1
+    return {"available": True, "market_over_oracle": scale, "source": ce["route"] + " 0.1x quote",
+            "debt_share_hf_lt_1": sum(b["debt_usd"] for b in bs if b["hf"] * scale < 1) / tot,
+            "debt_share_hf_lt_1_05": sum(b["debt_usd"] for b in bs if b["hf"] * scale < 1.05) / tot}
 
 
 def shock_market(fork: Fork, m: dict, bs: list[dict], move: float) -> dict:
@@ -487,6 +535,7 @@ def build(offline: bool = False):
         if bs:
             traces.append((CriticalPath.LIQUIDATION, liquidation_trace(fork, m, bs[0]), m["node"]))
             g.nodes[m["node"]].paths.add(CriticalPath.LIQUIDATION)
+        rec["hf_at_market"] = hf_at_market(bs, rec["collateral_exit"])
         q2.append(rec)
         worst = rec["shocks"][-1] if rec["shocks"] else {}
         print(f"   {m['collateral_symbol']:22s} {len(bs):3d} borrowers  HF<1.05: "
@@ -574,9 +623,15 @@ def findings(q1: dict, q2: list[dict], q3: dict, oq: dict) -> list[dict]:
                     "why": f"top depositor holds {c['top1_share']:.1%} of shares, top 5 hold {c['top5_share']:.1%}"})
     if r["owner"] == r["curator"]:
         out.append({"q": "Q1", "kind": "governance", "why": f"owner and curator are the same address {r['owner']}"})
-    zero = [k for k, v in r["timelocks"].items() if v["timelock_s"] == 0 and not v["abdicated"]]
+    # decreaseTimelock reads 0 but is gated by the TARGET function's timelock (verified on the fork: decreasing
+    # addAdapter's timelock reverts at +259140 s and executes at +259201 s), so it is not immediate.
+    zero = [k for k, v in r["timelocks"].items() if v["timelock_s"] == 0 and not v["abdicated"] and k != "decreaseTimelock"]
     if zero:
-        out.append({"q": "Q1", "kind": "zero_timelock", "why": "no timelock (immediate): " + ", ".join(zero)})
+        out.append({"q": "Q1", "kind": "zero_timelock", "confidence": "high", "time_to_impact_s": 0,
+                    "why": "curator (owner Safe) can submit and anyone execute in the same block: " + ", ".join(zero)
+                           + "; setForceDeallocatePenalty accepted up to 2% on the fork (3% reverts)",
+                    "evidence": "timelock(bytes4)=0 at the fork block; lowered from 259200 s at block 24971753 "
+                                "(tx 0x4841d217…); submit+execute replayed on the fork"})
     for k, v in q1["exposure"]["root_asset"].items():
         if v >= 0.10:
             out.append({"q": "Q1", "kind": "root_asset_share", "why": f"{v:.1%} of the vault ultimately rests on {k}"})
@@ -586,12 +641,22 @@ def findings(q1: dict, q2: list[dict], q3: dict, oq: dict) -> list[dict]:
     for rec in q2:
         ce = rec["collateral_exit"]
         if ce.get("flag"):
-            out.append({"q": "Q2", "kind": "collateral_exit", "why": f"{rec['market']}: {ce['flag']}"})
+            out.append({"q": "Q2", "kind": "collateral_exit", "confidence": ce.get("confidence", "medium"),
+                        "why": f"{rec['market']} via {ce['route']}: {ce['flag']}", "evidence": ce.get("evidence")})
         near = rec["hf_buckets"]["<1.00 (liquidatable)"]["debt_share"] + rec["hf_buckets"]["1.00-1.05"]["debt_share"]
         if near > 0.25:
-            out.append({"q": "Q2", "kind": "borrowers_near_lltv", "why": f"{rec['market']}: {near:.0%} of read debt has HF < 1.05"})
+            basis = (oq.get("per_market", {}).get(rec["market"], {}) or {}).get("price_basis", "unknown")
+            hm = rec.get("hf_at_market", {})
+            alt = (f"; at the market price ({hm['market_over_oracle'] - 1:+.2%} vs oracle) {hm['debt_share_hf_lt_1_05']:.0%}"
+                   if hm.get("available") else "; no reliable market price to re-check")
+            out.append({"q": "Q2", "kind": "borrowers_near_lltv",
+                        "confidence": "high" if basis == "market" else "medium",
+                        "why": f"{rec['market']}: {near:.0%} of read debt has HF < 1.05 at the oracle ({basis.replace('_', ' ')}){alt}",
+                        "evidence": f"{rec['n_borrowers_read']} largest borrowers covering "
+                                    f"{rec['debt_covered_usd'] / rec['market_borrow_usd']:.0%} of market debt, positions re-read on the fork"})
     for f in out:
         f["label"] = f["q"]
+        f.setdefault("confidence", "high")      # measured on the fork at the pinned block unless stated
     return out
 
 

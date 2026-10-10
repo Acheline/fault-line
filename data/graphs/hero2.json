@@ -31,9 +31,9 @@
    "chain": "ethereum",
    "address": "0xe0181090c22579b6a217f1522cbf8c9f1f0c1965",
    "tags": [
-    "belem_rockawayx",
+    "morpho_vault_v2",
     "critical",
-    "morpho_vault_v2"
+    "belem_rockawayx"
    ],
    "paths": [
     "exit",
@@ -350,8 +350,8 @@
    "chain": "ethereum",
    "address": "0xecfafdc7741323a945a163ed068b5a3c43483957",
    "tags": [
-    "critical",
-    "pendle_pt"
+    "pendle_pt",
+    "critical"
    ],
    "paths": [
     "value",
@@ -401,8 +401,8 @@
    "chain": "ethereum",
    "address": "0x217d6ddcdb95112c51657f6270e8c079cfdb51f0",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -589,8 +589,8 @@
    "chain": "ethereum",
    "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
    "tags": [
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "exit",
@@ -931,8 +931,8 @@
    "address": "0x280839980a7ed0d7717f64125fe241012e5f5815",
    "tags": [
     "erc4626",
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "value",
@@ -1006,8 +1006,8 @@
    "chain": "ethereum",
    "address": "0x1506c98ce61ac63c8438b710c054a51c5dd9a6a4",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -1241,8 +1241,8 @@
    "chain": "ethereum",
    "address": "0xd2cc46b9b2d761502ef933320ecf0268ec0dfa6d",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -1416,8 +1416,8 @@
    "address": "0x19ebb35279a16207ec4ba82799cc64715065f7f6",
    "tags": [
     "erc4626",
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "value",
@@ -1459,8 +1459,8 @@
    "chain": "ethereum",
    "address": "0x999eff9ca63d23a60a0cd19b9f65a0918674119a",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -1614,8 +1614,8 @@
    "chain": "ethereum",
    "address": "0x74299580811e1c3c1a2831db079ba0a8f513998f",
    "tags": [
-    "critical",
-    "pendle_pt"
+    "pendle_pt",
+    "critical"
    ],
    "paths": [
     "value",
@@ -1665,8 +1665,8 @@
    "chain": "ethereum",
    "address": "0xdb6e2e77ac10f05b9a52efe02d4c61c2770a776d",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -1775,8 +1775,8 @@
    "chain": "ethereum",
    "address": "0x6f20ae2c98c2d34e6a57f3411f2c5af92e32592d",
    "tags": [
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "value",
@@ -1818,8 +1818,8 @@
    "chain": "ethereum",
    "address": "0xf73166adf598f4c03776d058564f6543f8184dcf",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -2043,8 +2043,8 @@
    "chain": "ethereum",
    "address": "0x77ee147391eac11c92817e771860ff4aad265d89",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -2150,8 +2150,8 @@
    "chain": "ethereum",
    "address": "0x570ea68f11e63a9108514eb73dc4f88232c9e7f6",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -2312,9 +2312,9 @@
    "chain": "ethereum",
    "address": "0x9487bd5a3b16ecb5f3184453e3ee75b800141648",
    "tags": [
-    "proxy",
+    "pendle_sy",
     "critical",
-    "pendle_sy"
+    "proxy"
    ],
    "paths": [
     "value",
@@ -2525,8 +2525,8 @@
    "chain": "ethereum",
    "address": "0xa8bd3b21291ace53927b35563fc80615919e63d7",
    "tags": [
-    "critical",
-    "pendle_pt"
+    "pendle_pt",
+    "critical"
    ],
    "paths": [
     "value",
@@ -2641,8 +2641,8 @@
    "chain": "ethereum",
    "address": "0x7cfd3ed001d9d65d4022db4e15c6101db2bbc994",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -2705,9 +2705,9 @@
    "chain": "ethereum",
    "address": "0x8e42d93eac7dfef8d061dd18a2acfc839e724309",
    "tags": [
-    "critical",
     "chainlink_interface",
-    "no_update_timestamp"
+    "no_update_timestamp",
+    "critical"
    ],
    "paths": [
     "value",
@@ -2770,9 +2770,9 @@
    "chain": "ethereum",
    "address": "0x7fda577c085330e69df3179a2a5867751a9d0caa",
    "tags": [
-    "proxy",
+    "chainlink_interface",
     "critical",
-    "chainlink_interface"
+    "proxy"
    ],
    "paths": [
     "value",
@@ -2844,8 +2844,8 @@
    "chain": "ethereum",
    "address": "0x186365fdd6f6c323365ab306040f840632977a96",
    "tags": [
-    "implementation",
-    "chainlink_interface"
+    "chainlink_interface",
+    "implementation"
    ],
    "paths": [
     "value",
@@ -2896,8 +2896,8 @@
    "chain": "ethereum",
    "address": "0xd72a6ba4a87ddb33e801b3f1c7750b2d0911fc6c",
    "tags": [
-    "proxy",
-    "critical"
+    "critical",
+    "proxy"
    ],
    "paths": [
     "value",
@@ -3058,8 +3058,8 @@
    "chain": "ethereum",
    "address": "0x8fffffd4afb6115b954bd326cbe7b4ba576818f6",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -3184,8 +3184,8 @@
    "chain": "ethereum",
    "address": "0x54bcc589d9743e521c64233706fc8cb36d275b07",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -3382,9 +3382,9 @@
    "chain": "ethereum",
    "address": "0xf81aa28a4f68124683afada81e8ebbf6e2867067",
    "tags": [
-    "morpho_oracle_interface",
+    "chainlink_interface",
     "critical",
-    "chainlink_interface"
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -3496,8 +3496,8 @@
    "chain": "ethereum",
    "address": "0x8abc952f91db6695e765744ae340bc5ea4b344c1",
    "tags": [
-    "morpho_oracle_interface",
-    "critical"
+    "critical",
+    "morpho_oracle_interface"
    ],
    "paths": [
     "value",
@@ -3550,9 +3550,9 @@
    "chain": "ethereum",
    "address": "0xc3866d726c204c0836e0677a31973c649888973d",
    "tags": [
+    "chainlink_interface",
     "fixed_price",
-    "critical",
-    "chainlink_interface"
+    "critical"
    ],
    "paths": [
     "value",
@@ -3618,8 +3618,8 @@
    "chain": "ethereum",
    "address": "0xf17c0edcaa28371e9c8012d7699bf40ecf0f58d1",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -3696,8 +3696,8 @@
    "chain": "ethereum",
    "address": "0x48f9a46ba852b5c22d4153d0534397b59abfdef5",
    "tags": [
-    "critical",
-    "chainlink_interface"
+    "chainlink_interface",
+    "critical"
    ],
    "paths": [
     "value",
@@ -3766,9 +3766,9 @@
    "address": "0xcb8c6585bd593a4b7d91bfcc85ff1dcfa04a640b",
    "tags": [
     "fixed_schedule",
+    "no_update_timestamp",
     "chainlink_interface",
-    "critical",
-    "no_update_timestamp"
+    "critical"
    ],
    "paths": [
     "value",
@@ -3834,9 +3834,9 @@
    "chain": "ethereum",
    "address": "0x33c6f75916db4267e52209a8e6b270b22d983b53",
    "tags": [
-    "proxy",
+    "chainlink_interface",
     "critical",
-    "chainlink_interface"
+    "proxy"
    ],
    "paths": [
     "value",
@@ -3908,8 +3908,8 @@
    "chain": "ethereum",
    "address": "0x7219bebd4929dc52961ffe8bd41a6be22b6060d6",
    "tags": [
-    "implementation",
-    "chainlink_interface"
+    "chainlink_interface",
+    "implementation"
    ],
    "paths": [
     "value",
@@ -3960,9 +3960,9 @@
    "chain": "ethereum",
    "address": "0x835cfff06a60a16fd1880c3b0befac9968abd659",
    "tags": [
-    "proxy",
+    "chainlink_interface",
     "critical",
-    "chainlink_interface"
+    "proxy"
    ],
    "paths": [
     "value",
@@ -4034,8 +4034,8 @@
    "chain": "ethereum",
    "address": "0xb5ba31358ea1282b4f0fc0f5c11f126e52747f82",
    "tags": [
-    "implementation",
-    "chainlink_interface"
+    "chainlink_interface",
+    "implementation"
    ],
    "paths": [
     "value",
@@ -4495,8 +4495,8 @@
    "chain": "ethereum",
    "address": "0x90e91f5bfd9a0a4d925bf30b512add8cd2bbae3b",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -4585,8 +4585,8 @@
    "chain": "ethereum",
    "address": "0x7e8a16e87fa6b0f2e657db47f3dbfe2e981ef211",
    "tags": [
-    "proxy",
-    "pendle_sy"
+    "pendle_sy",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -4750,8 +4750,8 @@
    "chain": "ethereum",
    "address": "0x2ad631f72fb16d91c4953a7f4260a97c2fe2f31e",
    "tags": [
-    "proxy",
-    "governance_role"
+    "governance_role",
+    "proxy"
    ],
    "paths": [],
    "props": {
@@ -12552,9 +12552,39 @@
      }
     },
     "collateral_exit": {
+     "route": "Pendle router",
      "size_collateral_usd_at_oracle": 12165158.904298,
-     "route": null,
-     "flag": "no aggregator route at liquidation size: liquidators have no on-chain exit"
+     "curve": [
+      {
+       "x": 0.1,
+       "oracle_value_usd": 1216515.8904298001,
+       "usdc_out": 1215582.189997,
+       "discount_vs_oracle": 0.0007675201287098421
+      },
+      {
+       "x": 0.25,
+       "oracle_value_usd": 3041289.7260745,
+       "usdc_out": 3037594.024535,
+       "discount_vs_oracle": 0.0012151757551459585
+      },
+      {
+       "x": 0.5,
+       "oracle_value_usd": 6082579.452149,
+       "usdc_out": 6062601.238249,
+       "discount_vs_oracle": 0.00328449698966804
+      },
+      {
+       "x": 1.0,
+       "oracle_value_usd": 12165158.904298,
+       "usdc_out": 12094742.31477,
+       "discount_vs_oracle": 0.005788382221881383
+      }
+     ],
+     "confidence": "medium",
+     "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
+     "usdc_out": 12094742.31477,
+     "discount_vs_oracle": 0.005788382221881383,
+     "liquidation_profitable_full_size": true
     },
     "shocks": [
      {
@@ -12605,7 +12635,14 @@
       "lif": 1.026167265264238,
       "note": "liquidations executed on the fork at the shocked oracle price, assuming a liquidator exists; see collateral_exit for whether one could sell the collateral"
      }
-    ]
+    ],
+    "hf_at_market": {
+     "available": true,
+     "market_over_oracle": 0.9992324798712902,
+     "source": "Pendle router 0.1x quote",
+     "debt_share_hf_lt_1": 0.0,
+     "debt_share_hf_lt_1_05": 0.32747717528506526
+    }
    },
    {
     "market": "strUSD",
@@ -12688,11 +12725,40 @@
      }
     },
     "collateral_exit": {
-     "size_collateral_usd_at_oracle": 3089502.52389,
      "route": "KyberSwap aggregator",
-     "usdc_out": 1514610.895119,
-     "discount_vs_oracle": 0.5097557346507846,
-     "liquidation_profitable": false
+     "size_collateral_usd_at_oracle": 3089502.52389,
+     "curve": [
+      {
+       "x": 0.1,
+       "oracle_value_usd": 308950.252389,
+       "usdc_out": 307889.994178,
+       "discount_vs_oracle": 0.003431808852076834
+      },
+      {
+       "x": 0.25,
+       "oracle_value_usd": 772375.6309725,
+       "usdc_out": 767030.204165,
+       "discount_vs_oracle": 0.0069207605640917436
+      },
+      {
+       "x": 0.5,
+       "oracle_value_usd": 1544751.261945,
+       "usdc_out": 1375601.788639,
+       "discount_vs_oracle": 0.10949948867044357
+      },
+      {
+       "x": 1.0,
+       "oracle_value_usd": 3089502.52389,
+       "usdc_out": 1514614.307659,
+       "discount_vs_oracle": 0.5097546300910784
+      }
+     ],
+     "confidence": "medium",
+     "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
+     "usdc_out": 1514614.307659,
+     "discount_vs_oracle": 0.5097546300910784,
+     "flag": "thin liquidity: 51% below oracle at full liquidation size ($3,089,503); +0.3% at 0.1x, >2% from 0.5x",
+     "liquidation_profitable_full_size": false
     },
     "shocks": [
      {
@@ -12743,7 +12809,14 @@
       "lif": 1.0438413361169103,
       "note": "liquidations executed on the fork at the shocked oracle price, assuming a liquidator exists; see collateral_exit for whether one could sell the collateral"
      }
-    ]
+    ],
+    "hf_at_market": {
+     "available": true,
+     "market_over_oracle": 0.9965681911479232,
+     "source": "KyberSwap aggregator 0.1x quote",
+     "debt_share_hf_lt_1": 0.0,
+     "debt_share_hf_lt_1_05": 0.3313078148073874
+    }
    },
    {
     "market": "siUSD",
@@ -12826,11 +12899,39 @@
      }
     },
     "collateral_exit": {
-     "size_collateral_usd_at_oracle": 8077188.340372,
      "route": "KyberSwap aggregator",
-     "usdc_out": 8077380.79876,
-     "discount_vs_oracle": -0.000023827398828668578,
-     "liquidation_profitable": true
+     "size_collateral_usd_at_oracle": 8077188.340372,
+     "curve": [
+      {
+       "x": 0.1,
+       "oracle_value_usd": 807718.8340372001,
+       "usdc_out": 807740.029221,
+       "discount_vs_oracle": -0.00002624079432944626
+      },
+      {
+       "x": 0.25,
+       "oracle_value_usd": 2019297.085093,
+       "usdc_out": 2019350.073055,
+       "discount_vs_oracle": -0.000026240795567566977
+      },
+      {
+       "x": 0.5,
+       "oracle_value_usd": 4038594.170186,
+       "usdc_out": 4038700.146111,
+       "discount_vs_oracle": -0.00002624079581514671
+      },
+      {
+       "x": 1.0,
+       "oracle_value_usd": 8077188.340372,
+       "usdc_out": 8077400.292224,
+       "discount_vs_oracle": -0.000026240796062726446
+      }
+     ],
+     "confidence": "medium",
+     "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
+     "usdc_out": 8077400.292224,
+     "discount_vs_oracle": -0.000026240796062726446,
+     "liquidation_profitable_full_size": true
     },
     "shocks": [
      {
@@ -12881,7 +12982,14 @@
       "lif": 1.026167265264238,
       "note": "liquidations executed on the fork at the shocked oracle price, assuming a liquidator exists; see collateral_exit for whether one could sell the collateral"
      }
-    ]
+    ],
+    "hf_at_market": {
+     "available": true,
+     "market_over_oracle": 1.0000262407943294,
+     "source": "KyberSwap aggregator 0.1x quote",
+     "debt_share_hf_lt_1": 0.0,
+     "debt_share_hf_lt_1_05": 0.04910683073635808
+    }
    },
    {
     "market": "PRIME",
@@ -12964,11 +13072,39 @@
      }
     },
     "collateral_exit": {
-     "size_collateral_usd_at_oracle": 1871297.825122,
      "route": "KyberSwap aggregator",
+     "size_collateral_usd_at_oracle": 1871297.825122,
+     "curve": [
+      {
+       "x": 0.1,
+       "oracle_value_usd": 187129.7825122,
+       "usdc_out": 187061.562136,
+       "discount_vs_oracle": 0.0003645618312817511
+      },
+      {
+       "x": 0.25,
+       "oracle_value_usd": 467824.4562805,
+       "usdc_out": 467633.502191,
+       "discount_vs_oracle": 0.00040817466238984856
+      },
+      {
+       "x": 0.5,
+       "oracle_value_usd": 935648.912561,
+       "usdc_out": 935199.001787,
+       "discount_vs_oracle": 0.00048085426911737006
+      },
+      {
+       "x": 1.0,
+       "oracle_value_usd": 1871297.825122,
+       "usdc_out": 1870126.052513,
+       "discount_vs_oracle": 0.0006261817831821892
+      }
+     ],
+     "confidence": "medium",
+     "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
      "usdc_out": 1870126.052513,
      "discount_vs_oracle": 0.0006261817831821892,
-     "liquidation_profitable": true
+     "liquidation_profitable_full_size": true
     },
     "shocks": [
      {
@@ -13025,7 +13161,14 @@
       "lif": 1.0438413361169103,
       "note": "liquidations executed on the fork at the shocked oracle price, assuming a liquidator exists; see collateral_exit for whether one could sell the collateral"
      }
-    ]
+    ],
+    "hf_at_market": {
+     "available": true,
+     "market_over_oracle": 0.9996354381687182,
+     "source": "KyberSwap aggregator 0.1x quote",
+     "debt_share_hf_lt_1": 0.0,
+     "debt_share_hf_lt_1_05": 0.0
+    }
    },
    {
     "market": "PT-strUSD-26NOV2026",
@@ -13108,11 +13251,39 @@
      }
     },
     "collateral_exit": {
+     "route": "Pendle router",
      "size_collateral_usd_at_oracle": 143166.070059,
-     "route": "KyberSwap aggregator",
-     "usdc_out": 30853.132598,
-     "discount_vs_oracle": 0.7844941012539832,
-     "liquidation_profitable": false
+     "curve": [
+      {
+       "x": 0.1,
+       "oracle_value_usd": 14316.6070059,
+       "usdc_out": 14519.848708,
+       "discount_vs_oracle": -0.014196219957441247
+      },
+      {
+       "x": 0.25,
+       "oracle_value_usd": 35791.51751475,
+       "usdc_out": 36295.332164,
+       "discount_vs_oracle": -0.01407637016347163
+      },
+      {
+       "x": 0.5,
+       "oracle_value_usd": 71583.0350295,
+       "usdc_out": 72579.035716,
+       "discount_vs_oracle": -0.01391392089046728
+      },
+      {
+       "x": 1.0,
+       "oracle_value_usd": 143166.070059,
+       "usdc_out": 145098.524472,
+       "discount_vs_oracle": -0.013497991613540927
+      }
+     ],
+     "confidence": "medium",
+     "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
+     "usdc_out": 145098.524472,
+     "discount_vs_oracle": -0.013497991613540927,
+     "liquidation_profitable_full_size": true
     },
     "shocks": [
      {
@@ -13163,7 +13334,14 @@
       "lif": 1.0438413361169103,
       "note": "liquidations executed on the fork at the shocked oracle price, assuming a liquidator exists; see collateral_exit for whether one could sell the collateral"
      }
-    ]
+    ],
+    "hf_at_market": {
+     "available": true,
+     "market_over_oracle": 1.0141962199574412,
+     "source": "Pendle router 0.1x quote",
+     "debt_share_hf_lt_1": 0.0,
+     "debt_share_hf_lt_1_05": 0.0
+    }
    },
    {
     "market": "etrUSD",
@@ -13246,11 +13424,40 @@
      }
     },
     "collateral_exit": {
-     "size_collateral_usd_at_oracle": 1017422.563421,
      "route": "KyberSwap aggregator",
+     "size_collateral_usd_at_oracle": 1017422.563421,
+     "curve": [
+      {
+       "x": 0.1,
+       "oracle_value_usd": 101742.25634210001,
+       "usdc_out": 45205.894349,
+       "discount_vs_oracle": 0.5556822113616304
+      },
+      {
+       "x": 0.25,
+       "oracle_value_usd": 254355.64085525,
+       "usdc_out": 65438.658799,
+       "discount_vs_oracle": 0.7427277076342091
+      },
+      {
+       "x": 0.5,
+       "oracle_value_usd": 508711.2817105,
+       "usdc_out": 72909.014293,
+       "discount_vs_oracle": 0.8566789907865825
+      },
+      {
+       "x": 1.0,
+       "oracle_value_usd": 1017422.563421,
+       "usdc_out": 80176.507144,
+       "discount_vs_oracle": 0.9211964526573766
+      }
+     ],
+     "confidence": "low",
+     "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
      "usdc_out": 80176.507144,
      "discount_vs_oracle": 0.9211964526573766,
-     "liquidation_profitable": false
+     "flag": "no liquid pool: 56% below oracle already at 0.1x size (quote from residual orders); exit is issuer redemption",
+     "liquidation_profitable_full_size": false
     },
     "shocks": [
      {
@@ -13301,7 +13508,11 @@
       "lif": 1.0438413361169103,
       "note": "liquidations executed on the fork at the shocked oracle price, assuming a liquidator exists; see collateral_exit for whether one could sell the collateral"
      }
-    ]
+    ],
+    "hf_at_market": {
+     "available": false,
+     "why": "no reliable market price (no liquid pool)"
+    }
    }
   ],
   "q3": {
@@ -13991,11 +14202,11 @@
       "Pendle Chainlink-compatible Oracle"
      ],
      "kinds": {
-      "Pendle Chainlink-compatible Oracle": "market_derived",
-      "ExchangeRateOracle": "exchange_rate",
       "ChainlinkCurrentTimestampAdapter": "unknown",
       "PTDiscountOracle": "unknown",
-      "Ojo PT Feed Pendle Chainlink-compatible Oracle": "market_derived"
+      "Pendle Chainlink-compatible Oracle": "market_derived",
+      "Ojo PT Feed Pendle Chainlink-compatible Oracle": "market_derived",
+      "ExchangeRateOracle": "exchange_rate"
      },
      "n_market_derived": 2,
      "price_basis": "market"
@@ -14017,8 +14228,8 @@
       "Dummy feed with 12 decimals"
      ],
      "kinds": {
-      "Chainlink-formatted InfiniFi RT Oracle": "exchange_rate",
-      "Dummy feed with 12 decimals": "hardcoded_constant"
+      "Dummy feed with 12 decimals": "hardcoded_constant",
+      "Chainlink-formatted InfiniFi RT Oracle": "exchange_rate"
      },
      "n_market_derived": 0,
      "price_basis": "exchange_rate",
@@ -14041,8 +14252,8 @@
       "RedStone Price Feed for trUSD_FUNDAMENTAL"
      ],
      "kinds": {
-      "PendleSparkLinearDiscountOracle": "hardcoded_schedule",
-      "RedStone Price Feed for trUSD_FUNDAMENTAL": "issuer_reported"
+      "RedStone Price Feed for trUSD_FUNDAMENTAL": "issuer_reported",
+      "PendleSparkLinearDiscountOracle": "hardcoded_schedule"
      },
      "n_market_derived": 0,
      "price_basis": "issuer_reported",
@@ -14138,7 +14349,7 @@
    ],
    "governance_depth": 2,
    "governance_chain": [
-    "EthereumMultiFeedAdapterWithoutRoundsV3 [CONTRACT]",
+    "RedStone Price Feed for etrUSD_FUNDAMENTAL/USD (EthereumPriceFeedEtrusdFundamentalusdWithoutRoundsV1) [ORACLE]",
     "ProxyAdmin [GOVERNANCE]",
     "Safe 2/3 0x6906f3 [GOVERNANCE]"
    ],
@@ -14628,96 +14839,126 @@
     "q": "Q3",
     "kind": "instant_liquidity",
     "why": "instantly withdrawable $350,085 (1.9% of $18,548,554) via the PRIME liquidity market; $12,543,895 reachable with forceDeallocate at a 0.50% penalty",
-    "label": "Q3"
+    "label": "Q3",
+    "confidence": "high"
    },
    {
     "q": "Q3",
     "kind": "depositor_concentration",
     "why": "top depositor holds 38.6% of shares, top 5 hold 75.7%",
-    "label": "Q3"
+    "label": "Q3",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "governance",
     "why": "owner and curator are the same address 0xbbacdcfb9691dfa1066ab29edfcc4a73f6def918",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "zero_timelock",
-    "why": "no timelock (immediate): setIsAllocator, setForceDeallocatePenalty, decreaseTimelock",
+    "confidence": "high",
+    "time_to_impact_s": 0,
+    "why": "curator (owner Safe) can submit and anyone execute in the same block: setIsAllocator, setForceDeallocatePenalty; setForceDeallocatePenalty accepted up to 2% on the fork (3% reverts)",
+    "evidence": "timelock(bytes4)=0 at the fork block; lowered from 259200 s at block 24971753 (tx 0x4841d217…); submit+execute replayed on the fork",
     "label": "Q1"
    },
    {
     "q": "Q1",
     "kind": "root_asset_share",
     "why": "50.1% of the vault ultimately rests on reUSD",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "root_asset_share",
     "why": "27.9% of the vault ultimately rests on trUSD",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "root_asset_share",
     "why": "12.7% of the vault ultimately rests on iUSD",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "oracle",
     "why": "strUSD: NO market-derived feed: collateral priced by issuer reported (the market cannot signal a loss; issuer or schedule sets the price) (RedStone Price Feed for strUSD_FUNDAMENTAL)",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "oracle",
     "why": "siUSD: NO market-derived feed: collateral priced by exchange rate (the market cannot signal a loss; issuer or schedule sets the price) (Chainlink-formatted InfiniFi RT Oracle, Dummy feed with 12 decimals)",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "oracle",
     "why": "PRIME: NO market-derived feed: collateral priced by exchange rate (the market cannot signal a loss; issuer or schedule sets the price) (PRIME / WYLDS Exchange Rate)",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "oracle",
     "why": "PT-strUSD-26NOV2026: NO market-derived feed: collateral priced by issuer reported (the market cannot signal a loss; issuer or schedule sets the price) (PendleSparkLinearDiscountOracle, RedStone Price Feed for trUSD_FUNDAMENTAL)",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
    },
    {
     "q": "Q1",
     "kind": "oracle",
     "why": "etrUSD: NO market-derived feed: collateral priced by issuer reported (the market cannot signal a loss; issuer or schedule sets the price) (RedStone Price Feed for etrUSD_FUNDAMENTAL/USD)",
-    "label": "Q1"
+    "label": "Q1",
+    "confidence": "high"
+   },
+   {
+    "q": "Q2",
+    "kind": "borrowers_near_lltv",
+    "confidence": "high",
+    "why": "PT-reUSD-10DEC2026: 33% of read debt has HF < 1.05 at the oracle (market); at the market price (-0.08% vs oracle) 33%",
+    "evidence": "30 largest borrowers covering 78% of market debt, positions re-read on the fork",
+    "label": "Q2"
    },
    {
     "q": "Q2",
     "kind": "collateral_exit",
-    "why": "PT-reUSD-10DEC2026: no aggregator route at liquidation size: liquidators have no on-chain exit",
+    "confidence": "medium",
+    "why": "strUSD via KyberSwap aggregator: thin liquidity: 51% below oracle at full liquidation size ($3,089,503); +0.3% at 0.1x, >2% from 0.5x",
+    "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
     "label": "Q2"
    },
    {
     "q": "Q2",
     "kind": "borrowers_near_lltv",
-    "why": "PT-reUSD-10DEC2026: 33% of read debt has HF < 1.05",
+    "confidence": "medium",
+    "why": "strUSD: 30% of read debt has HF < 1.05 at the oracle (issuer reported); at the market price (-0.34% vs oracle) 33%",
+    "evidence": "30 largest borrowers covering 100% of market debt, positions re-read on the fork",
     "label": "Q2"
    },
    {
     "q": "Q2",
     "kind": "borrowers_near_lltv",
-    "why": "strUSD: 30% of read debt has HF < 1.05",
+    "confidence": "medium",
+    "why": "PT-strUSD-26NOV2026: 30% of read debt has HF < 1.05 at the oracle (issuer reported); at the market price (+1.42% vs oracle) 0%",
+    "evidence": "30 largest borrowers covering 99% of market debt, positions re-read on the fork",
     "label": "Q2"
    },
    {
     "q": "Q2",
-    "kind": "borrowers_near_lltv",
-    "why": "PT-strUSD-26NOV2026: 30% of read debt has HF < 1.05",
+    "kind": "collateral_exit",
+    "confidence": "low",
+    "why": "etrUSD via KyberSwap aggregator: no liquid pool: 56% below oracle already at 0.1x size (quote from residual orders); exit is issuer redemption",
+    "evidence": "live aggregator/router quotes against current mainnet state; fork-executed only where noted",
     "label": "Q2"
    }
   ],
