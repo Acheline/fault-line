@@ -14,8 +14,9 @@ Each answer replaces a value tagged `assumption` in the code. Where it goes is s
 ## 1b. Belem / RockawayX vaults [discovery.hero2, Portfolio X-ray]
 The curated vaults on https://dune.com/rockawayxvault/rockawayx-dashboard are Belem's own book (same group). They are
 measured data, not assumptions. Questions raised by what hero #2 measured on the RockawayX USDC Yield vault:
-- Can we get the Dune query IDs behind the dashboard (vault list, allocations, holders) and an API key? They are
-  the input for the 33-vault X-ray (8 chains, 9 protocols). Without them we cover the Ethereum Morpho vaults only.
+- The vault list comes from books/belem_vaults.csv (25 vaults with TVL, $293.63M). Can you confirm the 8 other
+  dashboard vaults are empty, and share allocations for the protocols we cannot read (Upshift, Ember, Feather,
+  Oku, Accountable, Midas, Lista)?
 - The vault's liquidity market (where withdrawals are served from) is PRIME/USDC, with ~$350k free. Is that a
   deliberate choice? Is forceDeallocate (0.5% penalty) the exit you expect depositors to use in a run?
 - setIsAllocator, setForceDeallocatePenalty and decreaseTimelock have no timelock, and the owner Safe is also the
@@ -70,6 +71,6 @@ measured data, not assumptions. Questions raised by what hero #2 measured on the
 ## 7. Data access
 - Do you have paid RPC / archive access we could use? Alchemy free tier limits `eth_getLogs` to
   10 blocks, so we use Etherscan for event history.
-  - *Assumed answer:* no paid access: Alchemy free + anvil, Etherscan for events, DefiLlama, protocol APIs; Dune optional. → [ASSUMED_ANSWERS.md §7](ASSUMED_ANSWERS.md#7-data-access-and-base-rates)
+  - *Assumed answer:* no paid access: Alchemy free + anvil, Etherscan for events, DefiLlama, protocol APIs; vault list from books/belem_vaults.csv (no Dune). → [ASSUMED_ANSWERS.md §7](ASSUMED_ANSWERS.md#7-data-access-and-base-rates)
 - Any internal dataset of incidents / depegs / RWA impairments we may use for base rates?
   - *Assumed answer:* none: base rates are computed from DefiLlama hacks + historical prices; fallback priors are used only if a fetch fails (red `placeholder_prior` badge). → [ASSUMED_ANSWERS.md §7](ASSUMED_ANSWERS.md#7-data-access-and-base-rates)

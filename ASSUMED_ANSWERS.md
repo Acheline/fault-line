@@ -151,7 +151,7 @@ in `.env` (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`). Do not block on it.
 
 - **RPC:** no paid access assumed. Keep Alchemy free tier + anvil for traces, Etherscan for event
   history (getLogs is capped at 10 blocks on Alchemy free), DefiLlama for TVL and hacks, protocol
-  APIs (Pendle, Morpho, Kamino), Dune optional. Cache everything.
+  APIs (Pendle, Morpho, Kamino). No Dune API (vault list from books/belem_vaults.csv). Cache everything.
 - **Base rates must be COMPUTED, not typed:**
   - Exploit probability per protocol-year from the DefiLlama hacks dataset, bucketed by protocol
     category, age and TVL; loss-given-exploit as a share of TVL from the same data.

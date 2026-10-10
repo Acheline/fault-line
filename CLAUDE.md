@@ -40,7 +40,7 @@ the losses. We read them from the protocols' own code, executed on a fork of rea
   could act on.
 
 Constraints: [N] people, [X] hours left. Keys: [archive RPC: Alchemy free tier works; anvil
-does the tracing locally], [Etherscan], [Dune API key, optional], [Helius for Solana, optional].
+does the tracing locally], [Etherscan], [Helius for Solana, optional]. No Dune API key.
 Stack: Python + Foundry (anvil/cast) + web3.py + NetworkX + Streamlit. One command runs the demo.
 
 Environment already verified: anvil fork running on 127.0.0.1:8545, debug_traceCall works with
@@ -52,8 +52,9 @@ The team confirms RockawayX and Belem are the same group: these vaults ARE the c
 curated-vault book ("the portfolio structures we actually run"). In the UI and README, call it
 "Belem / RockawayX vaults". This is the most important real data in the project.
 
-Dashboard headline KPIs (screenshot from the team, dashboard queries refresh every ~6 h; re-read
-live via Dune before the demo): total TVL ≈ $293.56M, 2,434 unique holders, 33 active vaults,
+VAULT REGISTRY: books/belem_vaults.csv (exported from the dashboard; loaded by core/vaults.py): 25 vaults with
+TVL, $293.63M, matching the dashboard's $293.56M (the other 8 of the 33 listed vaults are empty).
+Dashboard headline KPIs (screenshot from the team): total TVL ≈ $293.56M, 2,434 unique holders, 33 active vaults,
 average deposit per holder ≈ $120.6k, 8 chains (incl. Ethereum, Solana, Plume, Etherlink, 0G),
 9 protocols hosting vaults (incl. Morpho, Kamino, Midas).
 
@@ -77,9 +78,8 @@ Data access for this book (in order of preference):
 1. On-chain reads on the fork (vault contracts, Morpho Blue, oracles): the source of truth.
 2. Morpho GraphQL API (https://api.morpho.org/graphql) for vault allocations, caps, depositors,
    market state; Kamino public API for vault/reserve allocations.
-3. Dune API for the dashboard's queries (ask the team for a Dune API key and the query IDs:
-   each chart on the dashboard links to its query). Use Dune as a cross-check, never as the only
-   source. Cache every response.
+3. books/belem_vaults.csv for the vault list and dashboard TVL snapshot. No Dune API is used.
+   Cache every response.
 
 # HERO POSITIONS (build #1 end-to-end before anything else)
 1. Pendle PT-sUSDe on Ethereum: held outright, AND posted as collateral on a Morpho Blue market,
@@ -144,7 +144,7 @@ Data access for this book (in order of preference):
 6. Off-chain layers that no trace can see (Ethena's CEX hedges and custodians; Figure's HELOC
    warehouse; OnRe reinsurance contracts; Huma PayFi receivables) are added from public sources
    ONLY, tagged `offchain_disclosed` with a link. Every node/edge carries provenance:
-   {source: trace|storage|api|dune|disclosure, block, tx/call, confidence}.
+   {source: trace|storage|api|registry|disclosure, block, tx/call, confidence}.
    Flag explicitly when an oracle is ISSUER-REPORTED (NAV pushed by the issuer or a fixed price)
    rather than market-derived: then the issuer is both the asset and its price, which is a
    single point of failure the market cannot signal.
@@ -199,7 +199,7 @@ Then:
 # MODULE 3: THE EXIT RACE (25%)
 1. Fetch the real holder distribution: top PT holders, Pendle LPs, Morpho market suppliers/
    borrowers, the vaults allocating to each market, and the TOP DEPOSITORS of each curated vault
-   (vault share Transfer logs, Morpho API, Dune).
+   (vault share Transfer logs, Morpho API).
 2. Agent-based run model: when shock S hits, each large holder exits with a probability and
    delay drawn from their type (vault curator, fund, EOA whale, looper near LLTV). Loopers near
    liquidation are forced sellers. Simulate the sequence ON THE FORK so each exit really drains
@@ -227,7 +227,7 @@ originator, same admin multisig, same CEX).
 Output the "effective number of independent bets" and the worst single point of failure for the
 book: "These 10 pockets are 3 bets: 46% of the book depends on one oracle."
 Stretch (high value for this jury): run the X-ray across ALL of the setter's vaults (33 vaults,
-8 chains, 9 protocols per the dashboard), using Dune for the vault list and on-chain/API reads for
+8 chains, 9 protocols per the dashboard), using books/belem_vaults.csv for the vault list and on-chain/API reads for
 allocations, to find shared collateral, issuers and oracles across their whole curated book.
 Then run the curator's OWN published concentration limits (single protocol 25%, single oracle 40%,
 correlated assets 40%, single chain 60%, max 15% per AA market) against the TRUE discovered
@@ -266,7 +266,7 @@ number: "USDe −3.1% on CEX. PT-sUSDe pocket: net value of exiting now = +42 bp
 # RULES
 - Real state only. Verify every address on-chain before use (including the RockawayX addresses
   above). Never invent numbers; anything not measured is tagged `assumption` with a source.
-- Cache fork results and API/Dune responses. The demo must run offline if the RPC dies on stage.
+- Cache fork results and API responses. The demo must run offline if the RPC dies on stage.
 - Deterministic seeds. Tests: discovery on hero #1 must find the Pendle market, SY, sUSDe/USDe,
   the Morpho market's oracle and its underlying feeds, and the proxy admins. Discovery on hero #2
   must find every market in the vault's withdraw queue, each market's oracle and collateral, and
@@ -295,4 +295,4 @@ README section titled "How Fault Line answers the brief".
 2. Find and verify the hero positions' addresses (PT-sUSDe stack; RockawayX USDC Yield vault,
    its roles and its markets), and list them with block numbers.
 3. Write the M1 trace script for hero #1 and run it. Show the discovered graph before moving on.
-4. Tell us immediately what keys or access you need from us (e.g. Dune API key and query IDs).
+4. Tell us immediately what keys or access you need from us (e.g. RPC limits, Helius for Solana).

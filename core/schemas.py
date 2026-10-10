@@ -61,7 +61,7 @@ PATH_EDGE = {
     CriticalPath.LIQUIDATION: EdgeType.LIQUIDATION_ROUTE,
 }
 
-Source = Literal["trace", "storage", "onchain_read", "api", "dune", "disclosure", "assumption"]
+Source = Literal["trace", "storage", "onchain_read", "api", "registry", "disclosure", "assumption"]
 
 
 class Provenance(BaseModel):
